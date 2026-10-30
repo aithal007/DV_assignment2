@@ -236,7 +236,7 @@ def build():
     (ROOT/'data/current_figure_manifest.json').write_text(json.dumps(figures,indent=2),encoding='utf-8')
     selection_path=ROOT/'data/report_selection.json'
     selection=json.loads(selection_path.read_text(encoding='utf-8'))
-    selection.update(report_style='Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures',report_generator='scripts/build_a1_style_report.py',design_reference='C:/Users/Parikshith/Downloads/ass2_1.pdf',revision_scope='Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged')
+    selection.update(report_style='Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures',report_generator='scripts/build_a1_style_report.py',design_reference='ass2_1.pdf',revision_scope='Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged')
     selection_path.write_text(json.dumps(selection,indent=2),encoding='utf-8')
     (ROOT/'data/report_figure_explanations.json').write_text(json.dumps([dict(figure=f['figure'],title=f['title'],question=f['explanation'][0],encoding=f['explanation'][1],rationale=f['explanation'][2],detailed_interpretation=f['detailed_interpretation'],takeaway=f['explanation'][4]) for f in figures],indent=2),encoding='utf-8')
     pages=len(pymupdf.open(pdf))
@@ -245,7 +245,7 @@ def build():
         for p in [OUT/'DAS732_A2_Report.tex',OUT/'design_reference_preamble.tex',OUT/'README.md',*[OUT/'figures'/f'Fig{n}.png' for n in range(1,len(figures)+1)]]:z.write(p,p.relative_to(OUT))
     assert before==digest(protected),'Presentation/video files changed'
     assert images_before==digest(assets),'Source plot assets changed'
-    validation=dict(pages=pages,figures=len(figures),style_reference='C:/Users/Parikshith/Downloads/ass2_1.pdf',source_plot_assets_unchanged=True,restored_figures=[5,6],slides_video_unchanged=True,protected_files=before,reading_guide_count=tex.count(r'\textit{How to read the graph.}'),rationale_count=tex.count(r'\textit{Why this chart.}'),takeaways=tex.count(r'\takeaway{'),takeaway_word_counts=[len(f['explanation'][4].split()) for f in figures],references=len(story.REFERENCES))
+    validation=dict(pages=pages,figures=len(figures),style_reference='ass2_1.pdf',source_plot_assets_unchanged=True,restored_figures=[5,6],slides_video_unchanged=True,protected_files=before,reading_guide_count=tex.count(r'\textit{How to read the graph.}'),rationale_count=tex.count(r'\textit{Why this chart.}'),takeaways=tex.count(r'\takeaway{'),takeaway_word_counts=[len(f['explanation'][4].split()) for f in figures],references=len(story.REFERENCES))
     (ROOT/'data/a1_style_report_validation.json').write_text(json.dumps(validation,indent=2),encoding='utf-8')
     print(json.dumps({k:v for k,v in validation.items() if k!='protected_files'},indent=2))
 

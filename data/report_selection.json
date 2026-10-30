@@ -21,5 +21,5 @@
   "report_style": "Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures",
   "report_generator": "scripts/build_a1_style_report.py",
   "revision_scope": "Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged",
-  "design_reference": "C:/Users/Parikshith/Downloads/ass2_1.pdf"
+  "design_reference": "ass2_1.pdf"
 }

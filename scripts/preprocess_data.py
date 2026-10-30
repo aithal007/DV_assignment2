@@ -82,7 +82,7 @@ def main():
         assert -90<float(np.nanmin(z['tmmx']))<float(np.nanmax(z['tmmx']))<65
         assert np.nanmin(z['pr'])>=0 and np.nanmin(z['vs'])>=0
         assert 0<=np.nanmin(z['th'])<=np.nanmax(z['th'])<=360
-        evidence['weather']={'daily_dates':92,'sample_dates':sample_dates,'common_cells':int(mask.sum()),'units':{'tmmx':'Celsius','pr':'mm/day','vs':'m/s','th':'degrees FROM clockwise from north'},'caches':{p.name:checksum(p) for p in [sampled,daily]}}
+        evidence['weather']={'daily_dates':92,'sample_dates':sample_dates,'common_cells':int(mask.sum()),'units':{'tmmx':'Celsius','pr':'mm/day','vs':'m/s','th':'degrees clockwise from north (source direction)'},'caches':{p.name:checksum(p) for p in [sampled,daily]}}
     evidence['outputs']={p.name:checksum(p) for p in [out/'master_dataset_countries_only.csv',out/'region_lookup.csv',out/'weather_support.npz']}
     (out/'preprocessing_audit.json').write_text(json.dumps(evidence,indent=2),encoding='utf8')
     print(json.dumps({'status':'PASS','cohorts':evidence['country_cohorts'],'weather_cells':13416,'audit':str(out/'preprocessing_audit.json')},indent=2))

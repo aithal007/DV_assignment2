@@ -41,8 +41,9 @@ function render(){
     .attr("role","button").attr("tabindex",0)
     .attr("aria-label",d=>`${d.data.name}, ${fmt(d.value)} internet users${d.children?", zoom in":""}`)
     .on("click",(e,d)=>{if(d.children){current=d;render();}else show(d);})
-    .on("keydown",(e,d)=>{if(e.key==="Enter"&&d.children){current=d;render();}})
+    .on("keydown",(e,d)=>{if(e.key==="Enter"){if(d.children){current=d;render();}else show(d);}})
     .on("mouseenter",(e,d)=>show(d));
+  svg.on("mouseleave",()=>{details.textContent="Click a group to zoom in. Hover a rectangle to see its values.";});
   tile.append("rect").attr("width",d=>Math.max(0,X(d.x1)-X(d.x0)))
     .attr("height",d=>Math.max(0,Y(d.y1)-Y(d.y0)))
     .attr("fill",d=>d.children?"#dce8f2":d3.interpolateViridis(d.data.adoption/100))
