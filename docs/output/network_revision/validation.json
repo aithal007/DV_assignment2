@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "all_pairs_checked": 15931,
+  "filtered_pairs": 797,
+  "threshold": 0.5697629885414606,
+  "isolates": 12,
+  "matrix_cells_checked": 225,
+  "layouts": 3,
+  "perturbation_trials": 30
+}

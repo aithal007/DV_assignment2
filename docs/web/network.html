@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A2 Infovis · Country similarity network</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<nav class="topnav"><a href="index.html">Parallel coordinates</a><a href="network.html" aria-current="page">Network</a><a href="treemap.html">Treemap</a></nav>
+<header><p class="eyebrow">DAS732 · A2 · Infovis</p><h1>Which countries have similar connectivity profiles?</h1>
+<p>Each link joins countries with similar 2020 internet, landline, broadband, and mobile measures. Links are derived similarities, not physical internet connections.</p></header>
+<section class="controls" aria-label="Network controls">
+<label>Layout <select id="layout"></select></label>
+<label>Minimum similarity <input id="similarity" type="range" min="0" max="1" step="any" value="0"><output id="similarity-value">0.00</output></label>
+<label>Find country <input id="search" type="search" list="countries" placeholder="Name or ISO code"><datalist id="countries"></datalist></label>
+<button id="find" type="button">Select</button><button id="reset" type="button">Reset view</button>
+</section>
+<p id="status" role="status"></p><div class="chart-wrap"><svg id="network" role="img" aria-label="Interactive country similarity network with three layouts"></svg></div>
+<div id="legend" class="legend"></div><aside id="details">Click a country to see its profile and linked neighbors. Drag to pan; scroll to zoom.</aside>
+<p class="note">All 15,931 country pairs have similarity s = 1/(1 + distance), using four z-scored measures. Default: strongest 5% (95th-percentile threshold). Move to zero to show the complete graph; move upward to retain more similar pairs. Layouts use the default filtered graph and stay fixed as the threshold changes. Reset restores the documented threshold. <a href="../output/network_revision/index.html">Similarity distribution and sensitivity evidence</a>.</p>
+</main><script src="vendor/d3.v7.min.js"></script><script src="network.js"></script></body></html>

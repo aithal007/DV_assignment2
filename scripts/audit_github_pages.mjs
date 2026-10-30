@@ -6,8 +6,8 @@ import {fileURLToPath} from 'node:url';
 import {createRequire} from 'node:module';
 const require=createRequire('C:/Users/Parikshith/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/x.cjs');
 const {chromium}=require('playwright');
-const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../tmp/github_deployment_20261030/DV_assignment2_pages');
-const prefix='/DV_assignment2_pages/';let server;
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../docs');
+const prefix='/DV_assignment2/';let server;
 let base=process.argv[2];
 if(!base){
   const mime={'.html':'text/html','.js':'text/javascript','.json':'application/json','.css':'text/css','.png':'image/png','.gif':'image/gif','.pdf':'application/pdf','.csv':'text/csv'};

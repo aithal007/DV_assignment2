@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A2 Infovis · Country connectivity profiles</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav class="topnav"><a href="index.html" aria-current="page">Parallel coordinates</a><a href="network.html">Network</a><a href="treemap.html">Treemap</a></nav>
+    <header>
+      <p class="eyebrow">DAS732 · Assignment 2 · Infovis</p>
+      <h1>Country connectivity profiles</h1>
+      <p>Each line is a country. Drag on an axis to brush a range, click an axis title to move it right, and hover a line for its values. Gentle curves group countries by three stated adoption bands. Set bundling to zero for straight lines; measured axis intersections stay fixed.</p>
+    </header>
+    <section class="controls" aria-label="Chart controls">
+      <label>Year <select id="year"></select></label>
+      <label>Region <select id="region"><option value="all">All regions</option></select></label>
+      <label>Curve bundling <input id="bundle" type="range" min="0" max="100" value="35"><output id="bundle-value">35%</output></label>
+      <label><input id="matched" type="checkbox" checked> Same countries in both years</label>
+      <label><input id="fixed" type="checkbox" checked> Fixed axes across years</label>
+      <button id="clear" type="button">Clear brushes</button>
+      <button id="focus" type="button">Inspect high adoption / low broadband</button>
+      <label><input id="only-selected" type="checkbox" checked> Show selected lines only</label>
+    </section>
+    <p id="status" role="status"></p>
+    <div class="chart-wrap"><svg id="chart" role="img" aria-label="Interactive parallel coordinates of country internet, landline, broadband, and mobile measures"></svg></div>
+    <div id="legend" class="legend"></div>
+    <p id="selection-summary" aria-live="polite"></p>
+    <aside id="details">Hover a country line to inspect its data.</aside>
+    <p class="note">Source: A1 Our World in Data/ITU indicators. Complete country rows only. The matched view keeps the same 175 countries in 2015 and 2020. Subscription values may exceed 100 per 100 people. Color and bundles use adoption bands: below 40%, 40–below 70%, and at least 70%. These are chosen comparison groups, not discovered country types. Curves between axes do not represent measurements.</p>
+  </main>
+  <script src="pcp-curves.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
