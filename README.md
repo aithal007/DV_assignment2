@@ -1,10 +1,8 @@
-# Assignment 2 project
-
-**Live visualizations:** https://aithal007.github.io/DV_assignment2_pages/
-
 # DAS732 Programming Assignment 2
 
 **Main question:** What do averages and snapshots hide about inequality, relationships and change over time?
+
+[Open the live interactive visualizations](https://aithal007.github.io/DV_assignment2_pages/). The full assignment project is maintained in the private GitHub repository `aithal007/DV_assignment2`.
 
 [Current report](output/pdf/DAS732_A2_Report_IEEE.pdf): 27 pages, 32 numbered figure sets (all original 30 plus two added plots). [Full-resolution gallery](output/quality_figures/index.html). Numbered assessment images are in `images/report/Fig1.png` through `Fig32.png`; complete browser screenshots are in `images/gui/`.
 

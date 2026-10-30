@@ -2,6 +2,8 @@
 
 **Main question:** What do averages and snapshots hide about inequality, relationships and change over time?
 
+[Open the live interactive visualizations](https://aithal007.github.io/DV_assignment2_pages/). The full assignment project is maintained in the private GitHub repository `aithal007/DV_assignment2`.
+
 [Current report](output/pdf/DAS732_A2_Report_IEEE.pdf): 27 pages, 32 numbered figure sets (all original 30 plus two added plots). [Full-resolution gallery](output/quality_figures/index.html). Numbered assessment images are in `images/report/Fig1.png` through `Fig32.png`; complete browser screenshots are in `images/gui/`.
 
 The report uses the existing IEEE design and simple-English reading guides, interpretation and takeaways. Figure 4 compares paired 2015?2020 changes, with a shared zero reference and a selected 20?30-point gain range. Figure 5 uses gentle curve bundles and stated adoption bands. Figure 7 contrasts level and gain correlations for the same 175 countries. Figure 10 follows three fixed groups of 53 countries from 2000 to 2020. Figure 6 retains the full scatterplot matrix. The report has no formal bibliography by team preference; source provenance and method links remain with the code. The team will provide its own truthful AI disclosures.
