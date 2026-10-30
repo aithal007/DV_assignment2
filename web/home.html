@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A2 | Beyond Averages and Snapshots</title><link rel="stylesheet" href="style.css">
+<style>.start-section{margin-top:36px;border-top:1px solid #ccd7e1;padding-top:18px}table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;vertical-align:top;border-bottom:1px solid #d8e1e9;padding:14px}th{color:#315f7e}a{color:#17668e}p,li{line-height:1.6}.launch-link{font-size:1.2rem;font-weight:700}code{overflow-wrap:anywhere}h2{font-size:1.4rem}</style></head>
+<body><main><header><p class="eyebrow">DAS732 · Assignment 2 · Team Plot Twist</p>
+<h1>Beyond Averages and Snapshots</h1><p>What do averages and snapshots hide about inequality, relationships and change over time?</p>
+<p><a class="launch-link" href="../output/pdf/DAS732_A2_Report_IEEE.pdf">Read the illustrated report</a> &nbsp; · &nbsp;
+<a href="../output/quality_figures/index.html">Explore all selected figures and explanations</a></p></header>
+<section class="start-section"><h2>Required interactive JavaScript visualizations</h2>
+<p>The PDF explains the findings. These pages provide the working interactions: filtering and axis reordering, graph inspection, and hierarchy zooming.</p>
+<table><thead><tr><th>Open visualization</th><th>Try this</th><th>Implementation</th></tr></thead><tbody>
+<tr><td><a href="index.html">Parallel coordinates: 2020 profiles</a><p><a href="../output/pcp_changes/index.html">Figure 4: paired changes PCP</a></p><p>175 matched countries; 2015 and 2020</p></td>
+<td>Set bundling to 0%, then 50%. Drag along an axis to brush a range. Click an axis title to reorder. Switch year or region and inspect the count.</td>
+<td><a href="app.js">app.js</a><p>Native JavaScript + SVG. Adoption-band bundling preserves exact axis intercepts. The changes view adds a shared zero reference and gain brushing.</p></td></tr>
+<tr><td><a href="treemap.html">Zoomable treemap</a><p>184 countries; 2020</p></td>
+<td>Click a region to zoom. Use Back. Switch between region-first and adoption-band-first hierarchies. Read count as area and adoption as leaf color.</td>
+<td><a href="treemap.js">treemap.js</a><p>JavaScript + local D3 v7. Both hierarchies retain the same leaves and total count.</p></td></tr>
+<tr><td><a href="network.html">Country similarity network</a><p>179 countries; 15,931 scored pairs; 797 default edges</p></td>
+<td>Switch all three layouts. Search for India. Inspect its neighbors, filter links by similarity, then reset. Pan and zoom for detail.</td>
+<td><a href="network.js">network.js</a><p>JavaScript + D3; NetworkX computes the stored layouts. Edges are derived similarities.</p></td></tr>
+</tbody></table><p><a href="README.md">Implementation map and demonstration checklist</a></p></section>
+<section class="start-section"><h2>Required scalar animations</h2><p>Eight uniformly spaced dates from July 1 to September 30, 2023. Complete daily analyses in the report use all 92 days.</p>
+<ul id="animation-links"><li><a href="../images/scivis/scivis_contour.gif">Scivis Contour</a></li><li><a href="../images/scivis/scivis_global.gif">Scivis Global</a></li><li><a href="../images/scivis/scivis_local.gif">Scivis Local</a></li></ul></section>
+<section class="start-section"><h2>Reading the evidence</h2><p><a href="../output/network_revision/index.html">Network method review: threshold choice, alternatives, new plots and research sources</a></p><p>Each selected figure has a question, encodings, measured findings, detailed interpretation, limitations and a takeaway. Country indicators and weather remain separate investigations. Fixed panels and declared thresholds keep their comparisons interpretable.</p>
+<p><a href="../output/lecture_previews/index.html">Lecture-inspired extensions and sensitivity data</a> · <a href="../output/report_changes/index.html">Which previous graphs were removed?</a> · <a href="../REPORT.md">Editable report text</a></p></section>
+<p class="note">When running locally, keep the server running while using these pages. All chart libraries and JSON inputs are supplied locally. The report lists a separate task allocation for each team member; shared work is limited to data preparation.</p>
+</main></body></html>

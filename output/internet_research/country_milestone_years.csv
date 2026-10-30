@@ -1,0 +1,317 @@
+code,region,threshold,first_observed_year,not_observed_by_2020,already_reached_at_start
+AGO,Africa,50,,True,False
+BDI,Africa,50,,True,False
+BEN,Africa,50,,True,False
+BFA,Africa,50,,True,False
+BWA,Africa,50,2020,False,False
+CIV,Africa,50,,True,False
+CMR,Africa,50,,True,False
+COG,Africa,50,,True,False
+CPV,Africa,50,2016,False,False
+DJI,Africa,50,2017,False,False
+DZA,Africa,50,2019,False,False
+EGY,Africa,50,2019,False,False
+ETH,Africa,50,,True,False
+GAB,Africa,50,2017,False,False
+GHA,Africa,50,2020,False,False
+GIN,Africa,50,,True,False
+GMB,Africa,50,,True,False
+GNB,Africa,50,,True,False
+GNQ,Africa,50,2020,False,False
+KEN,Africa,50,,True,False
+LBR,Africa,50,,True,False
+LBY,Africa,50,2019,False,False
+LSO,Africa,50,,True,False
+MAR,Africa,50,2010,False,False
+MDG,Africa,50,,True,False
+MLI,Africa,50,,True,False
+MOZ,Africa,50,,True,False
+MRT,Africa,50,,True,False
+MUS,Africa,50,2015,False,False
+MWI,Africa,50,,True,False
+NAM,Africa,50,2020,False,False
+NER,Africa,50,,True,False
+NGA,Africa,50,,True,False
+SEN,Africa,50,2020,False,False
+SLE,Africa,50,,True,False
+STP,Africa,50,2020,False,False
+SWZ,Africa,50,,True,False
+TCD,Africa,50,,True,False
+TGO,Africa,50,,True,False
+TUN,Africa,50,2017,False,False
+TZA,Africa,50,,True,False
+UGA,Africa,50,,True,False
+ZAF,Africa,50,2015,False,False
+ZMB,Africa,50,,True,False
+ZWE,Africa,50,,True,False
+ARE,Asia,50,2006,False,False
+ARM,Asia,50,2014,False,False
+BGD,Asia,50,,True,False
+BHR,Asia,50,2008,False,False
+BRN,Asia,50,2010,False,False
+BTN,Asia,50,2017,False,False
+CHN,Asia,50,2015,False,False
+GEO,Asia,50,2016,False,False
+HKG,Asia,50,2003,False,False
+IDN,Asia,50,2020,False,False
+IND,Asia,50,,True,False
+IRN,Asia,50,2016,False,False
+ISR,Asia,50,2008,False,False
+JOR,Asia,50,2015,False,False
+JPN,Asia,50,2004,False,False
+KAZ,Asia,50,2011,False,False
+KGZ,Asia,50,2017,False,False
+KHM,Asia,50,2018,False,False
+KOR,Asia,50,2001,False,False
+KWT,Asia,50,2009,False,False
+LAO,Asia,50,2020,False,False
+LBN,Asia,50,2011,False,False
+LKA,Asia,50,,True,False
+MAC,Asia,50,2009,False,False
+MDV,Asia,50,2015,False,False
+MYS,Asia,50,2006,False,False
+NPL,Asia,50,,True,False
+OMN,Asia,50,2012,False,False
+PHL,Asia,50,2020,False,False
+QAT,Asia,50,2009,False,False
+SAU,Asia,50,2012,False,False
+SGP,Asia,50,2003,False,False
+THA,Asia,50,2017,False,False
+TJK,Asia,50,,True,False
+TUR,Asia,50,2014,False,False
+UZB,Asia,50,2018,False,False
+VNM,Asia,50,2016,False,False
+ALB,Europe,50,2013,False,False
+AUT,Europe,50,2004,False,False
+BEL,Europe,50,2004,False,False
+BGR,Europe,50,2012,False,False
+BIH,Europe,50,2015,False,False
+CHE,Europe,50,2001,False,False
+CYP,Europe,50,2010,False,False
+CZE,Europe,50,2007,False,False
+DEU,Europe,50,2003,False,False
+DNK,Europe,50,2002,False,False
+ESP,Europe,50,2006,False,False
+EST,Europe,50,2004,False,False
+FIN,Europe,50,2002,False,False
+FRA,Europe,50,2007,False,False
+GBR,Europe,50,2002,False,False
+GRC,Europe,50,2011,False,False
+HRV,Europe,50,2009,False,False
+HUN,Europe,50,2007,False,False
+IRL,Europe,50,2006,False,False
+ISL,Europe,50,2002,False,False
+ITA,Europe,50,2010,False,False
+LTU,Europe,50,2008,False,False
+LUX,Europe,50,2003,False,False
+LVA,Europe,50,2006,False,False
+MDA,Europe,50,2014,False,False
+MKD,Europe,50,2009,False,False
+MLT,Europe,50,2008,False,False
+NLD,Europe,50,2002,False,False
+NOR,Europe,50,2000,False,True
+POL,Europe,50,2008,False,False
+PRT,Europe,50,2010,False,False
+ROU,Europe,50,2014,False,False
+RUS,Europe,50,2011,False,False
+SVK,Europe,50,2004,False,False
+SVN,Europe,50,2006,False,False
+SWE,Europe,50,2001,False,False
+UKR,Europe,50,2016,False,False
+ATG,North America,50,2011,False,False
+BHS,North America,50,2011,False,False
+BRB,North America,50,2005,False,False
+CAN,North America,50,2000,False,True
+CRI,North America,50,2014,False,False
+CUB,North America,50,2017,False,False
+DOM,North America,50,2015,False,False
+GRD,North America,50,2014,False,False
+GTM,North America,50,,True,False
+HND,North America,50,,True,False
+HTI,North America,50,,True,False
+JAM,North America,50,2017,False,False
+KNA,North America,50,2009,False,False
+LCA,North America,50,2014,False,False
+MEX,North America,50,2015,False,False
+NIC,North America,50,,True,False
+PAN,North America,50,2015,False,False
+SLV,North America,50,2019,False,False
+TTO,North America,50,2011,False,False
+USA,North America,50,2002,False,False
+VCT,North America,50,2016,False,False
+ARG,South America,50,2011,False,False
+BOL,South America,50,2020,False,False
+BRA,South America,50,2013,False,False
+CHL,South America,50,2011,False,False
+COL,South America,50,2013,False,False
+ECU,South America,50,2016,False,False
+GUY,South America,50,2019,False,False
+PER,South America,50,2017,False,False
+PRY,South America,50,2016,False,False
+URY,South America,50,2011,False,False
+FJI,Oceania,50,2017,False,False
+FSM,Oceania,50,,True,False
+KIR,Oceania,50,2020,False,False
+MHL,Oceania,50,2020,False,False
+NZL,Oceania,50,2001,False,False
+PNG,Oceania,50,,True,False
+SLB,Oceania,50,,True,False
+TON,Oceania,50,2019,False,False
+AGO,Africa,75,,True,False
+BDI,Africa,75,,True,False
+BEN,Africa,75,,True,False
+BFA,Africa,75,,True,False
+BWA,Africa,75,,True,False
+CIV,Africa,75,,True,False
+CMR,Africa,75,,True,False
+COG,Africa,75,,True,False
+CPV,Africa,75,,True,False
+DJI,Africa,75,,True,False
+DZA,Africa,75,,True,False
+EGY,Africa,75,,True,False
+ETH,Africa,75,,True,False
+GAB,Africa,75,,True,False
+GHA,Africa,75,,True,False
+GIN,Africa,75,,True,False
+GMB,Africa,75,,True,False
+GNB,Africa,75,,True,False
+GNQ,Africa,75,,True,False
+KEN,Africa,75,,True,False
+LBR,Africa,75,,True,False
+LBY,Africa,75,,True,False
+LSO,Africa,75,,True,False
+MAR,Africa,75,2019,False,False
+MDG,Africa,75,,True,False
+MLI,Africa,75,,True,False
+MOZ,Africa,75,,True,False
+MRT,Africa,75,,True,False
+MUS,Africa,75,,True,False
+MWI,Africa,75,,True,False
+NAM,Africa,75,,True,False
+NER,Africa,75,,True,False
+NGA,Africa,75,,True,False
+SEN,Africa,75,,True,False
+SLE,Africa,75,,True,False
+STP,Africa,75,,True,False
+SWZ,Africa,75,,True,False
+TCD,Africa,75,,True,False
+TGO,Africa,75,,True,False
+TUN,Africa,75,,True,False
+TZA,Africa,75,,True,False
+UGA,Africa,75,,True,False
+ZAF,Africa,75,,True,False
+ZMB,Africa,75,,True,False
+ZWE,Africa,75,,True,False
+ARE,Asia,75,2011,False,False
+ARM,Asia,75,2020,False,False
+BGD,Asia,75,,True,False
+BHR,Asia,75,2011,False,False
+BRN,Asia,75,2016,False,False
+BTN,Asia,75,2020,False,False
+CHN,Asia,75,,True,False
+GEO,Asia,75,,True,False
+HKG,Asia,75,2014,False,False
+IDN,Asia,75,,True,False
+IND,Asia,75,,True,False
+IRN,Asia,75,2020,False,False
+ISR,Asia,75,2014,False,False
+JOR,Asia,75,2020,False,False
+JPN,Asia,75,2008,False,False
+KAZ,Asia,75,2017,False,False
+KGZ,Asia,75,,True,False
+KHM,Asia,75,,True,False
+KOR,Asia,75,2006,False,False
+KWT,Asia,75,2013,False,False
+LAO,Asia,75,,True,False
+LBN,Asia,75,2016,False,False
+LKA,Asia,75,,True,False
+MAC,Asia,75,2015,False,False
+MDV,Asia,75,2019,False,False
+MYS,Asia,75,2016,False,False
+NPL,Asia,75,,True,False
+OMN,Asia,75,2016,False,False
+PHL,Asia,75,,True,False
+QAT,Asia,75,2013,False,False
+SAU,Asia,75,2017,False,False
+SGP,Asia,75,2013,False,False
+THA,Asia,75,2020,False,False
+TJK,Asia,75,,True,False
+TUR,Asia,75,2020,False,False
+UZB,Asia,75,,True,False
+VNM,Asia,75,,True,False
+ALB,Europe,75,,True,False
+AUT,Europe,75,2010,False,False
+BEL,Europe,75,2010,False,False
+BGR,Europe,75,,True,False
+BIH,Europe,75,,True,False
+CHE,Europe,75,2006,False,False
+CYP,Europe,75,2016,False,False
+CZE,Europe,75,2015,False,False
+DEU,Europe,75,2007,False,False
+DNK,Europe,75,2003,False,False
+ESP,Europe,75,2014,False,False
+EST,Europe,75,2011,False,False
+FIN,Europe,75,2006,False,False
+FRA,Europe,75,2010,False,False
+GBR,Europe,75,2007,False,False
+GRC,Europe,75,2019,False,False
+HRV,Europe,75,2018,False,False
+HUN,Europe,75,2014,False,False
+IRL,Europe,75,2012,False,False
+ISL,Europe,75,2002,False,False
+ITA,Europe,75,,True,False
+LTU,Europe,75,2017,False,False
+LUX,Europe,75,2007,False,False
+LVA,Europe,75,2013,False,False
+MDA,Europe,75,,True,False
+MKD,Europe,75,2018,False,False
+MLT,Europe,75,2015,False,False
+NLD,Europe,75,2005,False,False
+NOR,Europe,75,2003,False,False
+POL,Europe,75,2017,False,False
+PRT,Europe,75,2019,False,False
+ROU,Europe,75,2020,False,False
+RUS,Europe,75,2017,False,False
+SVK,Europe,75,2010,False,False
+SVN,Europe,75,2016,False,False
+SWE,Europe,75,2003,False,False
+UKR,Europe,75,2020,False,False
+ATG,North America,75,,True,False
+BHS,North America,75,2014,False,False
+BRB,North America,75,,True,False
+CAN,North America,75,2008,False,False
+CRI,North America,75,2019,False,False
+CUB,North America,75,,True,False
+DOM,North America,75,2019,False,False
+GRD,North America,75,,True,False
+GTM,North America,75,,True,False
+HND,North America,75,,True,False
+HTI,North America,75,,True,False
+JAM,North America,75,2020,False,False
+KNA,North America,75,,True,False
+LCA,North America,75,,True,False
+MEX,North America,75,,True,False
+NIC,North America,75,,True,False
+PAN,North America,75,,True,False
+SLV,North America,75,,True,False
+TTO,North America,75,2020,False,False
+USA,North America,75,2007,False,False
+VCT,North America,75,,True,False
+ARG,South America,75,2018,False,False
+BOL,South America,75,,True,False
+BRA,South America,75,2020,False,False
+CHL,South America,75,2015,False,False
+COL,South America,75,,True,False
+ECU,South America,75,,True,False
+GUY,South America,75,,True,False
+PER,South America,75,,True,False
+PRY,South America,75,,True,False
+URY,South America,75,2018,False,False
+FJI,Oceania,75,,True,False
+FSM,Oceania,75,,True,False
+KIR,Oceania,75,,True,False
+MHL,Oceania,75,,True,False
+NZL,Oceania,75,2009,False,False
+PNG,Oceania,75,,True,False
+SLB,Oceania,75,,True,False
+TON,Oceania,75,,True,False

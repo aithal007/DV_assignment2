@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "figures": 3,
+  "weather_cells": 13416,
+  "country_panel": 175,
+  "checks": [
+    "rolling maxima independently checked using cumulative sums",
+    "selected run lengths independently checked using grouped sequences",
+    "run-exceedance monotonicity",
+    "PNG integrity and visual review",
+    "local gallery links"
+  ],
+  "report_modified": false
+}

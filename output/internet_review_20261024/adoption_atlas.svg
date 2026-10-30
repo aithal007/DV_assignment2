@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1234.348303pt" height="945.491238pt" viewBox="0 0 1234.348303 945.491238" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-24T13:09:43.127232</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 945.491238 
+L 1234.348303 945.491238 
+L 1234.348303 -0 
+L 0 -0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 123.84 835.07625 
+L 352.708085 835.07625 
+L 352.708085 104.99625 
+L 123.84 104.99625 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p706ac226b5)">
+    <image xlink:href="data:image/png;base64,
+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" id="image7f9afa1f39" transform="scale(1 -1) translate(0 -730.08)" x="123.84" y="-104.891238" width="228.96" height="730.08"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="ma3e4bab69e" d="M 0 0 
+L 0 -3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="129.28924" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="129.28924" y="95.834141" transform="rotate(-0 129.28924 95.834141)">2000</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="183.781641" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="183.781641" y="95.834141" transform="rotate(-0 183.781641 95.834141)">2005</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="238.274043" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="238.274043" y="95.834141" transform="rotate(-0 238.274043 95.834141)">2010</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="292.766444" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="292.766444" y="95.834141" transform="rotate(-0 292.766444 95.834141)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="347.258845" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="347.258845" y="95.834141" transform="rotate(-0 347.258845 95.834141)">2020</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_6"/>
+     <g id="text_6">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="114.733211" transform="rotate(-0 120.34 114.733211)">[Africa] Burundi</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_7"/>
+     <g id="text_7">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="128.508306" transform="rotate(-0 120.34 128.508306)">Uganda</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_8"/>
+     <g id="text_8">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="142.2834" transform="rotate(-0 120.34 142.2834)">Chad</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_9"/>
+     <g id="text_9">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="156.058494" transform="rotate(-0 120.34 156.058494)">Madagascar</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_10"/>
+     <g id="text_10">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="169.833589" transform="rotate(-0 120.34 169.833589)">Niger</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_11"/>
+     <g id="text_11">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="183.608683" transform="rotate(-0 120.34 183.608683)">Burkina Faso</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_12"/>
+     <g id="text_12">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="197.383777" transform="rotate(-0 120.34 197.383777)">Malawi</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_13"/>
+     <g id="text_13">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="211.158872" transform="rotate(-0 120.34 211.158872)">Mozambique</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_14"/>
+     <g id="text_14">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="224.933966" transform="rotate(-0 120.34 224.933966)">Zambia</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_15"/>
+     <g id="text_15">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="238.70906" transform="rotate(-0 120.34 238.70906)">Ethiopia</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_16"/>
+     <g id="text_16">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="252.484155" transform="rotate(-0 120.34 252.484155)">Sierra Leone</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_17"/>
+     <g id="text_17">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="266.259249" transform="rotate(-0 120.34 266.259249)">Tanzania</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_18"/>
+     <g id="text_18">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="280.034343" transform="rotate(-0 120.34 280.034343)">Guinea-Bissau</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_19"/>
+     <g id="text_19">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="293.809145" transform="rotate(-0 120.34 293.809145)">Congo</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_20"/>
+     <g id="text_20">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="307.584532" transform="rotate(-0 120.34 307.584532)">Benin</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_21"/>
+     <g id="text_21">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="321.359626" transform="rotate(-0 120.34 321.359626)">Liberia</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_22"/>
+     <g id="text_22">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="335.134428" transform="rotate(-0 120.34 335.134428)">Kenya</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_23"/>
+     <g id="text_23">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="348.909815" transform="rotate(-0 120.34 348.909815)">Guinea</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_24"/>
+     <g id="text_24">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="362.684616" transform="rotate(-0 120.34 362.684616)">Togo</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_25"/>
+     <g id="text_25">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="376.460004" transform="rotate(-0 120.34 376.460004)">Mali</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_26"/>
+     <g id="text_26">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="390.235098" transform="rotate(-0 120.34 390.235098)">Zimbabwe</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_27"/>
+     <g id="text_27">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="404.010192" transform="rotate(-0 120.34 404.010192)">Mauritania</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_28"/>
+     <g id="text_28">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="417.785287" transform="rotate(-0 120.34 417.785287)">Nigeria</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_29"/>
+     <g id="text_29">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="431.560381" transform="rotate(-0 120.34 431.560381)">Angola</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_30"/>
+     <g id="text_30">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="445.335475" transform="rotate(-0 120.34 445.335475)">Gambia</text>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_31"/>
+     <g id="text_31">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="459.11057" transform="rotate(-0 120.34 459.11057)">Cote d'Ivoire</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_32"/>
+     <g id="text_32">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="472.885371" transform="rotate(-0 120.34 472.885371)">Cameroon</text>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_33"/>
+     <g id="text_33">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="486.660758" transform="rotate(-0 120.34 486.660758)">Lesotho</text>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_34"/>
+     <g id="text_34">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="500.435853" transform="rotate(-0 120.34 500.435853)">Eswatini</text>
+     </g>
+    </g>
+    <g id="ytick_30">
+     <g id="line2d_35"/>
+     <g id="text_35">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="514.210947" transform="rotate(-0 120.34 514.210947)">Sao Tome and Principe</text>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_36"/>
+     <g id="text_36">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="527.985748" transform="rotate(-0 120.34 527.985748)">Botswana</text>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_37"/>
+     <g id="text_37">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="541.761136" transform="rotate(-0 120.34 541.761136)">Senegal</text>
+     </g>
+    </g>
+    <g id="ytick_33">
+     <g id="line2d_38"/>
+     <g id="text_38">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="555.53623" transform="rotate(-0 120.34 555.53623)">Equatorial Guinea</text>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_39"/>
+     <g id="text_39">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="569.311324" transform="rotate(-0 120.34 569.311324)">Namibia</text>
+     </g>
+    </g>
+    <g id="ytick_35">
+     <g id="line2d_40"/>
+     <g id="text_40">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="583.086419" transform="rotate(-0 120.34 583.086419)">Djibouti</text>
+     </g>
+    </g>
+    <g id="ytick_36">
+     <g id="line2d_41"/>
+     <g id="text_41">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="596.861513" transform="rotate(-0 120.34 596.861513)">Ghana</text>
+     </g>
+    </g>
+    <g id="ytick_37">
+     <g id="line2d_42"/>
+     <g id="text_42">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="610.636607" transform="rotate(-0 120.34 610.636607)">Algeria</text>
+     </g>
+    </g>
+    <g id="ytick_38">
+     <g id="line2d_43"/>
+     <g id="text_43">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="624.411702" transform="rotate(-0 120.34 624.411702)">Gabon</text>
+     </g>
+    </g>
+    <g id="ytick_39">
+     <g id="line2d_44"/>
+     <g id="text_44">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="638.186796" transform="rotate(-0 120.34 638.186796)">Mauritius</text>
+     </g>
+    </g>
+    <g id="ytick_40">
+     <g id="line2d_45"/>
+     <g id="text_45">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="651.96189" transform="rotate(-0 120.34 651.96189)">Tunisia</text>
+     </g>
+    </g>
+    <g id="ytick_41">
+     <g id="line2d_46"/>
+     <g id="text_46">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="665.736985" transform="rotate(-0 120.34 665.736985)">Cape Verde</text>
+     </g>
+    </g>
+    <g id="ytick_42">
+     <g id="line2d_47"/>
+     <g id="text_47">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="679.511786" transform="rotate(-0 120.34 679.511786)">Egypt</text>
+     </g>
+    </g>
+    <g id="ytick_43">
+     <g id="line2d_48"/>
+     <g id="text_48">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="693.287173" transform="rotate(-0 120.34 693.287173)">South Africa</text>
+     </g>
+    </g>
+    <g id="ytick_44">
+     <g id="line2d_49"/>
+     <g id="text_49">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="707.062268" transform="rotate(-0 120.34 707.062268)">Libya</text>
+     </g>
+    </g>
+    <g id="ytick_45">
+     <g id="line2d_50"/>
+     <g id="text_50">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="720.837069" transform="rotate(-0 120.34 720.837069)">Morocco</text>
+     </g>
+    </g>
+    <g id="ytick_46">
+     <g id="line2d_51"/>
+     <g id="text_51">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="734.612457" transform="rotate(-0 120.34 734.612457)">[Asia] Tajikistan</text>
+     </g>
+    </g>
+    <g id="ytick_47">
+     <g id="line2d_52"/>
+     <g id="text_52">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="748.387551" transform="rotate(-0 120.34 748.387551)">Bangladesh</text>
+     </g>
+    </g>
+    <g id="ytick_48">
+     <g id="line2d_53"/>
+     <g id="text_53">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="762.162645" transform="rotate(-0 120.34 762.162645)">Sri Lanka</text>
+     </g>
+    </g>
+    <g id="ytick_49">
+     <g id="line2d_54"/>
+     <g id="text_54">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="775.93774" transform="rotate(-0 120.34 775.93774)">Nepal</text>
+     </g>
+    </g>
+    <g id="ytick_50">
+     <g id="line2d_55"/>
+     <g id="text_55">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="789.712834" transform="rotate(-0 120.34 789.712834)">India</text>
+     </g>
+    </g>
+    <g id="ytick_51">
+     <g id="line2d_56"/>
+     <g id="text_56">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="803.487928" transform="rotate(-0 120.34 803.487928)">Indonesia</text>
+     </g>
+    </g>
+    <g id="ytick_52">
+     <g id="line2d_57"/>
+     <g id="text_57">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="817.263023" transform="rotate(-0 120.34 817.263023)">Philippines</text>
+     </g>
+    </g>
+    <g id="ytick_53">
+     <g id="line2d_58"/>
+     <g id="text_58">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="120.34" y="831.037824" transform="rotate(-0 120.34 831.037824)">Laos</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_59">
+    <path d="M 123.84 104.99625 
+L 352.708085 104.99625 
+" clip-path="url(#p706ac226b5)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_60">
+    <path d="M 123.84 724.875495 
+L 352.708085 724.875495 
+" clip-path="url(#p706ac226b5)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="113.832039" transform="rotate(-0 358.157325 113.832039)">6</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="127.607134" transform="rotate(-0 358.157325 127.607134)">7</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="141.382228" transform="rotate(-0 358.157325 141.382228)">8</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="155.157322" transform="rotate(-0 358.157325 155.157322)">11</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="168.932417" transform="rotate(-0 358.157325 168.932417)">12</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="182.707511" transform="rotate(-0 358.157325 182.707511)">13</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="196.482605" transform="rotate(-0 358.157325 196.482605)">14</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="210.2577" transform="rotate(-0 358.157325 210.2577)">14</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="224.032794" transform="rotate(-0 358.157325 224.032794)">15</text>
+   </g>
+   <g id="text_68">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="237.807888" transform="rotate(-0 358.157325 237.807888)">16</text>
+   </g>
+   <g id="text_69">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="251.582983" transform="rotate(-0 358.157325 251.582983)">17</text>
+   </g>
+   <g id="text_70">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="265.358077" transform="rotate(-0 358.157325 265.358077)">19</text>
+   </g>
+   <g id="text_71">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="279.133171" transform="rotate(-0 358.157325 279.133171)">20</text>
+   </g>
+   <g id="text_72">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="292.908266" transform="rotate(-0 358.157325 292.908266)">22</text>
+   </g>
+   <g id="text_73">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="306.68336" transform="rotate(-0 358.157325 306.68336)">22</text>
+   </g>
+   <g id="text_74">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="320.458454" transform="rotate(-0 358.157325 320.458454)">23</text>
+   </g>
+   <g id="text_75">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="334.233549" transform="rotate(-0 358.157325 334.233549)">25</text>
+   </g>
+   <g id="text_76">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="348.008643" transform="rotate(-0 358.157325 348.008643)">26</text>
+   </g>
+   <g id="text_77">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="361.783737" transform="rotate(-0 358.157325 361.783737)">29</text>
+   </g>
+   <g id="text_78">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="375.558832" transform="rotate(-0 358.157325 375.558832)">29</text>
+   </g>
+   <g id="text_79">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="389.333926" transform="rotate(-0 358.157325 389.333926)">29</text>
+   </g>
+   <g id="text_80">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="403.10902" transform="rotate(-0 358.157325 403.10902)">30</text>
+   </g>
+   <g id="text_81">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="416.884115" transform="rotate(-0 358.157325 416.884115)">32</text>
+   </g>
+   <g id="text_82">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="430.659209" transform="rotate(-0 358.157325 430.659209)">33</text>
+   </g>
+   <g id="text_83">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="444.434304" transform="rotate(-0 358.157325 444.434304)">36</text>
+   </g>
+   <g id="text_84">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="458.209398" transform="rotate(-0 358.157325 458.209398)">36</text>
+   </g>
+   <g id="text_85">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="471.984492" transform="rotate(-0 358.157325 471.984492)">38</text>
+   </g>
+   <g id="text_86">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="485.759587" transform="rotate(-0 358.157325 485.759587)">44</text>
+   </g>
+   <g id="text_87">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="499.534681" transform="rotate(-0 358.157325 499.534681)">49</text>
+   </g>
+   <g id="text_88">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="513.309775" transform="rotate(-0 358.157325 513.309775)">52</text>
+   </g>
+   <g id="text_89">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="527.08487" transform="rotate(-0 358.157325 527.08487)">52</text>
+   </g>
+   <g id="text_90">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="540.859964" transform="rotate(-0 358.157325 540.859964)">53</text>
+   </g>
+   <g id="text_91">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="554.635058" transform="rotate(-0 358.157325 554.635058)">55</text>
+   </g>
+   <g id="text_92">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="568.410153" transform="rotate(-0 358.157325 568.410153)">58</text>
+   </g>
+   <g id="text_93">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="582.185247" transform="rotate(-0 358.157325 582.185247)">60</text>
+   </g>
+   <g id="text_94">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="595.960341" transform="rotate(-0 358.157325 595.960341)">63</text>
+   </g>
+   <g id="text_95">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="609.735436" transform="rotate(-0 358.157325 609.735436)">63</text>
+   </g>
+   <g id="text_96">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="623.51053" transform="rotate(-0 358.157325 623.51053)">64</text>
+   </g>
+   <g id="text_97">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="637.285624" transform="rotate(-0 358.157325 637.285624)">68</text>
+   </g>
+   <g id="text_98">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="651.060719" transform="rotate(-0 358.157325 651.060719)">69</text>
+   </g>
+   <g id="text_99">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="664.835813" transform="rotate(-0 358.157325 664.835813)">69</text>
+   </g>
+   <g id="text_100">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="678.610907" transform="rotate(-0 358.157325 678.610907)">72</text>
+   </g>
+   <g id="text_101">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="692.386002" transform="rotate(-0 358.157325 692.386002)">72</text>
+   </g>
+   <g id="text_102">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="706.161096" transform="rotate(-0 358.157325 706.161096)">74</text>
+   </g>
+   <g id="text_103">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="719.93619" transform="rotate(-0 358.157325 719.93619)">84</text>
+   </g>
+   <g id="text_104">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="733.711285" transform="rotate(-0 358.157325 733.711285)">28</text>
+   </g>
+   <g id="text_105">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="747.486379" transform="rotate(-0 358.157325 747.486379)">36</text>
+   </g>
+   <g id="text_106">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="761.261473" transform="rotate(-0 358.157325 761.261473)">36</text>
+   </g>
+   <g id="text_107">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="775.036568" transform="rotate(-0 358.157325 775.036568)">37</text>
+   </g>
+   <g id="text_108">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="788.811662" transform="rotate(-0 358.157325 788.811662)">43</text>
+   </g>
+   <g id="text_109">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="802.586756" transform="rotate(-0 358.157325 802.586756)">54</text>
+   </g>
+   <g id="text_110">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="816.361851" transform="rotate(-0 358.157325 816.361851)">54</text>
+   </g>
+   <g id="text_111">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="830.136945" transform="rotate(-0 358.157325 830.136945)">54</text>
+   </g>
+   <g id="text_112">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="358.157325" y="81.57859" transform="rotate(-0 358.157325 81.57859)">End %</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 547.245957 835.07625 
+L 776.114043 835.07625 
+L 776.114043 104.99625 
+L 547.245957 104.99625 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p7d6b932754)">
+    <image xlink:href="data:image/png;base64,
+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" id="image36d8f02229" transform="scale(1 -1) translate(0 -730.08)" x="547.2" y="-104.891238" width="228.96" height="730.08"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_6">
+     <g id="line2d_61">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="552.695198" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_113">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="552.695198" y="95.834141" transform="rotate(-0 552.695198 95.834141)">2000</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_62">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="607.187599" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_114">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="607.187599" y="95.834141" transform="rotate(-0 607.187599 95.834141)">2005</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_63">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="661.68" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_115">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="661.68" y="95.834141" transform="rotate(-0 661.68 95.834141)">2010</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_64">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="716.172401" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_116">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="716.172401" y="95.834141" transform="rotate(-0 716.172401 95.834141)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_65">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="770.664802" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_117">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="770.664802" y="95.834141" transform="rotate(-0 770.664802 95.834141)">2020</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_54">
+     <g id="line2d_66"/>
+     <g id="text_118">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="114.733211" transform="rotate(-0 543.745957 114.733211)">[Asia] Cambodia</text>
+     </g>
+    </g>
+    <g id="ytick_55">
+     <g id="line2d_67"/>
+     <g id="text_119">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="128.508306" transform="rotate(-0 543.745957 128.508306)">China</text>
+     </g>
+    </g>
+    <g id="ytick_56">
+     <g id="line2d_68"/>
+     <g id="text_120">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="142.2834" transform="rotate(-0 543.745957 142.2834)">Vietnam</text>
+     </g>
+    </g>
+    <g id="ytick_57">
+     <g id="line2d_69"/>
+     <g id="text_121">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="156.058494" transform="rotate(-0 543.745957 156.058494)">Uzbekistan</text>
+     </g>
+    </g>
+    <g id="ytick_58">
+     <g id="line2d_70"/>
+     <g id="text_122">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="169.833296" transform="rotate(-0 543.745957 169.833296)">Kyrgyzstan</text>
+     </g>
+    </g>
+    <g id="ytick_59">
+     <g id="line2d_71"/>
+     <g id="text_123">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="183.608683" transform="rotate(-0 543.745957 183.608683)">Georgia</text>
+     </g>
+    </g>
+    <g id="ytick_60">
+     <g id="line2d_72"/>
+     <g id="text_124">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="197.383484" transform="rotate(-0 543.745957 197.383484)">Iran</text>
+     </g>
+    </g>
+    <g id="ytick_61">
+     <g id="line2d_73"/>
+     <g id="text_125">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="211.158872" transform="rotate(-0 543.745957 211.158872)">Armenia</text>
+     </g>
+    </g>
+    <g id="ytick_62">
+     <g id="line2d_74"/>
+     <g id="text_126">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="224.933966" transform="rotate(-0 543.745957 224.933966)">Bhutan</text>
+     </g>
+    </g>
+    <g id="ytick_63">
+     <g id="line2d_75"/>
+     <g id="text_127">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="238.70906" transform="rotate(-0 543.745957 238.70906)">Turkey</text>
+     </g>
+    </g>
+    <g id="ytick_64">
+     <g id="line2d_76"/>
+     <g id="text_128">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="252.484155" transform="rotate(-0 543.745957 252.484155)">Thailand</text>
+     </g>
+    </g>
+    <g id="ytick_65">
+     <g id="line2d_77"/>
+     <g id="text_129">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="266.259249" transform="rotate(-0 543.745957 266.259249)">Jordan</text>
+     </g>
+    </g>
+    <g id="ytick_66">
+     <g id="line2d_78"/>
+     <g id="text_130">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="280.034343" transform="rotate(-0 543.745957 280.034343)">Maldives</text>
+     </g>
+    </g>
+    <g id="ytick_67">
+     <g id="line2d_79"/>
+     <g id="text_131">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="293.809438" transform="rotate(-0 543.745957 293.809438)">Lebanon</text>
+     </g>
+    </g>
+    <g id="ytick_68">
+     <g id="line2d_80"/>
+     <g id="text_132">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="307.584532" transform="rotate(-0 543.745957 307.584532)">Kazakhstan</text>
+     </g>
+    </g>
+    <g id="ytick_69">
+     <g id="line2d_81"/>
+     <g id="text_133">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="321.359333" transform="rotate(-0 543.745957 321.359333)">Macao</text>
+     </g>
+    </g>
+    <g id="ytick_70">
+     <g id="line2d_82"/>
+     <g id="text_134">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="335.134721" transform="rotate(-0 543.745957 335.134721)">Malaysia</text>
+     </g>
+    </g>
+    <g id="ytick_71">
+     <g id="line2d_83"/>
+     <g id="text_135">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="348.909815" transform="rotate(-0 543.745957 348.909815)">Israel</text>
+     </g>
+    </g>
+    <g id="ytick_72">
+     <g id="line2d_84"/>
+     <g id="text_136">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="362.684616" transform="rotate(-0 543.745957 362.684616)">Japan</text>
+     </g>
+    </g>
+    <g id="ytick_73">
+     <g id="line2d_85"/>
+     <g id="text_137">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="376.460004" transform="rotate(-0 543.745957 376.460004)">Singapore</text>
+     </g>
+    </g>
+    <g id="ytick_74">
+     <g id="line2d_86"/>
+     <g id="text_138">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="390.234805" transform="rotate(-0 543.745957 390.234805)">Hong Kong</text>
+     </g>
+    </g>
+    <g id="ytick_75">
+     <g id="line2d_87"/>
+     <g id="text_139">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="404.009899" transform="rotate(-0 543.745957 404.009899)">Oman</text>
+     </g>
+    </g>
+    <g id="ytick_76">
+     <g id="line2d_88"/>
+     <g id="text_140">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="417.785287" transform="rotate(-0 543.745957 417.785287)">Brunei</text>
+     </g>
+    </g>
+    <g id="ytick_77">
+     <g id="line2d_89"/>
+     <g id="text_141">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="431.560381" transform="rotate(-0 543.745957 431.560381)">South Korea</text>
+     </g>
+    </g>
+    <g id="ytick_78">
+     <g id="line2d_90"/>
+     <g id="text_142">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="445.335475" transform="rotate(-0 543.745957 445.335475)">Saudi Arabia</text>
+     </g>
+    </g>
+    <g id="ytick_79">
+     <g id="line2d_91"/>
+     <g id="text_143">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="459.11057" transform="rotate(-0 543.745957 459.11057)">Kuwait</text>
+     </g>
+    </g>
+    <g id="ytick_80">
+     <g id="line2d_92"/>
+     <g id="text_144">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="472.885371" transform="rotate(-0 543.745957 472.885371)">Qatar</text>
+     </g>
+    </g>
+    <g id="ytick_81">
+     <g id="line2d_93"/>
+     <g id="text_145">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="486.660758" transform="rotate(-0 543.745957 486.660758)">Bahrain</text>
+     </g>
+    </g>
+    <g id="ytick_82">
+     <g id="line2d_94"/>
+     <g id="text_146">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="500.435853" transform="rotate(-0 543.745957 500.435853)">United Arab Emirates</text>
+     </g>
+    </g>
+    <g id="ytick_83">
+     <g id="line2d_95"/>
+     <g id="text_147">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="514.210947" transform="rotate(-0 543.745957 514.210947)">[Europe] Bulgaria</text>
+     </g>
+    </g>
+    <g id="ytick_84">
+     <g id="line2d_96"/>
+     <g id="text_148">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="527.986041" transform="rotate(-0 543.745957 527.986041)">Italy</text>
+     </g>
+    </g>
+    <g id="ytick_85">
+     <g id="line2d_97"/>
+     <g id="text_149">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="541.761136" transform="rotate(-0 543.745957 541.761136)">Albania</text>
+     </g>
+    </g>
+    <g id="ytick_86">
+     <g id="line2d_98"/>
+     <g id="text_150">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="555.53623" transform="rotate(-0 543.745957 555.53623)">Bosnia and Herzegovina</text>
+     </g>
+    </g>
+    <g id="ytick_87">
+     <g id="line2d_99"/>
+     <g id="text_151">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="569.311324" transform="rotate(-0 543.745957 569.311324)">Moldova</text>
+     </g>
+    </g>
+    <g id="ytick_88">
+     <g id="line2d_100"/>
+     <g id="text_152">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="583.086419" transform="rotate(-0 543.745957 583.086419)">Ukraine</text>
+     </g>
+    </g>
+    <g id="ytick_89">
+     <g id="line2d_101"/>
+     <g id="text_153">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="596.86122" transform="rotate(-0 543.745957 596.86122)">Greece</text>
+     </g>
+    </g>
+    <g id="ytick_90">
+     <g id="line2d_102"/>
+     <g id="text_154">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="610.636607" transform="rotate(-0 543.745957 610.636607)">Portugal</text>
+     </g>
+    </g>
+    <g id="ytick_91">
+     <g id="line2d_103"/>
+     <g id="text_155">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="624.411702" transform="rotate(-0 543.745957 624.411702)">Croatia</text>
+     </g>
+    </g>
+    <g id="ytick_92">
+     <g id="line2d_104"/>
+     <g id="text_156">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="638.186796" transform="rotate(-0 543.745957 638.186796)">Romania</text>
+     </g>
+    </g>
+    <g id="ytick_93">
+     <g id="line2d_105"/>
+     <g id="text_157">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="651.96189" transform="rotate(-0 543.745957 651.96189)">Czechia</text>
+     </g>
+    </g>
+    <g id="ytick_94">
+     <g id="line2d_106"/>
+     <g id="text_158">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="665.736985" transform="rotate(-0 543.745957 665.736985)">North Macedonia</text>
+     </g>
+    </g>
+    <g id="ytick_95">
+     <g id="line2d_107"/>
+     <g id="text_159">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="679.512079" transform="rotate(-0 543.745957 679.512079)">Lithuania</text>
+     </g>
+    </g>
+    <g id="ytick_96">
+     <g id="line2d_108"/>
+     <g id="text_160">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="693.287173" transform="rotate(-0 543.745957 693.287173)">Poland</text>
+     </g>
+    </g>
+    <g id="ytick_97">
+     <g id="line2d_109"/>
+     <g id="text_161">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="707.061975" transform="rotate(-0 543.745957 707.061975)">France</text>
+     </g>
+    </g>
+    <g id="ytick_98">
+     <g id="line2d_110"/>
+     <g id="text_162">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="720.837069" transform="rotate(-0 543.745957 720.837069)">Hungary</text>
+     </g>
+    </g>
+    <g id="ytick_99">
+     <g id="line2d_111"/>
+     <g id="text_163">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="734.612457" transform="rotate(-0 543.745957 734.612457)">Russia</text>
+     </g>
+    </g>
+    <g id="ytick_100">
+     <g id="line2d_112"/>
+     <g id="text_164">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="748.387551" transform="rotate(-0 543.745957 748.387551)">Slovenia</text>
+     </g>
+    </g>
+    <g id="ytick_101">
+     <g id="line2d_113"/>
+     <g id="text_165">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="762.162645" transform="rotate(-0 543.745957 762.162645)">Malta</text>
+     </g>
+    </g>
+    <g id="ytick_102">
+     <g id="line2d_114"/>
+     <g id="text_166">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="775.93774" transform="rotate(-0 543.745957 775.93774)">Austria</text>
+     </g>
+    </g>
+    <g id="ytick_103">
+     <g id="line2d_115"/>
+     <g id="text_167">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="789.712834" transform="rotate(-0 543.745957 789.712834)">Latvia</text>
+     </g>
+    </g>
+    <g id="ytick_104">
+     <g id="line2d_116"/>
+     <g id="text_168">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="803.487928" transform="rotate(-0 543.745957 803.487928)">Estonia</text>
+     </g>
+    </g>
+    <g id="ytick_105">
+     <g id="line2d_117"/>
+     <g id="text_169">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="817.26273" transform="rotate(-0 543.745957 817.26273)">Germany</text>
+     </g>
+    </g>
+    <g id="ytick_106">
+     <g id="line2d_118"/>
+     <g id="text_170">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="543.745957" y="831.038117" transform="rotate(-0 543.745957 831.038117)">Slovakia</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_119">
+    <path d="M 547.245957 104.99625 
+L 776.114043 104.99625 
+" clip-path="url(#p7d6b932754)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_120">
+    <path d="M 547.245957 504.473986 
+L 776.114043 504.473986 
+" clip-path="url(#p7d6b932754)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_171">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="113.832039" transform="rotate(-0 781.563283 113.832039)">56</text>
+   </g>
+   <g id="text_172">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="127.607134" transform="rotate(-0 781.563283 127.607134)">70</text>
+   </g>
+   <g id="text_173">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="141.382228" transform="rotate(-0 781.563283 141.382228)">70</text>
+   </g>
+   <g id="text_174">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="155.157322" transform="rotate(-0 781.563283 155.157322)">71</text>
+   </g>
+   <g id="text_175">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="168.932417" transform="rotate(-0 781.563283 168.932417)">72</text>
+   </g>
+   <g id="text_176">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="182.707511" transform="rotate(-0 781.563283 182.707511)">73</text>
+   </g>
+   <g id="text_177">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="196.482605" transform="rotate(-0 781.563283 196.482605)">76</text>
+   </g>
+   <g id="text_178">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="210.2577" transform="rotate(-0 781.563283 210.2577)">77</text>
+   </g>
+   <g id="text_179">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="224.032794" transform="rotate(-0 781.563283 224.032794)">77</text>
+   </g>
+   <g id="text_180">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="237.807888" transform="rotate(-0 781.563283 237.807888)">78</text>
+   </g>
+   <g id="text_181">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="251.582983" transform="rotate(-0 781.563283 251.582983)">78</text>
+   </g>
+   <g id="text_182">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="265.358077" transform="rotate(-0 781.563283 265.358077)">78</text>
+   </g>
+   <g id="text_183">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="279.133171" transform="rotate(-0 781.563283 279.133171)">79</text>
+   </g>
+   <g id="text_184">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="292.908266" transform="rotate(-0 781.563283 292.908266)">82</text>
+   </g>
+   <g id="text_185">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="306.68336" transform="rotate(-0 781.563283 306.68336)">86</text>
+   </g>
+   <g id="text_186">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="320.458454" transform="rotate(-0 781.563283 320.458454)">87</text>
+   </g>
+   <g id="text_187">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="334.233549" transform="rotate(-0 781.563283 334.233549)">90</text>
+   </g>
+   <g id="text_188">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="348.008643" transform="rotate(-0 781.563283 348.008643)">90</text>
+   </g>
+   <g id="text_189">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="361.783737" transform="rotate(-0 781.563283 361.783737)">90</text>
+   </g>
+   <g id="text_190">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="375.558832" transform="rotate(-0 781.563283 375.558832)">92</text>
+   </g>
+   <g id="text_191">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="389.333926" transform="rotate(-0 781.563283 389.333926)">92</text>
+   </g>
+   <g id="text_192">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="403.10902" transform="rotate(-0 781.563283 403.10902)">95</text>
+   </g>
+   <g id="text_193">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="416.884115" transform="rotate(-0 781.563283 416.884115)">96</text>
+   </g>
+   <g id="text_194">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="430.659209" transform="rotate(-0 781.563283 430.659209)">97</text>
+   </g>
+   <g id="text_195">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="444.434304" transform="rotate(-0 781.563283 444.434304)">98</text>
+   </g>
+   <g id="text_196">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="458.209398" transform="rotate(-0 781.563283 458.209398)">99</text>
+   </g>
+   <g id="text_197">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="471.984492" transform="rotate(-0 781.563283 471.984492)">100</text>
+   </g>
+   <g id="text_198">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="485.759587" transform="rotate(-0 781.563283 485.759587)">100</text>
+   </g>
+   <g id="text_199">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="499.534681" transform="rotate(-0 781.563283 499.534681)">100</text>
+   </g>
+   <g id="text_200">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="513.309775" transform="rotate(-0 781.563283 513.309775)">70</text>
+   </g>
+   <g id="text_201">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="527.08487" transform="rotate(-0 781.563283 527.08487)">70</text>
+   </g>
+   <g id="text_202">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="540.859964" transform="rotate(-0 781.563283 540.859964)">72</text>
+   </g>
+   <g id="text_203">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="554.635058" transform="rotate(-0 781.563283 554.635058)">73</text>
+   </g>
+   <g id="text_204">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="568.410153" transform="rotate(-0 781.563283 568.410153)">74</text>
+   </g>
+   <g id="text_205">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="582.185247" transform="rotate(-0 781.563283 582.185247)">75</text>
+   </g>
+   <g id="text_206">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="595.960341" transform="rotate(-0 781.563283 595.960341)">78</text>
+   </g>
+   <g id="text_207">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="609.735436" transform="rotate(-0 781.563283 609.735436)">78</text>
+   </g>
+   <g id="text_208">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="623.51053" transform="rotate(-0 781.563283 623.51053)">78</text>
+   </g>
+   <g id="text_209">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="637.285624" transform="rotate(-0 781.563283 637.285624)">78</text>
+   </g>
+   <g id="text_210">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="651.060719" transform="rotate(-0 781.563283 651.060719)">81</text>
+   </g>
+   <g id="text_211">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="664.835813" transform="rotate(-0 781.563283 664.835813)">81</text>
+   </g>
+   <g id="text_212">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="678.610907" transform="rotate(-0 781.563283 678.610907)">83</text>
+   </g>
+   <g id="text_213">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="692.386002" transform="rotate(-0 781.563283 692.386002)">83</text>
+   </g>
+   <g id="text_214">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="706.161096" transform="rotate(-0 781.563283 706.161096)">85</text>
+   </g>
+   <g id="text_215">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="719.93619" transform="rotate(-0 781.563283 719.93619)">85</text>
+   </g>
+   <g id="text_216">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="733.711285" transform="rotate(-0 781.563283 733.711285)">85</text>
+   </g>
+   <g id="text_217">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="747.486379" transform="rotate(-0 781.563283 747.486379)">87</text>
+   </g>
+   <g id="text_218">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="761.261473" transform="rotate(-0 781.563283 761.261473)">87</text>
+   </g>
+   <g id="text_219">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="775.036568" transform="rotate(-0 781.563283 775.036568)">88</text>
+   </g>
+   <g id="text_220">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="788.811662" transform="rotate(-0 781.563283 788.811662)">89</text>
+   </g>
+   <g id="text_221">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="802.586756" transform="rotate(-0 781.563283 802.586756)">89</text>
+   </g>
+   <g id="text_222">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="816.361851" transform="rotate(-0 781.563283 816.361851)">90</text>
+   </g>
+   <g id="text_223">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="830.136945" transform="rotate(-0 781.563283 830.136945)">90</text>
+   </g>
+   <g id="text_224">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="781.563283" y="81.57859" transform="rotate(-0 781.563283 81.57859)">End %</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_4">
+    <path d="M 970.651915 835.07625 
+L 1199.52 835.07625 
+L 1199.52 104.99625 
+L 970.651915 104.99625 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g clip-path="url(#p187142836b)">
+    <image xlink:href="data:image/png;base64,
+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" id="imagef632987b84" transform="scale(1 -1) translate(0 -730.08)" x="970.56" y="-104.891238" width="228.96" height="730.08"/>
+   </g>
+   <g id="matplotlib.axis_5">
+    <g id="xtick_11">
+     <g id="line2d_121">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="976.101155" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_225">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="976.101155" y="95.834141" transform="rotate(-0 976.101155 95.834141)">2000</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_122">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="1030.593556" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_226">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1030.593556" y="95.834141" transform="rotate(-0 1030.593556 95.834141)">2005</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_123">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="1085.085957" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_227">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1085.085957" y="95.834141" transform="rotate(-0 1085.085957 95.834141)">2010</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_124">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="1139.578359" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_228">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1139.578359" y="95.834141" transform="rotate(-0 1139.578359 95.834141)">2015</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_125">
+      <g>
+       <use xlink:href="#ma3e4bab69e" x="1194.07076" y="104.99625" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_229">
+      <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1194.07076" y="95.834141" transform="rotate(-0 1194.07076 95.834141)">2020</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_6">
+    <g id="ytick_107">
+     <g id="line2d_126"/>
+     <g id="text_230">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="114.733211" transform="rotate(-0 967.151915 114.733211)">[Europe] Cyprus</text>
+     </g>
+    </g>
+    <g id="ytick_108">
+     <g id="line2d_127"/>
+     <g id="text_231">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="128.508306" transform="rotate(-0 967.151915 128.508306)">Netherlands</text>
+     </g>
+    </g>
+    <g id="ytick_109">
+     <g id="line2d_128"/>
+     <g id="text_232">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="142.2834" transform="rotate(-0 967.151915 142.2834)">Belgium</text>
+     </g>
+    </g>
+    <g id="ytick_110">
+     <g id="line2d_129"/>
+     <g id="text_233">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="156.058494" transform="rotate(-0 967.151915 156.058494)">Ireland</text>
+     </g>
+    </g>
+    <g id="ytick_111">
+     <g id="line2d_130"/>
+     <g id="text_234">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="169.833589" transform="rotate(-0 967.151915 169.833589)">Finland</text>
+     </g>
+    </g>
+    <g id="ytick_112">
+     <g id="line2d_131"/>
+     <g id="text_235">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="183.608683" transform="rotate(-0 967.151915 183.608683)">Spain</text>
+     </g>
+    </g>
+    <g id="ytick_113">
+     <g id="line2d_132"/>
+     <g id="text_236">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="197.383777" transform="rotate(-0 967.151915 197.383777)">Switzerland</text>
+     </g>
+    </g>
+    <g id="ytick_114">
+     <g id="line2d_133"/>
+     <g id="text_237">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="211.158872" transform="rotate(-0 967.151915 211.158872)">Sweden</text>
+     </g>
+    </g>
+    <g id="ytick_115">
+     <g id="line2d_134"/>
+     <g id="text_238">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="224.933673" transform="rotate(-0 967.151915 224.933673)">Norway</text>
+     </g>
+    </g>
+    <g id="ytick_116">
+     <g id="line2d_135"/>
+     <g id="text_239">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="238.70906" transform="rotate(-0 967.151915 238.70906)">United Kingdom</text>
+     </g>
+    </g>
+    <g id="ytick_117">
+     <g id="line2d_136"/>
+     <g id="text_240">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="252.484155" transform="rotate(-0 967.151915 252.484155)">Denmark</text>
+     </g>
+    </g>
+    <g id="ytick_118">
+     <g id="line2d_137"/>
+     <g id="text_241">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="266.259249" transform="rotate(-0 967.151915 266.259249)">Luxembourg</text>
+     </g>
+    </g>
+    <g id="ytick_119">
+     <g id="line2d_138"/>
+     <g id="text_242">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="280.034343" transform="rotate(-0 967.151915 280.034343)">Iceland</text>
+     </g>
+    </g>
+    <g id="ytick_120">
+     <g id="line2d_139"/>
+     <g id="text_243">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="293.809438" transform="rotate(-0 967.151915 293.809438)">[North America] Haiti</text>
+     </g>
+    </g>
+    <g id="ytick_121">
+     <g id="line2d_140"/>
+     <g id="text_244">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="307.584532" transform="rotate(-0 967.151915 307.584532)">Nicaragua</text>
+     </g>
+    </g>
+    <g id="ytick_122">
+     <g id="line2d_141"/>
+     <g id="text_245">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="321.359626" transform="rotate(-0 967.151915 321.359626)">Honduras</text>
+     </g>
+    </g>
+    <g id="ytick_123">
+     <g id="line2d_142"/>
+     <g id="text_246">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="335.134721" transform="rotate(-0 967.151915 335.134721)">Guatemala</text>
+     </g>
+    </g>
+    <g id="ytick_124">
+     <g id="line2d_143"/>
+     <g id="text_247">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="348.909815" transform="rotate(-0 967.151915 348.909815)">El Salvador</text>
+     </g>
+    </g>
+    <g id="ytick_125">
+     <g id="line2d_144"/>
+     <g id="text_248">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="362.684909" transform="rotate(-0 967.151915 362.684909)">Saint Lucia</text>
+     </g>
+    </g>
+    <g id="ytick_126">
+     <g id="line2d_145"/>
+     <g id="text_249">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="376.460004" transform="rotate(-0 967.151915 376.460004)">Saint Vincent and the Grenadines</text>
+     </g>
+    </g>
+    <g id="ytick_127">
+     <g id="line2d_146"/>
+     <g id="text_250">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="390.234805" transform="rotate(-0 967.151915 390.234805)">Panama</text>
+     </g>
+    </g>
+    <g id="ytick_128">
+     <g id="line2d_147"/>
+     <g id="text_251">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="404.010192" transform="rotate(-0 967.151915 404.010192)">Grenada</text>
+     </g>
+    </g>
+    <g id="ytick_129">
+     <g id="line2d_148"/>
+     <g id="text_252">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="417.785287" transform="rotate(-0 967.151915 417.785287)">Barbados</text>
+     </g>
+    </g>
+    <g id="ytick_130">
+     <g id="line2d_149"/>
+     <g id="text_253">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="431.560381" transform="rotate(-0 967.151915 431.560381)">Saint Kitts and Nevis</text>
+     </g>
+    </g>
+    <g id="ytick_131">
+     <g id="line2d_150"/>
+     <g id="text_254">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="445.335475" transform="rotate(-0 967.151915 445.335475)">Cuba</text>
+     </g>
+    </g>
+    <g id="ytick_132">
+     <g id="line2d_151"/>
+     <g id="text_255">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="459.11057" transform="rotate(-0 967.151915 459.11057)">Antigua and Barbuda</text>
+     </g>
+    </g>
+    <g id="ytick_133">
+     <g id="line2d_152"/>
+     <g id="text_256">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="472.885664" transform="rotate(-0 967.151915 472.885664)">Mexico</text>
+     </g>
+    </g>
+    <g id="ytick_134">
+     <g id="line2d_153"/>
+     <g id="text_257">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="486.660758" transform="rotate(-0 967.151915 486.660758)">Jamaica</text>
+     </g>
+    </g>
+    <g id="ytick_135">
+     <g id="line2d_154"/>
+     <g id="text_258">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="500.435853" transform="rotate(-0 967.151915 500.435853)">Trinidad and Tobago</text>
+     </g>
+    </g>
+    <g id="ytick_136">
+     <g id="line2d_155"/>
+     <g id="text_259">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="514.210947" transform="rotate(-0 967.151915 514.210947)">Costa Rica</text>
+     </g>
+    </g>
+    <g id="ytick_137">
+     <g id="line2d_156"/>
+     <g id="text_260">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="527.986041" transform="rotate(-0 967.151915 527.986041)">Dominican Republic</text>
+     </g>
+    </g>
+    <g id="ytick_138">
+     <g id="line2d_157"/>
+     <g id="text_261">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="541.761136" transform="rotate(-0 967.151915 541.761136)">United States</text>
+     </g>
+    </g>
+    <g id="ytick_139">
+     <g id="line2d_158"/>
+     <g id="text_262">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="555.53623" transform="rotate(-0 967.151915 555.53623)">Canada</text>
+     </g>
+    </g>
+    <g id="ytick_140">
+     <g id="line2d_159"/>
+     <g id="text_263">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="569.311324" transform="rotate(-0 967.151915 569.311324)">Bahamas</text>
+     </g>
+    </g>
+    <g id="ytick_141">
+     <g id="line2d_160"/>
+     <g id="text_264">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="583.086419" transform="rotate(-0 967.151915 583.086419)">[South America] Bolivia</text>
+     </g>
+    </g>
+    <g id="ytick_142">
+     <g id="line2d_161"/>
+     <g id="text_265">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="596.86122" transform="rotate(-0 967.151915 596.86122)">Guyana</text>
+     </g>
+    </g>
+    <g id="ytick_143">
+     <g id="line2d_162"/>
+     <g id="text_266">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="610.636314" transform="rotate(-0 967.151915 610.636314)">Peru</text>
+     </g>
+    </g>
+    <g id="ytick_144">
+     <g id="line2d_163"/>
+     <g id="text_267">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="624.411702" transform="rotate(-0 967.151915 624.411702)">Colombia</text>
+     </g>
+    </g>
+    <g id="ytick_145">
+     <g id="line2d_164"/>
+     <g id="text_268">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="638.186796" transform="rotate(-0 967.151915 638.186796)">Ecuador</text>
+     </g>
+    </g>
+    <g id="ytick_146">
+     <g id="line2d_165"/>
+     <g id="text_269">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="651.961598" transform="rotate(-0 967.151915 651.961598)">Paraguay</text>
+     </g>
+    </g>
+    <g id="ytick_147">
+     <g id="line2d_166"/>
+     <g id="text_270">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="665.736985" transform="rotate(-0 967.151915 665.736985)">Brazil</text>
+     </g>
+    </g>
+    <g id="ytick_148">
+     <g id="line2d_167"/>
+     <g id="text_271">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="679.511786" transform="rotate(-0 967.151915 679.511786)">Uruguay</text>
+     </g>
+    </g>
+    <g id="ytick_149">
+     <g id="line2d_168"/>
+     <g id="text_272">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="693.287173" transform="rotate(-0 967.151915 693.287173)">Argentina</text>
+     </g>
+    </g>
+    <g id="ytick_150">
+     <g id="line2d_169"/>
+     <g id="text_273">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="707.062268" transform="rotate(-0 967.151915 707.062268)">Chile</text>
+     </g>
+    </g>
+    <g id="ytick_151">
+     <g id="line2d_170"/>
+     <g id="text_274">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="720.837362" transform="rotate(-0 967.151915 720.837362)">[Oceania] Papua New Guinea</text>
+     </g>
+    </g>
+    <g id="ytick_152">
+     <g id="line2d_171"/>
+     <g id="text_275">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="734.612457" transform="rotate(-0 967.151915 734.612457)">Solomon Islands</text>
+     </g>
+    </g>
+    <g id="ytick_153">
+     <g id="line2d_172"/>
+     <g id="text_276">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="748.387551" transform="rotate(-0 967.151915 748.387551)">Micronesia (country)</text>
+     </g>
+    </g>
+    <g id="ytick_154">
+     <g id="line2d_173"/>
+     <g id="text_277">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="762.162645" transform="rotate(-0 967.151915 762.162645)">Kiribati</text>
+     </g>
+    </g>
+    <g id="ytick_155">
+     <g id="line2d_174"/>
+     <g id="text_278">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="775.937447" transform="rotate(-0 967.151915 775.937447)">Tonga</text>
+     </g>
+    </g>
+    <g id="ytick_156">
+     <g id="line2d_175"/>
+     <g id="text_279">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="789.712834" transform="rotate(-0 967.151915 789.712834)">Marshall Islands</text>
+     </g>
+    </g>
+    <g id="ytick_157">
+     <g id="line2d_176"/>
+     <g id="text_280">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="803.487928" transform="rotate(-0 967.151915 803.487928)">Fiji</text>
+     </g>
+    </g>
+    <g id="ytick_158">
+     <g id="line2d_177"/>
+     <g id="text_281">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="817.263023" transform="rotate(-0 967.151915 817.263023)">New Zealand</text>
+     </g>
+    </g>
+    <g id="ytick_159">
+     <g id="line2d_178"/>
+     <g id="text_282">
+      <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="967.151915" y="831.038117" transform="rotate(-0 967.151915 831.038117)">[Unclassified] Palestine</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_179">
+    <path d="M 970.651915 104.99625 
+L 1199.52 104.99625 
+" clip-path="url(#p187142836b)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_180">
+    <path d="M 970.651915 284.072476 
+L 1199.52 284.072476 
+" clip-path="url(#p187142836b)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_181">
+    <path d="M 970.651915 573.349458 
+L 1199.52 573.349458 
+" clip-path="url(#p187142836b)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_182">
+    <path d="M 970.651915 711.100401 
+L 1199.52 711.100401 
+" clip-path="url(#p187142836b)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="line2d_183">
+    <path d="M 970.651915 821.301156 
+L 1199.52 821.301156 
+" clip-path="url(#p187142836b)" style="fill: none; stroke: #ffffff; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_283">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="113.832039" transform="rotate(-0 1204.96924 113.832039)">91</text>
+   </g>
+   <g id="text_284">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="127.607134" transform="rotate(-0 1204.96924 127.607134)">91</text>
+   </g>
+   <g id="text_285">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="141.382228" transform="rotate(-0 1204.96924 141.382228)">92</text>
+   </g>
+   <g id="text_286">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="155.157322" transform="rotate(-0 1204.96924 155.157322)">92</text>
+   </g>
+   <g id="text_287">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="168.932417" transform="rotate(-0 1204.96924 168.932417)">92</text>
+   </g>
+   <g id="text_288">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="182.707511" transform="rotate(-0 1204.96924 182.707511)">93</text>
+   </g>
+   <g id="text_289">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="196.482605" transform="rotate(-0 1204.96924 196.482605)">94</text>
+   </g>
+   <g id="text_290">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="210.2577" transform="rotate(-0 1204.96924 210.2577)">95</text>
+   </g>
+   <g id="text_291">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="224.032794" transform="rotate(-0 1204.96924 224.032794)">95</text>
+   </g>
+   <g id="text_292">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="237.807888" transform="rotate(-0 1204.96924 237.807888)">95</text>
+   </g>
+   <g id="text_293">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="251.582983" transform="rotate(-0 1204.96924 251.582983)">97</text>
+   </g>
+   <g id="text_294">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="265.358077" transform="rotate(-0 1204.96924 265.358077)">98</text>
+   </g>
+   <g id="text_295">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="279.133171" transform="rotate(-0 1204.96924 279.133171)">100</text>
+   </g>
+   <g id="text_296">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="292.908266" transform="rotate(-0 1204.96924 292.908266)">39</text>
+   </g>
+   <g id="text_297">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="306.68336" transform="rotate(-0 1204.96924 306.68336)">45</text>
+   </g>
+   <g id="text_298">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="320.458454" transform="rotate(-0 1204.96924 320.458454)">45</text>
+   </g>
+   <g id="text_299">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="334.233549" transform="rotate(-0 1204.96924 334.233549)">48</text>
+   </g>
+   <g id="text_300">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="348.008643" transform="rotate(-0 1204.96924 348.008643)">55</text>
+   </g>
+   <g id="text_301">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="361.783737" transform="rotate(-0 1204.96924 361.783737)">62</text>
+   </g>
+   <g id="text_302">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="375.558832" transform="rotate(-0 1204.96924 375.558832)">63</text>
+   </g>
+   <g id="text_303">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="389.333926" transform="rotate(-0 1204.96924 389.333926)">65</text>
+   </g>
+   <g id="text_304">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="403.10902" transform="rotate(-0 1204.96924 403.10902)">66</text>
+   </g>
+   <g id="text_305">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="416.884115" transform="rotate(-0 1204.96924 416.884115)">70</text>
+   </g>
+   <g id="text_306">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="430.659209" transform="rotate(-0 1204.96924 430.659209)">70</text>
+   </g>
+   <g id="text_307">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="444.434304" transform="rotate(-0 1204.96924 444.434304)">71</text>
+   </g>
+   <g id="text_308">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="458.209398" transform="rotate(-0 1204.96924 458.209398)">71</text>
+   </g>
+   <g id="text_309">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="471.984492" transform="rotate(-0 1204.96924 471.984492)">71</text>
+   </g>
+   <g id="text_310">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="485.759587" transform="rotate(-0 1204.96924 485.759587)">76</text>
+   </g>
+   <g id="text_311">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="499.534681" transform="rotate(-0 1204.96924 499.534681)">77</text>
+   </g>
+   <g id="text_312">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="513.309775" transform="rotate(-0 1204.96924 513.309775)">81</text>
+   </g>
+   <g id="text_313">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="527.08487" transform="rotate(-0 1204.96924 527.08487)">82</text>
+   </g>
+   <g id="text_314">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="540.859964" transform="rotate(-0 1204.96924 540.859964)">90</text>
+   </g>
+   <g id="text_315">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="554.635058" transform="rotate(-0 1204.96924 554.635058)">92</text>
+   </g>
+   <g id="text_316">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="568.410153" transform="rotate(-0 1204.96924 568.410153)">92</text>
+   </g>
+   <g id="text_317">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="582.185247" transform="rotate(-0 1204.96924 582.185247)">60</text>
+   </g>
+   <g id="text_318">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="595.960341" transform="rotate(-0 1204.96924 595.960341)">63</text>
+   </g>
+   <g id="text_319">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="609.735436" transform="rotate(-0 1204.96924 609.735436)">65</text>
+   </g>
+   <g id="text_320">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="623.51053" transform="rotate(-0 1204.96924 623.51053)">70</text>
+   </g>
+   <g id="text_321">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="637.285624" transform="rotate(-0 1204.96924 637.285624)">71</text>
+   </g>
+   <g id="text_322">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="651.060719" transform="rotate(-0 1204.96924 651.060719)">74</text>
+   </g>
+   <g id="text_323">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="664.835813" transform="rotate(-0 1204.96924 664.835813)">81</text>
+   </g>
+   <g id="text_324">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="678.610907" transform="rotate(-0 1204.96924 678.610907)">85</text>
+   </g>
+   <g id="text_325">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="692.386002" transform="rotate(-0 1204.96924 692.386002)">86</text>
+   </g>
+   <g id="text_326">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="706.161096" transform="rotate(-0 1204.96924 706.161096)">87</text>
+   </g>
+   <g id="text_327">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="719.93619" transform="rotate(-0 1204.96924 719.93619)">15</text>
+   </g>
+   <g id="text_328">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="733.711285" transform="rotate(-0 1204.96924 733.711285)">24</text>
+   </g>
+   <g id="text_329">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="747.486379" transform="rotate(-0 1204.96924 747.486379)">39</text>
+   </g>
+   <g id="text_330">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="761.261473" transform="rotate(-0 1204.96924 761.261473)">53</text>
+   </g>
+   <g id="text_331">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="775.036568" transform="rotate(-0 1204.96924 775.036568)">54</text>
+   </g>
+   <g id="text_332">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="788.811662" transform="rotate(-0 1204.96924 788.811662)">56</text>
+   </g>
+   <g id="text_333">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="802.586756" transform="rotate(-0 1204.96924 802.586756)">69</text>
+   </g>
+   <g id="text_334">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="816.361851" transform="rotate(-0 1204.96924 816.361851)">91</text>
+   </g>
+   <g id="text_335">
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="830.136945" transform="rotate(-0 1204.96924 830.136945)">76</text>
+   </g>
+   <g id="text_336">
+    <text style="font-size: 7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="1204.96924" y="81.57859" transform="rotate(-0 1204.96924 81.57859)">End %</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_5">
+    <path d="M 434.88 870.64425 
+L 849.6 870.64425 
+L 849.6 858.47625 
+L 434.88 858.47625 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <image xlink:href="data:image/png;base64,
+iVBORw0KGgoAAAANSUhEUgAABIAAAAAiCAYAAAAnM6KsAAACGUlEQVR4nO3YSW7DMBAEQCX//2wAny0jx1ATc0TIBtKpOhLcF9noj6/bbd8Gh4KqZJ/V+C6rSmf9NNqU/fwsnfdSj9VZ11har33ScVGntYdFpf2Cfa/atfZwcV2tPVy4mZ27MZ/NL3Nu3LHWWSy8navOYuuM1bhjrbOoN3E6v/thnxvvtBjs3llXY6zDfBpvZ2xTzrlc19DP1phzee7jfFbX/rxN1a48i4W1t+5G487XZ3H+jpX9LNyx8V7W82n00/n2lmdxfqzXvq+Fd7G49sveV+eb0JnzQj/1fLaFsda+q627cVE/re/8y9a1LY71xt8dd/XUWbR+ly+6q503WP49PE6oqDQZvDnW4T9to0491nw+7x1rrFI+5qdtqr735bP4g/uzh+7P+KO//9/9+SyqAAAAABBEAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAEE4ABAAAABBOAAQAAAAQTgAEAAAAsGV7AJ1nEgwMtZ9EAAAAAElFTkSuQmCC" id="imagea22e300be4" transform="scale(1 -1) translate(0 -12.24)" x="434.88" y="-858.24" width="414.72" height="12.24"/>
+   <g id="matplotlib.axis_7">
+    <g id="xtick_16">
+     <g id="line2d_184">
+      <defs>
+       <path id="m68dab50eba" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m68dab50eba" x="434.88" y="870.64425" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_337">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="434.88" y="885.241906" transform="rotate(-0 434.88 885.241906)">0</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_185">
+      <g>
+       <use xlink:href="#m68dab50eba" x="538.56" y="870.64425" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_338">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="538.56" y="885.241906" transform="rotate(-0 538.56 885.241906)">25</text>
+     </g>
+    </g>
+    <g id="xtick_18">
+     <g id="line2d_186">
+      <g>
+       <use xlink:href="#m68dab50eba" x="642.24" y="870.64425" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_339">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="642.24" y="885.241906" transform="rotate(-0 642.24 885.241906)">50</text>
+     </g>
+    </g>
+    <g id="xtick_19">
+     <g id="line2d_187">
+      <g>
+       <use xlink:href="#m68dab50eba" x="745.92" y="870.64425" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_340">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="745.92" y="885.241906" transform="rotate(-0 745.92 885.241906)">75</text>
+     </g>
+    </g>
+    <g id="xtick_20">
+     <g id="line2d_188">
+      <g>
+       <use xlink:href="#m68dab50eba" x="849.6" y="870.64425" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_341">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="849.6" y="885.241906" transform="rotate(-0 849.6 885.241906)">100</text>
+     </g>
+    </g>
+    <g id="text_342">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #192c3c" x="642.24" y="899.242688" transform="rotate(-0 642.24 899.242688)">People using the internet (%)</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_8"/>
+   <g id="LineCollection_1"/>
+   <g id="patch_6">
+    <path d="M 434.88 870.64425 
+L 434.88 864.56025 
+L 434.88 858.47625 
+L 849.6 858.47625 
+L 849.6 864.56025 
+L 849.6 870.64425 
+L 434.88 870.64425 
+z
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_343">
+   <text style="font-weight: 700; font-size: 24px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="7.2" y="25.43625" transform="rotate(-0 7.2 25.43625)">When did countries come online?</text>
+  </g>
+  <g id="text_344">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #192c3c" x="7.2" y="55.38825" transform="rotate(-0 7.2 55.38825)">159 country trajectories, 2000–2020 | Grouped by region, then ordered by 2020 adoption</text>
+  </g>
+  <g id="text_345">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #192c3c" transform="translate(7.2 924.425789)">Source: existing A1 OWID/ITU extracts. Same 159 countries in every year; no interpolation. Each row has equal visual weight.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #192c3c" transform="translate(7.2 935.22825)">Read columns top to bottom, then left to right. This complete-case panel is not the entire world population.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p706ac226b5">
+   <rect x="123.84" y="104.99625" width="228.868085" height="730.08"/>
+  </clipPath>
+  <clipPath id="p7d6b932754">
+   <rect x="547.245957" y="104.99625" width="228.868085" height="730.08"/>
+  </clipPath>
+  <clipPath id="p187142836b">
+   <rect x="970.651915" y="104.99625" width="228.868085" height="730.08"/>
+  </clipPath>
+ </defs>
+</svg>

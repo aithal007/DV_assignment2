@@ -1,0 +1,86 @@
+[
+  {
+    "figure": 17,
+    "name": "daily_coverage_calendar",
+    "title": "Daily coverage and animation sampling",
+    "caption": "All four annual files have 365 time coordinates; the selected interval has 92 consecutive dates, with 31 in July, 31 in August and 30 in September. Every selected day has valid grid values in all four variables. Orange outlines identify only the eight original animation samples, spaced 13 days apart. Available dates are not limited to those samples.",
+    "path": "images/extensions/daily_coverage_calendar.png"
+  },
+  {
+    "figure": 18,
+    "name": "daily_temperature_ribbons",
+    "title": "Daily spatial quantile ribbons",
+    "caption": "All 92 days contribute. Fixed-footprint sector means and spatial quantiles use cosine-latitude weights. Sectors are analyst-defined longitude bands, not official climate regions. September 30 minus July 1 sector-mean differences are -11.92 \u00b0C west, -0.15 \u00b0C central, and -4.48 \u00b0C east. The ribbon is the within-sector spatial 10th-90th percentile range, not an uncertainty interval; reversals during the interval remain visible.",
+    "path": "images/extensions/daily_temperature_ribbons.png"
+  },
+  {
+    "figure": 19,
+    "name": "monthly_tmax_maps",
+    "title": "Monthly means with fixed isolines",
+    "caption": "Monthwise means include 31, 31 and 30 daily maximum-temperature fields. The common scalar scale spans 8.91 to 47.27 \u00b0C; white isolines are fixed at 25 and 35 \u00b0C. Approximate area-weighted means over the valid footprint are 31.19, 30.16 and 26.55 \u00b0C. These are means of daily maxima, not monthly mean air temperature or climate anomalies.",
+    "path": "images/extensions/monthly_tmax_maps.png"
+  },
+  {
+    "figure": 20,
+    "name": "monthly_precipitation_maps",
+    "title": "Complete-month precipitation totals",
+    "caption": "At each sampled location, all 31 July, 31 August or 30 September daily accumulations are summed. Any incomplete month is masked, rather than treating missing days as zero. Approximate area-weighted monthly totals are 75.26, 75.82 and 57.08 mm. The shared scale is 0-468.10 mm without clipping. These totals were computed from the 92-day cache, not estimated from eight display samples; this short interval does not establish a climate trend.",
+    "path": "images/extensions/monthly_precipitation_maps.png"
+  },
+  {
+    "figure": 21,
+    "name": "hot_day_frequency_maps",
+    "title": "Threshold-frequency maps",
+    "caption": "Each cell's count of days at or above 35 \u00b0C is divided by its month's 31, 31 or 30 days. The common 0-100% scale permits comparison despite unequal month lengths. Approximate area-day fractions are 22.8%, 22.2% and 8.9%. The 35 \u00b0C cutoff is an explicit descriptive choice, not an official heatwave definition, health-risk index, or population exposure estimate.",
+    "path": "images/extensions/hot_day_frequency_maps.png"
+  },
+  {
+    "figure": 22,
+    "name": "daily_weather_horizons",
+    "title": "Daily weather horizon variation",
+    "caption": "The same area-weighted daily sector means from Fig. 18 are centered on a declared 30 \u00b0C baseline and folded into four 5 \u00b0C bands per side. Blue denotes above the baseline and red below; saturation encodes distance from it. This daily weather variation complements the annual country-adoption horizon plots without inventing monthly country observations. Refer to the unfurled ribbon plot for exact values.",
+    "path": "images/extensions/daily_weather_horizons.png"
+  },
+  {
+    "figure": 23,
+    "name": "precipitation_ecdf",
+    "title": "Conditional rainfall ECDFs",
+    "caption": "Empirical cumulative distributions use all positive daily grid-cell rain values in each month, with no kernel smoothing. Dry grid-day fractions are 68.8%, 68.3% and 72.3%. Conditioning on positive rain prevents zero from invalidating the log axis; the dry fractions retain that excluded information. Grid-day observations are equally weighted and spatially dependent, so these curves are descriptive rather than independent-sample inferential tests.",
+    "path": "images/extensions/precipitation_ecdf.png"
+  },
+  {
+    "figure": 24,
+    "name": "monthly_wind_roses",
+    "title": "Monthly wind-direction roses",
+    "caption": "Sixteen direction bins aggregate all daily source wind-direction values in the western box (-125 to -100 longitude, 30 to 49 latitude). Sector radial height gives approximate area-day frequency among noncalm valid grid-day summaries; stacked color encodes speed class. All months share a radial limit. Calm/near-calm speeds at or below 0.1 m/s are excluded and reported separately. These are meteorological from-directions, whereas the original quiver arrows show flow-to directions. They do not count hourly winds or independent station measurements.",
+    "path": "images/extensions/monthly_wind_roses.png"
+  },
+  {
+    "figure": 25,
+    "name": "network_adjacency_matrix",
+    "title": "Region-ordered adjacency matrix",
+    "caption": "The matrix contains the same 179 nodes and 590 undirected similarity edges as the three required layouts. Each edge appears twice by symmetry; the diagonal is empty. Ordering by supplied region and then country alphabetically reveals 249 within-region edges (42.2% of edges) without discovering new communities. Exact row/column order is supplied in data/network_matrix_order.csv. A matrix permits edge verification but does not replace the required interactive node-link layouts; no synchronized interaction is claimed.",
+    "path": "images/extensions/network_adjacency_matrix.png"
+  },
+  {
+    "figure": 26,
+    "name": "matched_adoption_dumbbells",
+    "title": "Matched-panel regional dumbbells",
+    "caption": "Regional medians use the exact 175-country panel that has complete profiles in both 2015 and 2020. Each included country has equal weight and regional memberships are fixed; counts are shown beside each region, including Unclassified. Among classified regions, the largest median shift is Asia, 26.55 percentage points. Unclassified is a missing-label category, not a geographic region. This is the difference of two regional medians, not the median of individual changes, a population-weighted result, or causal evidence.",
+    "path": "images/extensions/matched_adoption_dumbbells.png"
+  },
+  {
+    "figure": 27,
+    "name": "horizon_construction",
+    "title": "Worked horizon construction",
+    "caption": "Kenya's actual fixed-panel series moves from 0.32% adoption in 2000 to 24.72% in 2020. The three panels show measured values, signed deviation from 50%, and the same deviation mirrored and folded into two 25-point bands. Red indicates below majority use, even when adoption rises. The method explanation follows the September 29 lecture's construction stages; it does not use fabricated example values.",
+    "path": "images/extensions/horizon_construction.png"
+  },
+  {
+    "figure": 28,
+    "name": "kde_bandwidth_sensitivity",
+    "title": "KDE sensitivity with empirical reference",
+    "caption": "The same 159-country 2020 adoption values are smoothed with reflected Gaussian bandwidths 3, 6 and 12 percentage points. The left axis retains true density units; curves are not independently normalized to peak height. The empirical cumulative distribution at right does not depend on smoothing, and the raw median remains 71.37%. Minor density peaks should not be interpreted as stable groups merely because one bandwidth makes them visible.",
+    "path": "images/extensions/kde_bandwidth_sensitivity.png"
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "atlas_countries": 159,
+  "atlas_years": 21,
+  "trajectory_countries": 6,
+  "trajectory_years_each": 11,
+  "missing_values_imputed": 0,
+  "illustrative_changes": [
+    {
+      "country": "India",
+      "adoption_gain_pp": 35.90544,
+      "broadband_gain_per100": 0.7524174499999999
+    },
+    {
+      "country": "South Africa",
+      "adoption_gain_pp": 48.11279999999999,
+      "broadband_gain_per100": 0.7321400000000002
+    },
+    {
+      "country": "China",
+      "adoption_gain_pp": 35.75276000000001,
+      "broadband_gain_per100": 24.559495
+    },
+    {
+      "country": "Brazil",
+      "adoption_gain_pp": 40.692699999999995,
+      "broadband_gain_per100": 10.138375
+    },
+    {
+      "country": "Germany",
+      "adoption_gain_pp": 7.8129399999999976,
+      "broadband_gain_per100": 10.938606
+    },
+    {
+      "country": "United States",
+      "adoption_gain_pp": 18.654700000000005,
+      "broadband_gain_per100": 8.543692999999998
+    }
+  ]
+}

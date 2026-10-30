@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "main_figures": 32,
+  "supporting_figures": 0,
+  "pdf_pages": 27,
+  "numbered_source_figures": 32,
+  "local_links_checked": 95,
+  "animation_frames": {
+    "scivis_contour.gif": 8,
+    "scivis_global.gif": 8,
+    "scivis_local.gif": 8
+  },
+  "javascript": "three scripts pass Node syntax checks; source handlers and data/asset counts checked",
+  "browser_interaction": "see output/infovis_audit_20261026/interactions.json for actual browser controls tested",
+  "contribution_status": "three-person responsibility allocation adopted; completed implementation not certified",
+  "layout": "no overfull horizontal boxes; page bounds checked; rendered pages visually reviewed separately"
+}

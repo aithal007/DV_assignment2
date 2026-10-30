@@ -1,0 +1,192 @@
+{
+  "inequality": {
+    "start": {
+      "year": 2000.0,
+      "mean": 8.073299633610063,
+      "mean_pairwise_gap": 11.426459410211622,
+      "gini": 0.7076697217233197,
+      "p90_p10": 28.631326578000017,
+      "within_variance": 121.4026710738472,
+      "between_variance": 41.810599865275655,
+      "between_share": 25.61715700242944
+    },
+    "end": {
+      "year": 2020.0,
+      "mean": 64.92014170440252,
+      "mean_pairwise_gap": 28.780843831968674,
+      "gini": 0.22166343969961572,
+      "p90_p10": 69.84341000000002,
+      "within_variance": 313.2994143594167,
+      "between_variance": 353.904778126661,
+      "between_share": 53.0429487872329
+    },
+    "absolute_peak": {
+      "year": 2013.0,
+      "mean": 42.59336609496855,
+      "mean_pairwise_gap": 32.86180094382342,
+      "gini": 0.3857619619749342,
+      "p90_p10": 77.96800000000002,
+      "within_variance": 367.97524632407954,
+      "between_variance": 454.72932531232067,
+      "between_share": 55.27249282301197
+    }
+  },
+  "associations": [
+    {
+      "region": "All countries",
+      "n": 175,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.8313808953096328,
+      "rho_changes": 0.05386699507389163
+    },
+    {
+      "region": "Africa",
+      "n": 46,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.7967314215232809,
+      "rho_changes": 0.30422448350292935
+    },
+    {
+      "region": "Asia",
+      "n": 41,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.6339721254355402,
+      "rho_changes": 0.19668989547038332
+    },
+    {
+      "region": "Europe",
+      "n": 43,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.6718012614747505,
+      "rho_changes": 0.36318332829960737
+    },
+    {
+      "region": "North America",
+      "n": 23,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.5355731225296443,
+      "rho_changes": -0.37549407114624506
+    },
+    {
+      "region": "South America",
+      "n": 11,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.7818181818181819,
+      "rho_changes": 0.3272727272727273
+    },
+    {
+      "region": "Oceania",
+      "n": 8,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 0.7380952380952381,
+      "rho_changes": -0.261904761904762
+    },
+    {
+      "region": "Unclassified",
+      "n": 3,
+      "indicator": "broadband_subs_per100",
+      "rho_2020": 1.0,
+      "rho_changes": 0.5
+    },
+    {
+      "region": "All countries",
+      "n": 175,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.5312083134843608,
+      "rho_changes": 0.06959247648902821
+    },
+    {
+      "region": "Africa",
+      "n": 46,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.6330558125192723,
+      "rho_changes": -0.25254394079555964
+    },
+    {
+      "region": "Asia",
+      "n": 41,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.5655052264808363,
+      "rho_changes": 0.13275261324041815
+    },
+    {
+      "region": "Europe",
+      "n": 43,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.05595197648114984,
+      "rho_changes": -0.02265176683781335
+    },
+    {
+      "region": "North America",
+      "n": 23,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.24505928853754944,
+      "rho_changes": 0.2381422924901186
+    },
+    {
+      "region": "South America",
+      "n": 11,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.3545454545454546,
+      "rho_changes": 0.24545454545454545
+    },
+    {
+      "region": "Oceania",
+      "n": 8,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.6666666666666669,
+      "rho_changes": -0.07142857142857144
+    },
+    {
+      "region": "Unclassified",
+      "n": 3,
+      "indicator": "mobile_subs_per100",
+      "rho_2020": 0.5,
+      "rho_changes": 0.5
+    }
+  ],
+  "milestones_75_2020": [
+    {
+      "region": "Africa",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 45,
+      "ever_reached_pct": 2.2222222222222223
+    },
+    {
+      "region": "Asia",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 37,
+      "ever_reached_pct": 62.16216216216216
+    },
+    {
+      "region": "Europe",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 37,
+      "ever_reached_pct": 86.48648648648648
+    },
+    {
+      "region": "North America",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 21,
+      "ever_reached_pct": 33.33333333333333
+    },
+    {
+      "region": "South America",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 10,
+      "ever_reached_pct": 40.0
+    },
+    {
+      "region": "Oceania",
+      "threshold": 75,
+      "year": 2020,
+      "countries": 8,
+      "ever_reached_pct": 12.5
+    }
+  ]
+}

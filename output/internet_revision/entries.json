@@ -1,0 +1,44 @@
+{
+  "network_focus": {
+    "title": "One network, three layouts, one highlighted neighborhood.",
+    "path": "output/internet_revision/network_focus.png",
+    "wide": true,
+    "caption": "India has the same six neighbors in Spring, Spectral and Circular layouts: Cameroon, Honduras, Haiti, Lesotho, Nicaragua, Sao Tome and Principe. Geometry changes substantially, but neither edge membership nor the four measured profiles change. The 179-node, 590-edge graph is an undirected union of five-nearest-neighbor selections.",
+    "explanation": [
+      "Does the apparent neighborhood depend on the drawing or on the stored links?",
+      "India is dark blue and its six incident edges and neighbors are orange. Gray nodes and links retain the whole graph. All three panels use identical nodes and edges; only positions differ. The full neighbor list appears below.",
+      "A fixed highlighted case makes the controlled layout comparison inspectable at report size.",
+      "The graph is constructed from four standardized country indicators. It does not describe internet cables, influence or causation. Neighbor membership depends on features, scaling and k.",
+      "A snapshot of a graph drawing can hide stable relationships: inspect the stored links before interpreting visual separation."
+    ],
+    "detailed_interpretation": "India has the same six neighbors in Spring, Spectral and Circular layouts: Cameroon, Honduras, Haiti, Lesotho, Nicaragua, Sao Tome and Principe. Geometry changes substantially, but neither edge membership nor the four measured profiles change. The 179-node, 590-edge graph is an undirected union of five-nearest-neighbor selections."
+  },
+  "country_paths": {
+    "title": "Country paths behind the adoption snapshot.",
+    "path": "output/internet_review_20261024/adoption_broadband_paths.png",
+    "wide": true,
+    "caption": "India gains 35.9 adoption percentage points while fixed broadband rises by 0.8 subscriptions per 100; South Africa gains 48.1 points with a 0.7 rise. China gains 35.8 adoption points with a 24.6 rise in broadband. Brazil gains 40.7 points with a 10.1 rise. Germany starts at 82% adoption and rises 7.8 points. These are observed contrasting paths, not a universal sequence of development.",
+    "explanation": [
+      "Can similar adoption improvements accompany different changes in fixed broadband?",
+      "Six small multiples plot annual fixed broadband subscriptions per 100 against internet adoption percent for 2010–2020. Open markers mark 2010, dark markers 2020, and small dots all intervening years. Every panel uses identical axes.",
+      "Named-country paths recover timing and joint movement that a one-year scatterplot or regional average cannot show.",
+      "Six illustrative cases were chosen for contrasting paths, not as a representative sample. All 11 annual pairs exist for each country; no imputation. National aggregates do not identify causes, and low fixed broadband does not by itself prove mobile substitution. Subscription counts are not unique people.",
+      "Snapshots hide different paths: comparable adoption gains need not accompany comparable fixed-broadband expansion."
+    ],
+    "detailed_interpretation": "India gains 35.9 adoption percentage points while fixed broadband rises by 0.8 subscriptions per 100; South Africa gains 48.1 points with a 0.7 rise. China gains 35.8 adoption points with a 24.6 rise in broadband. Brazil gains 40.7 points with a 10.1 rise. Germany starts at 82% adoption and rises 7.8 points. These are observed contrasting paths, not a universal sequence of development."
+  },
+  "milestone_timing": {
+    "title": "When countries first reach adoption milestones.",
+    "path": "output/internet_revision/milestone_timing.png",
+    "wide": true,
+    "caption": "By 2020, 86.5% of the fixed European panel had ever reached 75% adoption, compared with 2.2% of the African panel. The two thresholds distinguish majority access from high adoption, and the steps expose when countries first qualify. The same regional improvement therefore contains different waiting times. These percentages count countries, not people.",
+    "explanation": [
+      "Do regional summaries conceal early, late and not-yet-observed milestone attainment?",
+      "Each panel contains a fixed regional country cohort. Teal counts the share ever observed at or above 50% adoption; orange uses 75%. Steps rise at the first qualifying annual measurement and do not fall after subsequent reversals.",
+      "Shared-scale regional small multiples make milestone timing comparable without six overlapping regional lines. The two thresholds expose dependence on the definition of progress.",
+      "158 classified complete-panel countries; one unclassified country excluded. These are descriptive cumulative attainment counts, not survival estimates. Countries above the threshold in 2000 may have crossed earlier. Nonattainment by 2020 does not mean never. Attainment is not sustained access.",
+      "A rising average conceals when countries reach useful adoption levels, and which remain below them within the observed interval."
+    ],
+    "detailed_interpretation": "By 2020, 86.5% of the fixed European panel had ever reached 75% adoption, compared with 2.2% of the African panel. The two thresholds distinguish majority access from high adoption, and the steps expose when countries first qualify. The same regional improvement therefore contains different waiting times. These percentages count countries, not people."
+  }
+}

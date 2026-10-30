@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "annual_inequality_years": 21,
+  "country_panel": 159,
+  "classified_panel": 158,
+  "regional_gain_panel": 175,
+  "rainfall_cells": 13416,
+  "rainfall_months": 3,
+  "minimum_rain_threshold_checks": 12,
+  "checks": [
+    "sorted pair-gap identity",
+    "all-year variance decomposition",
+    "regional endpoints versus paired gains",
+    "all-cell cumulative-sum rainfall windows",
+    "conditional area-weighted concentration and minimum-total sensitivity"
+  ]
+}

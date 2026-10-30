@@ -1,0 +1,146 @@
+{
+  "nodetrix": {
+    "group": 7,
+    "countries": 8,
+    "internal_edges": 18,
+    "possible_edges": 28,
+    "most_connected_country": "Cuba",
+    "most_internal_links": 6,
+    "all_groups": 7,
+    "all_internal_edges": 525,
+    "between_group_edges": 65
+  },
+  "pcp": {
+    "countries": [
+      "Bhutan",
+      "Cuba",
+      "Kuwait",
+      "Kyrgyzstan",
+      "Libya",
+      "South Africa"
+    ],
+    "complete_view": 175,
+    "selected_view": 6,
+    "domains": [
+      100,
+      25,
+      5,
+      180
+    ]
+  },
+  "pairwise": {
+    "broadband_subs_per100": 0.8313808953096332,
+    "mobile_subs_per100": 0.5312083134843609
+  },
+  "changes": [
+    {
+      "region": "All countries",
+      "countries": 175,
+      "qualifying": 126,
+      "percent": 72.0
+    },
+    {
+      "region": "Africa",
+      "countries": 46,
+      "qualifying": 30,
+      "percent": 65.21739130434783
+    },
+    {
+      "region": "Asia",
+      "countries": 41,
+      "qualifying": 27,
+      "percent": 65.85365853658537
+    },
+    {
+      "region": "Europe",
+      "countries": 43,
+      "qualifying": 35,
+      "percent": 81.3953488372093
+    },
+    {
+      "region": "North America",
+      "countries": 23,
+      "qualifying": 15,
+      "percent": 65.21739130434783
+    },
+    {
+      "region": "South America",
+      "countries": 11,
+      "qualifying": 10,
+      "percent": 90.9090909090909
+    },
+    {
+      "region": "Oceania",
+      "countries": 8,
+      "qualifying": 7,
+      "percent": 87.5
+    },
+    {
+      "region": "Unclassified",
+      "countries": 3,
+      "qualifying": 2,
+      "percent": 66.66666666666667
+    }
+  ],
+  "within_regions": {
+    "countries": 158,
+    "within_percent": 46.9570512127671,
+    "between_percent": 53.0429487872329,
+    "regions": [
+      {
+        "region": "Africa",
+        "n": 45,
+        "mean": 37.87934966666666,
+        "median": 31.8888,
+        "minimum": 6.4301,
+        "maximum": 84.12036
+      },
+      {
+        "region": "Asia",
+        "n": 37,
+        "mean": 75.40927618918917,
+        "median": 77.84374,
+        "minimum": 27.5441,
+        "maximum": 100.0
+      },
+      {
+        "region": "Europe",
+        "n": 37,
+        "mean": 85.79557148648648,
+        "median": 86.858765,
+        "minimum": 70.16248,
+        "maximum": 99.53275
+      },
+      {
+        "region": "North America",
+        "n": 21,
+        "mean": 68.21868085714287,
+        "median": 70.2753,
+        "minimum": 39.3881,
+        "maximum": 92.4437
+      },
+      {
+        "region": "South America",
+        "n": 10,
+        "mean": 74.23861339999999,
+        "median": 72.328755,
+        "minimum": 59.9401,
+        "maximum": 87.4593
+      },
+      {
+        "region": "Oceania",
+        "n": 8,
+        "mean": 50.24905,
+        "median": 53.7123,
+        "minimum": 15.0204,
+        "maximum": 90.921
+      }
+    ]
+  },
+  "overlap": {
+    "hot": 18.063989352957066,
+    "dry": 76.65286101612901,
+    "windy": 11.654561309017323,
+    "all_three": 2.5705117680109617
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "input_files": {
+    "number-of-internet-users.csv": "63b955110cdd9939227fe6a3bf60e2e44fdc77cd6ce9b7ebe6d4a8d4e4f1452c",
+    "share-of-individuals-using-the-internet.csv": "e27506fe7a5f518fdfaef0d0146b36e976d68d4da2c967dcb428b577d352b07d",
+    "ict-adoption-per-100-people.csv": "462fc6429ec06da8be17d36bf16b59f1f0a26882b125c6381e6de806c597f929",
+    "region_lookup.csv": "ec0ac0f6fc02474e24a530a11868e24071278c0ef36f8eb08d02af546f4738bc"
+  },
+  "raw_rows": {
+    "number-of-internet-users.csv": 6476,
+    "share-of-individuals-using-the-internet.csv": 6476,
+    "ict-adoption-per-100-people.csv": 13387
+  },
+  "steps": [
+    "Rename source indicator columns; outer-join on entity/code/year with one-to-one key checks.",
+    "Remove explicitly listed aggregate entities; preserve missing values without imputation. Unmapped regions become Unclassified in downstream builders.",
+    "Use task-specific complete cases, a matched 2015/2020 intersection, and a balanced 2000-2020 adoption panel. Graph builder z-scores four indicators, computes all unique pair similarities, and applies a documented global quantile threshold.",
+    "Decode NetCDF masks/packing before converting source tmmx Kelvin to Celsius; derived caches already contain Celsius and are never converted twice.",
+    "Read every sixth grid cell (subsampling, not averaging); verify common coordinates/dates. Keep eight samples separately from the full 92-day series.",
+    "Build the all-variable/all-date valid mask and cosine-latitude weights; precipitation stays in mm, speed in m/s, direction in degrees FROM north."
+  ],
+  "join_counts": {
+    "merged_rows": 13387,
+    "aggregate_rows_removed": 823,
+    "country_rows_retained": 12564,
+    "duplicate_join_keys": 0
+  },
+  "country_cohorts": {
+    "graph_2020": 179,
+    "matched_2015_2020": 175,
+    "annual_complete_2000_2020": 159,
+    "treemap_2020": 184,
+    "treemap_users": 4521767530
+  },
+  "country_missing_values": {
+    "internet_users_share_pct": 6340,
+    "telephone_lines_per100": 770,
+    "broadband_subs_per100": 8234,
+    "mobile_subs_per100": 1970,
+    "internet_users_count": 6340
+  },
+  "weather": {
+    "daily_dates": 92,
+    "sample_dates": [
+      "2023-07-01",
+      "2023-07-14",
+      "2023-07-27",
+      "2023-08-09",
+      "2023-08-22",
+      "2023-09-04",
+      "2023-09-17",
+      "2023-09-30"
+    ],
+    "common_cells": 13416,
+    "units": {
+      "tmmx": "Celsius",
+      "pr": "mm/day",
+      "vs": "m/s",
+      "th": "degrees FROM clockwise from north"
+    },
+    "caches": {
+      "gridmet_2023-07-01_2023-09-30_n8_s6.npz": "4b05168a1360f3a0f6784259aca0424e235d26c30c44488c059b365e0151ef8c",
+      "gridmet_2023-07-01_2023-09-30_daily_s6.npz": "1d6d55937a1af110b85be46bf7d465b2772a88a8ccf1f5ab1d617dc9fa42c0dc"
+    }
+  },
+  "outputs": {
+    "master_dataset_countries_only.csv": "2521fce98e4af16d701567ea6e4543299d03bc7317ce032e33725ffe28c92386",
+    "region_lookup.csv": "ec0ac0f6fc02474e24a530a11868e24071278c0ef36f8eb08d02af546f4738bc",
+    "weather_support.npz": "5cb4062039cd7c699411b4e6e263f6587d15663276f647cedc3c6bafc5c62b45"
+  }
+}

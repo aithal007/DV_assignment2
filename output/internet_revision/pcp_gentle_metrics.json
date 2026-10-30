@@ -1,0 +1,17 @@
+{
+  "countries": 175,
+  "strength": 0.35,
+  "band_counts": [
+    39,
+    38,
+    98
+  ],
+  "maxima": {
+    "internet_users_share_pct": 100.0,
+    "telephone_lines_per100": 133.53918,
+    "broadband_subs_per100": 54.86728,
+    "mobile_subs_per100": 304.75104
+  },
+  "axis_intersections_preserved": true,
+  "midpoints_clamped_to_endpoints": true
+}

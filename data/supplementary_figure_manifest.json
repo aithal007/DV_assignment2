@@ -1,0 +1,217 @@
+[
+  {
+    "number": 25,
+    "title": "Historical five-neighbor version (superseded by the all-pair threshold network): Region-ordered adjacency matrix.",
+    "path": "images/extensions/network_adjacency_matrix.png",
+    "caption": "Historical comparison only; current network results are in report Figures 1 and 3. The matrix contains the same 179 nodes and 590 undirected similarity edges as the three required layouts. Each edge appears twice by symmetry; the diagonal is empty. Ordering by supplied region and then country alphabetically reveals 249 within-region edges (42.2% of edges) without discovering new communities. Exact row/column order is supplied in data/network_matrix_order.csv. A matrix permits edge verification but does not replace the required interactive node-link layouts; no synchronized interaction is claimed.",
+    "explanation": [
+      "Can graph connections be verified without node-link crossings?",
+      "Both matrix axes list the same 179 countries in supplied-region then alphabetical order. A dark cell denotes a similarity edge; a light cell denotes no edge. Block boundaries mark region groups. Undirected edges appear symmetrically on both sides of the empty diagonal, so 590 edges produce 1,180 dark entries.",
+      "A matrix trades visible geometric neighborhoods for explicit pairwise lookup. Unlike a node-link view, it has no edge crossings; however, tracing multi-step paths is less immediate. Region ordering makes within- and between-region links inspectable, and the saved row/column order supports precise country lookup rather than guessing from blocks.",
+      "Check symmetry and the diagonal before interpreting group structure. Dark blocks arise partly from the chosen ordering, which uses supplied region labels. They are not discovered communities or significance tests. The within-region share describes edges in the similarity graph, not international network traffic or geographic infrastructure.",
+      "Most stored similarity edges cross supplied region boundaries (341 of 590). The matrix verifies connections independently of layout, but raw within/between counts require possible-pair normalization before interpreting regional affinity."
+    ],
+    "figure": 24,
+    "original_figure": 25,
+    "detailed_interpretation": "Because every undirected edge appears twice, 590 edges produce 1,180 dark off-diagonal matrix entries. Of the actual edges, 249 are within regions and 341 cross regions; therefore supplied geography does not partition the similarity network into isolated regional groups. That raw split is not a measure of preferential within-region linking because region sizes determine how many possible pairs exist. The matrix is valuable because it exposes exact adjacency without layout-induced proximity or edge crossings; its ordered blocks are a viewing convention, not discovered communities.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "key": "telecom_scatterplot_matrix",
+    "title": "Pairwise relationships across four telecom measures.",
+    "path": "images/quality/telecom_scatterplot_matrix.png",
+    "caption": "The same 175 matched countries contribute to every cell. Adoption-broadband Spearman rho is 0.831, adoption-mobile is 0.531, and landlines-broadband is 0.866. Raw points expose variation around these pooled associations. Diagonal histograms show unequal and skewed measurement distributions.",
+    "explanation": [
+      "Which pairwise relationships explain the patterns seen in the four-variable profile plot?",
+      "The lower triangle contains all six pairwise scatterplots of adoption, landlines, broadband and mobile in 2020. Country color gives supplied region. Diagonal panels show equal-country histograms; the upper triangle gives descriptive Spearman coefficients. Axis units remain explicit. The full figure displays four measured variables, while each individual scatter cell is bivariate.",
+      "A scatterplot matrix exposes individual measurements, outliers and possible nonlinearity that a correlation-only heatmap hides. It also supplies a position-based cross-check for the color and area encodings in the profile figure. Every cell uses identical complete-case membership, so differing coefficients cannot be attributed to pairwise changes in the sample.",
+      "Pooled correlations can reflect differences between regions and need not hold within each region. There are no significance stars or causal claims. Diagonal binning is descriptive and should not be treated as evidence of distinct country clusters. Subscription units differ from adoption percentages; high mobile values do not imply universal access.",
+      "Fixed infrastructure measures share strong pooled rank associations, but the scatter cells preserve their exceptions and distributional skew. The matrix validates relationships that bubble color and size alone are harder to assess precisely."
+    ],
+    "number": 103,
+    "figure": 28,
+    "original_figure": null,
+    "detailed_interpretation": "The matrix checks the four-variable scatter's less precise color and area channels using pairwise positions. Landlines and broadband have rho 0.866, while adoption and broadband have rho 0.831; points still vary around both relationships. Mobile shows weaker pooled associations with the fixed indicators. The diagonal histograms reveal skewed distributions that can give a few countries substantial visual influence. Rank correlation reduces dependence on the exact numerical spacing, but it remains a descriptive monotonic summary and does not replace inspecting the scatter for exceptions or regional composition.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 27,
+    "title": "Worked horizon construction.",
+    "path": "images/extensions/horizon_construction.png",
+    "caption": "Kenya's actual fixed-panel series moves from 0.32% adoption in 2000 to 24.72% in 2020. The three panels show measured values, signed deviation from 50%, and the same deviation mirrored and folded into two 25-point bands. Red indicates below majority use, even when adoption rises. The method explanation follows the September 29 lecture's construction stages; it does not use fabricated example values.",
+    "explanation": [
+      "How is a horizon plot constructed, and why can rising adoption still appear red?",
+      "Three vertically aligned panels use Kenya's same 21 annual observations. The first shows adoption percentage with a 50% reference; the second subtracts that reference and retains negative values; the third mirrors and folds two 25-percentage-point bands. Shared time alignment allows each stage to be checked against the original series.",
+      "A worked example exposes a transformation that can be difficult to infer from compressed rows alone. Using actual country values avoids a fabricated demonstration. Keeping the intermediate signed-deviation stage explains why hue retains the sign even after negative areas are mirrored upward and layered into one row.",
+      "Follow a year through the panels: subtract 50 from the measured adoption, determine its sign and band, then read the folded color. Kenya remains below 50% throughout this series, so a rising original line can remain red while the darker negative band shrinks. Folded height should not be read as absolute adoption.",
+      "Kenya's adoption rises while its horizon remains red because every value is below 50%. The construction figure prevents a specific misreading of the required horizons; its contribution is methodological rather than a separate data finding."
+    ],
+    "figure": 31,
+    "original_figure": 27,
+    "detailed_interpretation": "Kenya's increase from 0.32% to 24.72% is substantial but never reaches the 50% reference in this panel. Subtraction therefore remains negative throughout, and folding retains a red sign encoding even while the original line rises. The intermediate panel is what makes the transformation auditable: readers can match a year before and after folding. This is useful explanatory information about the visualization, not an additional discovery about adoption beyond the values already shown. It can become a compact methods inset if main-report space is limited.",
+    "proposed_part": "C",
+    "supporting": true,
+    "wide": true
+  },
+  {
+    "number": 28,
+    "title": "KDE sensitivity with empirical reference.",
+    "path": "images/extensions/kde_bandwidth_sensitivity.png",
+    "caption": "The same 159-country 2020 adoption values are smoothed with reflected Gaussian bandwidths 3, 6 and 12 percentage points. The left axis retains true density units; curves are not independently normalized to peak height. The empirical cumulative distribution at right does not depend on smoothing, and the raw median remains 71.37%. Minor density peaks should not be interpreted as stable groups merely because one bandwidth makes them visible.",
+    "explanation": [
+      "Which apparent distribution features persist when the smoothing bandwidth changes?",
+      "The left panel smooths the same 159 adoption values for 2020 using reflected Gaussian bandwidths of 3, 6 and 12 percentage points. Density uses its actual units without peak normalization. The right panel plots the unsmoothed ECDF and the raw median on the same adoption domain.",
+      "A sensitivity comparison tests a key interpretive assumption behind the ridgelines. A narrow kernel can expose small bumps; a broad one suppresses them. The empirical curve and median provide references unaffected by bandwidth, separating changes in the drawing estimator from changes in measured country adoption.",
+      "Compare which bumps merge or disappear as bandwidth increases, then check the empirical cumulative curve. A feature visible only under one kernel setting is weak evidence for a stable group. These are country-weighted distributions; none of the curves estimates how the world's people are distributed across adoption levels.",
+      "Bandwidth changes the apparent density peaks while the raw median remains 71.37%. Base the ridgeline conclusion on the broad distributional shift and empirical values, not on minor modes produced by one smoothing choice."
+    ],
+    "figure": 32,
+    "original_figure": 28,
+    "detailed_interpretation": "All three KDE curves use the same 159 observations, so their different small peaks must come from bandwidth choice rather than changing country data. The empirical distribution and its median of 71.37% provide an unsmoothed reference. Features that vanish at a nearby bandwidth should not be described as established adoption groups. This check improves the credibility of the ridgeline interpretation, but its conclusion can be reported succinctly in methods if a full sensitivity figure would crowd out a stronger substantive result.",
+    "proposed_part": "C",
+    "supporting": true,
+    "wide": true
+  },
+  {
+    "title": "Adoption-band transitions.",
+    "path": "output/lecture_previews/adoption_alluvial.png",
+    "caption": "The >=75% band grows from 0 to 69 countries on a fixed 159-country panel.",
+    "wide": true,
+    "extension_key": "adoption_alluvial",
+    "explanation": [
+      "How do countries move between absolute internet-adoption categories over two decades?",
+      "The three columns are 2000, 2010 and 2020 for the identical 159-country complete annual panel. Blocks are below 25%, 25 to below 50%, 50 to below 75%, and at least 75%. Ribbon thickness is the number of countries making an adjacent-date transition; color follows the source category for each segment. Exact threshold values enter the higher category.",
+      "Ridgelines show distributional movement but not the category transitions connecting dates. An alluvial representation adds those matched-country transitions while holding cohort size fixed. Country membership and flow tables are supplied for exact lookup.",
+      "All countries carry equal weight, so these ribbons do not represent people or internet traffic. Band boundaries are analyst choices. Aggregated adjacent ribbons do not uniquely trace a country through the middle column; use the membership CSV for identities. The complete-case panel excludes countries lacking any annual value.",
+      "The distribution moves toward higher adoption, yet 19 of the same 159 countries remain below 25% in 2020."
+    ],
+    "detailed_interpretation": "The below-25% category contracts from 140 countries in 2000 to 70 in 2010 and 19 in 2020. The at-least-75% category grows from zero to 18 and then 69. Across 2000-2020, 140 countries enter a higher band and 19 remain in the same band. This is broad progress through absolute categories, while the remaining low-adoption countries reveal uneven progress. Same-band membership can conceal large numerical increases, and movement up categories does not alone establish shrinking inequality."
+  },
+  {
+    "title": "Historical five-neighbor version (superseded by the all-pair threshold network): NodeTrix overview.",
+    "path": "output/lecture_previews/nodetrix.png",
+    "caption": "Historical comparison only; current network results are in report Figures 1 and 3. 525 of 590 edges fall inside this exploratory seven-group partition; 65 join groups.",
+    "wide": true,
+    "extension_key": "nodetrix",
+    "explanation": [
+      "Which locally connected country groups and between-group connections are obscured by a node-link overview?",
+      "Each colored square is a symmetric binary adjacency matrix of one exploratory group. Each row/column is a country in the same ISO-code order; a colored cell is an internal edge. Gray segments retain the 65 individual external edges and attach to their actual country row or column. Cell size is constant, and labels give group size and internal edge density. Colors identify derived groups, not regions.",
+      "The hybrid representation retains global connections while replacing internal link crossings with explicit cells. The companion profile figure explains the country measurements behind the partition. Alphabetical ISO ordering is exported in community_country_order.csv; the printed overview does not expose every country label.",
+      "Use the figure to inspect this partition, not to claim seven natural country types. Matrix area grows with group size, so compare the density labels rather than colored area. Paths and links remain derived profile relationships. This is a static NodeTrix-style overview; the full interaction design of the original paper is not claimed.",
+      "Local matrix structure is inspectable, but the number and membership of groups depend on graph and optimizer choices."
+    ],
+    "detailed_interpretation": "The weighted greedy-modularity partition gives seven groups of 40, 37, 35, 32, 14, 13 and 8 countries. There are 525 internal edges and 65 between groups, compared with 3.70% overall edge density. Group internal densities range from 15.6% to 64.3%. This fits a locally denser, globally sparse display, but high internal connectivity is partly expected from the nearest-neighbor construction and modularity objective. Changing k to 3/5/8 gives 13/7/5 greedy groups; alternative Louvain seeds also change memberships."
+  },
+  {
+    "title": "Historical five-neighbor version (superseded by the all-pair threshold network): Group profiles.",
+    "path": "output/lecture_previews/group_profiles.png",
+    "caption": "Historical comparison only; current network results are in report Figures 1 and 3. G1 and G2 average 86.1% and 86.8% adoption, but 24.6 and 37.0 broadband subscriptions per 100.",
+    "wide": true,
+    "extension_key": "group_profiles",
+    "explanation": [
+      "Can nearly equal internet-adoption means conceal different fixed and mobile infrastructure profiles?",
+      "Rows are the seven exploratory network groups. Each panel uses its own raw-unit horizontal axis. A dot is the equal-country mean, while the thick translucent segment spans the 25th-75th country percentiles. These intervals show within-group heterogeneity, not confidence limits. Group colors and IDs agree with the NodeTrix overview retained in the companion gallery.",
+      "Aligned position encodings make differences easier to judge than area or radar polygons. Original units prevent standardized network features being mistaken for adoption percentages. Showing spread prevents a group mean from implying identical countries.",
+      "Group membership changes under k and optimizer sensitivity. Means and interquartile ranges are country-weighted. Mobile subscriptions are not unique users; 140.3 subscriptions per 100 does not imply 140.3% of people own phones. Panel scales differ and should be read separately.",
+      "Similar mean adoption accompanies different infrastructure profiles in this exploratory partition; a single adoption average cannot describe the complete profile."
+    ],
+    "detailed_interpretation": "G1 and G2 average 86.1% and 86.8% adoption, yet landline intensity averages 15.3 versus 41.2 per 100, broadband 24.6 versus 37.0, and mobile 140.3 versus 119.7. The adoption mean alone therefore conceals infrastructure differences. Groups were constructed from these indicators, so those contrasts describe the chosen partition rather than independently validate a causal technology pathway. Other rows preserve the broad profile range and their overlapping country spreads."
+  },
+  {
+    "title": "Adoption quantiles and matched-country gains.",
+    "path": "output/lecture_previews/adoption_quantile_change.png",
+    "wide": true,
+    "extension_key": "adoption_quantile_change",
+    "caption": "On the same 159-country panel, the 90th-minus-10th percentile adoption gap widens from 28.63 to 69.84 percentage points. The median of the adoption distribution rises by 69.16 points, whereas the median individual country gain is 62.09 points.",
+    "explanation": [
+      "Did broad internet-adoption progress also narrow the absolute gap between lower- and higher-adoption countries?",
+      "Panel A compares adoption deciles in 2000 and 2020 on the fixed 159-country complete annual panel. Panel B contrasts differences of corresponding deciles (teal) with deciles of the 159 individual country gains (orange). Each country has equal weight. Values are empirical linear-interpolated quantiles; changes are percentage points.",
+      "Inspired by quantile shift functions, this view measures changes throughout the distribution instead of hiding them inside four adoption bands. The paired-gain curve additionally distinguishes change in distributional positions from change experienced by individual countries.",
+      "A country at the 10th percentile in 2000 need not occupy that percentile in 2020. Differences of quantiles are not quantiles of differences. No causal or inferential claim is made and no confidence intervals are shown. The P90-P10 spread measures absolute percentage-point inequality; relative inequality can behave differently. Bounds at zero and 100 and complete-case selection affect interpretation.",
+      "Adoption rises across the distribution while the absolute P90-P10 gap widens; broad progress and absolute convergence are different claims."
+    ],
+    "detailed_interpretation": "On the same 159-country panel, the 90th-minus-10th percentile adoption gap widens from 28.63 to 69.84 percentage points. The median of the adoption distribution rises by 69.16 points, whereas the median individual country gain is 62.09 points. Panel A therefore supports broad improvement without absolute convergence on this particular spread measure. Panel B shows why a distributional shift must not be read as the gain of a typical matched country: reordering and heterogeneity affect the two summaries differently. The analysis describes included countries, not a population-weighted distribution of people, and does not identify the causes of progress."
+  },
+  {
+    "title": "Absolute and relative inequality through time.",
+    "path": "output/internet_research/inequality_lenses.png",
+    "wide": true,
+    "caption": "The mean pairwise adoption gap rises from 11.43 to 28.78 percentage points, but the Gini falls from 0.708 to 0.222. The absolute gap peaks at 32.86 points in 2013. Within-region differences account for 46.96% of 2020 classified-panel variance.",
+    "explanation": [
+      "Did the digital divide narrow, and does an endpoint comparison hide a turning point?",
+      "Panel A shows the mean absolute adoption difference over all ordered pairs of the same 159 countries, including self-pairs. Panel B divides this gap by twice mean adoption to obtain the relative Gini. Panel C stacks the within-region and between-region-mean components of population variance for 158 classified countries. All panels retain every annual observation from 2000 to 2020, but their vertical units differ.",
+      "The milestone comparison establishes broad but uneven progress. Annual absolute and relative measures test whether that conclusion applies to other definitions and whether the interval contains a reversal. Variance decomposition tests how much country variation regional means leave hidden.",
+      "Countries are equally weighted; this is inequality among national adoption percentages, not an income Gini or a population-weighted access measure. Adoption is bounded by 0 and 100, and its initial mean is small. The one unclassified country is excluded only from panel C. Group decomposition is descriptive, not the causal effect of geography. Within + between equals total variance; it is not a partition of the Gini.",
+      "Relative inequality falls while absolute gaps remain wider than in 2000; absolute dispersion nevertheless narrows after its 2013 peak."
+    ],
+    "detailed_interpretation": "The mean pairwise gap increases from 11.43 points in 2000 to 28.78 in 2020, while the Gini declines from 0.708 to 0.222. These results are compatible because average adoption grows faster than the absolute differences. The 32.86-point peak in 2013 adds information absent from two endpoints: absolute gaps have already begun narrowing by 2020. In the classified panel, 53.04% of 2020 variance lies between region means and 46.96% within regions. Regional averages therefore leave almost half this variation hidden. A claim that the digital divide simply grew or shrank would omit the measure, time interval and aggregation level that determine the answer.",
+    "extension_key": "inequality_lenses"
+  },
+  {
+    "title": "Weather condition intersections.",
+    "path": "output/lecture_previews/weather_upset.png",
+    "caption": "Hot/dry/windy together occupy 2.57% of weighted area-days; hot/dry with any wind occupy 16.27%.",
+    "wide": true,
+    "extension_key": "weather_upset",
+    "explanation": [
+      "How often do hot, dry and windy daily conditions occur separately and in combination?",
+      "Each column gives one exact intersection of three sets: Tmax at least 35 C, rain below 1 mm, and wind speed at least 5 m/s. Filled dots mean present and pale dots absent. Top bars are cosine-latitude-weighted area-day percentages; left bars show marginal set percentages. All eight combinations, including none, sum to 100% over the fixed 13,416-cell, 92-day support.",
+      "Exact intersections distinguish the prevalence of each condition from joint overlap. Marginal set sizes provide context for the intersection sizes. A three-set Venn diagram is possible, but aligned bars make quantitative comparisons and the none category straightforward.",
+      "These are descriptive daily conditions, not official hazard classes. Daily Tmax, precipitation totals and wind summaries do not prove simultaneous hourly conditions. The chart pools time and space, so it cannot locate the overlap or distinguish isolated days from long runs. Neighboring cells and dates are dependent; no significance or independence claim is made.",
+      "Frequent individual conditions can have much less frequent joint overlap: adding the chosen wind threshold reduces hot/dry overlap from 16.27% to 2.57% of area-days."
+    ],
+    "detailed_interpretation": "Hot, dry and windy sets occupy 18.06%, 76.65% and 11.65% of weighted sampled area-days. Dry with neither other condition occupies 54.11%. Hot and dry with any wind occupies 16.27%, whereas all three conditions occupy 2.57%. Thus the large dry marginal does not imply the three conditions commonly occur together. Exported alternatives cover 33/35/37 C, rain cutoffs 0.5/1 mm and wind thresholds 4/5/6 m/s; overlap changes with the definition."
+  },
+  {
+    "key": "country_change_quadrants",
+    "title": "Matched-country changes reveal divergent infrastructure paths.",
+    "path": "images/quality/country_change_quadrants.png",
+    "caption": "Internet adoption increased while landline intensity fell in 126 of 175 countries (72.0%). Spearman association between adoption change and broadband change is 0.054, versus 0.831 between their 2020 levels on exactly the same countries. A strong level association therefore does not imply that five-year increases track one another.",
+    "explanation": [
+      "Does the strong association of infrastructure levels also describe changes within countries?",
+      "Each country appears once in its supplied-region facet. X gives landline change per 100 and Y adoption change in percentage points, both 2020 minus 2015. A zero-centered diverging scale gives broadband change per 100. Zero lines define the quadrants. Panel headings count positive-adoption, negative-landline cases; points on zero boundaries are excluded from that strict count.",
+      "Country-level changes preserve heterogeneity that regional medians conceal. All panels share domains, and both dates have complete observations for all four indicators in the same 175 countries. Keeping signed broadband changes in color avoids encoding negative quantities as bubble sizes. This complements the retained regional dumbbell rather than replacing its summary purpose.",
+      "Changes compare two endpoints and cannot identify the year of transition. Population changes can also alter subscriptions per 100. Differences in rank correlations across levels and changes do not establish causation, substitution, or statistical significance. Region is context, not an income proxy. A small change correlation does not imply that broadband is irrelevant.",
+      "Adoption rises while landline intensity falls in 72% of matched countries, yet broadband and adoption changes are only weakly rank-associated. Strong differences between countries must not be read as a causal account of change within countries."
+    ],
+    "number": 102,
+    "figure": 27,
+    "original_figure": null,
+    "detailed_interpretation": "Exactly 126 countries lie in the adoption-gain, landline-decline quadrant. That 72% share is a transparent descriptive count, not a fitted model. The broadband-adoption association falls from rho 0.831 for 2020 levels to 0.054 for 2015-2020 changes on identical countries. Stable cross-country differences, different starting levels and the timing of changes can make these comparisons diverge, but the chart cannot identify which explanation is responsible. It therefore qualifies the level-based story without establishing that broadband growth has no effect.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "title": "Country-by-year adoption atlas.",
+    "path": "output/internet_review_20261024/adoption_atlas.png",
+    "wide": true,
+    "caption": "The atlas retains all 3,339 observed country-year values in the fixed panel. It is a full-resolution companion rather than a compressed report-column figure.",
+    "explanation": [
+      "Which individual trajectories are hidden by regional summaries?",
+      "159 country rows and 21 annual columns; shared 0\u2013100% color scale, ordered by region and 2020 adoption.",
+      "Country identities and annual histories are visible at full resolution.",
+      "Countries are equally weighted visually. Complete cases exclude countries with missing annual observations.",
+      "A regional average cannot identify each country\u2019s timing."
+    ],
+    "detailed_interpretation": "The atlas retains all 3,339 observed country-year values in the fixed panel. It is a full-resolution companion rather than a compressed report-column figure."
+  },
+  {
+    "title": "Asia treemap drilldown.",
+    "path": "output/internet_revision/treemap_zoom.png",
+    "wide": true,
+    "caption": "Country values are unchanged when drilling into the group.",
+    "explanation": [
+      "What is inside the region-first root?",
+      "Country rectangles use count area and adoption color. The displayed total is Asia only.",
+      "This drilldown demonstrates the country encoding beneath the neutral root.",
+      "Do not compare areas with root views as if they used the same denominator.",
+      "Zoom reveals the country leaves while preserving the hierarchy."
+    ],
+    "detailed_interpretation": "Country values are unchanged when drilling into the group."
+  }
+]

@@ -1,0 +1,30 @@
+﻿import fs from 'node:fs/promises';
+import path from 'node:path';
+import http from 'node:http';
+import {createRequire} from 'node:module';
+import {fileURLToPath} from 'node:url';
+const require=createRequire('C:/Users/Parikshith/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/x.cjs');
+const {chromium}=require('playwright');
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const out=path.join(root,'output/pcp_changes');
+const protectedFiles=['REPORT.md','data/current_figure_manifest.json','output/pdf/DAS732_A2_Report_IEEE.pdf','output/internet_revision/pcp_gentle_bundles.png'];
+const {createHash}=await import('node:crypto');const digest=async f=>createHash('sha256').update(await fs.readFile(path.join(root,f))).digest('hex');const before=await Promise.all(protectedFiles.map(digest));
+const server=http.createServer(async(req,res)=>{try{const target=path.resolve(root,'.'+decodeURIComponent(new URL(req.url,'http://local').pathname));if(!target.startsWith(root+path.sep))throw Error();res.setHeader('Content-Type',({'.html':'text/html','.js':'text/javascript','.json':'application/json'})[path.extname(target)]||'application/octet-stream');res.end(await fs.readFile(target));}catch{res.statusCode=404;res.end('missing');}});
+await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+const browser=await chromium.launch({headless:true,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});
+const assert=(x,m)=>{if(!x)throw Error(m)};const errors=[];
+try{
+ const p=await browser.newPage({viewport:{width:1500,height:1100},deviceScaleFactor:1.5});p.on('pageerror',e=>errors.push(String(e)));
+ await p.goto('http://127.0.0.1:'+server.address().port+'/output/pcp_changes/index.html');
+ await p.waitForFunction(()=>document.querySelector('#chart')?.dataset.selected==='39');
+ assert(await p.locator('.line').count()===175,'Missing country');
+ await p.locator('.line[data-code="GEO"]').dispatchEvent('mouseenter');assert((await p.locator('#details').innerText()).includes('Georgia'),'Hover failed');
+ const original=await p.locator('.line[data-code="GEO"]').getAttribute('d');await p.locator('#curves').selectOption('0');assert(original!==await p.locator('.line[data-code="GEO"]').getAttribute('d'),'Toggle failed');
+ await p.locator('#reorder').click();assert((await p.locator('.axis-title').allTextContents())[0]==='Fixed broadband','Reorder failed');assert(await p.locator('#chart').getAttribute('data-selected')==='39','Membership changed');
+ const box=await p.locator('.brush-zone').boundingBox();await p.mouse.move(box.x+box.width/2,box.y+box.height*.1);await p.mouse.down();await p.mouse.move(box.x+box.width/2,box.y+box.height*.3,{steps:10});await p.mouse.up();
+ assert(await p.locator('#lo').inputValue()==='20'&&await p.locator('#hi').inputValue()==='40','Pointer brush failed');
+ await p.locator('#reset').click();assert(await p.locator('#chart').getAttribute('data-selected')==='39','Reset failed');
+ await p.screenshot({path:path.join(out,'interactive_preview.png'),fullPage:true});
+ assert(errors.length===0,'Runtime errors');assert(JSON.stringify(before)===JSON.stringify(await Promise.all(protectedFiles.map(digest))),'Report changed');
+ const result={status:'PASS',countries:175,selected:39,pointer_brushing:true,reordering:true,hover:true,toggle:true,reset:true,report_unchanged:true,errors};await fs.writeFile(path.join(out,'browser_validation.json'),JSON.stringify(result,null,2));console.log(JSON.stringify(result));
+}finally{await browser.close();await new Promise(resolve=>server.close(resolve));}

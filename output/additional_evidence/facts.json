@@ -1,0 +1,74 @@
+{
+  "country": {
+    "eligible_pairs": 454,
+    "retained_pairs": 71,
+    "examples": [
+      {
+        "country_a": "Mozambique",
+        "country_b": "Malawi",
+        "code_a": "MOZ",
+        "code_b": "MWI",
+        "internet_gap_pp": 0.38790000000000013,
+        "infrastructure_distance": 0.032022303136110306,
+        "similarity": 0.9659165248804756,
+        "retained": true,
+        "selected": true,
+        "absolute_gap_internet_users_share_pct": 0.38790000000000013,
+        "absolute_gap_telephone_lines_per100": 0.22535394000000003,
+        "absolute_gap_broadband_subs_per100": 0.16465602,
+        "absolute_gap_mobile_subs_per100": 0.985160999999998
+      },
+      {
+        "country_a": "Bhutan",
+        "country_b": "Turkey",
+        "code_a": "BTN",
+        "code_b": "TUR",
+        "internet_gap_pp": 0.8187599999999975,
+        "infrastructure_distance": 1.4322712184734812,
+        "similarity": 0.41108061950941,
+        "retained": false,
+        "selected": true,
+        "absolute_gap_internet_users_share_pct": 0.8187599999999975,
+        "absolute_gap_telephone_lines_per100": 11.4744025,
+        "absolute_gap_broadband_subs_per100": 19.02425338,
+        "absolute_gap_mobile_subs_per100": 1.3742000000000019
+      },
+      {
+        "country_a": "Kuwait",
+        "country_b": "Monaco",
+        "code_a": "KWT",
+        "code_b": "MCO",
+        "internet_gap_pp": 0.5350699999999904,
+        "infrastructure_distance": 7.240677392340161,
+        "similarity": 0.12134882239181498,
+        "retained": false,
+        "selected": true,
+        "absolute_gap_internet_users_share_pct": 0.5350699999999904,
+        "absolute_gap_telephone_lines_per100": 101.604566,
+        "absolute_gap_broadband_subs_per100": 53.1866987,
+        "absolute_gap_mobile_subs_per100": 60.60759999999999
+      }
+    ]
+  },
+  "weather": {
+    "event_days": 75,
+    "short_run": 17,
+    "long_run": 67,
+    "maximum_run": 67,
+    "selected_cells": [
+      {
+        "lat": 26.65,
+        "lon": -97.76666663333334,
+        "days": 75,
+        "run": 17
+      },
+      {
+        "lat": 30.15,
+        "lon": -96.26666663333334,
+        "days": 75,
+        "run": 67
+      }
+    ],
+    "selection_rule": "Maximize longest-run difference among positive equal-count classes; break ties by lower count then earlier flattened cell index. Append first cell with global maximum run if absent."
+  }
+}

@@ -1,0 +1,617 @@
+[
+  {
+    "number": 1,
+    "title": "Three layouts of one derived 2020 country graph.",
+    "path": "images/network_layouts.png",
+    "caption": "Three layouts of the same 179-node, 590-edge country similarity graph. Circular placement makes the density of links visible but obscures individual neighborhoods; spring separates many local links more clearly, while spectral emphasizes a broad ordering. These are layout effects, not alternate network measurements. Slovenia has degree 12, whereas the mean degree is 6.59; degree reflects the five-neighbor union rule and does not measure geopolitical importance.",
+    "explanation": [
+      "How much of a country similarity graph's apparent structure comes from its layout?",
+      "Each point is one country with complete 2020 values for four connectivity indicators. Color gives its supplied region; a link joins countries selected by the standardized five-nearest-neighbor rule. The three panels use identical nodes and edges, but spring, spectral and circular algorithms assign different drawing positions.",
+      "Holding the graph fixed makes layout the controlled variable. Spring placement emphasizes local neighborhoods, spectral placement provides an ordering from graph structure, and the circle supplies a deliberately constrained baseline. Agreement across layouts is stronger evidence than proximity in only one drawing.",
+      "Trace a country and its links across all three panels before calling an apparent group meaningful. A node's coordinates have no geographic or indicator units. Crossings in the circular view reflect placement; they are not additional connections. Regional colors permit comparison with supplied labels rather than proving discovered communities.",
+      "The same 179-country, 590-edge graph creates different visual neighborhoods under different layouts. Verify an apparent group using its links; geometric separation alone is not a discovered community."
+    ],
+    "figure": 1,
+    "original_figure": 1,
+    "detailed_interpretation": "The key comparison is not which panel contains more groups: every panel contains exactly the same 590 edges. A neighborhood that looks separated in spring layout may be less visually isolated under spectral placement. Checking the actual links distinguishes graph structure from layout geometry. Slovenia's degree of 12 exceeds the mean 6.59, but this is a property of a symmetrized five-nearest-neighbor construction, not evidence of national influence or physical network capacity. This figure earns its place as the required controlled layout experiment.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 2,
+    "title": "Interactive graph explorer.",
+    "path": "images/network_interactive.png",
+    "caption": "Network browser page. Filtering and selection are intended to inspect particular neighborhoods; layout conclusions should be checked against the identical edge list in Figure 1.",
+    "explanation": [
+      "Can an apparent country neighborhood be inspected rather than inferred from a crowded picture?",
+      "The screenshot records one state of the interactive explorer. Nodes and regional colors have the same meanings as Figure 1. Layout controls, similarity filtering, search, selection and neighbor highlighting change the view of the stored graph. Edge filtering removes displayed links, not the underlying observations.",
+      "Overview alone cannot resolve overlapping links. Interaction supports an overview-to-detail sequence: locate a country, select it, then inspect its connected neighbors and values. A threshold filter is useful for isolating stronger similarities, provided the reader knows the visible graph is now a subset.",
+      "Use the screenshot as evidence of the implemented controls, not as a substitute for exercising them. Verify a neighborhood against the underlying edge list. Changing the threshold can make a country look isolated even though it remains connected in the original graph. The PDF cannot reproduce hover, panning or a sequence of filter states.",
+      "The explorer enables country-level inspection, but this unselected screenshot adds little beyond the layout comparison. Keep the working interaction even if the duplicate overview image is removed."
+    ],
+    "figure": 2,
+    "original_figure": 2,
+    "detailed_interpretation": "This view has a different evidential role from a data-result plot: it documents the browser interface and available inspection controls. In its current unselected state it largely repeats the network overview, so it does not justify a new country-level conclusion. Its value increases only when a reader actually selects a country, inspects neighbors and compares the retained edges. Keeping the interactive application is essential even if this screenshot is later omitted from the main report; implementation completeness and screenshot count are different issues.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 3,
+    "title": "Straight parallel coordinates for the 2020 matched panel.",
+    "path": "images/parallel_coordinates_straight_2020.png",
+    "caption": "Straight-line baseline for 175 matched countries in 2020. Many countries combine low landline rates with high mobile subscriptions; the line crossings make individual paths difficult to follow. Mobile subscriptions above 100/100 do not mean more than 100% of distinct people own phones.",
+    "explanation": [
+      "Which combinations of connectivity measures occur in the same countries?",
+      "Each polyline represents one of the 175 matched countries. Its intersections with the four vertical axes give internet adoption, fixed telephones, broadband and mobile subscriptions in their labeled units. Region determines color. The domains are fixed across the matched 2015 and 2020 comparison, rather than being stretched independently for each year.",
+      "Parallel coordinates retain four measured dimensions without reducing them to a composite score. Straight segments provide the baseline against which bundling can be judged. Fixed axes prevent a year-specific scale from making an unchanged value appear to move, and the matched panel prevents membership changes from creating apparent trends.",
+      "Read values at axis intersections, then follow the same line between neighboring axes. Slopes between axes with different units are not numerical rates of change. Crossings summarize relative ordering, but dense crossings can hide individual countries; brushing or selection is needed for a precise profile comparison.",
+      "A country's mobile subscription intensity, fixed infrastructure and adoption need not move together in a 2020 profile. Four explicit axes preserve those differences; subscriptions above 100 remain counts of subscriptions, not people."
+    ],
+    "figure": 3,
+    "original_figure": 3,
+    "detailed_interpretation": "Read one polyline across all four measured axes before comparing the whole collection. Low landline intercepts combined with much higher mobile intercepts illustrate why one infrastructure indicator cannot summarize a country. However, a steep segment between differently scaled axes is not a numerical growth rate, and crossings do not show temporal transitions. This is a single-year profile view. The straight-line baseline is retained because it lets the reader check whether later bundling changes readability while preserving the measured values.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 4,
+    "title": "Region-bundled parallel coordinates for the same countries.",
+    "path": "images/parallel_coordinates_2020.png",
+    "caption": "Moderate region bundling (50%) on the same countries and axes. The regional color paths are easier to trace through the middle of the chart, but their curved segments are visual interpolation only. Compare the exact axis intercepts with Figure 3 when reading values.",
+    "explanation": [
+      "Does moderate bundling help readers follow supplied regional groups?",
+      "The countries, indicator axes, domains and regional colors are identical to Figure 3. A 50% bundling setting bends the intermediate line segments toward a regional centroid. All measured intersections with the axes are preserved; intermediate curves are constructed drawing paths rather than extra observations.",
+      "The pair with Figure 3 is a controlled readability experiment. Bundling reduces visual disorder between axes and makes regional trajectories easier to follow, while the straight version provides a check on individual profiles. Moderate bundling balances group visibility against the risk that dense bundles hide within-group variation.",
+      "Compare the two plots at the axis intercepts to confirm that the measurements did not change. A shared curve between axes should not be read as evidence that countries have identical values. Because grouping uses existing region labels, bundle separation cannot be presented as an independently discovered clustering result.",
+      "Moderate bundling makes supplied regional paths easier to follow without moving their measured axis values. The resulting bundles visualize the grouping rule; they do not discover or prove regional clusters."
+    ],
+    "figure": 4,
+    "original_figure": 4,
+    "detailed_interpretation": "The intervention here is the 50% region-centroid bundling, not a change in the dataset. Compare the same axis intercepts with the straight baseline: their locations should agree even where the connecting paths bend noticeably. A visually tight regional bundle may result partly from the rendering rule itself. It therefore helps a reader follow known group membership but is not independent evidence that regions form compact statistical clusters. Precision still comes from the intercepts, hover values and brushing, rather than from the curves between axes.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 5,
+    "title": "Zoomed region hierarchy for Asia.",
+    "path": "images/treemap_region.png",
+    "caption": "Asia in the region-first hierarchy, containing 2,574,174,938 users across 43 included countries. China and India occupy most of the area, but area represents population using the internet rather than adoption percentage. China alone has 988,514,400 users and India 608,812,400 in the source table.",
+    "explanation": [
+      "Where are included internet users concentrated within Asia?",
+      "A rectangle is a country leaf inside the World-to-region-to-country hierarchy. Rectangle area is proportional to the number of internet users, whereas sequential color represents the percentage of that country's population using the internet. The screenshot is zoomed into Asia; the breadcrumb records the current branch.",
+      "A treemap uses space efficiently to compare part-to-whole counts within a hierarchy. Area and color answer different questions: a populous country can contain many users without having the highest adoption share. Zooming makes smaller leaves inspectable and retains the parent context needed to understand what the areas sum to.",
+      "Read the parent total first, then inspect both size and color for a country. Large China and India rectangles describe user counts, not land area or universal access. The screenshot's regional total is a subset of the included-country total; neither should be silently substituted for a complete global estimate.",
+      "China and India dominate the included Asian user count, but rectangle size does not establish universal adoption. Read area as scale of use and color as prevalence; the two answer different questions."
+    ],
+    "figure": 5,
+    "original_figure": 5,
+    "detailed_interpretation": "China and India together account for more than half of the 2.574 billion included internet users in the Asia view. This concentration explains the large rectangles without requiring either country to have the highest adoption percentage. The color channel answers that separate question. A large population can produce many users even at incomplete adoption, whereas a small country with near-universal adoption can occupy little area. The denominator is the included-country total, so the result should not be generalized to missing countries or treated as a population-weighted average adoption rate.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 6,
+    "title": "Zoomed high-adoption band for Asia.",
+    "path": "images/treemap_adoption.png",
+    "caption": "Asia within the 75\u2013100% adoption band, totaling 497,527,696 users across 24 included countries. Compared with Figure 5, the hierarchy changes the question from geographic totals to the geographic composition of a high-adoption group. It does not change country values.",
+    "explanation": [
+      "What is Asia's composition inside the high-adoption group?",
+      "The remodeled hierarchy is World-to-adoption-band-to-region-to-country. Leaves still use internet-user counts for area and adoption share for color. The displayed branch is Asia within the analyst-defined 75-100% band; countries outside that band remain elsewhere in the hierarchy rather than being assigned new values.",
+      "Changing the parent structure changes the analytical question without changing leaf measurements. Compared with Figure 5's geographic view, the adoption-first view asks which regions and countries account for users inside a specified access group. The same leaf values make the comparison a hierarchy experiment rather than a different dataset.",
+      "Check the breadcrumb and parent total before comparing rectangle sizes. A country may be prominent in Asia's overall user count yet absent from this high-adoption branch. Percentile-like visual groupings should not be inferred: the four adoption bands are fixed percentage thresholds, not equal-sized country groups.",
+      "The 497.5 million users in this view belong to a selected high-adoption subset, not a reduced version of Asia's population. Remodeling changes the route of inquiry; the different zoom states also change which countries are displayed."
+    ],
+    "figure": 6,
+    "original_figure": 6,
+    "detailed_interpretation": "This zoom contains 24 high-adoption Asian countries, compared with the 43-country regional view, and a much smaller included user total. The hierarchy first asks which countries belong to the 75-100% band and then where they are located. It does not report users lost after changing the hierarchy. The displayed leaves differ between these two zoom states, so they should not be compared as equal-population experiments. A controlled comparison of the hierarchy algorithms would show the same full leaf universe at the root before zooming.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 7,
+    "title": "Country horizon plots.",
+    "path": "images/horizon_countries.png",
+    "caption": "Country variation of horizon plots. Exact countries and selection quantiles are in `data/horizon_country_selection.json`; the sample illustrates within-region contrasts and does not represent every country.",
+    "explanation": [
+      "How do selected countries approach or exceed majority internet use over time?",
+      "Each row follows one selected country's annual adoption from 2000 to 2020. The plotted quantity is adoption minus 50 percentage points. Two 25-point bands per side are mirrored and folded: red denotes below the reference and blue above it, with darker bands indicating greater distance. Time runs left to right.",
+      "Horizon layering compresses several time series into comparable rows while retaining timing and baseline crossings. The reproducible low/high quantile rule within each region makes the selection transparent. It illustrates contrasting trajectories rather than choosing only visually striking cases or claiming coverage of every country.",
+      "Read hue as the sign relative to 50%, saturation as distance, and changing shape as temporal movement. A red row can represent rising adoption that remains below 50%; red does not mean decline. For precise adoption values, return to the annual table or the unfurled construction in Figure 31.",
+      "Selected countries illustrate contrasting routes toward majority internet use. The selection demonstrates variation rather than its prevalence, and a red horizon can still represent improving adoption below 50%."
+    ],
+    "figure": 7,
+    "original_figure": 7,
+    "detailed_interpretation": "The country rows are a deliberately selected set of low/high 2020 examples within regions. Their contrast is useful for showing heterogeneity that a regional median can hide, but it is not an estimate of how common each trajectory is. Follow one row horizontally: changing saturation indicates distance from the 50% baseline, while the sign color indicates its side. A row may become less dark red as adoption rises without becoming blue. The construction example later explains that apparent paradox using the original values.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 8,
+    "title": "Regional median horizon plots.",
+    "path": "images/horizon_regions.png",
+    "caption": "Regional medians, with each included country weighted equally. The six classified regions cover 158 of the 159 panel countries; the one Unclassified country remains in the global panel but has no regional median row. In 2020 the regional medians are 86.86% in Europe, 77.84% in Asia, 72.33% in South America, 70.28% in North America, 53.71% in Oceania, and 31.89% in Africa. These are neither population-weighted averages nor estimates for missing countries. Europe crosses the 50% line earlier than the other displayed regional medians; Africa's median remains below it in 2020.",
+    "explanation": [
+      "Do regional median trajectories cross the majority-use milestone at similar times?",
+      "Each row shows an annual median over a fixed set of countries in one classified region. Every included country has equal weight. The sign, two 25-point bands and 50% baseline match Figure 7, so a blue interval indicates that the regional country median exceeds majority use.",
+      "Aggregation removes individual line clutter and exposes differences in typical-country timing. Fixed regional membership keeps the same countries in each year's median. Pairing the regional view with selected-country rows reveals the tradeoff: medians are easier to compare, but they conceal spread and exceptional country paths.",
+      "Compare the timing of color changes, then inspect the reported 2020 medians. The regional statistic is not the share of all regional people who are online: large and small countries receive equal weight. A median below 50% also does not mean every included country in the region is below that threshold.",
+      "On a fixed country panel, regional progress is uneven: Europe crosses majority use earlier, while Africa's median is still 31.89% in 2020. Regional improvement does not establish that the gap has disappeared."
+    ],
+    "figure": 8,
+    "original_figure": 8,
+    "detailed_interpretation": "Europe's 2020 included-country median of 86.86% exceeds Africa's 31.89% by about 55 percentage points. Reading that endpoint together with the trajectories distinguishes the timing of crossing the 50% milestone from the final level reached. The fixed 159-country panel prevents changing availability from explaining the regional time paths; six classified regions contain 158 of those countries. Equal-country medians still hide within-region variation, so the country horizons and regional ridgelines are necessary companions rather than interchangeable repetitions.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 9,
+    "title": "Whole-panel ridgeline variation.",
+    "path": "images/ridgeline_years.png",
+    "caption": "The median moves from 2.20% in 2000 to 10.53% in 2005, 29.68% in 2010, 50.14% in 2015, and 71.37% in 2020 (n=159 in each year). The 2020 density is spread across the scale, so a rising median does not imply all countries converged.",
+    "explanation": [
+      "How does the whole fixed panel's adoption distribution shift between selected years?",
+      "Horizontal position is adoption percentage on the common 0-100% scale. Each ridge estimates the distribution across the same 159 countries in one year using a reflected Gaussian kernel with bandwidth 6 percentage points. Ridge heights are separately normalized; ticks mark raw medians and year labels identify the slices.",
+      "A distribution view tests whether a rising central value is accompanied by narrowing or persistent spread. Boundary reflection reduces smoothing leakage beyond the meaningful percentage range. Fixed membership and shared horizontal limits make distribution shifts interpretable; the median ticks anchor the smoothed shapes to an unsmoothed statistic.",
+      "Compare where density is concentrated and how broadly each ridge extends, rather than comparing peak heights as counts. A higher median can coexist with countries at both ends of the scale. Small density bumps depend on smoothing and should be checked using Figure 32 before being described as distinct adoption groups.",
+      "The median country's adoption rises by 69.17 percentage points from 2000 to 2020, but the broad final distribution still contains unequal outcomes. A higher center is not the same as convergence."
+    ],
+    "figure": 9,
+    "original_figure": 9,
+    "detailed_interpretation": "The median shifts from 2.20% to 71.37%, a rise of 69.17 percentage points, while the distribution remains spread across adoption levels. These are two different findings: a typical included country has progressed substantially, yet the entire population of countries has not collapsed into one narrow band. Keeping the same 159 countries means this change cannot be attributed to richer-data countries entering later years. Density peaks depend on smoothing, so the robust conclusions concern the broad shift and persistent spread, not the exact number of bumps.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 10,
+    "title": "Region-faceted ridgeline variation.",
+    "path": "images/ridgeline_regions.png",
+    "caption": "Region variation reveals unequal shifts hidden by the global ridge. Small Oceania and South America panels should be read cautiously because regional country counts are 8 and 10. A KDE is a smoothed descriptive estimate; minor peaks should not be treated as robust modes without bandwidth sensitivity checks.",
+    "explanation": [
+      "Which regional distribution shifts are hidden by the global ridgeline?",
+      "Each facet is a classified region, and each ridge is one of the same five annual slices. The adoption axis, kernel bandwidth, boundary treatment and median ticks match Figure 9. Country counts are fixed within region; ridge height remains independently normalized rather than representing the size of the region.",
+      "Faceting separates regional mixtures that can overlap in a pooled distribution. Keeping the same visual conventions permits a regional-to-global comparison without changing the smoothing method. Displayed sample sizes are essential because a visually complex ridge from a small panel can be driven by only a few countries.",
+      "Compare horizontal shifts within each facet and differences between regional medians. Do not compare filled area as regional population or numbers of users. Oceania and South America have particularly small country panels, so peaks there are fragile descriptive shapes; regional membership and missing-country coverage also limit generalization.",
+      "Regional distributions show which groups contribute to the global adoption shift and which retain broad variation. Apparent peaks in the smallest regions are weak evidence unless supported by raw values and smoothing checks."
+    ],
+    "figure": 10,
+    "original_figure": 10,
+    "detailed_interpretation": "Faceting asks whether the pooled shift reflects comparable movement inside every region. Inspect the horizontal locations and spreads of ridges at matched years, rather than comparing peak heights as counts. The small Oceania and South America groups contribute only eight and ten countries, making their smooth curves particularly sensitive to individual observations. A region with a compact high-adoption distribution and one with a broad lower distribution can be concealed by a single global ridge. These panels explain composition, not independent statistical clusters.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 11,
+    "title": "Eight dates, one temperature scale.",
+    "path": "images/scivis/scivis_temperature_atlas.png",
+    "caption": "All eight snapshots use -1.85 to 49.65 \u00b0C. Gray means no data. Shared limits allow direct comparisons; eight dates cannot establish event duration or a seasonal trend.",
+    "explanation": [
+      "How do eight temperature snapshots compare when one color scale is held fixed?",
+      "Each map is one selected daily maximum-temperature field; longitude and latitude locate the sampled cells. All eight panels share the same Celsius limits and sequential palette. Gray marks missing cells. Dates identify the eight uniformly selected snapshots, including both interval endpoints, rather than eight daily consecutive fields.",
+      "Small multiples preserve a stable spatial reference and allow direct visual comparison without waiting for an animation frame. A shared scale means a given color denotes the same temperature on every date. Uniform date selection avoids choosing only exceptional days, while the calendar in Figure 17 makes the remaining temporal gaps explicit.",
+      "Track the same location across dated panels and read its color against the common bar. The atlas can show broad spatial contrasts at the selected times, but it cannot establish how long an event lasted between snapshots. For monthly behavior, use the complete daily fields summarized in Figures 18-21.",
+      "The atlas supports consistent comparison of eight sampled fields, but not event duration. Its main role is a static companion to the GIFs; full-daily analyses provide the additional temporal evidence."
+    ],
+    "figure": 11,
+    "original_figure": 11,
+    "detailed_interpretation": "The atlas places all eight animation dates on one common scale, making it useful as a static navigation aid to the GIFs. It does not add observations between dates. A feature visible in two panels may have weakened, disappeared or returned during the 13-day gap; persistence cannot be inferred from recurrence in snapshots. The 92-day diagrams and run-length analysis answer that temporal question directly. This atlas therefore remains useful supporting context, but has lower incremental value once those complete-daily analyses and the animations are supplied.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 12,
+    "title": "Continuous, discrete, linear and logarithmic mapping.",
+    "path": "images/scivis/scivis_color_experiments.png",
+    "caption": "Same fields on 2023-08-22. Temperature uses continuous viridis and 5 \u00b0C cividis classes. Of valid rain cells, 68.7% are dry and 0.00% have positive rain below 0.1 mm. Rain above 32.28 mm (1.01% of valid cells) saturates. The log panel assigns white to dry cells, pale yellow to positive rain below 0.1 mm, and gray to missing cells.",
+    "explanation": [
+      "How do palette classes and normalization alter the visibility of the same scalar fields?",
+      "The temperature pair compares a continuous sequential palette with fixed 5-degree classes. The rain pair compares linear and logarithmic positive-rain mapping for the same date. Gray is missing, white is dry, and the stated low-positive-rain category is distinct from zero. Color bars define units and limits, including saturation.",
+      "Separating palette and normalization experiments shows that visual contrast is a design choice. Continuous color retains gradual variation; classes simplify boundaries at the cost of within-class detail. A logarithmic rain scale expands small positive values that are compressed by a linear scale dominated by heavy-rain cells.",
+      "Compare identical locations within each variable's pair, not temperature colors against rainfall colors. Saturated rain cells cannot be ranked precisely from their shared endpoint color. The log experiment must not treat zero as a small positive amount; the separately encoded dry fraction prevents that mathematical and interpretive error.",
+      "Rainfall normalization changes which positive amounts are distinguishable, while most cells remain dry. Preserve zero and saturation information; the temperature pair shows a combined palette/classing change rather than an isolated discretization experiment."
+    ],
+    "figure": 12,
+    "original_figure": 12,
+    "detailed_interpretation": "With 68.7% of valid cells dry, the dominant rainfall distinction is zero versus positive precipitation before any subtle positive-value contrast. Logarithmic mapping exposes differences among smaller positive amounts, while a linear scale emphasizes the larger values. The 1.01% of cells above the displayed rain limit cannot be ranked visually after saturation. The temperature comparison changes both palette and classing, so it demonstrates their combined effect rather than isolating discretization as a single cause. This limitation should accompany any claim about which rendering is clearer.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 13,
+    "title": "Global versus local extrema.",
+    "path": "images/scivis/scivis_global_local.png",
+    "caption": "Global limits are actual minima/maxima over these eight subsampled fields. The narrowest daily span is 9.15 to 41.85 \u00b0C on 2023-09-17; the widest is -1.85 to 38.75 \u00b0C on 2023-09-30. Local scales improve within-date contrast but change the numerical meaning of the same color. Global here means the sampled space-time cube, not all 92 days or the whole Earth.",
+    "explanation": [
+      "Is stronger within-day contrast compatible with reliable between-day color comparison?",
+      "The two columns compare one shared scale against a scale fitted to each displayed day's actual minimum and maximum. Each row uses the same date and field in both columns. The local color bars change by day; the shared limits are computed over the original eight-field sampled cube, not over the full 92-day cache.",
+      "This experiment isolates rescaling from the weather measurements. Global limits provide one numerical meaning for color, while local limits allocate the full palette to a smaller within-day range. Showing bars for every local panel makes the rescaling explicit rather than allowing a visually vivid image to imply hotter weather.",
+      "Compare spatial structure within a row, then inspect the bars before comparing colors between rows. A yellow local cell on a cooler date may have a lower temperature than a green cell on a warmer date. Changes in apparent intensity therefore cannot be used alone to establish warming or cooling.",
+      "Use the shared scale to compare temperatures between dates and the local scale to inspect contrast within a date. Similar colors in locally normalized maps are not evidence of similar absolute temperatures."
+    ],
+    "figure": 13,
+    "original_figure": 13,
+    "detailed_interpretation": "The local scale stretches each day's range across the palette, making within-day variation more visible even on a relatively uniform day. That same benefit can make a cooler day look as visually warm as a hotter one. The narrowest and widest ranges quoted in the caption are descriptive of the sampled dates, not climate-normal variability. Shared extrema are preferable for comparing absolute temperatures across dates; local extrema answer a different question about spatial contrast within each date. Neither choice changes the observations.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 14,
+    "title": "Contour spacing and fill.",
+    "path": "images/scivis/scivis_contour_experiments.png",
+    "caption": "Same temperature field on 2023-08-22, compared at 5 and 10 \u00b0C intervals. Matplotlib/ContourPy serial grid-cell tracing uses the Marching Squares family. Lines trace equal-temperature boundaries; fills reveal broad regions. Coarse levels span the full sampled range. Interpolation smooths boundaries between available grid points; no finer-resolution measurements are created.",
+    "explanation": [
+      "How do contour interval and filling change the readability of temperature boundaries?",
+      "All four panels use the same daily maximum-temperature field. Columns change the contour interval from 5 to 10 degrees; rows change line contours to filled intervals. Geographic axes remain fixed. A contour line traces interpolated locations of equal temperature, while a filled band marks values between neighboring levels.",
+      "The controlled grid separates level spacing from line-versus-area encoding. Fine spacing exposes more structure but increases clutter; coarse spacing emphasizes broad zones and suppresses smaller changes. Filled contours support regional pattern reading, whereas lines preserve background context and make individual boundaries more prominent.",
+      "Read a boundary through its level or adjacent color intervals, rather than assuming every line represents an independent observation. The Marching Squares family traces transitions between available samples; smooth-looking boundaries do not recover omitted native cells. Identical sampling and extent make differences between panels drawing effects.",
+      "Contour interval and filling determine whether boundaries or broad regions are easier to inspect. Finer contours add display detail, not new measurements, and should be chosen for the question rather than visual complexity."
+    ],
+    "figure": 14,
+    "original_figure": 14,
+    "detailed_interpretation": "The 5-degree contours offer more threshold crossings to follow than the 10-degree contours, but also introduce more lines and labels that can obscure one another. Filled bands change the task from tracing an exact boundary to comparing areas inside temperature intervals. Compare the same location in all four panels to attribute differences to interval or fill. The contours interpolate crossings between sampled cells; a smooth line is not evidence that the original field was measured at that finer resolution. This controlled comparison is required methodological evidence.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 15,
+    "title": "Wind density and arrow length.",
+    "path": "images/scivis/scivis_quiver_experiments.png",
+    "caption": "Same daily wind field on 2023-08-22. Columns retain every 4th, 8th or 12th display cell: nominal angular steps 1\u00b0, 2\u00b0 or 3\u00b0 after the base 0.25\u00b0 subsample. Rows compare speed-proportional and equal-length arrows with identical speed colors (0-15 m/s; greater values saturated). Arrows point where air flows, not where wind comes from. Longitude/latitude bearings account for cosine latitude and the plotted aspect. Constant length makes weak winds visible but removes magnitude from length. Wind's coarser source limits terrain-scale inference.",
+    "explanation": [
+      "Which arrow density and length encoding best reveal daily wind direction and magnitude?",
+      "Columns retain every fourth, eighth or twelfth display-grid cell; rows compare speed-proportional length with unit-length direction arrows. All panels share the same western extent and speed-color limits. Arrows show flow-to direction after conversion from the source's meteorological from-direction. Colors still show speed when lengths are equal.",
+      "A density-by-length grid makes two visual decisions independently testable. Dense arrows preserve more locations but can overlap; sparse arrows clarify orientation while omitting local detail. Equal lengths make weak-wind directions visible, and proportional lengths retain magnitude directly in the arrow geometry.",
+      "Compare density within a row and length convention within a column. A large equal-length arrow need not indicate strong wind; its color carries that information. Longitude/latitude display corrections address direction distortion, but the output grid's fine spacing does not overcome gridMET's coarser wind input resolution.",
+      "Thinning trades directional detail for legibility, while equal lengths make weak-wind directions visible at the cost of a length-based speed cue. Read magnitude from the key and color convention, not arrow prominence alone."
+    ],
+    "figure": 15,
+    "original_figure": 15,
+    "detailed_interpretation": "The three columns thin an already subsampled field, so 1-, 2- and 3-degree arrow spacing should not be confused with native weather resolution. Sparse arrows reduce overlap but can remove local directional structure. Equal-length arrows recover the visibility of weak-wind directions while deliberately discarding length as a speed channel; color then carries that information. Because the same date, extent and speed scale are used, these differences can be attributed to drawing choices rather than different weather conditions.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 16,
+    "title": "Complete-month temperature differences and spatial distributions.",
+    "path": "images/quality/monthly_temperature_change.png",
+    "caption": "The approximate area-weighted September-minus-July change in mean daily maximum temperature is -4.64 C; 99.66% of the common sampled area is cooler. Compared with September 30 minus July 1, the sign differs over 18.26% of area. Monthly means use all 31 July and 30 September days, and the sector ECDFs reveal spatial variation hidden by a single mean.",
+    "explanation": [
+      "How does the temperature change across complete months differ from an endpoint-only comparison?",
+      "A zero-centered diverging map encodes September mean daily maximum temperature minus July mean daily maximum temperature at each cell. Blue denotes cooling and red warming. The adjacent weighted empirical distributions show the fraction of each fixed longitude sector at or below a given difference. Both computations use common complete cells and cosine-latitude weights; longitude bands are analyst-defined.",
+      "A mean of all daily fields is a more representative month comparison than a difference between two dates. The distribution panel adds spatial heterogeneity without introducing arbitrary smoothing or significance tests. Each month is averaged by its actual day count, so the unequal month lengths do not mechanically inflate the statistic. The previous endpoint map remains available as historical supporting material.",
+      "These are differences in means of daily maxima, not differences in mean air temperature. The ECDF is a distribution over space, not a confidence interval. A three-month interval provides no climatological baseline and cannot establish climate change. Subsampling approximates the spatial footprint. Exact zero differences are neither warming nor cooling.",
+      "Complete-month means show cooling across 99.66% of sampled area, yet an endpoint-only map disagrees in sign over 18.26%. Temporal aggregation changes the supported conclusion; this within-2023 difference is not a climate anomaly."
+    ],
+    "key": "monthly_temperature_change",
+    "figure": 16,
+    "original_figure": 16,
+    "detailed_interpretation": "Using all daily fields gives a mean September-minus-July Tmax difference of -4.64 C and cooling over 99.66% of the weighted footprint. The former two-date view disagrees in sign over 18.26% of area, which demonstrates the sensitivity of an apparent change to temporal selection. Sector ECDFs then show that cooling is not spatially uniform even where its sign is consistent. This figure does not reject daily snapshots; it limits what a snapshot comparison can answer when the stated question concerns complete months.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 18,
+    "title": "Daily spatial quantile ribbons.",
+    "path": "images/extensions/daily_temperature_ribbons.png",
+    "caption": "All 92 days contribute. Fixed-footprint sector means and spatial quantiles use cosine-latitude weights. Sectors are analyst-defined longitude bands, not official climate regions. September 30 minus July 1 sector-mean differences are -11.92 \u00b0C west, -0.15 \u00b0C central, and -4.48 \u00b0C east. The ribbon is the within-sector spatial 10th-90th percentile range, not an uncertainty interval; reversals during the interval remain visible.",
+    "explanation": [
+      "How much daily temperature variation and within-sector spatial spread do snapshots omit?",
+      "Time gives all 92 dates. Each facet is a declared longitude sector, with a shared temperature axis. The mean and median summarize daily maximum temperatures using approximate area weights; the ribbon spans the spatial 10th-90th percentiles within the same fixed valid footprint. The sectors are analyst-defined longitude bands.",
+      "Lines recover intervening daily fluctuations that the eight-date atlas cannot display. The ribbon adds spatial heterogeneity without plotting thousands of cell trajectories. A fixed footprint and cosine-latitude weighting reduce changes caused by coverage and unequal regular-grid cell areas; common axes preserve inter-sector comparability.",
+      "Read a daily central value together with its ribbon width. A broad ribbon indicates varied temperatures across that sector that day, not uncertainty in an estimated mean or a confidence interval. Mean-median separation can indicate asymmetry, but the chart alone cannot attribute weather changes to a particular physical mechanism.",
+      "A near-zero central-sector endpoint change does not imply stable daily temperatures. The 92-day paths expose intervening fluctuations, while the ribbons describe differences between locations rather than uncertainty in an estimated mean."
+    ],
+    "figure": 17,
+    "original_figure": 18,
+    "detailed_interpretation": "The western, central and eastern sectors summarize different collections of cells, so the ribbons describe spatial spread inside each sector. A wide ribbon means that locations differ on that day; it does not mean the mean was estimated with poor statistical confidence. The central sector's endpoint change is only -0.15 C, but the path between those endpoints still contains substantial movement. This is why the full trajectory contributes information beyond the monthly difference: a small net change can conceal large intervening fluctuations.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 19,
+    "title": "Monthly means with fixed isolines.",
+    "path": "images/extensions/monthly_tmax_maps.png",
+    "caption": "Monthwise means include 31, 31 and 30 daily maximum-temperature fields. The common scalar scale spans 8.91 to 47.27 \u00b0C; white isolines are fixed at 25 and 35 \u00b0C. Approximate area-weighted means over the valid footprint are 31.19, 30.16 and 26.55 \u00b0C. These are means of daily maxima, not monthly mean air temperature or climate anomalies.",
+    "explanation": [
+      "How does each month's mean daily maximum temperature vary across the sampled area?",
+      "Each map averages every available daily maximum-temperature field at a cell within that month: 31, 31 or 30 daily values. All maps share one Celsius scale and the same 25- and 35-degree contour levels. Gray denotes missing coverage. These are monthly averages of daily maxima, not averages of all hourly temperatures.",
+      "Complete-month aggregation answers a sustained-pattern question rather than selecting one representative weather day. Shared color limits make the three averages comparable, while fixed isolines add numerical anchors independent of palette shade. The area summaries use approximate cell weights and are separate from the geographic display.",
+      "Compare the same locations and the extent of the fixed isotherms between months. A high monthly mean maximum does not specify how many individual days crossed a threshold; Figure 20 answers that frequency question. Without a multiyear normal, these maps also do not establish whether the months were unusually hot.",
+      "Monthly mean daily maxima decline from 31.19 C in July to 26.55 C in September, with spatial structure still visible. Absolute-level maps locate the remaining warmer regions that a change-only map cannot identify."
+    ],
+    "figure": 18,
+    "original_figure": 19,
+    "detailed_interpretation": "The area-weighted monthly means decrease from 31.19 to 30.16 to 26.55 C, but each panel preserves where warmer and cooler regions occur. Fixed 25 and 35 C isolines provide recognizable thresholds on top of the shared color scale. The result complements, rather than duplicates, the difference map: these panels show absolute monthly levels, whereas the difference map shows the amount of change. The mean of daily maxima must not be paraphrased as the mean temperature across all hours of a month.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 20,
+    "title": "Complete-month precipitation totals.",
+    "path": "images/extensions/monthly_precipitation_maps.png",
+    "caption": "At each sampled location, all 31 July, 31 August or 30 September daily accumulations are summed. Any incomplete month is masked, rather than treating missing days as zero. Approximate area-weighted monthly totals are 75.26, 75.82 and 57.08 mm. The shared scale is 0-468.10 mm without clipping. These totals were computed from the 92-day cache, not estimated from eight display samples; this short interval does not establish a climate trend.",
+    "explanation": [
+      "Where does total accumulated rainfall differ between the three complete months?",
+      "Each cell is the sum of its daily precipitation accumulations for all dates of that month. The common sequential scale is in millimeters and uses the actual monthly maximum without clipping. Any cell lacking complete monthly coverage is masked, rather than treating a missing daily value as zero rainfall.",
+      "Summing all daily fields matches the physical meaning of accumulated rainfall. Small multiples permit geographic comparison and preserve location, whereas a single regional mean would hide concentrated rainfall. One shared scale prevents independently stretched maps from making a drier month look as wet as a wetter month.",
+      "Read both the magnitude and distribution of totals. A monthly sum cannot show whether rainfall came from many light days or a few heavy days; Figure 22 examines the daily amount distribution. These are actual month totals, so September's 30-day duration should be considered when comparing it with the 31-day months.",
+      "July and August have similar area-mean rainfall totals, while September is lower; the maps reveal their different spatial allocation. Interpret these as complete-month accumulation, with 31/31/30-day durations explicitly retained."
+    ],
+    "figure": 19,
+    "original_figure": 20,
+    "detailed_interpretation": "July and August have similar area-mean accumulation, 75.26 and 75.82 mm, while September is lower at 57.08 mm. A similar domain mean does not imply the rain fell in the same places, which is why the maps are retained. September also has one fewer day: these are actual monthly totals, so a claim specifically about daily intensity should instead compare day-normalized means. Masking incomplete months prevents missing observations from being silently interpreted as dry days. The eight animation snapshots cannot reproduce these sums.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 21,
+    "title": "Threshold-frequency maps.",
+    "path": "images/extensions/hot_day_frequency_maps.png",
+    "caption": "Each cell's count of days at or above 35 \u00b0C is divided by its month's 31, 31 or 30 days. The common 0-100% scale permits comparison despite unequal month lengths. Approximate area-day fractions are 22.8%, 22.2% and 8.9%. The 35 \u00b0C cutoff is an explicit descriptive choice, not an official heatwave definition, health-risk index, or population exposure estimate.",
+    "explanation": [
+      "How often does daily maximum temperature reach the declared 35-degree threshold?",
+      "At each complete-coverage cell, qualifying days are counted and divided by that month's 31, 31 or 30 days. Maps share a 0-100% sequential frequency scale. Approximate area-day percentages summarize the footprint separately. The threshold is a descriptive analytical choice, not an official heatwave or exposure classification.",
+      "Frequency complements Figure 18's mean: the same average can arise from different daily patterns. Dividing by month length enables a fairer fraction comparison than raw counts. The bounded common color scale gives the same meaning to each shade and makes a zero-frequency cell different from missing coverage.",
+      "Interpret 50% as half the included days crossing the threshold at that cell, not half its population experiencing heat. The plot does not encode consecutive hot-day runs or nighttime conditions. Neither temporal persistence nor health risk can be inferred from this one daily-maximum threshold alone.",
+      "The >=35 C area-day fraction is much lower in September, but this measures frequency alone. It supplies the temperature-only baseline needed to interpret the stricter hot-and-dry condition and its persistence."
+    ],
+    "figure": 20,
+    "original_figure": 21,
+    "detailed_interpretation": "Threshold frequency answers how often a location experiences a daily maximum of at least 35 C, rather than how warm its average day is. The area-day fraction falls from 22.8% in July and 22.2% in August to 8.9% in September. Two cells can have a similar monthly mean but different numbers of threshold exceedances. This figure remains a useful temperature-only baseline for the later compound analysis: adding a low-rainfall condition narrows the question and cannot increase the joint frequency above the hot-day frequency on identical support.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 22,
+    "title": "Paired time-longitude diagrams retain all daily weather fields.",
+    "path": "images/quality/weather_hovmoller.png",
+    "caption": "The aligned diagrams use all 92 dates, averaging common valid cells from 30 to 45 degrees north at each sampled longitude. Temperature band means range from 11.80 to 39.67 C. The largest precipitation band mean is 95.20 mm on 2023-09-16 at longitude -67.27 degrees. These are band averages, not the most extreme individual cells.",
+    "explanation": [
+      "What daily time-space structure is hidden by calendars, sector averages and monthly maps?",
+      "Horizontal position is date and vertical position is longitude in both lower panels. Color shows weighted temperature or daily precipitation in separate aligned panels. The reference map identifies the fixed 30-45 degree north averaging band. Temperature uses a linear scale; rain uses square-root normalization with a colorbar in actual millimeters, including zero. Each longitude retains identical common valid land cells across all dates.",
+      "A time-space diagram retains all 92 days while exposing differences across longitude. Matched panels make temperature and rainfall timing comparable without forcing incompatible measurements onto one color scale. The latitude band and weighting are explicit, so the reduction from a spatial field to a diagram is reproducible. It replaces the additional weather horizon, while the two required country horizon variations remain.",
+      "Longitude columns contain different amounts of valid land, and the support counts are saved with the arrays. Averaging across latitude hides local extremes. Apparent diagonal patterns cannot be equated with tracked storm motion. This is a descriptive surface-weather adaptation of a Hovmoller diagram, not an upper-atmosphere wave diagnosis or a climate-trend result.",
+      "The paired diagrams preserve when and where daily temperature and rainfall patterns occur, which monthly maps suppress. Their values are averages over a fixed latitude band, so they cannot identify local extremes or track individual storms."
+    ],
+    "key": "weather_hovmoller",
+    "figure": 21,
+    "original_figure": 22,
+    "detailed_interpretation": "Reading across a longitude follows its entire 92-day band-average trajectory, whereas reading vertically compares locations at the same date. The paired rain panel exposes temporal bursts that monthly totals combine. The largest rain band mean, 95.20 mm on September 16 near -67.27 degrees, belongs to a particular averaging column, not to an identified storm or the full country. Columns near the footprint edge may contain fewer cells; their support counts are saved for inspection. Latitude averaging deliberately sacrifices local detail to reveal time-space organization.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 23,
+    "title": "Conditional rainfall ECDFs.",
+    "path": "images/extensions/precipitation_ecdf.png",
+    "caption": "Empirical cumulative distributions use all positive daily grid-cell rain values in each month, with no kernel smoothing. Dry grid-day fractions are 68.8%, 68.3% and 72.3%. Conditioning on positive rain prevents zero from invalidating the log axis; the dry fractions retain that excluded information. Grid-day observations are equally weighted and spatially dependent, so these curves are descriptive rather than independent-sample inferential tests.",
+    "explanation": [
+      "How do positive daily rainfall distributions compare, and how much dry-day information is excluded?",
+      "Horizontal position gives positive daily grid-cell precipitation in millimeters on a logarithmic scale. Vertical position gives the fraction of positive grid-day values at or below that amount. Month colors identify three unsmoothed ECDFs. Each legend reports the separately excluded fraction of valid grid-day values with zero rain.",
+      "An ECDF uses observed ranks directly and avoids choosing a density bandwidth or histogram bins. The log axis spreads the long rainfall range so light and heavy amounts can be inspected together. Conditioning on positive rain handles logarithmically invalid zeros explicitly, while the dry fractions restore information that conditioning removes.",
+      "At a chosen amount, the higher curve has a larger proportion of its positive observations below that amount. This says nothing by itself about total monthly rain or geographic location. Grid-day values have equal weight and are spatially dependent, so the curves are descriptive distributions rather than independent-sample statistical tests.",
+      "Similar positive-rain distributions can coexist with different dryness: September has 72.3% zero-rain grid-days versus July's 68.8%. The conditioning matters more here than small differences between the nearly overlapping curves."
+    ],
+    "figure": 22,
+    "original_figure": 23,
+    "detailed_interpretation": "The three positive-rain curves are visually similar, so the chart's clearest additional information comes from the omitted zero mass: dry grid-days rise from 68.8% in July to 72.3% in September, a 3.5-percentage-point increase. That difference helps explain why similar conditional positive distributions can coexist with different monthly accumulation. However, equal grid-day weighting differs from the approximate area weighting used elsewhere. The curve comparison is descriptive, and its modest visual separation makes it a reasonable candidate for a compact methods note rather than a full main-result figure.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 24,
+    "title": "Monthly wind-direction roses.",
+    "path": "images/extensions/monthly_wind_roses.png",
+    "caption": "Sixteen direction bins aggregate all daily source wind-direction values in the western box (-125 to -100 longitude, 30 to 49 latitude). Sector radial height gives approximate area-day frequency among noncalm valid grid-day summaries; stacked color encodes speed class. All months share a radial limit. Calm/near-calm speeds at or below 0.1 m/s are excluded and reported separately. These are meteorological from-directions, whereas the original quiver arrows show flow-to directions. They do not count hourly winds or independent station measurements.",
+    "explanation": [
+      "From which directions do daily western-US winds most often originate?",
+      "Each polar sector is one of sixteen meteorological from-direction bins, with north at the top and clockwise angle. Stacked colors classify daily speed in meters per second. Total radial height is approximate area-day frequency among noncalm valid grid-day summaries; the three months share the same radial limits.",
+      "The rose preserves circular direction and jointly displays speed classes without treating 359 and 1 degrees as far apart. Fixed radial limits make month-to-month frequency comparisons possible. This view intentionally uses source from-directions, complementing Figure 15's flow-to arrows rather than silently reversing their interpretation.",
+      "Read angle as the direction of origin and radial height as frequency. Polar wedge area is not linearly proportional to that frequency. The box and noncalm denominator define the scope; daily gridded summaries cannot count hourly wind occurrences, and the chart is not a station-level observation rose.",
+      "Wind roses summarize the joint distribution of source direction and speed, whereas quiver maps retain where those winds occur. Read sector height as frequency and remember that from-direction is opposite to arrow flow-to direction."
+    ],
+    "figure": 23,
+    "original_figure": 24,
+    "detailed_interpretation": "The rose aggregates direction and speed together, which the scalar temperature or rainfall maps cannot supply. A tall sector means a larger weighted share of noncalm grid-day summaries from that direction, and its stacked colors separate speed classes. The radial height represents frequency; the visually expanding wedge area should not be read as proportional frequency. Pooling the entire western box suppresses geographic differences, so the rose is a distributional complement to the quiver maps, not a replacement for their spatial structure.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 25,
+    "title": "Region-ordered adjacency matrix.",
+    "path": "images/extensions/network_adjacency_matrix.png",
+    "caption": "The matrix contains the same 179 nodes and 590 undirected similarity edges as the three required layouts. Each edge appears twice by symmetry; the diagonal is empty. Ordering by supplied region and then country alphabetically reveals 249 within-region edges (42.2% of edges) without discovering new communities. Exact row/column order is supplied in data/network_matrix_order.csv. A matrix permits edge verification but does not replace the required interactive node-link layouts; no synchronized interaction is claimed.",
+    "explanation": [
+      "Can graph connections be verified without node-link crossings?",
+      "Both matrix axes list the same 179 countries in supplied-region then alphabetical order. A dark cell denotes a similarity edge; a light cell denotes no edge. Block boundaries mark region groups. Undirected edges appear symmetrically on both sides of the empty diagonal, so 590 edges produce 1,180 dark entries.",
+      "A matrix trades visible geometric neighborhoods for explicit pairwise lookup. Unlike a node-link view, it has no edge crossings; however, tracing multi-step paths is less immediate. Region ordering makes within- and between-region links inspectable, and the saved row/column order supports precise country lookup rather than guessing from blocks.",
+      "Check symmetry and the diagonal before interpreting group structure. Dark blocks arise partly from the chosen ordering, which uses supplied region labels. They are not discovered communities or significance tests. The within-region share describes edges in the similarity graph, not international network traffic or geographic infrastructure.",
+      "Most stored similarity edges cross supplied region boundaries (341 of 590). The matrix verifies connections independently of layout, but raw within/between counts require possible-pair normalization before interpreting regional affinity."
+    ],
+    "figure": 24,
+    "original_figure": 25,
+    "detailed_interpretation": "Because every undirected edge appears twice, 590 edges produce 1,180 dark off-diagonal matrix entries. Of the actual edges, 249 are within regions and 341 cross regions; therefore supplied geography does not partition the similarity network into isolated regional groups. That raw split is not a measure of preferential within-region linking because region sizes determine how many possible pairs exist. The matrix is valuable because it exposes exact adjacency without layout-induced proximity or edge crossings; its ordered blocks are a viewing convention, not discovered communities.",
+    "proposed_part": "A",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "number": 26,
+    "title": "Matched-panel regional dumbbells.",
+    "path": "images/extensions/matched_adoption_dumbbells.png",
+    "caption": "Regional medians use the exact 175-country panel that has complete profiles in both 2015 and 2020. Each included country has equal weight and regional memberships are fixed; counts are shown beside each region, including Unclassified. Among classified regions, the largest median shift is Asia, 26.55 percentage points. Unclassified is a missing-label category, not a geographic region. This is the difference of two regional medians, not the median of individual changes, a population-weighted result, or causal evidence.",
+    "explanation": [
+      "How much do regional adoption medians change on exactly the same country panel?",
+      "Each row is a fixed regional group from the 175 countries complete in both 2015 and 2020. Horizontal position gives median internet adoption percentage. Blue and orange endpoints identify the two years; the connecting segment and annotation give their difference in percentage points. Labels state country counts.",
+      "Paired endpoints make two-year shifts easier to compare than separate regional bar charts. Matched membership prevents missing or newly available countries from manufacturing a shift. The 0-100% axis keeps the percentage context visible, while explicit counts distinguish broad regional panels from small or unclassified groups.",
+      "Compare each row's endpoints, then inspect the labeled difference. The statistic is the difference of two group medians, not the median of paired individual-country changes. Unclassified groups retain missing region labels without pretending they form a geographical region. Equal-country weighting does not estimate population-weighted regional adoption.",
+      "Asia has the largest classified-region median shift on the 175-country matched panel, at 26.55 percentage points. Retain this concise group summary alongside country-level changes; it does not describe every country's trajectory."
+    ],
+    "figure": 25,
+    "original_figure": 26,
+    "detailed_interpretation": "The dumbbell offers an efficient regional summary that the country-change scatter cannot provide at a glance. Asia's median shifts by 26.55 percentage points, the largest increase among classified regions on this matched panel. A movement in the regional median does not mean each country moved by that amount or even moved upward. The 175-country panel also differs from the 159-country long-run panel, so small differences from the horizon medians need not indicate an error. Each plot answers a different coverage and time-span question.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": false
+  },
+  {
+    "key": "telecom_four_variables",
+    "title": "Four-measure country profiles on a matched panel.",
+    "path": "images/quality/telecom_four_variables.png",
+    "caption": "All 175 matched countries are displayed in 2020. On this same panel, the Spearman association of adoption with broadband is 0.831, compared with 0.531 for mobile subscriptions. Region facets separate overlapping profiles while preserving all four measurement channels. These associations describe levels, not the mechanisms producing adoption.",
+    "explanation": [
+      "Do countries with comparable internet adoption have similar fixed and mobile infrastructure?",
+      "Each marker is one country. Horizontal position gives broadband subscriptions per 100, vertical position gives adoption percentage, color gives mobile subscriptions per 100, and marker area is proportional to landlines per 100. Seven supplied-region facets share identical domains. A numeric area legend and mobile colorbar make the two nonposition encodings explicit; tiny positive landline values intentionally produce tiny markers.",
+      "Four actual telecom measurements are compared without a composite score. Faceting preserves regional context while reducing overlap. Using exactly the 175 countries in the 2015-2020 change analysis makes the subsequent comparison of levels and changes defensible. The parallel-coordinate views retain precise axis intercepts for profiles that are harder to read by marker size.",
+      "Read position before color and area. Area is less precise than position, so consult the scatterplot matrix for individual pairwise relationships. The panel is complete-case and country-weighted. Unclassified denotes missing regional labels. Subscription intensities can exceed 100 and are not ownership percentages. None of these observational relationships identifies a cause.",
+      "On the matched panel, adoption is more strongly associated with broadband levels (rho 0.831) than mobile intensity (0.531). Four measurements expose different infrastructure profiles at similar adoption, without identifying the cause of those differences."
+    ],
+    "number": 101,
+    "figure": 26,
+    "original_figure": null,
+    "detailed_interpretation": "The figure places broadband and adoption on the most precise position channels, then asks whether mobile intensity and landline scale distinguish otherwise similar profiles. The same 175 countries yield adoption-broadband rho 0.831 and adoption-mobile rho 0.531. This supports the choice to inspect fixed and mobile indicators separately, rather than claiming that a high mobile count alone explains connectivity. Regional facets improve visibility, but the quoted correlations are pooled over all matched countries; they should not be presented as coefficients independently established in every region.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "key": "country_change_quadrants",
+    "title": "Matched-country changes reveal divergent infrastructure paths.",
+    "path": "images/quality/country_change_quadrants.png",
+    "caption": "Internet adoption increased while landline intensity fell in 126 of 175 countries (72.0%). Spearman association between adoption change and broadband change is 0.054, versus 0.831 between their 2020 levels on exactly the same countries. A strong level association therefore does not imply that five-year increases track one another.",
+    "explanation": [
+      "Does the strong association of infrastructure levels also describe changes within countries?",
+      "Each country appears once in its supplied-region facet. X gives landline change per 100 and Y adoption change in percentage points, both 2020 minus 2015. A zero-centered diverging scale gives broadband change per 100. Zero lines define the quadrants. Panel headings count positive-adoption, negative-landline cases; points on zero boundaries are excluded from that strict count.",
+      "Country-level changes preserve heterogeneity that regional medians conceal. All panels share domains, and both dates have complete observations for all four indicators in the same 175 countries. Keeping signed broadband changes in color avoids encoding negative quantities as bubble sizes. This complements the retained regional dumbbell rather than replacing its summary purpose.",
+      "Changes compare two endpoints and cannot identify the year of transition. Population changes can also alter subscriptions per 100. Differences in rank correlations across levels and changes do not establish causation, substitution, or statistical significance. Region is context, not an income proxy. A small change correlation does not imply that broadband is irrelevant.",
+      "Adoption rises while landline intensity falls in 72% of matched countries, yet broadband and adoption changes are only weakly rank-associated. Strong differences between countries must not be read as a causal account of change within countries."
+    ],
+    "number": 102,
+    "figure": 27,
+    "original_figure": null,
+    "detailed_interpretation": "Exactly 126 countries lie in the adoption-gain, landline-decline quadrant. That 72% share is a transparent descriptive count, not a fitted model. The broadband-adoption association falls from rho 0.831 for 2020 levels to 0.054 for 2015-2020 changes on identical countries. Stable cross-country differences, different starting levels and the timing of changes can make these comparisons diverge, but the chart cannot identify which explanation is responsible. It therefore qualifies the level-based story without establishing that broadband growth has no effect.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "key": "telecom_scatterplot_matrix",
+    "title": "Pairwise relationships across four telecom measures.",
+    "path": "images/quality/telecom_scatterplot_matrix.png",
+    "caption": "The same 175 matched countries contribute to every cell. Adoption-broadband Spearman rho is 0.831, adoption-mobile is 0.531, and landlines-broadband is 0.866. Raw points expose variation around these pooled associations. Diagonal histograms show unequal and skewed measurement distributions.",
+    "explanation": [
+      "Which pairwise relationships explain the patterns seen in the four-variable profile plot?",
+      "The lower triangle contains all six pairwise scatterplots of adoption, landlines, broadband and mobile in 2020. Country color gives supplied region. Diagonal panels show equal-country histograms; the upper triangle gives descriptive Spearman coefficients. Axis units remain explicit. The full figure displays four measured variables, while each individual scatter cell is bivariate.",
+      "A scatterplot matrix exposes individual measurements, outliers and possible nonlinearity that a correlation-only heatmap hides. It also supplies a position-based cross-check for the color and area encodings in the profile figure. Every cell uses identical complete-case membership, so differing coefficients cannot be attributed to pairwise changes in the sample.",
+      "Pooled correlations can reflect differences between regions and need not hold within each region. There are no significance stars or causal claims. Diagonal binning is descriptive and should not be treated as evidence of distinct country clusters. Subscription units differ from adoption percentages; high mobile values do not imply universal access.",
+      "Fixed infrastructure measures share strong pooled rank associations, but the scatter cells preserve their exceptions and distributional skew. The matrix validates relationships that bubble color and size alone are harder to assess precisely."
+    ],
+    "number": 103,
+    "figure": 28,
+    "original_figure": null,
+    "detailed_interpretation": "The matrix checks the four-variable scatter's less precise color and area channels using pairwise positions. Landlines and broadband have rho 0.866, while adoption and broadband have rho 0.831; points still vary around both relationships. Mobile shows weaker pooled associations with the fixed indicators. The diagonal histograms reveal skewed distributions that can give a few countries substantial visual influence. Rank correlation reduces dependence on the exact numerical spacing, but it remains a descriptive monotonic summary and does not replace inspecting the scatter for exceptions or regional composition.",
+    "proposed_part": "B",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "key": "weather_four_fields",
+    "title": "Temperature, rainfall and wind in one aligned weather comparison.",
+    "path": "images/quality/weather_four_fields.png",
+    "caption": "The dates are selected reproducibly as the maximum and minimum daily hot-dry area fractions over the full common footprint: 2023-07-27 (34.56%) and 2023-09-30 (1.75%). Both maps use the same temperature limits, rain-contour levels, arrow locations and speed-to-length scale. Wind speed and direction add distinct measurements to the temperature-rainfall comparison.",
+    "explanation": [
+      "Where do temperature, rainfall and wind patterns coincide on objectively selected contrasting days?",
+      "Background color is daily maximum temperature. Blue labeled lines are precipitation contours at 5, 20 and 50 millimeters. Arrow bearing gives flow-to direction and arrow length gives speed, with a 5 m/s key. Dates define panels. The four measured fields therefore use separate channels; longitude and latitude provide spatial context. Every ninth cell of the already stride-six cache is retained for arrows.",
+      "This synthesis brings the required scalar, contour and vector methods together to inspect joint spatial patterns. Objective selection by the previously declared hot-dry area fraction makes the contrast reproducible. Shared limits prevent apparent differences caused by rescaling. The standalone color, contour and quiver experiments remain available to explain and test each layer before interpreting the composite.",
+      "The selection deliberately contrasts extremes and is not representative of every day. Daily maximum temperature, rainfall accumulation and wind summaries need not occur simultaneously. Arrow bearings account for map aspect and cosine latitude; they indicate where air flows, opposite the stored source direction. Coarse wind inputs and display thinning limit local inference, and overlapping patterns do not establish causation.",
+      "The objectively selected dates contrast 34.56% versus 1.75% hot/dry area, while four separate channels expose their spatial context. Co-located daily temperature, rain and wind summaries support comparison, not event attribution or causal explanation."
+    ],
+    "number": 104,
+    "figure": 29,
+    "original_figure": null,
+    "detailed_interpretation": "July 27 and September 30 were selected by a reproducible criterion: the highest and lowest sampled-area fractions meeting the hot/dry definition. Their 34.56% versus 1.75% values quantify why the dates contrast; the maps then show where temperature, rain contours and vector fields coexist. This does not establish that wind produced the difference. Tmax is a daily maximum, rain is a daily accumulation, and wind is another daily product, so temporal alignment by date must not be confused with simultaneous observations of a weather event.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "key": "compound_frequency_persistence",
+    "title": "Joint hot-dry frequency, persistence and threshold sensitivity.",
+    "path": "images/quality/compound_frequency_persistence.png",
+    "caption": "The two conditions coincide over a mean 16.27% of sampled area-days and peak at 34.56% of sampled area on 2023-07-27. The longest cellwise run is 67 days within the observed 92-day window. Runs can cross month boundaries. Threshold sensitivity is shown explicitly for Tmax cutoffs 33, 35 and 37 C and rain cutoffs 0.1 and 1 mm/day; the area-day frequency changes with those choices.",
+    "explanation": [
+      "Are repeated hot-dry days scattered occurrences or sustained runs at the same locations?",
+      "The first map shows the percentage of the 92 days satisfying the joint condition at each cell. The second shows the longest consecutive run using the same daily Boolean sequence. The timeline gives each day's cosine-latitude-weighted area fraction; the final panel recomputes total frequency under six threshold combinations. Missing cells are gray; zero frequency remains a valid observed result.",
+      "Joint daily evaluation tests co-occurrence directly, rather than assuming that separate hot and dry frequencies multiply. Persistence distinguishes equal totals with different timing. The sensitivity panel exposes how a derived indicator depends on analyst choices. All summaries use a fixed common footprint complete across all four weather fields and dates, preventing changing support from creating apparent shifts.",
+      "A maximum run can be truncated by the beginning or end of the observation window. The thresholds are descriptive and do not define official drought, heatwaves, fire danger, or population exposure. Spatial grid values and neighboring days are dependent. Approximate area weights describe the sampled land footprint, and no long-term climatic baseline is available.",
+      "Hot/dry conditions occupy 16.27% of sampled area-days, yet a location can sustain a 67-day run. Frequency alone hides concentration in time; retain threshold sensitivity and distinguish a local maximum from a domain-wide experience."
+    ],
+    "number": 105,
+    "figure": 30,
+    "original_figure": null,
+    "detailed_interpretation": "A frequency percentage counts qualifying days but ignores their order. The run-length map restores that information and finds a maximum continuous run of 67 days within the observation window. That maximum applies to at least one sampled cell, not the entire footprint; the mean joint area-day fraction is only 16.27%. The sensitivity panel shows how frequency decreases under stricter temperature thresholds and increases under a more permissive rain cutoff. Thus the detailed numerical result depends on the declared definition even though the distinction between frequency and persistence does not.",
+    "proposed_part": "C",
+    "supporting": false,
+    "wide": true
+  },
+  {
+    "number": 27,
+    "title": "Worked horizon construction.",
+    "path": "images/extensions/horizon_construction.png",
+    "caption": "Kenya's actual fixed-panel series moves from 0.32% adoption in 2000 to 24.72% in 2020. The three panels show measured values, signed deviation from 50%, and the same deviation mirrored and folded into two 25-point bands. Red indicates below majority use, even when adoption rises. The method explanation follows the September 29 lecture's construction stages; it does not use fabricated example values.",
+    "explanation": [
+      "How is a horizon plot constructed, and why can rising adoption still appear red?",
+      "Three vertically aligned panels use Kenya's same 21 annual observations. The first shows adoption percentage with a 50% reference; the second subtracts that reference and retains negative values; the third mirrors and folds two 25-percentage-point bands. Shared time alignment allows each stage to be checked against the original series.",
+      "A worked example exposes a transformation that can be difficult to infer from compressed rows alone. Using actual country values avoids a fabricated demonstration. Keeping the intermediate signed-deviation stage explains why hue retains the sign even after negative areas are mirrored upward and layered into one row.",
+      "Follow a year through the panels: subtract 50 from the measured adoption, determine its sign and band, then read the folded color. Kenya remains below 50% throughout this series, so a rising original line can remain red while the darker negative band shrinks. Folded height should not be read as absolute adoption.",
+      "Kenya's adoption rises while its horizon remains red because every value is below 50%. The construction figure prevents a specific misreading of the required horizons; its contribution is methodological rather than a separate data finding."
+    ],
+    "figure": 31,
+    "original_figure": 27,
+    "detailed_interpretation": "Kenya's increase from 0.32% to 24.72% is substantial but never reaches the 50% reference in this panel. Subtraction therefore remains negative throughout, and folding retains a red sign encoding even while the original line rises. The intermediate panel is what makes the transformation auditable: readers can match a year before and after folding. This is useful explanatory information about the visualization, not an additional discovery about adoption beyond the values already shown. It can become a compact methods inset if main-report space is limited.",
+    "proposed_part": "C",
+    "supporting": true,
+    "wide": true
+  },
+  {
+    "number": 28,
+    "title": "KDE sensitivity with empirical reference.",
+    "path": "images/extensions/kde_bandwidth_sensitivity.png",
+    "caption": "The same 159-country 2020 adoption values are smoothed with reflected Gaussian bandwidths 3, 6 and 12 percentage points. The left axis retains true density units; curves are not independently normalized to peak height. The empirical cumulative distribution at right does not depend on smoothing, and the raw median remains 71.37%. Minor density peaks should not be interpreted as stable groups merely because one bandwidth makes them visible.",
+    "explanation": [
+      "Which apparent distribution features persist when the smoothing bandwidth changes?",
+      "The left panel smooths the same 159 adoption values for 2020 using reflected Gaussian bandwidths of 3, 6 and 12 percentage points. Density uses its actual units without peak normalization. The right panel plots the unsmoothed ECDF and the raw median on the same adoption domain.",
+      "A sensitivity comparison tests a key interpretive assumption behind the ridgelines. A narrow kernel can expose small bumps; a broad one suppresses them. The empirical curve and median provide references unaffected by bandwidth, separating changes in the drawing estimator from changes in measured country adoption.",
+      "Compare which bumps merge or disappear as bandwidth increases, then check the empirical cumulative curve. A feature visible only under one kernel setting is weak evidence for a stable group. These are country-weighted distributions; none of the curves estimates how the world's people are distributed across adoption levels.",
+      "Bandwidth changes the apparent density peaks while the raw median remains 71.37%. Base the ridgeline conclusion on the broad distributional shift and empirical values, not on minor modes produced by one smoothing choice."
+    ],
+    "figure": 32,
+    "original_figure": 28,
+    "detailed_interpretation": "All three KDE curves use the same 159 observations, so their different small peaks must come from bandwidth choice rather than changing country data. The empirical distribution and its median of 71.37% provide an unsmoothed reference. Features that vanish at a nearby bandwidth should not be described as established adoption groups. This check improves the credibility of the ridgeline interpretation, but its conclusion can be reported succinctly in methods if a full sensitivity figure would crowd out a stronger substantive result.",
+    "proposed_part": "C",
+    "supporting": true,
+    "wide": true
+  }
+]

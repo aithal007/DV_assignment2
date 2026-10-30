@@ -1,0 +1,28 @@
+{
+  "group": 5,
+  "countries": 15,
+  "internal_edges": 93,
+  "possible_edges": 105,
+  "all_groups": 6,
+  "all_internal_edges": 699,
+  "between_group_edges": 98,
+  "isolates": 12,
+  "max_country": "Afghanistan",
+  "max_degree": 14,
+  "min_country": "Angola",
+  "min_degree": 7,
+  "india_neighbors": [
+    "CMR",
+    "GMB",
+    "HND",
+    "HTI",
+    "LSO",
+    "NGA",
+    "NIC",
+    "STP",
+    "SWZ",
+    "TGO",
+    "TLS",
+    "ZWE"
+  ]
+}

@@ -1,0 +1,322 @@
+[
+  {
+    "date": "2023-07-01",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 181,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-07-01",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 181,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-01",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 181,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-01",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 181,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-14",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 194,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-07-14",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 194,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-14",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 194,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-14",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 194,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-27",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 207,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-07-27",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 207,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-27",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 207,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-07-27",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 207,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-09",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 220,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-08-09",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 220,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-09",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 220,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-09",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 220,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-22",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 233,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-08-22",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 233,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-22",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 233,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-08-22",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 233,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-04",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 246,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-09-04",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 246,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-04",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 246,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-04",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 246,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-17",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 259,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-09-17",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 259,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-17",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 259,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-17",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 259,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-30",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/tmmx/tmmx_2023.nc",
+    "variable": "air_temperature",
+    "units": "K",
+    "long_name": "tmmx",
+    "sample_index": 272,
+    "scale_factor": "0.1",
+    "add_offset": "220.0"
+  },
+  {
+    "date": "2023-09-30",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/pr/pr_2023.nc",
+    "variable": "precipitation_amount",
+    "units": "mm",
+    "long_name": "pr",
+    "sample_index": 272,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-30",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/vs/vs_2023.nc",
+    "variable": "wind_speed",
+    "units": "m/s",
+    "long_name": "vs",
+    "sample_index": 272,
+    "scale_factor": "0.1",
+    "add_offset": "0.0"
+  },
+  {
+    "date": "2023-09-30",
+    "url": "https://thredds.northwestknowledge.net/thredds/dodsC/MET/th/th_2023.nc",
+    "variable": "wind_from_direction",
+    "units": "Degrees Clockwise from north",
+    "long_name": "th",
+    "sample_index": 272,
+    "scale_factor": "1.0",
+    "add_offset": "0.0"
+  }
+]

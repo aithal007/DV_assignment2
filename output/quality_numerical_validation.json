@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "matched_countries": 175,
+  "quadrant_count": 126,
+  "run_length_validation": "independent transition-based check over all 13416 cells",
+  "monthly_means": "independent daily-sum verification",
+  "hovmoller": "edge and central longitude spot checks",
+  "thresholds": "monotonicity verified",
+  "new_figures": 7,
+  "high_resolution_exports": "PNG and SVG verified"
+}

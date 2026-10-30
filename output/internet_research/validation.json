@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "figures": 3,
+  "annual_panel": 159,
+  "classified_panel": 158,
+  "matched_panel": 175,
+  "checks": [
+    "Gini pairwise versus sorted-value formula",
+    "variance decomposition identity in all 21 years",
+    "Spearman versus Pearson of ranks",
+    "attainment curve monotonicity",
+    "PNG integrity and visual review",
+    "gallery links"
+  ],
+  "report_modified": false
+}

@@ -1,0 +1,25 @@
+{
+  "status": "selected",
+  "date": "2026-10-27",
+  "main_figures": 30,
+  "supporting_figures": 0,
+  "total_figures": 30,
+  "source_manifest": "archive/before_story_revision/current_figure_manifest.json",
+  "generator": "scripts/build_story_report.py",
+  "current_authorship": "three-person responsibility allocation adopted; completed work requires individual verification",
+  "omitted_previous_review": [
+    2,
+    11,
+    22,
+    23,
+    24,
+    26,
+    31,
+    32
+  ],
+  "note": "Approved paired-changes PCP (Figure 4), association comparison (Figure 7), fixed initial cohorts (Figure 10), gentle curve PCP (Figure 5), expanded simple-English interpretations; no formal bibliography by user preference. Indexed images and gallery match the report.",
+  "report_style": "Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures",
+  "report_generator": "scripts/build_a1_style_report.py",
+  "revision_scope": "Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged",
+  "design_reference": "C:/Users/Parikshith/Downloads/ass2_1.pdf"
+}

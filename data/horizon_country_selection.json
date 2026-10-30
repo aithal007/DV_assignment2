@@ -1,0 +1,74 @@
+[
+  {
+    "code": "TZA",
+    "country": "Tanzania",
+    "region": "Africa",
+    "quantile": 0.25
+  },
+  {
+    "code": "NAM",
+    "country": "Namibia",
+    "region": "Africa",
+    "quantile": 0.75
+  },
+  {
+    "code": "CHN",
+    "country": "China",
+    "region": "Asia",
+    "quantile": 0.25
+  },
+  {
+    "code": "SGP",
+    "country": "Singapore",
+    "region": "Asia",
+    "quantile": 0.75
+  },
+  {
+    "code": "ROU",
+    "country": "Romania",
+    "region": "Europe",
+    "quantile": 0.25
+  },
+  {
+    "code": "IRL",
+    "country": "Ireland",
+    "region": "Europe",
+    "quantile": 0.75
+  },
+  {
+    "code": "LCA",
+    "country": "Saint Lucia",
+    "region": "North America",
+    "quantile": 0.25
+  },
+  {
+    "code": "TTO",
+    "country": "Trinidad and Tobago",
+    "region": "North America",
+    "quantile": 0.75
+  },
+  {
+    "code": "PER",
+    "country": "Peru",
+    "region": "South America",
+    "quantile": 0.25
+  },
+  {
+    "code": "URY",
+    "country": "Uruguay",
+    "region": "South America",
+    "quantile": 0.75
+  },
+  {
+    "code": "FSM",
+    "country": "Micronesia (country)",
+    "region": "Oceania",
+    "quantile": 0.25
+  },
+  {
+    "code": "MHL",
+    "country": "Marshall Islands",
+    "region": "Oceania",
+    "quantile": 0.75
+  }
+]

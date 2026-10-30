@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A2 Infovis · Zoomable internet-user treemap</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<nav class="topnav"><a href="index.html">Parallel coordinates</a><a href="network.html">Network</a><a href="treemap.html" aria-current="page">Treemap</a></nav>
+<header><p class="eyebrow">DAS732 · A2 · Infovis</p><h1>Where are internet users concentrated?</h1>
+<p>Rectangle area encodes the number of internet users in each country in 2020. At the country level, color encodes the percentage of people using the internet. Click a group to zoom in.</p></header>
+<section class="controls" aria-label="Treemap controls">
+<label>Hierarchy <select id="hierarchy"><option value="region">Region → country</option><option value="adoption">Adoption band → region → country</option></select></label>
+<button id="back" type="button" disabled>Back one level</button>
+<span id="crumb"></span>
+</section>
+<p id="status" role="status"></p><div class="chart-wrap"><svg id="treemap" role="img" aria-label="Zoomable treemap of 2020 internet users"></svg></div>
+<div class="scale-legend"><span>Country color: internet adoption</span><div class="scale-bar"></div><span>0%</span><span>100%</span></div>
+<aside id="details">Click a group to zoom in. Hover a rectangle to see its values.</aside>
+<p class="note">Total covers only countries with both internet-user count and share in the A1 table. Adoption bands are analyst-defined categories. Parent rectangles use neutral color; the color scale applies to countries.</p>
+</main><script src="vendor/d3.v7.min.js"></script><script src="treemap.js"></script></body></html>

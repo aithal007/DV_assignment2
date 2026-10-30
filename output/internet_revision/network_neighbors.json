@@ -1,0 +1,12 @@
+{
+  "focus": "IND",
+  "neighbors": [
+    "CMR",
+    "HND",
+    "HTI",
+    "LSO",
+    "NIC",
+    "STP"
+  ],
+  "countries": "Cameroon, Honduras, Haiti, Lesotho, Nicaragua, Sao Tome and Principe"
+}

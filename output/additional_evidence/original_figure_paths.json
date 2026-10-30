@@ -1,0 +1,122 @@
+[
+  {
+    "figure": 1,
+    "path": "output/network_revision/network_threshold_layouts.png"
+  },
+  {
+    "figure": 2,
+    "path": "output/internet_review_20261024/adoption_broadband_paths.png"
+  },
+  {
+    "figure": 3,
+    "path": "output/network_revision/nodetrix_threshold_detail.png"
+  },
+  {
+    "figure": 4,
+    "path": "output/pcp_changes/pcp_changes.png"
+  },
+  {
+    "figure": 5,
+    "path": "output/internet_revision/pcp_gentle_bundles.png"
+  },
+  {
+    "figure": 6,
+    "path": "images/quality/telecom_scatterplot_matrix.png"
+  },
+  {
+    "figure": 7,
+    "path": "output/proposals_20261026/recommended_fig7_association_audit.png"
+  },
+  {
+    "figure": 8,
+    "path": "output/internet_revision/treemap_root_region.png"
+  },
+  {
+    "figure": 9,
+    "path": "output/internet_revision/treemap_root_adoption.png"
+  },
+  {
+    "figure": 10,
+    "path": "output/proposals_20261026/recommended_fig10_fixed_cohorts.png"
+  },
+  {
+    "figure": 11,
+    "path": "output/simple_revision/within_regions.png"
+  },
+  {
+    "figure": 12,
+    "path": "output/final_research/regional_endpoints_gains.png"
+  },
+  {
+    "figure": 13,
+    "path": "images/horizon_countries.png"
+  },
+  {
+    "figure": 14,
+    "path": "images/horizon_regions.png"
+  },
+  {
+    "figure": 15,
+    "path": "images/ridgeline_years.png"
+  },
+  {
+    "figure": 16,
+    "path": "images/ridgeline_regions.png"
+  },
+  {
+    "figure": 17,
+    "path": "images/scivis/scivis_color_experiments.png"
+  },
+  {
+    "figure": 18,
+    "path": "images/scivis/scivis_global_local.png"
+  },
+  {
+    "figure": 19,
+    "path": "output/internet_revision/contours_worked.png"
+  },
+  {
+    "figure": 20,
+    "path": "images/extensions/monthly_tmax_maps.png"
+  },
+  {
+    "figure": 21,
+    "path": "images/quality/monthly_temperature_change.png"
+  },
+  {
+    "figure": 22,
+    "path": "images/extensions/daily_temperature_ribbons.png"
+  },
+  {
+    "figure": 23,
+    "path": "output/research_candidates/rainfall_concentration.png"
+  },
+  {
+    "figure": 24,
+    "path": "images/extensions/hot_day_frequency_maps.png"
+  },
+  {
+    "figure": 25,
+    "path": "images/quality/weather_hovmoller.png"
+  },
+  {
+    "figure": 26,
+    "path": "images/scivis/scivis_quiver_experiments.png"
+  },
+  {
+    "figure": 27,
+    "path": "output/lecture_previews/monthly_wind_roses.png"
+  },
+  {
+    "figure": 28,
+    "path": "images/quality/weather_four_fields.png"
+  },
+  {
+    "figure": 29,
+    "path": "output/simple_revision/weather_overlap_simple.png"
+  },
+  {
+    "figure": 30,
+    "path": "images/quality/compound_frequency_persistence.png"
+  }
+]

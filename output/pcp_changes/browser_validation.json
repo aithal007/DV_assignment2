@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "countries": 175,
+  "selected": 39,
+  "pointer_brushing": true,
+  "reordering": true,
+  "hover": true,
+  "toggle": true,
+  "reset": true,
+  "report_unchanged": true,
+  "errors": []
+}

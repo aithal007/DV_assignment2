@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "matched_countries": 175,
+  "joint_brush_countries": [
+    "Bhutan",
+    "Cuba",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Libya",
+    "South Africa"
+  ],
+  "milestone_checks": 252,
+  "trajectory_pairs_checked": 66,
+  "network_focus_degree": 12,
+  "treemap_country_leaves": 184,
+  "report_figures": 30,
+  "browser_evidence": "Actual pointer brushing and other controls passed the browser audit; see output/infovis_audit_20261026/interactions.json."
+}

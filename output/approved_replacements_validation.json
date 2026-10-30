@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "independent_spearman_checks": 6,
+  "fixed_cohort_countries": 159,
+  "group_sizes": [
+    53,
+    53,
+    53
+  ],
+  "endpoint_medians_checked": 6,
+  "endpoint_quartiles_checked": 6,
+  "pcp_country_values_checked": 700,
+  "change_pcp_values_checked": 700,
+  "change_pcp_selected": 39,
+  "approved_figures": [
+    4,
+    5,
+    7,
+    10
+  ],
+  "browser_interactions": "PASS"
+}

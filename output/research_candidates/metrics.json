@@ -1,0 +1,111 @@
+{
+  "raincloud": [
+    {
+      "region": "Africa",
+      "n": 46,
+      "median_individual_gain": 14.11245,
+      "difference_of_region_medians": 12.794849999999997,
+      "q25": 8.4448595,
+      "q75": 24.586575,
+      "minimum": -2.423400000000001,
+      "maximum": 49.35809999999999,
+      "negative": 1
+    },
+    {
+      "region": "Asia",
+      "n": 41,
+      "median_individual_gain": 19.75276000000001,
+      "difference_of_region_medians": 26.55080000000001,
+      "q25": 9.862169999999992,
+      "q75": 28.246100999999996,
+      "minimum": -0.8385700000000043,
+      "maximum": 49.942708700000004,
+      "negative": 1
+    },
+    {
+      "region": "Europe",
+      "n": 43,
+      "median_individual_gain": 9.489005000000006,
+      "difference_of_region_medians": 10.898745000000005,
+      "q25": 4.523759999999996,
+      "q75": 13.276832999999996,
+      "minimum": -2.2912000000000035,
+      "maximum": 26.153265999999995,
+      "negative": 3
+    },
+    {
+      "region": "North America",
+      "n": 23,
+      "median_individual_gain": 14.443700000000007,
+      "difference_of_region_medians": 16.059533000000002,
+      "q25": 11.419000000000004,
+      "q75": 24.008249999999997,
+      "minimum": -2.1593000000000018,
+      "maximum": 34.162778,
+      "negative": 1
+    },
+    {
+      "region": "South America",
+      "n": 11,
+      "median_individual_gain": 21.759566,
+      "difference_of_region_medians": 16.536128000000005,
+      "q25": 15.956215000000007,
+      "q75": 23.627975999999997,
+      "minimum": 10.829710000000006,
+      "maximum": 28.954,
+      "negative": 0
+    },
+    {
+      "region": "Oceania",
+      "n": 8,
+      "median_individual_gain": 12.16544,
+      "difference_of_region_medians": 18.6361,
+      "q25": 7.691749999999998,
+      "q75": 18.398200000000003,
+      "minimum": 5.721000000000004,
+      "maximum": 38.0509,
+      "negative": 0
+    },
+    {
+      "region": "Unclassified",
+      "n": 3,
+      "median_individual_gain": 19.4816,
+      "difference_of_region_medians": 34.5477,
+      "q25": 16.373649999999998,
+      "q75": 27.01465,
+      "minimum": 13.265699999999999,
+      "maximum": 34.5477,
+      "negative": 0
+    }
+  ],
+  "rainfall": [
+    {
+      "month": "July",
+      "days": 31,
+      "area_fraction_total_at_least_10mm": 74.75394960159699,
+      "area_fraction_peak5_at_least_half_conditional": 43.815087291122296
+    },
+    {
+      "month": "August",
+      "days": 31,
+      "area_fraction_total_at_least_10mm": 92.32339696634074,
+      "area_fraction_peak5_at_least_half_conditional": 67.47912685725996
+    },
+    {
+      "month": "September",
+      "days": 30,
+      "area_fraction_total_at_least_10mm": 94.08676648355507,
+      "area_fraction_peak5_at_least_half_conditional": 77.55604352563311
+    }
+  ],
+  "sequences": {
+    "same_total_days": 75,
+    "group_cells": 21,
+    "displayed_cells": 21,
+    "minimum_run": 17,
+    "maximum_run": 67,
+    "area_at_least_7_days": 26.632114231978683,
+    "area_at_least_30_days": 5.150186103811202,
+    "area_at_least_60_days": 0.11668856847954008
+  }
+}

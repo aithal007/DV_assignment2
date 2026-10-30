@@ -1,0 +1,15 @@
+{
+  "title": "Adoption quantiles and matched-country gains.",
+  "path": "output/lecture_previews/adoption_quantile_change.png",
+  "wide": true,
+  "extension_key": "adoption_quantile_change",
+  "caption": "On the same 159-country panel, the 90th-minus-10th percentile adoption gap widens from 28.63 to 69.84 percentage points. The median of the adoption distribution rises by 69.16 points, whereas the median individual country gain is 62.09 points.",
+  "explanation": [
+    "Did broad internet-adoption progress also narrow the absolute gap between lower- and higher-adoption countries?",
+    "Panel A compares adoption deciles in 2000 and 2020 on the fixed 159-country complete annual panel. Panel B contrasts differences of corresponding deciles (teal) with deciles of the 159 individual country gains (orange). Each country has equal weight. Values are empirical linear-interpolated quantiles; changes are percentage points.",
+    "Inspired by quantile shift functions, this view measures changes throughout the distribution instead of hiding them inside four adoption bands. The paired-gain curve additionally distinguishes change in distributional positions from change experienced by individual countries.",
+    "A country at the 10th percentile in 2000 need not occupy that percentile in 2020. Differences of quantiles are not quantiles of differences. No causal or inferential claim is made and no confidence intervals are shown. The P90-P10 spread measures absolute percentage-point inequality; relative inequality can behave differently. Bounds at zero and 100 and complete-case selection affect interpretation.",
+    "Adoption rises across the distribution while the absolute P90-P10 gap widens; broad progress and absolute convergence are different claims."
+  ],
+  "detailed_interpretation": "On the same 159-country panel, the 90th-minus-10th percentile adoption gap widens from 28.63 to 69.84 percentage points. The median of the adoption distribution rises by 69.16 points, whereas the median individual country gain is 62.09 points. Panel A therefore supports broad improvement without absolute convergence on this particular spread measure. Panel B shows why a distributional shift must not be read as the gain of a typical matched country: reordering and heterogeneity affect the two summaries differently. The analysis describes included countries, not a population-weighted distribution of people, and does not identify the causes of progress."
+}

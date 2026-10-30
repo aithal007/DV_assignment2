@@ -1,0 +1,93 @@
+[
+  {
+    "key": "telecom_four_variables",
+    "title": "Four-measure country profiles on a matched panel.",
+    "path": "images/quality/telecom_four_variables.png",
+    "caption": "All 175 matched countries are displayed in 2020. On this same panel, the Spearman association of adoption with broadband is 0.831, compared with 0.531 for mobile subscriptions. Region facets separate overlapping profiles while preserving all four measurement channels. These associations describe levels, not the mechanisms producing adoption.",
+    "explanation": [
+      "Do countries with comparable internet adoption have similar fixed and mobile infrastructure?",
+      "Each marker is one country. Horizontal position gives broadband subscriptions per 100, vertical position gives adoption percentage, color gives mobile subscriptions per 100, and marker area is proportional to landlines per 100. Seven supplied-region facets share identical domains. A numeric area legend and mobile colorbar make the two nonposition encodings explicit; tiny positive landline values intentionally produce tiny markers.",
+      "Four actual telecom measurements are compared without a composite score. Faceting preserves regional context while reducing overlap. Using exactly the 175 countries in the 2015-2020 change analysis makes the subsequent comparison of levels and changes defensible. The parallel-coordinate views retain precise axis intercepts for profiles that are harder to read by marker size.",
+      "Read position before color and area. Area is less precise than position, so consult the scatterplot matrix for individual pairwise relationships. The panel is complete-case and country-weighted. Unclassified denotes missing regional labels. Subscription intensities can exceed 100 and are not ownership percentages. None of these observational relationships identifies a cause.",
+      "Broadband is more closely associated with adoption levels than mobile intensity on the matched panel."
+    ]
+  },
+  {
+    "key": "country_change_quadrants",
+    "title": "Matched-country changes reveal divergent infrastructure paths.",
+    "path": "images/quality/country_change_quadrants.png",
+    "caption": "Internet adoption increased while landline intensity fell in 126 of 175 countries (72.0%). Spearman association between adoption change and broadband change is 0.054, versus 0.831 between their 2020 levels on exactly the same countries. A strong level association therefore does not imply that five-year increases track one another.",
+    "explanation": [
+      "Does the strong association of infrastructure levels also describe changes within countries?",
+      "Each country appears once in its supplied-region facet. X gives landline change per 100 and Y adoption change in percentage points, both 2020 minus 2015. A zero-centered diverging scale gives broadband change per 100. Zero lines define the quadrants. Panel headings count positive-adoption, negative-landline cases; points on zero boundaries are excluded from that strict count.",
+      "Country-level changes preserve heterogeneity that regional medians conceal. All panels share domains, and both dates have complete observations for all four indicators in the same 175 countries. Keeping signed broadband changes in color avoids encoding negative quantities as bubble sizes. This complements the retained regional dumbbell rather than replacing its summary purpose.",
+      "Changes compare two endpoints and cannot identify the year of transition. Population changes can also alter subscriptions per 100. Differences in rank correlations across levels and changes do not establish causation, substitution, or statistical significance. Region is context, not an income proxy. A small change correlation does not imply that broadband is irrelevant.",
+      "Cross-sectional infrastructure associations and within-country change tell different stories."
+    ]
+  },
+  {
+    "key": "telecom_scatterplot_matrix",
+    "title": "Pairwise relationships across four telecom measures.",
+    "path": "images/quality/telecom_scatterplot_matrix.png",
+    "caption": "The same 175 matched countries contribute to every cell. Adoption-broadband Spearman rho is 0.831, adoption-mobile is 0.531, and landlines-broadband is 0.866. Raw points expose variation around these pooled associations. Diagonal histograms show unequal and skewed measurement distributions.",
+    "explanation": [
+      "Which pairwise relationships explain the patterns seen in the four-variable profile plot?",
+      "The lower triangle contains all six pairwise scatterplots of adoption, landlines, broadband and mobile in 2020. Country color gives supplied region. Diagonal panels show equal-country histograms; the upper triangle gives descriptive Spearman coefficients. Axis units remain explicit. The full figure displays four measured variables, while each individual scatter cell is bivariate.",
+      "A scatterplot matrix exposes individual measurements, outliers and possible nonlinearity that a correlation-only heatmap hides. It also supplies a position-based cross-check for the color and area encodings in the profile figure. Every cell uses identical complete-case membership, so differing coefficients cannot be attributed to pairwise changes in the sample.",
+      "Pooled correlations can reflect differences between regions and need not hold within each region. There are no significance stars or causal claims. Diagonal binning is descriptive and should not be treated as evidence of distinct country clusters. Subscription units differ from adoption percentages; high mobile values do not imply universal access.",
+      "Fixed broadband and landlines share stronger rank relationships than mobile intensity on this panel."
+    ]
+  },
+  {
+    "key": "compound_frequency_persistence",
+    "title": "Joint hot-dry frequency, persistence and threshold sensitivity.",
+    "path": "images/quality/compound_frequency_persistence.png",
+    "caption": "The two conditions coincide over a mean 16.27% of sampled area-days and peak at 34.56% of sampled area on 2023-07-27. The longest cellwise run is 67 days within the observed 92-day window. Runs can cross month boundaries. Threshold sensitivity is shown explicitly for Tmax cutoffs 33, 35 and 37 C and rain cutoffs 0.1 and 1 mm/day; the area-day frequency changes with those choices.",
+    "explanation": [
+      "Are repeated hot-dry days scattered occurrences or sustained runs at the same locations?",
+      "The first map shows the percentage of the 92 days satisfying the joint condition at each cell. The second shows the longest consecutive run using the same daily Boolean sequence. The timeline gives each day's cosine-latitude-weighted area fraction; the final panel recomputes total frequency under six threshold combinations. Missing cells are gray; zero frequency remains a valid observed result.",
+      "Joint daily evaluation tests co-occurrence directly, rather than assuming that separate hot and dry frequencies multiply. Persistence distinguishes equal totals with different timing. The sensitivity panel exposes how a derived indicator depends on analyst choices. All summaries use a fixed common footprint complete across all four weather fields and dates, preventing changing support from creating apparent shifts.",
+      "A maximum run can be truncated by the beginning or end of the observation window. The thresholds are descriptive and do not define official drought, heatwaves, fire danger, or population exposure. Spatial grid values and neighboring days are dependent. Approximate area weights describe the sampled land footprint, and no long-term climatic baseline is available.",
+      "Frequency, timing and persistence answer distinct questions; the joint condition must be calculated day by day."
+    ]
+  },
+  {
+    "key": "monthly_temperature_change",
+    "title": "Complete-month temperature differences and spatial distributions.",
+    "path": "images/quality/monthly_temperature_change.png",
+    "caption": "The approximate area-weighted September-minus-July change in mean daily maximum temperature is -4.64 C; 99.66% of the common sampled area is cooler. Compared with September 30 minus July 1, the sign differs over 18.26% of area. Monthly means use all 31 July and 30 September days, and the sector ECDFs reveal spatial variation hidden by a single mean.",
+    "explanation": [
+      "How does the temperature change across complete months differ from an endpoint-only comparison?",
+      "A zero-centered diverging map encodes September mean daily maximum temperature minus July mean daily maximum temperature at each cell. Blue denotes cooling and red warming. The adjacent weighted empirical distributions show the fraction of each fixed longitude sector at or below a given difference. Both computations use common complete cells and cosine-latitude weights; longitude bands are analyst-defined.",
+      "A mean of all daily fields is a more representative month comparison than a difference between two dates. The distribution panel adds spatial heterogeneity without introducing arbitrary smoothing or significance tests. Each month is averaged by its actual day count, so the unequal month lengths do not mechanically inflate the statistic. The previous endpoint map remains available as historical supporting material.",
+      "These are differences in means of daily maxima, not differences in mean air temperature. The ECDF is a distribution over space, not a confidence interval. A three-month interval provides no climatological baseline and cannot establish climate change. Subsampling approximates the spatial footprint. Exact zero differences are neither warming nor cooling.",
+      "A two-date map can give a different direction of change from a complete-month comparison."
+    ]
+  },
+  {
+    "key": "weather_hovmoller",
+    "title": "Paired time-longitude diagrams retain all daily weather fields.",
+    "path": "images/quality/weather_hovmoller.png",
+    "caption": "The aligned diagrams use all 92 dates, averaging common valid cells from 30 to 45 degrees north at each sampled longitude. Temperature band means range from 11.80 to 39.67 C. The largest precipitation band mean is 95.20 mm on 2023-09-16 at longitude -67.27 degrees. These are band averages, not the most extreme individual cells.",
+    "explanation": [
+      "What daily time-space structure is hidden by calendars, sector averages and monthly maps?",
+      "Horizontal position is date and vertical position is longitude in both lower panels. Color shows weighted temperature or daily precipitation in separate aligned panels. The reference map identifies the fixed 30-45 degree north averaging band. Temperature uses a linear scale; rain uses square-root normalization with a colorbar in actual millimeters, including zero. Each longitude retains identical common valid land cells across all dates.",
+      "A time-space diagram retains all 92 days while exposing differences across longitude. Matched panels make temperature and rainfall timing comparable without forcing incompatible measurements onto one color scale. The latitude band and weighting are explicit, so the reduction from a spatial field to a diagram is reproducible. It replaces the additional weather horizon, while the two required country horizon variations remain.",
+      "Longitude columns contain different amounts of valid land, and the support counts are saved with the arrays. Averaging across latitude hides local extremes. Apparent diagonal patterns cannot be equated with tracked storm motion. This is a descriptive surface-weather adaptation of a Hovmoller diagram, not an upper-atmosphere wave diagnosis or a climate-trend result.",
+      "Daily time-space diagrams reveal temporal detail that a coverage calendar cannot convey."
+    ]
+  },
+  {
+    "key": "weather_four_fields",
+    "title": "Temperature, rainfall and wind in one aligned weather comparison.",
+    "path": "images/quality/weather_four_fields.png",
+    "caption": "The dates are selected reproducibly as the maximum and minimum daily hot-dry area fractions over the full common footprint: 2023-07-27 (34.56%) and 2023-09-30 (1.75%). Both maps use the same temperature limits, rain-contour levels, arrow locations and speed-to-length scale. Wind speed and direction add distinct measurements to the temperature-rainfall comparison.",
+    "explanation": [
+      "Where do temperature, rainfall and wind patterns coincide on objectively selected contrasting days?",
+      "Background color is daily maximum temperature. Blue labeled lines are precipitation contours at 5, 20 and 50 millimeters. Arrow bearing gives flow-to direction and arrow length gives speed, with a 5 m/s key. Dates define panels. The four measured fields therefore use separate channels; longitude and latitude provide spatial context. Every ninth cell of the already stride-six cache is retained for arrows.",
+      "This synthesis brings the required scalar, contour and vector methods together to inspect joint spatial patterns. Objective selection by the previously declared hot-dry area fraction makes the contrast reproducible. Shared limits prevent apparent differences caused by rescaling. The standalone color, contour and quiver experiments remain available to explain and test each layer before interpreting the composite.",
+      "The selection deliberately contrasts extremes and is not representative of every day. Daily maximum temperature, rainfall accumulation and wind summaries need not occur simultaneously. Arrow bearings account for map aspect and cosine latitude; they indicate where air flows, opposite the stored source direction. Coarse wind inputs and display thinning limit local inference, and overlapping patterns do not establish causation.",
+      "Four-field maps support joint spatial inspection when each layer has a distinct, explicit encoding."
+    ]
+  }
+]
