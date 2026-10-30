@@ -35,8 +35,8 @@ weather caches can be retrieved with --download-weather. PDF compilation require
 pdfLaTeX on PATH. Exact stages and processing rules are in WORKSPACE_README.md.
 Browser screenshots remain supplied artifacts; recapture them with
 node scripts/audit_infovis_interactions.mjs when Playwright and Edge are configured.
-See web/README.md for the view states. Presentation regeneration requires its separate Node artifact-tool
-runtime; the numerical/report command does not rebuild the slide deck.
+See web/README.md for the view states. Presentation regeneration requires a separate Node.js runtime for the artifact tools;
+the numerical/report command does not rebuild the slide deck.
 
 The prior-figure comparison gallery is at output/report_changes/index.html.
 All omitted/replaced original plots and the previous PDF are supplied.

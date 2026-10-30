@@ -1,6 +1,6 @@
 # Assignment 2: final three-part plan
 
-Adopted responsibility allocation using the current **25-page, 30-figure report**, with the A1 member names and student IDs. The report now includes the allocation table. This assigns responsibility without certifying unconfirmed completed work. The video follows the continuous question-to-evidence story described in output/video_presentation/RECORDING_SCRIPT.md.
+Adopted responsibility allocation using the current **27-page, 32-figure report**, with the A1 member names and student IDs. The report now includes the allocation table. This assigns responsibility without certifying unconfirmed completed work. The video follows the continuous question-to-evidence story described in output/video_presentation/RECORDING_SCRIPT.md.
 
 **Main question:** What do averages and snapshots hide about inequality, relationships and change over time?
 
@@ -51,7 +51,7 @@ The current report remains in its reading order. These are responsibility and pr
 
 | Current figure | Topic |
 |---|---|
-| 10 | When countries first reach 50% and 75% internet use. |
+| 10 | Did countries that started behind catch up? (Fixed starting cohorts). |
 | 11 | Country differences inside each region. |
 | 12 | Regional change and individual country gains. |
 | 13 | Country horizon plots. |
@@ -104,6 +104,8 @@ The current report remains in its reading order. These are responsibility and pr
 The report now records this responsibility allocation in the A1 table format. Each person must implement their own distinct SciVis and Infovis tasks, and completed ownership must be recorded truthfully. Speaker order or reading existing code alone does not establish implementation ownership.
 
 Source: supplied A2 brief, task list and specifications 1(f), 2 and 7-10. Final figure IDs are taken directly from `data/current_figure_manifest.json`.
+
+
 ## Current focused recording sequence
 
 14 slides, six main analysis figures. Internet finishes on slide 7 at 3:15; Weather follows on slides 8–14. Internet speaker blocks: Parikshith (1–3), Varshith (4–5), Sindhoor (6–7). Weather blocks: Parikshith (8–9), Sindhoor (10–11), Varshith (12–14). Each block lasts 65 seconds, including the closing hold in the last block.

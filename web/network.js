@@ -41,7 +41,7 @@ function render() {
     .attr("x",n=>X(n.id)+11).attr("y",n=>Y(n.id)+4)
     .attr("font-size",14).attr("font-weight",700).attr("fill","#142b3f").text(n=>n.country);
   status.textContent=`${payload.nodes.length} countries · ${visible.length} of ${payload.all_edges.length} pairwise similarities visible · ${layoutBox.value} layout`;
-  document.querySelector("#similarity-value").value=threshold.toFixed(6);
+  document.querySelector("#similarity-value").value=threshold.toFixed(3);
   if(selected){
     const n=byId.get(selected);
     details.textContent=`${n.country} (${n.id}) · ${n.region} · Internet ${n.internet_pct.toFixed(1)}% · Mobile ${n.mobile_per100.toFixed(1)}/100 · Broadband ${n.broadband_per100.toFixed(1)}/100 · Landline ${n.landlines_per100.toFixed(1)}/100 · ${neighbor.size-1} visible neighbors`;
