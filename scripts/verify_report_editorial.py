@@ -16,7 +16,8 @@ def main():
     assert 'gridMET' not in title and 'July-September' not in title
     page=' '.join(first.get_text().split())
     assert 'Live dashboard' in page and 'Country inputs and cleaning' in page
-    assert '95th percentile' in page and 'Nair' in page and 'did not prescribe P95' in page
+    plain_page=page.replace('’',"'")
+    assert '95th percentile' in plain_page and "professor's advice" in plain_page and "P95 is our team's choice" in plain_page
     assert 'preprocess_data' in page.replace(' ','')
     first_links=[a for a in first.get_links() if a.get('uri')==BASE]
     assert len(first_links)==1

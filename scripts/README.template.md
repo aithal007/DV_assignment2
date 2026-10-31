@@ -76,7 +76,7 @@ Source: [gridMET](https://www.climatologylab.org/gridmet.html). The default cach
 
 ## 4. Professor's threshold suggestion and our chosen P95 rule
 
-Prof. Jaya Sreevalsan Nair approved derived similarities and advised inspecting their distribution before filtering highly similar pairs. She mentioned perturbation as one possible semi-automated approach. **P95 is our team's display choice; the professor did not prescribe that percentile.**
+Following the professor's advice, we use derived similarities and inspect their distribution before filtering highly similar pairs. She mentioned perturbation as one possible semi-automated approach. **P95 is our team's display choice; the professor did not prescribe that percentile.**
 
 Z-score each of four indicators across the 179 complete countries: subtract its mean and divide by its population standard deviation (`ddof=0`). Compute Euclidean distance between country profiles, then similarity `s=1/(1+d)`. All **15,931 unique pairs** are retained in `data/network_all_pair_similarities.csv` and JSON `all_edges`.
 
