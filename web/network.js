@@ -33,7 +33,7 @@ function render() {
     .attr("stroke-opacity",e=>selected?((e.source===selected||e.target===selected) ? 0.7 : 0.035):0.17);
   const circles=nodes.selectAll("circle").data(displayed,n=>n.id).join("circle")
     .attr("cx",n=>X(n.id)).attr("cy",n=>Y(n.id))
-    .attr("r",n=>n.id===selected?8:4.6).attr("fill",n=>colors(n.region))
+    .attr("r",n=>Math.sqrt(9+2*visibleDegree.get(n.id))).attr("fill",n=>colors(n.region))
     .attr("stroke",n=>n.id===selected?"#142b3f":"white")
     .attr("stroke-width",n=>n.id===selected?2:.65)
     .attr("opacity",n=>selected?(neighbor.has(n.id)?1:.17):.9)
@@ -65,7 +65,7 @@ fetch("../data/country_network_2020.json").then(r=>{if(!r.ok)throw Error(`HTTP $
   for(const name of Object.keys(data.layouts)) layoutBox.add(new Option(name,name));
   for(const n of data.nodes) document.querySelector("#countries").append(new Option(n.country,n.country));
   for(const region of [...new Set(data.nodes.map(n=>n.region))].sort())regionBox.add(new Option(region,region));
-  document.querySelector("#legend").innerHTML=colors.domain().map(r=>`<span><i style="background:${colors(r)}"></i>${r}</span>`).join("");
+  document.querySelector("#legend").innerHTML=colors.domain().map(r=>`<span><i style="background:${colors(r)}"></i>${r}</span>`).join("")+`<span>Node area = visible degree + minimum marker size; outline = selection</span>`;
   layoutBox.addEventListener("change",render); similarityBox.addEventListener("input",render);
   regionBox.addEventListener('change',render);hideIsolates.addEventListener('change',render);
   // Preserve the exact P95 default while allowing useful keyboard increments.

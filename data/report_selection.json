@@ -17,7 +17,7 @@
     31,
     32
   ],
-  "note": "32 retained figures; expanded preprocessing, professor-attributed threshold guidance with team-selected P95, centered dashboard link, per-figure destinations and inference-led takeaways. Two added analyses are integrated as Figures 6 and 32; ten cited references; node filtering and treemap partition controls with complete UI evidence.",
+  "note": "32 retained figures; expanded preprocessing, professor-attributed threshold guidance with team-selected P95, centered dashboard link, per-figure destinations and inference-led takeaways.",
   "report_style": "Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures",
   "report_generator": "scripts/build_a1_style_report.py",
   "revision_scope": "Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged",

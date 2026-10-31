@@ -1,5 +1,5 @@
 {
-  "checked": "2026-10-30",
+  "checked": "2026-10-31T13:21:46.673Z",
   "errors": [],
   "network": {
     "layouts": [
@@ -10,22 +10,23 @@
     "observations": [
       {
         "layout": "Spring",
-        "status": "179 countries · 797 of 15931 pairwise similarities visible · Spring layout",
+        "status": "179 of 179 countries · 797 of 15931 pairwise similarities visible · Spring layout",
         "details": "India (IND) · Asia · Internet 43.4% · Mobile 82.3/100 · Broadband 1.6/100 · Landline 1.4/100 · 12 visible neighbors"
       },
       {
         "layout": "Spectral",
-        "status": "179 countries · 797 of 15931 pairwise similarities visible · Spectral layout",
+        "status": "179 of 179 countries · 797 of 15931 pairwise similarities visible · Spectral layout",
         "details": "India (IND) · Asia · Internet 43.4% · Mobile 82.3/100 · Broadband 1.6/100 · Landline 1.4/100 · 12 visible neighbors"
       },
       {
         "layout": "Circular",
-        "status": "179 countries · 797 of 15931 pairwise similarities visible · Circular layout",
+        "status": "179 of 179 countries · 797 of 15931 pairwise similarities visible · Circular layout",
         "details": "India (IND) · Asia · Internet 43.4% · Mobile 82.3/100 · Broadband 1.6/100 · Landline 1.4/100 · 12 visible neighbors"
       }
     ],
-    "filter": "179 countries · 54 of 15931 pairwise similarities visible · Circular layout",
-    "passed": true
+    "filter": "179 of 179 countries · 54 of 15931 pairwise similarities visible · Circular layout",
+    "passed": true,
+    "node_filters": true
   },
   "parallel_coordinates": {
     "countries": 175,
@@ -49,11 +50,17 @@
     "passed": true
   },
   "treemap": {
-    "regionRoot": "4,521,767,530 internet users in Included countries · 7 visible groups/countries",
+    "regionRoot": "4,521,767,530 internet users in Included countries · 7 visible groups/countries · Squarified",
     "zoomed": "Included countries / Asia",
-    "adoptionRoot": "4,521,767,530 internet users in Included countries · 4 visible groups/countries",
+    "adoptionRoot": "4,521,767,530 internet users in Included countries · 4 visible groups/countries · Squarified",
     "zoom_and_back": true,
     "hierarchies": 2,
+    "passed": true,
+    "partition_comparison": true
+  },
+  "paired_changes": {
+    "countries": 175,
+    "reorder": true,
     "passed": true
   }
 }

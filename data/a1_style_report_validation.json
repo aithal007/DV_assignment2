@@ -1,13 +1,13 @@
 {
-  "pages": 27,
+  "pages": 30,
   "figures": 32,
   "style_reference": "ass2_1.pdf",
   "source_plot_assets_unchanged": true,
   "slides_video_unchanged": true,
   "reading_guide_count": 32,
-  "rationale_count": 32,
+  "rationale_format": "all original questions, encodings, rationales, interpretations, notes, and takeaways retained",
   "takeaways": 32,
-  "references": 10,
+  "references": 11,
   "analysis_order": [
     1,
     2,

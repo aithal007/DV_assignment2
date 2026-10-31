@@ -1,4 +1,4 @@
-"""Build the integrated 32-figure, cited report from stable analysis IDs."""
+﻿"""Build the integrated 32-figure, cited report from stable analysis IDs."""
 from pathlib import Path
 import hashlib,json,re,shutil,subprocess,zipfile
 import pymupdf
@@ -10,6 +10,7 @@ import approved_report_replacements as approved
 import network_threshold_revision as network
 import report_editorial_revision as editorial
 import report_structure_revision as structure
+import review_text
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'report_latex'
@@ -29,7 +30,13 @@ def block(f):
     return f'### Figure {n}. {f["title"]}\n\n![Figure {n}]({f["path"]})\n\n**Question.** {q}\n\n**Encoding.** {enc}\n\n**Why this chart.** {why}\n\n**What it shows.** {f["detailed_interpretation"]}\n\n**Takeaway.** {take}\n\n{links}\n'
 
 def contributions(text):
-    return text.replace('Discussion/Limitations','Discussion').replace('Figs. 1-3, 17-18, 20-23, 25.','Figs. 1-3, 6, 12, 18-19, 21-23.').replace('Figs. 10-16, 19, 24, 30.','Figs. 11, 13-17, 20, 25-26, 31-32.').replace('Figs. 4-9, 26-29.','Figs. 4-5, 7-10, 24, 27-30.')
+    rows=[
+        ('Parikshith Aithal K V (BT2024249)','Network and interactive parallel coordinates; scalar color mapping and global/local scales. Figs. 1-6, 12, 18-19, 21-23.'),
+        ('Sindhoor Ganapathi Hegde (BT2024014)','Horizon/ridgeline variations; custom contour tracing, filled bands and contour GIF. Figs. 13-17, 20, 25-26, 31-32.'),
+        ('Varshith M Gowda (BT2024227)','Zoomable treemap remodels/partitioning; quiver sampling and length encoding. Figs. 7-11, 24, 27-30.')]
+    if text.startswith('##'):
+        return '## Author contributions and task allocation\n\nTask responsibilities are assigned below.\n\n| Member | Responsibility |\n|---|---|\n'+'\n'.join('| '+name+' | '+task+' |' for name,task in rows)
+    return (r'\section*{Author Contributions and Task Allocation}'+'\nTask responsibilities are assigned below.\n'+r'\begin{table}[!ht]\centering\footnotesize'+r'\begin{tabularx}{\columnwidth}{@{}p{0.27\columnwidth}Y@{}}\toprule'+r'\textbf{Member} & \textbf{Responsibility}\\\midrule'+'\n'+'\n'.join(escape(name)+' & '+escape(task)+r' \\' for name,task in rows)+r'\bottomrule\end{tabularx}\end{table}')
 
 def build():
     from build_a1_style_report import WHY,MORE,CAPTIONS,CONCLUSION
@@ -49,7 +56,14 @@ def build():
     approved.apply(figures,WHY,MORE,CAPTIONS)
     network.apply(figures,content)
     editorial.apply(figures,content);editorial.apply(extras)
+    review_text.configure(editorial,content)
+    review_text.apply(figures);review_text.apply(extras)
     figures=structure.arrange(figures+extras,editorial)
+    allocation=json.loads((ROOT/'data/proposed_three_part_split.json').read_text(encoding='utf-8'))['parts']
+    assert sorted(n for person in allocation for n in person['ids'])==list(range(1,33))
+    for f in figures:
+        person=next(p for p in allocation if f['figure'] in p['ids'])
+        f.update(assigned_to=person['name'],allocation_status='assigned responsibility',proposed_part=person['part'])
     by={f['analysis_id']:f for f in figures}
     pre=(OUT/'design_reference_preamble.tex').read_text(encoding='utf-8')
     parts=[pre,r'\begin{abstract}'+escape(editorial.ABSTRACT)+r'\end{abstract}',r'\begin{IEEEkeywords}country internet use, visual comparison, temporal change, daily weather, multivariable visualization\end{IEEEkeywords}',r'\section{Introduction}',paragraph(structure.remap(editorial.INTRO)),r'\section{Data and preparation}',paragraph(structure.remap(content.DATA)),r'\subsection{Tools, interaction and implementation evidence}',paragraph(content.JS)]
@@ -61,17 +75,18 @@ def build():
         for aid in ids:
             f=by[aid];n=f['figure'];q,enc,why,note,take=f['explanation']
             shutil.copy2(ROOT/f['path'],OUT/'figures'/f'Fig{n}.png')
-            height={1:.62,2:.48,5:.49,6:.62,7:.49,10:.54,19:.58,22:.47,26:.47,28:.62,31:.28,32:.25}.get(aid,.49)
-            env='figure' if aid in {14,15} else 'figure*'
-            width=r'\columnwidth' if aid in {14,15} else r'\textwidth'
-            if aid in {14,15}:height=.42
-            caption=f['caption'] if aid==1 else f['title']
-            parts += [r'\subsection{'+escape(f['title'].rstrip('.'))+'}',r'\noindent\textit{Question (Fig.~\ref{fig:'+str(n)+r'}).} '+inline(q),r'\begin{'+env+r'}[!tb]\centering',rf'\includegraphics[width={width},height={height}\textheight,keepaspectratio]{{Fig{n}.png}}',r'\caption{'+escape(caption)+' '+live_latex(f)+r'}\label{fig:'+str(n)+'}',r'\end{'+env+'}',r'\noindent\textit{How to read the graph.} '+inline(enc),r'\noindent\textit{Why this chart.} '+inline(why),r'\noindent\textit{Detailed interpretation.} '+paragraph(f['detailed_interpretation']),r'\takeaway{'+inline(take)+'}']
+            height={1:.62,2:.45,5:.49,6:.62,7:.49,10:.54,19:.58,22:.47,26:.47,28:.62,31:.28,32:.25}.get(aid,.49)
+            env='figure*';width=r'\textwidth'
+            height={1:.72,3:.55,14:.34,15:.35,17:.62,19:.68,21:.55,25:.65,26:.55,29:.21,30:.42,32:.18}.get(aid,height)
+            caption=review_text.PDF_CAPTIONS[aid]
+            short_take=review_text.PDF_ACTIONS[aid]
+            parts += [r'\subsection{Fig. '+str(n)+': '+escape(f['title'].rstrip('.'))+'}',r'\begin{'+env+r'}[!tb]\centering',rf'\includegraphics[width={width},height={height}\textheight,keepaspectratio]{{Fig{n}.png}}',r'\caption{'+escape(caption)+' '+live_latex(f)+r'}\label{fig:'+str(n)+'}',r'\end{'+env+'}',r'\noindent\textit{How to read the graph.} '+inline(review_text.PDF_GUIDES[aid]),r'\paragraph{Question.} '+paragraph(q),r'\paragraph{Visual encoding.} '+paragraph(enc),r'\paragraph{Why this visualization.} '+paragraph(why),r'\paragraph{Interpretation.} '+paragraph(f['detailed_interpretation']),r'\paragraph{Scope and reading note.} '+paragraph(note),r'\takeaway{'+paragraph(take)+'}',r'\noindent\textit{Further reading.} '+inline(short_take)]
             md.append(block(f));guide.append(block(f))
         if ids[-1] in {16,32}:parts.append(r'\FloatBarrier')
     allocation=contributions(story.contributions_latex()).replace(r'\begin{table}[!ht]\centering\footnotesize',r'\par\smallskip\noindent{\footnotesize').replace(r'\end{tabularx}\end{table}',r'\end{tabularx}}\par\smallskip')
     discussion=structure.remap(editorial.DISCUSSION)
-    parts += [r'\section{Discussion}',paragraph(discussion),r'\section{Code and supporting files}',paragraph(editorial.REPRO),allocation,r'\section{Conclusion}',paragraph(CONCLUSION),r'\begin{thebibliography}{10}']
+    conclusion='Similar summaries conceal different profiles, paths and daily sequences. Country-level pairing, consistent encodings and explicit temporal order provide the evidence needed to interpret the averages.'
+    parts += [r'\section{Discussion}',paragraph(discussion),paragraph(review_text.SCOPE),r'\section{Code and supporting files}',paragraph(editorial.REPRO),allocation,r'\section{Conclusion}',paragraph(conclusion),r'\begin{thebibliography}{11}']
     for i,(citation,url) in enumerate(structure.REFERENCES,1):parts.append(r'\bibitem{ref'+str(i)+'} '+escape(citation)+' '+r'\href{'+url+r'}{Online source}.')
     parts += [r'\end{thebibliography}',r'\end{document}']
     tex='\n\n'.join(parts)
@@ -83,17 +98,17 @@ def build():
         if r.returncode:raise RuntimeError(r.stdout[-4000:])
     target=ROOT/'output/pdf/DAS732_A2_Report_IEEE.pdf';shutil.copy2(OUT/'DAS732_A2_Report.pdf',target)
     pages=len(pymupdf.open(target))
-    md += ['## Discussion\n\n'+discussion,'## Code and supporting files\n\n'+editorial.REPRO,contributions(story.contributions_markdown()),'## Conclusion\n\n'+CONCLUSION,'## References']
+    md += ['## Discussion\n\n'+discussion+'\n\n'+review_text.SCOPE,'## Code and supporting files\n\n'+editorial.REPRO,contributions(story.contributions_markdown()),'## Conclusion\n\n'+CONCLUSION,'## References']
     md += [f'{i}. {citation} [Online source]({url}).' for i,(citation,url) in enumerate(structure.REFERENCES,1)]
     (ROOT/'REPORT.md').write_text('\n\n'.join(md),encoding='utf-8')
     (ROOT/'FIGURE_EXPLANATIONS.md').write_text('# Figure explanations\n\n'+'\n\n'.join(guide),encoding='utf-8')
     (ROOT/'data/current_figure_manifest.json').write_text(json.dumps(figures,indent=2),encoding='utf-8')
     (ROOT/'data/report_figure_explanations.json').write_text(json.dumps([dict(figure=f['figure'],analysis_id=f['analysis_id'],title=f['title'],question=f['explanation'][0],encoding=f['explanation'][1],rationale=f['explanation'][2],detailed_interpretation=f['detailed_interpretation'],takeaway=f['explanation'][4],live_links=f['live_links']) for f in figures],indent=2),encoding='utf-8')
-    (OUT/'README.md').write_text(f'# Report source\n\n{pages} pages and 32 integrated figure sets, followed by 10 references. All original analyses are retained; the near-equal-adoption comparison is Figure 6 and the daily calendar is Figure 32 within the persistence section. Compile DAS732_A2_Report.tex twice with pdfLaTeX, or run python scripts/build_a1_style_report.py from the repository root.\n',encoding='utf-8')
+    (OUT/'README.md').write_text(f'# Report source\n\n{pages} pages and 32 integrated figure sets, with 11 references. The first-page dashboard link opens the working interactive UIs; high-resolution UI screenshots remain in the submission evidence folder. All original analyses are retained; the near-equal-adoption comparison is Figure 6 and the daily calendar is Figure 32 within the persistence section. Compile DAS732_A2_Report.tex twice with pdfLaTeX, or run python scripts/build_a1_style_report.py from the repository root.\n',encoding='utf-8')
     with zipfile.ZipFile(ROOT/'output/DAS732_A2_LaTeX_Source.zip','w',zipfile.ZIP_DEFLATED) as z:
         for p in [OUT/'DAS732_A2_Report.tex',OUT/'design_reference_preamble.tex',OUT/'README.md',*[OUT/'figures'/f'Fig{n}.png' for n in range(1,33)]]:z.write(p,p.relative_to(OUT))
     assert before==digest(assets),'Report builder changed chart measurements/assets'
     assert video_before==digest(protected),'Report builder changed recording materials'
-    validation=dict(pages=pages,figures=32,style_reference='ass2_1.pdf',source_plot_assets_unchanged=True,slides_video_unchanged=True,reading_guide_count=tex.count(r'\textit{How to read the graph.}'),rationale_count=tex.count(r'\textit{Why this chart.}'),takeaways=tex.count(r'\takeaway{'),references=len(structure.REFERENCES),analysis_order=structure.ORDER,extra_plots_integrated=True)
+    validation=dict(pages=pages,figures=32,style_reference='ass2_1.pdf',source_plot_assets_unchanged=True,slides_video_unchanged=True,reading_guide_count=tex.count(r'\textit{How to read the graph.}'),rationale_format='all original questions, encodings, rationales, interpretations, notes, and takeaways retained',takeaways=tex.count(r'\takeaway{'),references=len(structure.REFERENCES),analysis_order=structure.ORDER,extra_plots_integrated=True)
     (ROOT/'data/a1_style_report_validation.json').write_text(json.dumps(validation,indent=2),encoding='utf-8')
-    print(json.dumps(validation,indent=2))
+    print(json.dumps(validation,indent=2))\n

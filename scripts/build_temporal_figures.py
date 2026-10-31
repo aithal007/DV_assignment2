@@ -64,17 +64,17 @@ def horizon(ax, series: list[tuple[str, np.ndarray]], title: str) -> None:
                 ax.fill_between(years, base, base - .68 * level,
                                 color=colors[band], linewidth=0, zorder=3+band)
         ax.hlines(base, START, END, color="#a9b7c3", lw=.55, zorder=2)
-        ax.text(START-.4, base-.32, label, ha="right", va="center", color=INK, fontsize=9)
+        ax.text(START-.4, base-.32, label, ha="right", va="center", color=INK, fontsize=14)
         first=milestone(values)
         stamp='by 2000' if first==2000 else str(first) if first!=9999 else 'not by 2020'
-        ax.text(END+.65,base-.32,f'{values[-1]:.1f}% | {stamp}',va='center',fontsize=9,color=INK)
+        ax.text(END+.65,base-.32,f'{values[-1]:.1f}% | {stamp}',va='center',fontsize=14,color=INK)
         if START < first <= END:
             ax.plot(first,base-.34,'o',ms=3,color=INK)
     ax.set_xlim(START-.2, END+5.2)
     ax.set_ylim(len(series)+.05, -.15)
     ax.set_yticks([])
     ax.set_xticks([2000, 2005, 2010, 2015, 2020])
-    ax.set_xlabel("Year | dots mark first observed 50% attainment; right labels: 2020 value | first attainment", fontsize=9)
+    ax.set_xlabel("Year | dots mark first observed 50% attainment; right labels: 2020 value | first attainment", fontsize=14)
     ax.grid(axis="x", color=GRID, lw=.7)
     for s in ax.spines.values(): s.set_visible(False)
     ax.set_title(title, loc="left", fontsize=14, color=INK, pad=12)
@@ -83,7 +83,7 @@ def horizon(ax, series: list[tuple[str, np.ndarray]], title: str) -> None:
               Patch(color="#f3aaa5", label="0–25 pp below 50%"),
               Patch(color="#bd4c43", label="25–50 pp below")]
     ax.figure.legend(handles=legend, loc="lower center", bbox_to_anchor=(.5,.065), ncol=4,
-                     frameon=False, fontsize=8)
+                     frameon=False, fontsize=11)
 
 
 def build_horizons(panel: pd.DataFrame) -> None:
@@ -150,11 +150,11 @@ def ridge_axis(ax, records: list[tuple[str,np.ndarray]], title: str, palette: li
         med=float(np.median(values))
         ax.plot([med],[base-.72*np.interp(med,grid,density)/max(density.max(),1e-12)],
                 marker="|",color=INK,ms=8)
-        ax.text(-2,base-.31,f"{label}  n={len(values)}",ha="right",va="center",fontsize=8,color=INK)
-        ax.text(102,base-.31,f'{med:.1f}%',va='center',fontsize=8,color=INK)
+        ax.text(-2,base-.31,f"{label}  n={len(values)}",ha="right",va="center",fontsize=12,color=INK)
+        ax.text(102,base-.31,f'{med:.1f}%',va='center',fontsize=12,color=INK)
     ax.set_xlim(0,112);ax.set_ylim(len(records)+.07,-.12)
     ax.set_xticks([0,25,50,75,100]);ax.set_yticks([])
-    ax.set_xlabel("People using the internet (%)",fontsize=9)
+    ax.set_xlabel("People using the internet (%)",fontsize=12)
     ax.set_title(title,loc="left",fontsize=12,color=INK)
     ax.grid(axis="x",color=GRID,lw=.6)
     for s in ax.spines.values():s.set_visible(False)

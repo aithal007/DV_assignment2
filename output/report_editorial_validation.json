@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "pages": 27,
+  "pages": 30,
   "figures": 32,
   "centered_first_page_dashboard": true,
   "per_figure_links": 38,
@@ -8,5 +8,5 @@
   "professor_guidance_distinguished_from_team_cutoff": true,
   "all_takeaways_rewritten": true,
   "extra_plots_integrated": true,
-  "references": 10
+  "references": 11
 }

@@ -120,13 +120,13 @@ REPRO = """**Recreate the results.** From `ass2`, install `requirements.txt`, th
 """
 
 CONTRIBUTIONS = [
-    ('Parikshith Aithal K V (BT2024249), Person A',
+    ('Parikshith Aithal K V (BT2024249)',
      'Network construction, three layouts, interaction and country trajectory/profile interpretation; scalar color mapping, normalization, global/local scales and GIFs. '
      'Figs. 1-3, 17-18, 20-23, 25. Coordination of shared preprocessing, Introduction/Dataset text, and video opening and weather-scale explanation.'),
-    ('Sindhoor Ganapathi Hegde (BT2024014), Person B',
+    ('Sindhoor Ganapathi Hegde (BT2024014)',
      'Both horizon and both ridgeline variations; contour tracing, intervals, fills and contour GIF. '
      'Figs. 10-16, 19, 24, 30. Inequality, regional gains and persistence interpretation, numerical-check coordination, and corresponding report/video explanations.'),
-    ('Varshith M Gowda (BT2024227), Person C',
+    ('Varshith M Gowda (BT2024227)',
      'JavaScript bundled parallel coordinates with brushing/reordering and zoomable treemap with two hierarchies; quiver sampling and length encoding. '
      'Figs. 4-9, 26-29. Browser-demo coordination, relationship/intersection interpretation, Discussion/Limitations, README/package integration and video conclusion.'),
 ]

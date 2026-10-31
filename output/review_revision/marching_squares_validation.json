@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "synthetic_case_checks": 32,
+  "masked_cells_skipped": true,
+  "coordinate_tolerance_degrees": 1e-08,
+  "real_grid": [
+    {
+      "level_C": 25.0,
+      "segments": 1687,
+      "identical_quantized_segments": true
+    },
+    {
+      "level_C": 30.0,
+      "segments": 1288,
+      "identical_quantized_segments": true
+    },
+    {
+      "level_C": 35.0,
+      "segments": 1311,
+      "identical_quantized_segments": true
+    },
+    {
+      "level_C": 40.0,
+      "segments": 258,
+      "identical_quantized_segments": true
+    }
+  ]
+}

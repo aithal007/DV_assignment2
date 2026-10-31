@@ -297,7 +297,7 @@ def weather_figures():
         angles=np.rad2deg(np.arctan2(v*1.3,u/np.cos(np.deg2rad(Y[sl]))))
         q=ax.quiver(X[sl],Y[sl],u,v,angles=angles,scale_units='inches',scale=35,color='#18242e',width=.0017,pivot='mid')
         key=ax.quiverkey(q,.85,1.04,5,'5 m/s',labelpos='E',coordinates='axes'); key.text.set_fontsize(10)
-        geography(ax,f'{dates[i]} | {kind} hot-dry area: {daily[i]:.1f}%')
+        geography(ax,f'{dates[i]} | {kind} hot-dry area: {daily[i]:.2f}%')
     fig.colorbar(im,ax=list(axes),shrink=.85,pad=.015,label='Daily maximum temperature (degrees C)')
     fig.suptitle('Four weather fields on the same dates',fontsize=21,color=INK)
     footer(fig,'Fill: Tmax | Blue labeled contours: daily rain (5 / 20 / 50 mm) | Arrows: flow-to direction and speed\nSame scales and sampled arrow locations | Extreme contrast, not typical conditions | Daily summaries are not simultaneous observations')

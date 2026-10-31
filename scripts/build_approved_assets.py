@@ -2,17 +2,13 @@
 from pathlib import Path
 import json
 import numpy as np
-from PIL import Image,ImageDraw,ImageFont
+from PIL import Image
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[1]
 def main():
- p=ROOT/'output/internet_revision';ims=[Image.open(p/(x+'.png')).convert('RGB') for x in ['pcp_lecture_straight','pcp_lecture_bundled']]
- out=Image.new('RGB',(ims[0].width,sum(i.height for i in ims)+200),'white');d=ImageDraw.Draw(out);font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',32);y=0
- for im,label in zip(ims,['A. Straight records: each line is a country; color shows region','B. Lecture-inspired bundling: axis density clusters joined by ribbons']):
-  d.text((50,y+12),label,fill='#16354b',font=font);out.paste(im,(0,y+60));y+=im.height+100
- out.save(p/'pcp_lecture_comparison.png')
+ p=ROOT/'output/internet_revision'
  z=np.load(ROOT/'data/scivis/gridmet_2023-07-01_2023-09-30_n8_s6.npz');t=z['tmmx'][4];level=35.
  found=False
  for i in range(t.shape[0]-1):

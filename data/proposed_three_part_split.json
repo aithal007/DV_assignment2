@@ -1,17 +1,19 @@
 {
-  "status": "balanced report figure allocation; actual implementation ownership must be confirmed by team",
+  "status": "assigned task responsibilities; actual independent implementation must match the table",
   "parts": [
     {
       "part": "A",
       "name": "Parikshith Aithal K V",
       "title": "Patterns, profiles and trustworthy comparisons",
       "question": "Which patterns are supported by the data, and which impressions depend on how we draw or aggregate it?",
-      "infovis": "Network: construction, three layouts, search/selection/filtering, country trajectories and profile interpretation.",
+      "infovis": "Network: construction, three layouts and interactions; JavaScript bundled parallel coordinates with brushing and reordering.",
       "scivis": "Color mapping: continuous/discrete palettes, normalization, global/local extrema, global/local scalar GIFs.",
       "ids": [
         1,
         2,
         3,
+        4,
+        5,
         6,
         12,
         18,
@@ -21,7 +23,7 @@
         23
       ],
       "finding": "Similar adoption can accompany different infrastructure profiles. Fixed scales and complete daily coverage distinguish measured differences from drawing or sampling effects.",
-      "anchor": "Figures 1-3 and 6 establish country links and profiles; Figure 12 shows within-region variation; Figures 18-19 compare scalar encodings.",
+      "anchor": "Figures 1-3 show network layouts and relationships; Figures 4-5 show parallel coordinates; Figures 18-19 compare scalar encodings.",
       "handoff": "The comparisons are now consistent. But has progress actually reduced inequality, and does an average describe the countries or places behind it?"
     },
     {
@@ -32,7 +34,6 @@
       "infovis": "Temporal methods: both horizon variations and both ridgeline variations, with their baselines, cohorts and density checks.",
       "scivis": "Contour mapping: Marching Squares-family tracing, lines/fills, interval comparison and contour GIF.",
       "ids": [
-        11,
         13,
         14,
         15,
@@ -53,15 +54,14 @@
       "name": "Varshith M Gowda",
       "title": "Infrastructure relationships, interactions and the final answer",
       "question": "Which relationships survive inspection across variables, country changes and joint conditions?",
-      "infovis": "JavaScript browser methods: bundled parallel coordinates with brushing/reordering AND zoomable treemap with two hierarchy remodelings.",
+      "infovis": "JavaScript zoomable treemap with two hierarchy remodelings.",
       "scivis": "Quiver: spatial sampling, proportional versus equal arrow lengths, meteorological FROM to flow TO conversion and speed key.",
       "ids": [
-        4,
-        5,
         7,
         8,
         9,
         10,
+        11,
         24,
         27,
         28,
@@ -69,7 +69,7 @@
         30
       ],
       "finding": "The strong broadband/adoption association across country levels does not describe matched changes. User counts and adoption shares answer different questions. Individual weather conditions are more common than their exact joint overlap.",
-      "anchor": "Figures 4-5 show parallel coordinates, Figures 9-10 show treemap remodels, and Figure 27 shows quiver experiments; Figures 24 and 28-30 add weather context.",
+      "anchor": "Figures 9-10 show treemap remodels, Figure 11 compares fixed country cohorts, and Figure 27 shows quiver experiments; Figures 24 and 28-30 add weather context.",
       "handoff": "Final answer: averages hide heterogeneity, snapshots hide temporal order, and separate variables hide joint occurrence. Each conclusion depends on its stated units, cohort, scale and time support."
     }
   ]

@@ -1,7 +1,7 @@
 # A2 selected report and interactive JavaScript package
 
 Extract this ZIP to a folder. Open output/pdf/DAS732_A2_Report_IEEE.pdf for the
-27-page illustrated report (32 figures, with supporting checks in the companion gallery).
+illustrated report (32 figures, with supporting checks in the companion gallery).
 
 To run the browser visualizations, double-click START_VISUALIZATIONS.cmd on Windows,
 or run `python run_visualizations.py` with Python 3. The launcher opens at

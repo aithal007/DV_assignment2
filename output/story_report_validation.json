@@ -2,9 +2,9 @@
   "status": "PASS",
   "main_figures": 32,
   "supporting_figures": 0,
-  "pdf_pages": 27,
+  "pdf_pages": 30,
   "numbered_source_figures": 32,
-  "local_links_checked": 95,
+  "local_links_checked": 115,
   "animation_frames": {
     "scivis_contour.gif": 8,
     "scivis_global.gif": 8,

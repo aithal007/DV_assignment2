@@ -11,6 +11,7 @@ function band(v){return v<25?"Under 25%":v<50?"25–<50%":v<75?"50–<75%":"75�
 function build(preserveZoom=false){
   const previous=preserveZoom&&current?current.ancestors().reverse().slice(1).map(n=>n.data.name):[];
   const mode=hierarchyBox.value, groups=new Map();
+  document.querySelector('h1').textContent=mode==='region'?'Internet users grouped by region':'Internet users grouped by adoption band';
   for(const r of records){
     const keys=mode==="region"?[r.region]:[band(r.internet_pct),r.region];
     let level=groups;

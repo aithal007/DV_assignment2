@@ -22,7 +22,8 @@ REFERENCES=[
 ('Matplotlib contributors, "Choosing Colormaps in Matplotlib," sequential and diverging palette guidance.', 'https://matplotlib.org/stable/users/explain/colors/colormaps.html'),
 ('N. Henry, J.-D. Fekete and M. J. McGuffin, "NodeTrix: A Hybrid Visualization of Social Networks," IEEE TVCG, vol. 13, no. 6, pp. 1302-1309, 2007.', 'https://www.dgp.toronto.edu/~mjmcguff/research/nodetrix/nodetrix.pdf'),
 ('NOAA National Centers for Environmental Information, "Assessing the U.S. Climate in July 2023," 2023. Independent context for the Southwest heat episode in the selected year.', 'https://www.ncei.noaa.gov/news/national-climate-202307'),
-('J. Heinrich et al., "Evaluation of a Bundling Technique for Parallel Coordinates," 2011. Inspiration for the explicit-group, axis-preserving browser curves.', 'https://arxiv.org/abs/1109.6073')]
+('J. Heinrich et al., "Evaluation of a Bundling Technique for Parallel Coordinates," 2011. Inspiration for the explicit-group, axis-preserving browser curves.', 'https://arxiv.org/abs/1109.6073'),
+('E. Hovmoller, "The Trough-and-Ridge diagram," Tellus, vol. 1, no. 2, pp. 62-66, 1949.', 'https://doi.org/10.3402/tellusa.v1i2.8498')]
 
 def remap(text):
     def replace(m):

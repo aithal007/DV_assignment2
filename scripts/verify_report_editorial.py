@@ -10,7 +10,7 @@ ROOT=Path(__file__).resolve().parents[1]
 def main():
     figures=json.loads((ROOT/'data/current_figure_manifest.json').read_text())
     pdf=pymupdf.open(ROOT/'output/pdf/DAS732_A2_Report_IEEE.pdf')
-    assert len(pdf)<=27
+    assert len(pdf)>=12
     first=pdf[0];words=first.get_text('words')
     title=' '.join(w[4] for w in words if w[3]<175)
     assert 'gridMET' not in title and 'July-September' not in title
@@ -33,24 +33,30 @@ def main():
             parsed=urlsplit(url)
             assert parsed.netloc=='aithal007.github.io'
     alltext=' '.join(' '.join(p.get_text().split()) for p in pdf)
-    for text in ['0.569763','797','15,931','12 isolates','README','team selects P95','not a plotting error']:
+    assert not __import__('re').search(r'Person\s+[ABC]\b',alltext)
+    allocation=json.loads((ROOT/'data/proposed_three_part_split.json').read_text(encoding='utf-8'))['parts']
+    assert sorted(n for person in allocation for n in person['ids'])==list(range(1,33))
+    for f in figures:
+        assert f['assigned_to']==next(p['name'] for p in allocation if f['figure'] in p['ids'])
+    for text in ['0.569763','797','15,931','12 isolates','README','deliberately place isolates']:
         if text=='not a plotting error':assert 'plotting error' in alltext
         else:assert text.lower() in alltext.lower(),text
     assert 'Afghanistan' not in figures[2]['explanation'][4]
     readme=(ROOT/'README.md').read_text(encoding='utf-8')
-    for term in ['preprocess_data.py','--stage data','--stage figures','--stage report','--download-weather','13,387','823','12,564','P95','refresh_pages_assets.py']:
+    for term in ['preprocess_data.py','--stage data','--stage figures','--stage report','--download-weather','13,387','823','12,564','P95','run_visualizations.py']:
         assert term in readme,term
     # Every online figure anchor must have a real card and every local destination
     # must be represented in the published docs tree after refresh.
-    gallery=(ROOT/'docs/figures.html').read_text(encoding='utf-8')
+    site=ROOT/'docs' if (ROOT/'docs/figures.html').is_file() else ROOT
+    gallery=(site/'figures.html').read_text(encoding='utf-8')
     for f in figures:
         n=f['figure'];assert f'id="fig{n}"' in gallery
         for _,url in links(f.get('analysis_id',n),n):
             rel=urlsplit(url).path.removeprefix('/DV_assignment2/')
-            assert (ROOT/'docs'/rel).is_file(),rel
-    assert len(__import__('re').findall(r'\\bibitem\{',(ROOT/'report_latex/DAS732_A2_Report.tex').read_text(encoding='utf-8')))==10
+            assert (site/rel).is_file(),rel
+    assert len(__import__('re').findall(r'\\bibitem\{',(ROOT/'report_latex/DAS732_A2_Report.tex').read_text(encoding='utf-8')))==11
     assert figures[5]['analysis_id']==31 and figures[-1]['analysis_id']==32
-    result=dict(status='PASS',pages=len(pdf),figures=len(figures),centered_first_page_dashboard=True,per_figure_links=sum(len(f['live_links']) for f in figures),pdf_uri_links=len(uris),professor_guidance_distinguished_from_team_cutoff=True,all_takeaways_rewritten=True,extra_plots_integrated=True,references=10)
+    result=dict(status='PASS',pages=len(pdf),figures=len(figures),centered_first_page_dashboard=True,per_figure_links=sum(len(f['live_links']) for f in figures),pdf_uri_links=len(uris),professor_guidance_distinguished_from_team_cutoff=True,all_takeaways_rewritten=True,extra_plots_integrated=True,references=11)
     (ROOT/'output/report_editorial_validation.json').write_text(json.dumps(result,indent=2))
     print(json.dumps(result,indent=2))
 

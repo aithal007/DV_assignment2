@@ -4,7 +4,7 @@
 
 **[Live dashboard](https://aithal007.github.io/DV_assignment2/)** | [Report](output/pdf/DAS732_A2_Report_IEEE.pdf) | [32 explained figures](https://aithal007.github.io/DV_assignment2/figures.html)
 
-The report has **27 pages and 32 figure sets**. Figures 1-17 study country internet data; Figures 18-32 study daily US weather separately. The PDF links below figures open working UIs, animations or static figure readings. The site is published from `docs/` in this same repository.
+The report has **30 pages and 32 figure sets**. Figures 1-17 study country internet data; Figures 18-32 study daily US weather separately. The PDF links below figures open working UIs, animations or static figure readings. The site is published from `docs/` in this same repository.
 
 ## 1. Get the project and open the visualizations
 

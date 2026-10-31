@@ -22,7 +22,7 @@ We ask: (1) Do similar internet-use levels conceal different telecom profiles? (
 
 **Comparable cohorts and transformations.** Each task declares its complete cases: 179 countries with all four 2020 profile indicators for the network; the same 175 countries in both 2015 and 2020 for paired changes; 159 countries with all 21 annual adoption values for 2000-2020; and 184 countries with user counts and adoption for treemaps. A change is computed within country before summarizing. Internet use is a percentage of people; landline, broadband and mobile values are subscriptions per 100 people and may exceed 100. These units are retained in profiles and changes.
 
-**Professor's guidance and network construction.** Following the professor's advice, we score every country pair, inspect the similarity distribution and filter highly similar pairs. Four indicators are z-scored separately across the 179 countries: subtract the indicator's country mean and divide by its standard deviation. Euclidean distance d gives similarity s=1/(1+d). Our team chooses the 95th percentile, P95=0.569763, as the sparse default: 797 of 15,931 pairs remain, with all 179 nodes retained. Perturbation was mentioned as an option; P95 is our team's choice. Figure 1 explains that choice and its sensitivity.
+**Professor's guidance and network construction.** Following the professor's advice, we score every country pair, inspect the similarity distribution and filter highly similar pairs. Four indicators are z-scored separately across the 179 countries: subtract the indicator's country mean and divide by its standard deviation. Euclidean distance d gives similarity s=1/(1+d). Our team chooses the 95th percentile, P95=0.569763, as the sparse default: 797 of 15,931 pairs remain, with all 179 nodes retained. P95 is our team's choice. Figure 1 explains that choice and its sensitivity.
 
 **Weather period and sampling rationale.** gridMET [1] supplies `tmmx` (daily maximum temperature), `pr` (rain), `vs` (wind speed at 10 m) and `th` (wind FROM-direction at 10 m). July-September spans peak summer into early autumn, allowing heat persistence, cooling and rain timing to be compared in one contiguous interval. The selected 2023 year includes independently documented Southwest July heat [9], making persistence substantively relevant; it is a case study, not a representative climate year. Uniform eight-date sampling, 13 days apart with both endpoints, gives reproducible seasonal coverage without the uneven gaps possible in a small random sample. It cannot ensure capture of short extremes; all 92 days support monthly/event inferences.
 
@@ -30,7 +30,7 @@ We ask: (1) Do similar internet-use levels conceal different telecom profiles? (
 
 ### Tools, interaction and evidence
 
-NetworkX [3] computes three layouts; Gephi [5] is the assignment-permitted alternative and is not used here. D3 [4] provides the threshold slider, layout selection, region/isolate node filters, PCP interactions and treemap zoom/hierarchy/partition controls. These are the required working node-link interactions, not merely static layout images. Report diagrams are chart exports; complete uncropped browser captures with controls are linked through the [UI evidence gallery](https://aithal007.github.io/DV_assignment2/interactions.html). Use the dashboard or `python run_visualizations.py`; the README gives full reproduction commands.
+NetworkX [3] computes the three layouts; D3 [4] implements layout/threshold selection, node filters, PCP bundling/brushing/reordering and treemap zoom/hierarchy/partition controls. Gephi [5] is an allowed alternative, not a required additional tool. The first-page dashboard link opens the working browser UIs; `images/gui/` and the interaction receipt provide local evidence. Open `web/home.html` through `python run_visualizations.py` to exercise the controls locally. The README documents setup, reproduction and browser checks.
 
 ## Country relationships and paths
 
@@ -42,19 +42,13 @@ We establish how links are constructed, compare country histories and inspect re
 
 **Question.** How can a dense complete similarity network be filtered transparently before comparing layouts?
 
-**Encoding.** The histogram counts all unique country pairs. The second panel sweeps percentile cutoffs from P80 to P99 and counts countries in the largest connected component and countries with no retained edge. The vertical lines mark P95. The lower panels draw the same 797 retained edges with Spring, Spectral and Circular positions; India and its twelve links are highlighted.
+**Encoding.** Cohort: 179 complete four-indicator profiles in 2020; no 2015 completeness is required. The histogram counts all unique country pairs. The second panel sweeps percentile cutoffs from P80 to P99 and counts countries in the largest connected component and countries with no retained edge. The vertical lines mark P95. The lower panels draw the same 797 retained edges with Spring, Spectral and Circular positions; India and its twelve links are highlighted.
 
 **Why this chart.** The full similarity distribution makes the filtering decision visible instead of silently imposing nearest neighbors. Three layouts then test representation effects on one fixed threshold graph. A shared threshold treats every country pair by the same rule.
 
-**What it shows.** Following the professor's advice, we inspect every pair score before filtering. The histogram describes the complete 15,931-pair universe; panel B shows how the cutoff changes connectedness. This makes the filtering decision inspectable.
+**What it shows.** The distribution defines the complete 15,931-pair universe. P95=0.569763 retains 797 edges and all 179 countries, including 12 isolates. This is the team's sparse default; P90/P92.5/P97.5 retain 1,594/1,195/399 pairs and 5/9/22 isolates. The labeled rows deliberately place degree-zero countries.
 
-Our team selects P95 as an exploratory sparse default: the 95th percentile of all pair scores is 0.569763. Scores at or above it retain 797 pairs, approximately the strongest 5%. P95 is neither similarity 0.95, a confidence level nor a percentage of connected countries. The professor did not prescribe this percentile.
-
-All three layouts preserve the 797 edges and India's twelve neighbors. Spring/Spectral position the 167-country connected core and pack the twelve degree-zero countries into a boxed row. Those dots are measured nodes, not a dotted baseline, missing data or a plotting error. They have scores to every other country and may gain links below P95. Circular distributes all 179 countries around its circumference.
-
-P90 retains 1,594 edges and 5 isolates; P92.5 retains 1,195 and 9; P95 retains 797 and 12; P97.5 retains 399 and 22. Stricter filtering removes weaker pairs but can fragment the core. Keeping every country connected requires 11,526 edges. P95 balances this display trade-off without claiming a unique optimum.
-
-The professor mentioned perturbation as one possible selector. Our 30 seeded trials test robustness after choosing P95: Gaussian noise with SD 0.02 in standardized coordinates gives edge Jaccard 0.905-0.941 (mean 0.922). This is neither calibrated measurement error nor a specified published selector. Scaling/feature changes give overlaps 0.801 (median/IQR), 0.460 (ranks) and 0.338-0.512 (one feature omitted). The online method review supplies tables, the continuous matrix and sources. Stable drawings or small-noise checks cannot establish natural country groups.
+All layouts preserve India's twelve links. Spring separates the connected core with relatively short edges; Spectral compresses some neighborhoods and can overlap nodes; Circular preserves a uniform node order but creates long, crossing chords. Proper straight-edge crossings are 3,042/3,371/98,598 for Spring/Spectral/Circular. These display-specific counts exclude shared endpoints and collinear overlaps; they are readability measures, not evidence that one graph is truer. Region color and degree size expose composition and connectivity. The package's `output/network_revision/` contains the threshold sweep and metric-sensitivity tables; `output/review_revision/layout_comparison.csv` defines the layout comparison.
 
 **Takeaway.** Filtering makes the complete pair network readable, but also changes connectedness. P95 keeps 797 edges and 12 isolates; the three layouts preserve those relationships. Infer similarity from scores and edges, while treating layout proximity and isolated placement as display choices.
 
@@ -80,19 +74,19 @@ This answers the history part of the main question: an endpoint or even a simila
 [View figure and interpretation online](https://aithal007.github.io/DV_assignment2/figures.html#fig2)
 
 
-### Figure 3. NodeTrix: links and gaps after threshold filtering.
+### Figure 3. Community links and degree-ordered pair detail.
 
 ![Figure 3](output/network_revision/nodetrix_threshold_detail.png)
 
 **Question.** Which individual relationships are hidden by the grouped threshold graph?
 
-**Encoding.** The overview replaces each non-singleton modularity group with an adjacency matrix and retains cross-group lines. The right view enlarges group 5, with 15 countries. Teal means similarity meets the global threshold; white means it does not. Gray diagonal self-pairs are excluded. Row labels show within-group degree.
+**Encoding.** Left: six aggregate community nodes, sized by country count, with between-community edge counts. Right: the selected 15-country adjacency matrix, ordered by descending internal degree. Teal means above cutoff, white below, gray self-pair.
 
 **Why this chart.** Matrix cells make exact retained pairs and gaps checkable without relying on crowded lines. The detail group is selected reproducibly as the smallest group with at least five countries that is not a clique. Isolates are explicitly reported rather than silently dropped.
 
-**What it shows.** The overview has 699 links within six non-singleton modularity communities and 98 between them. Those communities subdivide one 167-country connected component; the twelve isolates are separately shown. The enlarged 15-country community contains 93 of 105 possible pairs. Its uneven rows and white gaps show that members are not interchangeable [8].
+**What it shows.** The left graph aggregates six communities, making their 98 between-group links readable; the 699 internal links remain inside the groups. The right matrix resolves the selected 15-country group, with 93 of 105 possible links. Rows and columns are now ordered by internal degree, so dense members and gaps are visible without decoding miniature overview matrices.
 
-Afghanistan meets the cutoff with all 14 other members, whereas Angola meets it with seven. This is evidence about the pattern of pair similarities, not a ranking of development or internet quality. A common group label therefore conceals different relationships. White cells are measured similarities below P95, not absent observations or physical disconnections. Lowering the cutoff may fill them and alter the grouping; the inference applies to the declared metric and threshold.
+Afghanistan has 14 internal neighbors and Angola seven: a shared group label conceals different pair relationships. White cells are measured scores below P95; the diagonal is excluded. This node-link/matrix hybrid is inspired by NodeTrix [8], while community nodes in the overview are aggregates. The exact matrix supplies the individual evidence that the grouped picture omits.
 
 **Takeaway.** A community label hides unequal relationships among its members. The enlarged matrix contains 93 of 105 possible links, with uneven row degrees and real gaps. Inspect those pairs before treating a network community as one uniform telecom profile.
 
@@ -109,13 +103,13 @@ We connect paired changes and endpoint profiles, directly test almost equal adop
 
 **Question.** Do countries with similar gains in internet use also have similar changes in their telecom indicators?
 
-**Encoding.** Each line connects one country's four changes from 2015 to 2020. At every axis, change is calculated as the 2020 value minus its 2015 value. Internet use changes in percentage points; the other axes show changes in subscriptions per 100 people. All 175 matched countries remain visible. Blue highlights the 39 countries that gained 20-30 percentage points in internet use; gray retains the other 136. Three selected examples are named and colored separately. The dashed horizontal line aligns zero on all four axes: above it means an increase and below it a decrease. Each axis has its own stated range.
+**Encoding.** Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each line connects one country's four changes from 2015 to 2020. At every axis, change is calculated as the 2020 value minus its 2015 value. Internet use changes in percentage points; the other axes show changes in subscriptions per 100 people. All 175 matched countries remain visible. Blue highlights the 39 countries that gained 20-30 percentage points in internet use; gray retains the other 136. Three selected examples are named and colored separately. The dashed horizontal line aligns zero on all four axes: above it means an increase and below it a decrease. Each axis has its own stated range.
 
 **Why this chart.** The annual paths in Figure 2 compare internet use and broadband for six examples. This parallel-coordinate view connects all four changes for the full matched sample, so one country can be followed across several measures. Brushing a common range of internet gains asks what else changed among countries making broadly similar progress. Thin background lines retain the full sample, while three named records make the selected pattern easier to trace. The browser supports brushing, axis reordering, hover values and a straight-versus-gently-bundled comparison.
 
-**What it shows.** Brushing adoption gains of 20-30 percentage points selects 39 of the same 175 matched countries. Their selected lines still span broadband changes from about -0.3 to +16.6, landlines from -14.8 to +7.1 and mobile from -80.2 to +34.5 subscriptions per 100 people. The spread across the remaining axes is the evidence that one adoption-gain band does not identify a common infrastructure transition.
+**What it shows.** The gain brush selects 39 of the same 175 matched countries. Within this 20-30-point adoption band, broadband changes span about -0.3 to +16.6, landlines -14.8 to +7.1 and mobile -80.2 to +34.5 subscriptions per 100. One adoption-gain interval therefore conceals several infrastructure transitions.
 
-Georgia and Brunei both gain about 25 adoption points and around eight broadband subscriptions per 100. Yet Georgia's landline/mobile changes are -14.8/-12.0, while Brunei's are +5.2/+10.2. Their lines cross the common zero reference in different directions. Paired four-measure records expose that contrast; a summary gain cannot. The 20-30 band is an analyst-defined comparison, not a discovered country class. Axis intersections remain measured values under bundling [10]; five-year differences omit annual timing and do not establish which change caused adoption growth.
+Georgia and Brunei both gain about 25 adoption points and eight broadband subscriptions, yet their landline/mobile changes are -14.8/-12.0 versus +5.2/+10.2. Uzbekistan gains 28.3 adoption points, 10.0 broadband, 7.1 landline and 28.6 mobile subscriptions. Its positive movement on all four axes contrasts with the other named cases. Read at axis intercepts; bundled joins are tracing aids [10].
 
 **Takeaway.** Similar internet-use gains conceal different combinations of infrastructure change. Even the selected 20-30-point gain group contains opposing landline and mobile movements. Follow each country across all four change axes before assigning one explanation to its progress.
 
@@ -128,7 +122,7 @@ Georgia and Brunei both gain about 25 adoption points and around eight broadband
 
 **Question.** Do countries with high internet use share the same infrastructure profile?
 
-**Encoding.** Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40% internet use, blue means 40-below-70%, and green means at least 70%. Within each chosen band, curves bend gently toward the average profile between neighboring axes. The 35% setting preserves every measured axis intersection and keeps each bend between its two endpoint values. These bands are chosen comparison groups, not discovered country types.
+**Encoding.** Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40% internet use, blue means 40-below-70%, and green means at least 70%. Within each chosen band, curves bend gently toward the average profile between neighboring axes. The 35% setting preserves every measured axis intersection and keeps each bend between its two endpoint values. These bands are chosen comparison groups, not discovered country types.
 
 **Why this chart.** Parallel coordinates keep four measurements connected for each country. Thin curves and three consistent colors make the full set easier to follow without replacing records with filled ribbons. Figure 4 compares five-year changes; this figure compares the country profiles at the 2020 endpoint. The two PCPs therefore ask different questions using the same matched countries. The browser lets the reader compare straight and bundled paths, brush ranges, reorder axes and inspect country values.
 
@@ -147,13 +141,13 @@ Read values where each curve meets an axis. Gentle bundling uses the declared ad
 
 **Question.** How much can infrastructure differ when internet-use rates almost match?
 
-**Encoding.** Panel A counts pairs within one percentage point in internet use. Panel B shows three pairs selected by minimum, middle-ranked and maximum infrastructure distance. Labels give absolute subscription gaps per 100 people; colour gives standardized gaps.
+**Encoding.** Cohort: 179 complete four-indicator profiles in 2020; no 2015 completeness is required. Panel A counts pairs within one percentage point in internet use. Panel B shows three pairs selected by minimum, middle-ranked and maximum infrastructure distance. Labels give absolute subscription gaps per 100 people; colour gives standardized gaps.
 
 **Why this chart.** This links an almost equal headline rate to the infrastructure detail it conceals. The histogram retains all eligible pairs, while the examples make the gaps tangible.
 
-**What it shows.** Among 454 country pairs whose adoption rates differ by at most one percentage point, only 71 (15.6%) meet the full-profile P95 cutoff. The remaining 383 nearly match on the headline percentage but not on the combined definition. The histogram retains all eligible pairs rather than only memorable cases.
+**What it shows.** Among 454 pairs whose adoption differs by at most one percentage point, only 71 (15.6%) meet the full-profile P95 cutoff. The histogram's horizontal distance uses only standardized landline, broadband and mobile gaps; the pass/fail color uses the network's four-indicator similarity, including adoption. The definitions differ deliberately because the question conditions on nearly equal adoption.
 
-The displayed examples are selected by minimum, middle-ranked and maximum infrastructure distance. Bhutan/Turkey differ by 0.82 adoption points but 19.0 broadband subscriptions per 100; Kuwait/Monaco show a much larger multi-indicator contrast despite a 0.54-point adoption gap. Cell labels show raw gaps and colors standardized gaps, keeping size and relative unusualness distinct. This directly answers the profiles subquestion. Pairs share countries and the selection is illustrative, so the counts do not form an independent sample or establish significance.
+The three examples span minimum, middle-ranked and maximum infrastructure distance. Bhutan/Turkey differ by 0.82 adoption points but 19.0 broadband subscriptions per 100; Kuwait/Monaco show much larger infrastructure gaps despite a 0.54-point adoption gap. Raw gap labels and standardized colors separate absolute size from relative unusualness. Similar headline rates therefore do not establish similar full profiles.
 
 **Takeaway.** Almost equal adoption rates can conceal substantially different infrastructure. Only 71 of 454 eligible pairs meet the full-profile cutoff. The headline percentage therefore cannot substitute for a country profile, even when two values nearly match.
 
@@ -166,7 +160,7 @@ The displayed examples are selected by minimum, middle-ranked and maximum infras
 
 **Question.** What does the complete set of pairwise relationships reveal?
 
-**Encoding.** The four variables occupy the same row and column order: internet use, landlines, fixed broadband and mobile. Diagonal cells are country-count histograms. Below the diagonal, each dot is one country, with the column variable on the horizontal axis and the row variable on the vertical axis. Color shows region. Above the diagonal, the matching pair has its Spearman rank-correlation value. All cells use the same 175 countries in 2020.
+**Encoding.** Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. The four variables occupy the same row and column order: internet use, landlines, fixed broadband and mobile. Diagonal cells are country-count histograms. Below the diagonal, each dot is one country, with the column variable on the horizontal axis and the row variable on the vertical axis. Color shows region. Above the diagonal, the matching pair has its Spearman rank-correlation value. All cells use the same 175 countries in 2020.
 
 **Why this chart.** The two adoption scatterplots in A1 already compared broadband and mobile. Restoring the full scatterplot matrix adds the four other pairs, the individual distributions and a common sample. Each relationship can be checked in its own scatter cell rather than inferred from a single correlation number. This also gives a position-based check on the four-variable parallel-coordinate profiles.
 
@@ -185,13 +179,13 @@ All cells use the same 175 countries, so different sample membership does not ex
 
 **Question.** Does a strong relationship between country levels also hold for gains within the same countries?
 
-**Encoding.** The left panel compares Spearman rank correlations with internet use for fixed broadband, landlines and mobile. Blue dots use 2020 country levels; orange dots use each country's 2020-minus-2015 gains. Each gray line joins the two correlations for one measure. The right panel shows the actual broadband and adoption gains, with one dot per country. Both comparisons use the same 175 complete country pairs. Correlation describes how consistently two variables increase together across countries.
+**Encoding.** Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. The left panel compares Spearman rank correlations with internet use for fixed broadband, landlines and mobile. Blue dots use 2020 country levels; orange dots use each country's 2020-minus-2015 gains. Each gray line joins the two correlations for one measure. The right panel shows the actual broadband and adoption gains, with one dot per country. Both comparisons use the same 175 complete country pairs. Correlation describes how consistently two variables increase together across countries.
 
 **Why this chart.** Figure 7 shows relationships between country levels. Repeating the comparison after calculating each country's gain tests whether that snapshot relationship carries over to progress. The paired-dot chart compares all three measures without repeating six scatterplots. The broadband-gain scatterplot keeps the underlying observations visible, so the coefficients can be checked against the shape of the data.
 
-**What it shows.** The strongest endpoint association weakens sharply when each country is paired across time: broadband-adoption rank correlation falls from about 0.83 in 2020 levels to 0.054 in 2015-2020 gains. The gain scatter at right lacks the clear upward ordering implied by the endpoint coefficient. Landline and mobile associations likewise weaken, from about 0.79 to 0.29 and 0.53 to 0.07.
+**What it shows.** Across the same 175 countries, broadband-adoption rank association falls from 0.83 in 2020 levels to 0.054 in paired 2015-2020 gains. The gain scatter lacks the ordered upward pattern suggested by the endpoint coefficient. Landline and mobile associations similarly weaken, from 0.79 to 0.29 and 0.53 to 0.07.
 
-Because the same 175 countries supply both calculations, this is a change of analytical question rather than a sample-composition effect. Countries that already have more infrastructure differ from countries adding more within the interval. The figure therefore blocks a tempting inference from the snapshot: the endpoint association cannot explain who progressed faster. Weak gain correlation is not proof that infrastructure is irrelevant; timing, omitted factors and measurement changes remain unresolved.
+This changes the analytical question, not the cohort: countries already at high infrastructure levels differ from those adding most within five years. Adoption is bounded at 100%, so high-baseline countries also have less possible gain; saturation and diffusion timing can affect these contrasts. The figure supports separating levels from gains, not concluding that infrastructure is unimportant.
 
 **Takeaway.** Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from 0.83 to 0.05 exposes why a cross-country snapshot cannot substitute for paired change.
 
@@ -250,9 +244,9 @@ Fixed country identities distinguish progress from catch-up; distributions and t
 
 **Why this chart.** Yearly distributions can improve even when the countries that started behind remain behind. Keeping the same initial groups follows those countries instead of replacing them with whichever countries occupy a percentile later. The median paths show the group contrast over time; the individual dots prevent a group summary from hiding exceptions. This complements the later ridgelines, which compare overall and regional distributions.
 
-**What it shows.** All three cohorts move upward, but the lowest-starting group reaches a 2020 median of 36.1% while the highest reaches 89.9%. Their absolute median gap widens from 16.2 to 53.8 percentage points. Membership is assigned once from 2000 adoption, so the widening cannot be attributed to countries moving between cohort labels.
+**What it shows.** All fixed cohorts progress, but the lowest-start group ends at a median 36.1% adoption and the highest at 89.9%. Their absolute median gap rises from 16.2 to 53.8 percentage points. Fixed 2000 membership rules out changing cohort labels as the source of widening; overlapping endpoint dots retain individual exceptions.
 
-The endpoint dots overlap: some low-start countries finish above members of a higher-start group. Group-level persistence therefore coexists with individual exceptions. This separates broad progress from absolute catch-up and answers the inequality subquestion. Country rates have equal weight; these medians are not population-weighted access estimates. Four- and five-cohort checks preserve the widening endpoint pattern, but no claim is made that every relative inequality measure rises.
+This is an absolute percentage-point comparison. Bounded adoption and different positions on an S-shaped diffusion path can widen absolute gaps during a transition even while relative measures fall. High-start countries have less remaining headroom. The chart establishes broad progress without absolute median catch-up over this interval; it does not establish that every definition of inequality worsens.
 
 **Takeaway.** Broad progress does not imply absolute catch-up. All fixed starting groups improve, yet their low-to-high median gap widens from 16.2 to 53.8 points. Fixed membership establishes that this contrast is not created by moving countries between groups.
 
@@ -326,9 +320,9 @@ Red/blue encodes position below/above the fixed 50% reference; darkness distingu
 
 **Why this chart.** Repeating the horizon design for regional medians tests how much the story changes after aggregation. The same reference and colors allow a direct comparison with Figure 14. One compact row per region makes broad timing clear, while the preceding country plots show what each regional row leaves out.
 
-**What it shows.** Europe's regional median crosses 50% earlier and ends at 86.86%, while Africa ends at 31.89%. The shared reference makes both timing and the roughly 55-point endpoint difference visible in a small vertical space. This is stronger evidence of different regional histories than a single pooled final value.
+**What it shows.** Europe's regional median ends at 86.86%, Africa's at 31.89%, and Oceania's at 53.71% (53.7% rounded, matching the 2020 median in Figure 17). The fixed 50% reference makes crossing time and endpoint level comparable; red means below majority access, not decline.
 
-Each row is nevertheless one median per year. It cannot identify the country crossing times or spreads shown in the preceding views. The same classified balanced-country membership is retained across all years, preventing changing coverage from creating the apparent trajectories. Read the regional horizon as an organizing summary, then use the country horizons and within-region dots to establish how far that summary can be generalized.
+Each row is one regional median, so the roughly 55-point Europe-Africa endpoint gap compresses the variation among their countries. Fixed classified-country membership prevents changing coverage from creating the trajectories. Enlarging the regional horizon makes the endpoint labels readable; the regional ridgelines then recover the spread around each median.
 
 **Takeaway.** Regional trajectories make broad timing differences clear while compressing member histories. The large Europe-Africa median gap does not describe every country in either region. Read these summaries with country horizons and within-region spread before generalizing.
 
@@ -387,9 +381,9 @@ Controlled experiments hold measured weather fields fixed while varying palette,
 
 **Why this chart.** A palette or scale can make a feature stand out even when the measurements do not change. These panels hold the field fixed and change only its mapping to color. Sequential colormaps suit these ordered magnitudes because no middle value needs special emphasis. Temperature tests palette choice; rainfall tests how the scale reveals smaller values alongside heavy rain.
 
-**What it shows.** The temperature panels hold one field fixed while continuous viridis and 5-degree cividis bands emphasize different levels of detail. The rainfall panels also hold values fixed: linear Blues allocates most contrast to large amounts, while logarithmic magma separates small positive amounts that appear almost uniform under the linear mapping. Zero rain is excluded from the logarithm rather than treated as missing source data.
+**What it shows.** A/B/F encode the same August 22 absolute temperatures: continuous viridis, 5-degree cividis bands and a turbo baseline change visual emphasis without changing values. C/D similarly compare linear and logarithmic rainfall; zero rain is masked only for the logarithm. Ordered absolute magnitudes suit sequential palettes [7].
 
-Absolute temperature/rain fields have ordered magnitudes, so sequential palettes are appropriate. Figure 22 instead subtracts July from September: zero separates cooling from warming, so a diverging RdBu_r palette with symmetric bounds is appropriate [7]. Palette and normalization are separate choices. The experimental contrast is a change in visual emphasis, not additional rainfall or evidence of a stronger event.
+E deliberately changes the quantity to each cell's daily Tmax minus its own July-September mean. Zero now separates warmer/cooler departures, justifying symmetric RdBu_r. It is a within-period reference, not a climate normal. Keeping the quantity and normalization explicit prevents reading palette-induced contrast as additional physical structure; turbo hues have no extra measurement meaning.
 
 **Takeaway.** Color mapping controls which measured differences receive visual emphasis. Linear rain color prioritizes absolute amounts, while logarithmic color separates small positive amounts. Interpret a feature through its legend and normalization before calling it a stronger weather event.
 
@@ -421,13 +415,13 @@ The fixed eight-date range is -1.85 to 49.65 C. It supports between-frame compar
 
 **Question.** How much boundary detail does the contour interval show?
 
-**Encoding.** The same August 22 temperature field is drawn with 5°C and 10°C intervals, using lines and filled bands. Levels and color bars show the thresholds used.
+**Encoding.** A: independent line tracing. B: custom/ContourPy 35 C overlay. C/D: five-/ten-degree filled bands. Bottom: all 16 corner cases; orange corners are above threshold. The same fully valid quads and linear interpolation support the comparison.
 
 **Why this chart.** Contours turn a continuous field into visible boundaries. Using the same date with two intervals separates the effect of boundary spacing from actual weather differences. Lines make threshold crossings explicit, while filled bands make broad areas easier to compare. The four panels test both choices on the same grid.
 
-**What it shows.** The four panels use the same August 22 temperature grid. Five-degree levels produce more boundaries than ten-degree levels; filled bands organize broad areas, while labeled lines identify individual thresholds. The worked grid cell shows temperatures on both sides of 35 C and the interpolated edge crossings used to draw that boundary.
+**What it shows.** The submitted code now includes an independent 16-case Marching Squares implementation: four corner bits classify each fully valid quad; linear interpolation locates edge crossings; saddle cases use the corner-mean center. Exact-level values count as below. The bottom diagrams expose all cases, including the ambiguous patterns [6].
 
-The regular two-dimensional scalar grid fits ContourPy's serial Marching Squares/sweep method [6]: classify four corner values, interpolate crossings on cell edges, and trace segments between neighboring cells. This local method respects the grid/mask and avoids treating missing cells as measurements. Filled contour polygons expose connected temperature ranges; line contours make precise threshold location easier to inspect. Finer level spacing changes displayed boundaries, not source resolution or certainty about the field between grid points.
+The custom lines match ContourPy serial at 25, 30, 35 and 40 C to 1e-8 degrees on the actual August 22 grid; 32 synthetic case/center checks also pass. The overlay shows agreement. Custom line tracing supports exact threshold inspection; ContourPy fills organize broad temperature bands and masked boundaries. Five- versus ten-degree bands change display detail, not source resolution. The code and machine-readable comparison are supplied.
 
 **Takeaway.** More contour lines increase display detail without increasing data resolution. Five-degree spacing reveals more threshold crossings; filled bands emphasize broad regions. Select the representation for the reading task and infer boundaries only at the stated levels.
 
@@ -463,13 +457,13 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 **Question.** Can two daily snapshots describe a whole month’s change?
 
-**Encoding.** The map subtracts July’s mean daily maximum temperature from September’s. It uses the diverging colormap RdBu_r, with equal negative and positive limits centered on zero. Blue means cooling, red means warming, and the pale center means no change. The curves summarize changes across three longitude bands.
+**Encoding.** A: complete-month difference; B: September 30 minus July 1, with the same zero-centered limits. C: orange marks opposite signs. D: area-weighted cumulative distributions of monthly changes by longitude sector.
 
 **Why this chart.** Three maps show overall cooling but make small spatial differences difficult to compare. A diverging colormap suits a difference map because zero is a meaningful reference: it separates cooling from warming. Symmetric color limits show the sign and size of change around that neutral center. The cumulative curves show how widespread each change is within longitude bands, rather than reducing each band to one mean.
 
-**What it shows.** September-minus-July monthly means are negative over 99.66% of the weighted study area, with an overall change of -4.64 C. The area-wide cooling claim is therefore supported by the spatial distribution, not only by one negative mean. The sector cumulative curves show how cooling magnitudes vary across longitude bands.
+**What it shows.** A/B use the same symmetric color limits for complete-month and endpoint changes. Monthly September-minus-July means cool over 99.66% of weighted area, with mean change -4.64 C. C directly marks the 18.26% where September 30 minus July 1 has the opposite sign. D shows how monthly cooling varies across longitude sectors.
 
-Using September 30 minus July 1 gives the opposite change sign over 18.26% of the area. Those two weather states are poor substitutes for the complete months when the question concerns seasonal change. RdBu_r uses equal positive/negative limits around zero: blue is cooling, red warming and the pale midpoint no change [7]. This encoding makes both direction and size explicit. The result is a three-month weather comparison, not a long-term climate trend.
+Thus the endpoint discrepancy is now visible rather than only stated. Two selected weather states can misrepresent the direction of complete-month change at a location. Comparing matched footprints and a zero-centered diverging scale separates this sampling effect from a color-scale change; the cumulative curves prevent one area mean from concealing spatial variation.
 
 **Takeaway.** Two endpoint days can misrepresent change across the full interval. Their change sign disagrees with the complete-month comparison over 18.26% of the study area. Use all days when the claim concerns monthly conditions rather than two weather states.
 
@@ -486,9 +480,9 @@ Using September 30 minus July 1 gives the opposite change sign over 18.26% of th
 
 **Why this chart.** Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.
 
-**What it shows.** On July 27 the western sector has a weighted mean maximum temperature of 31.19 C, while its spatial 10th-90th percentile range is 23.75-39.25 C. The central sector mean is 35.36 C with a narrower 31.39-38.35 C range. Thus similar-looking summary trajectories can conceal quite different simultaneous temperature spreads.
+**What it shows.** On July 27, the western sector's weighted Tmax mean is 31.193 C and its spatial p10-p90 range is 23.75-39.25 C. The central mean is 35.36 C with range 31.39-38.35 C. The western daily value is distinct from July's all-area mean, 31.192 C: both round to 31.19, a numerical coincidence verified from the cache.
 
-In these actual panels, the solid colored line is the spatial median, the dashed dark line is the area-weighted mean, and the shaded ribbon is p10-p90. The same 4,910 western, 4,828 central and 3,678 eastern cells contribute on every date. Temporary peaks and dips remain visible inside each month. Ribbons describe variation across places, not confidence intervals around a mean. Their role in the main question is to recover both daily episodes and the geography compressed by one sector value.
+Solid lines show spatial medians, dashed lines weighted means, and ribbons spatial p10-p90. Fixed sector memberships are 4,910/4,828/3,678 cells. Their different ribbon widths show why similar summary trajectories need not imply similar conditions across places. The ribbons describe spatial spread, not uncertainty around a mean.
 
 **Takeaway.** A smooth area mean can conceal both daily episodes and simultaneous differences between places. The ribbons recover that spatial spread around the daily mean. Their width describes variation across cells, rather than statistical uncertainty about the mean.
 
@@ -505,9 +499,9 @@ In these actual panels, the solid colored line is the spatial median, the dashed
 
 **Why this chart.** A monthly rainfall total cannot distinguish steady rain from a short burst. The second row adds the share falling in the wettest five consecutive days. Keeping total and concentration separate avoids calling a very small rain amount a major event simply because all of it fell at once.
 
-**What it shows.** July and August have close weighted totals, 75.26 and 75.82 mm, but their five-day concentration patterns differ. Among cells receiving at least 10 mm in the month, 43.8% of eligible area in July receives at least half its rain within one five-day window; August reaches 67.5% and September 77.6%. September's lower total, 57.08 mm, therefore coexists with more concentrated timing.
+**What it shows.** July and August have similar weighted rain totals, 75.26 and 75.82 mm, but different timing. Among cells with monthly total at least 10 mm, 43.8% of eligible July area gets at least half its rain in one five-day window, versus 67.5% in August and 77.6% in September. September's total is lower, 57.08 mm.
 
-The ratio maps deliberately mask nearly dry cells, where tiny totals can create misleadingly large percentages. Eligible footprint shares differ between months (74.75%, 92.32%, 94.09%), so these conditional percentages must not be treated as measurements of identical subsets. Windows stay inside each month. The result distinguishes amount from arrival pattern; daily gridded rain alone does not establish hourly intensity, runoff or flooding.
+The minimum-total mask avoids ratios dominated by tiny denominators; eligible footprints differ (74.75%, 92.32%, 94.09%). Concentration also depends on wet-day count: a cell with few rain days can have a large five-day share without a sustained episode. Read the ratio with totals and daily timing, rather than interpreting it directly as event duration or hazard.
 
 **Takeaway.** Monthly rainfall amount cannot identify how rain arrived. Similar July-August totals conceal different five-day concentration, and September has the largest concentration share despite a lower total. Compare amount with timing, using the explicitly eligible area for each month.
 
@@ -533,19 +527,19 @@ The denominator is each month's number of days, so 31 versus 30 days does not me
 [View figure and interpretation online](https://aithal007.github.io/DV_assignment2/figures.html#fig25)
 
 
-### Figure 26. Daily weather across longitude.
+### Figure 26. Hovmoller diagrams: daily departures and rain across longitude.
 
 ![Figure 26](images/quality/weather_hovmoller.png)
 
 **Question.** When and where do warm and rainy periods occur?
 
-**Encoding.** Time runs vertically and longitude horizontally. The top panel shows an area-weighted fixed-threshold heat summary. The other panels show temperature and rain averaged across latitude, retaining every day.
+**Encoding.** A identifies the fixed 30-45 N band. In B/C, horizontal position is date and vertical position longitude. B shows departure from each longitude's own period mean; C shows actual rain with square-root color spacing. D gives the contributing-cell count.
 
 **Why this chart.** Maps preserve location but require many frames to show all 92 days. A time-longitude diagram keeps every date visible in one view. Averaging across latitude makes room for that time axis, so episodes can be compared by their dates and east-west extent rather than remembered across an animation.
 
-**What it shows.** The 92-day time-longitude panels retain short warm episodes and brief rain periods that monthly maps smooth away. Rain is more localized in both time and longitude, whereas some warm bands extend across larger east-west ranges. Their date alignment permits comparison without remembering separate animation frames.
+**What it shows.** This Hovmoller-style display retains daily time-longitude structure [11]. Time is horizontal and longitude vertical; A locates the 30-45 N averaging band. B subtracts each longitude's own 92-day mean Tmax, removing the fixed east-west baseline so within-period warm/cool departures are visible. The reference is not a long-term climate normal.
 
-Each longitude column averages the stated latitude band, so cells from different north-south locations are combined. A diagonal streak is a pattern in these aggregates, not proof of a tracked storm moving through the domain. This trade-off adds continuous timing while sacrificing one spatial dimension. Use the diagram to identify when and over which longitudes an episode occurs, then return to maps for exact spatial interpretation. It complements the daily spatial ribbons rather than replacing their spread information.
+C's largest latitude-weighted rain mean is 95.20 mm/day on September 16 at 67.27 W. It averages only two valid coastal cells, with 94.10 and 96.30 mm/day; the units are verified, not square-root millimeters. Only color spacing is square-root transformed. D exposes longitude support (1-60 cells). Sparse support can preserve local extremes; these aggregate streaks do not track individual storms.
 
 **Takeaway.** Retaining every date exposes episodes smoothed away by monthly maps. The time-longitude view locates their timing and east-west extent, but latitude averaging removes north-south detail. Return to maps before interpreting a band as a specific event location or track.
 
@@ -556,19 +550,19 @@ Each longitude column averages the stated latitude band, so cells from different
 
 Quiver maps locate the flow; monthly direction distributions describe how often different winds occur.
 
-### Figure 27. Wind-arrow density and length.
+### Figure 27. Quiver: readable sampling and arrow-length comparisons.
 
 ![Figure 27](images/scivis/scivis_quiver_experiments.png)
 
 **Question.** How do sampling and arrow length affect readability?
 
-**Encoding.** The panels show the same western-US wind field with different sampling gaps. The top row scales arrow length by speed; the bottom row uses equal lengths. Color gives speed in both rows. Arrows point toward the flow direction.
+**Encoding.** Columns sample every fourth/twelfth point of the already stride-six cache. Upper arrows have speed-proportional lengths; lower arrows have equal lengths. Color shows speed in both rows; keys identify the upper physical scale.
 
 **Why this chart.** An arrow map can become unreadable before it becomes informative. Holding the wind field fixed while varying spacing shows how much local detail is traded for legibility. Comparing speed-scaled and equal-length arrows also separates the tasks of reading direction and reading magnitude.
 
-**What it shows.** All six panels use the same western-US field and the required NetCDF variables `vs` (10 m speed) and `th` (10 m source direction). Sampling every 4th, 8th or 12th point of the already subsampled grid progressively reduces arrow overlap. Speed-proportional arrows show direction and magnitude together; equal-length arrows make direction easier to compare, but their length ceases to encode speed.
+**What it shows.** Two readable sampling densities now compare every fourth and twelfth display cell on the same August 22 western-US field. Larger speed-proportional arrows retain a 5 m/s key; equal-length arrows prioritize direction while color still encodes speed. Dense sampling can overlap; sparse sampling removes locations rather than smoothing the field.
 
-Source direction is converted to flow-to components, u=-vs*sin(th) and v=-vs*cos(th), with bearing correction for longitude scale and map aspect. The 5 m/s key and shared speed color retain units. Near-calm vectors are omitted because their direction is not informative. These comparisons justify a readable display density; they do not imply finer wind resolution or reveal trajectories, gusts or terrain effects absent from the source [1].
+The required variables are `vs` (10 m speed) and `th` (10 m FROM-direction). After angle conversion to radians, u=-vs*sin(th), v=-vs*cos(th) gives flow-TO components. Display bearings account for longitude scale and map aspect. The comparison isolates symbol density and length encoding; it cannot reveal finer wind resolution or trajectories absent from the data [1].
 
 **Takeaway.** Arrow spacing and length determine which wind questions are readable. Sparse sampling clarifies directions while omitting locations; equal lengths emphasize direction and speed-scaled lengths add magnitude. Interpret the vector convention and speed colors with the chosen design.
 
@@ -585,9 +579,9 @@ Source direction is converted to flow-to components, u=-vs*sin(th) and v=-vs*cos
 
 **Why this chart.** Quiver maps show where wind points, but not how often each source direction occurs across a month. Wind roses collect those directions into sectors and divide each sector by speed. Separate monthly panels and a common radial scale reveal changes that one pooled seasonal rose would hide.
 
-**What it shows.** The largest source-direction sector is southwest in July, then south in August and September. Because every rose has the same 14% radial maximum, that directional-frequency change can be compared directly. Stacked 0-2, 2-4, 4-6, 6-8 and >=8 m/s bands show which speed classes contribute to each direction.
+**What it shows.** July's largest source-direction sector is southwest, shifting toward south in August/September. All roses use the same 14% outer limit; ring values are stated outside the bars so labels no longer cover measurements. Stacked colors show how speed classes contribute to each directional frequency.
 
-This is a distribution over weighted grid-cell days, rather than a mean vector or a count of storm tracks. The source-direction convention is opposite to the flow-pointing quiver arrows; the apparent difference is intentional. A pooled seasonal rose could hide the monthly redistribution, while each monthly rose still loses location. Use it for how often particular winds occur and the quiver map for where directions are observed.
+Each percentage uses weighted grid-cell days in that month, not just days at one station. Equal radial scales make the seasonal shift comparable, while the common legend prevents color reinterpretation. This pooled direction distribution complements the quiver maps: it reveals frequency changes but deliberately gives up exact location.
 
 **Takeaway.** Wind direction and strength distributions change within the three-month interval. Monthly roses expose a source-direction shift that a pooled seasonal summary could hide. Their common radial scale supports frequency comparison, while maps remain necessary to locate the winds.
 
@@ -676,28 +670,25 @@ Selection searches the common 13,416-cell footprint for the largest run-length c
 
 ## Discussion
 
-The country evidence answers why an improving summary cannot describe every country. Network layouts rearrange the same relationships; threshold and matrix checks reveal what a grouped picture hides. Figure 6 makes the headline problem explicit: only 71 of 454 pairs with almost equal adoption meet the full-profile cutoff. Paired paths and change PCPs recover different histories behind progress. The level-versus-gain comparison weakens the broadband association from 0.83 to 0.05, so a snapshot relationship cannot explain the ordering of gains. Fixed cohorts retain a widening absolute gap, and 47% of measured adoption variance lies within regions. Country identities and paired observations are necessary for these inferences.
+Country averages conceal profile differences (71 of 454 nearly equal-adoption pairs meet P95), different paired paths, and the 47% within-region variation. Broadband association weakens from 0.83 for levels to 0.05 for gains, with ceiling/diffusion effects limiting interpretation. Layouts preserve edges while changing crossing costs; omitting one indicator gives Jaccard 0.338-0.512, exposing feature sensitivity despite small-noise stability.
 
-Weather evidence similarly separates level, timing and coincidence. Two selected days disagree in change sign with complete months over 18.26% of the area. Rainfall concentration exposes timing concealed by monthly totals. Hot-dry frequency, longest runs and daily coverage describe different event properties; the calendar shows equal 75-day counts with 17- versus 67-day longest spells. Separate hot, dry and windy frequencies cannot recover their 2.57% joint occurrence.
+Weather comparisons recover different omitted details: endpoint signs disagree with monthly means over 18.26% of area; totals conceal concentrated rainfall; equal 75-day event counts produce 17- versus 67-day runs. Separate field frequencies also fail to recover the 2.57% joint occurrence. These findings answer the main question through profiles, matched change and daily order.
 
-Together the comparisons recover within-group differences, histories and daily order hidden by aggregation. These descriptive results concern the stated countries, grid and period; they do not establish causes, universal country types or a climate trend.
+**Scope and limits.** Country aggregates support descriptive comparisons, not causal attribution. Complete-case cohorts exclude missing observations; counts, shares and subscription rates use different denominators. Weather results concern one three-month interval and a fixed subsampled footprint, with approximate area weights and dependent cells/days. Daily fields need not coincide hourly; runs may extend beyond the window. Event cutoffs are descriptive, and period departures are not climate normals. Stride six reduces processing volume and display overlap; no native-resolution equivalence is claimed.
 
 ## Code and supporting files
 
-The repository README documents exact commands for setup, preprocessing, rebuilding supplied figures into the report, regenerating results from raw country extracts and weather caches, running checks, and refreshing the live site. Source CSVs, cache metadata, preprocessing audit, figure exports and editable LaTeX are included. Use the README at the same repository revision as this report; it identifies required software, inputs, outputs and optional downloads.
+The README supplies setup and staged reproduction commands. Source country extracts, weather caches/acquisition metadata, custom contour code/tests, numbered images and editable LaTeX are included. The local launcher opens the UIs; optional Playwright commands regenerate browser exports and complete captures.
 
 ## Author contributions and task allocation
 
-The following table lists each member’s assigned work. 
+Task responsibilities are assigned below.
 
-| Member | Contribution allocation |
+| Member | Responsibility |
 |---|---|
-| Parikshith Aithal K V (BT2024249), Person A | Network construction, three layouts, interaction and country trajectory/profile interpretation; scalar color mapping, normalization, global/local scales and GIFs. Figs. 1-3, 6, 12, 18-19, 21-23. Coordination of shared preprocessing, Introduction/Dataset text, and video opening and weather-scale explanation. |
-| Sindhoor Ganapathi Hegde (BT2024014), Person B | Both horizon and both ridgeline variations; contour tracing, intervals, fills and contour GIF. Figs. 11, 13-17, 20, 25-26, 31-32. Inequality, regional gains and persistence interpretation, numerical-check coordination, and corresponding report/video explanations. |
-| Varshith M Gowda (BT2024227), Person C | JavaScript bundled parallel coordinates with brushing/reordering and zoomable treemap with two hierarchies; quiver sampling and length encoding. Figs. 4-5, 7-10, 24, 27-30. Browser-demo coordination, relationship/intersection interpretation, Discussion, README/package integration and video conclusion. |
-
-Each member is responsible for the design, implementation, interpretation, report explanation and presentation of their assigned methods. Composite figures reuse other members' outputs with the original task ownership retained.
-
+| Parikshith Aithal K V (BT2024249) | Network and interactive parallel coordinates; scalar color mapping and global/local scales. Figs. 1-6, 12, 18-19, 21-23. |
+| Sindhoor Ganapathi Hegde (BT2024014) | Horizon/ridgeline variations; custom contour tracing, filled bands and contour GIF. Figs. 13-17, 20, 25-26, 31-32. |
+| Varshith M Gowda (BT2024227) | Zoomable treemap remodels/partitioning; quiver sampling and length encoding. Figs. 7-11, 24, 27-30. |
 
 ## Conclusion
 
@@ -726,3 +717,5 @@ Each stage adds the detail missing from the previous summary: links and values, 
 9. NOAA National Centers for Environmental Information, "Assessing the U.S. Climate in July 2023," 2023. Independent context for the Southwest heat episode in the selected year. [Online source](https://www.ncei.noaa.gov/news/national-climate-202307).
 
 10. J. Heinrich et al., "Evaluation of a Bundling Technique for Parallel Coordinates," 2011. Inspiration for the explicit-group, axis-preserving browser curves. [Online source](https://arxiv.org/abs/1109.6073).
+
+11. E. Hovmoller, "The Trough-and-Ridge diagram," Tellus, vol. 1, no. 2, pp. 62-66, 1949. [Online source](https://doi.org/10.3402/tellusa.v1i2.8498).
