@@ -1,5 +1,5 @@
 {
-  "status": "adopted responsibility allocation; completed-work attribution requires verification",
+  "status": "balanced report figure allocation; actual implementation ownership must be confirmed by team",
   "parts": [
     {
       "part": "A",
@@ -12,16 +12,16 @@
         1,
         2,
         3,
-        17,
+        6,
+        12,
         18,
-        20,
+        19,
         21,
         22,
-        23,
-        25
+        23
       ],
       "finding": "Similar adoption can accompany different infrastructure profiles. Fixed scales and complete daily coverage distinguish measured differences from drawing or sampling effects.",
-      "anchor": "Figures 1-3 show layout effects, country paths and NodeTrix links; Figures 17-18 establish fair scalar comparisons; Figure 23 shows how monthly totals hide concentrated rainfall.",
+      "anchor": "Figures 1-3 and 6 establish country links and profiles; Figure 12 shows within-region variation; Figures 18-19 compare scalar encodings.",
       "handoff": "The comparisons are now consistent. But has progress actually reduced inequality, and does an average describe the countries or places behind it?"
     },
     {
@@ -32,19 +32,20 @@
       "infovis": "Temporal methods: both horizon variations and both ridgeline variations, with their baselines, cohorts and density checks.",
       "scivis": "Contour mapping: Marching Squares-family tracing, lines/fills, interval comparison and contour GIF.",
       "ids": [
-        10,
         11,
-        12,
         13,
         14,
         15,
         16,
-        19,
-        24,
-        30
+        17,
+        20,
+        25,
+        26,
+        31,
+        32
       ],
       "finding": "Regional summaries hide country differences: 47% of measured 2020 variation lies within regions. Regional median shifts differ from typical individual gains. Event frequency differs from uninterrupted duration.",
-      "anchor": "Figures 10-12 connect timing to within-region variation and country gains; Figures 13-16 demonstrate the required temporal methods; Figure 30 distinguishes event counts from persistent runs.",
+      "anchor": "Figures 14-17 show two horizon and two ridgeline variations; Figure 20 compares contour methods; Figures 25-26 and 31-32 examine daily weather and persistence.",
       "handoff": "Progress is real but uneven, and a summary can conceal very different experiences. Which infrastructure relationships remain when we inspect the original measurements and their changes?"
     },
     {
@@ -57,17 +58,18 @@
       "ids": [
         4,
         5,
-        6,
         7,
         8,
         9,
-        26,
+        10,
+        24,
         27,
         28,
-        29
+        29,
+        30
       ],
       "finding": "The strong broadband/adoption association across country levels does not describe matched changes. User counts and adoption shares answer different questions. Individual weather conditions are more common than their exact joint overlap.",
-      "anchor": "Figures 4-9 connect interactive methods to the infrastructure question; Figure 26 demonstrates the vector experiment; Figure 29 separates marginal prevalence from joint overlap.",
+      "anchor": "Figures 4-5 show parallel coordinates, Figures 9-10 show treemap remodels, and Figure 27 shows quiver experiments; Figures 24 and 28-30 add weather context.",
       "handoff": "Final answer: averages hide heterogeneity, snapshots hide temporal order, and separate variables hide joint occurrence. Each conclusion depends on its stated units, cohort, scale and time support."
     }
   ]

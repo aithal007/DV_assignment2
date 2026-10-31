@@ -29,7 +29,7 @@ def block(f):
     return f'### Figure {n}. {f["title"]}\n\n![Figure {n}]({f["path"]})\n\n**Question.** {q}\n\n**Encoding.** {enc}\n\n**Why this chart.** {why}\n\n**What it shows.** {f["detailed_interpretation"]}\n\n**Takeaway.** {take}\n\n{links}\n'
 
 def contributions(text):
-    return text.replace('Discussion/Limitations','Discussion').replace('Figs. 1-3, 17-18, 20-23, 25.','Figs. 1-3, 6, 18-19, 21-24, 26.').replace('Figs. 10-16, 19, 24, 30.','Figs. 11-17, 20, 25, 31-32.').replace('Figs. 4-9, 26-29.','Figs. 4-5, 7-10, 27-30.')
+    return text.replace('Discussion/Limitations','Discussion').replace('Figs. 1-3, 17-18, 20-23, 25.','Figs. 1-3, 6, 12, 18-19, 21-23.').replace('Figs. 10-16, 19, 24, 30.','Figs. 11, 13-17, 20, 25-26, 31-32.').replace('Figs. 4-9, 26-29.','Figs. 4-5, 7-10, 24, 27-30.')
 
 def build():
     from build_a1_style_report import WHY,MORE,CAPTIONS,CONCLUSION
