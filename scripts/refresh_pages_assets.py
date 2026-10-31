@@ -31,8 +31,12 @@ def main():
         q,enc,why,note,take=f['explanation']
         details=[('Question',q),('How to read',enc),('Why this chart',why),('Interpretation',f['detailed_interpretation']),('Takeaway',take)]
         body=''.join(f'<p><strong>{html.escape(k)}.</strong> {html.escape(v).replace(chr(10),"<br>")}</p>' for k,v in details)
-        cards.append(f'<article id="fig{n}"><h2>Figure {n}: {html.escape(f["title"])}</h2><a href="images/report/Fig{n}.png"><img loading="lazy" src="images/report/Fig{n}.png" alt="{html.escape(f["title"],quote=True)}"></a>{body}</article>')
+        links=' | '.join('<a href="'+html.escape(x['url'],quote=True)+'">'+html.escape(x['label'])+'</a>' for x in f.get('live_links',[]))
+        cards.append(f'<article id="fig{n}"><h2>Figure {n}: {html.escape(f["title"])}</h2><a href="images/report/Fig{n}.png"><img loading="lazy" src="images/report/Fig{n}.png" alt="{html.escape(f["title"],quote=True)}"></a><p>{links}</p>{body}</article>')
     page='<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Explained figures</title><link rel="stylesheet" href="site.css"></head><body><main><p><a href="index.html">← Project home</a></p><h1>Figures and their interpretations</h1><p>Click any figure to see it at full resolution. The report contains the complete analysis.</p>'+''.join(cards)+'</main></body></html>'
+    from report_structure_revision import REFERENCES
+    bibliography='<section><h2>References</h2><ol>'+''.join('<li>'+html.escape(citation)+' <a href="'+html.escape(url,quote=True)+'">Source</a></li>' for citation,url in REFERENCES)+'</ol></section>'
+    page=page.replace('</main>',bibliography+'</main>')
     (SITE/'figures.html').write_text(page,encoding='utf-8')
     print(f'Refreshed {len(figures)} figures, interactive assets, report and weather GIFs in {SITE}.')
 

@@ -37,17 +37,24 @@ def draw_layouts():
     ax.axvline(95,color='#d65b32',lw=2);ax.scatter([95,95],[167,12],color=['#087f83','#7655a3'],zorder=4)
     ax.set(xlabel='Similarity percentile cutoff (higher = fewer edges)',ylabel='Number of countries',title='B  Sparsity changes connectedness',ylim=(0,185),xlim=(80,99))
     ax.legend(frameon=False,fontsize=9,loc='center left');ax.text(.96,.44,'P95: 797 edges\n167 in largest component\n12 isolates',ha='right',transform=ax.transAxes,fontsize=10)
-    neighbors=sorted(g.neighbors('IND'));colors=dict(zip(neighbors,plt.get_cmap('tab20').colors))
+    neighbors=sorted(g.neighbors('IND'));colors=dict(zip(neighbors,plt.get_cmap('tab20').colors));isolates=set(nx.isolates(g))
     for col,(name,pos) in enumerate(d['layouts'].items()):
         ax=fig.add_subplot(gs[1,2*col:2*col+2])
         for e in d['edges']:
             near='IND' in [e['source'],e['target']];other=e['target'] if e['source']=='IND' else e['source'];p,q=pos[e['source']],pos[e['target']]
             ax.plot([p[0],q[0]],[p[1],q[1]],color=colors[other] if near else '#ced7dd',lw=1.7 if near else .45,alpha=1 if near else .35)
-        for n,p in pos.items():ax.scatter(*p,s=55 if n=='IND' else 25 if n in neighbors else 8,color='#102638' if n=='IND' else colors.get(n,'#b5c7d2'),zorder=3)
+        for n,p in pos.items():
+            ax.scatter(*p,s=55 if n=='IND' else 25 if n in neighbors else 13 if n in isolates else 8,
+                       facecolors='white' if n in isolates else '#102638' if n=='IND' else colors.get(n,'#b5c7d2'),
+                       edgecolors='#657d8b' if n in isolates else 'none',linewidths=.7,zorder=3)
+        if name in {'Spring','Spectral'}:
+            ax.add_patch(Rectangle((-.04,-.045),1.08,.09,facecolor='#f4f7f9',edgecolor='#9bafb9',lw=.8,ls='--',zorder=0))
+            ax.text(.5,-.10,'12 isolates: no pair reaches P95',ha='center',va='center',fontsize=9,color='#3e596b')
+        ax.set(xlim=(-.08,1.08),ylim=(-.16,1.1))
         ax.annotate('India',pos['IND'],xytext=(8,12),textcoords='offset points',fontsize=11,weight='bold',bbox=dict(fc='white',ec='none',alpha=.8))
         ax.set_title(f'{name}: same {len(neighbors)} India links',fontsize=12);ax.axis('off');ax.set_aspect('equal')
     fig.suptitle('From a complete similarity network to a readable threshold graph',fontsize=19,weight='bold',y=.97)
-    fig.text(.5,.03,'Same threshold and edges in all three layouts. Spring/Spectral put the 12 isolates in a separate bottom row.\nDrawing distance is not measured similarity. Slider zero restores every pair.',ha='center',fontsize=11)
+    fig.text(.5,.025,'All 179 countries remain. Hollow nodes are the 12 isolates; boxed rows are deliberate placement, not a dotted baseline.\nSame 797 edges in every layout. Drawing distance is not measured similarity.',ha='center',fontsize=10)
     fig.subplots_adjust(top=.90,bottom=.10)
     save(fig,'network_threshold_layouts')
     return {}

@@ -13,6 +13,6 @@
   "trajectory_pairs_checked": 66,
   "network_focus_degree": 12,
   "treemap_country_leaves": 184,
-  "report_figures": 30,
+  "report_figures": 32,
   "browser_evidence": "Actual pointer brushing and other controls passed the browser audit; see output/infovis_audit_20261026/interactions.json."
 }

@@ -38,7 +38,7 @@ assert daily.groupby(['lat','lon']).hot_dry.sum().nunique()==1
 assert set(daily.longest_run)=={17,67}
 manifest=json.loads((ROOT/'data/current_figure_manifest.json').read_text())
 old=json.loads((OUT/'original_figure_paths.json').read_text())
-assert [(f['figure'],f['path']) for f in manifest[:30]]==[(f['figure'],f['path']) for f in old]
+assert sorted((f.get('analysis_id',f['figure']),f['path']) for f in manifest if f.get('analysis_id',f['figure'])<=30)==sorted((f['figure'],f['path']) for f in old)
 assert [f['figure'] for f in manifest]==list(range(1,33))
 result=dict(status='PASS',original_figures_retained=30,total_figures=32,country_pairs_checked=len(rows),retained_pairs=71,calendar_cell_days_checked=len(daily),equal_event_counts=75,longest_runs=[17,67])
 (OUT/'validation.json').write_text(json.dumps(result,indent=2))

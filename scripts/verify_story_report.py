@@ -28,7 +28,7 @@ def main():
     for code in ['BT2024249','BT2024014','BT2024227']: assert code in report and code in tex
     assert 'AI assistance disclosure for this working revision' not in report
     assert 'Required implementation evidence and its location' not in tex
-    assert len(re.findall(r'\\bibitem\{',tex))==0
+    assert len(re.findall(r'\\bibitem\{',tex))==10
     # Independent order-statistic calculation, without NumPy's quantile implementation.
     panel={}
     with (ROOT/'data/internet_panel_2000_2020.csv').open() as stream:

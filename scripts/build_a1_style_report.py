@@ -10,6 +10,7 @@ import simple_report_content as content
 import build_story_report as story
 import report_review_refinements as revision
 import approved_report_replacements as approved
+import report_editorial_revision as editorial
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'report_latex'
@@ -145,108 +146,14 @@ CAPTIONS={
 def digest(paths):
     return {str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in paths}
 
+def live_latex(n):
+    return r'{\footnotesize '+r' \quad | \quad '.join(r'\href{'+url.replace('#',r'\#')+r'}{\textcolor{accent}{\underline{'+escape(label)+r'}}}' for label,url in editorial.links(n))+r'}'
+
+def live_markdown(n):
+    return ' | '.join('['+label+']('+url+')' for label,url in editorial.links(n))
+
 def build():
-    protected=list((ROOT/'output/video_presentation').rglob('*'))
-    protected=[p for p in protected if p.is_file()]
-    before=digest(protected)
-    backup=ROOT/'archive/before_expanded_takeaways_20261024.zip'
-    if not backup.exists():
-        with zipfile.ZipFile(backup,'w',zipfile.ZIP_DEFLATED) as z:
-            for p in [ROOT/'REPORT.md',ROOT/'data/current_figure_manifest.json',OUT/'DAS732_A2_Report.tex',ROOT/'output/pdf/DAS732_A2_Report_IEEE.pdf']:
-                z.write(p,p.relative_to(ROOT))
-    figures=[f for f in json.loads((ROOT/'data/current_figure_manifest.json').read_text(encoding='utf-8')) if f['figure']<=30]
-    assets=list(dict.fromkeys([ROOT/f['path'] for f in figures]+[ROOT/'output/internet_revision/pcp_focus.png',ROOT/'images/quality/telecom_scatterplot_matrix.png']))
-    images_before=digest(assets)
-    content.configure(story)
-    for f in figures:
-        n=f['figure'];title,q,enc,finding,note,take=content.COPY[n]
-        # Essential context belongs with the reading, without a separate limits block.
-        f.update(title=title+'.',caption=CAPTIONS[n],explanation=[q,enc,WHY[n],note,take],
-                 detailed_interpretation=finding+'\n\n'+MORE[n])
-        # These qualifications are already explained in the expanded prose.
-        if n not in {1,3,4,5,8,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30}:
-            f['detailed_interpretation']+=' '+note
-    revision.refine(figures,WHY,MORE,CAPTIONS)
-    approved.apply(figures,WHY,MORE,CAPTIONS)
-    import network_threshold_revision
-    network_threshold_revision.apply(figures,content)
-    # Use the exact typography, title block and float spacing of ass2_1.pdf.
-    # Only its design is reused; the current report supplies all body content.
-    pre=(OUT/'design_reference_preamble.tex').read_text(encoding='utf-8')
-    parts=[pre,r'\begin{abstract}'+escape(revision.ABSTRACT)+r'\end{abstract}',
-           r'\begin{IEEEkeywords}country internet use, visual comparison, temporal change, daily weather, multivariable visualization\end{IEEEkeywords}',
-           r'\section{Introduction}',story.paragraph(INTRO),r'\section{Data and preparation}',story.paragraph(content.DATA),
-           r'\subsection{Tools and interactive views}',story.paragraph(content.JS)]
-    md=['# Beyond Averages and Snapshots\n\nConnectivity Profiles and Daily Weather | Team Plot Twist | DAS732 Assignment 2','## Abstract\n\n'+revision.ABSTRACT,
-        '## Introduction\n\n'+INTRO,'## Data and preparation\n\n'+content.DATA,'### Tools and interactive views\n\n'+content.JS]
-    guide=[];pos=0
-    for section,ids,lead in story.SECTIONS:
-        if section.startswith('Appendix'):break
-        parts += [r'\section{'+escape(section)+'}',story.paragraph(lead)]
-        md += ['## '+section+'\n\n'+lead]
-        for _ in ids:
-            f=figures[pos];pos+=1;n=f['figure'];q,enc,why,note,take=f['explanation']
-            shutil.copy2(ROOT/f['path'],OUT/'figures'/f'Fig{n}.png')
-            # Match the reference: full-width main figures, two compact
-            # one-column summaries, short captions and italic reading guides.
-            height={1:.62,5:.49,6:.62,7:.49,10:.54,19:.58,22:.47,26:.47,28:.62}.get(n,.49)
-            env='figure' if n in {14,15} else 'figure*'
-            width=r'\columnwidth' if n in {14,15} else r'\textwidth'
-            if n in {14,15}:height=.42
-            parts += [r'\subsection{'+escape(f['title'].rstrip('.'))+'}',
-                      r'\noindent\textit{Question (Fig.~\ref{fig:'+str(n)+r'}).} '+inline(q),
-                      r'\begin{'+env+r'}[!tb]\centering',
-                      rf'\includegraphics[width={width},height={height}\textheight,keepaspectratio]{{Fig{n}.png}}',
-                      r'\caption{'+escape(f['title'])+r'}\label{fig:'+str(n)+'}',r'\end{'+env+'}',
-                      r'\noindent\textit{How to read the graph.} '+inline(enc),
-                      r'\noindent\textit{Why this chart.} '+inline(why),
-                      r'\noindent\textit{Detailed interpretation.} '+story.paragraph(f['detailed_interpretation']),
-                      r'\takeaway{'+inline(take)+'}']
-            block=f'### Figure {n}. {f["title"]}\n\n![Figure {n}]({f["path"]})\n\n**Encoding.** {enc}\n\n**Why this chart.** {why}\n\n**What it shows.** {f["detailed_interpretation"]}\n\n**Takeaway.** {take}\n'
-            md.append(block);guide.append(block)
-        if pos==16:parts.append(r'\FloatBarrier')
-    contributions=story.contributions_latex().replace('Discussion/Limitations','Discussion').replace('Figs. 1-3, 17-18, 20-23, 25.', 'Figs. 1-3, 17-18, 20-23, 25, 31.').replace('Figs. 10-16, 19, 24, 30.', 'Figs. 10-16, 19, 24, 30, 32.')
-    # Keep the required allocation with its heading instead of on an empty float page.
-    contributions=contributions.replace(r'\begin{table}[!ht]\centering\footnotesize',r'\par\smallskip\noindent{\footnotesize').replace(r'\end{tabularx}\end{table}',r'\end{tabularx}}\par\smallskip')
-    parts += [r'\section{Discussion}',story.paragraph(DISCUSSION),r'\section{Code and supporting files}',story.paragraph(REPRO),contributions,r'\section{Conclusion}',story.paragraph(CONCLUSION)]
-    import build_additional_evidence as addition
-    extras=addition.entries()
-    parts += [r'\clearpage',r'\onecolumn',r'\section{Additional evidence for the central question}']
-    extra_md=[]
-    for f in extras:
-        n=f['figure'];q,enc,why,note,take=f['explanation']
-        shutil.copy2(ROOT/f['path'],OUT/'figures'/f'Fig{n}.png')
-        parts += [r'\begin{center}',rf'\includegraphics[width=\textwidth,height=.205\textheight,keepaspectratio]{{Fig{n}.png}}',r'\widecaption{'+escape(f['title'])+'}{fig:'+str(n)+'}',r'\end{center}',r'\noindent\textit{Question (Fig.~\ref{fig:'+str(n)+r'}).} '+inline(q),r'\noindent\textit{How to read the graph.} '+inline(enc),r'\noindent\textit{Why this chart.} '+inline(why),r'\noindent\textit{Detailed interpretation.} '+story.paragraph(f['detailed_interpretation']+' '+note),r'\takeaway{'+inline(take)+'}']
-        block=f'### Figure {n}. {f["title"]}\n\n![Figure {n}]({f["path"]})\n\n**Encoding.** {enc}\n\n**Why this chart.** {why}\n\n**What it shows.** {f["detailed_interpretation"]} {note}\n\n**Takeaway.** {take}\n'
-        extra_md.append(block);guide.append(block)
-    figures.extend(extras)
-    parts.append(r'\end{document}')
-    tex='\n\n'.join(parts)
-    tex=re.sub(r'\\texttt\{([^{}]*)\}',lambda m:' '.join(r'\path{'+t+'}' for t in m[1].replace(r'\_','_').split()),tex)
-    (OUT/'DAS732_A2_Report.tex').write_text(tex,encoding='utf-8')
-    for i in range(2):
-        result=subprocess.run([shutil.which('pdflatex'),'-interaction=nonstopmode','-halt-on-error','DAS732_A2_Report.tex'],cwd=OUT,capture_output=True,text=True,encoding='utf-8',errors='replace')
-        (OUT/f'compile_pass_{i+1}.txt').write_text(result.stdout+result.stderr,encoding='utf-8')
-        if result.returncode:raise RuntimeError(result.stdout[-4000:])
-    pdf=ROOT/'output/pdf/DAS732_A2_Report_IEEE.pdf';shutil.copy2(OUT/'DAS732_A2_Report.pdf',pdf)
-    md += ['## Discussion\n\n'+DISCUSSION,'## Code and supporting files\n\n'+REPRO,story.contributions_markdown().replace('Discussion/Limitations','Discussion').replace('Figs. 1-3, 17-18, 20-23, 25.', 'Figs. 1-3, 17-18, 20-23, 25, 31.').replace('Figs. 10-16, 19, 24, 30.', 'Figs. 10-16, 19, 24, 30, 32.'),'## Conclusion\n\n'+CONCLUSION]
-    md += ['## Additional evidence for the central question']+extra_md
-    (ROOT/'REPORT.md').write_text('\n\n'.join(md),encoding='utf-8')
-    (ROOT/'FIGURE_EXPLANATIONS.md').write_text('# Figure explanations\n\n'+'\n\n'.join(guide),encoding='utf-8')
-    (ROOT/'data/current_figure_manifest.json').write_text(json.dumps(figures,indent=2),encoding='utf-8')
-    selection_path=ROOT/'data/report_selection.json'
-    selection=json.loads(selection_path.read_text(encoding='utf-8'))
-    selection.update(report_style='Design restored from user reference ass2_1.pdf: original title, float spacing, short captions, italic guides and individually sized figures',report_generator='scripts/build_a1_style_report.py',design_reference='ass2_1.pdf',revision_scope='Approved change PCP (Figure 4), association comparison (Figure 7), fixed cohorts (Figure 10), and expanded interpretations; presentation and video unchanged')
-    selection_path.write_text(json.dumps(selection,indent=2),encoding='utf-8')
-    (ROOT/'data/report_figure_explanations.json').write_text(json.dumps([dict(figure=f['figure'],title=f['title'],question=f['explanation'][0],encoding=f['explanation'][1],rationale=f['explanation'][2],detailed_interpretation=f['detailed_interpretation'],takeaway=f['explanation'][4]) for f in figures],indent=2),encoding='utf-8')
-    pages=len(pymupdf.open(pdf))
-    (OUT/'README.md').write_text(f'# A2 report source\n\n{pages} pages, 32 figure sets (all original 30 plus two additional analyses). Design follows the user-provided ass2_1.pdf: original title block, full-width figures, compact captions, italic reading guides and tight float spacing. Current content and expanded takeaways are retained. Compile DAS732_A2_Report.tex twice with pdfLaTeX.\n\nReport-only rebuild: python scripts/build_a1_style_report.py from ass2. Slides and video files are not regenerated.\n',encoding='utf-8')
-    with zipfile.ZipFile(ROOT/'output/DAS732_A2_LaTeX_Source.zip','w',zipfile.ZIP_DEFLATED) as z:
-        for p in [OUT/'DAS732_A2_Report.tex',OUT/'design_reference_preamble.tex',OUT/'README.md',*[OUT/'figures'/f'Fig{n}.png' for n in range(1,len(figures)+1)]]:z.write(p,p.relative_to(OUT))
-    assert before==digest(protected),'Presentation/video files changed'
-    assert images_before==digest(assets),'Source plot assets changed'
-    validation=dict(pages=pages,figures=len(figures),style_reference='ass2_1.pdf',source_plot_assets_unchanged=True,restored_figures=[5,6],slides_video_unchanged=True,protected_files=before,reading_guide_count=tex.count(r'\textit{How to read the graph.}'),rationale_count=tex.count(r'\textit{Why this chart.}'),takeaways=tex.count(r'\takeaway{'),takeaway_word_counts=[len(f['explanation'][4].split()) for f in figures],references=len(story.REFERENCES))
-    (ROOT/'data/a1_style_report_validation.json').write_text(json.dumps(validation,indent=2),encoding='utf-8')
-    print(json.dumps({k:v for k,v in validation.items() if k!='protected_files'},indent=2))
+    from report_document_builder import build as integrated_build
+    integrated_build()
 
 if __name__=='__main__':build()

@@ -4,10 +4,12 @@ const svg=d3.select("#treemap"), W=1100,H=690;
 svg.attr("viewBox",`0 0 ${W} ${H}`);
 const status=document.querySelector("#status"), details=document.querySelector("#details");
 const hierarchyBox=document.querySelector("#hierarchy"), back=document.querySelector("#back");
+const tilingBox=document.querySelector('#tiling');
 const fmt=d3.format(",.0f"), pct=d3.format(".1f");
 let records=[], root, current;
 function band(v){return v<25?"Under 25%":v<50?"25–<50%":v<75?"50–<75%":"75–100%";}
-function build(){
+function build(preserveZoom=false){
+  const previous=preserveZoom&&current?current.ancestors().reverse().slice(1).map(n=>n.data.name):[];
   const mode=hierarchyBox.value, groups=new Map();
   for(const r of records){
     const keys=mode==="region"?[r.region]:[band(r.internet_pct),r.region];
@@ -18,9 +20,9 @@ function build(){
   const convert=map=>[...map.values()].map(d=>d.children?{name:d.name,children:convert(d.children)}:d);
   root=d3.hierarchy({name:"Included countries",children:convert(groups)})
     .sum(d=>d.children?0:(d.value||0)).sort((a,b)=>b.value-a.value);
-  d3.treemap().size([W,H]).paddingInner(2).paddingOuter(2).paddingTop(d=>d.depth>0&&d.children?44:2)(root);
+  d3.treemap().tile(tilingBox.value==='slice-dice'?d3.treemapSliceDice:d3.treemapSquarify).size([W,H]).paddingInner(2).paddingOuter(2).paddingTop(d=>d.depth>0&&d.children?44:2)(root);
   current=root;
-  const zoom=new URLSearchParams(location.search).get("zoom");
+  const zoom=previous.length?previous.join('/'):new URLSearchParams(location.search).get("zoom");
   if(zoom){
     const path=zoom.split("/");
     for(const name of path){
@@ -70,7 +72,7 @@ function render(){
   const chain=current.ancestors().reverse().map(d=>d.data.name);
   document.querySelector("#crumb").textContent=chain.join(" / ");
   back.disabled=!current.parent;
-  status.textContent=`${fmt(current.value)} internet users in ${current.data.name} · ${children.length} visible groups/countries`;
+  status.textContent=`${fmt(current.value)} internet users in ${current.data.name} · ${children.length} visible groups/countries · ${tilingBox.selectedOptions[0].textContent}`;
 }
 function show(d){
   details.textContent=d.children?`${d.data.name}: ${fmt(d.value)} internet users across ${d.leaves().length} countries. Click to zoom.`:
@@ -79,7 +81,8 @@ function show(d){
 fetch("../data/treemap_countries_2020.json").then(r=>{if(!r.ok)throw Error(`HTTP ${r.status}`);return r.json();}).then(data=>{
   records=data.countries;
   if(new URLSearchParams(location.search).get("hierarchy")==="adoption")hierarchyBox.value="adoption";
-  hierarchyBox.addEventListener("change",build);
+  hierarchyBox.addEventListener("change",()=>build(false));
+  tilingBox.addEventListener('change',()=>build(true));
   back.addEventListener("click",()=>{if(current.parent){current=current.parent;render();}});
   build();
 }).catch(e=>status.textContent=`Could not load treemap data: ${e.message}`);

@@ -38,9 +38,14 @@ def main():
     for name in ['fig7_association_values.csv','fig10_country_cohorts.csv','fig10_cohort_summary.csv','rubric_preview_validation.json','REPLACEMENT_RECOMMENDATION.md']:
         add(ROOT/'output/proposals_20261026'/name)
     add(ROOT/'requirements.txt')
+    add(ROOT/'scripts/README.template.md')
     for p in (ROOT/'scripts').iterdir():
         if p.is_file() and p.suffix in {'.py','.mjs'}: add(p)
     add(ROOT/'README.md')
+    add(ROOT/'output/report_editorial_validation.json')
+    add(ROOT/'docs/interactions.html')
+    add(ROOT/'docs/site.css')
+    for p in (ROOT/'docs/images/gui').glob('*.png'):add(p)
     for p in (ROOT/'images/scivis').glob('*.gif'):add(p)
     manifest=json.loads((ROOT/'data/current_figure_manifest.json').read_text(encoding='utf-8'))
     for f in manifest+json.loads((ROOT/'data/supplementary_figure_manifest.json').read_text()):
@@ -107,7 +112,8 @@ A1 contribution-table format. Each member has a distinct Infovis and SciVis task
 Actual implementation completion and individual AI disclosures require verification.
 '''.replace('PAGECOUNT',str(len(fitz.open(ROOT/'output/pdf/DAS732_A2_Report_IEEE.pdf'))))
     with zipfile.ZipFile(TARGET,'w',zipfile.ZIP_DEFLATED) as z:
-        z.writestr('README.md',readme)
+        z.writestr('README.md',(ROOT/'README.md').read_text(encoding='utf-8'))
+        z.writestr('PACKAGE_README.md',readme)
         for p in sorted(files):
             z.write(p,'WORKSPACE_README.md' if p==ROOT/'README.md' else p.relative_to(ROOT).as_posix())
     # Verify all runtime HTML paths resolve within the actual ZIP.
@@ -122,7 +128,7 @@ Actual implementation completion and individual AI disclosures require verificat
                 target=posixpath.normpath(posixpath.join(posixpath.dirname(name),unquote(ref.split('#')[0])))
                 assert target in names,(name,target)
                 checked+=1
-    result=dict(archive=str(TARGET.relative_to(ROOT)),files=len(files)+1,
+    result=dict(archive=str(TARGET.relative_to(ROOT)),files=len(files)+2,
                 runtime_links_checked=checked,bytes=TARGET.stat().st_size,
                 scope='report, LaTeX source, figures, GIFs, runnable JavaScript, raw country extracts, preprocessing and current weather caches')
     (ROOT/'output/package_validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')

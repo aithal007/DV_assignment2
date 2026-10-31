@@ -1,290 +1,538 @@
 [
   {
     "figure": 1,
+    "analysis_id": 1,
     "title": "Complete pair similarities, threshold selection and three layouts.",
     "question": "How can a dense complete similarity network be filtered transparently before comparing layouts?",
     "encoding": "The histogram counts all unique country pairs. The second panel sweeps percentile cutoffs from P80 to P99 and counts countries in the largest connected component and countries with no retained edge. The vertical lines mark P95. The lower panels draw the same 797 retained edges with Spring, Spectral and Circular positions; India and its twelve links are highlighted.",
     "rationale": "The full similarity distribution makes the filtering decision visible instead of silently imposing nearest neighbors. Three layouts then test representation effects on one fixed threshold graph. A shared threshold treats every country pair by the same rule.",
-    "detailed_interpretation": "The complete similarity network contains 179 x 178 / 2 = 15,931 unique undirected country pairs. We standardize the four 2020 indicators and calculate s = 1/(1+d), where d is Euclidean distance. The distribution is concentrated at lower similarities; the median is 0.303. We retain the strongest 5%, giving a threshold of 0.569763 and 797 edges. This rule is declared for a sparse starting view, rather than selected to produce an attractive grouping.\n\nThe threshold graph keeps all 179 nodes. Twelve countries have no qualifying pair, and the largest connected component contains 167 countries. Isolation here means no profile exceeds this chosen cutoff, not absence of internet connections. The browser starts at the exact threshold and can return to zero to display the complete graph. Layout coordinates are computed on the default filtered graph and remain fixed when the slider changes.\n\nIndia has twelve retained neighbors: Cameroon, Gambia, Honduras, Haiti, Lesotho, Nigeria, Nicaragua, Sao Tome and Principe, Eswatini, Togo, East Timor, Zimbabwe. The identical edge list is drawn in all three layouts. Lines can become longer or cross differently without changing either endpoint or similarity.\n\nThreshold sensitivity is explicit: P90: 1,594 edges, 5 isolates; P92.5: 1,195 edges, 9 isolates; P95: 797 edges, 12 isolates; P97.5: 399 edges, 22 isolates. Across 30 seeded trials adding Gaussian noise with standard deviation 0.02 in standardized units, fixed-threshold edge Jaccard overlap ranges from 0.905 to 0.941 (mean 0.922). Jaccard is shared retained pairs divided by their union. This is a small-input robustness experiment, not a formal uncertainty estimate or a named perturbation threshold-selection algorithm.\n\nPanel B shows core fragmentation and isolation as the cutoff rises. Keeping all countries connected requires a cutoff of 0.239 and retains 11,526 edges. A maximum spanning tree keeps 178 edges but deletes cycles and many strong pairs. These alternatives answer different questions.\n\nAt the same top-5% density, median/IQR scaling gives edge Jaccard 0.801, rank scaling 0.460, and omitting one indicator 0.338-0.512. Standardization balances scales without removing feature correlation. Small-noise stability therefore cannot establish unique groups. We retain the interpretable four-indicator definition: similarities are descriptive, not physical links, causal effects or significance tests. The supporting method gallery supplies a continuous pair matrix, sensitivity plots, tables and research sources.",
-    "takeaway": "Thresholding makes the complete network readable, but changes which pairs count as linked. India has twelve retained neighbors in every layout; geographic distance on the page is not measured similarity."
+    "detailed_interpretation": "Following Prof. Jaya Sreevalsan Nair's guidance, we inspect every pair score before filtering. The histogram describes the complete 15,931-pair universe; panel B shows how the cutoff changes connectedness. This makes the filtering decision inspectable.\n\nOur team selects P95 as an exploratory sparse default: the 95th percentile of all pair scores is 0.569763. Scores at or above it retain 797 pairs, approximately the strongest 5%. P95 is neither similarity 0.95, a confidence level nor a percentage of connected countries. The professor did not prescribe this percentile.\n\nAll three layouts preserve the 797 edges and India's twelve neighbors. Spring/Spectral position the 167-country connected core and pack the twelve degree-zero countries into a boxed row. Those dots are measured nodes, not a dotted baseline, missing data or a plotting error. They have scores to every other country and may gain links below P95. Circular distributes all 179 countries around its circumference.\n\nP90 retains 1,594 edges and 5 isolates; P92.5 retains 1,195 and 9; P95 retains 797 and 12; P97.5 retains 399 and 22. Stricter filtering removes weaker pairs but can fragment the core. Keeping every country connected requires 11,526 edges. P95 balances this display trade-off without claiming a unique optimum.\n\nThe professor mentioned perturbation as one possible selector. Our 30 seeded trials test robustness after choosing P95: Gaussian noise with SD 0.02 in standardized coordinates gives edge Jaccard 0.905-0.941 (mean 0.922). This is neither calibrated measurement error nor a specified published selector. Scaling/feature changes give overlaps 0.801 (median/IQR), 0.460 (ranks) and 0.338-0.512 (one feature omitted). The online method review supplies tables, the continuous matrix and sources. Stable drawings or small-noise checks cannot establish natural country groups.",
+    "takeaway": "Filtering makes the complete pair network readable, but also changes connectedness. P95 keeps 797 edges and 12 isolates; the three layouts preserve those relationships. Infer similarity from scores and edges, while treating layout proximity and isolated placement as display choices.",
+    "live_links": [
+      {
+        "label": "View live demonstration",
+        "url": "https://aithal007.github.io/DV_assignment2/web/network.html"
+      },
+      {
+        "label": "Full UI screenshot",
+        "url": "https://aithal007.github.io/DV_assignment2/interactions.html#network"
+      }
+    ]
   },
   {
     "figure": 2,
+    "analysis_id": 2,
     "title": "Different country paths to higher internet use.",
     "question": "Can internet use rise without a similar rise in fixed broadband?",
     "encoding": "Each panel follows one country from 2010 to 2020. Open dots mark 2010 and dark dots mark 2020. Small dots show the intervening years. All panels use the same axes.",
     "rationale": "The network compares countries in one year. Small multiples add the history it leaves out. Each country gets its own panel, so its annual path can be followed without crossing five other paths. Shared axes make the size and direction of the changes comparable across countries.",
-    "detailed_interpretation": "South Africa\u2019s internet use rose by 48.1 percentage points while fixed broadband rose by 0.7 subscriptions per 100 people. China gained 35.8 points in internet use and 24.6 broadband subscriptions per 100. A single 2020 value would hide these different paths.\n\nIndia provides another low-broadband path: internet use rises by 35.9 points while fixed broadband rises by 0.8 per 100. Brazil gains 40.7 points alongside 10.1 more broadband subscriptions per 100. Germany starts at 82% online and gains only 7.8 points, leaving less room for growth. The six paths show why neither a shared endpoint nor a similar gain identifies one infrastructure history. These six examples illustrate different paths. They do not represent every country or prove what caused the change.",
-    "takeaway": "South Africa and China both make large gains in internet use, but their fixed-broadband gains are very different: about 0.7 versus 24.6 subscriptions per 100. A single endpoint would hide that difference. The annual paths show why similar progress does not imply the same infrastructure history."
+    "detailed_interpretation": "The six panels do not follow one shared adoption-broadband path. South Africa gains 48.1 percentage points in internet use with only 0.7 additional fixed-broadband subscriptions per 100 people, whereas China gains 35.8 points with 24.6 additional subscriptions. India similarly gains 35.9 points with a broadband increase of 0.8. The vertical separation of their start/end markers and different horizontal displacements are the visible evidence.\n\nThis answers the history part of the main question: an endpoint or even a similar adoption gain cannot identify the associated infrastructure trajectory. Germany's smaller adoption gain also begins from an already high 82% level, so raw gains need starting-level context. These six stated examples illustrate heterogeneity; they do not establish whether mobile access, investment or another mechanism caused it.",
+    "takeaway": "Similar adoption progress can accompany different infrastructure histories. The contrasting country paths show that a 2020 endpoint cannot establish how a country reached it; annual paired observations are needed to distinguish those histories.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig2"
+      }
+    ]
   },
   {
     "figure": 3,
+    "analysis_id": 3,
     "title": "NodeTrix: links and gaps after threshold filtering.",
     "question": "Which individual relationships are hidden by the grouped threshold graph?",
     "encoding": "The overview replaces each non-singleton modularity group with an adjacency matrix and retains cross-group lines. The right view enlarges group 5, with 15 countries. Teal means similarity meets the global threshold; white means it does not. Gray diagonal self-pairs are excluded. Row labels show within-group degree.",
     "rationale": "Matrix cells make exact retained pairs and gaps checkable without relying on crowded lines. The detail group is selected reproducibly as the smallest group with at least five countries that is not a clique. Isolates are explicitly reported rather than silently dropped.",
-    "detailed_interpretation": "The revised threshold graph has 699 edges inside six non-singleton modularity groups and 98 between them. Twelve isolated country nodes are retained separately; they have no edges to place in a matrix. These groups summarize the retained graph and must not be read as continents, income classes or inherent country categories.\n\nGroup 5 contains 15 countries and 93 of its 105 possible pairs. Afghanistan has 14 internal links, while Angola has 7. Follow a named row across to a country column: teal shows a retained pair and white shows a below-threshold pair. The mirrored cell represents the same undirected pair, so count only one triangle.\n\nUnlike an observed physical-network absence, white here is the result of filtering a measured pair score. Lowering the threshold can fill a white cell, and changing the threshold can change the modularity groups. The same all-pair data therefore supports several filtered views; the cutoff must always accompany a claim about connectedness or group membership.",
-    "takeaway": "Group 5 retains 93 of 105 possible pairs. Afghanistan has 14 within-group links and Angola has 7; a shared group label still hides differences in individual relationships."
+    "detailed_interpretation": "The overview has 699 links within six non-singleton modularity communities and 98 between them. Those communities subdivide one 167-country connected component; the twelve isolates are separately shown. The enlarged 15-country community contains 93 of 105 possible pairs. Its uneven rows and white gaps show that members are not interchangeable [8].\n\nAfghanistan meets the cutoff with all 14 other members, whereas Angola meets it with seven. This is evidence about the pattern of pair similarities, not a ranking of development or internet quality. A common group label therefore conceals different relationships. White cells are measured similarities below P95, not absent observations or physical disconnections. Lowering the cutoff may fill them and alter the grouping; the inference applies to the declared metric and threshold.",
+    "takeaway": "A community label hides unequal relationships among its members. The enlarged matrix contains 93 of 105 possible links, with uneven row degrees and real gaps. Inspect those pairs before treating a network community as one uniform telecom profile.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig3"
+      }
+    ]
   },
   {
     "figure": 4,
+    "analysis_id": 4,
     "title": "Similar internet gains, different infrastructure changes.",
     "question": "Do countries with similar gains in internet use also have similar changes in their telecom indicators?",
     "encoding": "Each line connects one country's four changes from 2015 to 2020. At every axis, change is calculated as the 2020 value minus its 2015 value. Internet use changes in percentage points; the other axes show changes in subscriptions per 100 people. All 175 matched countries remain visible. Blue highlights the 39 countries that gained 20-30 percentage points in internet use; gray retains the other 136. Three selected examples are named and colored separately. The dashed horizontal line aligns zero on all four axes: above it means an increase and below it a decrease. Each axis has its own stated range.",
     "rationale": "The annual paths in Figure 2 compare internet use and broadband for six examples. This parallel-coordinate view connects all four changes for the full matched sample, so one country can be followed across several measures. Brushing a common range of internet gains asks what else changed among countries making broadly similar progress. Thin background lines retain the full sample, while three named records make the selected pattern easier to trace. The browser supports brushing, axis reordering, hover values and a straight-versus-gently-bundled comparison.",
-    "detailed_interpretation": "The highlighted countries gain between 20 and 30 percentage points in internet use, yet their lines spread apart on the infrastructure axes. Among these 39 countries, fixed-broadband change ranges from about -0.3 to +16.6 subscriptions per 100 people, landline change from -14.8 to +7.1, and mobile change from -80.2 to +34.5. Similar internet gains therefore occur alongside different combinations of reported telecom changes. The selection is a stated comparison range, not a country category discovered by an algorithm.\n\nGeorgia and Brunei make this distinction easy to follow. Internet use rises by about 25.0 points in Georgia and 25.1 in Brunei. Their fixed broadband also rises, by about 8.7 and 7.7 subscriptions per 100 respectively. The remaining axes separate them: Georgia loses about 14.8 landline and 12.0 mobile subscriptions per 100, while Brunei gains about 5.2 landline and 10.2 mobile subscriptions per 100. Even similar gains in both internet use and fixed broadband can hide changes in opposite directions on the other two measures.\n\nUzbekistan provides another selected example. Internet use rises by 28.3 points, alongside gains of about 10.0 fixed-broadband, 7.1 landline and 28.6 mobile subscriptions per 100. Its line stays above zero on every axis. Compare this with Georgia, whose internet and broadband gains sit above zero while its landline and mobile changes fall below it. The common zero position makes these direction differences visible without treating the four units as interchangeable.\n\nThis supports the change-over-time part of our main question: one adoption gain can hide several different changes in the other indicators. A 2020 snapshot cannot recover those paired changes. Figure 5 answers the separate question of what the country profiles look like at that endpoint; Figure 7 checks how the overall associations differ between levels and gains. This PCP adds the individual four-measure combinations behind those summaries.\n\nRead exact changes at the axis intersections. The 20% bundle gently bends selected and remaining records toward their respective average paths between axes, while preserving the measured intersections. The curves between axes are drawing aids. Five-year differences also omit the annual timing inside the interval. Subscription changes are not counts of unique people, and these comparisons do not show which infrastructure change caused the internet-use gain.",
-    "takeaway": "Georgia and Brunei both gain about 25 percentage points in internet use and around eight fixed-broadband subscriptions per 100 people. Yet landline and mobile subscriptions fall in Georgia and rise in Brunei. Across the 39 selected countries, the four changes form many different combinations. Similar internet progress therefore does not describe one common infrastructure history; keeping each country connected across the axes reveals what a single gain or endpoint would hide."
+    "detailed_interpretation": "Brushing adoption gains of 20-30 percentage points selects 39 of the same 175 matched countries. Their selected lines still span broadband changes from about -0.3 to +16.6, landlines from -14.8 to +7.1 and mobile from -80.2 to +34.5 subscriptions per 100 people. The spread across the remaining axes is the evidence that one adoption-gain band does not identify a common infrastructure transition.\n\nGeorgia and Brunei both gain about 25 adoption points and around eight broadband subscriptions per 100. Yet Georgia's landline/mobile changes are -14.8/-12.0, while Brunei's are +5.2/+10.2. Their lines cross the common zero reference in different directions. Paired four-measure records expose that contrast; a summary gain cannot. The 20-30 band is an analyst-defined comparison, not a discovered country class. Axis intersections remain measured values under bundling [10]; five-year differences omit annual timing and do not establish which change caused adoption growth.",
+    "takeaway": "Similar internet-use gains conceal different combinations of infrastructure change. Even the selected 20-30-point gain group contains opposing landline and mobile movements. Follow each country across all four change axes before assigning one explanation to its progress.",
+    "live_links": [
+      {
+        "label": "View live demonstration",
+        "url": "https://aithal007.github.io/DV_assignment2/output/pcp_changes/index.html"
+      },
+      {
+        "label": "Full UI screenshot",
+        "url": "https://aithal007.github.io/DV_assignment2/interactions.html#changes"
+      }
+    ]
   },
   {
     "figure": 5,
+    "analysis_id": 5,
     "title": "Gentle bundles reveal different country profiles.",
     "question": "Do countries with high internet use share the same infrastructure profile?",
     "encoding": "Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40% internet use, blue means 40-below-70%, and green means at least 70%. Within each chosen band, curves bend gently toward the average profile between neighboring axes. The 35% setting preserves every measured axis intersection and keeps each bend between its two endpoint values. These bands are chosen comparison groups, not discovered country types.",
     "rationale": "Parallel coordinates keep four measurements connected for each country. Thin curves and three consistent colors make the full set easier to follow without replacing records with filled ribbons. Figure 4 compares five-year changes; this figure compares the country profiles at the 2020 endpoint. The two PCPs therefore ask different questions using the same matched countries. The browser lets the reader compare straight and bundled paths, brush ranges, reorder axes and inspect country values.",
-    "detailed_interpretation": "Start on the internet-use axis and follow the green curves toward fixed broadband. High-adoption countries occupy a wide range of broadband values, including countries close to zero. For example, Kuwait has about 99.1% internet use but only 1.7 fixed-broadband subscriptions per 100 people. Kyrgyzstan has 72.0% internet use and 4.3 fixed-broadband subscriptions per 100. Thus, a shared adoption band does not imply one infrastructure profile.\n\nOn the mobile axis, curves from different adoption bands overlap. Mobile subscriptions alone therefore do not neatly separate low- and high-adoption countries. The matrix in Figure 6 checks these relationships more precisely. Curves help trace records, but their apparent height or slope between axes has no measured meaning. Each axis has a different scale, so compare intersections and labelled values rather than the steepness of a curve.\n\nThis answers the relationships part of our main question: a summary such as high adoption can hide different combinations of the other indicators. The browser preserves each country for inspection instead of treating the colored bands as identical members.",
-    "takeaway": "The high-adoption band includes countries with very different fixed-broadband and landline values, while mobile values overlap across adoption bands. One adoption label therefore hides several infrastructure profiles. Gentle bundling helps follow the records, but exact comparisons still come from the axis values and browser selection."
+    "detailed_interpretation": "The high-adoption curves fan out strongly on fixed broadband. Kuwait has about 99.1% internet use with 1.7 broadband subscriptions per 100 people; Kyrgyzstan has 72.0% with 4.3. Mobile values also overlap across the three adoption bands instead of separating them cleanly. These are visible exceptions to the idea that one headline adoption category has one infrastructure profile.\n\nRead values where each curve meets an axis. Gentle bundling uses the declared adoption bands to help trace records [10], while the joins between axes are drawing aids. This plot addresses endpoint composition; the preceding change plot addresses transition. Together they distinguish a similar present state from a similar history. The data do not measure all alternative access technologies or identify a causal route to connectivity.",
+    "takeaway": "High adoption describes several infrastructure profiles rather than one common model. Overlapping mobile values and widely differing broadband values within the same adoption band show why the headline rate must be read alongside the other indicators.",
+    "live_links": [
+      {
+        "label": "View live demonstration",
+        "url": "https://aithal007.github.io/DV_assignment2/web/index.html"
+      },
+      {
+        "label": "Full UI screenshot",
+        "url": "https://aithal007.github.io/DV_assignment2/interactions.html#pcp"
+      }
+    ]
   },
   {
     "figure": 6,
-    "title": "Four telecom measures: associations and exceptions.",
-    "question": "What does the complete set of pairwise relationships reveal?",
-    "encoding": "The four variables occupy the same row and column order: internet use, landlines, fixed broadband and mobile. Diagonal cells are country-count histograms. Below the diagonal, each dot is one country, with the column variable on the horizontal axis and the row variable on the vertical axis. Color shows region. Above the diagonal, the matching pair has its Spearman rank-correlation value. All cells use the same 175 countries in 2020.",
-    "rationale": "The two adoption scatterplots in A1 already compared broadband and mobile. Restoring the full scatterplot matrix adds the four other pairs, the individual distributions and a common sample. Each relationship can be checked in its own scatter cell rather than inferred from a single correlation number. This also gives a position-based check on the four-variable parallel-coordinate profiles.",
-    "detailed_interpretation": "Start with the broadband row and internet-use column: the upward cloud corresponds to the 0.83 value above the diagonal. The mobile-versus-adoption pair is more scattered and has a lower value, 0.53. This repeats A1's broad observation, but now uses 2020 matched-country data and rank correlation, rather than the 2024 adoption comparison.\n\nThe rest of the matrix adds the information that the two-panel version omitted. Landlines and broadband have the strongest pairwise rank association, about 0.87. Landlines and adoption are also strongly related, at 0.79, while mobile has weaker relationships with landlines and broadband, about 0.48 and 0.49. The diagonal histograms show many countries near low fixed-infrastructure values, while mobile counts spread well above 100 subscriptions per 100 people. Such counts can exceed 100 because they measure subscriptions rather than unique people.\n\nSpearman correlation compares the ordering of countries: values closer to 1 indicate a more consistently increasing relationship. It does not require the points to lie on a straight line. Check the scatter cell as well as the coefficient for exceptions and shape. The colors show regional composition, but these pooled coefficients do not describe a separate within-region relationship.\n\nFor 2015-2020 gains, broadband and internet-use changes have a rank correlation of only about 0.054. Thus, even the stronger 2020 level relationship cannot explain each country's progress. Figure 7 directly compares the level and gain relationships for all three infrastructure measures.",
-    "takeaway": "Fixed broadband has a stronger rank association with internet use than mobile does, 0.83 versus 0.53, while landlines and broadband also move together strongly across countries, at 0.87. The scatter cells preserve exceptions that a coefficient alone would hide. These are relationships between 2020 country levels, not explanations of how each country changed."
-  },
-  {
-    "figure": 7,
-    "title": "Country levels and country gains tell different stories.",
-    "question": "Does a strong relationship between country levels also hold for gains within the same countries?",
-    "encoding": "The left panel compares Spearman rank correlations with internet use for fixed broadband, landlines and mobile. Blue dots use 2020 country levels; orange dots use each country's 2020-minus-2015 gains. Each gray line joins the two correlations for one measure. The right panel shows the actual broadband and adoption gains, with one dot per country. Both comparisons use the same 175 complete country pairs. Correlation describes how consistently two variables increase together across countries.",
-    "rationale": "Figure 6 shows relationships between country levels. Repeating the comparison after calculating each country's gain tests whether that snapshot relationship carries over to progress. The paired-dot chart compares all three measures without repeating six scatterplots. The broadband-gain scatterplot keeps the underlying observations visible, so the coefficients can be checked against the shape of the data.",
-    "detailed_interpretation": "For 2020 levels, the broadband-adoption correlation is about 0.83. Countries with more fixed broadband generally also have higher internet use. When we compare gains within the same countries, that value falls to about 0.05. The right panel shows why: countries with similar broadband gains have widely different adoption gains, rather than forming a clear upward pattern.\n\nThe distinction is not limited to broadband. Landlines fall from about 0.79 for levels to 0.29 for gains, and mobile falls from 0.53 to 0.07. All three relationships are weaker after changing the question from which countries have more to which countries gained more. The same country set is retained, so a change in sample membership does not explain the contrast.\n\nThis directly answers the snapshots part of our main question. A strong relationship in one year cannot be used as evidence that the same infrastructure gain accompanied adoption progress within countries. This is a descriptive comparison, not proof that infrastructure has no effect: rank correlation alone does not establish causes, account for earlier investment, or model delayed effects. The annual paths in Figure 2 retain timing for selected countries. Figure 4 keeps four changes connected for each country, showing the different combinations behind this overall result.",
-    "takeaway": "Broadband and adoption have a strong relationship in 2020 levels, about 0.83, but almost no rank relationship between their 2015-2020 gains, about 0.05. Landline and mobile relationships also weaken for gains. A snapshot can show which countries have more, while leaving their different paths of progress hidden."
-  },
-  {
-    "figure": 8,
-    "title": "Internet users grouped by region.",
-    "question": "Where are the included internet users concentrated?",
-    "encoding": "Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region\u2019s share of the included total.",
-    "rationale": "A country with a high internet-use rate can still have fewer users than a large country with a lower rate. The nested treemap separates these two quantities: area shows the count and color shows the rate. Region-first grouping answers where the included users live, while keeping countries inside their regions.",
-    "detailed_interpretation": "Asia accounts for about 56.9% of the 4.52 billion included internet users, compared with 14.0% in Europe. China and India occupy large areas because they have many internet users. Their different colors show that large user counts do not necessarily mean the same adoption rate.\n\nThe total is 4,521,767,530 users in the included countries. Europe has a relatively high adoption rate in many tiles but a smaller user-count area than Asia. Reading only area would confuse population scale with access; reading only color would miss where most users live. The next figure changes the first grouping to test the same distinction from another angle.",
-    "takeaway": "Asia contains about 56.9% of the included internet users, but a large rectangle does not mean that a large percentage of its population is online. Area answers how many users live there; country color answers how widely access has spread. Both are needed to distinguish population size from adoption."
-  },
-  {
-    "figure": 9,
-    "title": "The same users grouped by adoption band.",
-    "question": "Does changing the hierarchy change the comparison?",
-    "encoding": "This treemap uses the same 184 countries and total as Figure 8. It first groups countries by internet-use band, then by region. Area still shows user count and country color still shows internet use.",
-    "rationale": "The first treemap makes regional size prominent. Reversing the hierarchy asks which adoption levels contain those users. Keeping the country data, total area and color scale fixed isolates the effect of grouping. The two trees therefore answer different questions with the same records.",
-    "detailed_interpretation": "Countries in the 50\u2013below-75% band contain about 39.7% of included users. Countries in the 75\u2013100% band contain about 38.1%. A large share of online users therefore lives in countries where many people are still offline. Changing the grouping makes this visible without changing any country measurement.\n\nTogether, the two highest bands contain about 77.8% of the included users, but the 50-below-75% band is slightly larger than the 75-100% band. The band title describes the national adoption rate, not the status of every person inside the tile. All areas still count online users. Offline people are not drawn as a second population in this treemap. Adoption bands are chosen categories. The browser lets the reader zoom in and inspect exact country values.\n\nFor example, moving a country from a region-first branch to an adoption-first branch does not change its user count or adoption color. It changes which countries surround it and which total the parent heading summarizes. Compare the band totals at the root before zooming into a branch; zooming changes the displayed denominator.",
-    "takeaway": "The 50-below-75% band contains slightly more included users than the 75-100% band, 39.7% versus 38.1%. Many online users therefore live in countries where a substantial share of people remain offline. Changing the hierarchy exposes that fact while keeping every country value and the overall total unchanged."
-  },
-  {
-    "figure": 10,
-    "title": "Did countries that started behind catch up?",
-    "question": "Did the countries with the lowest initial internet use catch up as overall adoption rose?",
-    "encoding": "The 159 countries with complete 2000-2020 records are ranked once by their internet use in 2000 and divided into three groups of 53. Orange is the lowest starting third, blue the middle third and purple the highest third. Membership stays fixed in every year. The left panel follows each group's yearly median. The right panel shows every country's 2020 value; the thick bar spans the middle half and the white circle marks the median. Small vertical offsets separate overlapping country dots and have no data meaning.",
-    "rationale": "Yearly distributions can improve even when the countries that started behind remain behind. Keeping the same initial groups follows those countries instead of replacing them with whichever countries occupy a percentile later. The median paths show the group contrast over time; the individual dots prevent a group summary from hiding exceptions. This complements the later ridgelines, which compare overall and regional distributions.",
-    "detailed_interpretation": "The lowest-starting group improves from a median of about 0.2% internet use in 2000 to 36.1% in 2020. The middle group moves from 2.2% to 69.9%, and the highest group from 16.4% to 89.9%. All three groups improve substantially, yet their median levels remain far apart at the endpoint.\n\nThe gap between the highest- and lowest-starting medians grows from 16.2 to 53.8 percentage points. Thus, broad progress does not mean that the initially low-adoption countries catch up in absolute percentage-point terms. The contrast is not caused by moving countries between groups: the original members remain together. A supporting check using four and five initial groups also finds a wider endpoint gap. This concerns an absolute gap; it does not imply that every relative inequality measure worsens.\n\nThe right panel adds an important qualification. Some initially low-adoption countries finish above countries in the higher-starting groups. Initial group membership is therefore not a prediction for every country. The dots show both persistent group differences and individual exceptions.\n\nThis answers the inequality-and-change part of our main question: one improving overall summary can hide unequal progress among the same countries. Countries have equal weight here. These are comparisons of national adoption rates, not population-weighted estimates of the world's internet users, and they do not identify why countries progressed differently.",
-    "takeaway": "All three fixed starting groups improve, but the lowest-starting group reaches a 2020 median of 36.1%, compared with 89.9% for the highest-starting group. Their absolute median gap widens from 16.2 to 53.8 percentage points. Overall progress therefore hides persistent differences, while the individual dots show that some countries cross the group pattern."
-  },
-  {
-    "figure": 11,
-    "title": "Country differences inside each region.",
-    "question": "How much country variation does a regional average leave hidden?",
-    "encoding": "Each dot shows one country\u2019s 2020 internet-use rate. A dark tick marks the regional average. The bar on the right divides the total spread into differences within regions and differences between regional averages.",
-    "rationale": "A regional mean is one mark, even when its countries are far apart. Showing every country beside that mark reveals the spread directly. The variance split then gives a single numerical answer to how much of the total country variation sits inside regions. This extends the regional comparison without repeating A1's absolute-gap and ratio plots.",
-    "detailed_interpretation": "About 47% of the measured country spread lies within regions; about 53% lies between regional averages. Countries in Asia, Africa and North America cover wide ranges. Knowing a country\u2019s region therefore gives only part of the picture. The dots show the countries that an average would hide.\n\nThe calculation uses variance, which measures how far values lie from their mean. Total country variance is split into spread around each regional mean and spread between the regional means, weighted by the number of countries. The 47% is a share of this measured spread, not a share of internet users or a claim that region causes the remaining 53%. The visible dots provide the practical interpretation: countries within one region can still be far apart.",
-    "takeaway": "About 47% of measured country variation in 2020 lies within regions, so knowing the regional mean leaves nearly half of this spread unseen. The country dots show what that means in practice: members of one region can have very different adoption rates. This adds information that a single regional average cannot provide."
-  },
-  {
-    "figure": 12,
-    "title": "Regional change and individual country gains.",
-    "question": "Does the change in a regional median describe a typical country\u2019s gain?",
-    "encoding": "The left panel shows 2015 and 2020 regional medians. The right panel shows each country\u2019s own gain. A thick line marks the middle half of gains; the open circle is the median gain. The black tick repeats the shift in the regional median.",
-    "rationale": "Subtracting two regional medians sounds like the typical country's gain, but the middle country can change between years. The paired endpoint view shows the regional summaries, and the gain view calculates change for each country first. Putting the two calculations together exposes the difference instead of asking the reader to infer it from separate tables.",
-    "detailed_interpretation": "Asia\u2019s regional median rises by 26.55 percentage points, but its median individual country gain is 19.75 points. South America\u2019s regional-median shift is 16.54 points, while its median country gain is 21.76 points. These are different calculations and can even give different regional rankings.\n\nFor Asia, individual gains range from about -0.84 to 49.94 points, and the middle half lies between 9.86 and 28.25. A single regional shift hides that range. The correct calculation depends on the question: subtract regional medians to describe movement of the regional middle, or calculate each country's change first to describe the typical country gain. These two operations need not give the same answer.\n\nRead one region across both panels. First subtract its two endpoint medians in the left panel. Then find the open median-gain circle in the right panel and compare it with the black endpoint-shift tick. Their separation is the visible answer to the question. Each small dot on the right is one country's paired change; the smooth shape summarizes those dots rather than adding observations.",
-    "takeaway": "Asia gains 26.55 points when its two regional medians are subtracted, but 19.75 points when each country's gain is calculated first and then the median is taken. The two answers describe different things. To discuss a typical country's progress, preserve its paired observations before summarizing the changes."
-  },
-  {
-    "figure": 13,
-    "title": "Country horizon plots.",
-    "question": "Which countries reach majority internet use early or late?",
-    "encoding": "Each row follows one selected country from 2000 to 2020. Red means below 50% internet use and blue means above it. Darker bands mean a larger distance from 50%. Right labels show the 2020 value and first observed 50% year.",
-    "rationale": "Many full-size time-series panels would take more space. Horizon rows fold values around a meaningful 50% reference, keeping all 21 years in a compact display. Sorting by first crossing makes early and late arrivals easy to scan. The numerical endpoint labels help read values that are harder to recover from folded bands.",
-    "detailed_interpretation": "Singapore first reaches 50% in 2003, China in 2015, and Namibia in 2020. Tanzania remains below 50% at the end. The rows show timing that would be lost in a 2020 snapshot. Two countries are chosen from each classified region using its 2020 lower and upper quartiles.\n\nIreland crosses in 2006 and Peru in 2017, while Micronesia, like Tanzania, has no observed crossing by 2020. These rows show individual crossing times behind the group summaries. The selected countries are chosen by a stated quartile rule, rather than only choosing memorable successes. Folding the bands saves space, but the color reference must be read carefully: a red row can still be rising quickly toward 50%.\n\nA horizon plot folds bands back into the same row. Here a first band covers 0-25 percentage points from 50%, and a second, darker band covers the next 25 points. Read the sign from red or blue, then the band darkness and visible height. Do not add the two sides as if they were separate countries. This folding saves height but makes the printed endpoint labels useful for exact values.",
-    "takeaway": "Singapore reaches majority internet use in 2003, China in 2015 and Namibia in 2020, while Tanzania has no observed crossing by the endpoint. The horizon rows keep these different journeys visible in a compact space. Red means below 50%, so it must not be mistaken for declining adoption."
-  },
-  {
-    "figure": 14,
-    "title": "Regional median horizon plots.",
-    "question": "Do regional medians reach majority use at similar times?",
-    "encoding": "Each row shows the yearly median internet-use rate for one region. The 50% reference and band colors match Figure 13. The same countries are used in every year.",
-    "rationale": "Repeating the horizon design for regional medians tests how much the story changes after aggregation. The same reference and colors allow a direct comparison with Figure 13. One compact row per region makes broad timing clear, while the preceding country plots show what each regional row leaves out.",
-    "detailed_interpretation": "Europe reaches majority use earlier than the other regional medians. Its 2020 median is 86.86%, while Africa\u2019s is 31.89%. Asia\u2019s row shows a later crossing. These compact rows make the broad timing easy to compare, while Figure 11 shows the country differences hidden by each row.\n\nThe gap between the European and African medians is about 55 percentage points in 2020. Yet each row compresses many different countries into one value per year. Figure 11 shows why the regional result cannot be assigned to every member, and Figure 12 shows why its change cannot automatically be read as a typical country gain. Together the views distinguish group timing from individual progress.",
-    "takeaway": "Europe's 2020 median is about 86.9%, compared with 31.9% in Africa, and the rows also show different times of crossing 50%. A regional trajectory summarizes both timing and level, but still hides its member countries. It should be read alongside the individual paths and within-region spread."
-  },
-  {
-    "figure": 15,
-    "title": "How the country distribution changed.",
-    "question": "Did all countries move toward similar internet use?",
-    "encoding": "Each ridge shows the distribution of internet use across the same 159 countries in one year. All ridges share the 0\u2013100% scale. Small ticks show countries, and right labels give the median.",
-    "rationale": "A rising median could mean that countries moved together or that some moved much faster than others. Ridgelines retain the whole distribution at several dates. A common horizontal scale shows the shift, while country ticks help check the smooth shapes against the actual observations.",
-    "detailed_interpretation": "The median rises from 2.2% in 2000 to 71.4% in 2020. Early values sit near zero; later values cover much of the scale. The rightward shift shows broad progress, but the wide 2020 distribution shows that countries have not all reached similar levels.\n\nThe middle half of country values still spans about 37.5 percentage points in 2020. That wide spread qualifies the large median increase: broad progress does not mean all countries are close to the same level. Each curve has its own height scaling, so the horizontal location and width carry the comparison; a taller peak does not mean that the year contains more countries.\n\nRead each ridge from left to right as low to high adoption. A bulge marks a range where many country values lie close together. The smooth curve spreads each observation over a small neighborhood, so it is an estimated shape, not a count at every percentage. The country ticks below it show the actual values; the common horizontal scale carries the comparison across years.",
-    "takeaway": "The country median rises from 2.2% to 71.4%, yet the middle half of 2020 values still spans about 37.5 percentage points. Broad improvement therefore does not mean countries have reached similar levels. Reading the distribution alongside the median reveals the uneven progress that one average would hide."
-  },
-  {
-    "figure": 16,
-    "title": "How distributions changed within regions.",
-    "question": "Which regional differences are hidden by the whole-panel distribution?",
-    "encoding": "Each panel repeats the ridgeline view within one region for 2000, 2005, 2010, 2015 and 2020. All panels use the same internet-use scale. Country ticks and median labels help check the smooth curves.",
-    "rationale": "The global distribution mixes countries from different regions. Small multiples repeat the ridgeline comparison within each region, so a broad global shape can be traced to different regional paths. Shared horizontal scales keep low and high adoption in the same position across all panels.",
-    "detailed_interpretation": "Europe\u2019s ridges move toward high internet use earlier. Africa\u2019s later ridges still cover low and middle values. Asia has a broad spread before moving farther right. Oceania has only eight included countries, so the individual ticks are especially useful there.\n\nThe regional panels explain why one global curve cannot describe a single common journey. Europe reaches the upper part of the scale earlier, while lower and middle values remain more prominent in Africa. Within-region spreads also change, so even the regional median horizon is only part of the story. In small panels such as Oceania, the eight country marks are stronger evidence than an attractive bump in the fitted curve.",
-    "takeaway": "The global shift toward higher internet use contains different regional histories: Europe moves toward high values earlier, while lower and middle values remain more prominent in Africa. The width of each distribution also matters. In small groups such as Oceania, check the individual country ticks before treating a smooth bump as a stable pattern."
-  },
-  {
-    "figure": 17,
-    "title": "How color choices change the view.",
-    "question": "What changes when the same field uses a different color mapping?",
-    "encoding": "The panels keep the weather field and date fixed. All four palettes are sequential colormaps: their colors progress from lower to higher values. Temperature uses continuous viridis and cividis split into 5\u00b0C bands. Rain uses Blues with a linear scale and magma with a logarithmic scale. Palette choice and scale normalization are separate choices. Read each color bar before comparing the maps.",
-    "rationale": "A palette or scale can make a feature stand out even when the measurements do not change. These panels hold the field fixed and change only its mapping to color. Sequential colormaps suit these ordered magnitudes because no middle value needs special emphasis. Temperature tests palette choice; rainfall tests how the scale reveals smaller values alongside heavy rain.",
-    "detailed_interpretation": "Most rain values are small and a few are large. A linear scale gives the large values most of the visible contrast. A logarithmic scale makes lighter rain easier to see. Changing a temperature palette also changes which boundaries stand out. The underlying measurements stay the same.\n\nThe rainfall comparison is especially useful because a few wet cells can set the top of the linear range and leave many other cells nearly the same color. Logarithmic mapping spreads positive small values apart, but its color steps represent ratios rather than equal millimeters. The legend is therefore part of the explanation. Zero rainfall is excluded from that logarithmic mapping because its logarithm is undefined.",
-    "takeaway": "The same rainfall measurements look different on linear and logarithmic scales because each assigns contrast differently. Linear color emphasizes large absolute amounts; logarithmic color separates smaller positive amounts. A visually stronger feature is therefore not automatically more rain. The color bar and the question being asked must guide the reading."
-  },
-  {
-    "figure": 18,
-    "title": "Fixed and daily color scales.",
-    "question": "Can the same color mean a different temperature?",
-    "encoding": "The left column uses one temperature range across the eight sampled dates. The right column rescales each date to its own minimum and maximum. Both columns show the same fields.",
-    "rationale": "An animation can look equally warm on every date if each frame is rescaled separately. The two columns test this with identical daily fields. One scale preserves comparisons between dates; the other spends its full color range on the variation within each date. Neither choice can be understood without checking the color bars.",
-    "detailed_interpretation": "Daily scaling makes local differences easier to see, but a bright color can represent different temperatures on different dates. A fixed scale supports comparisons across dates. Daily scaling supports comparison within one date. The GIFs repeat this comparison over all eight sampled fields.\n\nThe fixed range is obtained from the eight sampled dates. It supports comparisons across those frames, while making no claim to cover all possible temperatures outside them. This choice is carried into the date-comparison GIFs. A viewer can then read a repeated color as a repeated temperature instead of interpreting a repeated hottest color as the same absolute heat. The normalized position is u = (T - minimum) / (maximum - minimum). Global mapping uses the minimum and maximum across all sampled dates; local mapping uses the bounds of each date. Thus a fixed temperature keeps its color only with the global bounds.",
-    "takeaway": "Daily rescaling makes each date's internal differences clearer, but the same bright color can then mean different temperatures on different dates. A fixed scale preserves the between-date comparison. For an animation about changing temperature, that consistency matters more than making every frame use its full color range."
-  },
-  {
-    "figure": 19,
-    "title": "Contour intervals and filled contours.",
-    "question": "How much boundary detail does the contour interval show?",
-    "encoding": "The same August 22 temperature field is drawn with 5\u00b0C and 10\u00b0C intervals, using lines and filled bands. Levels and color bars show the thresholds used.",
-    "rationale": "Contours turn a continuous field into visible boundaries. Using the same date with two intervals separates the effect of boundary spacing from actual weather differences. Lines make threshold crossings explicit, while filled bands make broad areas easier to compare. The four panels test both choices on the same grid.",
-    "detailed_interpretation": "Five-degree intervals show more boundaries than ten-degree intervals. Filled bands help compare larger warm and cool areas; line contours expose individual thresholds. Matplotlib/ContourPy traces the regular grid using the Marching Squares family of algorithms. This fits the two-dimensional grid and keeps missing cells masked.\n\nThe grid is regular and two-dimensional, so the plotting library traces threshold crossings through neighboring grid cells using the Marching Squares family of methods. Missing cells stay masked. Choosing a smaller interval changes how many boundaries are drawn, rather than adding finer source measurements. The interval should therefore be selected for the required reading task, not treated as improved data resolution.\n\nThe inset uses one actual August 22 grid cell. Its corner temperatures straddle 35 degrees. Linear interpolation locates the two edge crossings; joining them gives the contour segment for that cell. Repeating this step across neighboring cells traces the boundary.",
-    "takeaway": "Five-degree contours reveal more temperature boundaries than ten-degree contours, while filled bands make broad warm and cool areas easier to compare. The underlying grid is identical in all panels. More visible lines therefore mean a finer display choice, rather than new observations or better source resolution."
-  },
-  {
-    "figure": 20,
-    "title": "Monthly temperature maps.",
-    "question": "How does the average daily maximum temperature change across the three months?",
-    "encoding": "Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same 25\u00b0C and 35\u00b0C contour levels.",
-    "rationale": "After testing color and contours, we use fixed choices to compare complete months. Shared colors let a temperature be recognized across all three maps, and common contour levels give reference boundaries. Using every day avoids choosing one unusually hot or cool date to represent a month.",
-    "detailed_interpretation": "The mean of daily maximum temperature falls from 31.19\u00b0C in July to 26.55\u00b0C in September over the weighted study area. Warm conditions remain visible in parts of the south. The fixed colors allow direct comparison, while the contours show where the stated temperature levels occur.\n\nThe difference is a fall of 4.64 degrees in the area-weighted mean. That is a change in the average daily maximum, rather than a count of hot days or the single hottest day. Those are separate questions. The next views subtract the months directly, then restore daily timing and hot-day frequency to show the information lost by this monthly summary. These are monthly averages of daily maxima, not monthly extremes or averages of every hourly temperature.",
-    "takeaway": "Mean daily maximum temperature falls from 31.19 degrees in July to 26.55 in September, while the maps show where warmth remains. Shared colors make that cooling directly comparable across months. The result describes monthly averages; daily ribbons and hot-day frequencies are needed to understand the episodes hidden inside them."
-  },
-  {
-    "figure": 21,
-    "title": "Monthly change versus two selected dates.",
-    "question": "Can two daily snapshots describe a whole month\u2019s change?",
-    "encoding": "The map subtracts July\u2019s mean daily maximum temperature from September\u2019s. It uses the diverging colormap RdBu_r, with equal negative and positive limits centered on zero. Blue means cooling, red means warming, and the pale center means no change. The curves summarize changes across three longitude bands.",
-    "rationale": "Three maps show overall cooling but make small spatial differences difficult to compare. A diverging colormap suits a difference map because zero is a meaningful reference: it separates cooling from warming. Symmetric color limits show the sign and size of change around that neutral center. The cumulative curves show how widespread each change is within longitude bands, rather than reducing each band to one mean.",
-    "detailed_interpretation": "The area-weighted mean change is \u22124.64\u00b0C, and 99.66% of the study area is cooler. A comparison using only the first and last sampled days disagrees with this monthly result in sign over 18.26% of the area. Two dates can therefore give a different impression of the season.\n\nA negative mean alone could be produced by strong cooling in a small area. The 99.66% area result shows that cooling is widespread here. The comparison with first and last sampled dates then tests the snapshot problem directly: a pair of daily weather states does not summarize all the days in their respective months. The longitude-band curves show how the size of change also varies across the study area.",
-    "takeaway": "The monthly comparison shows cooling across 99.66% of the study area, with an area-weighted mean change of -4.64 degrees. Using only the first and last sampled days gives the opposite sign in 18.26% of the area. Two daily snapshots can therefore misrepresent a change that is clear when complete months are used."
-  },
-  {
-    "figure": 22,
-    "title": "Daily temperature and its spatial spread.",
-    "question": "What does a daily average hide about different places?",
-    "encoding": "Each panel shows one longitude band across all 92 days. The dark line is its area-weighted mean daily maximum temperature. Nested ribbons show the middle half and the middle 80% of grid-cell temperatures.",
-    "rationale": "Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.",
-    "detailed_interpretation": "The ribbons remain wide even when the average changes smoothly. Places within a band can therefore experience quite different temperatures on the same day. Warm and cool episodes are also visible within each month. A single monthly mean would hide both the daily timing and this spatial spread.\n\nThe inner ribbon runs from the 25th to the 75th percentile, and the outer ribbon from the 10th to the 90th. For example, a broad ribbon means that places in the same longitude band have different daily maxima even if the average line is steady. The ribbons should not be read as statistical confidence around that line; their subject is spatial variation in the observed field.",
-    "takeaway": "A smoothly changing daily mean can still hide large temperature differences between places, which appear in the ribbons. Keeping every day also reveals warm and cool episodes within a month. The bands describe spatial spread, so they should not be read as uncertainty around the mean line."
-  },
-  {
-    "figure": 23,
-    "title": "Monthly rain totals and five-day bursts.",
-    "question": "Can similar monthly totals come from different rainfall timing?",
-    "encoding": "The top row shows monthly rain totals on one scale. The bottom row shows the share of each month\u2019s rain that falls in its wettest five consecutive days. Cells with less than 10 mm monthly rain are masked in the bottom row.",
-    "rationale": "A monthly rainfall total cannot distinguish steady rain from a short burst. The second row adds the share falling in the wettest five consecutive days. Keeping total and concentration separate avoids calling a very small rain amount a major event simply because all of it fell at once.",
-    "detailed_interpretation": "July and August have similar weighted mean totals, about 75 mm. The five-day comparison shows different timing. In September, 77.6% of eligible weighted area receives at least half its monthly rain in one five-day window, compared with 43.8% in July. A monthly total alone cannot show this concentration.\n\nAugust also has a larger concentrated-rain share than July: 67.5% of its eligible area receives at least half its monthly rain in a five-day window. September has a lower weighted mean total, about 57.1 mm, but the largest concentration share. Amount and timing therefore give different comparisons. The 10 mm screen avoids unstable percentages from nearly dry cells; the supporting calculation repeats it with other minimum totals.",
-    "takeaway": "July and August have similar weighted mean rain totals, about 75 mm, but the share concentrated into five days differs. September has a lower total and the largest concentration share: 77.6% of eligible area receives at least half its rain in one five-day window. Amount alone does not describe how rain arrived."
-  },
-  {
-    "figure": 24,
-    "title": "Where hot days are frequent.",
-    "question": "Where do daily maximum temperatures often reach 35\u00b0C?",
-    "encoding": "Each map shows the percentage of days in a month with daily maximum temperature at least 35\u00b0C. The three maps share one 0\u2013100% scale.",
-    "rationale": "A monthly mean temperature does not count how often a chosen hot threshold was exceeded. Frequency maps use all days and preserve location, making repeated heat distinguishable from one selected hot day. The fixed percentage scale lets July, August and September be compared directly.",
-    "detailed_interpretation": "The weighted mean hot-day frequency falls from 22.8% in July to 8.9% in September. The maps show where frequent heat remains concentrated. Unlike one hot-day snapshot, this view counts every day in each month and separates repeated heat from a single selected event.\n\nThe frequency denominator is the number of days in the month, so different month lengths do not create a difference merely by changing the count. A 50% cell has reached the threshold on half its days, whether those days are consecutive or scattered. That distinction leads to the final run-length analysis, where uninterrupted duration is calculated explicitly.",
-    "takeaway": "The weighted mean frequency of days reaching 35 degrees falls from 22.8% in July to 8.9% in September. These maps count repeated heat across all days, rather than show one selected event. They still cannot tell whether those hot days occur together in one long spell; that requires a run-length calculation."
-  },
-  {
-    "figure": 25,
-    "title": "Daily weather across longitude.",
-    "question": "When and where do warm and rainy periods occur?",
-    "encoding": "Time runs vertically and longitude horizontally. The top panel shows an area-weighted fixed-threshold heat summary. The other panels show temperature and rain averaged across latitude, retaining every day.",
-    "rationale": "Maps preserve location but require many frames to show all 92 days. A time-longitude diagram keeps every date visible in one view. Averaging across latitude makes room for that time axis, so episodes can be compared by their dates and east-west extent rather than remembered across an animation.",
-    "detailed_interpretation": "The diagrams reveal warm episodes and short rainy periods that monthly maps smooth over. Some temperature features extend across several longitudes, while rain is often more concentrated in time and location. The full-period view makes it easier to compare the timing of these patterns.\n\nThe daily ordering can reveal a short episode that contributes only a small part of a monthly average. However, each longitude column combines locations at different latitudes. A feature running across columns is a pattern in these summaries; it is not, by itself, the path of a particular storm. The monthly maps and daily ribbons retain complementary spatial detail.",
-    "takeaway": "Keeping all 92 dates reveals short warm and rainy episodes that monthly maps smooth over, and shows their east-west extent. The space-saving step is averaging across latitude, which removes north-south detail. Use the diagram for timing across longitude and return to maps when the exact location matters."
-  },
-  {
-    "figure": 26,
-    "title": "Wind-arrow density and length.",
-    "question": "How do sampling and arrow length affect readability?",
-    "encoding": "The panels show the same western-US wind field with different sampling gaps. The top row scales arrow length by speed; the bottom row uses equal lengths. Color gives speed in both rows. Arrows point toward the flow direction.",
-    "rationale": "An arrow map can become unreadable before it becomes informative. Holding the wind field fixed while varying spacing shows how much local detail is traded for legibility. Comparing speed-scaled and equal-length arrows also separates the tasks of reading direction and reading magnitude.",
-    "detailed_interpretation": "Dense arrows retain more locations but can overlap. Wider sampling gaps make direction easier to read while omitting detail. Proportional lengths show speed as well as direction. Equal lengths make weak-wind directions more visible, so the color bar is needed to read speed.\n\nThe source wind direction states where the wind comes from. The arrow components are converted so that the plotted arrow points toward its flow destination. Keeping that convention explicit prevents a 180-degree reading error. Equal-length arrows are helpful for comparing directions, but their length no longer indicates speed; the colors carry that measurement.",
-    "takeaway": "Denser arrows retain more locations but can hide direction through overlap. Equal-length arrows make direction easier to compare, while speed-scaled arrows also encode magnitude. These are different reading tasks, so neither setting is universally best. In every case the arrows point toward the flow, and color retains speed information."
-  },
-  {
-    "figure": 27,
-    "title": "Monthly wind-direction distributions.",
-    "question": "Does one pooled wind summary hide monthly differences?",
-    "encoding": "Each rose groups a month\u2019s grid-cell days by wind source direction. Stacked colors show speed ranges. The same radial scale gives the percentage of each month\u2019s weighted grid-cell days.",
-    "rationale": "Quiver maps show where wind points, but not how often each source direction occurs across a month. Wind roses collect those directions into sectors and divide each sector by speed. Separate monthly panels and a common radial scale reveal changes that one pooled seasonal rose would hide.",
-    "detailed_interpretation": "The largest direction sector is southwest in July and south in August and September. The dominant source direction therefore changes across the interval. Speed colors add information that would be hidden by direction alone. The rose complements the quiver map: one summarizes frequency, while the other shows locations and directions.\n\nThe speed classes are 0-2, 2-4, 4-6, 6-8 and at least 8 m/s. All roses use the same 14% radial maximum, so equal bar heights mean equal weighted frequency across months. Here direction is the source direction, unlike the flow-pointing arrows. A wind rose summarizes the distribution over the area; it cannot show which particular location produced a sector.",
-    "takeaway": "The most frequent wind-source sector changes from southwest in July to south in August and September. Separate monthly roses reveal that shift, while the stacked speed bands show which strengths contribute. Their common radial scale supports comparison, but the roses summarize frequencies and do not locate the winds on a map."
-  },
-  {
-    "figure": 28,
-    "title": "Temperature, rain and wind on the same dates.",
-    "question": "Can separate weather summaries hide where conditions occur together?",
-    "encoding": "Both maps combine temperature color, rain contours and wind arrows. They show July 27 and September 30 on shared scales so the fields can be read at the same locations.",
-    "rationale": "Separate temperature, rainfall and wind maps make it hard to check whether conditions occur at the same locations. The overlay aligns the three fields on one map. Two contrasting dates show what that alignment adds, while common visual scales keep the comparison meaningful.",
-    "detailed_interpretation": "These dates contrast high and low hot-dry coverage: 34.56% and 1.75% of the study area. Combining the fields shows where warm areas, rainfall boundaries and wind directions lie together. Separate area averages would not identify those locations.\n\nThe rainfall contours keep threshold boundaries visible without replacing the temperature background, and the arrows add wind direction at sampled locations. The result is useful for checking where the fields meet, but the single map can become busy if every grid arrow is drawn. The spacing chosen in the quiver experiment is therefore carried into the overlay. Complete-period counts are still needed to say how common the selected contrast is.",
-    "takeaway": "The combined maps preserve where temperature, rain and wind occur together, which separate area averages lose. The selected dates contrast hot-dry coverage of 34.56% and 1.75%. They illustrate a spatial difference; the complete-period frequency calculation is still needed to judge how common the shared conditions are."
-  },
-  {
-    "figure": 29,
-    "title": "Separate frequencies and shared occurrence.",
-    "question": "How often do hot, dry and windy conditions occur together?",
-    "encoding": "The first three bars count hot, dry and windy grid-cell days separately. The orange bar requires all three conditions in the same grid cell on the same day. All bars use the same weighted percentage scale.",
-    "rationale": "With three conditions and a question about their joint occurrence, four bars give a direct answer. The first three establish how common each condition is; the fourth requires all three together. An intersection matrix would add symbols and combinations that are unnecessary for this comparison.",
-    "detailed_interpretation": "Dry conditions are common, but all three conditions occur together in only 2.57% of weighted grid-cell days. The shared frequency cannot be read from any single condition\u2019s bar. Checking the conditions together adds information that their separate frequencies leave out.\n\nThe separate frequencies are about 18.06% hot, 76.65% dry and 11.65% windy. They overlap, so they must not be added to obtain a total. The 2.57% joint bar is calculated by checking the three conditions in each cell on each day before averaging. This preserves coincidence that would be lost by multiplying or comparing separate spatial averages.",
-    "takeaway": "Dry conditions occur on about 76.65% of weighted grid-cell days, yet the hot-dry-windy combination occurs on only 2.57%. A common individual condition does not imply common joint occurrence. The overlap must be checked at the same cell and date, and the first three overlapping bars must not be added."
-  },
-  {
-    "figure": 30,
-    "title": "How often conditions occur and how long they last.",
-    "question": "Does the event count describe uninterrupted duration?",
-    "encoding": "The maps compare hot-dry day frequency and the longest hot-dry run at each cell. The daily curve shows area coverage. The final panel repeats the calculation under alternative thresholds.",
-    "rationale": "The shared-condition bars count occurrences but do not show whether they form long uninterrupted spells. Frequency and longest-run maps separate these two ideas. The daily coverage curve restores timing, and the threshold panel checks how the numerical result changes when the event definition changes.",
-    "detailed_interpretation": "Hot-dry conditions cover 16.27% of weighted grid-cell days, but the longest local run reaches 67 consecutive days. The frequency and run-length maps therefore answer different questions. The threshold comparison shows that the chosen definition also changes the measured amount of overlap.\n\nThe longest run is calculated separately in each cell, whereas the daily curve shows how much of the full study area is affected at once. A long local spell and a large affected area are different findings. The plotted sensitivity check uses 33, 35 and 37 degrees with rain cutoffs of 0.1 and 1 mm/day. Runs touching July 1 or September 30 may continue outside the observed window.",
-    "takeaway": "Hot-dry conditions account for 16.27% of weighted grid-cell days, while one location has a 67-day uninterrupted run. Frequency, local duration and affected area therefore answer different questions. Reporting them together, with the threshold comparison, shows more than a single event count and makes the chosen definition visible."
-  },
-  {
-    "figure": 31,
+    "analysis_id": 31,
     "title": "Similar adoption can hide different infrastructure.",
     "question": "How much can infrastructure differ when internet-use rates almost match?",
     "encoding": "Panel A counts pairs within one percentage point in internet use. Panel B shows three pairs selected by minimum, middle-ranked and maximum infrastructure distance. Labels give absolute subscription gaps per 100 people; colour gives standardized gaps.",
     "rationale": "This links an almost equal headline rate to the infrastructure detail it conceals. The histogram retains all eligible pairs, while the examples make the gaps tangible.",
-    "detailed_interpretation": "The 179 complete profiles yield 454 pairs whose internet-use rates differ by at most one percentage point. Only 71 meet the original P95 similarity cutoff; 383 do not. Bhutan and Turkey differ by 0.82 points in internet use but 19.0 broadband subscriptions per 100 people. The horizontal axis uses only landline, broadband and mobile differences, scaled by the same 179-country standard deviations. The examples span the observed range; subscription counts may exceed 100 per 100 people. This descriptive comparison establishes neither significance nor infrastructure causes.",
-    "takeaway": "Of 454 pairs with almost equal internet-use rates, only 71 meet the four-indicator network cutoff. Similar adoption therefore need not mean similar infrastructure."
+    "detailed_interpretation": "Among 454 country pairs whose adoption rates differ by at most one percentage point, only 71 (15.6%) meet the full-profile P95 cutoff. The remaining 383 nearly match on the headline percentage but not on the combined definition. The histogram retains all eligible pairs rather than only memorable cases.\n\nThe displayed examples are selected by minimum, middle-ranked and maximum infrastructure distance. Bhutan/Turkey differ by 0.82 adoption points but 19.0 broadband subscriptions per 100; Kuwait/Monaco show a much larger multi-indicator contrast despite a 0.54-point adoption gap. Cell labels show raw gaps and colors standardized gaps, keeping size and relative unusualness distinct. This directly answers the profiles subquestion. Pairs share countries and the selection is illustrative, so the counts do not form an independent sample or establish significance.",
+    "takeaway": "Almost equal adoption rates can conceal substantially different infrastructure. Only 71 of 454 eligible pairs meet the full-profile cutoff. The headline percentage therefore cannot substitute for a country profile, even when two values nearly match.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig6"
+      }
+    ]
+  },
+  {
+    "figure": 7,
+    "analysis_id": 6,
+    "title": "Four telecom measures: associations and exceptions.",
+    "question": "What does the complete set of pairwise relationships reveal?",
+    "encoding": "The four variables occupy the same row and column order: internet use, landlines, fixed broadband and mobile. Diagonal cells are country-count histograms. Below the diagonal, each dot is one country, with the column variable on the horizontal axis and the row variable on the vertical axis. Color shows region. Above the diagonal, the matching pair has its Spearman rank-correlation value. All cells use the same 175 countries in 2020.",
+    "rationale": "The two adoption scatterplots in A1 already compared broadband and mobile. Restoring the full scatterplot matrix adds the four other pairs, the individual distributions and a common sample. Each relationship can be checked in its own scatter cell rather than inferred from a single correlation number. This also gives a position-based check on the four-variable parallel-coordinate profiles.",
+    "detailed_interpretation": "The lower scatter cells show tighter upward ordering for broadband versus adoption (Spearman 0.83) than for mobile versus adoption (0.53). Landlines and broadband have the strongest displayed pairwise rank association, about 0.87. The clouds and outlying countries qualify those coefficients: high adoption still occurs at low fixed-broadband values, and mobile subscriptions overlap widely.\n\nAll cells use the same 175 countries, so different sample membership does not explain the contrast. Diagonal distributions also show why a subscription count can exceed 100 per 100 people without being an adoption percentage. This tests the profiles seen in parallel coordinates using ordinary position axes. It supports an association between 2020 country levels, while leaving causal explanations and country-specific change unresolved.",
+    "takeaway": "A correlation summarizes an association while hiding its exceptions and shape. The scatter cells show stronger adoption association with broadband than mobile, yet substantial variation remains. These endpoint associations do not identify the drivers of country progress.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig7"
+      }
+    ]
+  },
+  {
+    "figure": 8,
+    "analysis_id": 7,
+    "title": "Country levels and country gains tell different stories.",
+    "question": "Does a strong relationship between country levels also hold for gains within the same countries?",
+    "encoding": "The left panel compares Spearman rank correlations with internet use for fixed broadband, landlines and mobile. Blue dots use 2020 country levels; orange dots use each country's 2020-minus-2015 gains. Each gray line joins the two correlations for one measure. The right panel shows the actual broadband and adoption gains, with one dot per country. Both comparisons use the same 175 complete country pairs. Correlation describes how consistently two variables increase together across countries.",
+    "rationale": "Figure 7 shows relationships between country levels. Repeating the comparison after calculating each country's gain tests whether that snapshot relationship carries over to progress. The paired-dot chart compares all three measures without repeating six scatterplots. The broadband-gain scatterplot keeps the underlying observations visible, so the coefficients can be checked against the shape of the data.",
+    "detailed_interpretation": "The strongest endpoint association weakens sharply when each country is paired across time: broadband-adoption rank correlation falls from about 0.83 in 2020 levels to 0.054 in 2015-2020 gains. The gain scatter at right lacks the clear upward ordering implied by the endpoint coefficient. Landline and mobile associations likewise weaken, from about 0.79 to 0.29 and 0.53 to 0.07.\n\nBecause the same 175 countries supply both calculations, this is a change of analytical question rather than a sample-composition effect. Countries that already have more infrastructure differ from countries adding more within the interval. The figure therefore blocks a tempting inference from the snapshot: the endpoint association cannot explain who progressed faster. Weak gain correlation is not proof that infrastructure is irrelevant; timing, omitted factors and measurement changes remain unresolved.",
+    "takeaway": "Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from 0.83 to 0.05 exposes why a cross-country snapshot cannot substitute for paired change.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig8"
+      }
+    ]
+  },
+  {
+    "figure": 9,
+    "analysis_id": 8,
+    "title": "Internet users grouped by region.",
+    "question": "Where are the included internet users concentrated?",
+    "encoding": "Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region\u2019s share of the included total.",
+    "rationale": "A country with a high internet-use rate can still have fewer users than a large country with a lower rate. The nested treemap separates these two quantities: area shows the count and color shows the rate. Region-first grouping answers where the included users live, while keeping countries inside their regions.",
+    "detailed_interpretation": "Asia occupies about 56.9% of the included internet-user total, compared with 14.0% in Europe. China and India are large country rectangles because user counts are large; their colors can differ because adoption percentages measure a separate quantity. The total denominator is the same 184-country, 4,521,767,530-user sample, not an estimate covering every missing country.\n\nThis answers where included users are concentrated while showing why a large user population does not imply near-universal access. Zooming into Asia reveals country counts and rates hidden by its regional area. The live spatial-partition control also compares squarified rectangles with slice-and-dice strips; values and hierarchy remain fixed while geometry changes. Compare encoded values, not a country's apparent visual prominence alone.",
+    "takeaway": "A large internet-user count can coexist with incomplete population access. Asia holds 56.9% of included users, but rectangle size alone says nothing about adoption percentage. Read count area and country color together to distinguish scale from access.",
+    "live_links": [
+      {
+        "label": "View live demonstration",
+        "url": "https://aithal007.github.io/DV_assignment2/web/treemap.html"
+      },
+      {
+        "label": "Full UI screenshot",
+        "url": "https://aithal007.github.io/DV_assignment2/interactions.html#treemap"
+      }
+    ]
+  },
+  {
+    "figure": 10,
+    "analysis_id": 9,
+    "title": "The same users grouped by adoption band.",
+    "question": "Does changing the hierarchy change the comparison?",
+    "encoding": "This treemap uses the same 184 countries and total as Figure 9. It first groups countries by internet-use band, then by region. Area still shows user count and country color still shows internet use.",
+    "rationale": "The first treemap makes regional size prominent. Reversing the hierarchy asks which adoption levels contain those users. Keeping the country data, total area and color scale fixed isolates the effect of grouping. The two trees therefore answer different questions with the same records.",
+    "detailed_interpretation": "Moving adoption band to the top exposes a different composition of the same user total: the 50-below-75% band contains about 39.7% of included users, slightly more than the 38.1% in the 75-100% band. Thus a large share of online people live in countries where a substantial part of the population remains offline.\n\nNo country values change when the hierarchy switches. The difference from the region-first view comes from which grouping is made visually prominent. This is evidence that aggregation design changes the question a summary answers. A rectangle represents online users, not offline population, so the plot does not directly count the access shortfall. The live partitioning comparison changes shapes only; zooming changes the displayed denominator, which is stated in the status and breadcrumb.",
+    "takeaway": "The distribution of users across adoption levels becomes visible when the hierarchy changes. The 50-below-75% band contains 39.7% of included users, so many online users live where substantial access gaps remain. Grouping changes the question answered by the same values.",
+    "live_links": [
+      {
+        "label": "View live demonstration",
+        "url": "https://aithal007.github.io/DV_assignment2/web/treemap.html"
+      },
+      {
+        "label": "Full UI screenshot",
+        "url": "https://aithal007.github.io/DV_assignment2/interactions.html#treemap"
+      }
+    ]
+  },
+  {
+    "figure": 11,
+    "analysis_id": 10,
+    "title": "Did countries that started behind catch up?",
+    "question": "Did the countries with the lowest initial internet use catch up as overall adoption rose?",
+    "encoding": "The 159 countries with complete 2000-2020 records are ranked once by their internet use in 2000 and divided into three groups of 53. Orange is the lowest starting third, blue the middle third and purple the highest third. Membership stays fixed in every year. The left panel follows each group's yearly median. The right panel shows every country's 2020 value; the thick bar spans the middle half and the white circle marks the median. Small vertical offsets separate overlapping country dots and have no data meaning.",
+    "rationale": "Yearly distributions can improve even when the countries that started behind remain behind. Keeping the same initial groups follows those countries instead of replacing them with whichever countries occupy a percentile later. The median paths show the group contrast over time; the individual dots prevent a group summary from hiding exceptions. This complements the later ridgelines, which compare overall and regional distributions.",
+    "detailed_interpretation": "All three cohorts move upward, but the lowest-starting group reaches a 2020 median of 36.1% while the highest reaches 89.9%. Their absolute median gap widens from 16.2 to 53.8 percentage points. Membership is assigned once from 2000 adoption, so the widening cannot be attributed to countries moving between cohort labels.\n\nThe endpoint dots overlap: some low-start countries finish above members of a higher-start group. Group-level persistence therefore coexists with individual exceptions. This separates broad progress from absolute catch-up and answers the inequality subquestion. Country rates have equal weight; these medians are not population-weighted access estimates. Four- and five-cohort checks preserve the widening endpoint pattern, but no claim is made that every relative inequality measure rises.",
+    "takeaway": "Broad progress does not imply absolute catch-up. All fixed starting groups improve, yet their low-to-high median gap widens from 16.2 to 53.8 points. Fixed membership establishes that this contrast is not created by moving countries between groups.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig11"
+      }
+    ]
+  },
+  {
+    "figure": 12,
+    "analysis_id": 11,
+    "title": "Country differences inside each region.",
+    "question": "How much country variation does a regional average leave hidden?",
+    "encoding": "Each dot shows one country\u2019s 2020 internet-use rate. A dark tick marks the regional average. The bar on the right divides the total spread into differences within regions and differences between regional averages.",
+    "rationale": "A regional mean is one mark, even when its countries are far apart. Showing every country beside that mark reveals the spread directly. The variance split then gives a single numerical answer to how much of the total country variation sits inside regions. This extends the regional comparison without repeating A1's absolute-gap and ratio plots.",
+    "detailed_interpretation": "The country dots spread widely around several regional averages. Variance decomposition assigns about 47% of measured adoption variation to differences within regions and 53% to differences between their means. This calculation uses the 158 region-classified members of the balanced country panel; the unclassified member is not silently assigned to a region.\n\nThe bars quantify what the dots make visible: a regional mean leaves nearly half of this measured country-level variation unresolved. Region therefore provides context without identifying the situation of each member. The decomposition weights regional mean contributions by country count and treats countries equally. It neither attributes 53% of outcomes causally to region nor describes the share of people who have access. This is why regional progress must be interpreted alongside individual values.",
+    "takeaway": "Regional averages leave substantial country inequality unresolved. The 47% within-region variance share and the individual dots show that a regional label cannot stand in for its members. Preserve country-level spread when interpreting an improving regional summary.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig12"
+      }
+    ]
+  },
+  {
+    "figure": 13,
+    "analysis_id": 12,
+    "title": "Regional change and individual country gains.",
+    "question": "Does the change in a regional median describe a typical country\u2019s gain?",
+    "encoding": "The left panel shows 2015 and 2020 regional medians. The right panel shows each country\u2019s own gain. A thick line marks the middle half of gains; the open circle is the median gain. The black tick repeats the shift in the regional median.",
+    "rationale": "Subtracting two regional medians sounds like the typical country's gain, but the middle country can change between years. The paired endpoint view shows the regional summaries, and the gain view calculates change for each country first. Putting the two calculations together exposes the difference instead of asking the reader to infer it from separate tables.",
+    "detailed_interpretation": "Asia's endpoint median shifts by 26.55 adoption points, but the median of its individual country gains is 19.75. South America reverses the relative comparison: its endpoint-median shift is 16.54 while its median country gain is 21.76. The visible separation between the black shift tick and open gain marker exposes the difference between these calculations.\n\nThe same countries are matched across 2015/2020. Subtracting two separately computed medians need not track one country's experience because the countries defining the middle may change. The gain dots additionally preserve Asia's wide range, about -0.84 to +49.94 points. This answers what a regional trend hides: both the distribution of progress and the distinction between summary movement and a typical paired change. Neither operation identifies causes.",
+    "takeaway": "A shift in a regional median is a different quantity from a typical country gain. Asia gives 26.55 versus 19.75 points. Calculate paired changes first when the question concerns individual progress; summarizing first can change the answer.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig13"
+      }
+    ]
+  },
+  {
+    "figure": 14,
+    "analysis_id": 13,
+    "title": "Country horizon plots.",
+    "question": "Which countries reach majority internet use early or late?",
+    "encoding": "Each row follows one selected country from 2000 to 2020. Red means below 50% internet use and blue means above it. Darker bands mean a larger distance from 50%. Right labels show the 2020 value and first observed 50% year.",
+    "rationale": "Many full-size time-series panels would take more space. Horizon rows fold values around a meaningful 50% reference, keeping all 21 years in a compact display. Sorting by first crossing makes early and late arrivals easy to scan. The numerical endpoint labels help read values that are harder to recover from folded bands.",
+    "detailed_interpretation": "The ordered rows show different first observed majority-use years: Singapore reaches 50% in 2003, Ireland in 2006, China in 2015, Peru in 2017 and Namibia in 2020; Tanzania and Micronesia have no observed crossing by the endpoint. Those differences remain visible even where eventual adoption rates might look comparable.\n\nRed/blue encodes position below/above the fixed 50% reference; darkness distinguishes 25-point folded bands. A red row can still be rising rapidly. Annual sampling identifies the first recorded crossing year, not the precise date within that year. Two countries per classified region are selected by a stated endpoint-quartile rule. These examples recover timing hidden by a snapshot without pretending to represent every country or to measure growth directly from hue.",
+    "takeaway": "The same final adoption level can hide different arrival times. Horizon rows preserve early, late and absent crossings of the 50% milestone. Their colors describe position relative to that reference; they do not by themselves indicate growth or decline.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig14"
+      }
+    ]
+  },
+  {
+    "figure": 15,
+    "analysis_id": 14,
+    "title": "Regional median horizon plots.",
+    "question": "Do regional medians reach majority use at similar times?",
+    "encoding": "Each row shows the yearly median internet-use rate for one region. The 50% reference and band colors match Figure 14. The same countries are used in every year.",
+    "rationale": "Repeating the horizon design for regional medians tests how much the story changes after aggregation. The same reference and colors allow a direct comparison with Figure 14. One compact row per region makes broad timing clear, while the preceding country plots show what each regional row leaves out.",
+    "detailed_interpretation": "Europe's regional median crosses 50% earlier and ends at 86.86%, while Africa ends at 31.89%. The shared reference makes both timing and the roughly 55-point endpoint difference visible in a small vertical space. This is stronger evidence of different regional histories than a single pooled final value.\n\nEach row is nevertheless one median per year. It cannot identify the country crossing times or spreads shown in the preceding views. The same classified balanced-country membership is retained across all years, preventing changing coverage from creating the apparent trajectories. Read the regional horizon as an organizing summary, then use the country horizons and within-region dots to establish how far that summary can be generalized.",
+    "takeaway": "Regional trajectories make broad timing differences clear while compressing member histories. The large Europe-Africa median gap does not describe every country in either region. Read these summaries with country horizons and within-region spread before generalizing.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig15"
+      }
+    ]
+  },
+  {
+    "figure": 16,
+    "analysis_id": 15,
+    "title": "How the country distribution changed.",
+    "question": "Did all countries move toward similar internet use?",
+    "encoding": "Each ridge shows the distribution of internet use across the same 159 countries in one year. All ridges share the 0\u2013100% scale. Small ticks show countries, and right labels give the median.",
+    "rationale": "A rising median could mean that countries moved together or that some moved much faster than others. Ridgelines retain the whole distribution at several dates. A common horizontal scale shows the shift, while country ticks help check the smooth shapes against the actual observations.",
+    "detailed_interpretation": "The ridges shift right as the country median rises from 2.2% in 2000 to 71.4% in 2020. Yet the 2020 middle half still spans about 37.5 percentage points. The horizontal width and country ticks show that broad progress has not produced a narrow common adoption level.\n\nAll five distributions use the same 159 countries and the same 0-100% axis, so the comparison is not driven by membership changes. Ridge heights are independently normalized; a taller peak does not mean more countries. Smoothing estimates shape between observations, whereas the ticks retain actual values. This supports the main question directly: a much larger median can coexist with substantial remaining dispersion. The fixed-cohort plot is needed for the separate question of who caught up.",
+    "takeaway": "A rising country median does not mean adoption has become uniform. Despite the rise from 2.2% to 71.4%, the 2020 middle half spans 37.5 points. Distribution width qualifies the progress visible in the central value.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig16"
+      }
+    ]
+  },
+  {
+    "figure": 17,
+    "analysis_id": 16,
+    "title": "How distributions changed within regions.",
+    "question": "Which regional differences are hidden by the whole-panel distribution?",
+    "encoding": "Each panel repeats the ridgeline view within one region for 2000, 2005, 2010, 2015 and 2020. All panels use the same internet-use scale. Country ticks and median labels help check the smooth curves.",
+    "rationale": "The global distribution mixes countries from different regions. Small multiples repeat the ridgeline comparison within each region, so a broad global shape can be traced to different regional paths. Shared horizontal scales keep low and high adoption in the same position across all panels.",
+    "detailed_interpretation": "Europe's ridges move toward high adoption earlier, while later African ridges still occupy low and middle values. Asia's distributions remain broad during its movement to the right. These distinct positions and widths explain how the global progress pattern combines different regional histories rather than one common shift.\n\nThe shared horizontal scale and unchanged country membership support temporal comparison inside each region. The small Oceania sample contains only eight included countries, making its individual ticks more reliable evidence than a smooth bump alone. Peak height is normalized within each ridge and should not be compared as a population count. These panels recover both between-region timing and internal spread that a single regional median horizon compresses.",
+    "takeaway": "Global progress combines different regional histories and changing internal spreads. A single global ridge therefore cannot represent one shared journey. Country marks are essential when small groups make a smooth density shape look more certain than the observations support.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig17"
+      }
+    ]
+  },
+  {
+    "figure": 18,
+    "analysis_id": 17,
+    "title": "How color choices change the view.",
+    "question": "What changes when the same field uses a different color mapping?",
+    "encoding": "The panels keep the weather field and date fixed. All four palettes are sequential colormaps: their colors progress from lower to higher values. Temperature uses continuous viridis and cividis split into 5\u00b0C bands. Rain uses Blues with a linear scale and magma with a logarithmic scale. Palette choice and scale normalization are separate choices. Read each color bar before comparing the maps.",
+    "rationale": "A palette or scale can make a feature stand out even when the measurements do not change. These panels hold the field fixed and change only its mapping to color. Sequential colormaps suit these ordered magnitudes because no middle value needs special emphasis. Temperature tests palette choice; rainfall tests how the scale reveals smaller values alongside heavy rain.",
+    "detailed_interpretation": "The temperature panels hold one field fixed while continuous viridis and 5-degree cividis bands emphasize different levels of detail. The rainfall panels also hold values fixed: linear Blues allocates most contrast to large amounts, while logarithmic magma separates small positive amounts that appear almost uniform under the linear mapping. Zero rain is excluded from the logarithm rather than treated as missing source data.\n\nAbsolute temperature/rain fields have ordered magnitudes, so sequential palettes are appropriate. Figure 22 instead subtracts July from September: zero separates cooling from warming, so a diverging RdBu_r palette with symmetric bounds is appropriate [7]. Palette and normalization are separate choices. The experimental contrast is a change in visual emphasis, not additional rainfall or evidence of a stronger event.",
+    "takeaway": "Color mapping controls which measured differences receive visual emphasis. Linear rain color prioritizes absolute amounts, while logarithmic color separates small positive amounts. Interpret a feature through its legend and normalization before calling it a stronger weather event.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig18"
+      }
+    ]
+  },
+  {
+    "figure": 19,
+    "analysis_id": 18,
+    "title": "Fixed and daily color scales.",
+    "question": "Can the same color mean a different temperature?",
+    "encoding": "The left column uses one temperature range across the eight sampled dates. The right column rescales each date to its own minimum and maximum. Both columns show the same fields.",
+    "rationale": "An animation can look equally warm on every date if each frame is rescaled separately. The two columns test this with identical daily fields. One scale preserves comparisons between dates; the other spends its full color range on the variation within each date. Neither choice can be understood without checking the color bars.",
+    "detailed_interpretation": "The paired columns map identical daily fields using two parameter rules. Global normalization uses u=(T-min)/(max-min) with bounds fixed over the eight frames; daily normalization recomputes those bounds for each date. Consequently, the same warm hue may mark different temperatures in the daily column even when both frames use their full palette.\n\nThe fixed eight-date range is -1.85 to 49.65 C. It supports between-frame comparison without claiming to cover extremes on every unsampled day. Daily scaling is useful for within-date contrasts but cannot support reading repeated color as repeated absolute temperature. The GIFs make this issue explicit over time. This explains a visual inference failure that can occur before any statistical aggregation: inconsistent encodings can conceal the change the animation is meant to reveal.",
+    "takeaway": "Consistent colors are necessary for comparing temperature across dates. Daily rescaling can assign the same bright color to different temperatures, concealing absolute change. Use fixed bounds for temporal comparison and daily bounds for within-date contrast.",
+    "live_links": [
+      {
+        "label": "View fixed-scale animation",
+        "url": "https://aithal007.github.io/DV_assignment2/images/scivis/scivis_global.gif"
+      },
+      {
+        "label": "View daily-scale animation",
+        "url": "https://aithal007.github.io/DV_assignment2/images/scivis/scivis_local.gif"
+      }
+    ]
+  },
+  {
+    "figure": 20,
+    "analysis_id": 19,
+    "title": "Contour intervals and filled contours.",
+    "question": "How much boundary detail does the contour interval show?",
+    "encoding": "The same August 22 temperature field is drawn with 5\u00b0C and 10\u00b0C intervals, using lines and filled bands. Levels and color bars show the thresholds used.",
+    "rationale": "Contours turn a continuous field into visible boundaries. Using the same date with two intervals separates the effect of boundary spacing from actual weather differences. Lines make threshold crossings explicit, while filled bands make broad areas easier to compare. The four panels test both choices on the same grid.",
+    "detailed_interpretation": "The four panels use the same August 22 temperature grid. Five-degree levels produce more boundaries than ten-degree levels; filled bands organize broad areas, while labeled lines identify individual thresholds. The worked grid cell shows temperatures on both sides of 35 C and the interpolated edge crossings used to draw that boundary.\n\nThe regular two-dimensional scalar grid fits ContourPy's serial Marching Squares/sweep method [6]: classify four corner values, interpolate crossings on cell edges, and trace segments between neighboring cells. This local method respects the grid/mask and avoids treating missing cells as measurements. Filled contour polygons expose connected temperature ranges; line contours make precise threshold location easier to inspect. Finer level spacing changes displayed boundaries, not source resolution or certainty about the field between grid points.",
+    "takeaway": "More contour lines increase display detail without increasing data resolution. Five-degree spacing reveals more threshold crossings; filled bands emphasize broad regions. Select the representation for the reading task and infer boundaries only at the stated levels.",
+    "live_links": [
+      {
+        "label": "View contour animation",
+        "url": "https://aithal007.github.io/DV_assignment2/images/scivis/scivis_contour.gif"
+      }
+    ]
+  },
+  {
+    "figure": 21,
+    "analysis_id": 20,
+    "title": "Monthly temperature maps.",
+    "question": "How does the average daily maximum temperature change across the three months?",
+    "encoding": "Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same 25\u00b0C and 35\u00b0C contour levels.",
+    "rationale": "After testing color and contours, we use fixed choices to compare complete months. Shared colors let a temperature be recognized across all three maps, and common contour levels give reference boundaries. Using every day avoids choosing one unusually hot or cool date to represent a month.",
+    "detailed_interpretation": "The same color and 25/35 C contours make monthly temperatures comparable. Mean daily maximum temperature falls from 31.19 C in July to 26.55 C in September over the weighted common footprint, while southern warm areas remain visible. The maps establish both the broad decline and its nonuniform spatial pattern.\n\nEach month uses every daily maximum, so one unusually hot or cool day is not made its representative. The mapped quantity is an average of daily maxima, not a monthly extreme or an average of hourly temperatures. Monthly averaging still removes short spells and the order of days. The following difference map tests the spatial extent of cooling, and daily/frequency views recover the event information needed to interpret that seasonal summary.",
+    "takeaway": "The monthly maps establish broad cooling while retaining its spatial pattern. The mean daily maximum falls by 4.64 degrees, but a monthly average cannot count heat episodes or their duration. Daily and frequency views supply those missing dimensions.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig21"
+      }
+    ]
+  },
+  {
+    "figure": 22,
+    "analysis_id": 21,
+    "title": "Monthly change versus two selected dates.",
+    "question": "Can two daily snapshots describe a whole month\u2019s change?",
+    "encoding": "The map subtracts July\u2019s mean daily maximum temperature from September\u2019s. It uses the diverging colormap RdBu_r, with equal negative and positive limits centered on zero. Blue means cooling, red means warming, and the pale center means no change. The curves summarize changes across three longitude bands.",
+    "rationale": "Three maps show overall cooling but make small spatial differences difficult to compare. A diverging colormap suits a difference map because zero is a meaningful reference: it separates cooling from warming. Symmetric color limits show the sign and size of change around that neutral center. The cumulative curves show how widespread each change is within longitude bands, rather than reducing each band to one mean.",
+    "detailed_interpretation": "September-minus-July monthly means are negative over 99.66% of the weighted study area, with an overall change of -4.64 C. The area-wide cooling claim is therefore supported by the spatial distribution, not only by one negative mean. The sector cumulative curves show how cooling magnitudes vary across longitude bands.\n\nUsing September 30 minus July 1 gives the opposite change sign over 18.26% of the area. Those two weather states are poor substitutes for the complete months when the question concerns seasonal change. RdBu_r uses equal positive/negative limits around zero: blue is cooling, red warming and the pale midpoint no change [7]. This encoding makes both direction and size explicit. The result is a three-month weather comparison, not a long-term climate trend.",
+    "takeaway": "Two endpoint days can misrepresent change across the full interval. Their change sign disagrees with the complete-month comparison over 18.26% of the study area. Use all days when the claim concerns monthly conditions rather than two weather states.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig22"
+      }
+    ]
+  },
+  {
+    "figure": 23,
+    "analysis_id": 22,
+    "title": "Daily temperature and its spatial spread.",
+    "question": "What does a daily average hide about different places?",
+    "encoding": "Each longitude-sector panel retains all 92 days. The solid colored line is the area-weighted spatial median, the dashed dark line the area-weighted mean, and the shaded ribbon the spatial 10th-90th percentiles. All panels use the same Celsius scale.",
+    "rationale": "Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.",
+    "detailed_interpretation": "On July 27 the western sector has a weighted mean maximum temperature of 31.19 C, while its spatial 10th-90th percentile range is 23.75-39.25 C. The central sector mean is 35.36 C with a narrower 31.39-38.35 C range. Thus similar-looking summary trajectories can conceal quite different simultaneous temperature spreads.\n\nIn these actual panels, the solid colored line is the spatial median, the dashed dark line is the area-weighted mean, and the shaded ribbon is p10-p90. The same 4,910 western, 4,828 central and 3,678 eastern cells contribute on every date. Temporary peaks and dips remain visible inside each month. Ribbons describe variation across places, not confidence intervals around a mean. Their role in the main question is to recover both daily episodes and the geography compressed by one sector value.",
+    "takeaway": "A smooth area mean can conceal both daily episodes and simultaneous differences between places. The ribbons recover that spatial spread around the daily mean. Their width describes variation across cells, rather than statistical uncertainty about the mean.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig23"
+      }
+    ]
+  },
+  {
+    "figure": 24,
+    "analysis_id": 23,
+    "title": "Monthly rain totals and five-day bursts.",
+    "question": "Can similar monthly totals come from different rainfall timing?",
+    "encoding": "The top row shows monthly rain totals on one scale. The bottom row shows the share of each month\u2019s rain that falls in its wettest five consecutive days. Cells with less than 10 mm monthly rain are masked in the bottom row.",
+    "rationale": "A monthly rainfall total cannot distinguish steady rain from a short burst. The second row adds the share falling in the wettest five consecutive days. Keeping total and concentration separate avoids calling a very small rain amount a major event simply because all of it fell at once.",
+    "detailed_interpretation": "July and August have close weighted totals, 75.26 and 75.82 mm, but their five-day concentration patterns differ. Among cells receiving at least 10 mm in the month, 43.8% of eligible area in July receives at least half its rain within one five-day window; August reaches 67.5% and September 77.6%. September's lower total, 57.08 mm, therefore coexists with more concentrated timing.\n\nThe ratio maps deliberately mask nearly dry cells, where tiny totals can create misleadingly large percentages. Eligible footprint shares differ between months (74.75%, 92.32%, 94.09%), so these conditional percentages must not be treated as measurements of identical subsets. Windows stay inside each month. The result distinguishes amount from arrival pattern; daily gridded rain alone does not establish hourly intensity, runoff or flooding.",
+    "takeaway": "Monthly rainfall amount cannot identify how rain arrived. Similar July-August totals conceal different five-day concentration, and September has the largest concentration share despite a lower total. Compare amount with timing, using the explicitly eligible area for each month.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig24"
+      }
+    ]
+  },
+  {
+    "figure": 25,
+    "analysis_id": 24,
+    "title": "Where hot days are frequent.",
+    "question": "Where do daily maximum temperatures often reach 35\u00b0C?",
+    "encoding": "Each map shows the percentage of days in a month with daily maximum temperature at least 35\u00b0C. The three maps share one 0\u2013100% scale.",
+    "rationale": "A monthly mean temperature does not count how often a chosen hot threshold was exceeded. Frequency maps use all days and preserve location, making repeated heat distinguishable from one selected hot day. The fixed percentage scale lets July, August and September be compared directly.",
+    "detailed_interpretation": "The weighted mean frequency of Tmax >=35 C falls from 22.8% of July days to 8.9% of September days. The spatial colors show where repeated threshold exceedance remains concentrated, providing evidence that is absent from the monthly mean temperature alone.\n\nThe denominator is each month's number of days, so 31 versus 30 days does not mechanically create the contrast. A 50% cell crosses the chosen threshold on half its days, but its warm days may be consecutive or scattered. Thus these maps establish repetition and location, while the persistence map/calendar establish sequence and duration. The 35 C threshold is a declared descriptive definition rather than a universal heat-risk criterion; the final sensitivity panel checks how that choice affects the counts.",
+    "takeaway": "Hot-day frequency reveals repeated heat that a monthly mean or one selected date cannot count. Its decline from July to September measures occurrence, while the maps retain location. Frequency still leaves the ordering of those days unresolved.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig25"
+      }
+    ]
+  },
+  {
+    "figure": 26,
+    "analysis_id": 25,
+    "title": "Daily weather across longitude.",
+    "question": "When and where do warm and rainy periods occur?",
+    "encoding": "Time runs vertically and longitude horizontally. The top panel shows an area-weighted fixed-threshold heat summary. The other panels show temperature and rain averaged across latitude, retaining every day.",
+    "rationale": "Maps preserve location but require many frames to show all 92 days. A time-longitude diagram keeps every date visible in one view. Averaging across latitude makes room for that time axis, so episodes can be compared by their dates and east-west extent rather than remembered across an animation.",
+    "detailed_interpretation": "The 92-day time-longitude panels retain short warm episodes and brief rain periods that monthly maps smooth away. Rain is more localized in both time and longitude, whereas some warm bands extend across larger east-west ranges. Their date alignment permits comparison without remembering separate animation frames.\n\nEach longitude column averages the stated latitude band, so cells from different north-south locations are combined. A diagonal streak is a pattern in these aggregates, not proof of a tracked storm moving through the domain. This trade-off adds continuous timing while sacrificing one spatial dimension. Use the diagram to identify when and over which longitudes an episode occurs, then return to maps for exact spatial interpretation. It complements the daily spatial ribbons rather than replacing their spread information.",
+    "takeaway": "Retaining every date exposes episodes smoothed away by monthly maps. The time-longitude view locates their timing and east-west extent, but latitude averaging removes north-south detail. Return to maps before interpreting a band as a specific event location or track.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig26"
+      }
+    ]
+  },
+  {
+    "figure": 27,
+    "analysis_id": 26,
+    "title": "Wind-arrow density and length.",
+    "question": "How do sampling and arrow length affect readability?",
+    "encoding": "The panels show the same western-US wind field with different sampling gaps. The top row scales arrow length by speed; the bottom row uses equal lengths. Color gives speed in both rows. Arrows point toward the flow direction.",
+    "rationale": "An arrow map can become unreadable before it becomes informative. Holding the wind field fixed while varying spacing shows how much local detail is traded for legibility. Comparing speed-scaled and equal-length arrows also separates the tasks of reading direction and reading magnitude.",
+    "detailed_interpretation": "All six panels use the same western-US field and the required NetCDF variables `vs` (10 m speed) and `th` (10 m source direction). Sampling every 4th, 8th or 12th point of the already subsampled grid progressively reduces arrow overlap. Speed-proportional arrows show direction and magnitude together; equal-length arrows make direction easier to compare, but their length ceases to encode speed.\n\nSource direction is converted to flow-to components, u=-vs*sin(th) and v=-vs*cos(th), with bearing correction for longitude scale and map aspect. The 5 m/s key and shared speed color retain units. Near-calm vectors are omitted because their direction is not informative. These comparisons justify a readable display density; they do not imply finer wind resolution or reveal trajectories, gusts or terrain effects absent from the source [1].",
+    "takeaway": "Arrow spacing and length determine which wind questions are readable. Sparse sampling clarifies directions while omitting locations; equal lengths emphasize direction and speed-scaled lengths add magnitude. Interpret the vector convention and speed colors with the chosen design.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig27"
+      }
+    ]
+  },
+  {
+    "figure": 28,
+    "analysis_id": 27,
+    "title": "Monthly wind-direction distributions.",
+    "question": "Does one pooled wind summary hide monthly differences?",
+    "encoding": "Each rose groups a month\u2019s grid-cell days by wind source direction. Stacked colors show speed ranges. The same radial scale gives the percentage of each month\u2019s weighted grid-cell days.",
+    "rationale": "Quiver maps show where wind points, but not how often each source direction occurs across a month. Wind roses collect those directions into sectors and divide each sector by speed. Separate monthly panels and a common radial scale reveal changes that one pooled seasonal rose would hide.",
+    "detailed_interpretation": "The largest source-direction sector is southwest in July, then south in August and September. Because every rose has the same 14% radial maximum, that directional-frequency change can be compared directly. Stacked 0-2, 2-4, 4-6, 6-8 and >=8 m/s bands show which speed classes contribute to each direction.\n\nThis is a distribution over weighted grid-cell days, rather than a mean vector or a count of storm tracks. The source-direction convention is opposite to the flow-pointing quiver arrows; the apparent difference is intentional. A pooled seasonal rose could hide the monthly redistribution, while each monthly rose still loses location. Use it for how often particular winds occur and the quiver map for where directions are observed.",
+    "takeaway": "Wind direction and strength distributions change within the three-month interval. Monthly roses expose a source-direction shift that a pooled seasonal summary could hide. Their common radial scale supports frequency comparison, while maps remain necessary to locate the winds.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig28"
+      }
+    ]
+  },
+  {
+    "figure": 29,
+    "analysis_id": 28,
+    "title": "Temperature, rain and wind on the same dates.",
+    "question": "Can separate weather summaries hide where conditions occur together?",
+    "encoding": "Both maps combine temperature color, rain contours and wind arrows. They show July 27 and September 30 on shared scales so the fields can be read at the same locations.",
+    "rationale": "Separate temperature, rainfall and wind maps make it hard to check whether conditions occur at the same locations. The overlay aligns the three fields on one map. Two contrasting dates show what that alignment adds, while common visual scales keep the comparison meaningful.",
+    "detailed_interpretation": "The objectively selected dates contrast hot-dry area coverage of 34.56% on July 27 and 1.75% on September 30. Common temperature colors, 5/20/50 mm rain contours and the same arrow positions permit spatial comparison. The overlay reveals where the fields coincide; three separate area means would not establish that.\n\nThe dates are deliberately contrasting examples, so they do not show how frequent either state is. The next full-period calculation evaluates all cells and dates. Moreover, daily maximum temperature, accumulated rain and daily wind summaries need not occur at the same hour: the overlay establishes cell-day alignment, not instantaneous physical simultaneity. This qualification preserves the spatial inference without turning co-location into an explanation of a weather mechanism.",
+    "takeaway": "Separate field summaries cannot establish that conditions coincide at the same place. The overlay aligns heat, rain and wind to reveal spatial coincidence on selected dates. Those examples motivate the complete-period overlap calculation rather than establish its frequency.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig29"
+      }
+    ]
+  },
+  {
+    "figure": 30,
+    "analysis_id": 29,
+    "title": "Separate frequencies and shared occurrence.",
+    "question": "How often do hot, dry and windy conditions occur together?",
+    "encoding": "The first three bars count hot, dry and windy grid-cell days separately. The orange bar requires all three conditions in the same grid cell on the same day. All bars use the same weighted percentage scale.",
+    "rationale": "With three conditions and a question about their joint occurrence, four bars give a direct answer. The first three establish how common each condition is; the fourth requires all three together. An intersection matrix would add symbols and combinations that are unnecessary for this comparison.",
+    "detailed_interpretation": "The separate bars give about 18.06% hot, 76.65% dry and 11.65% windy weighted cell-days. Their intersection is 2.57%, calculated only when all three flags are true at the same cell and date. A very common dry condition therefore does not make the three-condition event equally common.\n\nThe bars overlap and must not be added. Multiplying the three marginal percentages would give about 1.61% under an independence assumption, rather than the measured 2.57%; separate frequencies do not recover the joint distribution. This answers the coincidence part of the main question with an explicit joint calculation. It is not a significance test, causal attribution or official hazard index, and neighboring cells/days are not independent samples.",
+    "takeaway": "Common individual conditions need not produce common joint events. Although dry days occupy 76.65% of weighted cell-days, only 2.57% meet all three conditions together. Compute overlap at the same cell and date; separate marginal percentages cannot recover it.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig30"
+      }
+    ]
+  },
+  {
+    "figure": 31,
+    "analysis_id": 30,
+    "title": "How often conditions occur and how long they last.",
+    "question": "Does the event count describe uninterrupted duration?",
+    "encoding": "The maps compare hot-dry day frequency and the longest hot-dry run at each cell. The daily curve shows area coverage. The final panel repeats the calculation under alternative thresholds.",
+    "rationale": "The shared-condition bars count occurrences but do not show whether they form long uninterrupted spells. Frequency and longest-run maps separate these two ideas. The daily coverage curve restores timing, and the threshold panel checks how the numerical result changes when the event definition changes.",
+    "detailed_interpretation": "Hot-dry conditions occupy 16.27% of weighted grid-cell days, while the maximum local uninterrupted run reaches 67 days. These quantities have different denominators: one summarizes area and time together; the other records the longest sequence at one location. The daily coverage curve adds whether a local persistent pattern also affects a large fraction of the footprint at once.\n\nThe final panel repeats frequencies at 33, 35 and 37 C with rain cutoffs of 0.1 and 1 mm/day, showing definition sensitivity. Runs touching the first/last observation may continue outside the window. The daily calendar that follows supplies a direct explanation of the frequency-persistence distinction: equal counts can be arranged into very different spells. Report occurrence, duration, coverage and threshold together before characterizing the event pattern.",
+    "takeaway": "Occurrence, uninterrupted duration and affected area describe different event properties. The 16.27% hot-dry frequency and 67-day local maximum cannot substitute for each other. Combine their maps, daily coverage and threshold sensitivity before characterizing the seasonal pattern.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig31"
+      }
+    ]
   },
   {
     "figure": 32,
+    "analysis_id": 32,
     "title": "Daily event order separates frequency from persistence.",
     "question": "Can equal event frequencies hide different uninterrupted spells?",
     "encoding": "Rows are named grid cells; columns are all 92 days. Orange marks hot-dry conditions and gray their absence. Row labels give event-day counts and longest runs; vertical lines separate months.",
     "rationale": "Maps show where frequency and persistence occur. The calendar reveals the daily ordering that creates their difference.",
-    "detailed_interpretation": "The first two cells each meet the condition on 75 of 92 days (81.5%), but those days form longest runs of 17 and 67 days. Their different orange sequences make the lost ordering visible. The final row locates the full-footprint maximum of 67 consecutive days in time. Selection searches all 13,416 complete cells, using an explicit tie rule recorded with the data. This supports the main question: even an exact event count hides whether conditions are scattered or sustained.",
-    "takeaway": "Two cells each have 75 hot-dry days, yet their longest runs are 17 and 67 days. Frequency alone cannot recover duration."
+    "detailed_interpretation": "Both selected cells have 75 qualifying days out of 92 (81.5%), yet the orange sequences form longest runs of 17 and 67 days. The interrupted first row and long continuous block in the second supply the visual mechanism behind that difference. A count discards the ordering that determines persistence.\n\nSelection searches the common 13,416-cell footprint for the largest run-length contrast among equal positive day counts, with a declared tie rule. These are deliberately diagnostic examples, not typical cells. The maximum 67-day run is included. Fixed coordinates and the complete daily series avoid changing locations or omitting non-event days between panels. Boundary-touching spells may extend beyond the study window. This is the temporal detail needed to interpret the preceding frequency and run-length maps.",
+    "takeaway": "Equal event counts can hide very different persistence. Two cells each have 75 hot-dry days, yet longest spells of 17 and 67 days. Preserving daily order is necessary to distinguish scattered occurrences from sustained conditions.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig32"
+      }
+    ]
   }
 ]

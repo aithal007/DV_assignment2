@@ -55,7 +55,7 @@
       "tmmx": "Celsius",
       "pr": "mm/day",
       "vs": "m/s",
-      "th": "degrees FROM clockwise from north"
+      "th": "degrees clockwise from north (source direction)"
     },
     "caches": {
       "gridmet_2023-07-01_2023-09-30_n8_s6.npz": "4b05168a1360f3a0f6784259aca0424e235d26c30c44488c059b365e0151ef8c",

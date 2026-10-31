@@ -1,3 +1,11 @@
+## Final report revision: 31 October 2026
+
+All 32 figure sets are retained in 27 pages. Every takeaway and interpretation was reviewed against the central question and measured evidence. No analytical plot was removed. The near-equal-adoption comparison is now Figure 6 beside the profile analysis; the equal-count event calendar is Figure 32 within the persistence section, rather than an unrelated closing appendix. Figures between these insertions were renumbered consistently in the report, image exports, manifest, contribution table and online gallery.
+
+The first page now contains a centered live dashboard link and expanded cleaning/cohort/threshold/weather rationale. The professor recommended distribution-based filtering; P95 is explicitly the team choice. Twelve isolates are visibly labeled in Figure 1. The report names vs/th, justifies uniform sampling and July–September 2023, contrasts sequential/diverging colors, explains Marching Squares, and ends with ten cited references. Every figure links to its demonstration, animation or online interpretation. Full uncropped browser UI captures are linked beside interactive charts. New node filters and treemap partition choices were exercised in the browser.
+
+README documents raw inputs, preprocessing, transformations, cache acquisition, commands, verification, PDF build and Pages refresh. Existing recording materials were preserved; figure numbering in that older deck/script should be reconciled before recording.
+
 # Current report changes
 
 The report now has **20 pages, 30 figure sets and nine references**. The previous version is preserved in archive/before_simple_revision_20261024.zip.

@@ -1,5 +1,3 @@
-# A2 report source
+# Report source
 
-27 pages, 32 figure sets (all original 30 plus two additional analyses). Design follows the user-provided ass2_1.pdf: original title block, full-width figures, compact captions, italic reading guides and tight float spacing. Current content and expanded takeaways are retained. Compile DAS732_A2_Report.tex twice with pdfLaTeX.
-
-Report-only rebuild: python scripts/build_a1_style_report.py from ass2. Slides and video files are not regenerated.
+27 pages and 32 integrated figure sets, followed by 10 references. All original analyses are retained; the near-equal-adoption comparison is Figure 6 and the daily calendar is Figure 32 within the persistence section. Compile DAS732_A2_Report.tex twice with pdfLaTeX, or run python scripts/build_a1_style_report.py from the repository root.

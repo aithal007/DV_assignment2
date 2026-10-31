@@ -14,9 +14,15 @@
       "Panel A counts pairs within one percentage point in internet use. Panel B shows three pairs selected by minimum, middle-ranked and maximum infrastructure distance. Labels give absolute subscription gaps per 100 people; colour gives standardized gaps.",
       "This links an almost equal headline rate to the infrastructure detail it conceals. The histogram retains all eligible pairs, while the examples make the gaps tangible.",
       "Pairs share countries and are not independent observations. Standardized distances depend on the chosen features; the examples are illustrative, not representative samples.",
-      "Of 454 pairs with almost equal internet-use rates, only 71 meet the four-indicator network cutoff. Similar adoption therefore need not mean similar infrastructure."
+      "Almost equal adoption rates can conceal substantially different infrastructure. Only 71 of 454 eligible pairs meet the full-profile cutoff. The headline percentage therefore cannot substitute for a country profile, even when two values nearly match."
     ],
-    "detailed_interpretation": "The 179 complete profiles yield 454 pairs whose internet-use rates differ by at most one percentage point. Only 71 meet the original P95 similarity cutoff; 383 do not. Bhutan and Turkey differ by 0.82 points in internet use but 19.0 broadband subscriptions per 100 people. The horizontal axis uses only landline, broadband and mobile differences, scaled by the same 179-country standard deviations. The examples span the observed range; subscription counts may exceed 100 per 100 people. This descriptive comparison establishes neither significance nor infrastructure causes."
+    "detailed_interpretation": "The 179 complete profiles yield 454 pairs whose internet-use rates differ by at most one percentage point. Only 71 meet the original P95 similarity cutoff; 383 do not. Bhutan and Turkey differ by 0.82 points in internet use but 19.0 broadband subscriptions per 100 people. The horizontal axis uses only landline, broadband and mobile differences, scaled by the same 179-country standard deviations. The examples span the observed range; subscription counts may exceed 100 per 100 people. This descriptive comparison establishes neither significance nor infrastructure causes.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig31"
+      }
+    ]
   },
   {
     "figure": 32,
@@ -33,8 +39,14 @@
       "Rows are named grid cells; columns are all 92 days. Orange marks hot-dry conditions and gray their absence. Row labels give event-day counts and longest runs; vertical lines separate months.",
       "Maps show where frequency and persistence occur. The calendar reveals the daily ordering that creates their difference.",
       "The first pair deliberately maximizes the contrast among equal-count cells; it is not a typical sample. Runs may extend beyond the observed dates.",
-      "Two cells each have 75 hot-dry days, yet their longest runs are 17 and 67 days. Frequency alone cannot recover duration."
+      "Equal event counts can hide very different persistence. Two cells each have 75 hot-dry days, yet longest spells of 17 and 67 days. Preserving daily order is necessary to distinguish scattered occurrences from sustained conditions."
     ],
-    "detailed_interpretation": "The first two cells each meet the condition on 75 of 92 days (81.5%), but those days form longest runs of 17 and 67 days. Their different orange sequences make the lost ordering visible. The final row locates the full-footprint maximum of 67 consecutive days in time. Selection searches all 13,416 complete cells, using an explicit tie rule recorded with the data. This supports the main question: even an exact event count hides whether conditions are scattered or sustained."
+    "detailed_interpretation": "The first two cells each meet the condition on 75 of 92 days (81.5%), but those days form longest runs of 17 and 67 days. Their different orange sequences make the lost ordering visible. The final row locates the full-footprint maximum of 67 consecutive days in time. Selection searches all 13,416 complete cells, using an explicit tie rule recorded with the data. This supports the main question: even an exact event count hides whether conditions are scattered or sustained.",
+    "live_links": [
+      {
+        "label": "View figure and interpretation online",
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig32"
+      }
+    ]
   }
 ]

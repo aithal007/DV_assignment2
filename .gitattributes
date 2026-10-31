@@ -1,1 +1,7 @@
+*.pdf binary
+*.png binary
+*.gif binary
+*.zip binary
+*.pptx binary
 * -text
+*.svg whitespace=-blank-at-eol

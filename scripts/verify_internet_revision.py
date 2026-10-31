@@ -34,7 +34,7 @@ assert len(graph['all_edges'])==15931
 tree=json.loads((ROOT/'data/treemap_countries_2020.json').read_text())
 assert len(tree['countries'])==184 and sum(r['internet_users'] for r in tree['countries'])==4521767530
 manifest=json.loads((ROOT/'data/current_figure_manifest.json').read_text())
-assert len(manifest)==30 and all((ROOT/f['path']).is_file() for f in manifest)
-result={'status':'PASS','matched_countries':175,'joint_brush_countries':sorted(selected.country),'milestone_checks':len(saved),'trajectory_pairs_checked':len(paths),'network_focus_degree':len(near),'treemap_country_leaves':184,'report_figures':30,'browser_evidence':'Actual pointer brushing and other controls passed the browser audit; see output/infovis_audit_20261026/interactions.json.'}
+assert [f['figure'] for f in manifest]==list(range(1,33)) and all((ROOT/f['path']).is_file() for f in manifest)
+result={'status':'PASS','matched_countries':175,'joint_brush_countries':sorted(selected.country),'milestone_checks':len(saved),'trajectory_pairs_checked':len(paths),'network_focus_degree':len(near),'treemap_country_leaves':184,'report_figures':len(manifest),'browser_evidence':'Actual pointer brushing and other controls passed the browser audit; see output/infovis_audit_20261026/interactions.json.'}
 (ROOT/'output/internet_revision/validation.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
 print(json.dumps(result,indent=2))

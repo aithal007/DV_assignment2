@@ -132,7 +132,9 @@ function render() {
     (focusPreset ? 'Adoption ≥70%; fixed broadband ≤5 subscriptions/100. ' : 'Selected countries: ') + selectedNames.sort().join(', ') :
     'Use the focus button to inspect countries whose high adoption coexists with low fixed broadband.';
   document.querySelector('#legend').innerHTML=['Below 40% adoption','40–below 70% adoption','At least 70% adoption'].map((label,i)=>`<span><i style="background:${bandColors[i]}"></i>${label}</span>`).join('');
-  bundleControl.nextElementSibling.value = `${bundleControl.value}%`;
+  const bundleVal = document.querySelector('#bundle-value');
+  if (bundleVal) bundleVal.value = `${bundleControl.value}%`;
+  else if (bundleControl.nextElementSibling) bundleControl.nextElementSibling.value = `${bundleControl.value}%`;
 }
 
 function localY(e) {
@@ -170,4 +172,4 @@ fetch("../data/infovis_countries.json")
     window.addEventListener("resize", render);
     render();
   })
-  .catch(err => { status.textContent = `Could not load data: ${err.message}. Run the preparation script and local server from ass2.`; });
+  .catch(err => { status.textContent = `Could not load data: ${err.message}. Run the preparation script and local server from the project directory.`; });
