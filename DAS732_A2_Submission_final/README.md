@@ -78,8 +78,8 @@ Task responsibilities and figure allocations:
 
 | Member | Figs | InfoVis task | SciVis task |
 |---|---|---|---|
-| Parikshith Aithal K V (BT2024249) | 1–7, 18–19, 22–23 (11 figs) | Network node-link + parallel coordinates plot | Scalar color mapping (global vs local extrema) |
+| Parikshith Aithal K V (BT2024249) | 1–7, 13, 18–19, 22–23 (12 figs) | Network node-link + parallel coordinates plot | Scalar color mapping (global vs local extrema) |
 | Sindhoor Ganapathi Hegde (BT2024014) | 14–17, 20–21, 24–25, 30–31 (10 figs) | Horizon plots + ridgeline plots | Marching Squares contour mapping |
-| Varshith M Gowda (BT2024227) | 8–13, 26–29 (10 figs) | Treemap visualisations + cohort comparisons | Quiver plot (grid sampling + magnitude encoding) |
+| Varshith M Gowda (BT2024227) | 8–12, 26–29 (9 figs) | Treemap visualisations + cohort comparisons | Quiver plot (grid sampling + magnitude encoding) |
 
 Total figures: 31. No two members share a task; joint ownership applies only to shared data cleaning/pre-processing (see report Section I).

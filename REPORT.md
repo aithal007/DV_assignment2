@@ -671,9 +671,9 @@ Task responsibilities are assigned below.
 
 | Member | Responsibility |
 |---|---|
-| Parikshith Aithal K V (BT2024249) | Network node-link + parallel coordinates (InfoVis); scalar color mapping with global vs local extrema (SciVis). Figs 1–7, 18–19, 22–23 |
-| Sindhoor Ganapathi Hegde (BT2024014) | Horizon plots + ridgeline plots (InfoVis); Marching Squares contour mapping (SciVis). Figs 14–17, 20–21, 24–25, 30–31 |
-| Varshith M Gowda (BT2024227) | Zoomable treemap (sole owner) with region and adoption-band hierarchy remodels, plus cohort/catch-up comparisons (InfoVis, Figs 8–13); quiver plot with grid sampling and magnitude encoding (SciVis, Figs 26–29). |
+| Parikshith Aithal K V (BT2024249) | Network node-link + parallel coordinates (InfoVis); scalar color mapping with global vs local extrema (SciVis). Figs 1–7, 13, 18–19, 22–23 (12 figures; Fig. 13 is Parikshith's canonical figure) |
+| Sindhoor Ganapathi Hegde (BT2024014) | Horizon plots + ridgeline plots (InfoVis); Marching Squares contour mapping (SciVis). Figs 14–17, 20–21, 24–25, 30–31 (10 figures) |
+| Varshith M Gowda (BT2024227) | Zoomable treemap (sole owner) with region and adoption-band hierarchy remodels, plus cohort/catch-up comparisons (InfoVis, Figs 8–12); quiver plot with grid sampling and magnitude encoding (SciVis, Figs 26–29) (9 figures). |
 
 ## Conclusion
 
