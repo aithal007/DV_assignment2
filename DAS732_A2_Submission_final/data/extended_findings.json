@@ -35,7 +35,7 @@
     0.0,
     0.0
   ],
-  "network_within_supplied_region_edges": 249,
+  "network_within_supplied_region_edges": 326,
   "matched_region_medians": [
     {
       "region": "Africa",
@@ -73,5 +73,5 @@
       "2020": 86.858765
     }
   ],
-  "validation": "PASS: all 92 dates, physical ranges, fixed temperature footprint, 31/31/30 denominators, 1180 symmetric matrix entries, 175 matched countries, 21 Kenya years, 159 KDE observations and 12 unique added figure indices"
+  "validation": "PASS: all 92 dates, physical ranges, fixed temperature footprint, 31/31/30 denominators, symmetric matrix entries checked against current edge count, 175 matched countries, 21 Kenya years, 159 KDE observations and 12 unique added figure indices"
 }

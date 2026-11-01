@@ -1,0 +1,32 @@
+[
+  {
+    "key": "regional_gain_raincloud",
+    "title": "Regional gain raincloud",
+    "question": "How much do countries differ behind a regional improvement?",
+    "reading": "One dot is one matched country; horizontal position is its actual change. The density shows shape, the interval shows heterogeneity, and the black tick reproduces the summary used by the dumbbell.",
+    "finding": "In Asia, the median individual gain is 19.75 points, versus 26.55 for the difference of regional medians. Country gains range from -0.84 to 49.94 points; the middle half spans 9.86 to 28.25.",
+    "limits": "Country-weighted observational changes, not causal effects or confidence intervals. Small groups use raw dots without density. Each density is independently normalized and truncated at observed extremes; it is not a population share. Unclassified countries remain visible.",
+    "replacement": "Strong enhancement to Figure 11: retain a small endpoint panel or its values, and use this view to show the gains behind it. Do not replace required ridgeline variations.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6480976/"
+  },
+  {
+    "key": "rainfall_concentration",
+    "title": "Monthly rainfall and five-day concentration",
+    "question": "Do similar monthly totals conceal rain arriving in short bursts?",
+    "reading": "Top maps retain absolute monthly totals. Bottom maps divide the wettest consecutive five-day sum by the monthly total; all months use shared scales. The ratio describes timing concentration, not flood severity.",
+    "finding": "Among cells receiving at least 10 mm that month, the share of weighted area getting at least half its rain in one five-day window is July 43.8%, August 67.5%, September 77.6%.",
+    "limits": "Adapted from the maximum consecutive five-day precipitation idea. This is a within-month diagnostic, not a claim of full climatological Rx5day implementation. Low-total cells are masked only in ratio maps. Daily gridded rain does not establish runoff, flooding, hourly intensity or a climate trend. Windows crossing month boundaries are excluded.",
+    "replacement": "Strongest replacement: replace Figure 22 with this two-row figure. It retains all three total maps and adds information about timing.",
+    "source": "https://www.climdex.org/learn/indices/"
+  },
+  {
+    "key": "event_sequences",
+    "title": "Event-sequence raster and run exceedance",
+    "question": "Can the same event frequency conceal isolated days versus a prolonged spell?",
+    "reading": "A lasagna-style binary raster preserves daily order for a deliberately chosen equal-count group. Adjacent bars give exact longest runs. The second panel supplies an all-domain area denominator so selected examples cannot imply prevalence.",
+    "finding": "Among 21 cells with exactly 75 hot/dry days, longest runs range from 17 to 67 days. Across the entire footprint, 5.15% of area has a run of at least 30 days and 0.12% has a run of at least 60 days.",
+    "limits": "The example group maximizes the range of longest runs among exact-count groups with at least 20 cells and at least 10 hot/dry days. It is illustrative, not representative; up to 60 rows are sampled evenly by run rank. Boundary runs are truncated by July-September. Daily hot/dry conditions are descriptive, not official heatwave or drought diagnoses.",
+    "replacement": "Useful addition to Figure 29, but do not discard its spatial maps or threshold sensitivity. Prefer a companion figure or a redesigned composite over replacing a required plot.",
+    "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2937254/"
+  }
+]

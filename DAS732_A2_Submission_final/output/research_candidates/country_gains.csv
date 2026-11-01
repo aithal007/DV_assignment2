@@ -1,0 +1,176 @@
+code,country,region,gain
+AFG,Afghanistan,Asia,8.7885
+ALB,Albania,Europe,15.337679999999999
+DZA,Algeria,Africa,25.2727
+AND,Andorra,Europe,5.305699999999987
+AGO,Angola,Africa,11.320900000000002
+ATG,Antigua and Barbuda,North America,1.368399999999994
+ARG,Argentina,South America,17.47133000000001
+ARM,Armenia,Asia,17.406866
+AUS,Australia,Oceania,10.132980000000003
+AUT,Austria,Europe,3.5892900000000054
+AZE,Azerbaijan,Asia,7.599999999999994
+BHS,Bahamas,North America,14.443700000000007
+BHR,Bahrain,Asia,6.192729999999997
+BGD,Bangladesh,Asia,23.740299999999998
+BRB,Barbados,North America,-2.1593000000000018
+BLR,Belarus,Europe,22.857547999999994
+BEL,Belgium,Europe,6.473469999999992
+BLZ,Belize,North America,22.8459
+BEN,Benin,Africa,10.865599999999999
+BTN,Bhutan,Asia,37.05080000000001
+BOL,Bolivia,South America,22.453284000000004
+BIH,Bosnia and Herzegovina,Europe,20.611753999999998
+BWA,Botswana,Africa,12.784399999999998
+BRA,Brazil,South America,23.014746999999993
+BRN,Brunei,Asia,25.105499999999992
+BGR,Bulgaria,Europe,13.506230000000002
+BFA,Burkina Faso,Africa,6.4275
+BDI,Burundi,Africa,4.4301
+KHM,Cambodia,Asia,49.942708700000004
+CMR,Cameroon,Africa,19.397499999999997
+CAN,Canada,North America,2.299999999999997
+CPV,Cape Verde,Africa,26.690386000000004
+TCD,Chad,Africa,4.8431
+CHL,Chile,South America,10.829710000000006
+CHN,China,Asia,19.75276000000001
+COL,Colombia,South America,13.890361999999996
+COM,Comoros,Africa,14.961200000000002
+CRI,Costa Rica,North America,20.76724
+CIV,Cote d'Ivoire,Africa,-2.423400000000001
+HRV,Croatia,Europe,8.475859999999997
+CUB,Cuba,North America,33.813973999999995
+CYP,Cyprus,Europe,19.086206000000004
+CZE,Czechia,Europe,5.670059999999992
+COD,Democratic Republic of Congo,Africa,10.7105
+DNK,Denmark,Europe,0.2186449999999951
+DJI,Djibouti,Africa,37.0257
+DMA,Dominica,North America,10.6567
+DOM,Dominican Republic,North America,27.401533
+TLS,East Timor,Asia,13.412700000000001
+ECU,Ecuador,South America,21.759566
+EGY,Egypt,Africa,34.09481999999999
+SLV,El Salvador,North America,27.798763
+GNQ,Equatorial Guinea,Africa,33.6813
+ERI,Eritrea,Unclassified,13.265699999999999
+EST,Estonia,Europe,0.6485839999999996
+SWZ,Eswatini,Africa,23.369999999999997
+ETH,Ethiopia,Africa,2.214424000000001
+FJI,Fiji,Oceania,26.125600000000006
+FIN,Finland,Europe,5.748136000000002
+FRA,France,Europe,6.700365000000005
+GAB,Gabon,Africa,18.1334
+GMB,Gambia,Africa,18.411500000000004
+GEO,Georgia,Asia,24.961820000000003
+DEU,Germany,Europe,2.223140000000001
+GHA,Ghana,Africa,39.5176
+GRC,Greece,Europe,11.280884999999998
+GRD,Grenada,North America,13.153800000000004
+GTM,Guatemala,North America,18.706400000000002
+GUY,Guyana,South America,28.954
+HTI,Haiti,North America,25.188100000000002
+HND,Honduras,North America,18.108755000000002
+HKG,Hong Kong,Asia,7.464780000000005
+HUN,Hungary,Europe,11.93641000000001
+ISL,Iceland,Europe,1.33274999999999
+IND,India,Asia,28.50544
+IDN,Indonesia,Asia,31.663752000000002
+IRN,Iran,Asia,30.234893999999997
+IRL,Ireland,Europe,8.505099999999999
+ISR,Israel,Asia,12.77525
+ITA,Italy,Europe,12.341695000000001
+JAM,Jamaica,North America,34.162778
+JPN,Japan,Asia,-0.8385700000000043
+JOR,Jordan,Asia,24.1978
+KAZ,Kazakhstan,Asia,15.112669999999994
+KEN,Kenya,Africa,8.134946
+KIR,Kiribati,Oceania,38.0509
+KWT,Kuwait,Asia,17.105869999999996
+KGZ,Kyrgyzstan,Asia,41.753
+LAO,Laos,Asia,35.8
+LVA,Latvia,Europe,9.697379999999995
+LSO,Lesotho,Africa,18.6575
+LBR,Liberia,Africa,12.910699999999999
+LBY,Libya,Africa,49.35809999999999
+LIE,Liechtenstein,Europe,-2.2912000000000035
+LTU,Lithuania,Europe,11.677489999999992
+LUX,Luxembourg,Europe,2.0829049999999967
+MAC,Macao,Asia,9.862169999999992
+MDG,Madagascar,Africa,7.180699999999999
+MWI,Malawi,Africa,7.8995
+MYS,Malaysia,Asia,18.490951999999993
+MDV,Maldives,Asia,24.635800000000003
+MLI,Mali,Africa,18.783
+MLT,Malta,Europe,10.898745000000005
+MRT,Mauritania,Africa,12.3065
+MUS,Mauritius,Africa,17.593590000000006
+MEX,Mexico,North America,14.059130000000003
+FSM,Micronesia (country),Oceania,7.882199999999997
+MDA,Moldova,Europe,5.118290000000002
+MCO,Monaco,Europe,5.20750000000001
+MNG,Mongolia,Asia,40.000023
+MNE,Montenegro,Europe,9.489005000000006
+MAR,Morocco,Africa,27.040362000000002
+MOZ,Mozambique,Africa,7.7874
+MMR,Myanmar,Unclassified,34.5477
+NAM,Namibia,Africa,32.1729
+NPL,Nepal,Asia,19.383699999999997
+NLD,Netherlands,Europe,-0.3908040000000028
+NZL,New Zealand,Oceania,5.721000000000004
+NIC,Nicaragua,North America,25.170599999999997
+NER,Niger,Africa,9.3806
+NGA,Nigeria,Africa,9.374600000000001
+MKD,North Macedonia,Europe,11.02534
+NOR,Norway,Europe,-2.202765999999997
+OMN,Oman,Asia,21.702290000000005
+PAK,Pakistan,Asia,7.934999999999999
+PSE,Palestine,Unclassified,19.4816
+PAN,Panama,North America,13.618874999999996
+PNG,Papua New Guinea,Oceania,7.1204
+PRY,Paraguay,South America,24.241205
+PER,Peru,South America,24.3992
+PHL,Philippines,Asia,16.8649
+POL,Poland,Europe,15.187899999999999
+PRT,Portugal,Europe,9.628800000000012
+QAT,Qatar,Asia,6.768020000000007
+ROU,Romania,Europe,22.692113
+RUS,Russia,Europe,14.895430000000005
+RWA,Rwanda,Africa,11.344000000000001
+KNA,Saint Kitts and Nevis,North America,4.102199999999996
+LCA,Saint Lucia,North America,4.800699999999999
+VCT,Saint Vincent and the Grenadines,North America,13.981000000000002
+STP,Sao Tome and Principe,Africa,25.734699999999997
+SAU,Saudi Arabia,Asia,28.246100999999996
+SEN,Senegal,Africa,31.6088
+SRB,Serbia,Europe,13.051025999999993
+SYC,Seychelles,Africa,24.9921
+SGP,Singapore,Asia,12.991394999999997
+SVK,Slovakia,Europe,12.286226
+SVN,Slovenia,Europe,13.50264
+SLB,Solomon Islands,Oceania,14.197899999999999
+SOM,Somalia,Africa,13.2637
+ZAF,South Africa,Africa,20.193699999999993
+KOR,South Korea,Asia,6.608805000000004
+ESP,Spain,Europe,14.516020000000012
+LKA,Sri Lanka,Asia,20.922234
+SWE,Sweden,Europe,3.92922999999999
+CHE,Switzerland,Europe,6.87093999999999
+TJK,Tajikistan,Asia,8.5641
+TZA,Tanzania,Africa,9.4814
+THA,Thailand,Asia,38.527612
+TGO,Togo,Africa,21.9037
+TON,Tonga,Oceania,15.822400000000002
+TTO,Trinidad and Tobago,North America,12.181300000000007
+TUN,Tunisia,Africa,22.056403999999993
+TUR,Turkey,Asia,23.924580000000006
+UGA,Uganda,Africa,1.7000000000000002
+UKR,Ukraine,Europe,26.153265999999995
+ARE,United Arab Emirates,Asia,9.5
+GBR,United Kingdom,Europe,2.8179000000000087
+USA,United States,North America,15.790500000000009
+URY,Uruguay,South America,20.900214000000005
+UZB,Uzbekistan,Asia,28.299999999999997
+VEN,Venezuela,South America,14.441100000000006
+VNM,Vietnam,Asia,25.299999999999997
+ZMB,Zambia,Africa,5.845799999999999
+ZWE,Zimbabwe,Africa,6.555765000000001

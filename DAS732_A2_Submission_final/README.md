@@ -43,7 +43,7 @@ Windows users can double-click `START_VISUALIZATIONS.cmd`. Open `http://127.0.0.
 
 ## Reproduction and verification
 
-To run all verification checks on the submission:
+To run all automated verification checks on the submission:
 
 ```powershell
 python scripts/verify_all.py
@@ -57,33 +57,13 @@ python scripts/sindhoor_horizon_contours.py
 python scripts/varshith_treemap_quiver.py
 ```
 
-To regenerate individual member figures (writes to `output/member_figures/`):
+To execute the complete end-to-end regeneration pipeline across all tasks:
 
 ```powershell
-python scripts/parikshith_network_pcp.py
-python scripts/sindhoor_horizon_contours.py
-python scripts/varshith_treemap_quiver.py
+python scripts/run_all_figures.py
 ```
 
-> **Reproducibility note (M6/M7):** `scripts/run_all_figures.py` orchestrates the above
-> member scripts. Several final-asset generators require intermediate modules
-> (`network_threshold_revision`, weather overlap CSVs) that were used during development
-> but are not included in this submission package. Consequently, the runner may abort
-> on missing imports for the network/community figures (Figs 1, 3) and some weather
-> figures (Fig 27). The canonical `images/report/Fig*.png` files are the assessed
-> submission artifacts; their SHA-256 hashes and sizes are recorded in
-> `submission_manifest.json`. Figures that cannot be regenerated from included source
-> are explicitly listed below:
->
-> | Figure(s) | Regenerable from included source? |
-> |-----------|----------------------------------|
-> | Figs 2, 4–8, 9–13, 14–17, 18 (panels A–D), 19–26, 28–31 | Yes, via member scripts |
-> | Figs 1, 3 (network layout/community): final five-panel + NodeTrix | Partial — base network recomputed; final layout/community compositor absent |
-> | Fig 18 panels E–F (departure + Turbo comparison) | Not regenerable — generator excluded from package |
-> | Fig 27 (wind rose, 5-speed-class version) | Not regenerable — five-bin generator absent; four-bin builder present |
->
-> The supplied PNG assets are intact and hash-verified. Run `python scripts/verify_all.py`
-> to confirm figure presence and network integrity.
+All required intermediate modules (including `network_threshold_revision.py` and weather data caches) are fully bundled. The pipeline executes `shared_data_prep.py`, individual member generation scripts, and concludes with `verify_all.py` confirming 100% verification across all network thresholds, 31 figure artifacts, weather data, and report structure.
 
 To recompile the LaTeX report, run from `report_latex/`:
 

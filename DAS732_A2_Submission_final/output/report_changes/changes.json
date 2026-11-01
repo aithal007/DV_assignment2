@@ -1,0 +1,58 @@
+[
+  {
+    "previous_figure": 2,
+    "title": "Interactive graph explorer.",
+    "path": "images/network_interactive.png",
+    "status": "Interactive screenshot overlaps the three-layout overview; working network page retained.",
+    "reason": "Interactive screenshot overlaps the three-layout overview; working network page retained."
+  },
+  {
+    "previous_figure": 11,
+    "title": "Eight dates, one temperature scale.",
+    "path": "images/scivis/scivis_temperature_atlas.png",
+    "status": "Eight-date atlas omitted; all three required eight-frame GIFs retained.",
+    "reason": "Eight-date atlas omitted; all three required eight-frame GIFs retained."
+  },
+  {
+    "previous_figure": 22,
+    "title": "Conditional rainfall ECDFs.",
+    "path": "images/extensions/precipitation_ecdf.png",
+    "status": "Positive-rain conditional distributions provide limited separation; original retained here.",
+    "reason": "Positive-rain conditional distributions provide limited separation; original retained here."
+  },
+  {
+    "previous_figure": 23,
+    "title": "Monthly wind-direction roses.",
+    "path": "images/extensions/monthly_wind_roses.png",
+    "status": "Replaced by full-domain monthly wind roses. Spatial support and near-calm handling differ.",
+    "reason": "Replaced by full-domain monthly wind roses. Spatial support and near-calm handling differ."
+  },
+  {
+    "previous_figure": 24,
+    "title": "Region-ordered adjacency matrix.",
+    "path": "images/extensions/network_adjacency_matrix.png",
+    "status": "Moved from PDF appendix to companion gallery: exact adjacency lookup remains available.",
+    "reason": "Moved from PDF appendix to companion gallery: exact adjacency lookup remains available."
+  },
+  {
+    "previous_figure": 26,
+    "title": "Four-measure country profiles on a matched panel.",
+    "path": "images/quality/telecom_four_variables.png",
+    "status": "Bubble overview retained here; PCP and SPLOM provide more precise comparisons.",
+    "reason": "Bubble overview retained here; PCP and SPLOM provide more precise comparisons."
+  },
+  {
+    "previous_figure": 31,
+    "title": "Worked horizon construction.",
+    "path": "images/extensions/horizon_construction.png",
+    "status": "Moved from PDF appendix to companion gallery: worked horizon construction remains available.",
+    "reason": "Moved from PDF appendix to companion gallery: worked horizon construction remains available."
+  },
+  {
+    "previous_figure": 32,
+    "title": "KDE sensitivity with empirical reference.",
+    "path": "images/extensions/kde_bandwidth_sensitivity.png",
+    "status": "Moved from PDF appendix to companion gallery: KDE sensitivity remains available.",
+    "reason": "Moved from PDF appendix to companion gallery: KDE sensitivity remains available."
+  }
+]

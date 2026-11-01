@@ -1,0 +1,1478 @@
+{
+  "total_users": 4521767526,
+  "country_count": 184,
+  "nodes": [
+    {
+      "country": "Afghanistan",
+      "code": "AFG",
+      "region": "Asia",
+      "adoption_band": "0-below-25%",
+      "internet_users": 6660675,
+      "internet_pct": 17.0485
+    },
+    {
+      "country": "Albania",
+      "code": "ALB",
+      "region": "Europe",
+      "adoption_band": "50-below-75%",
+      "internet_users": 1826515,
+      "internet_pct": 72.23768
+    },
+    {
+      "country": "Algeria",
+      "code": "DZA",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 27954704,
+      "internet_pct": 63.4727
+    },
+    {
+      "country": "Andorra",
+      "code": "AND",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 72123,
+      "internet_pct": 93.2057
+    },
+    {
+      "country": "Angola",
+      "code": "AGO",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 11146219,
+      "internet_pct": 33.3209
+    },
+    {
+      "country": "Antigua and Barbuda",
+      "code": "ATG",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 65549,
+      "internet_pct": 71.3684
+    },
+    {
+      "country": "Argentina",
+      "code": "ARG",
+      "region": "South America",
+      "adoption_band": "75-100%",
+      "internet_users": 38645630,
+      "internet_pct": 85.51439
+    },
+    {
+      "country": "Armenia",
+      "code": "ARM",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 2265776,
+      "internet_pct": 76.5077
+    },
+    {
+      "country": "Australia",
+      "code": "AUS",
+      "region": "Oceania",
+      "adoption_band": "75-100%",
+      "internet_users": 24288170,
+      "internet_pct": 94.6935
+    },
+    {
+      "country": "Austria",
+      "code": "AUT",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 7804880,
+      "internet_pct": 87.52943
+    },
+    {
+      "country": "Azerbaijan",
+      "code": "AZE",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 8538780,
+      "internet_pct": 84.6
+    },
+    {
+      "country": "Bahamas",
+      "code": "BHS",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 365950,
+      "internet_pct": 92.4437
+    },
+    {
+      "country": "Bahrain",
+      "code": "BHR",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 1467361,
+      "internet_pct": 99.67103
+    },
+    {
+      "country": "Bangladesh",
+      "code": "BGD",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 60048724,
+      "internet_pct": 36.1091
+    },
+    {
+      "country": "Barbados",
+      "code": "BRB",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 196879,
+      "internet_pct": 69.8901
+    },
+    {
+      "country": "Belarus",
+      "code": "BLR",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 7981206,
+      "internet_pct": 85.08791
+    },
+    {
+      "country": "Belgium",
+      "code": "BEL",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 10560870,
+      "internet_pct": 91.52641
+    },
+    {
+      "country": "Belize",
+      "code": "BLZ",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 251823,
+      "internet_pct": 64.4359
+    },
+    {
+      "country": "Benin",
+      "code": "BEN",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2891200,
+      "internet_pct": 22.1206
+    },
+    {
+      "country": "Bhutan",
+      "code": "BTN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 591756,
+      "internet_pct": 76.8508
+    },
+    {
+      "country": "Bolivia",
+      "code": "BOL",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 7082702,
+      "internet_pct": 59.9401
+    },
+    {
+      "country": "Bosnia and Herzegovina",
+      "code": "BIH",
+      "region": "Europe",
+      "adoption_band": "50-below-75%",
+      "internet_users": 2415511,
+      "internet_pct": 73.211754
+    },
+    {
+      "country": "Botswana",
+      "code": "BWA",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 1222651,
+      "internet_pct": 51.6782
+    },
+    {
+      "country": "Brazil",
+      "code": "BRA",
+      "region": "South America",
+      "adoption_band": "75-100%",
+      "internet_users": 169730350,
+      "internet_pct": 81.3427
+    },
+    {
+      "country": "Brunei",
+      "code": "BRN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 430875,
+      "internet_pct": 96.3055
+    },
+    {
+      "country": "Bulgaria",
+      "code": "BGR",
+      "region": "Europe",
+      "adoption_band": "50-below-75%",
+      "internet_users": 4596131,
+      "internet_pct": 70.16248
+    },
+    {
+      "country": "Burkina Faso",
+      "code": "BFA",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2786473,
+      "internet_pct": 12.9732
+    },
+    {
+      "country": "Burundi",
+      "code": "BDI",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 811288,
+      "internet_pct": 6.4301
+    },
+    {
+      "country": "Cambodia",
+      "code": "KHM",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 9429137,
+      "internet_pct": 56.3759
+    },
+    {
+      "country": "Cameroon",
+      "code": "CMR",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 9880724,
+      "internet_pct": 37.6975
+    },
+    {
+      "country": "Canada",
+      "code": "CAN",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 35100436,
+      "internet_pct": 92.3
+    },
+    {
+      "country": "Cape Verde",
+      "code": "CPV",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 357050,
+      "internet_pct": 69.3734
+    },
+    {
+      "country": "Chad",
+      "code": "TCD",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 1437072,
+      "internet_pct": 8.3431
+    },
+    {
+      "country": "Chile",
+      "code": "CHL",
+      "region": "South America",
+      "adoption_band": "75-100%",
+      "internet_users": 16941412,
+      "internet_pct": 87.4593
+    },
+    {
+      "country": "China",
+      "code": "CHN",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 988514400,
+      "internet_pct": 70.05276
+    },
+    {
+      "country": "Colombia",
+      "code": "COL",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 35337376,
+      "internet_pct": 69.795334
+    },
+    {
+      "country": "Comoros",
+      "code": "COM",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 179848,
+      "internet_pct": 22.4204
+    },
+    {
+      "country": "Congo",
+      "code": "COG",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 1265528,
+      "internet_pct": 21.9985
+    },
+    {
+      "country": "Costa Rica",
+      "code": "CRI",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 4054148,
+      "internet_pct": 80.53019
+    },
+    {
+      "country": "Cote d'Ivoire",
+      "code": "CIV",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 10414362,
+      "internet_pct": 36.0166
+    },
+    {
+      "country": "Croatia",
+      "code": "HRV",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 3065642,
+      "internet_pct": 78.3209
+    },
+    {
+      "country": "Cuba",
+      "code": "CUB",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 7948519,
+      "internet_pct": 71.11907
+    },
+    {
+      "country": "Cyprus",
+      "code": "CYP",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 1182466,
+      "internet_pct": 90.80195
+    },
+    {
+      "country": "Czechia",
+      "code": "CZE",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 8701520,
+      "internet_pct": 81.3389
+    },
+    {
+      "country": "Democratic Republic of Congo",
+      "code": "COD",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 13928629,
+      "internet_pct": 14.5105
+    },
+    {
+      "country": "Denmark",
+      "code": "DNK",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 5630171,
+      "internet_pct": 96.54915
+    },
+    {
+      "country": "Djibouti",
+      "code": "DJI",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 662292,
+      "internet_pct": 59.9257
+    },
+    {
+      "country": "Dominica",
+      "code": "DMA",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 51124,
+      "internet_pct": 75.6567
+    },
+    {
+      "country": "Dominican Republic",
+      "code": "DOM",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 8984677,
+      "internet_pct": 81.6173
+    },
+    {
+      "country": "East Timor",
+      "code": "TLS",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 424505,
+      "internet_pct": 32.0127
+    },
+    {
+      "country": "Ecuador",
+      "code": "ECU",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 12405067,
+      "internet_pct": 70.7
+    },
+    {
+      "country": "Egypt",
+      "code": "EGY",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 78613096,
+      "internet_pct": 71.9142
+    },
+    {
+      "country": "El Salvador",
+      "code": "SLV",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 3404216,
+      "internet_pct": 54.601368
+    },
+    {
+      "country": "Equatorial Guinea",
+      "code": "GNQ",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 944080,
+      "internet_pct": 55.0013
+    },
+    {
+      "country": "Eritrea",
+      "code": "ERI",
+      "region": "Unclassified",
+      "adoption_band": "0-below-25%",
+      "internet_users": 472278,
+      "internet_pct": 14.3494
+    },
+    {
+      "country": "Estonia",
+      "code": "EST",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 1184050,
+      "internet_pct": 89.05829
+    },
+    {
+      "country": "Eswatini",
+      "code": "SWZ",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 584592,
+      "internet_pct": 49.013
+    },
+    {
+      "country": "Ethiopia",
+      "code": "ETH",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 19109592,
+      "internet_pct": 16.0696
+    },
+    {
+      "country": "Fiji",
+      "code": "FJI",
+      "region": "Oceania",
+      "adoption_band": "50-below-75%",
+      "internet_users": 627899,
+      "internet_pct": 68.6256
+    },
+    {
+      "country": "Finland",
+      "code": "FIN",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 5096595,
+      "internet_pct": 92.17027
+    },
+    {
+      "country": "France",
+      "code": "FRA",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 57262464,
+      "internet_pct": 84.7064
+    },
+    {
+      "country": "Gabon",
+      "code": "GAB",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 1484518,
+      "internet_pct": 63.9179
+    },
+    {
+      "country": "Gambia",
+      "code": "GMB",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 905941,
+      "internet_pct": 36.011
+    },
+    {
+      "country": "Georgia",
+      "code": "GEO",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 2700145,
+      "internet_pct": 72.53158
+    },
+    {
+      "country": "Germany",
+      "code": "DEU",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 74689224,
+      "internet_pct": 89.81294
+    },
+    {
+      "country": "Ghana",
+      "code": "GHA",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 19935494,
+      "internet_pct": 62.5176
+    },
+    {
+      "country": "Greece",
+      "code": "GRC",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 8357301,
+      "internet_pct": 78.115845
+    },
+    {
+      "country": "Grenada",
+      "code": "GRD",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 76382,
+      "internet_pct": 65.6538
+    },
+    {
+      "country": "Guatemala",
+      "code": "GTM",
+      "region": "North America",
+      "adoption_band": "25-below-50%",
+      "internet_users": 8246864,
+      "internet_pct": 47.5123
+    },
+    {
+      "country": "Guinea",
+      "code": "GIN",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 3495963,
+      "internet_pct": 26.1455
+    },
+    {
+      "country": "Guinea-Bissau",
+      "code": "GNB",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 411858,
+      "internet_pct": 20.4573
+    },
+    {
+      "country": "Guyana",
+      "code": "GUY",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 508342,
+      "internet_pct": 62.954
+    },
+    {
+      "country": "Haiti",
+      "code": "HTI",
+      "region": "North America",
+      "adoption_band": "25-below-50%",
+      "internet_users": 4428738,
+      "internet_pct": 39.3881
+    },
+    {
+      "country": "Honduras",
+      "code": "HND",
+      "region": "North America",
+      "adoption_band": "25-below-50%",
+      "internet_users": 4578965,
+      "internet_pct": 45.2483
+    },
+    {
+      "country": "Hong Kong",
+      "code": "HKG",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 6913427,
+      "internet_pct": 92.41314
+    },
+    {
+      "country": "Hungary",
+      "code": "HUN",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 8197726,
+      "internet_pct": 84.77115
+    },
+    {
+      "country": "Iceland",
+      "code": "ISL",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 364751,
+      "internet_pct": 99.53275
+    },
+    {
+      "country": "India",
+      "code": "IND",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 608812400,
+      "internet_pct": 43.40544
+    },
+    {
+      "country": "Indonesia",
+      "code": "IDN",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 147648400,
+      "internet_pct": 53.726494
+    },
+    {
+      "country": "Iran",
+      "code": "IRN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 66292492,
+      "internet_pct": 75.56987
+    },
+    {
+      "country": "Iraq",
+      "code": "IRQ",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 22607266,
+      "internet_pct": 53.6778
+    },
+    {
+      "country": "Ireland",
+      "code": "IRL",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 4636562,
+      "internet_pct": 91.99989
+    },
+    {
+      "country": "Israel",
+      "code": "ISR",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 8305325,
+      "internet_pct": 90.12734
+    },
+    {
+      "country": "Italy",
+      "code": "ITA",
+      "region": "Europe",
+      "adoption_band": "50-below-75%",
+      "internet_users": 41894540,
+      "internet_pct": 70.48343
+    },
+    {
+      "country": "Jamaica",
+      "code": "JAM",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 2162232,
+      "internet_pct": 76.384
+    },
+    {
+      "country": "Japan",
+      "code": "JPN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 113911990,
+      "internet_pct": 90.21946
+    },
+    {
+      "country": "Jordan",
+      "code": "JOR",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 8520273,
+      "internet_pct": 78.4178
+    },
+    {
+      "country": "Kazakhstan",
+      "code": "KAZ",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 16743437,
+      "internet_pct": 85.9426
+    },
+    {
+      "country": "Kenya",
+      "code": "KEN",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 12909587,
+      "internet_pct": 24.7228
+    },
+    {
+      "country": "Kiribati",
+      "code": "KIR",
+      "region": "Oceania",
+      "adoption_band": "50-below-75%",
+      "internet_users": 66771,
+      "internet_pct": 52.9509
+    },
+    {
+      "country": "Kuwait",
+      "code": "KWT",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 4360923,
+      "internet_pct": 99.10587
+    },
+    {
+      "country": "Kyrgyzstan",
+      "code": "KGZ",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 4843150,
+      "internet_pct": 72.0
+    },
+    {
+      "country": "Laos",
+      "code": "LAO",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 3967128,
+      "internet_pct": 54.0
+    },
+    {
+      "country": "Latvia",
+      "code": "LVA",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 1689460,
+      "internet_pct": 88.897964
+    },
+    {
+      "country": "Lebanon",
+      "code": "LBN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 4679758,
+      "internet_pct": 82.0665
+    },
+    {
+      "country": "Lesotho",
+      "code": "LSO",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 976063,
+      "internet_pct": 43.6575
+    },
+    {
+      "country": "Liberia",
+      "code": "LBR",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 1179778,
+      "internet_pct": 22.9107
+    },
+    {
+      "country": "Libya",
+      "code": "LBY",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 5238825,
+      "internet_pct": 74.3581
+    },
+    {
+      "country": "Liechtenstein",
+      "code": "LIE",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 36703,
+      "internet_pct": 94.35
+    },
+    {
+      "country": "Lithuania",
+      "code": "LTU",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 2334168,
+      "internet_pct": 83.05555
+    },
+    {
+      "country": "Luxembourg",
+      "code": "LUX",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 620708,
+      "internet_pct": 98.459625
+    },
+    {
+      "country": "Macao",
+      "code": "MAC",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 599467,
+      "internet_pct": 87.4623
+    },
+    {
+      "country": "Madagascar",
+      "code": "MDG",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 3287589,
+      "internet_pct": 11.3547
+    },
+    {
+      "country": "Malawi",
+      "code": "MWI",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2715112,
+      "internet_pct": 13.8995
+    },
+    {
+      "country": "Malaysia",
+      "code": "MYS",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 30349798,
+      "internet_pct": 89.555016
+    },
+    {
+      "country": "Maldives",
+      "code": "MDV",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 397164,
+      "internet_pct": 79.0978
+    },
+    {
+      "country": "Mali",
+      "code": "MLI",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 6321549,
+      "internet_pct": 29.113
+    },
+    {
+      "country": "Malta",
+      "code": "MLT",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 447748,
+      "internet_pct": 86.858765
+    },
+    {
+      "country": "Marshall Islands",
+      "code": "MHL",
+      "region": "Oceania",
+      "adoption_band": "50-below-75%",
+      "internet_users": 24094,
+      "internet_pct": 56.4191
+    },
+    {
+      "country": "Mauritania",
+      "code": "MRT",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 1375738,
+      "internet_pct": 29.9065
+    },
+    {
+      "country": "Mauritius",
+      "code": "MUS",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 857508,
+      "internet_pct": 67.73291
+    },
+    {
+      "country": "Mexico",
+      "code": "MEX",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 90648860,
+      "internet_pct": 71.49017
+    },
+    {
+      "country": "Micronesia (country)",
+      "code": "FSM",
+      "region": "Oceania",
+      "adoption_band": "25-below-50%",
+      "internet_users": 43682,
+      "internet_pct": 39.3833
+    },
+    {
+      "country": "Moldova",
+      "code": "MDA",
+      "region": "Europe",
+      "adoption_band": "50-below-75%",
+      "internet_users": 1953114,
+      "internet_pct": 74.1183
+    },
+    {
+      "country": "Monaco",
+      "code": "MCO",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 37506,
+      "internet_pct": 98.5708
+    },
+    {
+      "country": "Mongolia",
+      "code": "MNG",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 2079503,
+      "internet_pct": 62.500027
+    },
+    {
+      "country": "Montenegro",
+      "code": "MNE",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 486289,
+      "internet_pct": 77.608795
+    },
+    {
+      "country": "Morocco",
+      "code": "MAR",
+      "region": "Africa",
+      "adoption_band": "75-100%",
+      "internet_users": 30774768,
+      "internet_pct": 84.12036
+    },
+    {
+      "country": "Mozambique",
+      "code": "MOZ",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 4398188,
+      "internet_pct": 14.2874
+    },
+    {
+      "country": "Myanmar",
+      "code": "MMR",
+      "region": "Unclassified",
+      "adoption_band": "25-below-50%",
+      "internet_users": 24094790,
+      "internet_pct": 45.4477
+    },
+    {
+      "country": "Namibia",
+      "code": "NAM",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 1578884,
+      "internet_pct": 57.8608
+    },
+    {
+      "country": "Nauru",
+      "code": "NRU",
+      "region": "Oceania",
+      "adoption_band": "75-100%",
+      "internet_users": 9019,
+      "internet_pct": 77.4666
+    },
+    {
+      "country": "Nepal",
+      "code": "NPL",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 10707581,
+      "internet_pct": 36.9653
+    },
+    {
+      "country": "Netherlands",
+      "code": "NLD",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 15929904,
+      "internet_pct": 91.333336
+    },
+    {
+      "country": "New Zealand",
+      "code": "NZL",
+      "region": "Oceania",
+      "adoption_band": "75-100%",
+      "internet_users": 4611876,
+      "internet_pct": 90.921
+    },
+    {
+      "country": "Nicaragua",
+      "code": "NIC",
+      "region": "North America",
+      "adoption_band": "25-below-50%",
+      "internet_users": 2946157,
+      "internet_pct": 44.8749
+    },
+    {
+      "country": "Niger",
+      "code": "NER",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2812150,
+      "internet_pct": 11.8568
+    },
+    {
+      "country": "Nigeria",
+      "code": "NGA",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 68240820,
+      "internet_pct": 31.8888
+    },
+    {
+      "country": "North Macedonia",
+      "code": "MKD",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 1510988,
+      "internet_pct": 81.40554
+    },
+    {
+      "country": "Norway",
+      "code": "NOR",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 5089390,
+      "internet_pct": 94.60756
+    },
+    {
+      "country": "Oman",
+      "code": "OMN",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 4306878,
+      "internet_pct": 95.23229
+    },
+    {
+      "country": "Pakistan",
+      "code": "PAK",
+      "region": "Asia",
+      "adoption_band": "0-below-25%",
+      "internet_users": 44497580,
+      "internet_pct": 18.935
+    },
+    {
+      "country": "Palestine",
+      "code": "PSE",
+      "region": "Unclassified",
+      "adoption_band": "75-100%",
+      "internet_users": 3659207,
+      "internet_pct": 76.1816
+    },
+    {
+      "country": "Panama",
+      "code": "PAN",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 2783076,
+      "internet_pct": 64.8243
+    },
+    {
+      "country": "Papua New Guinea",
+      "code": "PNG",
+      "region": "Oceania",
+      "adoption_band": "0-below-25%",
+      "internet_users": 1474364,
+      "internet_pct": 15.0204
+    },
+    {
+      "country": "Paraguay",
+      "code": "PRY",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 4883961,
+      "internet_pct": 73.95751
+    },
+    {
+      "country": "Peru",
+      "code": "PER",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 21427766,
+      "internet_pct": 65.2518
+    },
+    {
+      "country": "Philippines",
+      "code": "PHL",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 60260376,
+      "internet_pct": 53.7649
+    },
+    {
+      "country": "Poland",
+      "code": "POL",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 31207434,
+      "internet_pct": 83.18489
+    },
+    {
+      "country": "Portugal",
+      "code": "PRT",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 8058666,
+      "internet_pct": 78.26166
+    },
+    {
+      "country": "Qatar",
+      "code": "QAT",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 2784448,
+      "internet_pct": 99.65285
+    },
+    {
+      "country": "Romania",
+      "code": "ROU",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 15114604,
+      "internet_pct": 78.45527
+    },
+    {
+      "country": "Russia",
+      "code": "RUS",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 123450630,
+      "internet_pct": 84.99467
+    },
+    {
+      "country": "Rwanda",
+      "code": "RWA",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 3109669,
+      "internet_pct": 23.8
+    },
+    {
+      "country": "Saint Kitts and Nevis",
+      "code": "KNA",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 32938,
+      "internet_pct": 70.2753
+    },
+    {
+      "country": "Saint Lucia",
+      "code": "LCA",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 110629,
+      "internet_pct": 62.064
+    },
+    {
+      "country": "Saint Vincent and the Grenadines",
+      "code": "VCT",
+      "region": "North America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 65616,
+      "internet_pct": 63.381
+    },
+    {
+      "country": "San Marino",
+      "code": "SMR",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 27103,
+      "internet_pct": 77.95
+    },
+    {
+      "country": "Sao Tome and Principe",
+      "code": "STP",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 112098,
+      "internet_pct": 51.5547
+    },
+    {
+      "country": "Saudi Arabia",
+      "code": "SAU",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 30878022,
+      "internet_pct": 97.862335
+    },
+    {
+      "country": "Senegal",
+      "code": "SEN",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 8950131,
+      "internet_pct": 53.3088
+    },
+    {
+      "country": "Serbia",
+      "code": "SRB",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 5406710,
+      "internet_pct": 78.36805
+    },
+    {
+      "country": "Seychelles",
+      "code": "SYC",
+      "region": "Africa",
+      "adoption_band": "75-100%",
+      "internet_users": 78033,
+      "internet_pct": 79.2517
+    },
+    {
+      "country": "Sierra Leone",
+      "code": "SLE",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 1354693,
+      "internet_pct": 17.1208
+    },
+    {
+      "country": "Singapore",
+      "code": "SGP",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 5231190,
+      "internet_pct": 92.00435
+    },
+    {
+      "country": "Slovakia",
+      "code": "SVK",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 4908627,
+      "internet_pct": 89.920906
+    },
+    {
+      "country": "Slovenia",
+      "code": "SVN",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 1820722,
+      "internet_pct": 86.6013
+    },
+    {
+      "country": "Solomon Islands",
+      "code": "SLB",
+      "region": "Oceania",
+      "adoption_band": "0-below-25%",
+      "internet_users": 180157,
+      "internet_pct": 24.1984
+    },
+    {
+      "country": "Somalia",
+      "code": "SOM",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2501625,
+      "internet_pct": 15.0237
+    },
+    {
+      "country": "South Africa",
+      "code": "ZAF",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 43673228,
+      "internet_pct": 72.1128
+    },
+    {
+      "country": "South Korea",
+      "code": "KOR",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 50024590,
+      "internet_pct": 96.50506
+    },
+    {
+      "country": "Spain",
+      "code": "ESP",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 44141660,
+      "internet_pct": 93.20565
+    },
+    {
+      "country": "Sri Lanka",
+      "code": "LKA",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 7931332,
+      "internet_pct": 36.184734
+    },
+    {
+      "country": "Sweden",
+      "code": "SWE",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 9788085,
+      "internet_pct": 94.53943
+    },
+    {
+      "country": "Switzerland",
+      "code": "CHE",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 8150110,
+      "internet_pct": 94.35
+    },
+    {
+      "country": "Tajikistan",
+      "code": "TJK",
+      "region": "Asia",
+      "adoption_band": "25-below-50%",
+      "internet_users": 2685360,
+      "internet_pct": 27.5441
+    },
+    {
+      "country": "Tanzania",
+      "code": "TZA",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 11878354,
+      "internet_pct": 19.4814
+    },
+    {
+      "country": "Thailand",
+      "code": "THA",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 55768412,
+      "internet_pct": 77.84374
+    },
+    {
+      "country": "Togo",
+      "code": "TGO",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 2260382,
+      "internet_pct": 29.0237
+    },
+    {
+      "country": "Tonga",
+      "code": "TON",
+      "region": "Oceania",
+      "adoption_band": "50-below-75%",
+      "internet_users": 57581,
+      "internet_pct": 54.4737
+    },
+    {
+      "country": "Trinidad and Tobago",
+      "code": "TTO",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 1056223,
+      "internet_pct": 77.2813
+    },
+    {
+      "country": "Tunisia",
+      "code": "TUN",
+      "region": "Africa",
+      "adoption_band": "50-below-75%",
+      "internet_users": 8208982,
+      "internet_pct": 68.5564
+    },
+    {
+      "country": "Turkey",
+      "code": "TUR",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 64764516,
+      "internet_pct": 77.66956
+    },
+    {
+      "country": "Uganda",
+      "code": "UGA",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 3289829,
+      "internet_pct": 7.4
+    },
+    {
+      "country": "Ukraine",
+      "code": "UKR",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 33526948,
+      "internet_pct": 75.03791
+    },
+    {
+      "country": "United Arab Emirates",
+      "code": "ARE",
+      "region": "Asia",
+      "adoption_band": "75-100%",
+      "internet_users": 9401038,
+      "internet_pct": 100.0
+    },
+    {
+      "country": "United Kingdom",
+      "code": "GBR",
+      "region": "Europe",
+      "adoption_band": "75-100%",
+      "internet_users": 63281664,
+      "internet_pct": 94.8182
+    },
+    {
+      "country": "United States",
+      "code": "USA",
+      "region": "North America",
+      "adoption_band": "75-100%",
+      "internet_users": 299563260,
+      "internet_pct": 90.3447
+    },
+    {
+      "country": "Uruguay",
+      "code": "URY",
+      "region": "South America",
+      "adoption_band": "75-100%",
+      "internet_users": 2905132,
+      "internet_pct": 85.471
+    },
+    {
+      "country": "Uzbekistan",
+      "code": "UZB",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 23879910,
+      "internet_pct": 71.1
+    },
+    {
+      "country": "Venezuela",
+      "code": "VEN",
+      "region": "South America",
+      "adoption_band": "50-below-75%",
+      "internet_users": 20605202,
+      "internet_pct": 72.4411
+    },
+    {
+      "country": "Vietnam",
+      "code": "VNM",
+      "region": "Asia",
+      "adoption_band": "50-below-75%",
+      "internet_users": 68949670,
+      "internet_pct": 70.3
+    },
+    {
+      "country": "Zambia",
+      "code": "ZMB",
+      "region": "Africa",
+      "adoption_band": "0-below-25%",
+      "internet_users": 2791401,
+      "internet_pct": 14.6458
+    },
+    {
+      "country": "Zimbabwe",
+      "code": "ZWE",
+      "region": "Africa",
+      "adoption_band": "25-below-50%",
+      "internet_users": 4549156,
+      "internet_pct": 29.298565
+    }
+  ]
+}

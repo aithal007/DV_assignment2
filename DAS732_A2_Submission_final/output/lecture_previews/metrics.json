@@ -1,0 +1,251 @@
+{
+  "network": {
+    "countries": 179,
+    "edges": 797,
+    "density": 0.05002824681438704,
+    "groups": 6,
+    "internal_edges": 699,
+    "external_edges": 98,
+    "isolates": 12,
+    "weighted_modularity": 0.6751195238882632,
+    "sensitivity": [
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "greedy",
+        "seed": null,
+        "groups": 8,
+        "modularity": 0.5213529448940023,
+        "group1_best_jaccard": 0.6153846153846154,
+        "group2_best_jaccard": 0.3707865168539326
+      },
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "louvain",
+        "seed": 0,
+        "groups": 10,
+        "modularity": 0.6007213770037162,
+        "group1_best_jaccard": 0.5217391304347826,
+        "group2_best_jaccard": 0.9024390243902439
+      },
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "louvain",
+        "seed": 1,
+        "groups": 10,
+        "modularity": 0.5903623649651992,
+        "group1_best_jaccard": 0.37037037037037035,
+        "group2_best_jaccard": 0.625
+      },
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "louvain",
+        "seed": 2,
+        "groups": 9,
+        "modularity": 0.595098736552544,
+        "group1_best_jaccard": 0.7142857142857143,
+        "group2_best_jaccard": 0.7551020408163265
+      },
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "louvain",
+        "seed": 3,
+        "groups": 10,
+        "modularity": 0.5942412587249712,
+        "group1_best_jaccard": 0.5217391304347826,
+        "group2_best_jaccard": 0.8809523809523809
+      },
+      {
+        "quantile": 0.9,
+        "threshold": 0.5004543006970953,
+        "method": "louvain",
+        "seed": 4,
+        "groups": 10,
+        "modularity": 0.5958871687945115,
+        "group1_best_jaccard": 0.5217391304347826,
+        "group2_best_jaccard": 0.8780487804878049
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "greedy",
+        "seed": null,
+        "groups": 18,
+        "modularity": 0.6751195238882632,
+        "group1_best_jaccard": 1.0,
+        "group2_best_jaccard": 1.0
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "louvain",
+        "seed": 0,
+        "groups": 19,
+        "modularity": 0.7013634674856621,
+        "group1_best_jaccard": 0.5,
+        "group2_best_jaccard": 0.9736842105263158
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "louvain",
+        "seed": 1,
+        "groups": 19,
+        "modularity": 0.6969834886754487,
+        "group1_best_jaccard": 0.5,
+        "group2_best_jaccard": 0.9736842105263158
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "louvain",
+        "seed": 2,
+        "groups": 19,
+        "modularity": 0.6977398952145489,
+        "group1_best_jaccard": 0.4791666666666667,
+        "group2_best_jaccard": 0.9736842105263158
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "louvain",
+        "seed": 3,
+        "groups": 19,
+        "modularity": 0.7013634674856621,
+        "group1_best_jaccard": 0.5,
+        "group2_best_jaccard": 0.9736842105263158
+      },
+      {
+        "quantile": 0.95,
+        "threshold": 0.5697629885414606,
+        "method": "louvain",
+        "seed": 4,
+        "groups": 19,
+        "modularity": 0.7021764808843515,
+        "group1_best_jaccard": 0.5,
+        "group2_best_jaccard": 0.9736842105263158
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "greedy",
+        "seed": null,
+        "groups": 34,
+        "modularity": 0.7386016647245277,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.3157894736842105
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "louvain",
+        "seed": 0,
+        "groups": 35,
+        "modularity": 0.764895909049128,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.4473684210526316
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "louvain",
+        "seed": 1,
+        "groups": 35,
+        "modularity": 0.7653907097692707,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.46153846153846156
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "louvain",
+        "seed": 2,
+        "groups": 35,
+        "modularity": 0.764895909049128,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.4473684210526316
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "louvain",
+        "seed": 3,
+        "groups": 35,
+        "modularity": 0.7615098707693463,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.4473684210526316
+      },
+      {
+        "quantile": 0.975,
+        "threshold": 0.6315655218217237,
+        "method": "louvain",
+        "seed": 4,
+        "groups": 35,
+        "modularity": 0.7615098707693463,
+        "group1_best_jaccard": 0.41304347826086957,
+        "group2_best_jaccard": 0.4473684210526316
+      }
+    ]
+  },
+  "adoption": {
+    "countries": 159,
+    "years": [
+      2000,
+      2010,
+      2020
+    ],
+    "band_counts": [
+      [
+        140,
+        17,
+        2,
+        0
+      ],
+      [
+        70,
+        42,
+        29,
+        18
+      ],
+      [
+        19,
+        22,
+        49,
+        69
+      ]
+    ],
+    "moving_up_2000_2020": 140,
+    "same_band_2000_2020": 19
+  },
+  "weather": {
+    "days": 92,
+    "cells": 13416,
+    "set_area_day_pct": [
+      18.063989352957062,
+      76.65286101612901,
+      11.654561309017323
+    ],
+    "intersections_area_day_pct": [
+      18.912095550848683,
+      1.616947265653065,
+      54.1124317154315,
+      13.703964159049445,
+      2.6455300071256573,
+      0.17256616024359447,
+      6.265953373637109,
+      2.5705117680109617
+    ],
+    "hot_dry_area_day_pct": 16.274475927060408,
+    "hot_dry_windy_area_day_pct": 2.5705117680109617,
+    "wind_rose_common_radial_max_pct": 14.0,
+    "modal_from_direction_degrees": [
+      225,
+      180,
+      180
+    ]
+  }
+}

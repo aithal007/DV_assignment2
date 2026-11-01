@@ -1,0 +1,59 @@
+{
+  "countries": 179,
+  "all_pairs": 15931,
+  "baseline_edges": 797,
+  "connected_cutoff": 0.23930612340000418,
+  "connected_edges": 11526,
+  "mst_edges": 178,
+  "metric_sensitivity": [
+    {
+      "method": "Z-score (baseline)",
+      "edges": 797,
+      "jaccard": 1.0,
+      "isolates": 12,
+      "india_neighbors": "CMR,GMB,HND,HTI,LSO,NGA,NIC,STP,SWZ,TGO,TLS,ZWE"
+    },
+    {
+      "method": "Median / IQR",
+      "edges": 797,
+      "jaccard": 0.8011299435028248,
+      "isolates": 11,
+      "india_neighbors": "CMR,HND,HTI,LSO,NGA,NIC,RWA,STP,TGO,ZWE"
+    },
+    {
+      "method": "Rank percentiles",
+      "edges": 797,
+      "jaccard": 0.4597069597069597,
+      "isolates": 3,
+      "india_neighbors": "AGO,BEN,CMR,COM,HND,HTI,LSO,NIC,PAK,SLB,SOM,STP,SWZ,TGO,TJK,TZA,ZWE"
+    },
+    {
+      "method": "Omit internet use",
+      "edges": 797,
+      "jaccard": 0.43216531895777177,
+      "isolates": 14,
+      "india_neighbors": "BEN,BTN,CMR,COM,HND,HTI,LSO,NGA,NIC,PAK,RWA,SLB,SLE,STP,TGO,TZA,ZMB,ZWE"
+    },
+    {
+      "method": "Omit landlines",
+      "edges": 797,
+      "jaccard": 0.49111318989710007,
+      "isolates": 8,
+      "india_neighbors": "CMR,HND,HTI,LSO,NGA,NIC,STP,ZWE"
+    },
+    {
+      "method": "Omit broadband",
+      "edges": 797,
+      "jaccard": 0.5123339658444023,
+      "isolates": 10,
+      "india_neighbors": "CMR,HND,HTI,IRQ,LSO,NGA,NIC,STP,TGO,ZWE"
+    },
+    {
+      "method": "Omit mobile",
+      "edges": 797,
+      "jaccard": 0.33837111670864817,
+      "isolates": 13,
+      "india_neighbors": "AGO,BGD,CIV,CMR,FSM,GMB,HND,HTI,KIR,LSO,MMR,NIC,NPL,SEN,STP,SWZ"
+    }
+  ]
+}

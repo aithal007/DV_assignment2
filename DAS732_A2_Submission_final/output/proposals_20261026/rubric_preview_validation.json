@@ -1,0 +1,82 @@
+{
+  "status": "PASS",
+  "matched_countries": 175,
+  "balanced_countries": 159,
+  "cohort_sizes": [
+    53,
+    53,
+    53
+  ],
+  "no_tied_values_split": true,
+  "no_imputation": true,
+  "sensitivity": [
+    {
+      "groups": 3,
+      "initial_gap": 16.23596746,
+      "final_gap": 53.811806000000004
+    },
+    {
+      "groups": 4,
+      "initial_gap": 23.48785079,
+      "final_gap": 61.71521750000001
+    },
+    {
+      "groups": 5,
+      "initial_gap": 29.316046105,
+      "final_gap": 66.99831
+    }
+  ],
+  "association_metrics": [
+    {
+      "measure": "Fixed broadband",
+      "levels": 0.8313808953096329,
+      "gains": 0.05386699507389163
+    },
+    {
+      "measure": "Landlines",
+      "levels": 0.7875329083817336,
+      "gains": 0.29081056874160327
+    },
+    {
+      "measure": "Mobile",
+      "levels": 0.5312083134843608,
+      "gains": 0.06959247648902821
+    }
+  ],
+  "cohort_metrics": [
+    {
+      "cohort": "Lowest third in 2000",
+      "countries": 53,
+      "median_2000": 0.19450054,
+      "median_2020": 36.1091,
+      "median_paired_gain": 35.785138329999995,
+      "q25_2020": 21.9985,
+      "q75_2020": 62.5176,
+      "initial_min": 0.015263767,
+      "initial_max": 0.7161838
+    },
+    {
+      "cohort": "Middle third in 2000",
+      "countries": 53,
+      "median_2000": 2.203873,
+      "median_2020": 69.8901,
+      "median_paired_gain": 66.76423999999999,
+      "q25_2020": 54.601368,
+      "q75_2020": 76.5077,
+      "initial_min": 0.7476307,
+      "initial_max": 5.800253
+    },
+    {
+      "cohort": "Highest third in 2000",
+      "countries": 53,
+      "median_2000": 16.430468,
+      "median_2020": 89.920906,
+      "median_paired_gain": 68.977008,
+      "q25_2020": 84.7064,
+      "q75_2020": 92.4437,
+      "initial_min": 5.86281,
+      "initial_max": 52.0
+    }
+  ],
+  "report_unchanged": true
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "revision": "all-pair similarity threshold, 2026-10-29",
+  "slides": 14,
+  "script_words": 772,
+  "raw_seconds": 390,
+  "export_speed": 1.35,
+  "report_pages": 26,
+  "network_pairs": 15931,
+  "default_edges": 797,
+  "isolates": 12,
+  "changed_slides": [
+    2,
+    3,
+    7
+  ],
+  "embedded_gifs_preserved": 3,
+  "powerpoint_render": "All 14 slides exported; changed slides and recap visually inspected",
+  "browser_controls": "All layouts, default threshold, threshold zero complete graph, higher threshold and reset passed"
+}

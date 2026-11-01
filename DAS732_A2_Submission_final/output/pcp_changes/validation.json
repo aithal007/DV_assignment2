@@ -1,0 +1,26 @@
+{
+  "countries": 175,
+  "selected": 39,
+  "selection": "20 <= adoption change <= 30 percentage points",
+  "examples": {
+    "GEO": {
+      "internet_users_share_pct": 24.961820000000003,
+      "broadband_subs_per100": 8.747390999999997,
+      "telephone_lines_per100": -14.845773,
+      "mobile_subs_per100": -12.030490000000015
+    },
+    "UZB": {
+      "internet_users_share_pct": 28.299999999999997,
+      "broadband_subs_per100": 9.9929804,
+      "telephone_lines_per100": 7.1390660000000015,
+      "mobile_subs_per100": 28.564880000000002
+    },
+    "BRN": {
+      "internet_users_share_pct": 25.105499999999992,
+      "broadband_subs_per100": 7.7332730000000005,
+      "telephone_lines_per100": 5.218596999999999,
+      "mobile_subs_per100": 10.182380000000009
+    }
+  },
+  "protected_hashes": {}
+}

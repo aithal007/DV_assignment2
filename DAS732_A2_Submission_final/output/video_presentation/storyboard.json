@@ -1,0 +1,371 @@
+{
+  "title": "What the summary leaves out",
+  "slides": [
+    {
+      "number": 1,
+      "id": "opening",
+      "title": "What does the summary leave out?",
+      "speaker": "Parikshith",
+      "start": 0,
+      "end": 10,
+      "duration": 10,
+      "chapter": "Internet",
+      "layout": "S03",
+      "theme": "dark",
+      "images": [],
+      "headline": "What does the summary leave out?",
+      "takeaway": "Look inside groups. Follow the measurements. Check time.",
+      "say": "What do averages and snapshots leave out? We examine Internet first, then Weather, following the evidence to a conclusion.",
+      "screen": "Look inside groups. Follow the measurements. Check time.",
+      "actions": "State the main question. Explain that Internet finishes before Weather starts. Do not list every method.",
+      "figures": [],
+      "source": "Current report: question and conclusions",
+      "transition": "Look inside groups. Follow the measurements. Check time."
+    },
+    {
+      "number": 2,
+      "id": "nodetrix-read",
+      "title": "Similarity needs a visible threshold",
+      "speaker": "Parikshith",
+      "start": 10,
+      "end": 35,
+      "duration": 25,
+      "chapter": "Internet",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "network_threshold_video.png"
+      ],
+      "headline": "15,931 possible pairs; 797 retained",
+      "takeaway": "A visible threshold makes the filtered network interpretable.",
+      "say": "Madam confirmed that similarity networks are suitable. We now score all fifteen thousand nine hundred and thirty-one country pairs. This histogram shows their similarities. Our declared ninety-fifth-percentile threshold keeps seven hundred and ninety-seven links. Twelve countries have no pair above it, but remain in the data. The browser can show every pair or change the threshold.",
+      "screen": "Read one cell before judging the whole group.",
+      "actions": "Point to the histogram and cutoff. State that the top five percent is a transparent starting view, not an optimal or significant threshold. Keep the retained-edge count and isolated-node count visible.",
+      "figures": [
+        1,
+        3
+      ],
+      "source": "Updated report Figure 1; data/network_threshold_audit.json; all-pair scores.",
+      "transition": "Read one cell before judging the whole group."
+    },
+    {
+      "number": 3,
+      "id": "nodetrix-finding",
+      "title": "Groups still contain unequal relationships",
+      "speaker": "Parikshith",
+      "start": 35,
+      "end": 65,
+      "duration": 30,
+      "chapter": "Internet",
+      "layout": "S22",
+      "theme": "dark",
+      "images": [
+        "network_matrix_video.png"
+      ],
+      "headline": "93 of 105 pairs retained in group 5",
+      "takeaway": "White means below the threshold; a shared group label still hides differences.",
+      "say": "NodeTrix now uses the filtered graph. Group five retains ninety-three of its one hundred and five possible pairs. This excerpt shows five of its fifteen countries. Afghanistan has fourteen links within the full group, while Angola has seven. Teal means above our similarity threshold; white means below it. A shared group label still hides different relationships. These links describe profiles, not physical cables.",
+      "screen": "Shared membership does not mean identical relationships.",
+      "actions": "Read the five-country excerpt. Compare Afghanistan and Angola; state that 14 and 7 are degrees in the full 15-country group, not only in this excerpt. Explain the Angola-Burundi white cell. Do not count excerpt cells as the full 93 edges.",
+      "figures": [
+        3
+      ],
+      "source": "Updated report Figure 3; output/network_revision/nodetrix_detail_matrix.csv and facts.json.",
+      "transition": "Shared membership does not mean identical relationships."
+    },
+    {
+      "number": 4,
+      "id": "pcp-read",
+      "title": "Does high internet use mean high fixed broadband?",
+      "speaker": "Varshith",
+      "start": 65,
+      "end": 95,
+      "duration": 30,
+      "chapter": "Internet",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "profiles_plot.png"
+      ],
+      "headline": "Does high internet use mean high fixed broadband?",
+      "takeaway": "Follow one country across all four axes.",
+      "say": "Does high internet use always come with high fixed broadband? One line follows the same country across four measurements. Each axis has its own scale. Read where the line crosses an axis, not the bend between axes. Faint lines keep the other countries visible. I select at least seventy percent internet use and at most five fixed-broadband subscriptions per hundred people.",
+      "screen": "Follow one country across all four axes.",
+      "actions": "Show the four axes, then point at the two brush ranges. On the live browser page, apply Inspect high adoption / low broadband. Focus on one selected line; do not demonstrate unrelated controls yet.",
+      "figures": [
+        4,
+        5
+      ],
+      "source": "Report Fig. 4, 5",
+      "transition": "Follow one country across all four axes."
+    },
+    {
+      "number": 5,
+      "id": "pcp-finding",
+      "title": "Six countries break the simple expectation",
+      "speaker": "Varshith",
+      "start": 95,
+      "end": 130,
+      "duration": 35,
+      "chapter": "Internet",
+      "layout": "S22",
+      "theme": "dark",
+      "images": [
+        "profiles_plot.png"
+      ],
+      "headline": "Six countries break the simple expectation",
+      "takeaway": "High adoption can exist with little fixed broadband.",
+      "say": "Six of the one hundred and seventy-five matched countries meet both conditions. Their lines start high on internet use and cross low on fixed broadband. Cuba, Kuwait and South Africa are among them. I change the brush, then restore it, to demonstrate the selection. Fixed broadband alone therefore does not describe internet access. We cannot tell from this plot which connection each person uses.",
+      "screen": "High adoption can exist with little fixed broadband.",
+      "actions": "Record the real browser interaction from the slide link: apply the preset, move one brush slightly, then restore it. Keep six names and the 6-of-175 denominator visible. Return to the finding slide. Avoid a tour of every feature.",
+      "figures": [
+        5
+      ],
+      "source": "Report Fig. 5",
+      "transition": "High adoption can exist with little fixed broadband."
+    },
+    {
+      "number": 6,
+      "id": "ridge-finding",
+      "title": "Progress does not mean everyone caught up",
+      "speaker": "Sindhoor",
+      "start": 130,
+      "end": 170,
+      "duration": 40,
+      "chapter": "Internet",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "ridges_africa.png",
+        "ridges_europe.png"
+      ],
+      "headline": "Progress does not mean everyone caught up",
+      "takeaway": "Compare where the curves sit AND how widely they spread.",
+      "say": "Has progress closed the divide? These ridgelines follow the same countries at five dates. Moving right means higher internet use. Each curve shows the spread of countries; small ticks mark individual countries. Africa’s median rises from about zero to thirty-two percent, but its final curve remains wide. Europe moves right and reaches a much higher median. Progress is clear, yet differences remain within and between regions. Curve height is not a count of people.",
+      "screen": "Compare where the curves sit AND how widely they spread.",
+      "actions": "Read the 0–100 horizontal scale once. Trace Africa from 2000 to 2020; point at the wide final curve and the country ticks. Then compare Europe on the SAME scale. These are two labelled panels selected from report Fig. 16, not all regions.",
+      "figures": [
+        16
+      ],
+      "source": "Report Fig. 16",
+      "transition": "Compare where the curves sit AND how widely they spread."
+    },
+    {
+      "number": 7,
+      "id": "internet-answer",
+      "title": "Internet: three findings, one answer",
+      "speaker": "Sindhoor",
+      "start": 170,
+      "end": 195,
+      "duration": 25,
+      "chapter": "Internet",
+      "layout": "S03",
+      "theme": "dark",
+      "images": [],
+      "headline": "Internet: three findings, one answer",
+      "takeaway": "A single adoption number cannot describe the whole connection profile.",
+      "say": "The internet evidence gives a connected answer. The matrix reveals different relationships inside one group. The selected profiles show high internet use with little fixed broadband. The ridgelines show progress with remaining gaps. A single adoption number cannot describe these differences. We need the relationships, other measurements and the spread of countries before saying the divide has closed.",
+      "screen": "A single adoption number cannot describe the whole connection profile.",
+      "actions": "Use the three numbered evidence statements to recap the reasoning. Introduce no new figure. Pause before the Weather section.",
+      "figures": [
+        3,
+        5,
+        16
+      ],
+      "source": "Report Fig. 3, 5, 16",
+      "transition": "A single adoption number cannot describe the whole connection profile."
+    },
+    {
+      "number": 8,
+      "id": "weather-scales",
+      "title": "Weather: can the same colour mislead us?",
+      "speaker": "Parikshith",
+      "start": 195,
+      "end": 225,
+      "duration": 30,
+      "chapter": "Weather",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "scivis_global.gif",
+        "scivis_local.gif"
+      ],
+      "headline": "Weather: can the same colour mislead us?",
+      "takeaway": "Read the legend before comparing dates.",
+      "say": "We now move to ninety-two days of United States weather. These animations show the same temperature fields. The left legend stays fixed, so a colour keeps its temperature meaning across dates. The right legend resets each day. Local variation becomes clearer, but the same colour can mean a different temperature. Watch that changing legend. We use fixed scales to compare dates fairly.",
+      "screen": "Read the legend before comparing dates.",
+      "actions": "Stay in desktop PowerPoint Slide Show. Let both embedded GIFs complete at least two 6.4-second loops. Point to each colour bar; do not open another animation window.",
+      "figures": [
+        17,
+        18
+      ],
+      "source": "Report Fig. 17, 18",
+      "transition": "Read the legend before comparing dates."
+    },
+    {
+      "number": 9,
+      "id": "rainfall-finding",
+      "title": "A monthly total cannot tell us when rain fell",
+      "speaker": "Parikshith",
+      "start": 225,
+      "end": 260,
+      "duration": 35,
+      "chapter": "Weather",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "rain_september_total.png",
+        "rain_september_burst.png"
+      ],
+      "headline": "A monthly total cannot tell us when rain fell",
+      "takeaway": "The same month needs both a total and a timing view.",
+      "say": "The left map shows September rainfall totals. The right map asks when that rain fell: what share arrived in the wettest five consecutive days? Bright areas have strongly concentrated rain. Across seventy-seven point six percent of the eligible area, at least half the monthly rain fell within five days. A monthly total therefore hides whether rain arrived steadily or in short bursts. Daily observations recover that timing.",
+      "screen": "The same month needs both a total and a timing view.",
+      "actions": "Read the monthly-total map on the left, then the wettest-five-day share on the right. Point to the 0–100% legend. State that 77.6% is eligible area, not a percentage of all rain. Eligible cells have September rainfall of at least 10 mm.",
+      "figures": [
+        23
+      ],
+      "source": "Report Fig. 23",
+      "transition": "The same month needs both a total and a timing view."
+    },
+    {
+      "number": 10,
+      "id": "contour-read",
+      "title": "Contours let us follow temperature boundaries",
+      "speaker": "Sindhoor",
+      "start": 260,
+      "end": 285,
+      "duration": 25,
+      "chapter": "Weather",
+      "layout": "S22",
+      "theme": "dark",
+      "images": [
+        "scivis_contour.gif"
+      ],
+      "headline": "Contours let us follow temperature boundaries",
+      "takeaway": "A contour follows equal temperature, not a state border.",
+      "say": "Each contour line follows equal temperature, while filled bands show ranges. As dates advance, we can follow those boundaries. Smaller intervals expose more detail but create more lines to read. We choose an interval that keeps the regional pattern visible. More detail is useful only when it helps answer the question.",
+      "screen": "A contour follows equal temperature, not a state border.",
+      "actions": "Let the embedded contour GIF complete two loops. Point to one boundary and its value on the legend. Explain why changing the interval changes detail; keep the same temperature field as the reference.",
+      "figures": [
+        19
+      ],
+      "source": "Report Fig. 19",
+      "transition": "A contour follows equal temperature, not a state border."
+    },
+    {
+      "number": 11,
+      "id": "persistence-finding",
+      "title": "How often and how long are different questions",
+      "speaker": "Sindhoor",
+      "start": 285,
+      "end": 325,
+      "duration": 40,
+      "chapter": "Weather",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "persistence.png"
+      ],
+      "headline": "How often and how long are different questions",
+      "takeaway": "Frequent hot-and-dry days need not form one long spell.",
+      "say": "The left map counts how often a place was both hot and dry. The right records its longest uninterrupted run. Hot means at least thirty-five degrees; dry means less than one millimetre of daily rain. Many qualifying days can be separated by breaks, so frequency cannot tell us persistence. The longest local run in this ninety-two-day window is sixty-seven days. Reading both maps separates repeated events from sustained conditions.",
+      "screen": "Frequent hot-and-dry days need not form one long spell.",
+      "actions": "Read the left frequency legend and the right run-length legend separately. Point to the southwest pattern and compare the maps; do not equate their colours because the units differ. The 67-day maximum is somewhere in the grid and is bounded by the study window.",
+      "figures": [
+        30
+      ],
+      "source": "Report Fig. 30",
+      "transition": "Frequent hot-and-dry days need not form one long spell."
+    },
+    {
+      "number": 12,
+      "id": "quiver-read",
+      "title": "Arrow length changes the pattern we notice",
+      "speaker": "Varshith",
+      "start": 325,
+      "end": 360,
+      "duration": 35,
+      "chapter": "Weather",
+      "layout": "S22",
+      "theme": "light",
+      "images": [
+        "wind_short.png",
+        "wind_equal.png",
+        "wind_scale.png"
+      ],
+      "headline": "Arrow length changes the pattern we notice",
+      "takeaway": "Use length for speed; use equal lengths to inspect direction.",
+      "say": "Both maps use the same wind field and sampled locations. On the left, arrow length grows with speed, so slow winds can be hard to follow. Equal lengths on the right make directions clearer; colour still shows speed. Arrows point where air moves, after converting the source wind-from direction. The measurements stay the same. We choose the view according to whether we need speed differences or direction patterns.",
+      "screen": "Use length for speed; use equal lengths to inspect direction.",
+      "actions": "Compare the same western-US area in the two panels. Both retain every fourth sampled grid cell from the source experiment. Point first to short arrows and then to matching equal-length arrows. Use the retained common speed colour key.",
+      "figures": [
+        26
+      ],
+      "source": "Report Fig. 26",
+      "transition": "Use length for speed; use equal lengths to inspect direction."
+    },
+    {
+      "number": 13,
+      "id": "final-answer",
+      "title": "What do averages and snapshots leave out?",
+      "speaker": "Varshith",
+      "start": 360,
+      "end": 384,
+      "duration": 24,
+      "chapter": "Weather",
+      "layout": "S03",
+      "theme": "dark",
+      "images": [],
+      "headline": "What do averages and snapshots leave out?",
+      "takeaway": "Show the pattern, explain the evidence, state what follows.",
+      "say": "Our answer is that summaries leave out differences and time. For Internet, the group label and adoption number miss different country profiles and uneven progress. For Weather, monthly totals and event counts miss bursts and long uninterrupted spells. The strongest explanation therefore pairs the summary with the detail needed for the question, and draws its conclusion from that visible evidence.",
+      "screen": "Show the pattern, explain the evidence, state what follows.",
+      "actions": "Connect each conclusion to the named evidence already shown. Introduce no new numbers or chart. Advance to credits after the final sentence.",
+      "figures": [
+        3,
+        5,
+        16,
+        23,
+        30
+      ],
+      "source": "Report Fig. 3, 5, 16, 23, 30",
+      "transition": "Show the pattern, explain the evidence, state what follows."
+    },
+    {
+      "number": 14,
+      "id": "credits",
+      "title": "Team Plot Twist",
+      "speaker": "Silent closing card",
+      "start": 384,
+      "end": 390,
+      "duration": 6,
+      "chapter": "Weather",
+      "layout": "S03",
+      "theme": "dark",
+      "images": [],
+      "headline": "Team Plot Twist",
+      "takeaway": "Internet complete. Weather complete.",
+      "say": "",
+      "screen": "Internet complete. Weather complete.",
+      "actions": "Hold for six seconds. End recording.",
+      "figures": [],
+      "source": "Current report: question and conclusions",
+      "transition": "Internet complete. Weather complete."
+    }
+  ],
+  "raw_seconds": 390,
+  "export_speed": 1.35,
+  "final_seconds": 288.88888888888886,
+  "words": 772,
+  "animation_slides": [
+    8,
+    10
+  ],
+  "design_skills": {
+    "ppt-master": "https://github.com/hugohe3/ppt-master",
+    "guizang-ppt-skill": "https://github.com/op7418/guizang-ppt-skill"
+  },
+  "sources": "Current report; six primary analysis figure families, plus original scale and contour GIFs.",
+  "network_revision": "2026-10-29: all-pair scores, P95 cutoff, updated NodeTrix; raw timings unchanged."
+}

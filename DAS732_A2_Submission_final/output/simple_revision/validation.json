@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "matched_countries": 175,
+  "country_change_count": 126,
+  "matrix_cells_checked": 225,
+  "matrix_internal_edges": 93,
+  "selected_country_profiles": 6,
+  "pairwise_correlations_checked": 2,
+  "regional_variance_countries": 158,
+  "weather_frequencies_checked_from_daily_grids": 4
+}

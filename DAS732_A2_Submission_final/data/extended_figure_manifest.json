@@ -59,7 +59,7 @@
     "figure": 25,
     "name": "network_adjacency_matrix",
     "title": "Region-ordered adjacency matrix",
-    "caption": "The matrix contains the same 179 nodes and 590 undirected similarity edges as the three required layouts. Each edge appears twice by symmetry; the diagonal is empty. Ordering by supplied region and then country alphabetically reveals 249 within-region edges (42.2% of edges) without discovering new communities. Exact row/column order is supplied in data/network_matrix_order.csv. A matrix permits edge verification but does not replace the required interactive node-link layouts; no synchronized interaction is claimed.",
+    "caption": "The matrix contains the same 179 nodes and 797 undirected thresholded similarity edges as the three required layouts. Each edge appears twice by symmetry; the diagonal is empty. Ordering by supplied region and then country alphabetically reveals 326 within-region edges (40.9% of edges) without discovering new communities. Exact row/column order is supplied in data/network_matrix_order.csv. A matrix permits edge verification but does not replace the required interactive node-link layouts; no synchronized interaction is claimed.",
     "path": "images/extensions/network_adjacency_matrix.png"
   },
   {

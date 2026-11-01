@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "original_figures_retained": 30,
+  "total_figures": 32,
+  "country_pairs_checked": 454,
+  "retained_pairs": 71,
+  "calendar_cell_days_checked": 184,
+  "equal_event_counts": 75,
+  "longest_runs": [
+    17,
+    67
+  ]
+}

@@ -10,14 +10,7 @@
     "share-of-individuals-using-the-internet.csv": 6476,
     "ict-adoption-per-100-people.csv": 13387
   },
-  "steps": [
-    "Rename source indicator columns; outer-join on entity/code/year with one-to-one key checks.",
-    "Remove explicitly listed aggregate entities; preserve missing values without imputation. Unmapped regions become Unclassified in downstream builders.",
-    "Use task-specific complete cases, a matched 2015/2020 intersection, and a balanced 2000-2020 adoption panel. Graph builder z-scores four indicators, computes all unique pair similarities, and applies a documented global quantile threshold.",
-    "Decode NetCDF masks/packing before converting source tmmx Kelvin to Celsius; derived caches already contain Celsius and are never converted twice.",
-    "Read every sixth grid cell (subsampling, not averaging); verify common coordinates/dates. Keep eight samples separately from the full 92-day series.",
-    "Build the all-variable/all-date valid mask and cosine-latitude weights; precipitation stays in mm, speed in m/s, direction in degrees FROM north."
-  ],
+  "steps": [],
   "join_counts": {
     "merged_rows": 13387,
     "aggregate_rows_removed": 823,

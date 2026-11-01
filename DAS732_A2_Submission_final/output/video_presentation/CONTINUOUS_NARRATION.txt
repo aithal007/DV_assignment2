@@ -1,0 +1,38 @@
+Parikshith / slide 1
+What do averages and snapshots leave out? We examine Internet first, then Weather, following the evidence to a conclusion.
+
+Parikshith / slide 2
+Madam confirmed that similarity networks are suitable. We now score all fifteen thousand nine hundred and thirty-one country pairs. This histogram shows their similarities. Our declared ninety-fifth-percentile threshold keeps seven hundred and ninety-seven links. Twelve countries have no pair above it, but remain in the data. The browser can show every pair or change the threshold.
+
+Parikshith / slide 3
+NodeTrix now uses the filtered graph. Group five retains ninety-three of its one hundred and five possible pairs. This excerpt shows five of its fifteen countries. Afghanistan has fourteen links within the full group, while Angola has seven. Teal means above our similarity threshold; white means below it. A shared group label still hides different relationships. These links describe profiles, not physical cables.
+
+Varshith / slide 4
+Does high internet use always come with high fixed broadband? One line follows the same country across four measurements. Each axis has its own scale. Read where the line crosses an axis, not the bend between axes. Faint lines keep the other countries visible. I select at least seventy percent internet use and at most five fixed-broadband subscriptions per hundred people.
+
+Varshith / slide 5
+Six of the one hundred and seventy-five matched countries meet both conditions. Their lines start high on internet use and cross low on fixed broadband. Cuba, Kuwait and South Africa are among them. I change the brush, then restore it, to demonstrate the selection. Fixed broadband alone therefore does not describe internet access. We cannot tell from this plot which connection each person uses.
+
+Sindhoor / slide 6
+Has progress closed the divide? These ridgelines follow the same countries at five dates. Moving right means higher internet use. Each curve shows the spread of countries; small ticks mark individual countries. Africa’s median rises from about zero to thirty-two percent, but its final curve remains wide. Europe moves right and reaches a much higher median. Progress is clear, yet differences remain within and between regions. Curve height is not a count of people.
+
+Sindhoor / slide 7
+The internet evidence gives a connected answer. The matrix reveals different relationships inside one group. The selected profiles show high internet use with little fixed broadband. The ridgelines show progress with remaining gaps. A single adoption number cannot describe these differences. We need the relationships, other measurements and the spread of countries before saying the divide has closed.
+
+Parikshith / slide 8
+We now move to ninety-two days of United States weather. These animations show the same temperature fields. The left legend stays fixed, so a colour keeps its temperature meaning across dates. The right legend resets each day. Local variation becomes clearer, but the same colour can mean a different temperature. Watch that changing legend. We use fixed scales to compare dates fairly.
+
+Parikshith / slide 9
+The left map shows September rainfall totals. The right map asks when that rain fell: what share arrived in the wettest five consecutive days? Bright areas have strongly concentrated rain. Across seventy-seven point six percent of the eligible area, at least half the monthly rain fell within five days. A monthly total therefore hides whether rain arrived steadily or in short bursts. Daily observations recover that timing.
+
+Sindhoor / slide 10
+Each contour line follows equal temperature, while filled bands show ranges. As dates advance, we can follow those boundaries. Smaller intervals expose more detail but create more lines to read. We choose an interval that keeps the regional pattern visible. More detail is useful only when it helps answer the question.
+
+Sindhoor / slide 11
+The left map counts how often a place was both hot and dry. The right records its longest uninterrupted run. Hot means at least thirty-five degrees; dry means less than one millimetre of daily rain. Many qualifying days can be separated by breaks, so frequency cannot tell us persistence. The longest local run in this ninety-two-day window is sixty-seven days. Reading both maps separates repeated events from sustained conditions.
+
+Varshith / slide 12
+Both maps use the same wind field and sampled locations. On the left, arrow length grows with speed, so slow winds can be hard to follow. Equal lengths on the right make directions clearer; colour still shows speed. Arrows point where air moves, after converting the source wind-from direction. The measurements stay the same. We choose the view according to whether we need speed differences or direction patterns.
+
+Varshith / slide 13
+Our answer is that summaries leave out differences and time. For Internet, the group label and adoption number miss different country profiles and uneven progress. For Weather, monthly totals and event counts miss bursts and long uninterrupted spells. The strongest explanation therefore pairs the summary with the detail needed for the question, and draws its conclusion from that visible evidence.
