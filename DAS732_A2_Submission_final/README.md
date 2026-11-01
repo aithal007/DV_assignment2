@@ -24,7 +24,7 @@ Windows users can double-click `START_VISUALIZATIONS.cmd`. Open `http://127.0.0.
 |---|---|---|
 | Network | `web/network.html` | Spring/Spectral/Circular layouts, country search, threshold filter, region/isolate filters, pan/zoom |
 | Bundled profiles | `web/index.html` | Parallel coordinates bundling, vertical brushing, axis-title reorder, year/region, country details |
-| Paired changes | `output/pcp_changes/index.html` | Brush, reorder axes, bundling and exact changes |
+| Paired changes | `web/pcp_changes.html` | Brush, reorder axes, bundling and exact changes |
 | Treemap | `web/treemap.html` | Zoom/back, two hierarchies, squarified/slice-and-dice partition |
 | All figures | `figures.html` | 31 full-resolution figures with detailed interpretations |
 | Full UI evidence | `interactions.html` | Complete browser screenshots with controls |
