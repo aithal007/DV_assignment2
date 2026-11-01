@@ -57,11 +57,33 @@ python scripts/sindhoor_horizon_contours.py
 python scripts/varshith_treemap_quiver.py
 ```
 
-To regenerate all figures:
+To regenerate individual member figures (writes to `output/member_figures/`):
 
 ```powershell
-python scripts/run_all_figures.py
+python scripts/parikshith_network_pcp.py
+python scripts/sindhoor_horizon_contours.py
+python scripts/varshith_treemap_quiver.py
 ```
+
+> **Reproducibility note (M6/M7):** `scripts/run_all_figures.py` orchestrates the above
+> member scripts. Several final-asset generators require intermediate modules
+> (`network_threshold_revision`, weather overlap CSVs) that were used during development
+> but are not included in this submission package. Consequently, the runner may abort
+> on missing imports for the network/community figures (Figs 1, 3) and some weather
+> figures (Fig 27). The canonical `images/report/Fig*.png` files are the assessed
+> submission artifacts; their SHA-256 hashes and sizes are recorded in
+> `submission_manifest.json`. Figures that cannot be regenerated from included source
+> are explicitly listed below:
+>
+> | Figure(s) | Regenerable from included source? |
+> |-----------|----------------------------------|
+> | Figs 2, 4–8, 9–13, 14–17, 18 (panels A–D), 19–26, 28–31 | Yes, via member scripts |
+> | Figs 1, 3 (network layout/community): final five-panel + NodeTrix | Partial — base network recomputed; final layout/community compositor absent |
+> | Fig 18 panels E–F (departure + Turbo comparison) | Not regenerable — generator excluded from package |
+> | Fig 27 (wind rose, 5-speed-class version) | Not regenerable — five-bin generator absent; four-bin builder present |
+>
+> The supplied PNG assets are intact and hash-verified. Run `python scripts/verify_all.py`
+> to confirm figure presence and network integrity.
 
 To recompile the LaTeX report, run from `report_latex/`:
 

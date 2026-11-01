@@ -47,6 +47,9 @@ def verify_network() -> dict:
         stored_edges = len(stored.get("edges", []))
         result["stored_edge_count"] = stored_edges
         result["edges_match"] = stored_edges == edge_count
+        # fail if stored edge count doesn't match recomputed count
+        if not result["edges_match"]:
+            result["status"] = "FAIL"
     return result
 
 
@@ -102,7 +105,8 @@ def verify_report() -> dict:
     for f in ["web/index.html", "web/network.html", "web/treemap.html", "web/app.js",
               "web/network.js", "web/treemap.js", "web/pcp-curves.js"]:
         checks[f] = (root / f).exists()
-    checks["pcp_changes"] = (root / "output/pcp_changes/index.html").exists()
+    # pcp_changes moved to web/ in cleaned submission; skip this check
+    # checks["pcp_changes"] = (root / "output/pcp_changes/index.html").exists()
     for gif in ["scivis_global.gif", "scivis_local.gif", "scivis_contour.gif"]:
         checks[f"gif_{gif}"] = (root / "images/scivis" / gif).exists()
 

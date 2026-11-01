@@ -123,9 +123,9 @@ We establish how links are constructed, compare country histories and inspect re
 
 \paragraph{Interpretation.} The distribution defines the complete 15,931-pair universe. $P_{95}=0.569763$ retains 797 edges and all 179 countries, including 12 isolates. This is the team's sparse default; P90/P92.5/P97.5 retain 1,594/1,195/399 pairs and 5/9/22 isolates. The boxed bottom rows deliberately place degree-zero countries.
 
-All layouts preserve India's twelve links. The Spectral horseshoe and Spring linear core show that the four indicators project mostly along one broad developmental direction in these layout projections. Spring separates the connected core with relatively short edges; Spectral compresses some neighborhoods and can overlap nodes; Circular preserves a uniform node order but creates 98,598 edge crossings, contrasting with 3,042 in Spring and 3,371 in Spectral. Region color and degree size expose composition and connectivity.
+All layouts preserve India's twelve links. The Spectral horseshoe and Spring linear core are properties of the graph-layout algorithms, not projections of the measured variables onto a feature-space axis---layout position does not encode indicator similarity directly. Spring separates the connected core with relatively short edges; Spectral compresses some neighborhoods and can overlap nodes; Circular preserves a uniform node order but creates 98,598 edge crossings, contrasting with 3,042 in Spring and 3,371 in Spectral. Region color and degree size expose composition and connectivity.
 
-Metric and feature sensitivity analysis confirms that while perturbation with Gaussian noise (SD 0.02) yields high edge stability (mean Jaccard 0.922, range 0.905-0.941), omitting one indicator yields Jaccard overlaps of only 0.338 to 0.512: omitting mobile subscriptions gives Jaccard 0.338; fixed broadband 0.412; fixed landlines 0.485; and internet adoption 0.512. Alternative scaling yields overlaps of 0.801 (median/IQR) and 0.460 (ranks). Thus, P95 identifies a specific multi-indicator similarity cohort rather than an immutable country grouping.
+Metric and feature sensitivity analysis confirms that while perturbation with Gaussian noise (SD 0.02) yields high edge stability (mean Jaccard 0.922, range 0.905-0.941), omitting one indicator yields Jaccard overlaps of 0.338 to 0.512: omitting mobile subscriptions gives Jaccard 0.338; fixed broadband 0.412; fixed landlines 0.485; and internet adoption 0.512 (\emph{protocol}: for each omission the 179-country z-score and P95 threshold are recalculated on the remaining three indicators; Jaccard then compares the resulting edge set to the full-four-indicator 797-edge baseline). Alternative scaling yields overlaps of 0.801 (median/IQR) and 0.460 (ranks). Thus, P95 identifies a specific multi-indicator similarity cohort rather than an immutable country grouping.
 
 
 
@@ -441,7 +441,7 @@ A floor effect operates in broadband gains: numerous developing countries experi
 
 
 
-\paragraph{Visual encoding.} Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region's share of the included total.
+\paragraph{Visual encoding.} Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region's share of the included total on panels wide enough to display text (small panels such as Oceania and Unclassified may omit numeric annotations due to width constraints).
 
 
 
@@ -537,7 +537,7 @@ Fixed country identities distinguish progress from catch-up; distributions and t
 
 \paragraph{Interpretation.} All fixed cohorts progress, but the lowest-start group ends at a median 36.1\% adoption and the highest at 89.9\%. Their absolute median gap expanded from 16.2 percentage points in 2000 to a peak of 62.7 points in 2011, before narrowing to 53.8 points in 2020. Fixed 2000 membership establishes that this trajectory is not an artifact of shifting cohort boundaries; overlapping endpoint dots retain individual exceptions.
 
-This non-monotonic trajectory is consistent with S-curve diffusion dynamics: early adoption accelerated rapidly in high-resource nations before encountering saturation ceilings (approaching 90\%), while lower-starting nations entered their steep growth phase after 2011. The chart establishes broad progress without absolute median catch-up over this interval; it does not establish that every definition of inequality worsens.
+This non-monotonic trajectory is \emph{consistent with} an S-curve diffusion hypothesis: earlier-adopting nations may have approached saturation (the high-start 2020 median is 89.9\%, though individual values span 64.8--100\%, so a firm ceiling is not demonstrated), while lower-starting nations appear to have entered a steeper growth phase after 2011. No diffusion model or resource measure is fitted here; the mechanism is a descriptive interpretation, not a tested causal claim. The chart establishes broad progress without absolute median catch-up over this interval; it does not establish that every definition of inequality worsens.
 
 
 
@@ -823,7 +823,7 @@ Controlled experiments hold measured weather fields fixed while varying palette,
 
 
 
-\paragraph{Interpretation.} Panels A, B, and F display absolute daily maximum temperature on August 22: continuous viridis, 5-degree discrete cividis steps with an authentic stepped colorbar, and the unsegmented turbo baseline \cite{ref15}. Panels C and D compare linear and logarithmic rainfall with zero rain masked in white. Sequential palettes suit ordered physical magnitudes \cite{ref7}; the turbo baseline demonstrates the perceptual banding and ordering hazards documented by Borland and Taylor \cite{ref15}.
+\paragraph{Interpretation.} Panels A, B, and F display absolute daily maximum temperature on August 22: continuous viridis, 5-degree discrete cividis steps with an authentic stepped colorbar, and the unsegmented turbo baseline \cite{ref15}. Panels C and D compare linear and logarithmic rainfall with zero rain masked in white and missing data in gray. Positive rain below 0.1\,mm/day (the log colorbar lower bound) is rendered in pale yellow and is distinct from zero; the colorbar under-range hatch marks this class. Sequential palettes suit ordered physical magnitudes \cite{ref7}; the turbo baseline demonstrates the perceptual banding and ordering hazards documented by Borland and Taylor \cite{ref15}.
 
 Panel E deliberately changes the quantity to each cell's daily Tmax minus its own July-September mean. Zero separates warmer and cooler departures, justifying symmetric diverging RdBu\_r. Keeping the quantity and normalization explicit prevents reading palette-induced contrast as additional physical structure; turbo hues have no extra measurement meaning.
 
@@ -981,7 +981,7 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 
 
-\paragraph{Visual encoding.} A: complete-month difference; B: September 30 minus July 1, with the same zero-centered limits. C: orange marks opposite signs. D: area-weighted cumulative distributions of monthly changes by longitude sector.
+\paragraph{Visual encoding.} A: complete-month difference; B: September 30 minus July 1, with the same zero-centered limits. C: orange marks opposite signs. D: area-weighted cumulative distributions of monthly changes by longitude sector (West~$<-105^\circ$, Central~$-105^\circ$ to~$<-90^\circ$, East~$\geq-90^\circ$; signed east-positive).
 
 
 
@@ -989,7 +989,7 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 
 
-\paragraph{Interpretation.} A/B use the same symmetric color limits for complete-month and endpoint changes. Monthly September-minus-July means cool over 99.66\% of weighted area, with mean change -4.64 C. C directly marks the 18.26\% where September 30 minus July 1 has the opposite sign. D shows how monthly cooling varies across longitude sectors.
+\paragraph{Interpretation.} A/B use the same symmetric color limits for complete-month and endpoint changes. Monthly September-minus-July means cool over 99.66\% of weighted area, with mean change -4.64 C. C directly marks the 18.26\% where September 30 minus July 1 has the opposite sign. D shows how monthly cooling varies across longitude sectors (West~$<-105^\circ$, Central~$-105^\circ$ to~$<-90^\circ$, East~$\geq-90^\circ$; signed east-positive).
 
 Thus the endpoint discrepancy is visible rather than only stated. Two selected weather states can misrepresent the direction of complete-month change at a location. Comparing matched footprints and a zero-centered diverging scale separates this sampling effect from a color-scale change; the cumulative curves prevent one area mean from concealing spatial variation.
 
@@ -1085,7 +1085,7 @@ The denominator is each month's number of days, so 31 versus 30 days does not me
 
 \noindent\textit{Analytical recommendation.} Use persistence views to distinguish scattered hot days from continuous spells.
 
-\subsection{Fig. 25: Hovmoller diagrams: daily departures and rain across longitude}
+\subsection{Fig. 25: Hovmoller diagrams: daily departures and rain across longitude (period-mean baseline, 92 days)}
 
 \begin{figure*}[!tb]\centering
 
@@ -1095,7 +1095,7 @@ The denominator is each month's number of days, so 31 versus 30 days does not me
 
 \end{figure*}
 
-\noindent\textit{How to read the graph.} A locates 30-45 N. B/C place date horizontally and longitude vertically; colors show period-mean Tmax departures and rain. D reports land-cell support.
+\noindent\textit{How to read the graph.} A locates 30--45\,N. B/C place date horizontally and longitude vertically; colors show period-mean Tmax departures and rain. D reports land-cell support. \emph{Longitude convention across all weather figures}: signed east-positive; western-US values are negative ($\approx{-125}$ to $-70$).
 
 \paragraph{Question.} When and where do warm and rainy periods occur?
 
@@ -1363,7 +1363,7 @@ The final panel repeats frequencies at 33, 35 and 37 C with rain cutoffs of 0.1 
 
 \paragraph{Interpretation.} Both selected cells have 75 qualifying days out of 92 (81.5\%), yet the orange sequences form longest runs of 17 and 67 days. The interrupted first row and long continuous block in the second supply the visual mechanism behind that difference. A count discards the ordering that determines persistence.
 
-Selection searches the common 13,416-cell footprint for the largest run-length contrast among equal positive day counts, with a declared tie rule. These are deliberately diagnostic examples, not typical cells. The maximum 67-day run is included. Fixed coordinates and the complete daily series avoid changing locations or omitting non-event days between panels. Boundary-touching spells may extend beyond the study window. This is the temporal detail needed to interpret the preceding frequency and run-length maps.
+Selection searches the common 13,416-cell footprint for the largest run-length contrast (longest run minus shortest run) among cells sharing the same positive event-day count. Among all 75-day cells the maximum contrast is 50 days (runs of 67 and 17 days). Ties in contrast are broken by earliest grid position (latitude descending, then longitude ascending), making the selection deterministic. These are deliberately diagnostic examples, not typical cells. The maximum 67-day run is included. Fixed coordinates and the complete daily series avoid changing locations or omitting non-event days between panels. Boundary-touching spells may extend beyond the study window. This is the temporal detail needed to interpret the preceding frequency and run-length maps.
 
 
 
@@ -1400,9 +1400,9 @@ The README supplies setup and staged reproduction commands. Source country extra
 \section*{Author Contributions and Task Allocation}
 Task responsibilities are assigned below. Each student implemented at least one SciVis and one InfoVis task with no shared figure ownership.
 \par\smallskip\noindent{\footnotesize\begin{tabularx}{\columnwidth}{@{}p{0.27\columnwidth}Y@{}}\toprule\textbf{Member} & \textbf{Responsibility}\\\midrule
-Parikshith Aithal K V (BT2024249) & \textbf{InfoVis:} Network (3 layouts, interaction) and parallel coordinates (bundling, brushing, reordering); \textbf{SciVis:} scalar color mapping, global/local scales, rainfall concentration. Figs 1--7, 18--19, 22--23 \\
+Parikshith Aithal K V (BT2024249) & \textbf{InfoVis:} Network node-link (3 layouts, interaction, Figs 1--3) and parallel coordinates (bundling, brushing, reordering, Figs 4--7); \textbf{SciVis:} scalar color mapping, global/local scales, rainfall concentration (Figs 18--19, 22--23). Fig.~13 (regional endpoints and country gains) is Parikshith's canonical figure; same-named intermediate outputs in member scripts are development artifacts. \\
 Sindhoor Ganapathi Hegde (BT2024014) & \textbf{InfoVis:} Horizon and ridgeline plot variations (two variants each); \textbf{SciVis:} custom Marching Squares contour tracing, filled-band contours, contour GIF; weather persistence and event timing. Figs 14--17, 20--21, 24--25, 30--31 \\
-Varshith M Gowda (BT2024227) & \textbf{InfoVis:} Treemap zoom/hierarchy experiments; association and catch-up comparisons across measures, regions and cohorts; \textbf{SciVis:} quiver grid-sampling and arrow-length encoding with wind roses and multivariable context. Figs 8--13, 26--29 \\\bottomrule\end{tabularx}}\par\smallskip
+Varshith M Gowda (BT2024227) & \textbf{InfoVis:} Zoomable treemap---sole owner---region-first and adoption-band-first hierarchy remodels, zoom/back, squarified vs.\ slice-and-dice spatial partitioning (Figs 9--10); association and catch-up comparisons across measures, regions and cohorts (Figs 8, 11--13); \textbf{SciVis:} quiver grid-sampling and arrow-length encoding with wind roses and multivariable context. Figs 8--13, 26--29 \\\bottomrule\end{tabularx}}\par\smallskip
 
 \section{Conclusion}
 

@@ -147,7 +147,8 @@ def _build_median_shift(master: pd.DataFrame, region_map: dict) -> None:
             med_g = np.median(region_gains)
             ax_r.plot([q25, q75], [i, i], lw=5, color="#3a86d8", alpha=0.4)
             ax_r.scatter([med_g], [i], color="w", s=40, zorder=5, edgecolors="#3a86d8")
-            ax_r.scatter(region_gains, [i + np.random.uniform(-0.2, 0.2) for _ in region_gains],
+            rng_jitter = np.random.default_rng(732)  # fixed seed — deterministic jitter
+            ax_r.scatter(region_gains, [i + rng_jitter.uniform(-0.2, 0.2) for _ in region_gains],
                          color="#3a86d8", alpha=0.3, s=10)
             ax_r.axvline(med20[region] - med15[region], ymin=(i-0.4)/len(regions),
                          ymax=(i+0.4)/len(regions), color="k", lw=1.5, ls="--")
