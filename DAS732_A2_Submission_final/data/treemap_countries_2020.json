@@ -1,0 +1,1295 @@
+{
+  "year": 2020,
+  "countries": [
+    {
+      "code": "AFG",
+      "country": "Afghanistan",
+      "region": "Asia",
+      "internet_users": 6660675,
+      "internet_pct": 17.0485
+    },
+    {
+      "code": "ALB",
+      "country": "Albania",
+      "region": "Europe",
+      "internet_users": 1826515,
+      "internet_pct": 72.23768
+    },
+    {
+      "code": "DZA",
+      "country": "Algeria",
+      "region": "Africa",
+      "internet_users": 27954704,
+      "internet_pct": 63.4727
+    },
+    {
+      "code": "AND",
+      "country": "Andorra",
+      "region": "Europe",
+      "internet_users": 72123,
+      "internet_pct": 93.2057
+    },
+    {
+      "code": "AGO",
+      "country": "Angola",
+      "region": "Africa",
+      "internet_users": 11146219,
+      "internet_pct": 33.3209
+    },
+    {
+      "code": "ATG",
+      "country": "Antigua and Barbuda",
+      "region": "North America",
+      "internet_users": 65549,
+      "internet_pct": 71.3684
+    },
+    {
+      "code": "ARG",
+      "country": "Argentina",
+      "region": "South America",
+      "internet_users": 38645630,
+      "internet_pct": 85.51439
+    },
+    {
+      "code": "ARM",
+      "country": "Armenia",
+      "region": "Asia",
+      "internet_users": 2265776,
+      "internet_pct": 76.5077
+    },
+    {
+      "code": "AUS",
+      "country": "Australia",
+      "region": "Oceania",
+      "internet_users": 24288170,
+      "internet_pct": 94.6935
+    },
+    {
+      "code": "AUT",
+      "country": "Austria",
+      "region": "Europe",
+      "internet_users": 7804880,
+      "internet_pct": 87.52943
+    },
+    {
+      "code": "AZE",
+      "country": "Azerbaijan",
+      "region": "Asia",
+      "internet_users": 8538780,
+      "internet_pct": 84.6
+    },
+    {
+      "code": "BHS",
+      "country": "Bahamas",
+      "region": "North America",
+      "internet_users": 365950,
+      "internet_pct": 92.4437
+    },
+    {
+      "code": "BHR",
+      "country": "Bahrain",
+      "region": "Asia",
+      "internet_users": 1467361,
+      "internet_pct": 99.67103
+    },
+    {
+      "code": "BGD",
+      "country": "Bangladesh",
+      "region": "Asia",
+      "internet_users": 60048724,
+      "internet_pct": 36.1091
+    },
+    {
+      "code": "BRB",
+      "country": "Barbados",
+      "region": "North America",
+      "internet_users": 196879,
+      "internet_pct": 69.8901
+    },
+    {
+      "code": "BLR",
+      "country": "Belarus",
+      "region": "Europe",
+      "internet_users": 7981206,
+      "internet_pct": 85.08791
+    },
+    {
+      "code": "BEL",
+      "country": "Belgium",
+      "region": "Europe",
+      "internet_users": 10560870,
+      "internet_pct": 91.52641
+    },
+    {
+      "code": "BLZ",
+      "country": "Belize",
+      "region": "North America",
+      "internet_users": 251823,
+      "internet_pct": 64.4359
+    },
+    {
+      "code": "BEN",
+      "country": "Benin",
+      "region": "Africa",
+      "internet_users": 2891200,
+      "internet_pct": 22.1206
+    },
+    {
+      "code": "BTN",
+      "country": "Bhutan",
+      "region": "Asia",
+      "internet_users": 591756,
+      "internet_pct": 76.8508
+    },
+    {
+      "code": "BOL",
+      "country": "Bolivia",
+      "region": "South America",
+      "internet_users": 7082702,
+      "internet_pct": 59.9401
+    },
+    {
+      "code": "BIH",
+      "country": "Bosnia and Herzegovina",
+      "region": "Europe",
+      "internet_users": 2415511,
+      "internet_pct": 73.211754
+    },
+    {
+      "code": "BWA",
+      "country": "Botswana",
+      "region": "Africa",
+      "internet_users": 1222651,
+      "internet_pct": 51.6782
+    },
+    {
+      "code": "BRA",
+      "country": "Brazil",
+      "region": "South America",
+      "internet_users": 169730350,
+      "internet_pct": 81.3427
+    },
+    {
+      "code": "BRN",
+      "country": "Brunei",
+      "region": "Asia",
+      "internet_users": 430875,
+      "internet_pct": 96.3055
+    },
+    {
+      "code": "BGR",
+      "country": "Bulgaria",
+      "region": "Europe",
+      "internet_users": 4596131,
+      "internet_pct": 70.16248
+    },
+    {
+      "code": "BFA",
+      "country": "Burkina Faso",
+      "region": "Africa",
+      "internet_users": 2786473,
+      "internet_pct": 12.9732
+    },
+    {
+      "code": "BDI",
+      "country": "Burundi",
+      "region": "Africa",
+      "internet_users": 811288,
+      "internet_pct": 6.4301
+    },
+    {
+      "code": "KHM",
+      "country": "Cambodia",
+      "region": "Asia",
+      "internet_users": 9429137,
+      "internet_pct": 56.3759
+    },
+    {
+      "code": "CMR",
+      "country": "Cameroon",
+      "region": "Africa",
+      "internet_users": 9880724,
+      "internet_pct": 37.6975
+    },
+    {
+      "code": "CAN",
+      "country": "Canada",
+      "region": "North America",
+      "internet_users": 35100436,
+      "internet_pct": 92.3
+    },
+    {
+      "code": "CPV",
+      "country": "Cape Verde",
+      "region": "Africa",
+      "internet_users": 357050,
+      "internet_pct": 69.3734
+    },
+    {
+      "code": "TCD",
+      "country": "Chad",
+      "region": "Africa",
+      "internet_users": 1437072,
+      "internet_pct": 8.3431
+    },
+    {
+      "code": "CHL",
+      "country": "Chile",
+      "region": "South America",
+      "internet_users": 16941412,
+      "internet_pct": 87.4593
+    },
+    {
+      "code": "CHN",
+      "country": "China",
+      "region": "Asia",
+      "internet_users": 988514400,
+      "internet_pct": 70.05276
+    },
+    {
+      "code": "COL",
+      "country": "Colombia",
+      "region": "South America",
+      "internet_users": 35337376,
+      "internet_pct": 69.795334
+    },
+    {
+      "code": "COM",
+      "country": "Comoros",
+      "region": "Africa",
+      "internet_users": 179848,
+      "internet_pct": 22.4204
+    },
+    {
+      "code": "COG",
+      "country": "Congo",
+      "region": "Africa",
+      "internet_users": 1265528,
+      "internet_pct": 21.9985
+    },
+    {
+      "code": "CRI",
+      "country": "Costa Rica",
+      "region": "North America",
+      "internet_users": 4054148,
+      "internet_pct": 80.53019
+    },
+    {
+      "code": "CIV",
+      "country": "Cote d'Ivoire",
+      "region": "Africa",
+      "internet_users": 10414362,
+      "internet_pct": 36.0166
+    },
+    {
+      "code": "HRV",
+      "country": "Croatia",
+      "region": "Europe",
+      "internet_users": 3065642,
+      "internet_pct": 78.3209
+    },
+    {
+      "code": "CUB",
+      "country": "Cuba",
+      "region": "North America",
+      "internet_users": 7948519,
+      "internet_pct": 71.11907
+    },
+    {
+      "code": "CYP",
+      "country": "Cyprus",
+      "region": "Europe",
+      "internet_users": 1182466,
+      "internet_pct": 90.80195
+    },
+    {
+      "code": "CZE",
+      "country": "Czechia",
+      "region": "Europe",
+      "internet_users": 8701520,
+      "internet_pct": 81.3389
+    },
+    {
+      "code": "COD",
+      "country": "Democratic Republic of Congo",
+      "region": "Africa",
+      "internet_users": 13928629,
+      "internet_pct": 14.5105
+    },
+    {
+      "code": "DNK",
+      "country": "Denmark",
+      "region": "Europe",
+      "internet_users": 5630171,
+      "internet_pct": 96.54915
+    },
+    {
+      "code": "DJI",
+      "country": "Djibouti",
+      "region": "Africa",
+      "internet_users": 662292,
+      "internet_pct": 59.9257
+    },
+    {
+      "code": "DMA",
+      "country": "Dominica",
+      "region": "North America",
+      "internet_users": 51124,
+      "internet_pct": 75.6567
+    },
+    {
+      "code": "DOM",
+      "country": "Dominican Republic",
+      "region": "North America",
+      "internet_users": 8984677,
+      "internet_pct": 81.6173
+    },
+    {
+      "code": "TLS",
+      "country": "East Timor",
+      "region": "Asia",
+      "internet_users": 424505,
+      "internet_pct": 32.0127
+    },
+    {
+      "code": "ECU",
+      "country": "Ecuador",
+      "region": "South America",
+      "internet_users": 12405067,
+      "internet_pct": 70.7
+    },
+    {
+      "code": "EGY",
+      "country": "Egypt",
+      "region": "Africa",
+      "internet_users": 78613096,
+      "internet_pct": 71.9142
+    },
+    {
+      "code": "SLV",
+      "country": "El Salvador",
+      "region": "North America",
+      "internet_users": 3404216,
+      "internet_pct": 54.601368
+    },
+    {
+      "code": "GNQ",
+      "country": "Equatorial Guinea",
+      "region": "Africa",
+      "internet_users": 944080,
+      "internet_pct": 55.0013
+    },
+    {
+      "code": "ERI",
+      "country": "Eritrea",
+      "region": "Unclassified",
+      "internet_users": 472278,
+      "internet_pct": 14.3494
+    },
+    {
+      "code": "EST",
+      "country": "Estonia",
+      "region": "Europe",
+      "internet_users": 1184050,
+      "internet_pct": 89.05829
+    },
+    {
+      "code": "SWZ",
+      "country": "Eswatini",
+      "region": "Africa",
+      "internet_users": 584592,
+      "internet_pct": 49.013
+    },
+    {
+      "code": "ETH",
+      "country": "Ethiopia",
+      "region": "Africa",
+      "internet_users": 19109592,
+      "internet_pct": 16.0696
+    },
+    {
+      "code": "FJI",
+      "country": "Fiji",
+      "region": "Oceania",
+      "internet_users": 627899,
+      "internet_pct": 68.6256
+    },
+    {
+      "code": "FIN",
+      "country": "Finland",
+      "region": "Europe",
+      "internet_users": 5096595,
+      "internet_pct": 92.17027
+    },
+    {
+      "code": "FRA",
+      "country": "France",
+      "region": "Europe",
+      "internet_users": 57262464,
+      "internet_pct": 84.7064
+    },
+    {
+      "code": "GAB",
+      "country": "Gabon",
+      "region": "Africa",
+      "internet_users": 1484518,
+      "internet_pct": 63.9179
+    },
+    {
+      "code": "GMB",
+      "country": "Gambia",
+      "region": "Africa",
+      "internet_users": 905941,
+      "internet_pct": 36.011
+    },
+    {
+      "code": "GEO",
+      "country": "Georgia",
+      "region": "Asia",
+      "internet_users": 2700145,
+      "internet_pct": 72.53158
+    },
+    {
+      "code": "DEU",
+      "country": "Germany",
+      "region": "Europe",
+      "internet_users": 74689224,
+      "internet_pct": 89.81294
+    },
+    {
+      "code": "GHA",
+      "country": "Ghana",
+      "region": "Africa",
+      "internet_users": 19935494,
+      "internet_pct": 62.5176
+    },
+    {
+      "code": "GRC",
+      "country": "Greece",
+      "region": "Europe",
+      "internet_users": 8357301,
+      "internet_pct": 78.115845
+    },
+    {
+      "code": "GRD",
+      "country": "Grenada",
+      "region": "North America",
+      "internet_users": 76382,
+      "internet_pct": 65.6538
+    },
+    {
+      "code": "GTM",
+      "country": "Guatemala",
+      "region": "North America",
+      "internet_users": 8246864,
+      "internet_pct": 47.5123
+    },
+    {
+      "code": "GIN",
+      "country": "Guinea",
+      "region": "Africa",
+      "internet_users": 3495963,
+      "internet_pct": 26.1455
+    },
+    {
+      "code": "GNB",
+      "country": "Guinea-Bissau",
+      "region": "Africa",
+      "internet_users": 411858,
+      "internet_pct": 20.4573
+    },
+    {
+      "code": "GUY",
+      "country": "Guyana",
+      "region": "South America",
+      "internet_users": 508342,
+      "internet_pct": 62.954
+    },
+    {
+      "code": "HTI",
+      "country": "Haiti",
+      "region": "North America",
+      "internet_users": 4428738,
+      "internet_pct": 39.3881
+    },
+    {
+      "code": "HND",
+      "country": "Honduras",
+      "region": "North America",
+      "internet_users": 4578965,
+      "internet_pct": 45.2483
+    },
+    {
+      "code": "HKG",
+      "country": "Hong Kong",
+      "region": "Asia",
+      "internet_users": 6913427,
+      "internet_pct": 92.41314
+    },
+    {
+      "code": "HUN",
+      "country": "Hungary",
+      "region": "Europe",
+      "internet_users": 8197726,
+      "internet_pct": 84.77115
+    },
+    {
+      "code": "ISL",
+      "country": "Iceland",
+      "region": "Europe",
+      "internet_users": 364751,
+      "internet_pct": 99.53275
+    },
+    {
+      "code": "IND",
+      "country": "India",
+      "region": "Asia",
+      "internet_users": 608812400,
+      "internet_pct": 43.40544
+    },
+    {
+      "code": "IDN",
+      "country": "Indonesia",
+      "region": "Asia",
+      "internet_users": 147648400,
+      "internet_pct": 53.726494
+    },
+    {
+      "code": "IRN",
+      "country": "Iran",
+      "region": "Asia",
+      "internet_users": 66292492,
+      "internet_pct": 75.56987
+    },
+    {
+      "code": "IRQ",
+      "country": "Iraq",
+      "region": "Asia",
+      "internet_users": 22607266,
+      "internet_pct": 53.6778
+    },
+    {
+      "code": "IRL",
+      "country": "Ireland",
+      "region": "Europe",
+      "internet_users": 4636562,
+      "internet_pct": 91.99989
+    },
+    {
+      "code": "ISR",
+      "country": "Israel",
+      "region": "Asia",
+      "internet_users": 8305325,
+      "internet_pct": 90.12734
+    },
+    {
+      "code": "ITA",
+      "country": "Italy",
+      "region": "Europe",
+      "internet_users": 41894540,
+      "internet_pct": 70.48343
+    },
+    {
+      "code": "JAM",
+      "country": "Jamaica",
+      "region": "North America",
+      "internet_users": 2162232,
+      "internet_pct": 76.384
+    },
+    {
+      "code": "JPN",
+      "country": "Japan",
+      "region": "Asia",
+      "internet_users": 113911990,
+      "internet_pct": 90.21946
+    },
+    {
+      "code": "JOR",
+      "country": "Jordan",
+      "region": "Asia",
+      "internet_users": 8520273,
+      "internet_pct": 78.4178
+    },
+    {
+      "code": "KAZ",
+      "country": "Kazakhstan",
+      "region": "Asia",
+      "internet_users": 16743437,
+      "internet_pct": 85.9426
+    },
+    {
+      "code": "KEN",
+      "country": "Kenya",
+      "region": "Africa",
+      "internet_users": 12909587,
+      "internet_pct": 24.7228
+    },
+    {
+      "code": "KIR",
+      "country": "Kiribati",
+      "region": "Oceania",
+      "internet_users": 66771,
+      "internet_pct": 52.9509
+    },
+    {
+      "code": "KWT",
+      "country": "Kuwait",
+      "region": "Asia",
+      "internet_users": 4360923,
+      "internet_pct": 99.10587
+    },
+    {
+      "code": "KGZ",
+      "country": "Kyrgyzstan",
+      "region": "Asia",
+      "internet_users": 4843150,
+      "internet_pct": 72.0
+    },
+    {
+      "code": "LAO",
+      "country": "Laos",
+      "region": "Asia",
+      "internet_users": 3967128,
+      "internet_pct": 54.0
+    },
+    {
+      "code": "LVA",
+      "country": "Latvia",
+      "region": "Europe",
+      "internet_users": 1689460,
+      "internet_pct": 88.897964
+    },
+    {
+      "code": "LBN",
+      "country": "Lebanon",
+      "region": "Asia",
+      "internet_users": 4679758,
+      "internet_pct": 82.0665
+    },
+    {
+      "code": "LSO",
+      "country": "Lesotho",
+      "region": "Africa",
+      "internet_users": 976063,
+      "internet_pct": 43.6575
+    },
+    {
+      "code": "LBR",
+      "country": "Liberia",
+      "region": "Africa",
+      "internet_users": 1179778,
+      "internet_pct": 22.9107
+    },
+    {
+      "code": "LBY",
+      "country": "Libya",
+      "region": "Africa",
+      "internet_users": 5238825,
+      "internet_pct": 74.3581
+    },
+    {
+      "code": "LIE",
+      "country": "Liechtenstein",
+      "region": "Europe",
+      "internet_users": 36703,
+      "internet_pct": 94.35
+    },
+    {
+      "code": "LTU",
+      "country": "Lithuania",
+      "region": "Europe",
+      "internet_users": 2334168,
+      "internet_pct": 83.05555
+    },
+    {
+      "code": "LUX",
+      "country": "Luxembourg",
+      "region": "Europe",
+      "internet_users": 620708,
+      "internet_pct": 98.459625
+    },
+    {
+      "code": "MAC",
+      "country": "Macao",
+      "region": "Asia",
+      "internet_users": 599467,
+      "internet_pct": 87.4623
+    },
+    {
+      "code": "MDG",
+      "country": "Madagascar",
+      "region": "Africa",
+      "internet_users": 3287589,
+      "internet_pct": 11.3547
+    },
+    {
+      "code": "MWI",
+      "country": "Malawi",
+      "region": "Africa",
+      "internet_users": 2715112,
+      "internet_pct": 13.8995
+    },
+    {
+      "code": "MYS",
+      "country": "Malaysia",
+      "region": "Asia",
+      "internet_users": 30349798,
+      "internet_pct": 89.555016
+    },
+    {
+      "code": "MDV",
+      "country": "Maldives",
+      "region": "Asia",
+      "internet_users": 397164,
+      "internet_pct": 79.0978
+    },
+    {
+      "code": "MLI",
+      "country": "Mali",
+      "region": "Africa",
+      "internet_users": 6321549,
+      "internet_pct": 29.113
+    },
+    {
+      "code": "MLT",
+      "country": "Malta",
+      "region": "Europe",
+      "internet_users": 447748,
+      "internet_pct": 86.858765
+    },
+    {
+      "code": "MHL",
+      "country": "Marshall Islands",
+      "region": "Oceania",
+      "internet_users": 24094,
+      "internet_pct": 56.4191
+    },
+    {
+      "code": "MRT",
+      "country": "Mauritania",
+      "region": "Africa",
+      "internet_users": 1375738,
+      "internet_pct": 29.9065
+    },
+    {
+      "code": "MUS",
+      "country": "Mauritius",
+      "region": "Africa",
+      "internet_users": 857508,
+      "internet_pct": 67.73291
+    },
+    {
+      "code": "MEX",
+      "country": "Mexico",
+      "region": "North America",
+      "internet_users": 90648860,
+      "internet_pct": 71.49017
+    },
+    {
+      "code": "FSM",
+      "country": "Micronesia (country)",
+      "region": "Oceania",
+      "internet_users": 43682,
+      "internet_pct": 39.3833
+    },
+    {
+      "code": "MDA",
+      "country": "Moldova",
+      "region": "Europe",
+      "internet_users": 1953114,
+      "internet_pct": 74.1183
+    },
+    {
+      "code": "MCO",
+      "country": "Monaco",
+      "region": "Europe",
+      "internet_users": 37506,
+      "internet_pct": 98.5708
+    },
+    {
+      "code": "MNG",
+      "country": "Mongolia",
+      "region": "Asia",
+      "internet_users": 2079503,
+      "internet_pct": 62.500027
+    },
+    {
+      "code": "MNE",
+      "country": "Montenegro",
+      "region": "Europe",
+      "internet_users": 486289,
+      "internet_pct": 77.608795
+    },
+    {
+      "code": "MAR",
+      "country": "Morocco",
+      "region": "Africa",
+      "internet_users": 30774768,
+      "internet_pct": 84.12036
+    },
+    {
+      "code": "MOZ",
+      "country": "Mozambique",
+      "region": "Africa",
+      "internet_users": 4398188,
+      "internet_pct": 14.2874
+    },
+    {
+      "code": "MMR",
+      "country": "Myanmar",
+      "region": "Unclassified",
+      "internet_users": 24094790,
+      "internet_pct": 45.4477
+    },
+    {
+      "code": "NAM",
+      "country": "Namibia",
+      "region": "Africa",
+      "internet_users": 1578884,
+      "internet_pct": 57.8608
+    },
+    {
+      "code": "NRU",
+      "country": "Nauru",
+      "region": "Oceania",
+      "internet_users": 9019,
+      "internet_pct": 77.4666
+    },
+    {
+      "code": "NPL",
+      "country": "Nepal",
+      "region": "Asia",
+      "internet_users": 10707581,
+      "internet_pct": 36.9653
+    },
+    {
+      "code": "NLD",
+      "country": "Netherlands",
+      "region": "Europe",
+      "internet_users": 15929904,
+      "internet_pct": 91.333336
+    },
+    {
+      "code": "NZL",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "internet_users": 4611876,
+      "internet_pct": 90.921
+    },
+    {
+      "code": "NIC",
+      "country": "Nicaragua",
+      "region": "North America",
+      "internet_users": 2946157,
+      "internet_pct": 44.8749
+    },
+    {
+      "code": "NER",
+      "country": "Niger",
+      "region": "Africa",
+      "internet_users": 2812150,
+      "internet_pct": 11.8568
+    },
+    {
+      "code": "NGA",
+      "country": "Nigeria",
+      "region": "Africa",
+      "internet_users": 68240820,
+      "internet_pct": 31.8888
+    },
+    {
+      "code": "MKD",
+      "country": "North Macedonia",
+      "region": "Europe",
+      "internet_users": 1510988,
+      "internet_pct": 81.40554
+    },
+    {
+      "code": "NOR",
+      "country": "Norway",
+      "region": "Europe",
+      "internet_users": 5089390,
+      "internet_pct": 94.60756
+    },
+    {
+      "code": "OMN",
+      "country": "Oman",
+      "region": "Asia",
+      "internet_users": 4306878,
+      "internet_pct": 95.23229
+    },
+    {
+      "code": "PAK",
+      "country": "Pakistan",
+      "region": "Asia",
+      "internet_users": 44497580,
+      "internet_pct": 18.935
+    },
+    {
+      "code": "PSE",
+      "country": "Palestine",
+      "region": "Unclassified",
+      "internet_users": 3659207,
+      "internet_pct": 76.1816
+    },
+    {
+      "code": "PAN",
+      "country": "Panama",
+      "region": "North America",
+      "internet_users": 2783076,
+      "internet_pct": 64.8243
+    },
+    {
+      "code": "PNG",
+      "country": "Papua New Guinea",
+      "region": "Oceania",
+      "internet_users": 1474364,
+      "internet_pct": 15.0204
+    },
+    {
+      "code": "PRY",
+      "country": "Paraguay",
+      "region": "South America",
+      "internet_users": 4883961,
+      "internet_pct": 73.95751
+    },
+    {
+      "code": "PER",
+      "country": "Peru",
+      "region": "South America",
+      "internet_users": 21427766,
+      "internet_pct": 65.2518
+    },
+    {
+      "code": "PHL",
+      "country": "Philippines",
+      "region": "Asia",
+      "internet_users": 60260376,
+      "internet_pct": 53.7649
+    },
+    {
+      "code": "POL",
+      "country": "Poland",
+      "region": "Europe",
+      "internet_users": 31207434,
+      "internet_pct": 83.18489
+    },
+    {
+      "code": "PRT",
+      "country": "Portugal",
+      "region": "Europe",
+      "internet_users": 8058666,
+      "internet_pct": 78.26166
+    },
+    {
+      "code": "QAT",
+      "country": "Qatar",
+      "region": "Asia",
+      "internet_users": 2784448,
+      "internet_pct": 99.65285
+    },
+    {
+      "code": "ROU",
+      "country": "Romania",
+      "region": "Europe",
+      "internet_users": 15114604,
+      "internet_pct": 78.45527
+    },
+    {
+      "code": "RUS",
+      "country": "Russia",
+      "region": "Europe",
+      "internet_users": 123450630,
+      "internet_pct": 84.99467
+    },
+    {
+      "code": "RWA",
+      "country": "Rwanda",
+      "region": "Africa",
+      "internet_users": 3109669,
+      "internet_pct": 23.8
+    },
+    {
+      "code": "KNA",
+      "country": "Saint Kitts and Nevis",
+      "region": "North America",
+      "internet_users": 32938,
+      "internet_pct": 70.2753
+    },
+    {
+      "code": "LCA",
+      "country": "Saint Lucia",
+      "region": "North America",
+      "internet_users": 110629,
+      "internet_pct": 62.064
+    },
+    {
+      "code": "VCT",
+      "country": "Saint Vincent and the Grenadines",
+      "region": "North America",
+      "internet_users": 65616,
+      "internet_pct": 63.381
+    },
+    {
+      "code": "SMR",
+      "country": "San Marino",
+      "region": "Europe",
+      "internet_users": 27103,
+      "internet_pct": 77.95
+    },
+    {
+      "code": "STP",
+      "country": "Sao Tome and Principe",
+      "region": "Africa",
+      "internet_users": 112098,
+      "internet_pct": 51.5547
+    },
+    {
+      "code": "SAU",
+      "country": "Saudi Arabia",
+      "region": "Asia",
+      "internet_users": 30878022,
+      "internet_pct": 97.862335
+    },
+    {
+      "code": "SEN",
+      "country": "Senegal",
+      "region": "Africa",
+      "internet_users": 8950131,
+      "internet_pct": 53.3088
+    },
+    {
+      "code": "SRB",
+      "country": "Serbia",
+      "region": "Europe",
+      "internet_users": 5406710,
+      "internet_pct": 78.36805
+    },
+    {
+      "code": "SYC",
+      "country": "Seychelles",
+      "region": "Africa",
+      "internet_users": 78033,
+      "internet_pct": 79.2517
+    },
+    {
+      "code": "SLE",
+      "country": "Sierra Leone",
+      "region": "Africa",
+      "internet_users": 1354693,
+      "internet_pct": 17.1208
+    },
+    {
+      "code": "SGP",
+      "country": "Singapore",
+      "region": "Asia",
+      "internet_users": 5231190,
+      "internet_pct": 92.00435
+    },
+    {
+      "code": "SVK",
+      "country": "Slovakia",
+      "region": "Europe",
+      "internet_users": 4908627,
+      "internet_pct": 89.920906
+    },
+    {
+      "code": "SVN",
+      "country": "Slovenia",
+      "region": "Europe",
+      "internet_users": 1820722,
+      "internet_pct": 86.6013
+    },
+    {
+      "code": "SLB",
+      "country": "Solomon Islands",
+      "region": "Oceania",
+      "internet_users": 180157,
+      "internet_pct": 24.1984
+    },
+    {
+      "code": "SOM",
+      "country": "Somalia",
+      "region": "Africa",
+      "internet_users": 2501625,
+      "internet_pct": 15.0237
+    },
+    {
+      "code": "ZAF",
+      "country": "South Africa",
+      "region": "Africa",
+      "internet_users": 43673228,
+      "internet_pct": 72.1128
+    },
+    {
+      "code": "KOR",
+      "country": "South Korea",
+      "region": "Asia",
+      "internet_users": 50024590,
+      "internet_pct": 96.50506
+    },
+    {
+      "code": "ESP",
+      "country": "Spain",
+      "region": "Europe",
+      "internet_users": 44141660,
+      "internet_pct": 93.20565
+    },
+    {
+      "code": "LKA",
+      "country": "Sri Lanka",
+      "region": "Asia",
+      "internet_users": 7931332,
+      "internet_pct": 36.184734
+    },
+    {
+      "code": "SWE",
+      "country": "Sweden",
+      "region": "Europe",
+      "internet_users": 9788085,
+      "internet_pct": 94.53943
+    },
+    {
+      "code": "CHE",
+      "country": "Switzerland",
+      "region": "Europe",
+      "internet_users": 8150110,
+      "internet_pct": 94.35
+    },
+    {
+      "code": "TJK",
+      "country": "Tajikistan",
+      "region": "Asia",
+      "internet_users": 2685360,
+      "internet_pct": 27.5441
+    },
+    {
+      "code": "TZA",
+      "country": "Tanzania",
+      "region": "Africa",
+      "internet_users": 11878354,
+      "internet_pct": 19.4814
+    },
+    {
+      "code": "THA",
+      "country": "Thailand",
+      "region": "Asia",
+      "internet_users": 55768412,
+      "internet_pct": 77.84374
+    },
+    {
+      "code": "TGO",
+      "country": "Togo",
+      "region": "Africa",
+      "internet_users": 2260382,
+      "internet_pct": 29.0237
+    },
+    {
+      "code": "TON",
+      "country": "Tonga",
+      "region": "Oceania",
+      "internet_users": 57581,
+      "internet_pct": 54.4737
+    },
+    {
+      "code": "TTO",
+      "country": "Trinidad and Tobago",
+      "region": "North America",
+      "internet_users": 1056223,
+      "internet_pct": 77.2813
+    },
+    {
+      "code": "TUN",
+      "country": "Tunisia",
+      "region": "Africa",
+      "internet_users": 8208982,
+      "internet_pct": 68.5564
+    },
+    {
+      "code": "TUR",
+      "country": "Turkey",
+      "region": "Asia",
+      "internet_users": 64764516,
+      "internet_pct": 77.66956
+    },
+    {
+      "code": "UGA",
+      "country": "Uganda",
+      "region": "Africa",
+      "internet_users": 3289829,
+      "internet_pct": 7.4
+    },
+    {
+      "code": "UKR",
+      "country": "Ukraine",
+      "region": "Europe",
+      "internet_users": 33526948,
+      "internet_pct": 75.03791
+    },
+    {
+      "code": "ARE",
+      "country": "United Arab Emirates",
+      "region": "Asia",
+      "internet_users": 9401038,
+      "internet_pct": 100.0
+    },
+    {
+      "code": "GBR",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "internet_users": 63281664,
+      "internet_pct": 94.8182
+    },
+    {
+      "code": "USA",
+      "country": "United States",
+      "region": "North America",
+      "internet_users": 299563260,
+      "internet_pct": 90.3447
+    },
+    {
+      "code": "URY",
+      "country": "Uruguay",
+      "region": "South America",
+      "internet_users": 2905132,
+      "internet_pct": 85.471
+    },
+    {
+      "code": "UZB",
+      "country": "Uzbekistan",
+      "region": "Asia",
+      "internet_users": 23879910,
+      "internet_pct": 71.1
+    },
+    {
+      "code": "VEN",
+      "country": "Venezuela",
+      "region": "South America",
+      "internet_users": 20605202,
+      "internet_pct": 72.4411
+    },
+    {
+      "code": "VNM",
+      "country": "Vietnam",
+      "region": "Asia",
+      "internet_users": 68949670,
+      "internet_pct": 70.3
+    },
+    {
+      "code": "ZMB",
+      "country": "Zambia",
+      "region": "Africa",
+      "internet_users": 2791401,
+      "internet_pct": 14.6458
+    },
+    {
+      "code": "ZWE",
+      "country": "Zimbabwe",
+      "region": "Africa",
+      "internet_users": 4549156,
+      "internet_pct": 29.298565
+    }
+  ],
+  "included_total": 4521767530,
+  "coverage": "countries with nonmissing internet user count and share; aggregate rows excluded"
+}

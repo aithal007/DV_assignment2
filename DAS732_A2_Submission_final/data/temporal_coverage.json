@@ -1,0 +1,11 @@
+{
+  "period": [
+    2000,
+    2020
+  ],
+  "countries": 159,
+  "rows": 3339,
+  "unclassified_countries": 1,
+  "excluded_rule": "countries missing internet share in any year 2000-2020",
+  "ridgeline_bandwidth_percentage_points": 6
+}

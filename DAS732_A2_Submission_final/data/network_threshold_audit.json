@@ -1,0 +1,198 @@
+{
+  "countries": 179,
+  "all_pairs": 15931,
+  "default_quantile": 0.95,
+  "threshold": 0.5697629885414606,
+  "retained_edges": 797,
+  "isolates": 12,
+  "components": 13,
+  "threshold_sweep": [
+    {
+      "quantile": 0.9,
+      "threshold": 0.5004543006970953,
+      "edges": 1594,
+      "isolates": 5,
+      "components": 6,
+      "largest_component": 174
+    },
+    {
+      "quantile": 0.925,
+      "threshold": 0.5286616971923966,
+      "edges": 1195,
+      "isolates": 9,
+      "components": 10,
+      "largest_component": 170
+    },
+    {
+      "quantile": 0.95,
+      "threshold": 0.5697629885414606,
+      "edges": 797,
+      "isolates": 12,
+      "components": 13,
+      "largest_component": 167
+    },
+    {
+      "quantile": 0.975,
+      "threshold": 0.6315655218217237,
+      "edges": 399,
+      "isolates": 22,
+      "components": 27,
+      "largest_component": 148
+    }
+  ],
+  "perturbations": [
+    {
+      "run": 0,
+      "edges": 801,
+      "jaccard": 0.9160671462829736
+    },
+    {
+      "run": 1,
+      "edges": 792,
+      "jaccard": 0.9307411907654921
+    },
+    {
+      "run": 2,
+      "edges": 800,
+      "jaccard": 0.9310761789600968
+    },
+    {
+      "run": 3,
+      "edges": 808,
+      "jaccard": 0.9407496977025392
+    },
+    {
+      "run": 4,
+      "edges": 791,
+      "jaccard": 0.9271844660194175
+    },
+    {
+      "run": 5,
+      "edges": 789,
+      "jaccard": 0.9270959902794653
+    },
+    {
+      "run": 6,
+      "edges": 800,
+      "jaccard": 0.9217809867629362
+    },
+    {
+      "run": 7,
+      "edges": 795,
+      "jaccard": 0.9250302297460702
+    },
+    {
+      "run": 8,
+      "edges": 795,
+      "jaccard": 0.9227053140096618
+    },
+    {
+      "run": 9,
+      "edges": 790,
+      "jaccard": 0.9051620648259304
+    },
+    {
+      "run": 10,
+      "edges": 802,
+      "jaccard": 0.9288299155609168
+    },
+    {
+      "run": 11,
+      "edges": 794,
+      "jaccard": 0.9122596153846154
+    },
+    {
+      "run": 12,
+      "edges": 797,
+      "jaccard": 0.9204819277108434
+    },
+    {
+      "run": 13,
+      "edges": 796,
+      "jaccard": 0.9192771084337349
+    },
+    {
+      "run": 14,
+      "edges": 790,
+      "jaccard": 0.9143546441495778
+    },
+    {
+      "run": 15,
+      "edges": 788,
+      "jaccard": 0.9188861985472155
+    },
+    {
+      "run": 16,
+      "edges": 801,
+      "jaccard": 0.9114832535885168
+    },
+    {
+      "run": 17,
+      "edges": 796,
+      "jaccard": 0.9239130434782609
+    },
+    {
+      "run": 18,
+      "edges": 795,
+      "jaccard": 0.9343863912515188
+    },
+    {
+      "run": 19,
+      "edges": 798,
+      "jaccard": 0.9286577992744861
+    },
+    {
+      "run": 20,
+      "edges": 794,
+      "jaccard": 0.9191797346200241
+    },
+    {
+      "run": 21,
+      "edges": 800,
+      "jaccard": 0.9102870813397129
+    },
+    {
+      "run": 22,
+      "edges": 795,
+      "jaccard": 0.9180722891566265
+    },
+    {
+      "run": 23,
+      "edges": 799,
+      "jaccard": 0.9159663865546218
+    },
+    {
+      "run": 24,
+      "edges": 796,
+      "jaccard": 0.9285714285714286
+    },
+    {
+      "run": 25,
+      "edges": 783,
+      "jaccard": 0.926829268292683
+    },
+    {
+      "run": 26,
+      "edges": 803,
+      "jaccard": 0.9253910950661853
+    },
+    {
+      "run": 27,
+      "edges": 806,
+      "jaccard": 0.9266826923076923
+    },
+    {
+      "run": 28,
+      "edges": 814,
+      "jaccard": 0.9247311827956989
+    },
+    {
+      "run": 29,
+      "edges": 803,
+      "jaccard": 0.9184652278177458
+    }
+  ],
+  "perturbation_sigma_z_units": 0.02,
+  "perturbation_seed": 732,
+  "threshold_rationale": "Retain the strongest 5% of all pair similarities as an explicitly chosen sparse starting view; compare nearby quantiles and small input perturbations. No claim of a unique optimal threshold or a named perturbation threshold method."
+}

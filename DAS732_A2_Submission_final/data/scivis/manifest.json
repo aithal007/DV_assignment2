@@ -1,0 +1,73 @@
+{
+  "status": "Team-supplied interval",
+  "start": "2023-07-01",
+  "end": "2023-09-30",
+  "sample_dates": [
+    "2023-07-01",
+    "2023-07-14",
+    "2023-07-27",
+    "2023-08-09",
+    "2023-08-22",
+    "2023-09-04",
+    "2023-09-17",
+    "2023-09-30"
+  ],
+  "native_resolution_degrees": 0.041666666666666664,
+  "spatial_stride": 6,
+  "data_cache": "data\\scivis\\gridmet_2023-07-01_2023-09-30_n8_s6.npz",
+  "temperature_global_limits_C": [
+    -1.850006103515625,
+    49.649993896484375
+  ],
+  "temperature_daily_limits_C": [
+    [
+      13.149993896484375,
+      48.050018310546875
+    ],
+    [
+      13.550018310546875,
+      49.649993896484375
+    ],
+    [
+      12.050018310546875,
+      48.75
+    ],
+    [
+      10.649993896484375,
+      46.550018310546875
+    ],
+    [
+      6.45001220703125,
+      42.149993896484375
+    ],
+    [
+      3.649993896484375,
+      42.850006103515625
+    ],
+    [
+      9.149993896484375,
+      41.850006103515625
+    ],
+    [
+      -1.850006103515625,
+      38.75
+    ]
+  ],
+  "longitude_extent": [
+    -125,
+    -66
+  ],
+  "latitude_extent": [
+    24,
+    50
+  ],
+  "wind_direction_convention": "from, clockwise from north",
+  "wind_vector_formula": "u=-speed*sin(theta); v=-speed*cos(theta)",
+  "cache_sha256": "4b05168a1360f3a0f6784259aca0424e235d26c30c44488c059b365e0151ef8c",
+  "cache_file_modified_utc": "2026-10-04T17:03:09.795083+00:00",
+  "figure_built_utc": "2026-10-22T14:46:42.879415+00:00",
+  "contour_algorithm": "ContourPy serial",
+  "contour_corner_mask": true,
+  "display_subsample_degrees": 0.25,
+  "global_scale_scope": "all valid cells in eight sampled fields, not all days in interval"
+}

@@ -1,0 +1,21 @@
+{
+  "before": {
+    "pages": 25,
+    "large_empty_horizontal_band_points": 1566,
+    "body_height_points": 17125,
+    "large_empty_band_fraction": 0.09144525547445255,
+    "largest_empty_band_points": 38
+  },
+  "after": {
+    "pages": 26,
+    "large_empty_horizontal_band_points": 1783,
+    "body_height_points": 17810,
+    "large_empty_band_fraction": 0.10011229646266143,
+    "largest_empty_band_points": 38
+  },
+  "figure_selection_changed": true,
+  "typography_and_image_size_limits_changed": true,
+  "method": "Raster scan of printable body; rows with less than 0.3% dark pixels form blank bands; only runs >=12 points counted. Includes internal image whitespace and title-page spacing; excludes trailing paper after the final content on the last page.",
+  "change": "Approved revision: gentle curve PCP, level-versus-gain comparison, fixed starting cohorts, simple-English interpretations, preserved NodeTrix and scatterplot matrix; no formal bibliography by user preference.",
+  "limitation": "Normal margins, intentional figure whitespace and necessary readability spacing remain. This is a layout diagnostic, not a claim of zero white space."
+}

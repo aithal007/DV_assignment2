@@ -1,0 +1,77 @@
+{
+  "coverage": {
+    "July": 31,
+    "August": 31,
+    "September": 30
+  },
+  "common_temperature_cells": 13416,
+  "sector_endpoint_change_C": {
+    "West: longitude < -105\u00b0": -11.920758296284927,
+    "Central: -105\u00b0 to < -90\u00b0": -0.15423003799314472,
+    "East: longitude >= -90\u00b0": -4.4810904432498475
+  },
+  "monthly_area_mean_tmax_C": [
+    31.1920240019251,
+    30.158257160190026,
+    26.55066734678427
+  ],
+  "monthly_area_mean_precip_mm": [
+    75.2610508356181,
+    75.81848375509901,
+    57.0750626229715
+  ],
+  "monthly_area_day_tmax_ge35_percent": [
+    22.774872742648757,
+    22.242504684674028,
+    8.878277340834789
+  ],
+  "monthly_dry_grid_day_percent": [
+    68.80301806220785,
+    68.32501394579414,
+    72.26669648181276
+  ],
+  "wind_rose_calm_area_day_percent": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "network_within_supplied_region_edges": 249,
+  "matched_region_medians": [
+    {
+      "region": "Africa",
+      "2015": 19.810000000000002,
+      "2020": 32.60485
+    },
+    {
+      "region": "Unclassified",
+      "2015": 10.9,
+      "2020": 45.4477
+    },
+    {
+      "region": "Oceania",
+      "2015": 35.0762,
+      "2020": 53.7123
+    },
+    {
+      "region": "North America",
+      "2015": 54.215767,
+      "2020": 70.2753
+    },
+    {
+      "region": "South America",
+      "2015": 55.904972,
+      "2020": 72.4411
+    },
+    {
+      "region": "Asia",
+      "2015": 50.3,
+      "2020": 76.8508
+    },
+    {
+      "region": "Europe",
+      "2015": 75.96002,
+      "2020": 86.858765
+    }
+  ],
+  "validation": "PASS: all 92 dates, physical ranges, fixed temperature footprint, 31/31/30 denominators, 1180 symmetric matrix entries, 175 matched countries, 21 Kenya years, 159 KDE observations and 12 unique added figure indices"
+}

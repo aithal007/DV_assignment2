@@ -1,0 +1,28 @@
+{
+  "endpoint_area_weighted_cooler_percent": 81.38244669684727,
+  "endpoint_area_weighted_mean_change_C": -5.5752159721314625,
+  "endpoint_min_change_C": -25.79998779296875,
+  "endpoint_max_change_C": 11.100006103515625,
+  "color_experiment_date": "2023-08-22",
+  "precip_dry_grid_percent": 68.74627310673822,
+  "precip_positive_below_0_1_grid_percent": 0.0,
+  "precip_above_display_limit_grid_percent": 1.0062611806797854,
+  "precip_display_max_mm": 32.28499984741211,
+  "grid_shape": [
+    8,
+    98,
+    231
+  ],
+  "valid_temperature_cells_per_date": [
+    13416,
+    13416,
+    13416,
+    13416,
+    13416,
+    13416,
+    13416,
+    13416
+  ],
+  "weighting": "cos(latitude) on endpoint common valid subsampled cells; approximate area weights; no population weighting",
+  "validation": "PASS: dates, dimensions, coordinates, physical ranges, cardinal wind conversions, min/max scales and eight GIF frames"
+}

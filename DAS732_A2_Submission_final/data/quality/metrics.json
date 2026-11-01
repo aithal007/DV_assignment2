@@ -1,0 +1,24 @@
+{
+  "country": {
+    "n": 175,
+    "positive_internet_negative_landline": 126,
+    "level_broadband_rho": 0.8313808953096328,
+    "level_mobile_rho": 0.5312083134843608,
+    "change_broadband_rho": 0.05386699507389162
+  },
+  "weather": {
+    "common_cells": 13416,
+    "max_hot_dry_date": "2023-07-27",
+    "min_hot_dry_date": "2023-09-30",
+    "max_hot_dry_area_pct": 34.5647250800047,
+    "min_hot_dry_area_pct": 1.7472279729207265,
+    "max_run_days": 67,
+    "mean_hot_dry_area_pct": 16.27447592706034,
+    "monthly_change_mean_C": -4.6413562801302595,
+    "monthly_cooler_area_pct": 99.6592932696708,
+    "endpoint_sign_disagreement_pct": 18.26297600882793,
+    "hov_rain_max_mm": 95.2023818248212,
+    "hov_rain_max_date": "2023-09-16",
+    "hov_rain_max_longitude": -67.26666663333334
+  }
+}

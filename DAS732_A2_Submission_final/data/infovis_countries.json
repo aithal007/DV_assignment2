@@ -1,0 +1,3732 @@
+[
+  {
+    "country": "Afghanistan",
+    "code": "AFG",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 8.26,
+    "telephone_lines_per100": 0.32513824,
+    "broadband_subs_per100": 0.020888655,
+    "mobile_subs_per100": 58.256016
+  },
+  {
+    "country": "Albania",
+    "code": "ALB",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 56.9,
+    "telephone_lines_per100": 7.821552,
+    "broadband_subs_per100": 8.37878,
+    "mobile_subs_per100": 117.32966
+  },
+  {
+    "country": "Algeria",
+    "code": "DZA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 38.2,
+    "telephone_lines_per100": 8.164993,
+    "broadband_subs_per100": 5.6706014,
+    "mobile_subs_per100": 108.01637
+  },
+  {
+    "country": "Andorra",
+    "code": "AND",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 87.9,
+    "telephone_lines_per100": 53.828247,
+    "broadband_subs_per100": 42.52778,
+    "mobile_subs_per100": 98.83892
+  },
+  {
+    "country": "Angola",
+    "code": "AGO",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 22.0,
+    "telephone_lines_per100": 1.0118866,
+    "broadband_subs_per100": 0.5453942,
+    "mobile_subs_per100": 49.309723
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "code": "ATG",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 70.0,
+    "telephone_lines_per100": 22.369112,
+    "broadband_subs_per100": 11.184556,
+    "mobile_subs_per100": 196.84819
+  },
+  {
+    "country": "Argentina",
+    "code": "ARG",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 68.04306,
+    "telephone_lines_per100": 23.168854,
+    "broadband_subs_per100": 15.768878,
+    "mobile_subs_per100": 142.2407
+  },
+  {
+    "country": "Armenia",
+    "code": "ARM",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 59.100834,
+    "telephone_lines_per100": 18.874788,
+    "broadband_subs_per100": 9.801495,
+    "mobile_subs_per100": 118.59911
+  },
+  {
+    "country": "Aruba",
+    "code": "ABW",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 88.661224,
+    "telephone_lines_per100": 33.59441,
+    "broadband_subs_per100": 18.236965,
+    "mobile_subs_per100": 135.33748
+  },
+  {
+    "country": "Australia",
+    "code": "AUS",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 84.56052,
+    "telephone_lines_per100": 35.493565,
+    "broadband_subs_per100": 28.511774,
+    "mobile_subs_per100": 107.60814
+  },
+  {
+    "country": "Austria",
+    "code": "AUT",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 83.94014,
+    "telephone_lines_per100": 41.761726,
+    "broadband_subs_per100": 28.406858,
+    "mobile_subs_per100": 155.83714
+  },
+  {
+    "country": "Azerbaijan",
+    "code": "AZE",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 77.0,
+    "telephone_lines_per100": 18.415407,
+    "broadband_subs_per100": 19.475906,
+    "mobile_subs_per100": 109.68211
+  },
+  {
+    "country": "Bahamas",
+    "code": "BHS",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 78.0,
+    "telephone_lines_per100": 31.380888,
+    "broadband_subs_per100": 21.024742,
+    "mobile_subs_per100": 80.752106
+  },
+  {
+    "country": "Bahrain",
+    "code": "BHR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 93.4783,
+    "telephone_lines_per100": 20.451574,
+    "broadband_subs_per100": 18.474865,
+    "mobile_subs_per100": 183.91962
+  },
+  {
+    "country": "Bangladesh",
+    "code": "BGD",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 12.3688,
+    "telephone_lines_per100": 0.54225487,
+    "broadband_subs_per100": 3.0699224,
+    "mobile_subs_per100": 82.4276
+  },
+  {
+    "country": "Barbados",
+    "code": "BRB",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 72.0494,
+    "telephone_lines_per100": 53.59762,
+    "broadband_subs_per100": 28.05441,
+    "mobile_subs_per100": 120.001434
+  },
+  {
+    "country": "Belarus",
+    "code": "BLR",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 62.230362,
+    "telephone_lines_per100": 47.860607,
+    "broadband_subs_per100": 30.604061,
+    "mobile_subs_per100": 120.669624
+  },
+  {
+    "country": "Belgium",
+    "code": "BEL",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 85.05294,
+    "telephone_lines_per100": 39.81,
+    "broadband_subs_per100": 36.549236,
+    "mobile_subs_per100": 113.292336
+  },
+  {
+    "country": "Belize",
+    "code": "BLZ",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 41.59,
+    "telephone_lines_per100": 6.6238604,
+    "broadband_subs_per100": 4.8771796,
+    "mobile_subs_per100": 59.479755
+  },
+  {
+    "country": "Benin",
+    "code": "BEN",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 11.255,
+    "telephone_lines_per100": 1.7135065,
+    "broadband_subs_per100": 0.64488214,
+    "mobile_subs_per100": 82.01933
+  },
+  {
+    "country": "Bermuda",
+    "code": "BMU",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 98.32361,
+    "telephone_lines_per100": 18.908358,
+    "broadband_subs_per100": 47.270893,
+    "mobile_subs_per100": 59.876465
+  },
+  {
+    "country": "Bhutan",
+    "code": "BTN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 39.8,
+    "telephone_lines_per100": 2.944973,
+    "broadband_subs_per100": 3.7636137,
+    "mobile_subs_per100": 91.24097
+  },
+  {
+    "country": "Bolivia",
+    "code": "BOL",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 37.486816,
+    "telephone_lines_per100": 8.000532,
+    "broadband_subs_per100": 1.642813,
+    "mobile_subs_per100": 92.266014
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 52.6,
+    "telephone_lines_per100": 22.331842,
+    "broadband_subs_per100": 18.046885,
+    "mobile_subs_per100": 97.867836
+  },
+  {
+    "country": "Botswana",
+    "code": "BWA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 38.8938,
+    "telephone_lines_per100": 7.284163,
+    "broadband_subs_per100": 1.6722848,
+    "mobile_subs_per100": 157.73474
+  },
+  {
+    "country": "Brazil",
+    "code": "BRA",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 58.327953,
+    "telephone_lines_per100": 21.657135,
+    "broadband_subs_per100": 12.635384,
+    "mobile_subs_per100": 127.83617
+  },
+  {
+    "country": "Brunei",
+    "code": "BRN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 71.2,
+    "telephone_lines_per100": 18.00091,
+    "broadband_subs_per100": 8.153487,
+    "mobile_subs_per100": 109.7515
+  },
+  {
+    "country": "Bulgaria",
+    "code": "BGR",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 56.65625,
+    "telephone_lines_per100": 23.056427,
+    "broadband_subs_per100": 22.494423,
+    "mobile_subs_per100": 128.10326
+  },
+  {
+    "country": "Burkina Faso",
+    "code": "BFA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 6.5457,
+    "telephone_lines_per100": 0.3998139,
+    "broadband_subs_per100": 0.049814973,
+    "mobile_subs_per100": 76.93733
+  },
+  {
+    "country": "Burundi",
+    "code": "BDI",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 2.0,
+    "telephone_lines_per100": 0.19709294,
+    "broadband_subs_per100": 0.025082417,
+    "mobile_subs_per100": 45.237926
+  },
+  {
+    "country": "Cambodia",
+    "code": "KHM",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 6.4331913,
+    "telephone_lines_per100": 1.6410605,
+    "broadband_subs_per100": 0.5344854,
+    "mobile_subs_per100": 133.45842
+  },
+  {
+    "country": "Cameroon",
+    "code": "CMR",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 18.3,
+    "telephone_lines_per100": 4.613899,
+    "broadband_subs_per100": 0.08982396,
+    "mobile_subs_per100": 79.78007
+  },
+  {
+    "country": "Canada",
+    "code": "CAN",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 90.0,
+    "telephone_lines_per100": 43.412964,
+    "broadband_subs_per100": 36.46986,
+    "mobile_subs_per100": 82.76738
+  },
+  {
+    "country": "Cape Verde",
+    "code": "CPV",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 42.683014,
+    "telephone_lines_per100": 12.409201,
+    "broadband_subs_per100": 3.2334492,
+    "mobile_subs_per100": 119.33551
+  },
+  {
+    "country": "Cayman Islands",
+    "code": "CYM",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 77.0,
+    "telephone_lines_per100": 54.40122,
+    "broadband_subs_per100": 44.422634,
+    "mobile_subs_per100": 151.267
+  },
+  {
+    "country": "Central African Republic",
+    "code": "CAF",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 2.9,
+    "telephone_lines_per100": 0.04063232,
+    "broadband_subs_per100": 0.040135484,
+    "mobile_subs_per100": 26.839666
+  },
+  {
+    "country": "Chad",
+    "code": "TCD",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 3.5,
+    "telephone_lines_per100": 0.11625779,
+    "broadband_subs_per100": 0.07739823,
+    "mobile_subs_per100": 37.315254
+  },
+  {
+    "country": "Chile",
+    "code": "CHL",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 76.62959,
+    "telephone_lines_per100": 19.09326,
+    "broadband_subs_per100": 15.068127,
+    "mobile_subs_per100": 128.58397
+  },
+  {
+    "country": "China",
+    "code": "CHN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 50.3,
+    "telephone_lines_per100": 16.5454,
+    "broadband_subs_per100": 19.843794,
+    "mobile_subs_per100": 92.540115
+  },
+  {
+    "country": "Colombia",
+    "code": "COL",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 55.904972,
+    "telephone_lines_per100": 15.135753,
+    "broadband_subs_per100": 11.764467,
+    "mobile_subs_per100": 122.0514
+  },
+  {
+    "country": "Comoros",
+    "code": "COM",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 7.4592,
+    "telephone_lines_per100": 2.0089943,
+    "broadband_subs_per100": 0.22017884,
+    "mobile_subs_per100": 58.455555
+  },
+  {
+    "country": "Costa Rica",
+    "code": "CRI",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 59.76295,
+    "telephone_lines_per100": 17.839502,
+    "broadband_subs_per100": 11.595094,
+    "mobile_subs_per100": 156.4039
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "code": "CIV",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 38.44,
+    "telephone_lines_per100": 1.098171,
+    "broadband_subs_per100": 0.4345461,
+    "mobile_subs_per100": 100.63878
+  },
+  {
+    "country": "Croatia",
+    "code": "HRV",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 69.84504,
+    "telephone_lines_per100": 35.291626,
+    "broadband_subs_per100": 23.572632,
+    "mobile_subs_per100": 105.54364
+  },
+  {
+    "country": "Cuba",
+    "code": "CUB",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 37.305096,
+    "telephone_lines_per100": 11.493122,
+    "broadband_subs_per100": 0.07234548,
+    "mobile_subs_per100": 29.581612
+  },
+  {
+    "country": "Cyprus",
+    "code": "CYP",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 71.715744,
+    "telephone_lines_per100": 37.474762,
+    "broadband_subs_per100": 30.17365,
+    "mobile_subs_per100": 128.63197
+  },
+  {
+    "country": "Czechia",
+    "code": "CZE",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 75.66884,
+    "telephone_lines_per100": 18.115913,
+    "broadband_subs_per100": 27.998,
+    "mobile_subs_per100": 118.33982
+  },
+  {
+    "country": "Democratic Republic of Congo",
+    "code": "COD",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 3.8,
+    "telephone_lines_per100": 0.0,
+    "broadband_subs_per100": 0.0012340266,
+    "mobile_subs_per100": 46.587936
+  },
+  {
+    "country": "Denmark",
+    "code": "DNK",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 96.330505,
+    "telephone_lines_per100": 26.738071,
+    "broadband_subs_per100": 42.31331,
+    "mobile_subs_per100": 124.553505
+  },
+  {
+    "country": "Djibouti",
+    "code": "DJI",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 22.9,
+    "telephone_lines_per100": 2.2446053,
+    "broadband_subs_per100": 2.3683908,
+    "mobile_subs_per100": 30.809174
+  },
+  {
+    "country": "Dominica",
+    "code": "DMA",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 65.0,
+    "telephone_lines_per100": 29.235905,
+    "broadband_subs_per100": 21.529612,
+    "mobile_subs_per100": 109.72021
+  },
+  {
+    "country": "Dominican Republic",
+    "code": "DOM",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 54.215767,
+    "telephone_lines_per100": 12.505888,
+    "broadband_subs_per100": 6.575163,
+    "mobile_subs_per100": 84.30657
+  },
+  {
+    "country": "East Timor",
+    "code": "TLS",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 18.6,
+    "telephone_lines_per100": 0.2257016,
+    "broadband_subs_per100": 0.08530193,
+    "mobile_subs_per100": 114.23397
+  },
+  {
+    "country": "Ecuador",
+    "code": "ECU",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 48.940434,
+    "telephone_lines_per100": 15.447082,
+    "broadband_subs_per100": 9.145281,
+    "mobile_subs_per100": 79.574646
+  },
+  {
+    "country": "Egypt",
+    "code": "EGY",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 37.81938,
+    "telephone_lines_per100": 6.2603407,
+    "broadband_subs_per100": 3.8418796,
+    "mobile_subs_per100": 94.39625
+  },
+  {
+    "country": "El Salvador",
+    "code": "SLV",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 26.802605,
+    "telephone_lines_per100": 15.270302,
+    "broadband_subs_per100": 5.708595,
+    "mobile_subs_per100": 150.94795
+  },
+  {
+    "country": "Equatorial Guinea",
+    "code": "GNQ",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 21.32,
+    "telephone_lines_per100": 0.7795461,
+    "broadband_subs_per100": 0.26129305,
+    "mobile_subs_per100": 36.68255
+  },
+  {
+    "country": "Eritrea",
+    "code": "ERI",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 1.0837,
+    "telephone_lines_per100": 2.12523,
+    "broadband_subs_per100": 0.016100228,
+    "mobile_subs_per100": 15.295217
+  },
+  {
+    "country": "Estonia",
+    "code": "EST",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 88.409706,
+    "telephone_lines_per100": 29.485325,
+    "broadband_subs_per100": 29.68828,
+    "mobile_subs_per100": 144.80296
+  },
+  {
+    "country": "Eswatini",
+    "code": "SWZ",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 25.643,
+    "telephone_lines_per100": 3.7626452,
+    "broadband_subs_per100": 0.5250203,
+    "mobile_subs_per100": 82.34068
+  },
+  {
+    "country": "Ethiopia",
+    "code": "ETH",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 13.855176,
+    "telephone_lines_per100": 0.857482,
+    "broadband_subs_per100": 0.46020332,
+    "mobile_subs_per100": 40.7363
+  },
+  {
+    "country": "Faroe Islands",
+    "code": "FRO",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 94.2,
+    "telephone_lines_per100": 41.07457,
+    "broadband_subs_per100": 36.388924,
+    "mobile_subs_per100": 108.8334
+  },
+  {
+    "country": "Fiji",
+    "code": "FJI",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 42.5,
+    "telephone_lines_per100": 7.89971,
+    "broadband_subs_per100": 1.3862731,
+    "mobile_subs_per100": 105.157104
+  },
+  {
+    "country": "Finland",
+    "code": "FIN",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 86.422134,
+    "telephone_lines_per100": 9.803426,
+    "broadband_subs_per100": 31.569094,
+    "mobile_subs_per100": 134.97412
+  },
+  {
+    "country": "France",
+    "code": "FRA",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 78.006035,
+    "telephone_lines_per100": 59.967957,
+    "broadband_subs_per100": 41.387115,
+    "mobile_subs_per100": 102.71837
+  },
+  {
+    "country": "French Polynesia",
+    "code": "PYF",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 64.56021,
+    "telephone_lines_per100": 21.842543,
+    "broadband_subs_per100": 18.680946,
+    "mobile_subs_per100": 96.56957
+  },
+  {
+    "country": "Gabon",
+    "code": "GAB",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 45.7845,
+    "telephone_lines_per100": 0.9190642,
+    "broadband_subs_per100": 0.5429721,
+    "mobile_subs_per100": 138.24449
+  },
+  {
+    "country": "Gambia",
+    "code": "GMB",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 17.5995,
+    "telephone_lines_per100": 2.0229,
+    "broadband_subs_per100": 0.16061828,
+    "mobile_subs_per100": 122.078514
+  },
+  {
+    "country": "Georgia",
+    "code": "GEO",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 47.56976,
+    "telephone_lines_per100": 25.059969,
+    "broadband_subs_per100": 16.764652,
+    "mobile_subs_per100": 146.3965
+  },
+  {
+    "country": "Germany",
+    "code": "DEU",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 87.5898,
+    "telephone_lines_per100": 55.252625,
+    "broadband_subs_per100": 37.4127,
+    "mobile_subs_per100": 117.40117
+  },
+  {
+    "country": "Ghana",
+    "code": "GHA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 23.0,
+    "telephone_lines_per100": 0.9603058,
+    "broadband_subs_per100": 0.25485024,
+    "mobile_subs_per100": 121.997154
+  },
+  {
+    "country": "Greece",
+    "code": "GRC",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 66.83496,
+    "telephone_lines_per100": 48.614796,
+    "broadband_subs_per100": 31.781395,
+    "mobile_subs_per100": 116.13309
+  },
+  {
+    "country": "Greenland",
+    "code": "GRL",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 67.60044,
+    "telephone_lines_per100": 28.560719,
+    "broadband_subs_per100": 17.850449,
+    "mobile_subs_per100": 108.88774
+  },
+  {
+    "country": "Grenada",
+    "code": "GRD",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 52.5,
+    "telephone_lines_per100": 23.574244,
+    "broadband_subs_per100": 17.22854,
+    "mobile_subs_per100": 104.43946
+  },
+  {
+    "country": "Guatemala",
+    "code": "GTM",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 28.8059,
+    "telephone_lines_per100": 10.761825,
+    "broadband_subs_per100": 2.8791285,
+    "mobile_subs_per100": 113.45906
+  },
+  {
+    "country": "Guinea",
+    "code": "GIN",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 9.2,
+    "telephone_lines_per100": 0.0,
+    "broadband_subs_per100": 0.008498292,
+    "mobile_subs_per100": 91.47562
+  },
+  {
+    "country": "Guinea-Bissau",
+    "code": "GNB",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 6.1,
+    "telephone_lines_per100": 0.0,
+    "broadband_subs_per100": 0.05883153,
+    "mobile_subs_per100": 69.326775
+  },
+  {
+    "country": "Guyana",
+    "code": "GUY",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 34.0,
+    "telephone_lines_per100": 20.303223,
+    "broadband_subs_per100": 7.0754275,
+    "mobile_subs_per100": 71.50917
+  },
+  {
+    "country": "Haiti",
+    "code": "HTI",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 14.2,
+    "telephone_lines_per100": 0.054089796,
+    "broadband_subs_per100": 0.01280974,
+    "mobile_subs_per100": 69.370255
+  },
+  {
+    "country": "Honduras",
+    "code": "HND",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 27.139545,
+    "telephone_lines_per100": 5.3811364,
+    "broadband_subs_per100": 2.1367595,
+    "mobile_subs_per100": 87.12918
+  },
+  {
+    "country": "Hong Kong",
+    "code": "HKG",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 84.94836,
+    "telephone_lines_per100": 58.803753,
+    "broadband_subs_per100": 31.87215,
+    "mobile_subs_per100": 227.03654
+  },
+  {
+    "country": "Hungary",
+    "code": "HUN",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 72.83474,
+    "telephone_lines_per100": 31.447927,
+    "broadband_subs_per100": 27.632236,
+    "mobile_subs_per100": 100.62374
+  },
+  {
+    "country": "Iceland",
+    "code": "ISL",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 98.2,
+    "telephone_lines_per100": 50.80767,
+    "broadband_subs_per100": 37.59941,
+    "mobile_subs_per100": 116.00443
+  },
+  {
+    "country": "India",
+    "code": "IND",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 14.9,
+    "telephone_lines_per100": 1.9216512,
+    "broadband_subs_per100": 1.2757859,
+    "mobile_subs_per100": 75.37933
+  },
+  {
+    "country": "Indonesia",
+    "code": "IDN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 22.062742,
+    "telephone_lines_per100": 3.9641201,
+    "broadband_subs_per100": 1.5213947,
+    "mobile_subs_per100": 129.4688
+  },
+  {
+    "country": "Iran",
+    "code": "IRN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 45.334976,
+    "telephone_lines_per100": 36.818214,
+    "broadband_subs_per100": 7.9989266,
+    "mobile_subs_per100": 89.83223
+  },
+  {
+    "country": "Ireland",
+    "code": "IRL",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 83.49479,
+    "telephone_lines_per100": 41.0859,
+    "broadband_subs_per100": 27.846266,
+    "mobile_subs_per100": 104.242905
+  },
+  {
+    "country": "Israel",
+    "code": "ISR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 77.35209,
+    "telephone_lines_per100": 42.36979,
+    "broadband_subs_per100": 26.984041,
+    "mobile_subs_per100": 131.25693
+  },
+  {
+    "country": "Italy",
+    "code": "ITA",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 58.141735,
+    "telephone_lines_per100": 33.36231,
+    "broadband_subs_per100": 24.597761,
+    "mobile_subs_per100": 144.76398
+  },
+  {
+    "country": "Jamaica",
+    "code": "JAM",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 42.221222,
+    "telephone_lines_per100": 9.022157,
+    "broadband_subs_per100": 8.167252,
+    "mobile_subs_per100": 111.94202
+  },
+  {
+    "country": "Japan",
+    "code": "JPN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 91.05803,
+    "telephone_lines_per100": 50.053146,
+    "broadband_subs_per100": 30.541986,
+    "mobile_subs_per100": 126.15096
+  },
+  {
+    "country": "Jordan",
+    "code": "JOR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 54.22,
+    "telephone_lines_per100": 3.8653586,
+    "broadband_subs_per100": 3.244995,
+    "mobile_subs_per100": 144.56113
+  },
+  {
+    "country": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 70.82993,
+    "telephone_lines_per100": 22.936083,
+    "broadband_subs_per100": 12.723836,
+    "mobile_subs_per100": 145.4825
+  },
+  {
+    "country": "Kenya",
+    "code": "KEN",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 16.587854,
+    "telephone_lines_per100": 0.1815644,
+    "broadband_subs_per100": 0.28692126,
+    "mobile_subs_per100": 80.095825
+  },
+  {
+    "country": "Kiribati",
+    "code": "KIR",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 14.9,
+    "telephone_lines_per100": 1.2643924,
+    "broadband_subs_per100": 0.10015837,
+    "mobile_subs_per100": 35.098232
+  },
+  {
+    "country": "Kuwait",
+    "code": "KWT",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 82.0,
+    "telephone_lines_per100": 12.51808,
+    "broadband_subs_per100": 1.4343632,
+    "mobile_subs_per100": 199.89137
+  },
+  {
+    "country": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 30.247,
+    "telephone_lines_per100": 6.7984843,
+    "broadband_subs_per100": 3.5242445,
+    "mobile_subs_per100": 126.28437
+  },
+  {
+    "country": "Laos",
+    "code": "LAO",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 18.2,
+    "telephone_lines_per100": 14.150945,
+    "broadband_subs_per100": 0.21391883,
+    "mobile_subs_per100": 54.79795
+  },
+  {
+    "country": "Latvia",
+    "code": "LVA",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 79.200584,
+    "telephone_lines_per100": 17.999187,
+    "broadband_subs_per100": 25.45687,
+    "mobile_subs_per100": 130.94914
+  },
+  {
+    "country": "Lesotho",
+    "code": "LSO",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 25.0,
+    "telephone_lines_per100": 1.9276721,
+    "broadband_subs_per100": 0.09797535,
+    "mobile_subs_per100": 101.688194
+  },
+  {
+    "country": "Liberia",
+    "code": "LBR",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 10.0,
+    "telephone_lines_per100": 0.19315663,
+    "broadband_subs_per100": 0.15023294,
+    "mobile_subs_per100": 78.37867
+  },
+  {
+    "country": "Libya",
+    "code": "LBY",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 25.0,
+    "telephone_lines_per100": 16.278238,
+    "broadband_subs_per100": 0.9338899,
+    "mobile_subs_per100": 149.2246
+  },
+  {
+    "country": "Liechtenstein",
+    "code": "LIE",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 96.6412,
+    "telephone_lines_per100": 46.35294,
+    "broadband_subs_per100": 41.967915,
+    "mobile_subs_per100": 109.49198
+  },
+  {
+    "country": "Lithuania",
+    "code": "LTU",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 71.37806,
+    "telephone_lines_per100": 19.338081,
+    "broadband_subs_per100": 28.677416,
+    "mobile_subs_per100": 143.9915
+  },
+  {
+    "country": "Luxembourg",
+    "code": "LUX",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 96.37672,
+    "telephone_lines_per100": 48.618526,
+    "broadband_subs_per100": 34.291073,
+    "mobile_subs_per100": 141.65918
+  },
+  {
+    "country": "Macao",
+    "code": "MAC",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 77.60013,
+    "telephone_lines_per100": 23.488096,
+    "broadband_subs_per100": 27.313522,
+    "mobile_subs_per100": 304.75104
+  },
+  {
+    "country": "Madagascar",
+    "code": "MDG",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 4.174,
+    "telephone_lines_per100": 0.58456266,
+    "broadband_subs_per100": 0.0931855,
+    "mobile_subs_per100": 42.057224
+  },
+  {
+    "country": "Malawi",
+    "code": "MWI",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 6.0,
+    "telephone_lines_per100": 0.084644444,
+    "broadband_subs_per100": 0.03426865,
+    "mobile_subs_per100": 38.43419
+  },
+  {
+    "country": "Malaysia",
+    "code": "MYS",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 71.064064,
+    "telephone_lines_per100": 14.374312,
+    "broadband_subs_per100": 9.80956,
+    "mobile_subs_per100": 141.21053
+  },
+  {
+    "country": "Maldives",
+    "code": "MDV",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 54.462,
+    "telephone_lines_per100": 5.1175513,
+    "broadband_subs_per100": 5.412772,
+    "mobile_subs_per100": 172.78596
+  },
+  {
+    "country": "Mali",
+    "code": "MLI",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 10.33,
+    "telephone_lines_per100": 0.9089754,
+    "broadband_subs_per100": 0.018818889,
+    "mobile_subs_per100": 122.08298
+  },
+  {
+    "country": "Malta",
+    "code": "MLT",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 75.96002,
+    "telephone_lines_per100": 51.738388,
+    "broadband_subs_per100": 36.676846,
+    "mobile_subs_per100": 117.79402
+  },
+  {
+    "country": "Mauritania",
+    "code": "MRT",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 17.6,
+    "telephone_lines_per100": 1.2933568,
+    "broadband_subs_per100": 0.24301815,
+    "mobile_subs_per100": 91.89412
+  },
+  {
+    "country": "Mauritius",
+    "code": "MUS",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 50.13932,
+    "telephone_lines_per100": 29.405506,
+    "broadband_subs_per100": 15.275387,
+    "mobile_subs_per100": 136.3719
+  },
+  {
+    "country": "Mexico",
+    "code": "MEX",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 57.43104,
+    "telephone_lines_per100": 16.660221,
+    "broadband_subs_per100": 12.189151,
+    "mobile_subs_per100": 88.94543
+  },
+  {
+    "country": "Micronesia (country)",
+    "code": "FSM",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 31.5011,
+    "telephone_lines_per100": 6.2621875,
+    "broadband_subs_per100": 3.0142758,
+    "mobile_subs_per100": 20.700726
+  },
+  {
+    "country": "Moldova",
+    "code": "MDA",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 69.00001,
+    "telephone_lines_per100": 36.58065,
+    "broadband_subs_per100": 16.256962,
+    "mobile_subs_per100": 112.95868
+  },
+  {
+    "country": "Monaco",
+    "code": "MCO",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 93.3633,
+    "telephone_lines_per100": 133.53918,
+    "broadband_subs_per100": 49.933346,
+    "mobile_subs_per100": 92.5538
+  },
+  {
+    "country": "Mongolia",
+    "code": "MNG",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 22.500004,
+    "telephone_lines_per100": 8.588334,
+    "broadband_subs_per100": 6.989591,
+    "mobile_subs_per100": 103.07842
+  },
+  {
+    "country": "Montenegro",
+    "code": "MNE",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 68.11979,
+    "telephone_lines_per100": 24.587954,
+    "broadband_subs_per100": 17.893002,
+    "mobile_subs_per100": 160.45499
+  },
+  {
+    "country": "Morocco",
+    "code": "MAR",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 57.079998,
+    "telephone_lines_per100": 6.4216266,
+    "broadband_subs_per100": 3.3158422,
+    "mobile_subs_per100": 124.48049
+  },
+  {
+    "country": "Mozambique",
+    "code": "MOZ",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 6.5,
+    "telephone_lines_per100": 0.33634713,
+    "broadband_subs_per100": 0.16035365,
+    "mobile_subs_per100": 75.84472
+  },
+  {
+    "country": "Myanmar",
+    "code": "MMR",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 10.9,
+    "telephone_lines_per100": 1.0078871,
+    "broadband_subs_per100": 0.064438455,
+    "mobile_subs_per100": 80.23972
+  },
+  {
+    "country": "Namibia",
+    "code": "NAM",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 25.6879,
+    "telephone_lines_per100": 7.686771,
+    "broadband_subs_per100": 2.9654214,
+    "mobile_subs_per100": 107.392365
+  },
+  {
+    "country": "Nepal",
+    "code": "NPL",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 17.5816,
+    "telephone_lines_per100": 3.0439596,
+    "broadband_subs_per100": 1.0879422,
+    "mobile_subs_per100": 98.89456
+  },
+  {
+    "country": "Netherlands",
+    "code": "NLD",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 91.72414,
+    "telephone_lines_per100": 40.63455,
+    "broadband_subs_per100": 41.08797,
+    "mobile_subs_per100": 121.637505
+  },
+  {
+    "country": "New Caledonia",
+    "code": "NCL",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 74.001755,
+    "telephone_lines_per100": 27.44625,
+    "broadband_subs_per100": 19.554117,
+    "mobile_subs_per100": 91.91611
+  },
+  {
+    "country": "New Zealand",
+    "code": "NZL",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 85.2,
+    "telephone_lines_per100": 40.095108,
+    "broadband_subs_per100": 31.445402,
+    "mobile_subs_per100": 121.36898
+  },
+  {
+    "country": "Nicaragua",
+    "code": "NIC",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 19.7043,
+    "telephone_lines_per100": 5.75692,
+    "broadband_subs_per100": 1.8913662,
+    "mobile_subs_per100": 118.12747
+  },
+  {
+    "country": "Niger",
+    "code": "NER",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 2.4762,
+    "telephone_lines_per100": 0.5516689,
+    "broadband_subs_per100": 0.13635248,
+    "mobile_subs_per100": 44.93092
+  },
+  {
+    "country": "Nigeria",
+    "code": "NGA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 22.5142,
+    "telephone_lines_per100": 0.098155536,
+    "broadband_subs_per100": 0.008227747,
+    "mobile_subs_per100": 79.10453
+  },
+  {
+    "country": "North Macedonia",
+    "code": "MKD",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 70.3802,
+    "telephone_lines_per100": 18.734062,
+    "broadband_subs_per100": 18.4017,
+    "mobile_subs_per100": 105.21201
+  },
+  {
+    "country": "Norway",
+    "code": "NOR",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 96.810326,
+    "telephone_lines_per100": 18.199453,
+    "broadband_subs_per100": 39.509644,
+    "mobile_subs_per100": 110.11835
+  },
+  {
+    "country": "Oman",
+    "code": "OMN",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 73.53,
+    "telephone_lines_per100": 10.192091,
+    "broadband_subs_per100": 5.465549,
+    "mobile_subs_per100": 155.7561
+  },
+  {
+    "country": "Pakistan",
+    "code": "PAK",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 11.0,
+    "telephone_lines_per100": 1.6280481,
+    "broadband_subs_per100": 0.8252528,
+    "mobile_subs_per100": 57.940598
+  },
+  {
+    "country": "Palestine",
+    "code": "PSE",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 56.7,
+    "telephone_lines_per100": 8.99025,
+    "broadband_subs_per100": 6.0709066,
+    "mobile_subs_per100": 78.09243
+  },
+  {
+    "country": "Panama",
+    "code": "PAN",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 51.205425,
+    "telephone_lines_per100": 15.667438,
+    "broadband_subs_per100": 7.9839697,
+    "mobile_subs_per100": 144.99693
+  },
+  {
+    "country": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 7.9,
+    "telephone_lines_per100": 1.71561,
+    "broadband_subs_per100": 0.171561,
+    "mobile_subs_per100": 40.717144
+  },
+  {
+    "country": "Paraguay",
+    "code": "PRY",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 49.716305,
+    "telephone_lines_per100": 5.599078,
+    "broadband_subs_per100": 3.49296,
+    "mobile_subs_per100": 120.34197
+  },
+  {
+    "country": "Peru",
+    "code": "PER",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 40.8526,
+    "telephone_lines_per100": 9.559175,
+    "broadband_subs_per100": 6.564729,
+    "mobile_subs_per100": 112.404816
+  },
+  {
+    "country": "Philippines",
+    "code": "PHL",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 36.9,
+    "telephone_lines_per100": 3.0611484,
+    "broadband_subs_per100": 2.7536964,
+    "mobile_subs_per100": 111.893196
+  },
+  {
+    "country": "Poland",
+    "code": "POL",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 67.99699,
+    "telephone_lines_per100": 23.659576,
+    "broadband_subs_per100": 18.986794,
+    "mobile_subs_per100": 142.5202
+  },
+  {
+    "country": "Portugal",
+    "code": "PRT",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 68.63286,
+    "telephone_lines_per100": 45.15792,
+    "broadband_subs_per100": 30.299973,
+    "mobile_subs_per100": 112.96423
+  },
+  {
+    "country": "Puerto Rico",
+    "code": "PRI",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 63.466335,
+    "telephone_lines_per100": 23.087725,
+    "broadband_subs_per100": 20.001385,
+    "mobile_subs_per100": 91.00412
+  },
+  {
+    "country": "Qatar",
+    "code": "QAT",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 92.88483,
+    "telephone_lines_per100": 18.946201,
+    "broadband_subs_per100": 9.795697,
+    "mobile_subs_per100": 154.09802
+  },
+  {
+    "country": "Romania",
+    "code": "ROU",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 55.763157,
+    "telephone_lines_per100": 21.48858,
+    "broadband_subs_per100": 21.448986,
+    "mobile_subs_per100": 116.35035
+  },
+  {
+    "country": "Russia",
+    "code": "RUS",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 70.09924,
+    "telephone_lines_per100": 24.467628,
+    "broadband_subs_per100": 18.499693,
+    "mobile_subs_per100": 156.41856
+  },
+  {
+    "country": "Rwanda",
+    "code": "RWA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 12.456,
+    "telephone_lines_per100": 0.14590178,
+    "broadband_subs_per100": 0.1814859,
+    "mobile_subs_per100": 75.25432
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "code": "KNA",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 66.1731,
+    "telephone_lines_per100": 41.93939,
+    "broadband_subs_per100": 34.778175,
+    "mobile_subs_per100": 155.05128
+  },
+  {
+    "country": "Saint Lucia",
+    "code": "LCA",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 57.2633,
+    "telephone_lines_per100": 19.938824,
+    "broadband_subs_per100": 16.25225,
+    "mobile_subs_per100": 107.338844
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "code": "VCT",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 49.4,
+    "telephone_lines_per100": 23.247007,
+    "broadband_subs_per100": 15.856395,
+    "mobile_subs_per100": 105.99383
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "code": "STP",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 25.82,
+    "telephone_lines_per100": 3.215821,
+    "broadband_subs_per100": 0.65604544,
+    "mobile_subs_per100": 92.35113
+  },
+  {
+    "country": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 69.616234,
+    "telephone_lines_per100": 12.50013,
+    "broadband_subs_per100": 21.13618,
+    "mobile_subs_per100": 176.13403
+  },
+  {
+    "country": "Senegal",
+    "code": "SEN",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 21.7,
+    "telephone_lines_per100": 2.0572343,
+    "broadband_subs_per100": 0.68943137,
+    "mobile_subs_per100": 102.508995
+  },
+  {
+    "country": "Serbia",
+    "code": "SRB",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 65.317024,
+    "telephone_lines_per100": 39.150883,
+    "broadband_subs_per100": 18.656878,
+    "mobile_subs_per100": 129.38359
+  },
+  {
+    "country": "Seychelles",
+    "code": "SYC",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 54.2596,
+    "telephone_lines_per100": 19.90208,
+    "broadband_subs_per100": 12.515154,
+    "mobile_subs_per100": 138.24863
+  },
+  {
+    "country": "Singapore",
+    "code": "SGP",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 79.012955,
+    "telephone_lines_per100": 36.48825,
+    "broadband_subs_per100": 26.897892,
+    "mobile_subs_per100": 149.00621
+  },
+  {
+    "country": "Slovakia",
+    "code": "SVK",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 77.63468,
+    "telephone_lines_per100": 15.988664,
+    "broadband_subs_per100": 23.50086,
+    "mobile_subs_per100": 123.15887
+  },
+  {
+    "country": "Slovenia",
+    "code": "SVN",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 73.09866,
+    "telephone_lines_per100": 36.55832,
+    "broadband_subs_per100": 27.623333,
+    "mobile_subs_per100": 114.271194
+  },
+  {
+    "country": "Solomon Islands",
+    "code": "SLB",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 10.0005,
+    "telephone_lines_per100": 1.1632508,
+    "broadband_subs_per100": 0.222078,
+    "mobile_subs_per100": 66.42197
+  },
+  {
+    "country": "Somalia",
+    "code": "SOM",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 1.76,
+    "telephone_lines_per100": 0.36937883,
+    "broadband_subs_per100": 0.59390324,
+    "mobile_subs_per100": 42.268528
+  },
+  {
+    "country": "South Africa",
+    "code": "ZAF",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 51.9191,
+    "telephone_lines_per100": 7.2827883,
+    "broadband_subs_per100": 2.4845893,
+    "mobile_subs_per100": 155.13753
+  },
+  {
+    "country": "South Korea",
+    "code": "KOR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 89.896255,
+    "telephone_lines_per100": 56.65078,
+    "broadband_subs_per100": 39.275955,
+    "mobile_subs_per100": 115.59544
+  },
+  {
+    "country": "South Sudan",
+    "code": "SSD",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 3.0,
+    "telephone_lines_per100": 0.0,
+    "broadband_subs_per100": 0.0013504315,
+    "mobile_subs_per100": 26.099339
+  },
+  {
+    "country": "Spain",
+    "code": "ESP",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 78.68963,
+    "telephone_lines_per100": 41.499954,
+    "broadband_subs_per100": 29.009933,
+    "mobile_subs_per100": 109.39104
+  },
+  {
+    "country": "Sri Lanka",
+    "code": "LKA",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 15.2625,
+    "telephone_lines_per100": 15.129684,
+    "broadband_subs_per100": 2.880432,
+    "mobile_subs_per100": 109.984695
+  },
+  {
+    "country": "Sudan",
+    "code": "SDN",
+    "year": 2015,
+    "region": "Unclassified",
+    "internet_users_share_pct": 12.0,
+    "telephone_lines_per100": 0.29720348,
+    "broadband_subs_per100": 0.07018963,
+    "mobile_subs_per100": 69.803635
+  },
+  {
+    "country": "Suriname",
+    "code": "SUR",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 42.7638,
+    "telephone_lines_per100": 15.803255,
+    "broadband_subs_per100": 9.059242,
+    "mobile_subs_per100": 129.02736
+  },
+  {
+    "country": "Sweden",
+    "code": "SWE",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 90.6102,
+    "telephone_lines_per100": 36.274014,
+    "broadband_subs_per100": 35.677807,
+    "mobile_subs_per100": 128.97446
+  },
+  {
+    "country": "Switzerland",
+    "code": "CHE",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 87.47906,
+    "telephone_lines_per100": 49.976254,
+    "broadband_subs_per100": 44.671566,
+    "mobile_subs_per100": 135.72307
+  },
+  {
+    "country": "Syria",
+    "code": "SYR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 29.9798,
+    "telephone_lines_per100": 18.222572,
+    "broadband_subs_per100": 3.7543132,
+    "mobile_subs_per100": 73.68109
+  },
+  {
+    "country": "Tajikistan",
+    "code": "TJK",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 18.98,
+    "telephone_lines_per100": 2.6388156,
+    "broadband_subs_per100": 0.069413595,
+    "mobile_subs_per100": 98.208664
+  },
+  {
+    "country": "Tanzania",
+    "code": "TZA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 10.0,
+    "telephone_lines_per100": 0.27454126,
+    "broadband_subs_per100": 0.203764,
+    "mobile_subs_per100": 76.24926
+  },
+  {
+    "country": "Thailand",
+    "code": "THA",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 39.316128,
+    "telephone_lines_per100": 7.5261416,
+    "broadband_subs_per100": 8.830351,
+    "mobile_subs_per100": 145.93257
+  },
+  {
+    "country": "Togo",
+    "code": "TGO",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 7.12,
+    "telephone_lines_per100": 0.68757224,
+    "broadband_subs_per100": 0.8621991,
+    "mobile_subs_per100": 63.357464
+  },
+  {
+    "country": "Tonga",
+    "code": "TON",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 38.6513,
+    "telephone_lines_per100": 12.46053,
+    "broadband_subs_per100": 2.3167915,
+    "mobile_subs_per100": 69.270935
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "code": "TTO",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 65.1,
+    "telephone_lines_per100": 18.95286,
+    "broadband_subs_per100": 19.488129,
+    "mobile_subs_per100": 148.57205
+  },
+  {
+    "country": "Tunisia",
+    "code": "TUN",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 46.499996,
+    "telephone_lines_per100": 8.275918,
+    "broadband_subs_per100": 5.0338864,
+    "mobile_subs_per100": 128.00858
+  },
+  {
+    "country": "Turkey",
+    "code": "TUR",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 53.74498,
+    "telephone_lines_per100": 14.363767,
+    "broadband_subs_per100": 11.878631,
+    "mobile_subs_per100": 92.03271
+  },
+  {
+    "country": "Turkmenistan",
+    "code": "TKM",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 14.9968,
+    "telephone_lines_per100": 10.4250965,
+    "broadband_subs_per100": 0.45368475,
+    "mobile_subs_per100": 126.16297
+  },
+  {
+    "country": "Tuvalu",
+    "code": "TUV",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 27.3,
+    "telephone_lines_per100": 18.243181,
+    "broadband_subs_per100": 4.104716,
+    "mobile_subs_per100": 60.2025
+  },
+  {
+    "country": "Uganda",
+    "code": "UGA",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 5.7,
+    "telephone_lines_per100": 0.8760947,
+    "broadband_subs_per100": 0.21508364,
+    "mobile_subs_per100": 53.87555
+  },
+  {
+    "country": "Ukraine",
+    "code": "UKR",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 48.884644,
+    "telephone_lines_per100": 21.312265,
+    "broadband_subs_per100": 11.643704,
+    "mobile_subs_per100": 142.00304
+  },
+  {
+    "country": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 90.5,
+    "telephone_lines_per100": 26.037367,
+    "broadband_subs_per100": 14.230538,
+    "mobile_subs_per100": 206.83942
+  },
+  {
+    "country": "United Kingdom",
+    "code": "GBR",
+    "year": 2015,
+    "region": "Europe",
+    "internet_users_share_pct": 92.0003,
+    "telephone_lines_per100": 50.796,
+    "broadband_subs_per100": 37.721493,
+    "mobile_subs_per100": 121.21174
+  },
+  {
+    "country": "United States",
+    "code": "USA",
+    "year": 2015,
+    "region": "North America",
+    "internet_users_share_pct": 74.5542,
+    "telephone_lines_per100": 38.282078,
+    "broadband_subs_per100": 31.341213,
+    "mobile_subs_per100": 101.83196
+  },
+  {
+    "country": "Uruguay",
+    "code": "URY",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 64.570786,
+    "telephone_lines_per100": 32.851112,
+    "broadband_subs_per100": 26.749657,
+    "mobile_subs_per100": 153.36841
+  },
+  {
+    "country": "Uzbekistan",
+    "code": "UZB",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 42.8,
+    "telephone_lines_per100": 9.159905,
+    "broadband_subs_per100": 5.8140616,
+    "mobile_subs_per100": 70.84151
+  },
+  {
+    "country": "Vanuatu",
+    "code": "VUT",
+    "year": 2015,
+    "region": "Oceania",
+    "internet_users_share_pct": 22.3514,
+    "telephone_lines_per100": 1.802699,
+    "broadband_subs_per100": 1.6148005,
+    "mobile_subs_per100": 65.696106
+  },
+  {
+    "country": "Venezuela",
+    "code": "VEN",
+    "year": 2015,
+    "region": "South America",
+    "internet_users_share_pct": 58.0,
+    "telephone_lines_per100": 25.446795,
+    "broadband_subs_per100": 8.470319,
+    "mobile_subs_per100": 95.15779
+  },
+  {
+    "country": "Vietnam",
+    "code": "VNM",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 45.0,
+    "telephone_lines_per100": 7.8912845,
+    "broadband_subs_per100": 8.249678,
+    "mobile_subs_per100": 129.62706
+  },
+  {
+    "country": "Yemen",
+    "code": "YEM",
+    "year": 2015,
+    "region": "Asia",
+    "internet_users_share_pct": 24.0854,
+    "telephone_lines_per100": 3.6657567,
+    "broadband_subs_per100": 1.2676761,
+    "mobile_subs_per100": 48.210052
+  },
+  {
+    "country": "Zambia",
+    "code": "ZMB",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 8.8,
+    "telephone_lines_per100": 0.7083625,
+    "broadband_subs_per100": 0.14262988,
+    "mobile_subs_per100": 70.477844
+  },
+  {
+    "country": "Zimbabwe",
+    "code": "ZWE",
+    "year": 2015,
+    "region": "Africa",
+    "internet_users_share_pct": 22.7428,
+    "telephone_lines_per100": 2.3175337,
+    "broadband_subs_per100": 1.1388767,
+    "mobile_subs_per100": 88.5992
+  },
+  {
+    "country": "Afghanistan",
+    "code": "AFG",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 17.0485,
+    "telephone_lines_per100": 0.37315282,
+    "broadband_subs_per100": 0.06800792,
+    "mobile_subs_per100": 58.046112
+  },
+  {
+    "country": "Albania",
+    "code": "ALB",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 72.23768,
+    "telephone_lines_per100": 7.781079,
+    "broadband_subs_per100": 17.720932,
+    "mobile_subs_per100": 91.18809
+  },
+  {
+    "country": "Algeria",
+    "code": "DZA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 63.4727,
+    "telephone_lines_per100": 10.866339,
+    "broadband_subs_per100": 8.606446,
+    "mobile_subs_per100": 103.43667
+  },
+  {
+    "country": "Andorra",
+    "code": "AND",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 93.2057,
+    "telephone_lines_per100": 62.821144,
+    "broadband_subs_per100": 48.655983,
+    "mobile_subs_per100": 103.87697
+  },
+  {
+    "country": "Angola",
+    "code": "AGO",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 33.3209,
+    "telephone_lines_per100": 0.3562331,
+    "broadband_subs_per100": 0.36326423,
+    "mobile_subs_per100": 43.78043
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "code": "ATG",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 71.3684,
+    "telephone_lines_per100": 29.397034,
+    "broadband_subs_per100": 8.710233,
+    "mobile_subs_per100": 200.33534
+  },
+  {
+    "country": "Argentina",
+    "code": "ARG",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 85.51439,
+    "telephone_lines_per100": 16.277596,
+    "broadband_subs_per100": 21.179787,
+    "mobile_subs_per100": 121.18061
+  },
+  {
+    "country": "Armenia",
+    "code": "ARM",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 76.5077,
+    "telephone_lines_per100": 14.789172,
+    "broadband_subs_per100": 14.88838,
+    "mobile_subs_per100": 120.68237
+  },
+  {
+    "country": "Australia",
+    "code": "AUS",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 94.6935,
+    "telephone_lines_per100": 21.19149,
+    "broadband_subs_per100": 35.346848,
+    "mobile_subs_per100": 104.93015
+  },
+  {
+    "country": "Austria",
+    "code": "AUT",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 87.52943,
+    "telephone_lines_per100": 42.44539,
+    "broadband_subs_per100": 29.210646,
+    "mobile_subs_per100": 120.131805
+  },
+  {
+    "country": "Azerbaijan",
+    "code": "AZE",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 84.6,
+    "telephone_lines_per100": 16.231897,
+    "broadband_subs_per100": 19.598576,
+    "mobile_subs_per100": 101.59668
+  },
+  {
+    "country": "Bahamas",
+    "code": "BHS",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 92.4437,
+    "telephone_lines_per100": 22.987751,
+    "broadband_subs_per100": 20.96685,
+    "mobile_subs_per100": 117.71749
+  },
+  {
+    "country": "Bahrain",
+    "code": "BHR",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 99.67103,
+    "telephone_lines_per100": 18.48225,
+    "broadband_subs_per100": 10.182411,
+    "mobile_subs_per100": 119.4116
+  },
+  {
+    "country": "Bangladesh",
+    "code": "BGD",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 36.1091,
+    "telephone_lines_per100": 0.83587766,
+    "broadband_subs_per100": 6.045062,
+    "mobile_subs_per100": 106.002144
+  },
+  {
+    "country": "Barbados",
+    "code": "BRB",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 69.8901,
+    "telephone_lines_per100": 45.438732,
+    "broadband_subs_per100": 45.438732,
+    "mobile_subs_per100": 104.72208
+  },
+  {
+    "country": "Belarus",
+    "code": "BLR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 85.08791,
+    "telephone_lines_per100": 47.124226,
+    "broadband_subs_per100": 34.815224,
+    "mobile_subs_per100": 125.164734
+  },
+  {
+    "country": "Belgium",
+    "code": "BEL",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 91.52641,
+    "telephone_lines_per100": 31.500332,
+    "broadband_subs_per100": 41.02397,
+    "mobile_subs_per100": 99.910065
+  },
+  {
+    "country": "Belize",
+    "code": "BLZ",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 64.4359,
+    "telephone_lines_per100": 4.8616724,
+    "broadband_subs_per100": 9.21159,
+    "mobile_subs_per100": 67.55166
+  },
+  {
+    "country": "Benin",
+    "code": "BEN",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 22.1206,
+    "telephone_lines_per100": 0.24778563,
+    "broadband_subs_per100": 0.22938494,
+    "mobile_subs_per100": 85.239075
+  },
+  {
+    "country": "Bhutan",
+    "code": "BTN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 76.8508,
+    "telephone_lines_per100": 2.9853015,
+    "broadband_subs_per100": 0.41415262,
+    "mobile_subs_per100": 96.77029
+  },
+  {
+    "country": "Bolivia",
+    "code": "BOL",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 59.9401,
+    "telephone_lines_per100": 5.0615,
+    "broadband_subs_per100": 7.8867164,
+    "mobile_subs_per100": 99.89882
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "code": "BIH",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 73.211754,
+    "telephone_lines_per100": 21.425983,
+    "broadband_subs_per100": 23.350788,
+    "mobile_subs_per100": 106.37474
+  },
+  {
+    "country": "Botswana",
+    "code": "BWA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 51.6782,
+    "telephone_lines_per100": 5.9175515,
+    "broadband_subs_per100": 3.586044,
+    "mobile_subs_per100": 161.85881
+  },
+  {
+    "country": "Brazil",
+    "code": "BRA",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 81.3427,
+    "telephone_lines_per100": 14.690736,
+    "broadband_subs_per100": 17.41806,
+    "mobile_subs_per100": 98.64562
+  },
+  {
+    "country": "Brunei",
+    "code": "BRN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 96.3055,
+    "telephone_lines_per100": 23.219507,
+    "broadband_subs_per100": 15.88676,
+    "mobile_subs_per100": 119.93388
+  },
+  {
+    "country": "Bulgaria",
+    "code": "BGR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 70.16248,
+    "telephone_lines_per100": 12.587263,
+    "broadband_subs_per100": 30.504286,
+    "mobile_subs_per100": 114.59674
+  },
+  {
+    "country": "Burkina Faso",
+    "code": "BFA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 12.9732,
+    "telephone_lines_per100": 0.34936488,
+    "broadband_subs_per100": 0.06508312,
+    "mobile_subs_per100": 102.97285
+  },
+  {
+    "country": "Burundi",
+    "code": "BDI",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 6.4301,
+    "telephone_lines_per100": 0.14504199,
+    "broadband_subs_per100": 0.0335261,
+    "mobile_subs_per100": 52.55712
+  },
+  {
+    "country": "Cambodia",
+    "code": "KHM",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 56.3759,
+    "telephone_lines_per100": 0.332445,
+    "broadband_subs_per100": 1.3977003,
+    "mobile_subs_per100": 126.0759
+  },
+  {
+    "country": "Cameroon",
+    "code": "CMR",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 37.6975,
+    "telephone_lines_per100": 3.6793494,
+    "broadband_subs_per100": 2.7568243,
+    "mobile_subs_per100": 85.27216
+  },
+  {
+    "country": "Canada",
+    "code": "CAN",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 92.3,
+    "telephone_lines_per100": 34.94717,
+    "broadband_subs_per100": 40.79498,
+    "mobile_subs_per100": 84.77477
+  },
+  {
+    "country": "Cape Verde",
+    "code": "CPV",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 69.3734,
+    "telephone_lines_per100": 11.204654,
+    "broadband_subs_per100": 4.826115,
+    "mobile_subs_per100": 105.83859
+  },
+  {
+    "country": "Chad",
+    "code": "TCD",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 8.3431,
+    "telephone_lines_per100": 0.03100203,
+    "broadband_subs_per100": 0.0,
+    "mobile_subs_per100": 50.434326
+  },
+  {
+    "country": "Chile",
+    "code": "CHL",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 87.4593,
+    "telephone_lines_per100": 13.256867,
+    "broadband_subs_per100": 19.430588,
+    "mobile_subs_per100": 129.41374
+  },
+  {
+    "country": "China",
+    "code": "CHN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 70.05276,
+    "telephone_lines_per100": 12.755572,
+    "broadband_subs_per100": 33.90698,
+    "mobile_subs_per100": 120.49671
+  },
+  {
+    "country": "Colombia",
+    "code": "COL",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 69.795334,
+    "telephone_lines_per100": 14.315676,
+    "broadband_subs_per100": 15.336308,
+    "mobile_subs_per100": 133.66103
+  },
+  {
+    "country": "Comoros",
+    "code": "COM",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 22.4204,
+    "telephone_lines_per100": 0.9440725,
+    "broadband_subs_per100": 0.14809957,
+    "mobile_subs_per100": 97.43394
+  },
+  {
+    "country": "Costa Rica",
+    "code": "CRI",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 80.53019,
+    "telephone_lines_per100": 11.121304,
+    "broadband_subs_per100": 19.719149,
+    "mobile_subs_per100": 142.48152
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "code": "CIV",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 36.0166,
+    "telephone_lines_per100": 0.9122667,
+    "broadband_subs_per100": 0.90391123,
+    "mobile_subs_per100": 138.66376
+  },
+  {
+    "country": "Croatia",
+    "code": "HRV",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 78.3209,
+    "telephone_lines_per100": 32.861477,
+    "broadband_subs_per100": 26.074455,
+    "mobile_subs_per100": 110.6663
+  },
+  {
+    "country": "Cuba",
+    "code": "CUB",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 71.11907,
+    "telephone_lines_per100": 13.441146,
+    "broadband_subs_per100": 2.0727153,
+    "mobile_subs_per100": 59.60587
+  },
+  {
+    "country": "Cyprus",
+    "code": "CYP",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 90.80195,
+    "telephone_lines_per100": 34.05566,
+    "broadband_subs_per100": 36.31274,
+    "mobile_subs_per100": 135.58885
+  },
+  {
+    "country": "Czechia",
+    "code": "CZE",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 81.3389,
+    "telephone_lines_per100": 12.655997,
+    "broadband_subs_per100": 36.44909,
+    "mobile_subs_per100": 123.21946
+  },
+  {
+    "country": "Democratic Republic of Congo",
+    "code": "COD",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 14.5105,
+    "telephone_lines_per100": 0.0,
+    "broadband_subs_per100": 0.03229503,
+    "mobile_subs_per100": 42.502758
+  },
+  {
+    "country": "Denmark",
+    "code": "DNK",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 96.54915,
+    "telephone_lines_per100": 12.594225,
+    "broadband_subs_per100": 44.418568,
+    "mobile_subs_per100": 124.37002
+  },
+  {
+    "country": "Djibouti",
+    "code": "DJI",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 59.9257,
+    "telephone_lines_per100": 3.5166867,
+    "broadband_subs_per100": 2.266854,
+    "mobile_subs_per100": 39.272503
+  },
+  {
+    "country": "Dominica",
+    "code": "DMA",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 75.6567,
+    "telephone_lines_per100": 9.413523,
+    "broadband_subs_per100": 27.061104,
+    "mobile_subs_per100": 110.409485
+  },
+  {
+    "country": "Dominican Republic",
+    "code": "DOM",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 81.6173,
+    "telephone_lines_per100": 10.496562,
+    "broadband_subs_per100": 9.373455,
+    "mobile_subs_per100": 81.6619
+  },
+  {
+    "country": "East Timor",
+    "code": "TLS",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 32.0127,
+    "telephone_lines_per100": 0.15172848,
+    "broadband_subs_per100": 0.006259177,
+    "mobile_subs_per100": 103.911
+  },
+  {
+    "country": "Ecuador",
+    "code": "ECU",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 70.7,
+    "telephone_lines_per100": 11.757873,
+    "broadband_subs_per100": 13.514694,
+    "mobile_subs_per100": 88.25549
+  },
+  {
+    "country": "Egypt",
+    "code": "EGY",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 71.9142,
+    "telephone_lines_per100": 9.018269,
+    "broadband_subs_per100": 8.539631,
+    "mobile_subs_per100": 87.23169
+  },
+  {
+    "country": "El Salvador",
+    "code": "SLV",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 54.601368,
+    "telephone_lines_per100": 14.339164,
+    "broadband_subs_per100": 8.536791,
+    "mobile_subs_per100": 159.57533
+  },
+  {
+    "country": "Equatorial Guinea",
+    "code": "GNQ",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 55.0013,
+    "telephone_lines_per100": 0.65541565,
+    "broadband_subs_per100": 0.10737165,
+    "mobile_subs_per100": 43.34954
+  },
+  {
+    "country": "Eritrea",
+    "code": "ERI",
+    "year": 2020,
+    "region": "Unclassified",
+    "internet_users_share_pct": 14.3494,
+    "telephone_lines_per100": 2.0053043,
+    "broadband_subs_per100": 0.151917,
+    "mobile_subs_per100": 54.7205
+  },
+  {
+    "country": "Estonia",
+    "code": "EST",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 89.05829,
+    "telephone_lines_per100": 22.917583,
+    "broadband_subs_per100": 34.27003,
+    "mobile_subs_per100": 144.83221
+  },
+  {
+    "country": "Eswatini",
+    "code": "SWZ",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 49.013,
+    "telephone_lines_per100": 3.9376924,
+    "broadband_subs_per100": 2.2900424,
+    "mobile_subs_per100": 104.74726
+  },
+  {
+    "country": "Ethiopia",
+    "code": "ETH",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 16.0696,
+    "telephone_lines_per100": 0.84091794,
+    "broadband_subs_per100": 0.1782746,
+    "mobile_subs_per100": 37.42085
+  },
+  {
+    "country": "Fiji",
+    "code": "FJI",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 68.6256,
+    "telephone_lines_per100": 5.3018537,
+    "broadband_subs_per100": 2.520539,
+    "mobile_subs_per100": 108.365036
+  },
+  {
+    "country": "Finland",
+    "code": "FIN",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 92.17027,
+    "telephone_lines_per100": 4.0690017,
+    "broadband_subs_per100": 33.383896,
+    "mobile_subs_per100": 128.76129
+  },
+  {
+    "country": "France",
+    "code": "FRA",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 84.7064,
+    "telephone_lines_per100": 57.29283,
+    "broadband_subs_per100": 46.47124,
+    "mobile_subs_per100": 110.387215
+  },
+  {
+    "country": "Gabon",
+    "code": "GAB",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 63.9179,
+    "telephone_lines_per100": 1.0948364,
+    "broadband_subs_per100": 1.9206136,
+    "mobile_subs_per100": 131.30156
+  },
+  {
+    "country": "Gambia",
+    "code": "GMB",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 36.011,
+    "telephone_lines_per100": 2.3849907,
+    "broadband_subs_per100": 0.19874923,
+    "mobile_subs_per100": 106.44826
+  },
+  {
+    "country": "Georgia",
+    "code": "GEO",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 72.53158,
+    "telephone_lines_per100": 10.214196,
+    "broadband_subs_per100": 25.512043,
+    "mobile_subs_per100": 134.36601
+  },
+  {
+    "country": "Germany",
+    "code": "DEU",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 89.81294,
+    "telephone_lines_per100": 45.89333,
+    "broadband_subs_per100": 43.30487,
+    "mobile_subs_per100": 128.4248
+  },
+  {
+    "country": "Ghana",
+    "code": "GHA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 62.5176,
+    "telephone_lines_per100": 0.96484524,
+    "broadband_subs_per100": 0.24577104,
+    "mobile_subs_per100": 126.88739
+  },
+  {
+    "country": "Greece",
+    "code": "GRC",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 78.115845,
+    "telephone_lines_per100": 45.415596,
+    "broadband_subs_per100": 39.787636,
+    "mobile_subs_per100": 106.66979
+  },
+  {
+    "country": "Grenada",
+    "code": "GRD",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 65.6538,
+    "telephone_lines_per100": 16.602058,
+    "broadband_subs_per100": 27.464092,
+    "mobile_subs_per100": 102.07923
+  },
+  {
+    "country": "Guatemala",
+    "code": "GTM",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 47.5123,
+    "telephone_lines_per100": 13.092265,
+    "broadband_subs_per100": 3.525889,
+    "mobile_subs_per100": 117.47588
+  },
+  {
+    "country": "Guyana",
+    "code": "GUY",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 62.954,
+    "telephone_lines_per100": 15.480241,
+    "broadband_subs_per100": 11.764983,
+    "mobile_subs_per100": 106.00869
+  },
+  {
+    "country": "Haiti",
+    "code": "HTI",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 39.3881,
+    "telephone_lines_per100": 0.053362515,
+    "broadband_subs_per100": 0.27570632,
+    "mobile_subs_per100": 65.093376
+  },
+  {
+    "country": "Honduras",
+    "code": "HND",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 45.2483,
+    "telephone_lines_per100": 5.254762,
+    "broadband_subs_per100": 3.9222343,
+    "mobile_subs_per100": 68.783615
+  },
+  {
+    "country": "Hong Kong",
+    "code": "HKG",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 92.41314,
+    "telephone_lines_per100": 52.07579,
+    "broadband_subs_per100": 38.52464,
+    "mobile_subs_per100": 291.91626
+  },
+  {
+    "country": "Hungary",
+    "code": "HUN",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 84.77115,
+    "telephone_lines_per100": 30.466795,
+    "broadband_subs_per100": 33.492203,
+    "mobile_subs_per100": 105.9819
+  },
+  {
+    "country": "Iceland",
+    "code": "ISL",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 99.53275,
+    "telephone_lines_per100": 29.194738,
+    "broadband_subs_per100": 38.682648,
+    "mobile_subs_per100": 114.939415
+  },
+  {
+    "country": "India",
+    "code": "IND",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 43.40544,
+    "telephone_lines_per100": 1.4296242,
+    "broadband_subs_per100": 1.6362263,
+    "mobile_subs_per100": 82.25405
+  },
+  {
+    "country": "Indonesia",
+    "code": "IDN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 53.726494,
+    "telephone_lines_per100": 3.5158706,
+    "broadband_subs_per100": 3.9299376,
+    "mobile_subs_per100": 129.40363
+  },
+  {
+    "country": "Iran",
+    "code": "IRN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 75.56987,
+    "telephone_lines_per100": 33.165123,
+    "broadband_subs_per100": 10.902667,
+    "mobile_subs_per100": 145.48557
+  },
+  {
+    "country": "Iraq",
+    "code": "IRQ",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 53.6778,
+    "telephone_lines_per100": 6.4101987,
+    "broadband_subs_per100": 14.849485,
+    "mobile_subs_per100": 88.97993
+  },
+  {
+    "country": "Ireland",
+    "code": "IRL",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 91.99989,
+    "telephone_lines_per100": 33.69022,
+    "broadband_subs_per100": 30.435339,
+    "mobile_subs_per100": 105.045616
+  },
+  {
+    "country": "Israel",
+    "code": "ISR",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 90.12734,
+    "telephone_lines_per100": 38.29382,
+    "broadband_subs_per100": 29.567816,
+    "mobile_subs_per100": 139.42586
+  },
+  {
+    "country": "Italy",
+    "code": "ITA",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 70.48343,
+    "telephone_lines_per100": 32.726482,
+    "broadband_subs_per100": 30.258636,
+    "mobile_subs_per100": 129.49
+  },
+  {
+    "country": "Jamaica",
+    "code": "JAM",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 76.384,
+    "telephone_lines_per100": 15.411135,
+    "broadband_subs_per100": 13.62199,
+    "mobile_subs_per100": 101.50208
+  },
+  {
+    "country": "Japan",
+    "code": "JPN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 90.21946,
+    "telephone_lines_per100": 49.070755,
+    "broadband_subs_per100": 34.837063,
+    "mobile_subs_per100": 154.4322
+  },
+  {
+    "country": "Jordan",
+    "code": "JOR",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 78.4178,
+    "telephone_lines_per100": 3.603109,
+    "broadband_subs_per100": 5.8033295,
+    "mobile_subs_per100": 64.31426
+  },
+  {
+    "country": "Kazakhstan",
+    "code": "KAZ",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 85.9426,
+    "telephone_lines_per100": 15.865832,
+    "broadband_subs_per100": 13.450284,
+    "mobile_subs_per100": 124.69846
+  },
+  {
+    "country": "Kenya",
+    "code": "KEN",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 24.7228,
+    "telephone_lines_per100": 0.12763195,
+    "broadband_subs_per100": 1.2911249,
+    "mobile_subs_per100": 117.60252
+  },
+  {
+    "country": "Kiribati",
+    "code": "KIR",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 52.9509,
+    "telephone_lines_per100": 0.026169915,
+    "broadband_subs_per100": 0.14671013,
+    "mobile_subs_per100": 43.347687
+  },
+  {
+    "country": "Kuwait",
+    "code": "KWT",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 99.10587,
+    "telephone_lines_per100": 13.260089,
+    "broadband_subs_per100": 1.6805813,
+    "mobile_subs_per100": 153.86647
+  },
+  {
+    "country": "Kyrgyzstan",
+    "code": "KGZ",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 72.0,
+    "telephone_lines_per100": 4.066541,
+    "broadband_subs_per100": 4.3366437,
+    "mobile_subs_per100": 109.780106
+  },
+  {
+    "country": "Laos",
+    "code": "LAO",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 54.0,
+    "telephone_lines_per100": 18.579607,
+    "broadband_subs_per100": 1.6721084,
+    "mobile_subs_per100": 63.113987
+  },
+  {
+    "country": "Latvia",
+    "code": "LVA",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 88.897964,
+    "telephone_lines_per100": 11.105384,
+    "broadband_subs_per100": 25.804169,
+    "mobile_subs_per100": 107.90249
+  },
+  {
+    "country": "Lebanon",
+    "code": "LBN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 82.0665,
+    "telephone_lines_per100": 15.352839,
+    "broadband_subs_per100": 7.5769877,
+    "mobile_subs_per100": 75.20031
+  },
+  {
+    "country": "Lesotho",
+    "code": "LSO",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 43.6575,
+    "telephone_lines_per100": 0.517684,
+    "broadband_subs_per100": 0.22632459,
+    "mobile_subs_per100": 69.8944
+  },
+  {
+    "country": "Liberia",
+    "code": "LBR",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 22.9107,
+    "telephone_lines_per100": 0.11651701,
+    "broadband_subs_per100": 0.2524535,
+    "mobile_subs_per100": 32.100433
+  },
+  {
+    "country": "Libya",
+    "code": "LBY",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 74.3581,
+    "telephone_lines_per100": 22.36921,
+    "broadband_subs_per100": 4.712295,
+    "mobile_subs_per100": 164.9871
+  },
+  {
+    "country": "Liechtenstein",
+    "code": "LIE",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 94.35,
+    "telephone_lines_per100": 32.519928,
+    "broadband_subs_per100": 46.56022,
+    "mobile_subs_per100": 126.104675
+  },
+  {
+    "country": "Lithuania",
+    "code": "LTU",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 83.05555,
+    "telephone_lines_per100": 11.521283,
+    "broadband_subs_per100": 28.498854,
+    "mobile_subs_per100": 131.34134
+  },
+  {
+    "country": "Luxembourg",
+    "code": "LUX",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 98.459625,
+    "telephone_lines_per100": 42.513683,
+    "broadband_subs_per100": 37.296085,
+    "mobile_subs_per100": 132.90897
+  },
+  {
+    "country": "Macao",
+    "code": "MAC",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 87.4623,
+    "telephone_lines_per100": 16.103838,
+    "broadband_subs_per100": 30.450893,
+    "mobile_subs_per100": 237.34378
+  },
+  {
+    "country": "Madagascar",
+    "code": "MDG",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 11.3547,
+    "telephone_lines_per100": 0.17146426,
+    "broadband_subs_per100": 0.11052183,
+    "mobile_subs_per100": 54.808468
+  },
+  {
+    "country": "Malawi",
+    "code": "MWI",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 13.8995,
+    "telephone_lines_per100": 0.06381218,
+    "broadband_subs_per100": 0.06273713,
+    "mobile_subs_per100": 51.217045
+  },
+  {
+    "country": "Malaysia",
+    "code": "MYS",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 89.555016,
+    "telephone_lines_per100": 22.035992,
+    "broadband_subs_per100": 9.911017,
+    "mobile_subs_per100": 129.01791
+  },
+  {
+    "country": "Maldives",
+    "code": "MDV",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 79.0978,
+    "telephone_lines_per100": 2.8893607,
+    "broadband_subs_per100": 12.683273,
+    "mobile_subs_per100": 142.93613
+  },
+  {
+    "country": "Mali",
+    "code": "MLI",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 29.113,
+    "telephone_lines_per100": 1.2970439,
+    "broadband_subs_per100": 1.122814,
+    "mobile_subs_per100": 116.5874
+  },
+  {
+    "country": "Malta",
+    "code": "MLT",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 86.858765,
+    "telephone_lines_per100": 49.765633,
+    "broadband_subs_per100": 41.10944,
+    "mobile_subs_per100": 122.1757
+  },
+  {
+    "country": "Mauritania",
+    "code": "MRT",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 29.9065,
+    "telephone_lines_per100": 1.3499398,
+    "broadband_subs_per100": 0.4012277,
+    "mobile_subs_per100": 126.27703
+  },
+  {
+    "country": "Mauritius",
+    "code": "MUS",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 67.73291,
+    "telephone_lines_per100": 37.304504,
+    "broadband_subs_per100": 25.18658,
+    "mobile_subs_per100": 149.06996
+  },
+  {
+    "country": "Mexico",
+    "code": "MEX",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 71.49017,
+    "telephone_lines_per100": 19.32227,
+    "broadband_subs_per100": 17.752056,
+    "mobile_subs_per100": 96.923744
+  },
+  {
+    "country": "Micronesia (country)",
+    "code": "FSM",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 39.3833,
+    "telephone_lines_per100": 6.3110824,
+    "broadband_subs_per100": 5.409499,
+    "mobile_subs_per100": 19.83483
+  },
+  {
+    "country": "Moldova",
+    "code": "MDA",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 74.1183,
+    "telephone_lines_per100": 33.48469,
+    "broadband_subs_per100": 23.426859,
+    "mobile_subs_per100": 111.44467
+  },
+  {
+    "country": "Monaco",
+    "code": "MCO",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 98.5708,
+    "telephone_lines_per100": 114.864655,
+    "broadband_subs_per100": 54.86728,
+    "mobile_subs_per100": 93.25887
+  },
+  {
+    "country": "Mongolia",
+    "code": "MNG",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 62.500027,
+    "telephone_lines_per100": 9.999012,
+    "broadband_subs_per100": 9.347557,
+    "mobile_subs_per100": 132.61028
+  },
+  {
+    "country": "Montenegro",
+    "code": "MNE",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 77.608795,
+    "telephone_lines_per100": 31.54416,
+    "broadband_subs_per100": 30.295343,
+    "mobile_subs_per100": 177.6652
+  },
+  {
+    "country": "Morocco",
+    "code": "MAR",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 84.12036,
+    "telephone_lines_per100": 6.4434524,
+    "broadband_subs_per100": 5.7468348,
+    "mobile_subs_per100": 135.08841
+  },
+  {
+    "country": "Mozambique",
+    "code": "MOZ",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 14.2874,
+    "telephone_lines_per100": 0.28916612,
+    "broadband_subs_per100": 0.22739315,
+    "mobile_subs_per100": 50.231884
+  },
+  {
+    "country": "Myanmar",
+    "code": "MMR",
+    "year": 2020,
+    "region": "Unclassified",
+    "internet_users_share_pct": 45.4477,
+    "telephone_lines_per100": 0.9882787,
+    "broadband_subs_per100": 1.299246,
+    "mobile_subs_per100": 148.1582
+  },
+  {
+    "country": "Namibia",
+    "code": "NAM",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 57.8608,
+    "telephone_lines_per100": 5.144091,
+    "broadband_subs_per100": 2.8869503,
+    "mobile_subs_per100": 106.20659
+  },
+  {
+    "country": "Nepal",
+    "code": "NPL",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 36.9653,
+    "telephone_lines_per100": 2.5063372,
+    "broadband_subs_per100": 4.3843637,
+    "mobile_subs_per100": 131.92102
+  },
+  {
+    "country": "Netherlands",
+    "code": "NLD",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 91.333336,
+    "telephone_lines_per100": 27.992716,
+    "broadband_subs_per100": 42.66673,
+    "mobile_subs_per100": 121.42273
+  },
+  {
+    "country": "New Zealand",
+    "code": "NZL",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 90.921,
+    "telephone_lines_per100": 16.647287,
+    "broadband_subs_per100": 34.81303,
+    "mobile_subs_per100": 123.00057
+  },
+  {
+    "country": "Nicaragua",
+    "code": "NIC",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 44.8749,
+    "telephone_lines_per100": 3.4137836,
+    "broadband_subs_per100": 4.4225316,
+    "mobile_subs_per100": 90.814064
+  },
+  {
+    "country": "Niger",
+    "code": "NER",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 11.8568,
+    "telephone_lines_per100": 0.245,
+    "broadband_subs_per100": 0.05059531,
+    "mobile_subs_per100": 60.035553
+  },
+  {
+    "country": "Nigeria",
+    "code": "NGA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 31.8888,
+    "telephone_lines_per100": 0.05001538,
+    "broadband_subs_per100": 0.030520638,
+    "mobile_subs_per100": 95.43566
+  },
+  {
+    "country": "North Macedonia",
+    "code": "MKD",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 81.40554,
+    "telephone_lines_per100": 22.189459,
+    "broadband_subs_per100": 25.404123,
+    "mobile_subs_per100": 99.47239
+  },
+  {
+    "country": "Norway",
+    "code": "NOR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 94.60756,
+    "telephone_lines_per100": 6.484295,
+    "broadband_subs_per100": 44.386307,
+    "mobile_subs_per100": 108.296844
+  },
+  {
+    "country": "Oman",
+    "code": "OMN",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 95.23229,
+    "telephone_lines_per100": 13.29748,
+    "broadband_subs_per100": 11.38296,
+    "mobile_subs_per100": 140.3786
+  },
+  {
+    "country": "Pakistan",
+    "code": "PAK",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 18.935,
+    "telephone_lines_per100": 1.2241585,
+    "broadband_subs_per100": 1.0395404,
+    "mobile_subs_per100": 74.733215
+  },
+  {
+    "country": "Palestine",
+    "code": "PSE",
+    "year": 2020,
+    "region": "Unclassified",
+    "internet_users_share_pct": 76.1816,
+    "telephone_lines_per100": 9.197462,
+    "broadband_subs_per100": 7.4345937,
+    "mobile_subs_per100": 80.1298
+  },
+  {
+    "country": "Panama",
+    "code": "PAN",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 64.8243,
+    "telephone_lines_per100": 18.841482,
+    "broadband_subs_per100": 13.8346815,
+    "mobile_subs_per100": 142.28308
+  },
+  {
+    "country": "Papua New Guinea",
+    "code": "PNG",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 15.0204,
+    "telephone_lines_per100": 1.6911603,
+    "broadband_subs_per100": 0.21394196,
+    "mobile_subs_per100": 49.0844
+  },
+  {
+    "country": "Paraguay",
+    "code": "PRY",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 73.95751,
+    "telephone_lines_per100": 3.774089,
+    "broadband_subs_per100": 8.515918,
+    "mobile_subs_per100": 119.09995
+  },
+  {
+    "country": "Peru",
+    "code": "PER",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 65.2518,
+    "telephone_lines_per100": 6.726491,
+    "broadband_subs_per100": 8.411865,
+    "mobile_subs_per100": 119.854095
+  },
+  {
+    "country": "Philippines",
+    "code": "PHL",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 53.7649,
+    "telephone_lines_per100": 4.2212195,
+    "broadband_subs_per100": 7.081089,
+    "mobile_subs_per100": 133.4562
+  },
+  {
+    "country": "Poland",
+    "code": "POL",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 83.18489,
+    "telephone_lines_per100": 15.135643,
+    "broadband_subs_per100": 21.925587,
+    "mobile_subs_per100": 129.28848
+  },
+  {
+    "country": "Portugal",
+    "code": "PRT",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 78.26166,
+    "telephone_lines_per100": 50.264824,
+    "broadband_subs_per100": 40.12154,
+    "mobile_subs_per100": 114.27638
+  },
+  {
+    "country": "Qatar",
+    "code": "QAT",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 99.65285,
+    "telephone_lines_per100": 16.21977,
+    "broadband_subs_per100": 10.563196,
+    "mobile_subs_per100": 135.4979
+  },
+  {
+    "country": "Romania",
+    "code": "ROU",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 78.45527,
+    "telephone_lines_per100": 15.598839,
+    "broadband_subs_per100": 29.314081,
+    "mobile_subs_per100": 116.4782
+  },
+  {
+    "country": "Russia",
+    "code": "RUS",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 84.99467,
+    "telephone_lines_per100": 17.689537,
+    "broadband_subs_per100": 23.155704,
+    "mobile_subs_per100": 163.10112
+  },
+  {
+    "country": "Rwanda",
+    "code": "RWA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 23.8,
+    "telephone_lines_per100": 0.08932455,
+    "broadband_subs_per100": 0.13535298,
+    "mobile_subs_per100": 81.23787
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "code": "KNA",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 70.2753,
+    "telephone_lines_per100": 34.23085,
+    "broadband_subs_per100": 45.9569,
+    "mobile_subs_per100": 133.4009
+  },
+  {
+    "country": "Saint Lucia",
+    "code": "LCA",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 62.064,
+    "telephone_lines_per100": 8.383731,
+    "broadband_subs_per100": 19.972511,
+    "mobile_subs_per100": 81.86872
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "code": "VCT",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 63.381,
+    "telephone_lines_per100": 16.845043,
+    "broadband_subs_per100": 23.890617,
+    "mobile_subs_per100": 96.94376
+  },
+  {
+    "country": "San Marino",
+    "code": "SMR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 77.95,
+    "telephone_lines_per100": 46.018005,
+    "broadband_subs_per100": 31.637379,
+    "mobile_subs_per100": 112.168884
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "code": "STP",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 51.5547,
+    "telephone_lines_per100": 1.2831421,
+    "broadband_subs_per100": 1.1552877,
+    "mobile_subs_per100": 80.11728
+  },
+  {
+    "country": "Saudi Arabia",
+    "code": "SAU",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 97.862335,
+    "telephone_lines_per100": 18.55061,
+    "broadband_subs_per100": 25.459677,
+    "mobile_subs_per100": 139.4442
+  },
+  {
+    "country": "Senegal",
+    "code": "SEN",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 53.3088,
+    "telephone_lines_per100": 1.3626244,
+    "broadband_subs_per100": 1.0564101,
+    "mobile_subs_per100": 113.63809
+  },
+  {
+    "country": "Serbia",
+    "code": "SRB",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 78.36805,
+    "telephone_lines_per100": 37.433403,
+    "broadband_subs_per100": 25.1835,
+    "mobile_subs_per100": 120.21686
+  },
+  {
+    "country": "Seychelles",
+    "code": "SYC",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 79.2517,
+    "telephone_lines_per100": 15.696935,
+    "broadband_subs_per100": 29.067844,
+    "mobile_subs_per100": 152.54507
+  },
+  {
+    "country": "Sierra Leone",
+    "code": "SLE",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 17.1208,
+    "telephone_lines_per100": 0.0023886082,
+    "broadband_subs_per100": 0.0022748648,
+    "mobile_subs_per100": 87.00348
+  },
+  {
+    "country": "Singapore",
+    "code": "SGP",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 92.00435,
+    "telephone_lines_per100": 33.64679,
+    "broadband_subs_per100": 26.862272,
+    "mobile_subs_per100": 150.25934
+  },
+  {
+    "country": "Slovakia",
+    "code": "SVK",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 89.920906,
+    "telephone_lines_per100": 11.887427,
+    "broadband_subs_per100": 31.192549,
+    "mobile_subs_per100": 133.6329
+  },
+  {
+    "country": "Slovenia",
+    "code": "SVN",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 86.6013,
+    "telephone_lines_per100": 33.528473,
+    "broadband_subs_per100": 30.993013,
+    "mobile_subs_per100": 121.33143
+  },
+  {
+    "country": "Solomon Islands",
+    "code": "SLB",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 24.1984,
+    "telephone_lines_per100": 0.94023085,
+    "broadband_subs_per100": 0.1343187,
+    "mobile_subs_per100": 63.66706
+  },
+  {
+    "country": "Somalia",
+    "code": "SOM",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 15.0237,
+    "telephone_lines_per100": 0.5465075,
+    "broadband_subs_per100": 0.71466357,
+    "mobile_subs_per100": 53.11332
+  },
+  {
+    "country": "South Africa",
+    "code": "ZAF",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 72.1128,
+    "telephone_lines_per100": 3.4655209,
+    "broadband_subs_per100": 2.1515946,
+    "mobile_subs_per100": 158.44727
+  },
+  {
+    "country": "South Korea",
+    "code": "KOR",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 96.50506,
+    "telephone_lines_per100": 46.006435,
+    "broadband_subs_per100": 43.05406,
+    "mobile_subs_per100": 135.97328
+  },
+  {
+    "country": "Spain",
+    "code": "ESP",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 93.20565,
+    "telephone_lines_per100": 40.805088,
+    "broadband_subs_per100": 33.95276,
+    "mobile_subs_per100": 116.71204
+  },
+  {
+    "country": "Sri Lanka",
+    "code": "LKA",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 36.184734,
+    "telephone_lines_per100": 11.558773,
+    "broadband_subs_per100": 7.89622,
+    "mobile_subs_per100": 131.77342
+  },
+  {
+    "country": "Sweden",
+    "code": "SWE",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 94.53943,
+    "telephone_lines_per100": 14.281001,
+    "broadband_subs_per100": 40.36798,
+    "mobile_subs_per100": 123.54866
+  },
+  {
+    "country": "Switzerland",
+    "code": "CHE",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 94.35,
+    "telephone_lines_per100": 35.458282,
+    "broadband_subs_per100": 46.481373,
+    "mobile_subs_per100": 127.37637
+  },
+  {
+    "country": "Tajikistan",
+    "code": "TJK",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 27.5441,
+    "telephone_lines_per100": 2.4238844,
+    "broadband_subs_per100": 0.36996463,
+    "mobile_subs_per100": 62.282623
+  },
+  {
+    "country": "Tanzania",
+    "code": "TZA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 19.4814,
+    "telephone_lines_per100": 0.11885464,
+    "broadband_subs_per100": 1.86248,
+    "mobile_subs_per100": 84.00506
+  },
+  {
+    "country": "Thailand",
+    "code": "THA",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 77.84374,
+    "telephone_lines_per100": 6.983384,
+    "broadband_subs_per100": 16.021814,
+    "mobile_subs_per100": 162.32774
+  },
+  {
+    "country": "Togo",
+    "code": "TGO",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 29.0237,
+    "telephone_lines_per100": 0.536338,
+    "broadband_subs_per100": 0.607932,
+    "mobile_subs_per100": 75.16402
+  },
+  {
+    "country": "Tonga",
+    "code": "TON",
+    "year": 2020,
+    "region": "Oceania",
+    "internet_users_share_pct": 54.4737,
+    "telephone_lines_per100": 6.622266,
+    "broadband_subs_per100": 4.73019,
+    "mobile_subs_per100": 58.654354
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "code": "TTO",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 77.2813,
+    "telephone_lines_per100": 21.87034,
+    "broadband_subs_per100": 25.439898,
+    "mobile_subs_per100": 134.23119
+  },
+  {
+    "country": "Tunisia",
+    "code": "TUN",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 68.5564,
+    "telephone_lines_per100": 12.804958,
+    "broadband_subs_per100": 11.146798,
+    "mobile_subs_per100": 124.04198
+  },
+  {
+    "country": "Turkey",
+    "code": "TUR",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 77.66956,
+    "telephone_lines_per100": 14.459704,
+    "broadband_subs_per100": 19.438406,
+    "mobile_subs_per100": 95.39609
+  },
+  {
+    "country": "Uganda",
+    "code": "UGA",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 7.4,
+    "telephone_lines_per100": 0.20418312,
+    "broadband_subs_per100": 0.07781875,
+    "mobile_subs_per100": 62.282413
+  },
+  {
+    "country": "Ukraine",
+    "code": "UKR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 75.03791,
+    "telephone_lines_per100": 7.9416304,
+    "broadband_subs_per100": 18.617023,
+    "mobile_subs_per100": 129.34123
+  },
+  {
+    "country": "United Arab Emirates",
+    "code": "ARE",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 100.0,
+    "telephone_lines_per100": 25.198284,
+    "broadband_subs_per100": 34.34529,
+    "mobile_subs_per100": 194.46774
+  },
+  {
+    "country": "United Kingdom",
+    "code": "GBR",
+    "year": 2020,
+    "region": "Europe",
+    "internet_users_share_pct": 94.8182,
+    "telephone_lines_per100": 48.59554,
+    "broadband_subs_per100": 40.577526,
+    "mobile_subs_per100": 117.30485
+  },
+  {
+    "country": "United States",
+    "code": "USA",
+    "year": 2020,
+    "region": "North America",
+    "internet_users_share_pct": 90.3447,
+    "telephone_lines_per100": 29.990618,
+    "broadband_subs_per100": 35.7157,
+    "mobile_subs_per100": 103.85517
+  },
+  {
+    "country": "Uruguay",
+    "code": "URY",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 85.471,
+    "telephone_lines_per100": 35.407013,
+    "broadband_subs_per100": 31.294823,
+    "mobile_subs_per100": 133.9017
+  },
+  {
+    "country": "Uzbekistan",
+    "code": "UZB",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 71.1,
+    "telephone_lines_per100": 16.298971,
+    "broadband_subs_per100": 15.807042,
+    "mobile_subs_per100": 99.40639
+  },
+  {
+    "country": "Venezuela",
+    "code": "VEN",
+    "year": 2020,
+    "region": "South America",
+    "internet_users_share_pct": 72.4411,
+    "telephone_lines_per100": 18.461426,
+    "broadband_subs_per100": 9.006064,
+    "mobile_subs_per100": 58.162567
+  },
+  {
+    "country": "Vietnam",
+    "code": "VNM",
+    "year": 2020,
+    "region": "Asia",
+    "internet_users_share_pct": 70.3,
+    "telephone_lines_per100": 3.2685578,
+    "broadband_subs_per100": 17.02629,
+    "mobile_subs_per100": 141.65556
+  },
+  {
+    "country": "Zambia",
+    "code": "ZMB",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 14.6458,
+    "telephone_lines_per100": 0.37694797,
+    "broadband_subs_per100": 0.43189722,
+    "mobile_subs_per100": 100.23512
+  },
+  {
+    "country": "Zimbabwe",
+    "code": "ZWE",
+    "year": 2020,
+    "region": "Africa",
+    "internet_users_share_pct": 29.298565,
+    "telephone_lines_per100": 1.6234225,
+    "broadband_subs_per100": 1.3103784,
+    "mobile_subs_per100": 84.96041
+  }
+]
