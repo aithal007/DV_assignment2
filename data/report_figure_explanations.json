@@ -377,22 +377,6 @@
   },
   {
     "figure": 23,
-    "analysis_id": 22,
-    "title": "Daily temperature and its spatial spread.",
-    "question": "What does a daily average hide about different places?",
-    "encoding": "Each longitude-sector panel retains all 92 days. The solid colored line is the area-weighted spatial median, the dashed dark line the area-weighted mean, and the shaded ribbon the spatial 10th-90th percentiles. All panels use the same Celsius scale.",
-    "rationale": "Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.",
-    "detailed_interpretation": "On July 27, the western sector's weighted Tmax mean is 31.193 C and its spatial p10-p90 range is 23.75-39.25 C. The central mean is 35.36 C with range 31.39-38.35 C. The western daily value is distinct from July's all-area mean, 31.192 C: both round to 31.19, a numerical coincidence verified from the cache.\n\nSolid lines show spatial medians, dashed lines weighted means, and ribbons spatial p10-p90. Fixed sector memberships are 4,910/4,828/3,678 cells. Their different ribbon widths show why similar summary trajectories need not imply similar conditions across places. The ribbons describe spatial spread, not uncertainty around a mean.",
-    "takeaway": "A smooth area mean can conceal both daily episodes and simultaneous differences between places. The ribbons recover that spatial spread around the daily mean. Their width describes variation across cells, rather than statistical uncertainty about the mean.",
-    "live_links": [
-      {
-        "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig23"
-      }
-    ]
-  },
-  {
-    "figure": 24,
     "analysis_id": 23,
     "title": "Monthly rain totals and five-day bursts.",
     "question": "Can similar monthly totals come from different rainfall timing?",
@@ -408,7 +392,7 @@
     ]
   },
   {
-    "figure": 25,
+    "figure": 24,
     "analysis_id": 24,
     "title": "Where hot days are frequent.",
     "question": "Where do daily maximum temperatures often reach 35\u00b0C?",
@@ -424,7 +408,7 @@
     ]
   },
   {
-    "figure": 26,
+    "figure": 25,
     "analysis_id": 25,
     "title": "Hovmoller diagrams: daily departures and rain across longitude.",
     "question": "When and where do warm and rainy periods occur?",
@@ -440,7 +424,7 @@
     ]
   },
   {
-    "figure": 27,
+    "figure": 26,
     "analysis_id": 26,
     "title": "Quiver: readable sampling and arrow-length comparisons.",
     "question": "How do sampling and arrow length affect readability?",
@@ -456,7 +440,7 @@
     ]
   },
   {
-    "figure": 28,
+    "figure": 27,
     "analysis_id": 27,
     "title": "Monthly wind-direction distributions.",
     "question": "Does one pooled wind summary hide monthly differences?",
@@ -472,7 +456,7 @@
     ]
   },
   {
-    "figure": 29,
+    "figure": 28,
     "analysis_id": 28,
     "title": "Temperature, rain and wind on the same dates.",
     "question": "Can separate weather summaries hide where conditions occur together?",
@@ -488,7 +472,7 @@
     ]
   },
   {
-    "figure": 30,
+    "figure": 29,
     "analysis_id": 29,
     "title": "Separate frequencies and shared occurrence.",
     "question": "How often do hot, dry and windy conditions occur together?",
@@ -504,7 +488,7 @@
     ]
   },
   {
-    "figure": 31,
+    "figure": 30,
     "analysis_id": 30,
     "title": "How often conditions occur and how long they last.",
     "question": "Does the event count describe uninterrupted duration?",
@@ -520,7 +504,7 @@
     ]
   },
   {
-    "figure": 32,
+    "figure": 31,
     "analysis_id": 32,
     "title": "Daily event order separates frequency from persistence.",
     "question": "Can equal event frequencies hide different uninterrupted spells?",
@@ -531,7 +515,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig32"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig31"
       }
     ]
   }

@@ -19,7 +19,7 @@ The best immediate extensions are:
 
 The next interaction improvement should link country selection across the existing network, matrix, PCP and country details. This is likely more useful than adding several additional standalone graph styles.
 
-Open the [five preview figures](../output/lecture_previews/index.html). They have PNG/SVG exports, reading guides and numerical CSVs. The report, current gallery and 32 figure IDs have not been altered. These static previews do not claim to implement the papers' complete interactive systems.
+Open the [five preview figures](../output/lecture_previews/index.html). They have PNG/SVG exports, reading guides and numerical CSVs. The report, current gallery and 31 figures IDs have not been altered. These static previews do not claim to implement the papers' complete interactive systems.
 
 ## Every supplied lecture and its application
 

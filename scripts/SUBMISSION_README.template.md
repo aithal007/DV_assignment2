@@ -1,6 +1,6 @@
 # DAS732 Assignment 2 - Team Plot Twist
 
-Open **DAS732_A2_Report.pdf** for the full report with 32 figure sets and complete explanations. The high-resolution assessment images are in `images/report/`, named Fig1-Fig32. The three required eight-frame scalar animations are in `images/scivis/`.
+Open **DAS732_A2_Report.pdf** for the full report with 31 figures sets and complete explanations. The high-resolution assessment images are in `images/report/`, named Fig1-Fig31. The three required eight-frame scalar animations are in `images/scivis/`.
 
 This folder is a local submission copy. It contains no Git remote and requires no GitHub access. Online links in the report are convenience links to an earlier published dashboard; use the supplied local apps to assess this copy.
 
@@ -25,14 +25,14 @@ Windows users can double-click `START_VISUALIZATIONS.cmd`. Open `http://127.0.0.
 
 ## Folder contents
 
-- `DAS732_A2_Report.pdf`: main report. The canonical build copy is also at `output/pdf/DAS732_A2_Report_IEEE.pdf`.
+- `DAS732_A2_Report.pdf`: main report. The canonical build copy is also at `DAS732_A2_Report.pdf`.
 - `images/report/`: all 32 numbered PNGs and available matching SVGs.
 - `images/scivis/`: three eight-frame GIFs and the scalar/contour/vector exports used by the report.
 - `web/`, `output/pcp_changes/`: runnable JavaScript UIs and local D3.
 - `scripts/`: preprocessing, numerical analysis, plot builders, report builders and verification source.
 - `data/raw/`: original A1 country extracts and the code-based region lookup.
 - `data/processed/`: cleaned data and preprocessing audit; `data/scivis/`: weather caches and acquisition metadata.
-- `report_latex/`: editable report source, preamble and 32 figure PNGs. No old report drafts are included.
+- `report_latex/`: editable report source, preamble and 31 figures PNGs. No old report drafts are included.
 - `REQUIREMENTS_CHECKLIST.md`, `evidence/`: every assignment clause, environment details, browser-test results and validation records.
 - `output/`: selected source exports and numerical tables used to derive the report findings.
 
@@ -122,6 +122,6 @@ The report contains eleven cited references for datasets, methods and libraries,
 
 ## Final PDF-review corrections
 
-The first-page dashboard link opens the working interactive UIs; full screenshots remain available in the UI evidence gallery and `images/gui/`. The PDF keeps its 32 figure explanations without extra UI appendix pages. `scripts/marching_squares.py` implements all 16 cases independently, including saddle and missing-cell handling; `scripts/review_plots.py` generates the overlay and corrected figures. `output/review_revision/` supplies exact comparison metrics and tests. The report stage runs these builders automatically. `python scripts/verify_review_revision.py` checks the real-grid contours, reviewed weather numbers, dashboard link and removal of draft/video wording.
+The first-page dashboard link opens the working interactive UIs; full screenshots remain available in the UI evidence gallery and `images/gui/`. The PDF keeps its 31 figures explanations without extra UI appendix pages. `scripts/marching_squares.py` implements all 16 cases independently, including saddle and missing-cell handling; `scripts/review_plots.py` generates the overlay and corrected figures. `output/review_revision/` supplies exact comparison metrics and tests. The report stage runs these builders automatically. `python scripts/verify_review_revision.py` checks the real-grid contours, reviewed weather numbers, dashboard link and removal of draft/video wording.
 
 Figures 22 and 26 now show endpoint sign disagreement and longitude-centered departures/support directly. Typography, network degree/region encoding, matrix ordering, quiver visibility, wind-rose labels and treemap legends were revised. Per-image captions state a key result, numbered takeaway boxes give a reading action, and common caveats are centralized.

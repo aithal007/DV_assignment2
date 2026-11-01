@@ -2,9 +2,9 @@
 
 **Main question:** What do averages and snapshots hide about inequality, relationships and change over time?
 
-**[Live dashboard](https://aithal007.github.io/DV_assignment2/)** | [Report](output/pdf/DAS732_A2_Report_IEEE.pdf) | [32 explained figures](https://aithal007.github.io/DV_assignment2/figures.html)
+**[Live dashboard](https://aithal007.github.io/DV_assignment2/)** | [Report](DAS732_A2_Report.pdf) | [31 explained figures](https://aithal007.github.io/DV_assignment2/figures.html)
 
-The report has **30 pages and 32 figure sets**. Figures 1-17 study country internet data; Figures 18-32 study daily US weather separately. The PDF links below figures open working UIs, animations or static figure readings. The site is published from `docs/` in this same repository.
+The report has **30 pages and 31 figures sets**. Figures 1-17 study country internet data; Figures 18-32 study daily US weather separately. The PDF links below figures open working UIs, animations or static figure readings. The site is published from `docs/` in this same repository.
 
 ## 1. Get the project and open the visualizations
 
@@ -23,7 +23,7 @@ Open `http://127.0.0.1:8765/web/home.html` if the browser does not open automati
 | Paired changes | `output/pcp_changes/index.html` | Brush gains, rotate axes and compare straight/bundled lines. |
 | Zoomable treemap | `web/treemap.html` | Switch hierarchy, zoom into Asia, hover countries and go Back. |
 
-GIFs: `images/scivis/scivis_global.gif`, `scivis_local.gif`, `scivis_contour.gif`. Each has eight dates; full-period analyses use all 92 days. Assessment images are `images/report/Fig1.png` through `Fig32.png`.
+GIFs: `images/scivis/scivis_global.gif`, `scivis_local.gif`, `scivis_contour.gif`. Each has eight dates; full-period analyses use all 92 days. Assessment images are `images/report/Fig1.png` through `Fig31.png`.
 
 ## 2. Install the regeneration dependencies
 
@@ -117,7 +117,7 @@ pdflatex -interaction=nonstopmode -halt-on-error DAS732_A2_Report.tex
 cd ..
 ```
 
-That updates `report_latex/DAS732_A2_Report.pdf`; the Python builder also copies the deliverable to `output/pdf/DAS732_A2_Report_IEEE.pdf`. The source ZIP includes the preamble and all 32 figure PNGs, without needing an external A1 folder.
+That updates `report_latex/DAS732_A2_Report.pdf`; the Python builder also copies the deliverable to `DAS732_A2_Report.pdf`. The source ZIP includes the preamble and all 31 figures PNGs, without needing an external A1 folder.
 
 ## 6. Regenerate numerical inputs, figures and report
 
@@ -133,9 +133,9 @@ Or run `python -X utf8 scripts/reproduce_results.py --stage all`. Add `--downloa
 
 | Result | Location |
 |---|---|
-| Report | `output/pdf/DAS732_A2_Report_IEEE.pdf` |
+| Report | `DAS732_A2_Report.pdf` |
 | Editable source | `report_latex/` |
-| Numbered PNGs | `images/report/Fig1.png` ... `Fig32.png` |
+| Numbered PNGs | `images/report/Fig1.png` ... `Fig31.png` |
 | Input provenance | `data/processed/preprocessing_audit.json` |
 | Pair scores/default graph | `data/network_all_pair_similarities.csv`, `data/country_network_2020.json` |
 | Change/cohort evidence | `output/pcp_changes/`, `output/proposals_20261026/` |
@@ -167,7 +167,7 @@ git commit -m "Refresh report and visualizations"
 git push origin main
 ```
 
-Pages publishes `docs/` on `main`. `docs/.nojekyll` preserves static paths. Refresh copies the current PDF, 32 figure PNGs/readings, browser JS/JSON, threshold evidence and GIFs. There is no application backend. Both project and site are public in this one repository; the former separate Pages repository was deleted.
+Pages publishes `docs/` on `main`. `docs/.nojekyll` preserves static paths. Refresh copies the current PDF, 31 figures PNGs/readings, browser JS/JSON, threshold evidence and GIFs. There is no application backend. Both project and site are public in this one repository; the former separate Pages repository was deleted.
 
 ## 9. Interpretation, contributions and references
 

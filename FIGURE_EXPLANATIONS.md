@@ -605,4 +605,4 @@ Selection searches the common 13,416-cell footprint for the largest run-length c
 
 **Takeaway.** Equal event counts can hide very different persistence. Two cells each have 75 hot-dry days, yet longest spells of 17 and 67 days. Preserving daily order is necessary to distinguish scattered occurrences from sustained conditions.
 
-[View figure and interpretation online](https://aithal007.github.io/DV_assignment2/figures.html#fig32)
+[View figure and interpretation online](https://aithal007.github.io/DV_assignment2/figures.html#fig31)

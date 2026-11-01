@@ -75,13 +75,13 @@
     "clause": "Spec. 1 / bundle",
     "requirement": "Submit report, images folder and codebase",
     "status": "Covered",
-    "evidence": "DAS732_A2_Report.pdf; images/report/Fig1.png-Fig32.png; data/, scripts/, web/, requirements.txt and launcher. Submission is self-contained without a Git remote."
+    "evidence": "DAS732_A2_Report.pdf; images/report/Fig1.png-Fig31.png; data/, scripts/, web/, requirements.txt and launcher. Submission is self-contained without a Git remote."
   },
   {
     "clause": "Spec. 1a",
     "requirement": "Captioned report images and image-specific inferences",
     "status": "Covered",
-    "evidence": "All 32 figure sets have a key-result caption, concise reading guide, evidence-based interpretation and numbered action takeaway. Full question/rationale guides are included in figures.html; common caveats are centralized."
+    "evidence": "All 31 figures sets have a key-result caption, concise reading guide, evidence-based interpretation and numbered action takeaway. Full question/rationale guides are included in figures.html; common caveats are centralized."
   },
   {
     "clause": "Spec. 1b",
@@ -141,7 +141,7 @@
     "clause": "Spec. 2c-d",
     "requirement": "No joint task ownership; no two students do the same task",
     "status": "Verify",
-    "evidence": "The assigned type ownership is distinct and all 32 figures have one assigned name. Shared preprocessing and reuse of method outputs are separated from task ownership. Confirm that actual work matches this table."
+    "evidence": "The assigned type ownership is distinct and all 31 figures have one assigned name. Shared preprocessing and reuse of method outputs are separated from task ownership. Confirm that actual work matches this table."
   },
   {
     "clause": "Spec. 3",

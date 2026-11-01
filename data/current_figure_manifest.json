@@ -677,35 +677,6 @@
     "allocation_status": "assigned responsibility"
   },
   {
-    "number": 23,
-    "title": "Daily temperature and its spatial spread.",
-    "path": "images/extensions/daily_temperature_ribbons.png",
-    "caption": "Daily mean maximum temperature with spatial 25th-75th and 10th-90th percentile ribbons across all 92 days.",
-    "explanation": [
-      "What does a daily average hide about different places?",
-      "Each longitude-sector panel retains all 92 days. The solid colored line is the area-weighted spatial median, the dashed dark line the area-weighted mean, and the shaded ribbon the spatial 10th-90th percentiles. All panels use the same Celsius scale.",
-      "Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.",
-      "Ribbons describe differences across grid cells, not uncertainty around the mean.",
-      "A smooth area mean can conceal both daily episodes and simultaneous differences between places. The ribbons recover that spatial spread around the daily mean. Their width describes variation across cells, rather than statistical uncertainty about the mean."
-    ],
-    "figure": 23,
-    "original_figure": 18,
-    "detailed_interpretation": "On July 27, the western sector's weighted Tmax mean is 31.193 C and its spatial p10-p90 range is 23.75-39.25 C. The central mean is 35.36 C with range 31.39-38.35 C. The western daily value is distinct from July's all-area mean, 31.192 C: both round to 31.19, a numerical coincidence verified from the cache.\n\nSolid lines show spatial medians, dashed lines weighted means, and ribbons spatial p10-p90. Fixed sector memberships are 4,910/4,828/3,678 cells. Their different ribbon widths show why similar summary trajectories need not imply similar conditions across places. The ribbons describe spatial spread, not uncertainty around a mean.",
-    "proposed_part": "A",
-    "supporting": false,
-    "wide": true,
-    "previous_review_figure": 17,
-    "live_links": [
-      {
-        "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig23"
-      }
-    ],
-    "analysis_id": 22,
-    "assigned_to": "Parikshith Aithal K V",
-    "allocation_status": "assigned responsibility"
-  },
-  {
     "title": "Monthly rain totals and five-day bursts.",
     "path": "output/research_candidates/rainfall_concentration.png",
     "wide": true,
@@ -719,14 +690,14 @@
     ],
     "detailed_interpretation": "July and August have similar weighted rain totals, 75.26 and 75.82 mm, but different timing. Among cells with monthly total at least 10 mm, 43.8% of eligible July area gets at least half its rain in one five-day window, versus 67.5% in August and 77.6% in September. September's total is lower, 57.08 mm.\n\nThe minimum-total mask avoids ratios dominated by tiny denominators; eligible footprints differ (74.75%, 92.32%, 94.09%). Concentration also depends on wet-day count: a cell with few rain days can have a large five-day share without a sustained episode. Read the ratio with totals and daily timing, rather than interpreting it directly as event duration or hazard.",
     "extension_key": "rainfall_concentration",
-    "figure": 24,
+    "figure": 23,
     "number": 24,
     "previous_review_figure": 19,
     "supporting": false,
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig24"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig23"
       }
     ],
     "analysis_id": 23,
@@ -746,7 +717,7 @@
       "The 35\u00b0C threshold is a chosen study definition. Frequency alone does not show whether hot days form one continuous run.",
       "Hot-day frequency reveals repeated heat that a monthly mean or one selected date cannot count. Its decline from July to September measures occurrence, while the maps retain location. Frequency still leaves the ordering of those days unresolved."
     ],
-    "figure": 25,
+    "figure": 24,
     "original_figure": 21,
     "detailed_interpretation": "The weighted mean frequency of Tmax >=35 C falls from 22.8% of July days to 8.9% of September days. The spatial colors show where repeated threshold exceedance remains concentrated, providing evidence that is absent from the monthly mean temperature alone.\n\nThe denominator is each month's number of days, so 31 versus 30 days does not mechanically create the contrast. A 50% cell crosses the chosen threshold on half its days, but its warm days may be consecutive or scattered. Thus these maps establish repetition and location, while the persistence map/calendar establish sequence and duration. The 35 C threshold is a declared descriptive definition rather than a universal heat-risk criterion; the final sensitivity panel checks how that choice affects the counts.",
     "proposed_part": "B",
@@ -756,7 +727,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig25"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig24"
       }
     ],
     "analysis_id": 24,
@@ -776,7 +747,7 @@
       "Retaining every date exposes episodes smoothed away by monthly maps. The time-longitude view locates their timing and east-west extent, but latitude averaging removes north-south detail. Return to maps before interpreting a band as a specific event location or track."
     ],
     "key": "weather_hovmoller",
-    "figure": 26,
+    "figure": 25,
     "original_figure": 22,
     "detailed_interpretation": "This Hovmoller-style display retains daily time-longitude structure [11]. Time is horizontal and longitude vertical; A locates the 30-45 N averaging band. B subtracts each longitude's own 92-day mean Tmax, removing the fixed east-west baseline so within-period warm/cool departures are visible. The reference is not a long-term climate normal.\n\nC's largest latitude-weighted rain mean is 95.20 mm/day on September 16 at 67.27 W. It averages only two valid coastal cells, with 94.10 and 96.30 mm/day; the units are verified, not square-root millimeters. Only color spacing is square-root transformed. D exposes longitude support (1-60 cells). Sparse support can preserve local extremes; these aggregate streaks do not track individual storms.",
     "proposed_part": "B",
@@ -786,7 +757,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig26"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig25"
       }
     ],
     "analysis_id": 25,
@@ -805,7 +776,7 @@
       "These are daily wind values at 10 m, not gusts or paths followed by air parcels.",
       "Arrow spacing and length determine which wind questions are readable. Sparse sampling clarifies directions while omitting locations; equal lengths emphasize direction and speed-scaled lengths add magnitude. Interpret the vector convention and speed colors with the chosen design."
     ],
-    "figure": 27,
+    "figure": 26,
     "original_figure": 15,
     "detailed_interpretation": "Two readable sampling densities now compare every fourth and twelfth display cell on the same August 22 western-US field. Larger speed-proportional arrows retain a 5 m/s key; equal-length arrows prioritize direction while color still encodes speed. Dense sampling can overlap; sparse sampling removes locations rather than smoothing the field.\n\nThe required variables are `vs` (10 m speed) and `th` (10 m FROM-direction). After angle conversion to radians, u=-vs*sin(th), v=-vs*cos(th) gives flow-TO components. Display bearings account for longitude scale and map aspect. The comparison isolates symbol density and length encoding; it cannot reveal finer wind resolution or trajectories absent from the data [1].",
     "proposed_part": "C",
@@ -815,7 +786,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig27"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig26"
       }
     ],
     "analysis_id": 26,
@@ -836,14 +807,14 @@
       "Wind direction and strength distributions change within the three-month interval. Monthly roses expose a source-direction shift that a pooled seasonal summary could hide. Their common radial scale supports frequency comparison, while maps remain necessary to locate the winds."
     ],
     "detailed_interpretation": "July's largest source-direction sector is southwest, shifting toward south in August/September. All roses use the same 14% outer limit; ring values are stated outside the bars so labels no longer cover measurements. Stacked colors show how speed classes contribute to each directional frequency.\n\nEach percentage uses weighted grid-cell days in that month, not just days at one station. Equal radial scales make the seasonal shift comparable, while the common legend prevents color reinterpretation. This pooled direction distribution complements the quiver maps: it reveals frequency changes but deliberately gives up exact location.",
-    "figure": 28,
+    "figure": 27,
     "number": 28,
     "previous_review_figure": null,
     "supporting": false,
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig28"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig27"
       }
     ],
     "analysis_id": 27,
@@ -864,7 +835,7 @@
       "Separate field summaries cannot establish that conditions coincide at the same place. The overlay aligns heat, rain and wind to reveal spatial coincidence on selected dates. Those examples motivate the complete-period overlap calculation rather than establish its frequency."
     ],
     "number": 29,
-    "figure": 29,
+    "figure": 28,
     "original_figure": null,
     "detailed_interpretation": "The objectively selected dates contrast hot-dry area coverage of 34.56% on July 27 and 1.75% on September 30. Common temperature colors, 5/20/50 mm rain contours and the same arrow positions permit spatial comparison. The overlay reveals where the fields coincide; three separate area means would not establish that.\n\nThe dates are deliberately contrasting examples, so they do not show how frequent either state is. The next full-period calculation evaluates all cells and dates. Moreover, daily maximum temperature, accumulated rain and daily wind summaries need not occur at the same hour: the overlay establishes cell-day alignment, not instantaneous physical simultaneity. This qualification preserves the spatial inference without turning co-location into an explanation of a weather mechanism.",
     "proposed_part": "C",
@@ -874,7 +845,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig29"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig28"
       }
     ],
     "analysis_id": 28,
@@ -895,7 +866,7 @@
       "Common individual conditions need not produce common joint events. Although dry days occupy 76.65% of weighted cell-days, only 2.57% meet all three conditions together. Compute overlap at the same cell and date; separate marginal percentages cannot recover it."
     ],
     "detailed_interpretation": "The separate bars give about 18.06% hot, 76.65% dry and 11.65% windy weighted cell-days. Their intersection is 2.57%, calculated only when all three flags are true at the same cell and date. A very common dry condition therefore does not make the three-condition event equally common.\n\nThe bars overlap and must not be added. Multiplying the three marginal percentages would give about 1.61% under an independence assumption, rather than the measured 2.57%; separate frequencies do not recover the joint distribution. This answers the coincidence part of the main question with an explicit joint calculation. It is not a significance test, causal attribution or official hazard index, and neighboring cells/days are not independent samples.",
-    "figure": 30,
+    "figure": 29,
     "number": 30,
     "previous_review_figure": null,
     "supporting": false,
@@ -903,7 +874,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig30"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig29"
       }
     ],
     "analysis_id": 29,
@@ -924,7 +895,7 @@
       "Occurrence, uninterrupted duration and affected area describe different event properties. The 16.27% hot-dry frequency and 67-day local maximum cannot substitute for each other. Combine their maps, daily coverage and threshold sensitivity before characterizing the seasonal pattern."
     ],
     "number": 31,
-    "figure": 31,
+    "figure": 30,
     "original_figure": null,
     "detailed_interpretation": "Hot-dry conditions occupy 16.27% of weighted grid-cell days, while the maximum local uninterrupted run reaches 67 days. These quantities have different denominators: one summarizes area and time together; the other records the longest sequence at one location. The daily coverage curve adds whether a local persistent pattern also affects a large fraction of the footprint at once.\n\nThe final panel repeats frequencies at 33, 35 and 37 C with rain cutoffs of 0.1 and 1 mm/day, showing definition sensitivity. Runs touching the first/last observation may continue outside the window. The daily calendar that follows supplies a direct explanation of the frequency-persistence distinction: equal counts can be arranged into very different spells. Report occurrence, duration, coverage and threshold together before characterizing the event pattern.",
     "proposed_part": "B",
@@ -934,7 +905,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig31"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig30"
       }
     ],
     "analysis_id": 30,
@@ -942,7 +913,7 @@
     "allocation_status": "assigned responsibility"
   },
   {
-    "figure": 32,
+    "figure": 31,
     "number": 32,
     "title": "Daily event order separates frequency from persistence.",
     "path": "output/additional_evidence/daily_event_calendar.png",
@@ -963,7 +934,7 @@
     "live_links": [
       {
         "label": "View figure and interpretation online",
-        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig32"
+        "url": "https://aithal007.github.io/DV_assignment2/figures.html#fig31"
       }
     ],
     "caption": "Daily event order separates frequency from persistence.",
