@@ -65,7 +65,7 @@
   "wind_vector_formula": "u=-speed*sin(theta); v=-speed*cos(theta)",
   "cache_sha256": "4b05168a1360f3a0f6784259aca0424e235d26c30c44488c059b365e0151ef8c",
   "cache_file_modified_utc": "2026-10-30T17:03:49.633063+00:00",
-  "figure_built_utc": "2026-11-01T16:26:50.589985+00:00",
+  "figure_built_utc": "2026-11-01T17:02:08.295056+00:00",
   "contour_algorithm": "ContourPy serial",
   "contour_corner_mask": true,
   "display_subsample_degrees": 0.25,

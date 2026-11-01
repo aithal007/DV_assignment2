@@ -117,7 +117,7 @@ Georgia and Brunei both gain about 25 adoption points and eight broadband subscr
 
 **Takeaway.** Similar internet-use gains conceal different combinations of infrastructure change. Even the selected 20-30-point gain group contains opposing landline and mobile movements. Follow each country across all four change axes before assigning one explanation to its progress.
 
-[View live demonstration](https://aithal007.github.io/DV_assignment2/output/pcp_changes/index.html) | [Full UI screenshot](https://aithal007.github.io/DV_assignment2/interactions.html#changes)
+[View live demonstration](https://aithal007.github.io/DV_assignment2/web/pcp_changes.html) | [Full UI screenshot](https://aithal007.github.io/DV_assignment2/interactions.html#changes)
 
 
 ### Figure 5. Gentle bundles reveal different country profiles.

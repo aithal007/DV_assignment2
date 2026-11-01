@@ -1,4 +1,4 @@
-﻿"""Approved report assets: lecture PCP comparison and an actual Marching Squares cell."""
+"""Approved report assets: lecture PCP comparison and an actual Marching Squares cell."""
 from pathlib import Path
 import json
 import numpy as np
@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 ROOT=Path(__file__).resolve().parents[1]
 def main():
  p=ROOT/'output/internet_revision'
+ p.mkdir(parents=True,exist_ok=True)
  z=np.load(ROOT/'data/scivis/gridmet_2023-07-01_2023-09-30_n8_s6.npz');t=z['tmmx'][4];level=35.
  found=False
  for i in range(t.shape[0]-1):

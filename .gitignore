@@ -3,9 +3,7 @@ __pycache__/
 *.pyc
 tmp/
 archive/*.zip
-output/DAS732_A2_Report_and_JavaScript.zip
-output/DAS732_A2_LaTeX_Source.zip
-output/proposals_20261026/rubric_previews.html
+output/
 report_latex/DAS732_A2_Report.pdf
 report_latex/*.aux
 report_latex/*.log

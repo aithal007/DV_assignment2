@@ -28,6 +28,14 @@ def save(fig,name):
 
 def draw_layouts():
     d,a,g,groups=inputs();v=np.array([e['similarity'] for e in d['all_edges']]);t=a['threshold']
+    OUT.mkdir(exist_ok=True,parents=True)
+    topo_path=OUT/'threshold_topology.csv'
+    if not topo_path.exists():
+        n_c=len(d['nodes']);ii,jj=np.triu_indices(n_c,1);sw=[]
+        for q_val in np.linspace(.80,.99,77):
+            t_val=np.quantile(v,q_val);m=v>=t_val;g_q=nx.Graph();g_q.add_nodes_from(range(n_c));g_q.add_edges_from(zip(ii[m],jj[m]))
+            sw.append(dict(quantile=float(q_val),threshold=float(t_val),edges=g_q.number_of_edges(),isolates=len(list(nx.isolates(g_q))),largest_component=max(map(len,nx.connected_components(g_q)))))
+        pd.DataFrame(sw).to_csv(topo_path,index=False)
     fig=plt.figure(figsize=(15,10));gs=fig.add_gridspec(2,6,height_ratios=[.72,1],hspace=.48)
     ax=fig.add_subplot(gs[0,:3]);ax.hist(v,bins=np.linspace(0,1,41),color='#b5c7d2',edgecolor='white')
     ax.axvline(t,color='#d65b32',lw=2,label=f'95th percentile = {t:.6f}');ax.set(xlabel='Pair similarity: 1 / (1 + standardized distance)',ylabel='Number of country pairs',title='A  Distribution over all 15,931 pairs');ax.legend(frameon=False,fontsize=10)

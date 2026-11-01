@@ -149,7 +149,9 @@ def within_regions():
     METRICS['within_regions']={'countries':len(rows),'within_percent':share,'between_percent':100-share,'regions':stats}
 
 def overlap():
-    d=pd.read_csv(ROOT/'output/lecture_previews/weather_intersections.csv',dtype={'month':str})
+    csv_p=ROOT/'output/lecture_previews/weather_intersections.csv'
+    if not csv_p.exists(): csv_p=ROOT/'data/processed/weather_intersections.csv'
+    d=pd.read_csv(csv_p,dtype={'month':str})
     d=d[d.month.eq('all')]
     vals=[float(d[d[c]].area_day_pct.sum()) for c in ['hot','dry','windy']]
     vals.append(float(d[d.hot&d.dry&d.windy].area_day_pct.iloc[0]))

@@ -9,6 +9,7 @@ import matplotlib.pyplot as plt
 
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'output/lecture_previews'
+OUT.mkdir(parents=True,exist_ok=True)
 
 def build():
     data=pd.read_csv(ROOT/'data/internet_panel_2000_2020.csv')

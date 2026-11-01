@@ -1,4 +1,4 @@
-﻿"""Selected PCP: gentle curves, original axis values, explicit adoption-band groups."""
+"""Selected PCP: gentle curves, original axis values, explicit adoption-band groups."""
 from pathlib import Path
 import json
 import numpy as np
@@ -8,7 +8,7 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from matplotlib.path import Path as MPath
 from matplotlib.patches import PathPatch
-R=Path(__file__).resolve().parents[1];O=R/'output/internet_revision'
+R=Path(__file__).resolve().parents[1];O=R/'output/internet_revision';O.mkdir(parents=True,exist_ok=True)
 def build():
  d=pd.DataFrame(json.loads((R/'data/infovis_countries.json').read_text()));codes=set(d[d.year==2015].code)&set(d[d.year==2020].code);d=d[d.code.isin(codes)];b=d[d.year==2020].sort_values('code');keys=['internet_users_share_pct','telephone_lines_per100','broadband_subs_per100','mobile_subs_per100'];maxima=d[keys].max().to_numpy();values=b[keys].to_numpy()/maxima;groups=np.digitize(b[keys[0]],[40,70]);centers=np.array([values[groups==i].mean(axis=0) for i in range(3)]);colors=['#bd7946','#527d9d','#418f7b'];strength=.35
  plt.rcParams.update({'font.family':'DejaVu Sans','font.size':12,'text.color':'#214055'})
