@@ -184,3 +184,7 @@ The team's requested video materials are in `output/video_presentation/`. Numeri
 The report contains ten cited references, including gridMET, OWID, NetworkX, D3, ContourPy/Marching Squares and Gephi (a permitted alternative, not the tool used). July-September covers summer heat into autumn cooling; 2023 provides a documented Southwest heat episode (NOAA reference in the report). Eight uniformly spaced dates give reproducible, balanced temporal coverage, while all 92 days are used for frequency and persistence; eight snapshots alone cannot establish either.
 
 [Complete uncropped browser screenshots](https://aithal007.github.io/DV_assignment2/interactions.html) show the working UI controls. The network supports threshold, layout, region and isolate filtering; the treemap compares squarified and slice-and-dice partitioning without changing values. Run `node scripts/audit_github_pages.mjs` after refreshing Pages to exercise controls and refresh those screenshots.
+
+
+> **Canonical submission:** `DAS732_A2_Submission_final/` is the graded submission folder.
+> Files outside it (`output/`, `data/`, `docs/`, etc.) are supporting development history and the GitHub Pages website.

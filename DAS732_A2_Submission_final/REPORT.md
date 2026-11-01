@@ -671,9 +671,9 @@ Task responsibilities are assigned below.
 
 | Member | Responsibility |
 |---|---|
-| Parikshith Aithal K V (BT2024249) | Network and interactive parallel coordinates; scalar color mapping and global/local scales; rainfall concentration comparison. 1-5, 7, 13, 19-20, 22-23 |
-| Sindhoor Ganapathi Hegde (BT2024014) | Horizon/ridgeline variations; custom contour tracing, filled bands and contour GIF; weather persistence and event timing. 6, 14-18, 21, 25-26, 31 |
-| Varshith M Gowda (BT2024227) | Association and catch-up comparison experiments across measures, regions and cohorts; quiver sampling and length encoding with wind and multivariable context. 8-12, 24, 27-30 |
+| Parikshith Aithal K V (BT2024249) | Network node-link + parallel coordinates (InfoVis); scalar color mapping with global vs local extrema (SciVis). Figs 1–7, 18–19, 22–23 |
+| Sindhoor Ganapathi Hegde (BT2024014) | Horizon plots + ridgeline plots (InfoVis); Marching Squares contour mapping (SciVis). Figs 14–17, 20–21, 24–25, 30–31 |
+| Varshith M Gowda (BT2024227) | Treemap visualisations + cohort comparisons (InfoVis); quiver plot with grid sampling and magnitude encoding (SciVis). Figs 8–13, 26–29 |
 
 ## Conclusion
 

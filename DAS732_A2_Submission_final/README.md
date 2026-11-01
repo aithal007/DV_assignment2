@@ -74,8 +74,10 @@ pdflatex -interaction=nonstopmode -halt-on-error DAS732_A2_Report.tex
 
 Task responsibilities and figure allocations:
 
-- **Parikshith Aithal K V (BT2024249)**: Network and interactive parallel coordinates; scalar color mapping and global/local scales; rainfall concentration comparison. (11 figures: 1–5, 7, 13, 19–20, 22–23)
-- **Sindhoor Ganapathi Hegde (BT2024014)**: Horizon/ridgeline variations; custom contour tracing, filled bands and contour GIF; weather persistence and event timing. (10 figures: 6, 14–18, 21, 25–26, 31)
-- **Varshith M Gowda (BT2024227)**: Association and catch-up comparison experiments across measures, regions and cohorts; quiver sampling and length encoding with wind and multivariable context. (10 figures: 8–12, 24, 27–30)
+| Member | Figs | InfoVis task | SciVis task |
+|---|---|---|---|
+| Parikshith Aithal K V (BT2024249) | 1–7, 18–19, 22–23 (11 figs) | Network node-link + parallel coordinates plot | Scalar color mapping (global vs local extrema) |
+| Sindhoor Ganapathi Hegde (BT2024014) | 14–17, 20–21, 24–25, 30–31 (10 figs) | Horizon plots + ridgeline plots | Marching Squares contour mapping |
+| Varshith M Gowda (BT2024227) | 8–13, 26–29 (10 figs) | Treemap visualisations + cohort comparisons | Quiver plot (grid sampling + magnitude encoding) |
 
-Total figures: 31 (each member owns one InfoVis and one SciVis focus area, fully documented in the report).
+Total figures: 31. No two members share a task; joint ownership applies only to shared data cleaning/pre-processing (see report Section I).
