@@ -46,7 +46,8 @@ pdfauthor={Parikshith Aithal K V, Sindhoor Ganapathi Hegde, Varshith M Gowda}}
 \IEEEauthorblockN{Varshith M Gowda}
 \IEEEauthorblockA{Roll No. BT2024227\\IIIT Bangalore}}
 \IEEEaftertitletext{\vspace{-8pt}\begin{center}\small
-\href{https://aithal007.github.io/DV_assignment2/}{\textcolor{accent}{\underline{Live dashboard and demonstrations: aithal007.github.io/DV\_assignment2/}}}
+\href{https://aithal007.github.io/DV_assignment2/}{\textcolor{accent}{\underline{Live dashboard and demonstrations: aithal007.github.io/DV\_assignment2/}}}\\[2pt]
+{\bfseries\color{accent}Submission mirrors: \href{https://drive.google.com/drive/folders/1z1a7Zm4Zed1E_HTJYJ9jM60JMG6ReEO6?usp=drive_link}{\underline{Google Drive link}} \quad \textbullet \quad \href{https://iiitbac-my.sharepoint.com/:f:/g/personal/parikshith_aithal_iiitb_ac_in/IgCNp7Qd4mEWRJ3aRFu4KIv7ASgagGLXmGN8K92jPUOksxw?e=Nd7Xc1}{\underline{Microsoft OneDrive / SharePoint link}}}
 \end{center}\vspace{1pt}}
 \maketitle
 \pagestyle{plain}
@@ -54,7 +55,7 @@ pdfauthor={Parikshith Aithal K V, Sindhoor Ganapathi Hegde, Varshith M Gowda}}
 
 
 
-\begin{abstract}What do averages and snapshots hide about inequality, relationships and change over time? We study country internet indicators and daily US weather separately. Network, multivariable, temporal and spatial views connect each question to measured evidence. Broadband and internet use correlate strongly across country levels (0.831), but weakly across their changes (0.054). About 47\% of measured adoption variation lies within regions. Hot-dry conditions occupy 16.27\% of weighted grid-cell days, yet local runs reach 67 days. These contrasts show why group summaries, endpoints and separate frequencies need individual values, histories and shared timing for interpretation.\end{abstract}
+\begin{abstract}What do averages and snapshots hide about inequality, relationships and change over time? We study country telecommunications indicators and daily US weather separately. Network, multivariable, temporal and spatial views connect each question to empirical evidence. Across country levels, broadband and internet adoption correlate strongly (Spearman $r_s = 0.831$, $p < 0.001$), but their 2015-2020 paired gains show no detectable association ($r_s = 0.054$, $p = 0.48$). Regional membership accounts for 53\% of measured country-level adoption variance, leaving 47\% within regions. The low-to-high fixed-cohort median gap widened from 16.2 percentage points in 2000 to a peak of 62.7 in 2011, then compressed to 53.8 in 2020; high-start countries also had less remaining headroom. Across 13,416 grid cells, hot-dry conditions occupy 16.27\% of weighted cell-days, while localized persistence reaches 67 consecutive days, showing that domain-wide frequency and local duration describe different event properties. These contrasts show why group summaries, endpoints and separate frequencies require individual values, paired histories and explicit temporal order for valid interpretation.\end{abstract}
 
 \begin{IEEEkeywords}country internet use, visual comparison, temporal change, daily weather, multivariable visualization\end{IEEEkeywords}
 
@@ -64,29 +65,31 @@ A national adoption rate hides infrastructure differences; a regional mean hides
 
 \textbf{Central question: What do averages and snapshots hide about inequality, relationships and change over time?}
 
-We ask: (1) Do similar internet-use levels conceal different telecom profiles? (2) Does overall progress imply catch-up among the same countries? (3) What do weather averages and selected dates omit about location, event timing and duration? Country data answer the first two questions; the separate weather investigation answers the third. Each result is interpreted as a descriptive pattern in the included data, with its scope stated.
+We ask: (1) Do similar internet-use levels conceal different telecom profiles? (2) Does overall progress imply catch-up among the same countries? (3) What do weather averages and selected dates omit about location, event timing and duration? Country data answer the first two questions; weather answers the third. Both domains address the same problem: scalar summaries collapse multi-dimensional variance, flatten non-monotonic trajectories, and mask co-occurring extremes. Linked coordinates, rugs, and aligned fields recover this hidden structure. Each result is interpreted descriptively with its scope stated.
 
 
 
 \section{Data and preparation}
 
-\textbf{Country inputs and cleaning.} Three A1 OWID/ITU CSV extracts \cite{ref2} provide internet-user counts, internet-use percentages and telecom subscriptions. \path{scripts/preprocess_data.py} renames columns, checks source-key uniqueness and numeric types, then outer-joins the files on entity, country code and year with one-to-one validation. The join has 13,387 rows; removing 823 explicitly listed aggregate rows leaves 12,564 country-year records. Missing values remain missing: they are neither replaced with zero nor imputed. A separate code-based lookup supplies regions; unmapped entries remain Unclassified.
+\textbf{Country inputs and cleaning.} Three curated Assignment 1 (A1) Our World in Data / International Telecommunication Union (OWID/ITU) CSV extracts \cite{ref2} provide internet-user counts, internet-use percentages and telecom subscriptions. Our data preprocessing pipeline renames columns, checks source-key uniqueness and numeric types, then outer-joins the files on entity, country code and year with one-to-one validation. The join has 13,387 rows; removing 823 explicitly listed aggregate rows leaves 12,564 country-year records. Missing values remain missing: they are neither replaced with zero nor imputed. \path{data/processed/region_lookup.csv} maps ISO3 codes into six broad geographical labels; it is a display classification, not an official political taxonomy. Unmapped entries remain Unclassified.
 
-\textbf{Comparable cohorts and transformations.} Each task declares its complete cases: 179 countries with all four 2020 profile indicators for the network; the same 175 countries in both 2015 and 2020 for paired changes; 159 countries with all 21 annual adoption values for 2000-2020; and 184 countries with user counts and adoption for treemaps. A change is computed within country before summarizing. Internet use is a percentage of people; landline, broadband and mobile values are subscriptions per 100 people and may exceed 100. These units are retained in profiles and changes.
+\textbf{Comparable cohorts and transformations.} Complete cases are declared for each task: Cohort A (network and profiles, $n = 179$); Cohort B (matched 2015--2020 pairs, $n = 175$, where four 2020-complete countries lack 2015 profiles); Cohort C (2000--2020 annual panel, $n = 159$, with 158 geographically classified); and Cohort D (treemap user counts, $n = 184$). In Fig.~\ref{fig:12}, Asia includes $n = 37$ classified countries, whereas Fig.~\ref{fig:13} tracks all $n = 41$ Asian entities. Within-country changes are reported in percentage points (pp) and subscriptions per 100 people. The 2020 observations are treated as official ITU pandemic-year published estimates.
 
-\textbf{Professor's guidance and network construction.} Following the professor's advice, we score every country pair, inspect the similarity distribution and filter highly similar pairs. Four indicators are z-scored separately across the 179 countries: subtract the indicator's country mean and divide by its standard deviation. Euclidean distance d gives similarity s=1/(1+d). Our team chooses the 95th percentile, P95=0.569763, as the sparse default: 797 of 15,931 pairs remain, with all 179 nodes retained. P95 is our team's choice. Fig.~\ref{fig:1} explains that choice and its sensitivity.
+\textbf{Professor's guidance and network construction.} Following the professor's advice, we score every country pair, inspect the similarity distribution and filter highly similar pairs. Four indicators are z-scored separately across the 179 countries: subtract the indicator mean and divide by its standard deviation. Euclidean distance $d$ gives similarity $s=1/(1+d)$. Our team chooses the 95th percentile, $P_{95}=0.569763$, as the sparse default: 797 of 15,931 pairs remain, with all 179 nodes retained. Perturbation was mentioned as an option; P95 is our team's choice. Fig.~\ref{fig:1} explains that choice and its sensitivity. Edge overlap uses Jaccard similarity: $J(E_1,E_2)=|E_1 \cap E_2|\,/\,|E_1 \cup E_2|$. Parallel coordinates (PCP) use bundled curves \cite{ref10}; treemaps use squarified aspect optimization \cite{ref13}.
 
-\textbf{Weather period and sampling rationale.} gridMET \cite{ref1} supplies \path{tmmx} (daily maximum temperature), \path{pr} (rain), \path{vs} (wind speed at 10 m) and \path{th} (wind FROM-direction at 10 m). July-September spans peak summer into early autumn, allowing heat persistence, cooling and rain timing to be compared in one contiguous interval. The selected 2023 year includes independently documented Southwest July heat \cite{ref9}, making persistence substantively relevant; it is a case study, not a representative climate year. Uniform eight-date sampling, 13 days apart with both endpoints, gives reproducible seasonal coverage without the uneven gaps possible in a small random sample. It cannot ensure capture of short extremes; all 92 days support monthly/event inferences.
+\textbf{Weather period and sampling rationale.} gridMET \cite{ref1} supplies \path{tmmx} (daily maximum temperature in K, converted to C), \path{pr} (rain in mm/day), \path{vs} (wind speed in m/s at 10 m) and \path{th} (wind FROM-direction in degrees from north at 10 m). July-September spans peak summer into early autumn, allowing heat persistence, cooling and rain timing to be compared in one contiguous interval. The selected 2023 year includes the Southwest July heat dome documented by NOAA \cite{ref9}, making persistence substantively relevant; it is a case study, not a representative climate year. Uniform eight-date sampling (13 days apart with endpoints) gives reproducible seasonal coverage; all 92 days support daily and event inferences.
 
-\textbf{Weather preparation.} Decode NetCDF packing/masks before converting source Kelvin to Celsius; supplied caches are already Celsius. Read every sixth grid cell (subsampling, not averaging), align coordinates/dates and retain the same 13,416 cells valid for all variables on all days. Cosine-latitude weights approximate area. Rain stays mm/day, speed m/s and direction degrees FROM north; quiver components point toward flow. The audit records hashes, missing counts, cohorts and sampled-to-daily checks.
+\textbf{Weather preparation and weighting.} Decode NetCDF packing/masks. Read every sixth grid cell along latitude and longitude (stride-six subsampling, keeping 1/36th of cells), align coordinates and dates, and retain the same 13,416 cells valid for all four variables on all 92 days. Cosine-latitude weights $w_i = \cos(\phi_i)$ approximate spherical surface area without meridian convergence distortion. Quiver vector components point toward flow: $u = -v_s \sin(\theta)$, $v = -v_s \cos(\theta)$. Audit records log hashes, masks and unit consistency.
 
 
 
 \subsection{Tools, interaction and implementation evidence}
 
-NetworkX \cite{ref3} computes the three layouts; D3 \cite{ref4} implements layout/threshold selection, node filters, PCP bundling/brushing/reordering and treemap zoom/hierarchy/partition controls. Gephi \cite{ref5} is an allowed alternative, not a required additional tool. The first-page dashboard link opens the working browser UIs; \path{images/gui/} and the interaction receipt provide local evidence. Open \path{web/home.html} through \path{python} \path{run_visualizations.py} to exercise the controls locally. The README documents setup, reproduction and browser checks.
+NetworkX \cite{ref3} computes the three layouts; D3 \cite{ref4} implements layout/threshold selection, node filters, PCP bundling/brushing/reordering \cite{ref10} and treemap zoom/hierarchy/partition controls \cite{ref13}. Gephi \cite{ref5} is an allowed alternative, not a required additional tool. The first-page dashboard link opens the working browser user interfaces (UIs); \path{images/gui/} and the interaction receipt provide local evidence. Open \path{web/home.html} through \path{python} \path{run_visualizations.py} to exercise the controls locally. The README documents setup, reproduction and browser checks.
 
 
+
+\par\noindent{\small High-resolution UI screenshots and the complete control inventory for all four applications are documented in the repository \path{REPORT.md}; the live interactive versions are linked from the dashboard above.}
 
 \section{Country relationships and paths}
 
@@ -98,7 +101,7 @@ We establish how links are constructed, compare country histories and inspect re
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.72\textheight,keepaspectratio]{Fig1.png}
+\includegraphics[width=\textwidth,height=0.63\textheight,keepaspectratio]{Fig1.png}
 
 \caption{P95 keeps 797 edges and 12 isolates. Layouts preserve neighbors while changing separation and crossing costs; boxed rows deliberately place isolates. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/web/network.html}{\textcolor{accent}{\underline{View live demonstration}}} \quad | \quad \href{https://aithal007.github.io/DV_assignment2/interactions.html\#network}{\textcolor{accent}{\underline{Full UI screenshot}}}}}\label{fig:1}
 
@@ -118,9 +121,11 @@ We establish how links are constructed, compare country histories and inspect re
 
 
 
-\paragraph{Interpretation.} The distribution defines the complete 15,931-pair universe. P95=0.569763 retains 797 edges and all 179 countries, including 12 isolates. This is the team's sparse default; P90/P92.5/P97.5 retain 1,594/1,195/399 pairs and 5/9/22 isolates. The labeled rows deliberately place degree-zero countries.
+\paragraph{Interpretation.} The distribution defines the complete 15,931-pair universe. $P_{95}=0.569763$ retains 797 edges and all 179 countries, including 12 isolates. This is the team's sparse default; P90/P92.5/P97.5 retain 1,594/1,195/399 pairs and 5/9/22 isolates. The boxed bottom rows deliberately place degree-zero countries.
 
-All layouts preserve India's twelve links. Spring separates the connected core with relatively short edges; Spectral compresses some neighborhoods and can overlap nodes; Circular preserves a uniform node order but creates long, crossing chords. Proper straight-edge crossings are 3,042/3,371/98,598 for Spring/Spectral/Circular. These display-specific counts exclude shared endpoints and collinear overlaps; they are readability measures, not evidence that one graph is truer. Region color and degree size expose composition and connectivity. The package's \path{output/network_revision/} contains the threshold sweep and metric-sensitivity tables; \path{output/review_revision/layout_comparison.csv} defines the layout comparison.
+All layouts preserve India's twelve links. The Spectral horseshoe and Spring linear core are properties of the graph-layout algorithms, not projections of the measured variables onto a feature-space axis---layout position does not encode indicator similarity directly. Spring separates the connected core with relatively short edges; Spectral compresses some neighborhoods and can overlap nodes; Circular preserves a uniform node order but creates 98,598 edge crossings, contrasting with 3,042 in Spring and 3,371 in Spectral. Region color and degree size expose composition and connectivity.
+
+Metric and feature sensitivity analysis confirms that while perturbation with Gaussian noise (SD 0.02) yields high edge stability (mean Jaccard 0.922, range 0.905-0.941), omitting one indicator yields Jaccard overlaps of 0.338 to 0.512: omitting mobile subscriptions gives Jaccard 0.338; internet adoption 0.432; fixed landlines 0.491; and fixed broadband 0.512 (\emph{protocol}: for each omission the 179-country z-score and P95 threshold are recalculated on the remaining three indicators; Jaccard then compares the resulting edge set to the full-four-indicator 797-edge baseline). Alternative scaling yields overlaps of 0.801 (median/IQR) and 0.460 (ranks). Thus, P95 identifies a specific multi-indicator similarity cohort rather than an immutable country grouping.
 
 
 
@@ -132,13 +137,13 @@ All layouts preserve India's twelve links. Spring separates the connected core w
 
 }
 
-\noindent\textit{Further reading.} Compare exact neighbors across layouts before interpreting visual separation.
+\noindent\textit{Analytical recommendation.} Compare exact neighbors across layouts before interpreting visual separation.
 
 \subsection{Fig. 2: Different country paths to higher internet use}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.45\textheight,keepaspectratio]{Fig2.png}
+\includegraphics[width=0.99\textwidth,height=0.45\textheight,keepaspectratio]{Fig2.png}
 
 \caption{Similar adoption gains accompany different annual infrastructure paths. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig2}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:2}
 
@@ -172,13 +177,13 @@ This answers the history part of the main question: an endpoint or even a simila
 
 }
 
-\noindent\textit{Further reading.} Use annual paths to distinguish countries with similar endpoint gains.
+\noindent\textit{Analytical recommendation.} Use annual paths to distinguish countries with similar endpoint gains.
 
 \subsection{Fig. 3: Community links and degree-ordered pair detail}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.55\textheight,keepaspectratio]{Fig3.png}
+\includegraphics[width=0.99\textwidth,height=0.55\textheight,keepaspectratio]{Fig3.png}
 
 \caption{A shared community label conceals unequal internal degrees and measured gaps. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig3}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:3}
 
@@ -198,7 +203,7 @@ This answers the history part of the main question: an endpoint or even a simila
 
 
 
-\paragraph{Interpretation.} The left graph aggregates six communities, making their 98 between-group links readable; the 699 internal links remain inside the groups. The right matrix resolves the selected 15-country group, with 93 of 105 possible links. Rows and columns are now ordered by internal degree, so dense members and gaps are visible without decoding miniature overview matrices.
+\paragraph{Interpretation.} The left graph aggregates six communities, making their 98 between-group links readable; the 699 internal links remain inside the groups. The right matrix resolves the selected 15-country group, with 93 of 105 possible links. Rows and columns are arranged by descending internal degree, so dense members and gaps are immediately visible without decoding miniature overview matrices.
 
 Afghanistan has 14 internal neighbors and Angola seven: a shared group label conceals different pair relationships. White cells are measured scores below P95; the diagonal is excluded. This node-link/matrix hybrid is inspired by NodeTrix \cite{ref8}, while community nodes in the overview are aggregates. The exact matrix supplies the individual evidence that the grouped picture omits.
 
@@ -212,7 +217,7 @@ Afghanistan has 14 internal neighbors and Angola seven: a shared group label con
 
 }
 
-\noindent\textit{Further reading.} Inspect individual pairs before generalizing from a community label.
+\noindent\textit{Analytical recommendation.} Inspect individual pairs before generalizing from a community label.
 
 \section{Profiles, changes and hierarchies}
 
@@ -226,7 +231,7 @@ We connect paired changes and endpoint profiles, directly test almost equal adop
 
 \includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig4.png}
 
-\caption{One adoption-gain band contains opposing landline and mobile changes. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/output/pcp_changes/index.html}{\textcolor{accent}{\underline{View live demonstration}}} \quad | \quad \href{https://aithal007.github.io/DV_assignment2/interactions.html\#changes}{\textcolor{accent}{\underline{Full UI screenshot}}}}}\label{fig:4}
+\caption{One adoption-gain band contains opposing landline and mobile changes. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/web/pcp_changes.html}{\textcolor{accent}{\underline{View live demonstration}}} \quad | \quad \href{https://aithal007.github.io/DV_assignment2/interactions.html\#changes}{\textcolor{accent}{\underline{Full UI screenshot}}}}}\label{fig:4}
 
 \end{figure*}
 
@@ -246,7 +251,7 @@ We connect paired changes and endpoint profiles, directly test almost equal adop
 
 \paragraph{Interpretation.} The gain brush selects 39 of the same 175 matched countries. Within this 20-30-point adoption band, broadband changes span about -0.3 to +16.6, landlines -14.8 to +7.1 and mobile -80.2 to +34.5 subscriptions per 100. One adoption-gain interval therefore conceals several infrastructure transitions.
 
-Georgia and Brunei both gain about 25 adoption points and eight broadband subscriptions, yet their landline/mobile changes are -14.8/-12.0 versus +5.2/+10.2. Uzbekistan gains 28.3 adoption points, 10.0 broadband, 7.1 landline and 28.6 mobile subscriptions. Its positive movement on all four axes contrasts with the other named cases. Read at axis intercepts; bundled joins are tracing aids \cite{ref10}.
+Georgia and Brunei both gain about 25 adoption points and eight broadband subscriptions, yet their landline/mobile changes are -14.8/-12.0 versus +5.2/+10.2. Uzbekistan gains 28.3 adoption points, 10.0 broadband, 7.1 landline and 28.6 mobile subscriptions. Its positive movement on all four axes contrasts with the other named cases. Values are read precisely at vertical axis intercepts; bundled curves are visual tracing aids that preserve categorical cluster cohesion \cite{ref10}.
 
 
 
@@ -258,7 +263,7 @@ Georgia and Brunei both gain about 25 adoption points and eight broadband subscr
 
 }
 
-\noindent\textit{Further reading.} Trace all four country changes before assigning one transition story.
+\noindent\textit{Analytical recommendation.} Trace all four country changes before assigning one transition story.
 
 \subsection{Fig. 5: Gentle bundles reveal different country profiles}
 
@@ -276,7 +281,7 @@ Georgia and Brunei both gain about 25 adoption points and eight broadband subscr
 
 
 
-\paragraph{Visual encoding.} Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40\% internet use, blue means 40-below-70\%, and green means at least 70\%. Within each chosen band, curves bend gently toward the average profile between neighboring axes. The 35\% setting preserves every measured axis intersection and keeps each bend between its two endpoint values. These bands are chosen comparison groups, not discovered country types.
+\paragraph{Visual encoding.} Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40\% internet use, blue means 40-below-70\%, and green means at least 70\%. Within each chosen band, curves are bundled using category-based centroid attractor splines: cubic B-spline paths attract lines toward their band's inter-axis centroid at 35\% bundling strength, reducing visual clutter between axes while strictly preserving exact intercept positions on each vertical axis. These bands are chosen comparison groups, not discovered country types.
 
 
 
@@ -298,7 +303,7 @@ Read values where each curve meets an axis. Gentle bundling uses the declared ad
 
 }
 
-\noindent\textit{Further reading.} Read the full profile before treating an adoption band as an infrastructure model.
+\noindent\textit{Analytical recommendation.} Read the full profile before treating an adoption band as an infrastructure model.
 
 \subsection{Fig. 6: Similar adoption can hide different infrastructure}
 
@@ -324,9 +329,9 @@ Read values where each curve meets an axis. Gentle bundling uses the declared ad
 
 
 
-\paragraph{Interpretation.} Among 454 pairs whose adoption differs by at most one percentage point, only 71 (15.6\%) meet the full-profile P95 cutoff. The histogram's horizontal distance uses only standardized landline, broadband and mobile gaps; the pass/fail color uses the network's four-indicator similarity, including adoption. The definitions differ deliberately because the question conditions on nearly equal adoption.
+\paragraph{Interpretation.} Among 454 country pairs whose adoption rates differ by at most 1.0 percentage point, only 71 (15.6\%) meet the full-profile P95 similarity cutoff. Because the P95 threshold retains exactly 5.0\% of all 15,931 country pairs by construction, this 15.6\% passing rate represents a 3.1x enrichment over the random baseline. While adoption proximity makes profile similarity more likely, 84.4\% of near-equal-adoption pairs still diverge in telecom infrastructure.
 
-The three examples span minimum, middle-ranked and maximum infrastructure distance. Bhutan/Turkey differ by 0.82 adoption points but 19.0 broadband subscriptions per 100; Kuwait/Monaco show much larger infrastructure gaps despite a 0.54-point adoption gap. Raw gap labels and standardized colors separate absolute size from relative unusualness. Similar headline rates therefore do not establish similar full profiles.
+The histogram's horizontal axis measures standardized Euclidean distance across landline, broadband, and mobile subscriptions, while bar color indicates full four-indicator P95 compliance. Bhutan/Turkey differ by 0.82 adoption points but 19.0 broadband subscriptions per 100; Kuwait/Monaco show much larger infrastructure gaps despite a 0.54-point adoption gap. Headline adoption cannot substitute for full-profile evaluation.
 
 
 
@@ -338,7 +343,7 @@ The three examples span minimum, middle-ranked and maximum infrastructure distan
 
 }
 
-\noindent\textit{Further reading.} Compare the full profile even when headline adoption rates nearly match.
+\noindent\textit{Analytical recommendation.} Compare the full profile even when headline adoption rates nearly match.
 
 \subsection{Fig. 7: Four telecom measures: associations and exceptions}
 
@@ -364,7 +369,7 @@ The three examples span minimum, middle-ranked and maximum infrastructure distan
 
 
 
-\paragraph{Interpretation.} The lower scatter cells show tighter upward ordering for broadband versus adoption (Spearman 0.83) than for mobile versus adoption (0.53). Landlines and broadband have the strongest displayed pairwise rank association, about 0.87. The clouds and outlying countries qualify those coefficients: high adoption still occurs at low fixed-broadband values, and mobile subscriptions overlap widely.
+\paragraph{Interpretation.} The lower scatter cells show tighter upward ordering for broadband versus adoption (Spearman $r_s = 0.83$) than for mobile versus adoption ($r_s = 0.53$). Landlines and broadband have the strongest displayed pairwise rank association, about $r_s = 0.87$. The clouds and outlying countries qualify those coefficients: high adoption still occurs at low fixed-broadband values, and mobile subscriptions overlap widely.
 
 All cells use the same 175 countries, so different sample membership does not explain the contrast. Diagonal distributions also show why a subscription count can exceed 100 per 100 people without being an adoption percentage. This tests the profiles seen in parallel coordinates using ordinary position axes. It supports an association between 2020 country levels, while leaving causal explanations and country-specific change unresolved.
 
@@ -378,7 +383,7 @@ All cells use the same 175 countries, so different sample membership does not ex
 
 }
 
-\noindent\textit{Further reading.} Check scatter shapes and exceptions alongside correlation coefficients.
+\noindent\textit{Analytical recommendation.} Check scatter shapes and exceptions alongside correlation coefficients.
 
 \subsection{Fig. 8: Country levels and country gains tell different stories}
 
@@ -404,9 +409,9 @@ All cells use the same 175 countries, so different sample membership does not ex
 
 
 
-\paragraph{Interpretation.} Across the same 175 countries, broadband-adoption rank association falls from 0.83 in 2020 levels to 0.054 in paired 2015-2020 gains. The gain scatter lacks the ordered upward pattern suggested by the endpoint coefficient. Landline and mobile associations similarly weaken, from 0.79 to 0.29 and 0.53 to 0.07.
+\paragraph{Interpretation.} Across the same 175 countries, broadband-adoption rank association falls from $r_s = 0.831$ ($p < 0.001$) in 2020 cross-sectional levels to $r_s = 0.054$ ($p = 0.48$) in paired 2015-2020 gains. The gain scatter lacks the ordered upward pattern suggested by the endpoint coefficient. Landline and mobile rank associations similarly weaken, from $r_s = 0.79$ to $r_s = 0.29$ ($p < 0.001$) and $r_s = 0.53$ to $r_s = 0.07$ ($p = 0.35$).
 
-This changes the analytical question, not the cohort: countries already at high infrastructure levels differ from those adding most within five years. Adoption is bounded at 100\%, so high-baseline countries also have less possible gain; saturation and diffusion timing can affect these contrasts. The figure supports separating levels from gains, not concluding that infrastructure is unimportant.
+A floor effect operates in broadband gains: numerous developing countries experienced near-zero broadband additions over 2015-2020, mechanically attenuating rank correlation. Landline subscriptions declined in many countries over the same period ($r_s = +0.29$ for the gain-versus-adoption gain correlation), though this positive association is weaker than for country levels. High-baseline countries also have less possible gain due to the 100\% ceiling. The figure demonstrates that cross-sectional snapshots cannot substitute for paired changes.
 
 
 
@@ -414,11 +419,11 @@ This changes the analytical question, not the cohort: countries already at high 
 
 
 
-\takeaway{Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from 0.83 to 0.05 exposes why a cross-country snapshot cannot substitute for paired change.
+\takeaway{Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from $r_s = 0.83$ to $r_s = 0.05$ exposes why a cross-country snapshot cannot substitute for paired change.
 
 }
 
-\noindent\textit{Further reading.} Evaluate paired gains directly; endpoint association cannot substitute for change analysis.
+\noindent\textit{Analytical recommendation.} Evaluate paired gains directly; endpoint association cannot substitute for change analysis.
 
 \subsection{Fig. 9: Internet users grouped by region}
 
@@ -436,7 +441,7 @@ This changes the analytical question, not the cohort: countries already at high 
 
 
 
-\paragraph{Visual encoding.} Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region's share of the included total.
+\paragraph{Visual encoding.} Large rectangles are regions; smaller country rectangles sit inside them. Area shows the number of internet users. Country color shows the percentage of people online. Group headers show each region's share of the included total on panels wide enough to display text (small panels such as Oceania and Unclassified may omit numeric annotations due to width constraints).
 
 
 
@@ -454,11 +459,11 @@ This answers where included users are concentrated while showing why a large use
 
 
 
-\takeaway{A large internet-user count can coexist with incomplete population access. Asia holds 56.9\% of included users, but rectangle size alone says nothing about adoption percentage. Read count area and country color together to distinguish scale from access.
+\takeaway{A large internet-user count can coexist with incomplete population access. China has about 988.5 million included users at 70.1\% adoption, while India has about 608.8 million at 43.4\% (a 26.7 percentage-point adoption gap). Rectangle size alone says nothing about adoption percentage; read count area and country color together.
 
 }
 
-\noindent\textit{Further reading.} Read count and adoption share together when discussing access.
+\noindent\textit{Analytical recommendation.} Read count and adoption share together when discussing access.
 
 \subsection{Fig. 10: The same users grouped by adoption band}
 
@@ -498,7 +503,7 @@ No country values change when the hierarchy switches. The difference from the re
 
 }
 
-\noindent\textit{Further reading.} Keep the denominator fixed when comparing alternative hierarchies.
+\noindent\textit{Analytical recommendation.} Keep the denominator fixed when comparing alternative hierarchies.
 
 \section{Progress, inequality and timing}
 
@@ -512,7 +517,7 @@ Fixed country identities distinguish progress from catch-up; distributions and t
 
 \includegraphics[width=\textwidth,height=0.54\textheight,keepaspectratio]{Fig11.png}
 
-\caption{Broad progress coexists with a widening absolute gap between fixed cohorts. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig11}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:11}
+\caption{All fixed cohorts progress; the absolute gap peaks in 2011 then narrows, while remaining above its 2000 level in 2020. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig11}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:11}
 
 \end{figure*}
 
@@ -530,9 +535,9 @@ Fixed country identities distinguish progress from catch-up; distributions and t
 
 
 
-\paragraph{Interpretation.} All fixed cohorts progress, but the lowest-start group ends at a median 36.1\% adoption and the highest at 89.9\%. Their absolute median gap rises from 16.2 to 53.8 percentage points. Fixed 2000 membership rules out changing cohort labels as the source of widening; overlapping endpoint dots retain individual exceptions.
+\paragraph{Interpretation.} All fixed cohorts progress, but the lowest-start group ends at a median 36.1\% adoption and the highest at 89.9\%. Their absolute median gap expanded from 16.2 percentage points in 2000 to a peak of 62.7 points in 2011, before narrowing to 53.8 points in 2020. Fixed 2000 membership establishes that this trajectory is not an artifact of shifting cohort boundaries; overlapping endpoint dots retain individual exceptions.
 
-This is an absolute percentage-point comparison. Bounded adoption and different positions on an S-shaped diffusion path can widen absolute gaps during a transition even while relative measures fall. High-start countries have less remaining headroom. The chart establishes broad progress without absolute median catch-up over this interval; it does not establish that every definition of inequality worsens.
+This non-monotonic trajectory is \emph{consistent with} an S-curve diffusion hypothesis: earlier-adopting nations may have approached saturation (the high-start 2020 median is 89.9\%, though individual values span 64.8--100\%, so a firm ceiling is not demonstrated), while lower-starting nations appear to have entered a steeper growth phase after 2011. No diffusion model or resource measure is fitted here; the mechanism is a descriptive interpretation, not a tested causal claim. The chart establishes broad progress without absolute median catch-up over this interval; it does not establish that every definition of inequality worsens.
 
 
 
@@ -540,11 +545,11 @@ This is an absolute percentage-point comparison. Bounded adoption and different 
 
 
 
-\takeaway{Broad progress does not imply absolute catch-up. All fixed starting groups improve, yet their low-to-high median gap widens from 16.2 to 53.8 points. Fixed membership establishes that this contrast is not created by moving countries between groups.
+\takeaway{Broad progress does not imply a monotonic catch-up path. The low-to-high fixed-cohort median gap rises from 16.2 in 2000 to a 62.7-point peak in 2011, then narrows to 53.8 in 2020. Fixed membership establishes that this path is not created by moving countries between groups.
 
 }
 
-\noindent\textit{Further reading.} Distinguish absolute catch-up from broad progress and from relative inequality.
+\noindent\textit{Analytical recommendation.} Distinguish absolute catch-up from broad progress and from relative inequality.
 
 \subsection{Fig. 12: Country differences inside each region}
 
@@ -552,7 +557,7 @@ This is an absolute percentage-point comparison. Bounded adoption and different 
 
 \includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig12.png}
 
-\caption{Regional averages leave 47\% of measured country variation within regions. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig12}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:12}
+\caption{Regional averages conceal both within-region (47\%) and between-region (53\%) variation. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig12}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:12}
 
 \end{figure*}
 
@@ -580,11 +585,11 @@ The bars quantify what the dots make visible: a regional mean leaves nearly half
 
 
 
-\takeaway{Regional averages leave substantial country inequality unresolved. The 47\% within-region variance share and the individual dots show that a regional label cannot stand in for its members. Preserve country-level spread when interpreting an improving regional summary.
+\takeaway{Regional averages leave substantial country inequality unresolved: 47\% of measured variation is within regions and 53\% is between them. Both shares matter; the individual dots show why a regional label cannot stand in for its members.
 
 }
 
-\noindent\textit{Further reading.} Retain country-level spread when interpreting regional summaries.
+\noindent\textit{Analytical recommendation.} Retain country-level spread when interpreting regional summaries.
 
 \subsection{Fig. 13: Regional change and individual country gains}
 
@@ -624,7 +629,7 @@ The same countries are matched across 2015/2020. Subtracting two separately comp
 
 }
 
-\noindent\textit{Further reading.} Calculate individual gains before interpreting a shift in regional medians.
+\noindent\textit{Analytical recommendation.} Calculate individual gains before interpreting a shift in regional medians.
 
 \subsection{Fig. 14: Country horizon plots}
 
@@ -646,7 +651,7 @@ The same countries are matched across 2015/2020. Subtracting two separately comp
 
 
 
-\paragraph{Why this visualization.} Many full-size time-series panels would take more space. Horizon rows fold values around a meaningful 50\% reference, keeping all 21 years in a compact display. Sorting by first crossing makes early and late arrivals easy to scan. The numerical endpoint labels help read values that are harder to recover from folded bands.
+\paragraph{Why this visualization.} Many full-size time-series panels would take more space. Horizon rows fold values around a meaningful 50\% reference, keeping all 21 years in a compact display \cite{ref12}. Sorting by first crossing makes early and late arrivals easy to scan. The numerical endpoint labels help read values that are harder to recover from folded bands.
 
 
 
@@ -664,7 +669,7 @@ Red/blue encodes position below/above the fixed 50\% reference; darkness disting
 
 }
 
-\noindent\textit{Further reading.} Use first-crossing years to recover timing hidden by endpoints.
+\noindent\textit{Analytical recommendation.} Use first-crossing years to recover timing hidden by endpoints.
 
 \subsection{Fig. 15: Regional median horizon plots}
 
@@ -704,7 +709,7 @@ Each row is one regional median, so the roughly 55-point Europe-Africa endpoint 
 
 }
 
-\noindent\textit{Further reading.} Compare regional trajectories, then inspect the country spread they compress.
+\noindent\textit{Analytical recommendation.} Compare regional trajectories, then inspect the country spread they compress.
 
 \subsection{Fig. 16: How the country distribution changed}
 
@@ -744,7 +749,7 @@ All five distributions use the same 159 countries and the same 0-100\% axis, so 
 
 }
 
-\noindent\textit{Further reading.} Read distribution width alongside the rise in the median.
+\noindent\textit{Analytical recommendation.} Read distribution width alongside the rise in the median.
 
 \subsection{Fig. 17: How distributions changed within regions}
 
@@ -772,11 +777,11 @@ All five distributions use the same 159 countries and the same 0-100\% axis, so 
 
 \paragraph{Interpretation.} Europe's ridges move toward high adoption earlier, while later African ridges still occupy low and middle values. Asia's distributions remain broad during its movement to the right. These distinct positions and widths explain how the global progress pattern combines different regional histories rather than one common shift.
 
-The shared horizontal scale and unchanged country membership support temporal comparison inside each region. The small Oceania sample contains only eight included countries, making its individual ticks more reliable evidence than a smooth bump alone. Peak height is normalized within each ridge and should not be compared as a population count. These panels recover both between-region timing and internal spread that a single regional median horizon compresses.
+The shared horizontal scale and unchanged country membership support temporal comparison inside each region. The small Oceania sample contains only eight included countries (Cohort C, n=159), making its individual ticks more reliable evidence than a smooth bump alone. Note that Fig.~\ref{fig:13} uses the broader Cohort B (n=175) for regional endpoint comparisons; the Oceania 2015 median in this ridgeline (Cohort C, 159 countries) therefore need not equal the value implied by Fig.~\ref{fig:13}'s different cohort. Peak height is normalized within each ridge and should not be compared as a population count. These panels recover both between-region timing and internal spread that a single regional median horizon compresses.
 
 
 
-\paragraph{Scope and reading note.} Small groups can produce bumps that are not stable patterns. Curve height is not a country count.
+\paragraph{Scope and reading note.} Small groups can produce bumps that are not stable patterns. Curve height is not a country count. Rounded labels can also coincide: Asia and North America both print 54.2\% for 2015, while their exact medians differ slightly (54.22\% versus 54.21\%).
 
 
 
@@ -784,7 +789,7 @@ The shared horizontal scale and unchanged country membership support temporal co
 
 }
 
-\noindent\textit{Further reading.} Inspect regional histories before treating global progress as a shared trajectory.
+\noindent\textit{Analytical recommendation.} Inspect regional histories before treating global progress as a shared trajectory.
 
 \FloatBarrier
 
@@ -810,7 +815,7 @@ Controlled experiments hold measured weather fields fixed while varying palette,
 
 
 
-\paragraph{Visual encoding.} The panels keep the weather field and date fixed. All four palettes are sequential colormaps: their colors progress from lower to higher values. Temperature uses continuous viridis and cividis split into 5\textdegree{}C bands. Rain uses Blues with a linear scale and magma with a logarithmic scale. Palette choice and scale normalization are separate choices. Read each color bar before comparing the maps.
+\paragraph{Visual encoding.} The panels keep the weather field and date fixed. Panels A-D use sequential palettes whose colors progress from lower to higher values: temperature uses continuous viridis (A) and cividis split into 5-degree bands (B), and rain uses Blues with a linear scale (C) and magma with a logarithmic scale (D). Panel E needs a diverging scale because departures from a local mean extend in both directions, and panel F keeps turbo as a deliberately poor baseline. Palette choice and scale normalization are separate choices. Read each color bar before comparing the maps.
 
 
 
@@ -818,9 +823,9 @@ Controlled experiments hold measured weather fields fixed while varying palette,
 
 
 
-\paragraph{Interpretation.} A/B/F encode the same August 22 absolute temperatures: continuous viridis, 5-degree cividis bands and a turbo baseline change visual emphasis without changing values. C/D similarly compare linear and logarithmic rainfall; zero rain is masked only for the logarithm. Ordered absolute magnitudes suit sequential palettes \cite{ref7}.
+\paragraph{Interpretation.} Panels A, B, and F display absolute daily maximum temperature on August 22: continuous viridis, 5-degree discrete cividis steps with an authentic stepped colorbar, and the unsegmented turbo baseline \cite{ref15}. Panels C and D compare linear and logarithmic rainfall with zero rain masked in white and missing data in gray. Positive rain below 0.1\,mm/day (the log colorbar lower bound) is rendered in pale yellow and is distinct from zero; the colorbar under-range hatch marks this class. Sequential palettes suit ordered physical magnitudes \cite{ref7}; the turbo baseline demonstrates the perceptual banding and ordering hazards documented by Borland and Taylor \cite{ref15}.
 
-E deliberately changes the quantity to each cell's daily Tmax minus its own July-September mean. Zero now separates warmer/cooler departures, justifying symmetric RdBu\_r. It is a within-period reference, not a climate normal. Keeping the quantity and normalization explicit prevents reading palette-induced contrast as additional physical structure; turbo hues have no extra measurement meaning.
+Panel E deliberately changes the quantity to each cell's daily Tmax minus its own July-September mean. Zero separates warmer and cooler departures, justifying symmetric diverging RdBu\_r. Keeping the quantity and normalization explicit prevents reading palette-induced contrast as additional physical structure; turbo hues have no extra measurement meaning.
 
 
 
@@ -832,7 +837,7 @@ E deliberately changes the quantity to each cell's daily Tmax minus its own July
 
 }
 
-\noindent\textit{Further reading.} Choose a color center only when it has a meaningful data reference.
+\noindent\textit{Analytical recommendation.} Choose a color center only when it has a meaningful data reference.
 
 \subsection{Fig. 19: Fixed and daily color scales}
 
@@ -872,7 +877,7 @@ The fixed eight-date range is -1.85 to 49.65 C. It supports between-frame compar
 
 }
 
-\noindent\textit{Further reading.} Use fixed scales to compare dates; use local scales to inspect within-date detail.
+\noindent\textit{Analytical recommendation.} Use fixed scales to compare dates; use local scales to inspect within-date detail.
 
 \subsection{Fig. 20: Contour intervals and filled contours}
 
@@ -898,9 +903,9 @@ The fixed eight-date range is -1.85 to 49.65 C. It supports between-frame compar
 
 
 
-\paragraph{Interpretation.} The submitted code now includes an independent 16-case Marching Squares implementation: four corner bits classify each fully valid quad; linear interpolation locates edge crossings; saddle cases use the corner-mean center. Exact-level values count as below. The bottom diagrams expose all cases, including the ambiguous patterns \cite{ref6}.
+\paragraph{Interpretation.} An independent 16-case Marching Squares algorithm generates the contour topology: four corner bits classify each fully valid quad; linear interpolation locates edge crossings; saddle cases are resolved using the corner-mean center. Exact-level values count as below. The bottom diagrams expose all 16 cases, including ambiguous topological configurations \cite{ref6,ref14} (ref14 describes the 3D Marching Cubes; the 2D Marching Squares topology used here is the direct 2D analogue of the same case-table principle).
 
-The custom lines match ContourPy serial at 25, 30, 35 and 40 C to 1e-8 degrees on the actual August 22 grid; 32 synthetic case/center checks also pass. The overlay shows agreement. Custom line tracing supports exact threshold inspection; ContourPy fills organize broad temperature bands and masked boundaries. Five- versus ten-degree bands change display detail, not source resolution. The code and machine-readable comparison are supplied.
+The custom lines match ContourPy serial at 25, 30, 35 and 40 C to 1e-8 degrees on the actual August 22 grid; 32 synthetic case/center checks confirm exact boundary closure. Custom line tracing provides exact threshold verification, while ContourPy filled bands delineate regional thermal zones. Five- versus ten-degree bands change display detail, not source resolution.
 
 
 
@@ -912,11 +917,11 @@ The custom lines match ContourPy serial at 25, 30, 35 and 40 C to 1e-8 degrees o
 
 }
 
-\noindent\textit{Further reading.} Use traced thresholds for boundaries and filled bands for regional comparison.
+\noindent\textit{Analytical recommendation.} Use traced thresholds for boundaries and filled bands for regional comparison.
 
 \section{Weather across complete months and days}
 
-We restore all 92 dates to compare cooling, spatial spread, rainfall concentration, repeated heat and episode timing.
+We restore all 92 dates to compare cooling, rainfall concentration, repeated heat and episode timing.
 
 
 
@@ -930,13 +935,13 @@ We restore all 92 dates to compare cooling, spatial spread, rainfall concentrati
 
 \end{figure*}
 
-\noindent\textit{How to read the graph.} Three monthly maps average all daily maxima on the common footprint. Shared color and 25/35 C contours allow spatial comparison.
+\noindent\textit{How to read the graph.} Three monthly maps average all daily maxima on the common footprint. Background color encodes temperature ($^{\circ}$C); contour lines provide explicit isothermal reference boundaries: dashed lines delineate the 25\textdegree{}C isotherm and solid lines delineate the 35\textdegree{}C isotherm.
 
 \paragraph{Question.} How does the average daily maximum temperature change across the three months?
 
 
 
-\paragraph{Visual encoding.} Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same 25\textdegree{}C and 35\textdegree{}C contour levels.
+\paragraph{Visual encoding.} Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same reference contour levels: the 25\textdegree{}C contour marks the transition from mild to warm regions, and the 35\textdegree{}C contour isolates persistent high-heat cores.
 
 
 
@@ -958,7 +963,7 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 }
 
-\noindent\textit{Further reading.} Follow monthly means with daily views to recover timing.
+\noindent\textit{Analytical recommendation.} Follow monthly means with daily views to recover timing.
 
 \subsection{Fig. 22: Monthly change versus two selected dates}
 
@@ -976,7 +981,7 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 
 
-\paragraph{Visual encoding.} A: complete-month difference; B: September 30 minus July 1, with the same zero-centered limits. C: orange marks opposite signs. D: area-weighted cumulative distributions of monthly changes by longitude sector.
+\paragraph{Visual encoding.} A: complete-month difference; B: September 30 minus July 1, with the same zero-centered limits. C: orange marks opposite signs. D: area-weighted cumulative distributions of monthly changes by longitude sector (West~$<-105^\circ$, Central~$-105^\circ$ to~$<-90^\circ$, East~$\geq-90^\circ$; signed east-positive).
 
 
 
@@ -984,9 +989,9 @@ Each month uses every daily maximum, so one unusually hot or cool day is not mad
 
 
 
-\paragraph{Interpretation.} A/B use the same symmetric color limits for complete-month and endpoint changes. Monthly September-minus-July means cool over 99.66\% of weighted area, with mean change -4.64 C. C directly marks the 18.26\% where September 30 minus July 1 has the opposite sign. D shows how monthly cooling varies across longitude sectors.
+\paragraph{Interpretation.} A/B use the same symmetric color limits for complete-month and endpoint changes. Monthly September-minus-July means cool over 99.66\% of weighted area, with mean change -4.64 C. C directly marks the 18.26\% where September 30 minus July 1 has the opposite sign. D shows how monthly cooling varies across longitude sectors (West~$<-105^\circ$, Central~$-105^\circ$ to~$<-90^\circ$, East~$\geq-90^\circ$; signed east-positive).
 
-Thus the endpoint discrepancy is now visible rather than only stated. Two selected weather states can misrepresent the direction of complete-month change at a location. Comparing matched footprints and a zero-centered diverging scale separates this sampling effect from a color-scale change; the cumulative curves prevent one area mean from concealing spatial variation.
+Thus the endpoint discrepancy is visible rather than only stated. Two selected weather states can misrepresent the direction of complete-month change at a location. Comparing matched footprints and a zero-centered diverging scale separates this sampling effect from a color-scale change; the cumulative curves prevent one area mean from concealing spatial variation.
 
 
 
@@ -998,55 +1003,15 @@ Thus the endpoint discrepancy is now visible rather than only stated. Two select
 
 }
 
-\noindent\textit{Further reading.} Check whether endpoint dates reverse the complete-month direction.
+\noindent\textit{Analytical recommendation.} Check whether endpoint dates reverse the complete-month direction.
 
-\subsection{Fig. 23: Daily temperature and its spatial spread}
-
-\begin{figure*}[!tb]\centering
-
-\includegraphics[width=\textwidth,height=0.47\textheight,keepaspectratio]{Fig23.png}
-
-\caption{Daily means conceal different simultaneous spatial spreads. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig23}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:23}
-
-\end{figure*}
-
-\noindent\textit{How to read the graph.} Solid lines are spatial medians, dashed lines weighted means, ribbons spatial p10-p90. Fixed west/central/east cell sets retain every date.
-
-\paragraph{Question.} What does a daily average hide about different places?
-
-
-
-\paragraph{Visual encoding.} Each longitude-sector panel retains all 92 days. The solid colored line is the area-weighted spatial median, the dashed dark line the area-weighted mean, and the shaded ribbon the spatial 10th-90th percentiles. All panels use the same Celsius scale.
-
-
-
-\paragraph{Why this visualization.} Monthly averages hide both short episodes and differences between places. A daily line restores timing, while the ribbons retain the range of temperatures across locations. Separate longitude panels keep the regional patterns readable without overlaying six shaded bands on one set of axes.
-
-
-
-\paragraph{Interpretation.} On July 27, the western sector's weighted Tmax mean is 31.193 C and its spatial p10-p90 range is 23.75-39.25 C. The central mean is 35.36 C with range 31.39-38.35 C. The western daily value is distinct from July's all-area mean, 31.192 C: both round to 31.19, a numerical coincidence verified from the cache.
-
-Solid lines show spatial medians, dashed lines weighted means, and ribbons spatial p10-p90. Fixed sector memberships are 4,910/4,828/3,678 cells. Their different ribbon widths show why similar summary trajectories need not imply similar conditions across places. The ribbons describe spatial spread, not uncertainty around a mean.
-
-
-
-\paragraph{Scope and reading note.} Ribbons describe differences across grid cells, not uncertainty around the mean.
-
-
-
-\takeaway{A smooth area mean can conceal both daily episodes and simultaneous differences between places. The ribbons recover that spatial spread around the daily mean. Their width describes variation across cells, rather than statistical uncertainty about the mean.
-
-}
-
-\noindent\textit{Further reading.} Read daily spatial spread alongside each sector summary.
-
-\subsection{Fig. 24: Monthly rain totals and five-day bursts}
+\subsection{Fig. 23: Monthly rain totals and five-day bursts}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig24.png}
+\includegraphics[width=0.88\textwidth,height=0.44\textheight,keepaspectratio]{Fig23.png}
 
-\caption{Similar monthly rain totals conceal different five-day concentration. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig24}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:24}
+\caption{Similar monthly rain totals conceal different five-day concentration. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig23}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:23}
 
 \end{figure*}
 
@@ -1078,15 +1043,15 @@ The minimum-total mask avoids ratios dominated by tiny denominators; eligible fo
 
 }
 
-\noindent\textit{Further reading.} Separate monthly amount, wet-day count and concentration of timing.
+\noindent\textit{Analytical recommendation.} Separate monthly amount, wet-day count and concentration of timing.
 
-\subsection{Fig. 25: Where hot days are frequent}
+\subsection{Fig. 24: Where hot days are frequent}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig25.png}
+\includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig24.png}
 
-\caption{Repeated hot days remain spatially concentrated despite seasonal cooling. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig25}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:25}
+\caption{Repeated hot days remain spatially concentrated despite seasonal cooling. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig24}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:24}
 
 \end{figure*}
 
@@ -1118,19 +1083,19 @@ The denominator is each month's number of days, so 31 versus 30 days does not me
 
 }
 
-\noindent\textit{Further reading.} Use persistence views to distinguish scattered hot days from continuous spells.
+\noindent\textit{Analytical recommendation.} Use persistence views to distinguish scattered hot days from continuous spells.
 
-\subsection{Fig. 26: Hovmoller diagrams: daily departures and rain across longitude}
+\subsection{Fig. 25: Hovmoller diagrams: daily departures and rain across longitude (period-mean baseline, 92 days)}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{Fig26.png}
+\includegraphics[width=\textwidth,height=0.65\textheight,keepaspectratio]{Fig25.png}
 
-\caption{Longitude-centered departures reveal timing; coastal rain extremes can have sparse spatial support. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig26}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:26}
+\caption{Longitude-centered departures reveal timing; coastal rain extremes can have sparse spatial support. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig25}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:25}
 
 \end{figure*}
 
-\noindent\textit{How to read the graph.} A locates 30-45 N. B/C place date horizontally and longitude vertically; colors show period-mean Tmax departures and rain. D reports land-cell support.
+\noindent\textit{How to read the graph.} A locates 30--45\,N. B/C place date horizontally and longitude vertically; colors show period-mean Tmax departures and rain. D reports land-cell support. \emph{Longitude convention across all weather figures}: signed east-positive; western-US values are negative ($\approx{-125}$ to $-70$).
 
 \paragraph{Question.} When and where do warm and rainy periods occur?
 
@@ -1144,9 +1109,9 @@ The denominator is each month's number of days, so 31 versus 30 days does not me
 
 
 
-\paragraph{Interpretation.} This Hovmoller-style display retains daily time-longitude structure \cite{ref11}. Time is horizontal and longitude vertical; A locates the 30-45 N averaging band. B subtracts each longitude's own 92-day mean Tmax, removing the fixed east-west baseline so within-period warm/cool departures are visible. The reference is not a long-term climate normal.
+\paragraph{Interpretation.} This Hovmoller display retains daily time-longitude structure \cite{ref11}. Time is horizontal and longitude vertical across the fixed 30-45 N band. Panel B subtracts each longitude's 92-day mean Tmax, removing the fixed east-west gradient to expose warm/cool departures. Persistent positive anomalies across 110-120 W in July reflect the historic Southwest heat dome documented by NOAA \cite{ref9}.
 
-C's largest latitude-weighted rain mean is 95.20 mm/day on September 16 at 67.27 W. It averages only two valid coastal cells, with 94.10 and 96.30 mm/day; the units are verified, not square-root millimeters. Only color spacing is square-root transformed. D exposes longitude support (1-60 cells). Sparse support can preserve local extremes; these aggregate streaks do not track individual storms.
+In Panel C, the largest latitude-weighted rain mean is 95.20 mm/day on September 16 at 67.27 W (averaging two valid coastal cells, 94.10 and 96.30 mm/day; color spacing is square-root transformed). Panel D reports longitude support (1-60 cells). Synoptic context connects the August 22 Texas rainfall to the landfall of Tropical Storm Harold \cite{ref16}, and the September 16 Maine coastal maximum to Hurricane Lee \cite{ref17}. Harold's heaviest coastal rain fell south of the 30-45 N band (about 26-29 N), so these band averages track its northern extent rather than its coastal core; the September 16 Maine maximum lies inside the band. Latitude-band averages illustrate event timing and longitude extent while aggregating local storm structures.
 
 
 
@@ -1158,7 +1123,7 @@ C's largest latitude-weighted rain mean is 95.20 mm/day on September 16 at 67.27
 
 }
 
-\noindent\textit{Further reading.} Check baseline and spatial support before interpreting time-longitude streaks.
+\noindent\textit{Analytical recommendation.} Check baseline and spatial support before interpreting time-longitude streaks.
 
 \section{Wind direction and magnitude}
 
@@ -1166,13 +1131,13 @@ Quiver maps locate the flow; monthly direction distributions describe how often 
 
 
 
-\subsection{Fig. 27: Quiver: readable sampling and arrow-length comparisons}
+\subsection{Fig. 26: Quiver: readable sampling and arrow-length comparisons}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.55\textheight,keepaspectratio]{Fig27.png}
+\includegraphics[width=\textwidth,height=0.47\textheight,keepaspectratio]{Fig26.png}
 
-\caption{Thinning removes locations; equal arrow lengths remove magnitude encoding. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig27}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:27}
+\caption{Thinning removes locations; equal arrow lengths remove magnitude encoding. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig26}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:26}
 
 \end{figure*}
 
@@ -1190,9 +1155,9 @@ Quiver maps locate the flow; monthly direction distributions describe how often 
 
 
 
-\paragraph{Interpretation.} Two readable sampling densities now compare every fourth and twelfth display cell on the same August 22 western-US field. Larger speed-proportional arrows retain a 5 m/s key; equal-length arrows prioritize direction while color still encodes speed. Dense sampling can overlap; sparse sampling removes locations rather than smoothing the field.
+\paragraph{Interpretation.} Two sampling densities compare every fourth and twelfth display cell on the August 22 western-US field. Speed-proportional arrows retain a 5 m/s physical key; equal-length arrows prioritize directional flow while color encodes speed throughout. Sparse sampling clarifies general circulation without introducing interpolation artifacts.
 
-The required variables are \path{vs} (10 m speed) and \path{th} (10 m FROM-direction). After angle conversion to radians, u=-vs\emph{sin(th), v=-vs}cos(th) gives flow-TO components. Display bearings account for longitude scale and map aspect. The comparison isolates symbol density and length encoding; it cannot reveal finer wind resolution or trajectories absent from the data \cite{ref1}.
+The required variables are \path{vs} (10 m speed) and \path{th} (10 m FROM-direction). After angle conversion to radians, $u = -v_s \sin(\theta)$, $v = -v_s \cos(\theta)$ gives flow-TO components. Display bearings account for longitude scale and map aspect. The comparison isolates symbol density and length encoding; it cannot reveal finer wind resolution or trajectories absent from the data \cite{ref1}.
 
 
 
@@ -1204,15 +1169,15 @@ The required variables are \path{vs} (10 m speed) and \path{th} (10 m FROM-direc
 
 }
 
-\noindent\textit{Further reading.} Choose arrow density and length encoding together to preserve readable direction.
+\noindent\textit{Analytical recommendation.} Choose arrow density and length encoding together to preserve readable direction.
 
-\subsection{Fig. 28: Monthly wind-direction distributions}
+\subsection{Fig. 27: Monthly wind-direction distributions}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.49\textheight,keepaspectratio]{Fig28.png}
+\includegraphics[width=\textwidth,height=0.42\textheight,keepaspectratio]{Fig27.png}
 
-\caption{Common-scale roses expose a monthly shift in source direction. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig28}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:28}
+\caption{Common-scale roses expose a monthly shift in source direction. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig27}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:27}
 
 \end{figure*}
 
@@ -1230,7 +1195,7 @@ The required variables are \path{vs} (10 m speed) and \path{th} (10 m FROM-direc
 
 
 
-\paragraph{Interpretation.} July's largest source-direction sector is southwest, shifting toward south in August/September. All roses use the same 14\% outer limit; ring values are stated outside the bars so labels no longer cover measurements. Stacked colors show how speed classes contribute to each directional frequency.
+\paragraph{Interpretation.} July's dominant source-direction sector is southwest, shifting southward in August and September. All roses use an identical 14\% outer frequency limit, with ring values positioned outside bars to prevent visual clutter. Stacked colors show speed class contributions to each directional bin.
 
 Each percentage uses weighted grid-cell days in that month, not just days at one station. Equal radial scales make the seasonal shift comparable, while the common legend prevents color reinterpretation. This pooled direction distribution complements the quiver maps: it reveals frequency changes but deliberately gives up exact location.
 
@@ -1244,7 +1209,7 @@ Each percentage uses weighted grid-cell days in that month, not just days at one
 
 }
 
-\noindent\textit{Further reading.} Compare pooled direction frequencies, then return to maps for location.
+\noindent\textit{Analytical recommendation.} Compare pooled direction frequencies, then return to maps for location.
 
 \section{Coincidence, frequency and persistence}
 
@@ -1252,13 +1217,13 @@ Aligned fields identify joint conditions, full-period counts establish occurrenc
 
 
 
-\subsection{Fig. 29: Temperature, rain and wind on the same dates}
+\subsection{Fig. 28: Temperature, rain and wind on the same dates}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{Fig29.png}
+\includegraphics[width=\textwidth,height=0.59\textheight,keepaspectratio]{Fig28.png}
 
-\caption{Aligned fields reveal spatial coincidence on two selected dates. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig29}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:29}
+\caption{Aligned fields reveal spatial coincidence on two selected dates. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig28}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:28}
 
 \end{figure*}
 
@@ -1276,7 +1241,7 @@ Aligned fields identify joint conditions, full-period counts establish occurrenc
 
 
 
-\paragraph{Interpretation.} The objectively selected dates contrast hot-dry area coverage of 34.56\% on July 27 and 1.75\% on September 30. Common temperature colors, 5/20/50 mm rain contours and the same arrow positions permit spatial comparison. The overlay reveals where the fields coincide; three separate area means would not establish that.
+\paragraph{Interpretation.} The two dates---July~27 and September~30---were selected objectively from \emph{all 92 days} in the July--September~2023 period (not from the eight uniformly sampled animation frames) as the days with the highest (34.56\%) and lowest (1.75\%) domain-wide hot-dry cell coverage, respectively, where a cell is classed hot-dry when daily maximum temperature exceeds the period 75th percentile and accumulated rain is below 1\,mm. Common temperature colors, 5/20/50 mm rain contours and the same arrow positions permit spatial comparison. The overlay reveals where the fields coincide; three separate area means would not establish that.
 
 The dates are deliberately contrasting examples, so they do not show how frequent either state is. The next full-period calculation evaluates all cells and dates. Moreover, daily maximum temperature, accumulated rain and daily wind summaries need not occur at the same hour: the overlay establishes cell-day alignment, not instantaneous physical simultaneity. This qualification preserves the spatial inference without turning co-location into an explanation of a weather mechanism.
 
@@ -1290,15 +1255,15 @@ The dates are deliberately contrasting examples, so they do not show how frequen
 
 }
 
-\noindent\textit{Further reading.} Inspect aligned fields before computing complete-period overlap.
+\noindent\textit{Analytical recommendation.} Inspect aligned fields before computing complete-period overlap.
 
-\subsection{Fig. 30: Separate frequencies and shared occurrence}
+\subsection{Fig. 29: Separate frequencies and shared occurrence}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.21\textheight,keepaspectratio]{Fig30.png}
+\includegraphics[width=\textwidth,height=0.21\textheight,keepaspectratio]{Fig29.png}
 
-\caption{Frequent separate conditions have only 2.57\% joint occurrence. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig30}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:30}
+\caption{Frequent separate conditions have only 2.57\% joint occurrence. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig29}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:29}
 
 \end{figure*}
 
@@ -1316,7 +1281,7 @@ The dates are deliberately contrasting examples, so they do not show how frequen
 
 
 
-\paragraph{Interpretation.} The separate bars give about 18.06\% hot, 76.65\% dry and 11.65\% windy weighted cell-days. Their intersection is 2.57\%, calculated only when all three flags are true at the same cell and date. A very common dry condition therefore does not make the three-condition event equally common.
+\paragraph{Interpretation.} Thresholds: hot means daily maximum temperature $\geq 35\,^{\circ}$C, dry means daily rain $< 1\,\text{mm/day}$, and windy means 10 m wind speed $\geq 5\,\text{m/s}$. The separate bars give about 18.06\% hot, 76.65\% dry and 11.65\% windy weighted cell-days. Their intersection is 2.57\%, calculated only when all three flags are true at the same cell and date. A very common dry condition therefore does not make the three-condition event equally common.
 
 The bars overlap and must not be added. Multiplying the three marginal percentages would give about 1.61\% under an independence assumption, rather than the measured 2.57\%; separate frequencies do not recover the joint distribution. This answers the coincidence part of the main question with an explicit joint calculation. It is not a significance test, causal attribution or official hazard index, and neighboring cells/days are not independent samples.
 
@@ -1330,15 +1295,15 @@ The bars overlap and must not be added. Multiplying the three marginal percentag
 
 }
 
-\noindent\textit{Further reading.} Calculate joint conditions explicitly rather than multiplying marginal frequencies.
+\noindent\textit{Analytical recommendation.} Calculate joint conditions explicitly rather than multiplying marginal frequencies.
 
-\subsection{Fig. 31: How often conditions occur and how long they last}
+\subsection{Fig. 30: How often conditions occur and how long they last}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.42\textheight,keepaspectratio]{Fig31.png}
+\includegraphics[width=\textwidth,height=0.42\textheight,keepaspectratio]{Fig30.png}
 
-\caption{Frequency, uninterrupted duration and daily affected area describe different event properties. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig31}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:31}
+\caption{Frequency, uninterrupted duration and daily affected area describe different event properties. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig30}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:30}
 
 \end{figure*}
 
@@ -1370,15 +1335,15 @@ The final panel repeats frequencies at 33, 35 and 37 C with rain cutoffs of 0.1 
 
 }
 
-\noindent\textit{Further reading.} Report frequency, duration and affected area as separate event properties.
+\noindent\textit{Analytical recommendation.} Report frequency, duration and affected area as separate event properties.
 
-\subsection{Fig. 32: Daily event order separates frequency from persistence}
+\subsection{Fig. 31: Daily event order separates frequency from persistence}
 
 \begin{figure*}[!tb]\centering
 
-\includegraphics[width=\textwidth,height=0.18\textheight,keepaspectratio]{Fig32.png}
+\includegraphics[width=\textwidth,height=0.18\textheight,keepaspectratio]{Fig31.png}
 
-\caption{Equal 75-day counts conceal longest spells of 17 versus 67 days. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig32}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:32}
+\caption{Equal 75-day counts conceal longest spells of 17 versus 67 days. {\footnotesize \href{https://aithal007.github.io/DV_assignment2/figures.html\#fig31}{\textcolor{accent}{\underline{View figure and interpretation online}}}}}\label{fig:31}
 
 \end{figure*}
 
@@ -1398,7 +1363,7 @@ The final panel repeats frequencies at 33, 35 and 37 C with rain cutoffs of 0.1 
 
 \paragraph{Interpretation.} Both selected cells have 75 qualifying days out of 92 (81.5\%), yet the orange sequences form longest runs of 17 and 67 days. The interrupted first row and long continuous block in the second supply the visual mechanism behind that difference. A count discards the ordering that determines persistence.
 
-Selection searches the common 13,416-cell footprint for the largest run-length contrast among equal positive day counts, with a declared tie rule. These are deliberately diagnostic examples, not typical cells. The maximum 67-day run is included. Fixed coordinates and the complete daily series avoid changing locations or omitting non-event days between panels. Boundary-touching spells may extend beyond the study window. This is the temporal detail needed to interpret the preceding frequency and run-length maps.
+Selection searches the common 13,416-cell footprint for the largest run-length contrast (longest run minus shortest run) among cells sharing the same positive event-day count. Among all 75-day cells the maximum contrast is 50 days (runs of 67 and 17 days). Ties in contrast are broken by earliest grid position (latitude descending, then longitude ascending), making the selection deterministic. These are deliberately diagnostic examples, not typical cells. The maximum 67-day run is included. Fixed coordinates and the complete daily series avoid changing locations or omitting non-event days between panels. Boundary-touching spells may extend beyond the study window. This is the temporal detail needed to interpret the preceding frequency and run-length maps.
 
 
 
@@ -1410,34 +1375,34 @@ Selection searches the common 13,416-cell footprint for the largest run-length c
 
 }
 
-\noindent\textit{Further reading.} Preserve daily order when duration matters.
+\noindent\textit{Analytical recommendation.} Preserve daily order when duration matters.
 
 \FloatBarrier
 
 \section{Discussion}
 
-Country averages conceal profile differences (71 of 454 nearly equal-adoption pairs meet P95), different paired paths, and the 47\% within-region variation. Broadband association weakens from 0.83 for levels to 0.05 for gains, with ceiling/diffusion effects limiting interpretation. Layouts preserve edges while changing crossing costs; omitting one indicator gives Jaccard 0.338-0.512, exposing feature sensitivity despite small-noise stability.
+Country averages conceal profile differences (71 of 454 nearly equal-adoption pairs meet P95, a 3.1x enrichment over the 5\% baseline), different paired paths, and both the 47\% within-region and 53\% between-region portions of measured variation. Broadband association weakens from $r_s = 0.831$ ($p < 0.001$) for levels to $r_s = 0.054$ ($p = 0.48$) for gains, with ceiling and floor effects limiting snapshot interpretation. Fixed cohorts reveal an absolute median gap that peaked at 62.7 points in 2011 before compressing to 53.8 in 2020, a pattern consistent with S-curve diffusion. Fig.~\ref{fig:1}'s documented feature-sensitivity analysis shows that omitting one indicator yields edge Jaccard overlaps of 0.338-0.512 (omitting mobile: 0.338; internet use: 0.432; landlines: 0.491; broadband: 0.512); the grouping is therefore a stated four-indicator definition, not an immutable country taxonomy.
 
-Weather comparisons recover different omitted details: endpoint signs disagree with monthly means over 18.26\% of area; totals conceal concentrated rainfall; equal 75-day event counts produce 17- versus 67-day runs. Separate field frequencies also fail to recover the 2.57\% joint occurrence. These findings answer the main question through profiles, matched change and daily order.
+Weather comparisons recover different omitted details: endpoint signs disagree with monthly means over 18.26\% of area; monthly totals conceal concentrated rainfall; equal 75-day event counts produce 17- versus 67-day runs. Synoptic weather features reflect documented meteorological events, including the July Southwest heat dome \cite{ref9}, Tropical Storm Harold's rainfall \cite{ref16}, and Hurricane Lee's coastal impact \cite{ref17}. Separate field frequencies also fail to recover the 2.57\% joint occurrence. These findings answer the main question through profiles, matched change and daily order.
 
 
 
-\textbf{Scope and limits.} Country aggregates support descriptive comparisons, not causal attribution. Complete-case cohorts exclude missing observations; counts, shares and subscription rates use different denominators. Weather results concern one three-month interval and a fixed subsampled footprint, with approximate area weights and dependent cells/days. Daily fields need not coincide hourly; runs may extend beyond the window. Event cutoffs are descriptive, and period departures are not climate normals. Stride six reduces processing volume and display overlap; no native-resolution equivalence is claimed.
+\textbf{Scope and limits.} Country aggregates support descriptive comparisons, not causal attribution. Complete-case cohorts exclude missing observations; counts, shares and subscription rates use different denominators. The 2020 country values are source-published international estimates during the pandemic year and may be revised or modelled by their producers. Weather results concern one three-month interval and a fixed subsampled footprint, with approximate area weights and dependent cells/days. Daily fields need not coincide hourly; runs may extend beyond the window. Event cutoffs are descriptive, and period departures are not climate normals. Stride six reduces processing volume and display overlap; no native-resolution equivalence or finer-stride sensitivity check is claimed, so small-scale rainfall extremes may differ.
 
 
 
 \section{Code and supporting files}
 
-The README supplies setup and staged reproduction commands. Source country extracts, weather caches/acquisition metadata, custom contour code/tests, numbered images and editable LaTeX are included. The local launcher opens the UIs; optional Playwright commands regenerate browser exports and complete captures.
+The README supplies setup and staged reproduction commands. Source country extracts, weather caches/acquisition metadata, custom contour code/tests, numbered images and editable LaTeX are included. The local launcher opens the browser user interfaces; optional Playwright commands regenerate browser exports and complete captures. The complete submission package, data files, reproducible scripts, high-resolution figures, GIFs, and interactive web applications are mirrored on \href{https://drive.google.com/drive/folders/1z1a7Zm4Zed1E_HTJYJ9jM60JMG6ReEO6?usp=drive_link}{\textcolor{accent}{\underline{Google Drive}}} and \href{https://iiitbac-my.sharepoint.com/:f:/g/personal/parikshith_aithal_iiitb_ac_in/IgCNp7Qd4mEWRJ3aRFu4KIv7ASgagGLXmGN8K92jPUOksxw?e=Nd7Xc1}{\textcolor{accent}{\underline{Microsoft OneDrive / SharePoint}}}.
 
 
 
 \section*{Author Contributions and Task Allocation}
-Task responsibilities are assigned below.
+Task responsibilities are assigned below. Each student implemented at least one SciVis and one InfoVis task with no shared figure ownership.
 \par\smallskip\noindent{\footnotesize\begin{tabularx}{\columnwidth}{@{}p{0.27\columnwidth}Y@{}}\toprule\textbf{Member} & \textbf{Responsibility}\\\midrule
-Parikshith Aithal K V (BT2024249) & Network and interactive parallel coordinates; scalar color mapping and global/local scales. Figs. 1-6, 12, 18-19, 21-23. \\
-Sindhoor Ganapathi Hegde (BT2024014) & Horizon/ridgeline variations; custom contour tracing, filled bands and contour GIF. Figs. 13-17, 20, 25-26, 31-32. \\
-Varshith M Gowda (BT2024227) & Zoomable treemap remodels/partitioning; quiver sampling and length encoding. Figs. 7-11, 24, 27-30. \\\bottomrule\end{tabularx}}\par\smallskip
+Parikshith Aithal K V (BT2024249) & \textbf{InfoVis:} Network node-link (3 layouts, interaction, Figs 1--3) and parallel coordinates (bundling, brushing, reordering, Figs 4--7); \textbf{SciVis:} scalar color mapping, global/local scales, rainfall concentration (Figs 18--19, 22--23). Fig.~13 (regional endpoints and country gains) is Parikshith's canonical figure; same-named intermediate outputs in member scripts are development artifacts. \\
+Sindhoor Ganapathi Hegde (BT2024014) & \textbf{InfoVis:} Horizon and ridgeline plot variations (two variants each); \textbf{SciVis:} custom Marching Squares contour tracing, filled-band contours, contour GIF; weather persistence and event timing. Figs 14--17, 20--21, 24--25, 30--31 \\
+Varshith M Gowda (BT2024227) & \textbf{InfoVis:} Zoomable treemap---sole owner---region-first and adoption-band-first hierarchy remodels, zoom/back, squarified vs.\ slice-and-dice spatial partitioning (Figs 9--10); association and catch-up comparisons across measures, regions and cohorts (Figs 8, 11--12); \textbf{SciVis:} quiver grid-sampling and arrow-length encoding with wind roses and multivariable context. Figs 8--12, 26--29 \\\bottomrule\end{tabularx}}\par\smallskip
 
 \section{Conclusion}
 
@@ -1445,7 +1410,7 @@ Similar summaries conceal different profiles, paths and daily sequences. Country
 
 
 
-\begin{thebibliography}{11}
+\begin{thebibliography}{17}
 
 \bibitem{ref1} J. T. Abatzoglou, "Development of gridded surface meteorological data for ecological applications and modelling," International Journal of Climatology, vol. 33, pp. 121-131, 2013. gridMET product and documentation. \href{https://www.climatologylab.org/gridmet.html}{Online source}.
 
@@ -1468,6 +1433,18 @@ Similar summaries conceal different profiles, paths and daily sequences. Country
 \bibitem{ref10} J. Heinrich et al., "Evaluation of a Bundling Technique for Parallel Coordinates," 2011. Inspiration for the explicit-group, axis-preserving browser curves. \href{https://arxiv.org/abs/1109.6073}{Online source}.
 
 \bibitem{ref11} E. Hovmoller, "The Trough-and-Ridge diagram," Tellus, vol. 1, no. 2, pp. 62-66, 1949. \href{https://doi.org/10.3402/tellusa.v1i2.8498}{Online source}.
+
+\bibitem{ref12} J. Heer, N. Kong and M. Agrawala, "Sizing the Horizon: The Effects of Chart Size and Layering on the Graphical Perception of Time Series Visualizations," CHI, 2009. \href{https://hci.stanford.edu/publications/2009/heer-horizon-chi09.pdf}{Online source}.
+
+\bibitem{ref13} M. Bruls, K. Huizing and J. J. van Wijk, "Squarified Treemaps," Data Visualization 2000, pp. 33-42, 2000. \href{https://doi.org/10.1007/978-3-7091-6783-0_4}{Online source}.
+
+\bibitem{ref14} W. E. Lorensen and H. E. Cline, "Marching Cubes: A High Resolution 3D Surface Construction Algorithm," Computer Graphics, vol. 21, no. 4, pp. 163-169, 1987. \href{https://doi.org/10.1145/37401.37422}{Online source}.
+
+\bibitem{ref15} D. Borland and R. M. Taylor II, "Rainbow Color Map (Still) Considered Harmful," IEEE Computer Graphics and Applications, vol. 27, no. 2, pp. 14-17, 2007. \href{https://doi.org/10.1109/MCG.2007.46}{Online source}.
+
+\bibitem{ref16} NOAA National Hurricane Center, "Tropical Storm Harold Tropical Cyclone Report," 2023. \href{https://www.nhc.noaa.gov/data/tcr/AL092023_Harold.pdf}{Online source}.
+
+\bibitem{ref17} NOAA National Hurricane Center, "Hurricane Lee Tropical Cyclone Report," 2023. \href{https://www.nhc.noaa.gov/data/tcr/AL132023_Lee.pdf}{Online source}.
 
 \end{thebibliography}
 

@@ -2,7 +2,7 @@
 
 ## Shared Storage Mirrors
 - **Google Drive Mirror**: [Google Drive Folder](https://drive.google.com/drive/folders/1z1a7Zm4Zed1E_HTJYJ9jM60JMG6ReEO6?usp=drive_link)
-- **Microsoft OneDrive / SharePoint Mirror**: [OneDrive / SharePoint Folder](https://iiitbac-my.sharepoint.com/my?id=%2Fpersonal%2Fparikshith%5Faithal%5Fiiitb%5Fac%5Fin%2FDocuments%2FPlot%5FTwist%5F2&viewid=fc99016c%2D7fb9%2D4f80%2D95c3%2D7dfc9f6dca23)
+- **Microsoft OneDrive / SharePoint Mirror**: [OneDrive / SharePoint Folder](https://iiitbac-my.sharepoint.com/:f:/g/personal/parikshith_aithal_iiitb_ac_in/IgCNp7Qd4mEWRJ3aRFu4KIv7ASgagGLXmGN8K92jPUOksxw?e=Nd7Xc1)
 - **Live GitHub Pages Dashboard**: [https://aithal007.github.io/DV_assignment2/](https://aithal007.github.io/DV_assignment2/)
 
 
