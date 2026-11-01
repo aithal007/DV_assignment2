@@ -72,7 +72,7 @@ We ask: (1) Do similar internet-use levels conceal different telecom profiles? (
 
 \textbf{Country inputs and cleaning.} Three curated Assignment 1 (A1) Our World in Data / International Telecommunication Union (OWID/ITU) CSV extracts \cite{ref2} provide internet-user counts, internet-use percentages and telecom subscriptions. Our data preprocessing pipeline renames columns, checks source-key uniqueness and numeric types, then outer-joins the files on entity, country code and year with one-to-one validation. The join has 13,387 rows; removing 823 explicitly listed aggregate rows leaves 12,564 country-year records. Missing values remain missing: they are neither replaced with zero nor imputed. \path{data/processed/region_lookup.csv} maps ISO3 codes into six broad geographical labels; it is a display classification, not an official political taxonomy. Unmapped entries remain Unclassified.
 
-\textbf{Comparable cohorts and transformations.} Complete cases are declared for each task: Cohort A (network and profiles, n = 179); Cohort B (matched 2015-2020 pairs, n = 175; four 2020-complete countries lack 2015 profiles); Cohort C (2000-2020 annual panel, n = 159; 158 classified; in Fig. 12 Asia has n = 37 classified countries, whereas Fig. 13 tracks all n = 41 Asian entities; 2010-2020 paths); and Cohort D (treemap user counts, n = 184). Within-country changes are reported in percentage points (pp) and subscriptions per 100 people. The 2020 observations are treated as official ITU pandemic-year published estimates.
+\textbf{Comparable cohorts and transformations.} Complete cases are declared for each task: Cohort A (network and profiles, $n = 179$); Cohort B (matched 2015--2020 pairs, $n = 175$, where four 2020-complete countries lack 2015 profiles); Cohort C (2000--2020 annual panel, $n = 159$, with 158 geographically classified); and Cohort D (treemap user counts, $n = 184$). In Fig.~\ref{fig:12}, Asia includes $n = 37$ classified countries, whereas Fig.~\ref{fig:13} tracks all $n = 41$ Asian entities. Within-country changes are reported in percentage points (pp) and subscriptions per 100 people. The 2020 observations are treated as official ITU pandemic-year published estimates.
 
 \textbf{Professor's guidance and network construction.} Following the professor's advice, we score every country pair, inspect the similarity distribution and filter highly similar pairs. Four indicators are z-scored separately across the 179 countries: subtract the indicator mean and divide by its standard deviation. Euclidean distance $d$ gives similarity $s=1/(1+d)$. Our team chooses the 95th percentile, $P_{95}=0.569763$, as the sparse default: 797 of 15,931 pairs remain, with all 179 nodes retained. Perturbation was mentioned as an option; P95 is our team's choice. Fig.~\ref{fig:1} explains that choice and its sensitivity. Edge overlap uses Jaccard similarity: $J(E_1,E_2)=|E_1 \cap E_2|\,/\,|E_1 \cup E_2|$. Parallel coordinates (PCP) use bundled curves \cite{ref10}; treemaps use squarified aspect optimization \cite{ref13}.
 
@@ -84,7 +84,7 @@ We ask: (1) Do similar internet-use levels conceal different telecom profiles? (
 
 \subsection{Tools, interaction and implementation evidence}
 
-NetworkX \cite{ref3} computes the three layouts; D3 \cite{ref4} implements layout/threshold selection, node filters, PCP bundling/brushing/reordering \cite{ref10} and treemap zoom/hierarchy/partition controls \cite{ref13}. Gephi \cite{ref5} is an allowed alternative, not a required additional tool. The first-page dashboard link opens the working browser UIs; \path{images/gui/} and the interaction receipt provide local evidence. Open \path{web/home.html} through \path{python} \path{run_visualizations.py} to exercise the controls locally. The README documents setup, reproduction and browser checks.
+NetworkX \cite{ref3} computes the three layouts; D3 \cite{ref4} implements layout/threshold selection, node filters, PCP bundling/brushing/reordering \cite{ref10} and treemap zoom/hierarchy/partition controls \cite{ref13}. Gephi \cite{ref5} is an allowed alternative, not a required additional tool. The first-page dashboard link opens the working browser user interfaces (UIs); \path{images/gui/} and the interaction receipt provide local evidence. Open \path{web/home.html} through \path{python} \path{run_visualizations.py} to exercise the controls locally. The README documents setup, reproduction and browser checks.
 
 
 
@@ -368,7 +368,7 @@ The histogram's horizontal axis measures standardized Euclidean distance across 
 
 
 
-\paragraph{Interpretation.} The lower scatter cells show tighter upward ordering for broadband versus adoption (Spearman 0.83) than for mobile versus adoption (0.53). Landlines and broadband have the strongest displayed pairwise rank association, about 0.87. The clouds and outlying countries qualify those coefficients: high adoption still occurs at low fixed-broadband values, and mobile subscriptions overlap widely.
+\paragraph{Interpretation.} The lower scatter cells show tighter upward ordering for broadband versus adoption (Spearman $r_s = 0.83$) than for mobile versus adoption ($r_s = 0.53$). Landlines and broadband have the strongest displayed pairwise rank association, about $r_s = 0.87$. The clouds and outlying countries qualify those coefficients: high adoption still occurs at low fixed-broadband values, and mobile subscriptions overlap widely.
 
 All cells use the same 175 countries, so different sample membership does not explain the contrast. Diagonal distributions also show why a subscription count can exceed 100 per 100 people without being an adoption percentage. This tests the profiles seen in parallel coordinates using ordinary position axes. It supports an association between 2020 country levels, while leaving causal explanations and country-specific change unresolved.
 
@@ -408,9 +408,9 @@ All cells use the same 175 countries, so different sample membership does not ex
 
 
 
-\paragraph{Interpretation.} Across the same 175 countries, broadband-adoption rank association falls from $r_s = 0.831$ ($p < 0.001$) in 2020 cross-sectional levels to $r_s = 0.054$ ($p = 0.48$) in paired 2015-2020 gains. The gain scatter lacks the ordered upward pattern suggested by the endpoint coefficient. Landline and mobile associations similarly weaken, from 0.79 to 0.29 (p < 0.001) and 0.53 to 0.07 (p = 0.35).
+\paragraph{Interpretation.} Across the same 175 countries, broadband-adoption rank association falls from $r_s = 0.831$ ($p < 0.001$) in 2020 cross-sectional levels to $r_s = 0.054$ ($p = 0.48$) in paired 2015-2020 gains. The gain scatter lacks the ordered upward pattern suggested by the endpoint coefficient. Landline and mobile rank associations similarly weaken, from $r_s = 0.79$ to $r_s = 0.29$ ($p < 0.001$) and $r_s = 0.53$ to $r_s = 0.07$ ($p = 0.35$).
 
-A floor effect operates in broadband gains: numerous developing countries experienced near-zero broadband additions over 2015-2020, mechanically attenuating rank correlation. Landline subscriptions declined in many countries over the same period ($\rho$ = +0.29 for the gain-versus-adoption gain correlation), though this positive association is weaker than for country levels. High-baseline countries also have less possible gain due to the 100\% ceiling. The figure demonstrates that cross-sectional snapshots cannot substitute for paired changes.
+A floor effect operates in broadband gains: numerous developing countries experienced near-zero broadband additions over 2015-2020, mechanically attenuating rank correlation. Landline subscriptions declined in many countries over the same period ($r_s = +0.29$ for the gain-versus-adoption gain correlation), though this positive association is weaker than for country levels. High-baseline countries also have less possible gain due to the 100\% ceiling. The figure demonstrates that cross-sectional snapshots cannot substitute for paired changes.
 
 
 
@@ -418,7 +418,7 @@ A floor effect operates in broadband gains: numerous developing countries experi
 
 
 
-\takeaway{Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from 0.83 to 0.05 exposes why a cross-country snapshot cannot substitute for paired change.
+\takeaway{Countries that have more broadband tend to have higher adoption, but countries gaining more broadband do not show the same ordering of adoption gains. The fall from $r_s = 0.83$ to $r_s = 0.05$ exposes why a cross-country snapshot cannot substitute for paired change.
 
 }
 
@@ -1380,7 +1380,7 @@ Selection searches the common 13,416-cell footprint for the largest run-length c
 
 \section{Discussion}
 
-Country averages conceal profile differences (71 of 454 nearly equal-adoption pairs meet P95, a 3.1x enrichment over the 5\% baseline), different paired paths, and both the 47\% within-region and 53\% between-region portions of measured variation. Broadband association weakens from $r_s = 0.831$ ($p < 0.001$) for levels to $0.054$ ($p = 0.48$) for gains, with ceiling and floor effects limiting snapshot interpretation. Fixed cohorts reveal an absolute median gap that peaked at 62.7 points in 2011 before compressing to 53.8 in 2020, a pattern consistent with S-curve diffusion. Fig.~\ref{fig:1}'s documented feature-sensitivity analysis shows that omitting one indicator yields edge Jaccard overlaps of 0.338-0.512 (omitting mobile: 0.338; broadband: 0.412; landlines: 0.485; internet use: 0.512); the grouping is therefore a stated four-indicator definition, not an immutable country taxonomy.
+Country averages conceal profile differences (71 of 454 nearly equal-adoption pairs meet P95, a 3.1x enrichment over the 5\% baseline), different paired paths, and both the 47\% within-region and 53\% between-region portions of measured variation. Broadband association weakens from $r_s = 0.831$ ($p < 0.001$) for levels to $r_s = 0.054$ ($p = 0.48$) for gains, with ceiling and floor effects limiting snapshot interpretation. Fixed cohorts reveal an absolute median gap that peaked at 62.7 points in 2011 before compressing to 53.8 in 2020, a pattern consistent with S-curve diffusion. Fig.~\ref{fig:1}'s documented feature-sensitivity analysis shows that omitting one indicator yields edge Jaccard overlaps of 0.338-0.512 (omitting mobile: 0.338; broadband: 0.412; landlines: 0.485; internet use: 0.512); the grouping is therefore a stated four-indicator definition, not an immutable country taxonomy.
 
 Weather comparisons recover different omitted details: endpoint signs disagree with monthly means over 18.26\% of area; monthly totals conceal concentrated rainfall; equal 75-day event counts produce 17- versus 67-day runs. Synoptic weather features reflect documented meteorological events, including the July Southwest heat dome \cite{ref9}, Tropical Storm Harold's rainfall \cite{ref16}, and Hurricane Lee's coastal impact \cite{ref17}. Separate field frequencies also fail to recover the 2.57\% joint occurrence. These findings answer the main question through profiles, matched change and daily order.
 
@@ -1392,7 +1392,7 @@ Weather comparisons recover different omitted details: endpoint signs disagree w
 
 \section{Code and supporting files}
 
-The README supplies setup and staged reproduction commands. Source country extracts, weather caches/acquisition metadata, custom contour code/tests, numbered images and editable LaTeX are included. The local launcher opens the UIs; optional Playwright commands regenerate browser exports and complete captures.
+The README supplies setup and staged reproduction commands. Source country extracts, weather caches/acquisition metadata, custom contour code/tests, numbered images and editable LaTeX are included. The local launcher opens the browser user interfaces; optional Playwright commands regenerate browser exports and complete captures.
 
 
 
