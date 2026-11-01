@@ -31,7 +31,7 @@ Windows users can double-click `START_VISUALIZATIONS.cmd`. Open `http://127.0.0.
 
 ## Folder contents
 
-- `DAS732_A2_Report.pdf`: main IEEE report (30 pages).
+- `DAS732_A2_Report.pdf`: main IEEE report (31 pages).
 - `images/report/`: all 31 canonical numbered PNGs (Fig1.png - Fig31.png).
 - `images/scivis/`: three eight-frame GIFs and the scalar/contour/vector exports used by the report.
 - `web/`: runnable JavaScript UIs (D3 network, parallel coordinates, treemap) and vendored D3 library.

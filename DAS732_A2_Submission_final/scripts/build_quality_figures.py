@@ -33,7 +33,7 @@ def finish(fig, key, title, findings, question, encoding, rationale, limits, tak
 
 
 def geography(ax, title):
-    ax.set(xlim=(-125, -66), ylim=(24, 50), xlabel='Longitude (degrees east)', ylabel='Latitude (degrees north)')
+    ax.set(xlim=(-125, -66), ylim=(24, 50), xlabel='Longitude (°; east-positive)', ylabel='Latitude (degrees north)')
     ax.set_aspect(1.3)
     ax.set_facecolor('#e8ecf0')
     ax.set_title(title, loc='left', fontsize=12, pad=10)
@@ -267,7 +267,7 @@ def weather_figures():
     for ax,a,cmap,norm,label,title in [(fig.add_subplot(gs[1,0]),hovt,'inferno',Normalize(np.nanmin(hovt),np.nanmax(hovt)),'Mean daily Tmax (degrees C)','B. Temperature: all 92 dates'),
             (fig.add_subplot(gs[1,1]),hovp,'Blues',PowerNorm(.5,vmin=0,vmax=np.nanmax(hovp)),'Mean daily precipitation (mm)','C. Precipitation: identical support')]:
         im=ax.pcolormesh(time,lon,a.T,cmap=cmap,norm=norm,shading='auto',rasterized=True)
-        ax.set(ylabel='Longitude (degrees east)',xlabel='Date in 2023',ylim=(-125,-66))
+        ax.set(ylabel='Longitude (°; east-positive)',xlabel='Date in 2023',ylim=(-125,-66))
         ax.set_title(title,loc='left',fontsize=12); ax.xaxis.set_major_locator(mdates.MonthLocator()); ax.xaxis.set_major_formatter(mdates.DateFormatter('%b %d'))
         fig.colorbar(im,ax=ax,pad=.02,label=label)
     fig.suptitle('When and where do warm and rainy periods occur?',fontsize=20,color=INK)

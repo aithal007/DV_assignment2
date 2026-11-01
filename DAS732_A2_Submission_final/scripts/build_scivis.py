@@ -88,7 +88,7 @@ def map_axis(ax, title: str, extent=EXTENT):
     ax.set_title(title, fontsize=10)
     ax.set_xlim(extent[:2])
     ax.set_ylim(extent[2:])
-    ax.set_xlabel("Longitude (°E)")
+    ax.set_xlabel("Longitude (°; east-positive)")
     ax.set_ylabel("Latitude (°N)")
     ax.grid(color="#888", alpha=.25, linewidth=.4)
     ax.set_aspect(1.3)

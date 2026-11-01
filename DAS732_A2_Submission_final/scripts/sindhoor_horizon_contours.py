@@ -87,10 +87,10 @@ def build_horizon() -> None:
         _draw_horizon_row(ax, years, vals, label=f"{name} ({v20:.1f}%)")
     axes[-1].set_xticks(years[::5])
     axes[-1].set_xticklabels([str(y) for y in years[::5]], fontsize=7)
-    fig.suptitle("Fig 13. Selected country horizon (ref=50%, band=25pp)",
+    fig.suptitle("Fig 14. Selected country horizon (ref=50%, band=25pp)",
                  fontsize=11, fontweight="bold")
-    fig.savefig(out_img / "Fig13.png", dpi=150, bbox_inches="tight"); plt.close(fig)
-    print(f"Fig13 saved ({len(selections)} rows)")
+    fig.savefig(out_img / "Fig14.png", dpi=150, bbox_inches="tight"); plt.close(fig)
+    print(f"Fig14 saved ({len(selections)} rows)")
 
     # fig 14: regional median horizon rows
     regions_ordered = sorted(panel.loc[panel.region.ne("Unclassified"), "region"].unique())
@@ -105,10 +105,10 @@ def build_horizon() -> None:
         _draw_horizon_row(ax, years, meds, label=f"{region} ({m20:.2f}%)")
     axes[-1].set_xticks(years[::5])
     axes[-1].set_xticklabels([str(y) for y in years[::5]], fontsize=7)
-    fig.suptitle("Fig 14. Regional median horizon (ref=50%)",
+    fig.suptitle("Fig 15. Regional median horizon (ref=50%)",
                  fontsize=11, fontweight="bold")
-    fig.savefig(out_img / "Fig14.png", dpi=150, bbox_inches="tight"); plt.close(fig)
-    print("Fig14 saved")
+    fig.savefig(out_img / "Fig17_bandwidth_sensitivity.png", dpi=150, bbox_inches="tight"); plt.close(fig)
+    print("Fig17_bandwidth_sensitivity saved")
 
     # fig 15: global ridgeline across 5 years
     slice_years = [2000, 2005, 2010, 2015, 2020]
@@ -130,8 +130,8 @@ def build_horizon() -> None:
     ax.set_xlabel("Internet use (%)"); ax.set_yticks([]); ax.set_xlim(0, 100)
     ax.set_title("Fig 15. Global ridgeline: 159-country adoption distribution",
                  fontsize=11, fontweight="bold")
-    fig.savefig(out_img / "Fig15.png", dpi=150, bbox_inches="tight"); plt.close(fig)
-    print("Fig15 saved")
+    fig.savefig(out_img / "Fig17_bandwidth_sensitivity.png", dpi=150, bbox_inches="tight"); plt.close(fig)
+    print("Fig17_bandwidth_sensitivity saved")
 
     # fig 16: regional ridgelines faceted
     ncols = 3
@@ -151,11 +151,11 @@ def build_horizon() -> None:
         ax.set_title(f"{region} (n={n_ctry})", fontsize=8)
         ax.set_xlim(0, 100); ax.set_yticks([])
     for ax in axes_flat[len(regions_ordered):]: ax.set_visible(False)
-    fig.suptitle("Fig 16. Regional ridgelines: adoption distribution by region",
+    fig.suptitle("Fig 17. Regional ridgelines: adoption distribution by region",
                  fontsize=11, fontweight="bold")
     fig.supxlabel("Internet use (%)", fontsize=9)
-    fig.savefig(out_img / "Fig16.png", dpi=150, bbox_inches="tight"); plt.close(fig)
-    print("Fig16 saved")
+    fig.savefig(out_img / "Fig17_bandwidth_sensitivity.png", dpi=150, bbox_inches="tight"); plt.close(fig)
+    print("Fig17_bandwidth_sensitivity saved")
 
     # fig 17: bandwidth sensitivity comparison
     vals_2020 = panel.loc[panel.year == 2020, "internet_users_share_pct"].dropna().values
@@ -171,10 +171,10 @@ def build_horizon() -> None:
     ax_r.axvline(np.median(sv), color="orange", ls="--", label=f"Median {np.median(sv):.1f}%")
     ax_r.set_xlabel("Internet use (%)"); ax_r.set_ylabel("Cumulative fraction")
     ax_r.set_title("ECDF (2020)"); ax_r.legend(fontsize=8)
-    fig.suptitle("Fig 17. Ridgeline sensitivity: bandwidth comparison + ECDF",
+    fig.suptitle("Supplement: Ridgeline sensitivity: bandwidth comparison + ECDF",
                  fontsize=11, fontweight="bold")
-    fig.savefig(out_img / "Fig17.png", dpi=150, bbox_inches="tight"); plt.close(fig)
-    print("Fig17 saved")
+    fig.savefig(out_img / "Fig17_bandwidth_sensitivity.png", dpi=150, bbox_inches="tight"); plt.close(fig)
+    print("Fig17_bandwidth_sensitivity saved")
 
 
 # build marching squares contours and monthly maps
