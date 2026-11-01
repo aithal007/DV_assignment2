@@ -280,7 +280,7 @@ Georgia and Brunei both gain about 25 adoption points and eight broadband subscr
 
 
 
-\paragraph{Visual encoding.} Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40\% internet use, blue means 40-below-70\%, and green means at least 70\%. Within each chosen band, curves bend gently toward the average profile between neighboring axes. The 35\% setting preserves every measured axis intersection and keeps each bend between its two endpoint values. These bands are chosen comparison groups, not discovered country types.
+\paragraph{Visual encoding.} Cohort: the same 175 countries complete in both 2015 and 2020; four other 2020-complete countries lack complete 2015 profiles. Each curve is one of the same 175 countries in 2020. The four vertical axes retain their original units and full matched-country ranges. Orange means below 40\% internet use, blue means 40-below-70\%, and green means at least 70\%. Within each chosen band, curves are bundled using category-based centroid attractor splines: cubic B-spline paths attract lines toward their band's inter-axis centroid at 35\% bundling strength, reducing visual clutter between axes while strictly preserving exact intercept positions on each vertical axis. These bands are chosen comparison groups, not discovered country types.
 
 
 
@@ -934,13 +934,13 @@ We restore all 92 dates to compare cooling, rainfall concentration, repeated hea
 
 \end{figure*}
 
-\noindent\textit{How to read the graph.} Three monthly maps average all daily maxima on the common footprint. Shared color and 25/35 C contours allow spatial comparison.
+\noindent\textit{How to read the graph.} Three monthly maps average all daily maxima on the common footprint. Background color encodes temperature ($^{\circ}$C); contour lines provide explicit isothermal reference boundaries: dashed lines delineate the 25\textdegree{}C isotherm and solid lines delineate the 35\textdegree{}C isotherm.
 
 \paragraph{Question.} How does the average daily maximum temperature change across the three months?
 
 
 
-\paragraph{Visual encoding.} Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same 25\textdegree{}C and 35\textdegree{}C contour levels.
+\paragraph{Visual encoding.} Each map averages daily maximum temperature over one month. All maps use the same Celsius scale and the same reference contour levels: the 25\textdegree{}C contour marks the transition from mild to warm regions, and the 35\textdegree{}C contour isolates persistent high-heat cores.
 
 
 
