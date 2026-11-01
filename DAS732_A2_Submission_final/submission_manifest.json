@@ -3,16 +3,16 @@
   "total_files": 200,
   "files": {
     "DAS732_A2_Report.pdf": {
-      "size": 13717053,
-      "sha256": "bb241e9f35a113d01263268a97db837b84a1a08fa38f041fca5b2cc313749132"
+      "size": 13719286,
+      "sha256": "8b9806e8c83a408ac2d22547ed2ad342209856ee10bb57c06cc15325662ad8c6"
     },
     "FIGURE_EXPLANATIONS.md": {
       "size": 64662,
       "sha256": "3c46f4a44bb5c6d546221494cb6bc5ec3d636b7a2c344466e74d5e6ad11fabbf"
     },
     "README.md": {
-      "size": 3917,
-      "sha256": "b60a017c7d1ba3ebadaf5a2ac9e338cf23bc49ff7a4ab66767fa4cef32ef5aae"
+      "size": 4543,
+      "sha256": "3d84f6ed3b017f082185ce01100172c9c3ff9f8de605532f4ea04dbf4a1f181e"
     },
     "REPORT.md": {
       "size": 79819,
@@ -543,12 +543,12 @@
       "sha256": "8c9516873f081519fd6cc5f0f94318e99b22ebecd2ed2f0d61024d88d605b15f"
     },
     "report_latex\\DAS732_A2_Report.pdf": {
-      "size": 13717053,
-      "sha256": "bb241e9f35a113d01263268a97db837b84a1a08fa38f041fca5b2cc313749132"
+      "size": 13719286,
+      "sha256": "8b9806e8c83a408ac2d22547ed2ad342209856ee10bb57c06cc15325662ad8c6"
     },
     "report_latex\\DAS732_A2_Report.tex": {
-      "size": 110202,
-      "sha256": "f5f0541917e021696f526ea85423cde6a479e32830bf90d5543ed200676bf198"
+      "size": 111205,
+      "sha256": "8703ad4f04ea30f67316197ffdadc2a120cce6ca3eab3c6b388deda8fd074d1a"
     },
     "report_latex\\README.md": {
       "size": 492,

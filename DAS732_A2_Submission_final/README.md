@@ -1,5 +1,11 @@
 # DAS732 Assignment 2 - Team Plot Twist
 
+## Shared Storage Mirrors
+- **Google Drive Mirror**: [Google Drive Folder](https://drive.google.com/drive/folders/1z1a7Zm4Zed1E_HTJYJ9jM60JMG6ReEO6?usp=drive_link)
+- **Microsoft OneDrive / SharePoint Mirror**: [OneDrive / SharePoint Folder](https://iiitbac-my.sharepoint.com/my?id=%2Fpersonal%2Fparikshith%5Faithal%5Fiiitb%5Fac%5Fin%2FDocuments%2FPlot%5FTwist%5F2&viewid=fc99016c%2D7fb9%2D4f80%2D95c3%2D7dfc9f6dca23)
+- **Live GitHub Pages Dashboard**: [https://aithal007.github.io/DV_assignment2/](https://aithal007.github.io/DV_assignment2/)
+
+
 Open **DAS732_A2_Report.pdf** for the full report with 31 figure sets and complete explanations. The high-resolution assessment images are in `images/report/`, named Fig1-Fig31. The three required eight-frame scalar animations are in `images/scivis/`.
 
 This folder is a self-contained local submission copy. It contains no Git remote and requires no external network access. All raw inputs, processed tables, gridMET caches, scripts and web assets required for this submission are included.
