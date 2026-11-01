@@ -11,3 +11,11 @@ report_latex/*.aux
 report_latex/*.log
 report_latex/*.out
 report_latex/compile_pass_*.txt
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+pdflatex_out.txt
